@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Installation - Viva New Vegas</title>
+    <link rel="icon" type="image/ico" href="./img/logo.png"/>
+</head>
+<body>
+    <div>
+        <h1 class="maintitle">Viva New Vegas</h1>
+        <h4 class="subtitle"><em>A Comprehensive 2019 Fallout New Vegas Modding Guide</em></h4>
+        <hr class="line">
+        <ul class="navbar">
+            <li class="navbarli"><a href="contact.html">Contact Me</a></li>
+            <li class="navbarli"><a href="https://www.nexusmods.com/newvegas/mods/66139" target="_blank">Nexus</a></li>
+            <li class="navbarli"><a href="https://discord.gg/fXYxNPt" target="_blank">Discord</a></li>
+            <li class="navbarli"><a href="index.html">Home</a></li>
+        </ul>
+    </div>
+    <div>
+        <h1 class="installationtitle">Viva New Vegas - Core: Installation</h1>
+          <ul class="breadcrumb">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./core.html">General Information</a></li>
+            <li>Installation</li>
+            <li><a href="./prerequisites.html">Tools</a></li>
+            <li><a href="./mo2config.html">Mod Organizer 2</a></li>
+            <li><a href="./initweaks.html">INI Tweaks</a></li>
+            <li><a href="./utilities.html">Utilities</a></li>
+            <li><a href="./bugfix.html">Bug Fixes</a></li>
+            <li><a href="./qol.html">QOL Improvements</a></li>
+            <li><a href="./hudui.html">HUD/UI</a></li>
+            <li><a href="./corefinish.html">Finish Line</a></li>
+        </ul>
+        <hr>
+        <p class="installingfnvdesc">
+            The first place every modding journey starts is with installing the game. 
+              <br>  
+            If you already have done a completely fresh installation of Fallout New Vegas in the correct folder, 
+              <br>
+            you may skip this step. Please double-check everything is correct though.
+        </p>
+        <hr>
+        <h2 class="installparameters">Installation Parameters:</h2>      
+            <p class="installparametersdesc">
+              Fallout New Vegas and all modding tools must be installed outside the <em>Program Files</em> and <em>Program Files (x86)</em> folders
+                <br>
+              Fallout New Vegas and the Mod Organizer 2 Mods folder must be installed on the same drive, preferably on an SSD for shorter loading screens and less stutter while loading
+                <br>
+              Fallout New Vegas itself is just about 10 gigabytes, and the total size of the guide is x gigabytes
+                <ul class="modulesize">
+                  <li>Core Module - 1.8 gigabytes</li>
+                  <li>Graphics Module - x gigabytes</li>
+                  <li>Gameplay Module - x gigabytes</li>
+                  <li>Content Module - x gigabytes</li>
+                </ul>
+            </p>  
+        <hr>    
+        <h2 class="overlay">Common Terminology:</h2>
+            <p class="installparametersdesc">
+              Fallout New Vegas Root Folder: <strong>Steam/steamapps/common/Fallout New Vegas</strong> or <strong>GOG Galaxy/Games/Fallout New Vegas</strong> <br>
+              Fallout New Vegas Data Folder: <strong>Steam/steamapps/common/Fallout New Vegas/Data</strong> or <strong>GOG Galaxy/Games/Fallout New Vegas/Data</strong> <br>
+              MO2: <strong>Mod Organizer 2</strong> (Will be installed shortly)
+            </p>
+            <hr>
+        <h2 class="installingfnv">Installing Fallout New Vegas:</h2>      
+          <div class="installcontainer">
+            <button class="accordioninstall">I do not have Fallout New Vegas installed</button>
+              <div class="panelinstall">
+                <p>
+                  <ul class="steaminstall"> 
+                    <p>For Steam:</p>
+                      <li>Launch Steam and select <strong>Steam -> Settings</strong></li>
+                      <li>Go to the <strong>Downloads</strong> tab and select <strong>Steam Library Folders</strong></li>
+                      <li>From the pop-up, select <strong>Add Library Folder</strong></li>
+                      <li>Add a folder in a location of your choice outside of <em>Program Files </em> and <em>Program Files x86</em> (Preferrably on an SSD)</li>
+                      <li>Exit out of the menu and go to <strong>Library</strong></li>
+                      <li>Select <strong>Fallout New Vegas</strong> and click <strong>Install</strong></li>
+                      <li>From the pop-up, select <strong>Choose location for install:</strong></li>
+                      <li>Select the folder you just created and install it</li>
+                    <p>For GOG:</p> 
+                      <li>Launch GOG and select <strong>Library</strong></li>
+                      <li>Select <strong>Fallout New Vegas</strong> and click <strong>Install</strong></li>
+                      <li>Set the <strong>Install to</strong> to a location of your choice outside of <em>Program Files </em> and <em>Program Files x86</em> (Preferrably on an SSD) and install</li>
+                  </ul>
+                </p>
+              </div>
+            <button class="accordioninstall">I have Fallout New Vegas installed on the wrong drive/folder</button>
+              <div class="panelinstall">
+                <p>
+                  <ul class="steammove">
+                    <p>For Steam (Moving to a separate drive):</p>
+                      <li>If you have not created a separate Steam directory, do so in the same way as the first step</li>
+                      <li>Launch Steam and select <strong>Library</strong></li>
+                      <li>Right-click on <strong>Fallout New Vegas</strong> and select <strong>Properties</strong></li>
+                      <li>Navigate to the <strong>Local Files</strong> tab and select <strong>Move Install Folder...</strong></li>
+                      <li>Select the folder you just created and click <strong>Move Folder</strong></li>
+                    <p>For Steam (Moving within the same drive):</p>
+                      <li>There is no easy way to move your game folder within the same drive. Reference <a class="modsublink" href="https://youtu.be/4FEc2DUIWQU?t=130" target="_blank">this</a> video for the easiest method</li>
+                    <p>For GOG:</p>
+                      <li>GOG does not currently have a way to move an installed game, so you have to reinstall it to the correct folder</li>
+                  </ul>
+                </p>
+              </div>
+            <button class="accordioninstall">My Fallout New Vegas installation was previously modded and may have leftover mod files</button>
+              <div class="panelinstall">
+                <p>
+                  <ul class="steamverify">
+                    <p>For Both:</p>
+                      <li>Navigate to <strong>Documents/My Games/FalloutNV</strong> and delete everything except for the <strong>saves</strong> folder</li>
+                      <li>Navigate to your Fallout New Vegas root folder</li>
+                      <li>Delete everything in the root folder except for the <strong>Data</strong> folder</li>
+                      <li>Open the <strong>Data</strong> folder and delete everything except for the following:</li>
+                        <ul>
+                          <strong>
+                          <li>CaravanPack.esm</li>  
+                          <li>ClassicPack.esm</li>  
+                          <li>DeadMoney.esm</li>  
+                          <li>FalloutNV.esm</li>  
+                          <li>GunRunnersArsenal.esm</li>  
+                          <li>HonestHearts.esm</li>  
+                          <li>LonesomeRoad.esm</li>  
+                          <li>MercenaryPack.esm</li>  
+                          <li>OldWorldBlues.esm</li>  
+                          <li>TribalPack.esm</li>  
+                          <li>CaravanPack - Main.bsa</li>  
+                          <li>ClassicPack - Main.bsa</li>  
+                          <li>DeadMoney - Main.bsa</li>  
+                          <li>DeadMoney - Sounds.bsa</li>  
+                          <li>Fallout - Meshes.bsa</li>  
+                          <li>Fallout Misc.bsa</li>  
+                          <li>Fallout - Sound.bsa</li>  
+                          <li>Fallout - Textures.bsa</li>  
+                          <li>Fallout - Textures2.bsa</li>  
+                          <li>Fallout - Voices1.bsa</li>  
+                          <li>GunRunnersArsenal - Main.bsa</li>  
+                          <li>GunRunnersArsenal - Sounds.bsa</li>  
+                          <li>Honest Hearts - Main.bsa</li>  
+                          <li>Honest Hearts - Sounds.bsa</li>  
+                          <li>LonesomeRoad - Main.bsa</li>  
+                          <li>LonesomeRoad - Sounds.bsa</li>  
+                          <li>MercenaryPack - Main.bsa</li>  
+                          <li>OldWorldBlues - Main.bsa</li>  
+                          <li>OldWorldBlues - Sounds.bsa</li>  
+                          <li>TribalPack - Main.bsa</li>  
+                          <li>Update.bsa</li>  
+                          </strong>  
+                        
+                        </ul> 
+                    <p>For Steam:</p>  
+                      <li>Launch Steam and select <strong>Library</strong></li>
+                      <li>Right-click on <strong>Fallout New Vegas</strong> and select <strong>Properties</strong></li>
+                      <li>Navigate to the <strong>Local Files</strong> tab and select <strong>Verify Integrity of Game Files...</strong></li>
+                      <li>Wait for the verification to complete, and then exit that window and wait for the download to finish</li>
+                    <p>For GOG:</p>  
+                      <li>Launch GOG and select <strong>Library</strong></li>
+                      <li>Select <strong>Fallout New Vegas</strong> and then select <strong>More -> Manage installation -> Verify / Repair...</strong></li>
+                      <li>From the pop-up, select <strong>Verify Game</strong> and wait for the process to complete</li> 
+                  </ul>
+                </p>
+              </div>
+          </div>
+        <hr>
+        <h2 class="overlay">Disabling Overlays:</h2>
+          <p class="overlaydesc">
+            Any overlays need to be disabled for Fallout New Vegas to prevent memory leakage. Some common applications that have overlays are Steam, GOG, Discord, and MSI Afterburner.
+          </p>  
+        <hr>
+        <h2 class="modfolder">Setting up your Fallout New Vegas Modding Folder:</h2>
+          <p class="modfolderdesc">
+            Your modding folder will act as the main directory for all the tools you install, as well as any backups/screenshots/etc. you may want to keep. This folder will be referred to as the <strong>Fallout New Vegas modding folder</strong> from now on.
+              <ul class="modfolderlist">
+                <li>Create a new folder in a location of your choice outside of <em>Program Files </em> and <em>Program Files x86</em> on the same drive as your Fallout New Vegas installation, but outside of the root folder</li>
+                <li>Name it whatever you want, e.g. <em>Fallout NV Modding</em> and create two sub-folders called <strong>Backups</strong> and <strong>Tools</strong> in it</li>
+                <li>Copy all of the files ending in <strong>.ESM</strong> from the <strong>Data</strong> folder and paste them into the <strong>Backups</strong> folder</li>
+                  <ul>
+                    <li>Backups of the .ESMs should be made  so you can recover them if you accidentally edit them in FNVEdit</li>
+                  </ul>
+              </ul>
+            </p>    
+          </p>
+          <hr>
+        <h2 class="overlay">Disabling Anti-Virus:</h2>
+          <p class="overlaydesc">
+            Any anti-virus you have, inluding Windows Defender, needs to have file exceptions made for you Fallout New Vegas root folder and modding folder. I would also consider disabling it for the duration of the guide to be safe.
+          </p>
+          <hr>
+        <h2 class="runningfnv">Generating Fresh .INI Files:</h2>
+          <p class="runningfnvdesc">
+            <ul class="runningfnvlist">
+              <li>Run <strong>FalloutNVLauncher.exe</strong> from the root folder</li>
+              <li>Click OK to both the pop-ups that say <strong>Detecting Video Hardware</strong></li>
+                <ul>
+                  <li> If there isn't any pop-ups, navigate to <strong>Documents/My Games/FalloutNV</strong> and delete all the files ending in <strong>.INI</strong> then retry</li>
+                </ul>
+              <li>Select <strong>Options</strong></li>
+              <li>Verify the game is detecting and using your GPU properly</li>
+              <li>Set <strong>Resolution</strong> to your preference (The launcher usually sets it to one lower than your max resolution)</li>
+              <li>Set <strong>Antiailiasing</strong> to <strong>8 Samples</strong> (The launcher sets it to 4 even on ultra)</li>
+              <li>Click OK and then exit</li>
+            </ul>
+          </p>
+    </div>
+    <div>
+      <hr>
+      <a class="arrows" href="./core.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
+      <a class="arrows" href="./prerequisites.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
+  </div>
+</body>
+
+<script>
+  var acc = document.getElementsByClassName("accordioninstall");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+</script>
+
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Bug Fixes - Viva New Vegas</title>
+    <link rel="icon" type="image/ico" href="./img/logo.png"/>
+</head>
+<body>
+    <div>
+        <h1 class="maintitle">Viva New Vegas</h1>
+        <h4 class="subtitle"><em>A Comprehensive 2019 Fallout New Vegas Modding Guide</em></h4>
+        <hr class="line">
+        <ul class="navbar">
+            <li class="navbarli"><a href="contact.html">Contact Me</a></li>
+            <li class="navbarli"><a href="https://www.nexusmods.com/newvegas/mods/66139" target="_blank">Nexus</a></li>
+            <li class="navbarli"><a href="https://discord.gg/fXYxNPt" target="_blank">Discord</a></li>
+            <li class="navbarli"><a href="index.html">Home</a></li>
+        </ul>
+    </div>
+    <div>
+        <h1 class="coretitle">Bug Fixes</h1>   
+            <ul class="breadcrumb">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./core.html">General Information</a></li>
+                <li><a href="./installation.html">Installation</a></li>
+                <li><a href="./prerequisites.html">Tools</a></li>
+                <li><a href="./mo2config.html">Mod Organizer 2</a></li>
+                <li><a href="./initweaks.html">INI Tweaks</a></li>
+                <li><a href="./utilities.html">Utilities</a></li>
+                <li>Bug Fixes</li>
+                <li><a href="./qol.html">QOL Improvements</a></li>
+                <li><a href="./hudui.html">HUD/UI</a></li>
+                <li><a href="./corefinish.html">Finish Line</a></li>
+            </ul>
+        <hr>
+    </div>
+    <div>
+        <h2 class="modhead">A Note About Load Order and Conflict Resolution</h2>
+            <p class="moddesc">
+                LOOT is not used in this guide. The best way to sort your load order is to use FNVEdit to view the conflicts and manually sort your load order based off that/create a custom conflict resolution patch.
+                The guide will provide a handmade conflict resolution FOMOD for each module, 
+                and the order in which mods are installed are the order the mods should be in your load order unless instructed otherwise. 
+                Keep in mind that MO2 does not automatically move .ESM files to the top of the load order like it should, so you will need to manually drag mods with .ESM files to the top of the load order, below the official .ESMs.
+                There will also be instructions for checking your load order and the end of each module. 
+                For more information about load orders and conflict resolution, see the <strong>FIXING CONFLICTS</strong> section <a class="modsublink" href="https://thephoenixflavour.com/resources/plugins-and-load-order/" target="_blank">here.</a>
+            </p>
+        <h2 class="modhead">A Note About the Plugin Limit</h2>
+            <p class="moddesc">
+                Fallout New Vegas has a soft plugin cap of about 140 compared to the cap of 255 in Skyrim/Fallout 4. 
+                However, the stability of the game can decrease from around 130 onwards due to the limit varying on the size of plugins.
+                The guide will use the tool <strong>zMerge</strong> (a.k.a <strong>zEdit</strong>) to merge plugins together to stay below the limit. 
+                If you plan on adding your own mods in addition to the ones in the guide, familiarize yourself with the tool so you can stay below the limit as well. 
+            </p>
+        <h2 class="modhead">A Note About Modularity</h2>
+            <p class="moddesc">
+                Due to the conflict resolution being a fully-modular FOMOD, any mods listed can be left out <br>
+                If you plan on adding any big mods, familiarize yourself with manually solving conflicts in xEdit. <br>
+                I suggest <a class="modsublink" href="https://tes5edit.github.io/docs/" target="_blank">this</a> tutorial for familiarizing yourself with the tool and making custom conflict resolution
+            </p>
+        <h2 class="modhead">Creating a Separator in Mod Organizer 2</h2>
+            <ul class="specialinstructions">
+                <li>Right-click in the left pane of MO2 and select <strong>Create Separator</strong></li>
+                <li>Input <strong>Bug Fixes</strong> into the pop-up and select <strong>OK</strong></li>
+            </ul>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/51664?tab=files" target="_blank">Yukichigai Unofficial Patch</a></h2>
+            <p class="specialinstall"><strong>Files to install:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Main File: <strong>YUP - Base Game and All DLC</strong></li>
+                </ul>
+            <p class="moddesc"> – Purely fixes numerous bugs in the vanilla game and DLCs</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/62041?tab=files" target="_blank">Navmesh Fixes and Improvements</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Fixes almost all navmesh issues in the base game</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/62953?tab=files" target="_blank">Unofficial Patch Plus</a></h2>
+            <p class="specialinstall"><strong>Files to install:</strong></p>
+                <ul class="specialinstructions"> 
+                    <li>Main File: <strong>Unofficial Patch Plus</strong></li>
+                    <li>Optional File: <strong>Unofficial Patch Plus - Addendum</strong></li>
+                </ul>
+                <br>
+            <p class="specialinstall"><strong>Optional FNVEdit editing recommended:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Once the mod is installed, run FNVEdit through MO2</li>
+                    <li>Right-click in the <strong>Module Selection</strong> pop-up and click <strong>Select None</strong></li>
+                    <li>Check the box adjacent to <strong>Unofficial Patch Plus.esp</strong> then hold down left shift and click <strong>OK</strong></li>
+                    <li>Wait for the message <strong>Background Loader: finished</strong> to appear in the right pane</li>
+                    <li>Expand the <strong>Unofficial Patch Plus.esp</strong> header</li>
+                    <li>Right-click on the <strong>Sound</strong> header, select <strong>Remove</strong>, and click <strong>OK</strong> to the pop-up</li>
+                        <ul>
+                            <li>This tweak removes the sounds that play when you walk through bushes, which I found to be distracting and annoying</li>
+                        </ul>
+                    <li>Input <strong>15C570</strong> into the FormID search box in the top left and hit enter</li>
+                    <li>In the right pane, change the <strong>Magnitude</strong> of the record below <strong>ReduceCarryWeight</strong> in the <strong>Unofficial Patch Plus.esp</strong> column from <strong>75</strong> to <strong>0</strong></li>
+                        <ul>
+                            <li>If you do not see the <strong>ReduceCarryWeight</strong> record, right-click in the right pane and un-check <strong>Hide no conflict rows</strong></li>
+                                <ul>
+                                    <li>This tweak removes the penalty to companions' carry weight, as I know a lot of people wouldn't like that in a bug fix mod</li> 
+                                </ul>
+                        </ul>
+                    <li>When you exit FNVEdit, you should be prompted to save the edited plug-in</li>
+                    <li>Make sure <strong>Unofficial Patch Plus.esp</strong> is checked and <strong>Backup plugins</strong> is unchecked then click <strong>OK</strong></li>
+                </ul>
+            <p class="moddesc"> - Collection of supplementary bug fixes to be used alongside YUP</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65052?tab=files" target="_blank">Weapon Mesh Improvement Mod</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Fixes mesh errors, UV errors, incorrect flags, missing extra data, form lists, projectiles, and other weapon related bugs</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65041?tab=files" target="_blank">HeroinZero's Weapon Fixes</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Fixes animation and sound issues with some weapons</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/62767?tab=files" target="_blank">Throwable Weapon Fixes</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Collection of fixes for throwable weapons</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/57729/?tab=files" target="_blank">Melee Reach Fixed</a></h2>
+            <p class="specialinstall"><strong>Files to install:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Optional File - <strong>ALTERNATIVE mastahbossu's Scripted Version</strong></li>
+                </ul>
+            <p class="moddesc"> - Fixes the range of melee weapons to better represent their size</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65004?tab=files" target="_blank">Fixes for the Caesar's Legion Armors</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Fixes many mesh issues with Legion armors</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/64786?tab=files" target="_blank">Reactivated Hit Topics</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Restores NPC voice lines that activate on hit that otherwise wouldn't play</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65439/?tab=files" target="_blank">Legion AI/Combat Bark Fix</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Fixes combat-related bugs with Legionaries</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66442?tab=files" target="_blank">Reinforced Leather Armor Female Mesh Fix</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Fixes the stretched out mesh for the Reinforced Leather Armor when crouched</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66545?tab=description" target="_blank">Fixed War Room Table</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Fixes the animation from the war room table that would stop playing after a few seconds</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66775?tab=files" target="_blank">Sierra Madre Exterior Fixed</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Fixes the messed up texture on the Sierra Madre exterior</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/45052?tab=files" target="_blank">Cass Class Fix</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Changes Cass's tag skills to explosives, unarmed, and guns to better suit her character</p> 
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/62923/?tab=files" target="_blank">Enslaving Arcade Fix</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Allows you to give Arcade to Caesar at any point during the 'Et Tumor, Brute?' quest</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/64722?tab=files" target="_blank">Caleb McCaffery NPC and Hat Bug Fixes</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Fixes a few bugs relating to Caleb McCaffery and the Debt Collector quest</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/64900?tab=files" target="_blank">Nightkin Scripts Corrected</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <br>
+            <p class="specialinstall"><strong>Manual FNVEdit editing required:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Run FNVEdit through MO2</li>
+                    <li>Right-click in the <strong>Module Selection</strong> pop-up and click <strong>Select None</strong></li>
+                    <li>Check the box adjacent to <strong>Nightkin Scripts Corrected.esp</strong> then hold down left shift and click <strong>OK</strong></li>
+                    <li>Wait for the message <strong>Background Loader: finished</strong> to appear in the right pane</li>
+                    <li>Expand the <strong>Nightkin Scripts Corrected.esp</strong> header</li>
+                    <li>Right-click on the <strong>Ingestible</strong> header, select <strong>Remove</strong>, and click <strong>OK</strong> to the pop-up</li>
+                        <ul>
+                            <li>This tweak removes the changes to Stealthboys that makes them only activate when you crouch</li>
+                        </ul>
+                    <li>Expand the <strong>Activator</strong> header</li>
+                    <li>Right-click on the <strong>Ash Pile</strong> record, select <strong>Remove</strong>, and confirm any pop-ups</li>
+                    <li>Repeat for the <strong>Goo Pile</strong> record</li>
+                        <ul>
+                            <li>This tweak removes the changes to the Ash/Goo piles that make them disapeer after changing cells to retain compatibilty with UPP</li>
+                        </ul>
+                    <li>Save and exit</li>
+                </ul>
+            <p class="moddesc"> - Fixes various bugs/annoyances with Nightkin and the 'Come Fly With Me' quest, along with a few other minor fixes</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65001?tab=files" target="_blank">Door to Zion Advance Year Fix</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Fixes various bugs with entering Zion and other Zion-related bugs</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65051?tab=files" target="_blank">Rebreather Tweaked</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Fixes various bugs with the Rebreather</p>
+    </div>    
+    <div>
+        <hr>
+        <a class="arrows" href="./utilities.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
+        <a class="arrows" href="./qol.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
+    </div>
+</body>
+</html>

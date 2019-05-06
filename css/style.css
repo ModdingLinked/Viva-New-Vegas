@@ -1,0 +1,792 @@
+body {
+    font-family:tahoma, sans-serif;
+    margin:0;
+    background:#404040;
+}
+
+.maintitle {
+    color:orange;
+    text-align: left;
+    margin-top:.01em;
+    margin-left:.3em;
+}
+
+.subtitle {
+    color:#DCDCDC;
+    text-align: left;
+    margin-top:-1.25em;
+    margin-left:.5em;
+}
+
+.line {
+    margin-top:-.8em;    
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+  
+.navbarli {
+    float: right;
+}
+  
+.navbarli a {
+    display: block;
+    color:orange;
+    text-align: center;
+    padding:1em;
+    text-decoration: none;
+}
+
+.navbarli a:hover {
+    background-color:#707070;
+    transition: background-color .5s;
+}
+
+.active {
+    background-color:#707070;
+}
+
+.logo {
+    width:18%;
+    display: block;
+    margin: 0 auto;
+    padding-top:10px;
+}
+
+.quote {
+    margin-left:55%;
+    margin-top:-2.5%;
+    color:#DCDCDC;
+    font-size: calc(10px + .5vw);
+}
+
+.contact {
+    text-align: center;
+    color:orange;
+}
+
+.contactlist {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    text-align: center;
+    line-height:5em;
+}
+
+.contactlist img {
+    width:7.5%;
+}
+
+.features {
+    text-align: center;
+    color: orange;
+    padding:30px;
+    font-size:2vw;
+}
+
+.featurelist {
+    line-height: 2.25em;
+    text-align: center;
+    margin-top:-2.5%;
+    color:#DCDCDC;
+    font-size: calc(10px + .5vw);
+}
+
+.partdesc {
+    margin-top:3em;
+    display: inline-block;
+    vertical-align:top;
+    font-size:.85vw;
+    text-align: center;
+    color:#DCDCDC;
+    line-height:2.25em;
+}
+
+.partdesc img {
+    width:35%;
+
+}
+
+.coredesc {
+    margin-left:5em;
+    margin-top:4em;
+}
+
+.graphicsdesc {
+    margin-left:4em;
+    margin-top:4.8em;
+}
+
+.gameplaydesc {
+    margin-left:3em;
+}
+
+.partdesc a {
+    color:orange;
+    font-size:1.5vw; 
+}
+
+.parttitle {
+    color:orange;
+    font-size:1.5vw;
+}
+
+.partinstall {
+    color:orange;
+    font-size:1.5vw;
+}
+
+.coretitle {
+    color:orange;
+    text-align: center;
+    font-size:2vw;
+}
+
+.corereq {
+    text-align: center;
+    color:orange;
+    font-size:1.5vw;
+}
+
+.corereqlist {
+    color:#DCDCDC;
+    list-style-type: none;
+    text-align: center;
+    padding:0;
+    font-size: calc(10px + .5vw);
+    line-height:2.25em;
+}
+
+.corereqlist li a {
+    text-decoration:none;
+    color:orange;
+}
+
+.corespecs {
+    font-size:1.5vw;
+    color:orange;
+    text-align: center;
+}
+
+.specstable {
+    font-size: calc(10px + .5vw);
+    padding:0;
+}
+
+.specstable, .specstable tr, .specstable tr th, .specstable tr td {
+    border: 1px solid #DCDCDC;
+    border-collapse: collapse;
+    color:#DCDCDC;
+    text-align: center;
+}
+
+th, td {
+    padding: 1em;
+}
+
+.backarrow {
+    width:5%;
+    margin-left:44.5vw;
+}
+
+.forwardarrow {
+    width:5%;
+}
+
+.installationtitle {
+    color:orange;
+    text-align: center;
+    font-size:2vw;
+}
+
+.installparameters {
+    margin:2vw;
+    color:orange;
+    font-size:1.5vw;
+}
+
+.installparametersdesc {
+    color:#DCDCDC;
+    list-style-type: none;
+    margin:2vw;
+    padding:0;
+    font-size: calc(10px + .5vw);
+    line-height:2.25em;
+}
+
+.modulesize {
+    color:#DCDCDC;
+    font-size: calc(10px + .5vw);
+    line-height:2.25em;
+    margin:2vw;
+}
+
+.installingfnv {
+    margin:2vw;
+    color:orange;
+    font-size:1.5vw;
+}
+
+.installingfnvdesc {
+    color:#DCDCDC;
+    list-style-type: none;
+    text-align: center;
+    padding:0;
+    font-size: calc(10px + .5vw);
+    line-height:2.25em;
+}
+
+.accordioninstall {
+    background-color: #353535;
+    color: orange;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: calc(10px + .5vw);
+}
+
+.active, .accordioninstall:hover {
+    background-color:#303030;
+    transition: 0.4s;
+}
+
+.accordioninstall:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+}
+
+.panelinstall {
+    padding: 0 18px;
+    background-color: #404040;
+    display: none;
+    overflow: hidden;
+    color:#DCDCDC;
+}
+
+.steaminstall li {
+    color:#DCDCDC;
+    padding:0;
+    font-size: calc(10px + .5vw);
+    line-height:2.25em;
+}
+
+.steaminstall p {
+    color:#DCDCDC;
+    padding:0;
+    font-size: calc(10px + .5vw);
+    line-height:2.25em;
+}
+
+.steammove li {
+    color:#DCDCDC;
+    padding:0;
+    font-size: calc(10px + .5vw);
+    line-height:2.25em;
+}
+
+.steammove p {
+    color:#DCDCDC;
+    padding:0;
+    font-size: calc(10px + .5vw);
+    line-height:2.25em;
+}
+
+.steamverify li {
+    color:#DCDCDC;
+    padding:0;
+    font-size: calc(10px + .5vw);
+    line-height:2.25em;
+}
+
+.steamverify p {
+    color:#DCDCDC;
+    padding:0;
+    font-size: calc(10px + .5vw);
+    line-height:2.25em;
+}
+
+.deletelist {
+    color:#DCDCDC;
+    padding:0;
+    font-size: calc(10px + .5vw);
+    line-height:2.25em;
+}
+
+.modfolder {
+    margin:2vw;
+    color:orange;
+    font-size: calc(10px + .5vw);
+}
+
+.modfolderdesc {
+    color:#DCDCDC;
+    list-style-type: none;
+    padding:0;
+    font-size: calc(10px + .5vw);
+    line-height:2.25em;
+    padding:0 2em;
+}
+
+.modfolderlist {
+    margin:0 2vw;
+}
+
+.modfolderlist li {
+    color:#DCDCDC;
+    padding:0;
+    font-size: calc(10px + .5vw);
+    line-height:2.25em;
+}
+
+.overlay {
+    color:orange;
+    font-size: calc(12px + .5vw);
+    margin:2vw;
+}
+
+.overlaydesc {
+    color:#DCDCDC;
+    list-style-type: none;
+    font-size: calc(10px + .5vw);
+    line-height:2.25em;
+    padding:0 2em;
+}
+
+.runningfnv {
+    margin:2vw;
+    color:orange;
+    font-size:1.5vw;
+}
+
+.runningfnvdesc {
+    color:#DCDCDC;
+    list-style-type: none;
+    padding:0;
+    font-size: calc(10px + .5vw);
+    line-height:2.25em;
+}
+
+.runningfnvlist li {
+    color:#DCDCDC;
+    padding:0;
+    font-size: calc(10px + .5vw);
+    line-height:2.25em;
+}
+
+.modline {
+    margin:0;
+    padding:0;
+}
+
+.modhead {
+    margin:2vw;
+    font-size: calc(12px + .5vw);
+    color:#DCDCDC;
+
+}
+
+.modlink {
+    color:rgb(51, 122, 183);
+    text-decoration: none;
+    font-size: calc(12px + .5vw);
+}
+
+a.modlink:hover {
+    text-decoration: underline;
+}
+
+.specialinstall {
+    margin-left:2vw;
+    margin-top:-.75em;
+    font-size: calc(10px + .5vw);
+    color:orange;
+}
+
+.specialinstructions {
+    font-size: calc(10px + .5vw);
+    color:#DCDCDC;
+    margin-left:2vw;
+    line-height:2.25em;
+}
+
+.modsublink {
+    color:rgb(51, 122, 183);
+    text-decoration: none;
+    font-size: calc(10px + .5vw);
+}
+
+a.modsublink:hover {
+    text-decoration: underline;
+}
+
+.moddesc {
+    font-size: calc(10px + .5vw);
+    color:#DCDCDC;
+    padding: 0 2em;
+    line-height:1.75em;
+}
+
+.lootsort {
+    padding:0 .75em;
+    width:1.75%;
+}
+
+.mo2setting {
+    padding:0 .75em;
+    width:1.75%;
+}
+
+.initweaks {
+    list-style-type: none;
+    font-size:.85vw;
+    color:#DCDCDC;
+    line-height: 1.5em;
+    padding:1em 10em;
+}
+
+.initable {
+        font-size: calc(10px + .5vw);
+        padding:0;
+}   
+.initable, .initable tr, .initable tr th, .initable tr td {
+        border: 1px solid #DCDCDC;
+        border-collapse: collapse;
+        color:#DCDCDC;
+        text-align: center;
+}
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+}
+
+ul.breadcrumb li {
+    display: inline;
+    font-size:1vw;
+    color:#DCDCDC;
+}
+  
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #DCDCDC;
+    content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+    color: orange;
+    text-decoration: none;
+}
+  
+ul.breadcrumb li a:hover {
+    text-decoration: underline;
+}
+
+.toc_container {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #aaa;
+    display: table;
+    font-size: 95%;
+    margin-bottom: 1em;
+    padding: 20px;
+    width: auto;
+}
+
+.toc_title {
+    font-weight: 700;
+    text-align: center;
+}
+
+.toc_container li, .toc_container ul, .toc_container ul li{
+    list-style: outside none none !important;
+}
+
+.toclink {
+    color:orange;
+    text-decoration:none;
+}
+
+a.toclink:hover {
+    text-decoration: underline;
+}
+
+#FOMODImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left:2vw;
+}
+  
+#FOMODImg:hover {opacity: 0.7;}
+  
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+}
+  
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+  
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+  
+.modal-content, #caption { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+  
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+  
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+  
+.close:hover, .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+#FOMODImg2 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left:2vw;
+}
+  
+#FOMODImg2:hover {opacity: 0.7;}
+
+#caption2 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+#FOMODImg3 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left:2vw;
+}
+  
+#FOMODImg3:hover {opacity: 0.7;}
+
+#caption3 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+#FOMODImg4 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left:2vw;
+}
+  
+#FOMODImg4:hover {opacity: 0.7;}
+
+#caption4 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+#FOMODImg5 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left:2vw;
+}
+  
+#FOMODImg5:hover {opacity: 0.7;}
+
+#caption5 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+#FOMODImg6 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left:2vw;
+}
+  
+#FOMODImg6:hover {opacity: 0.7;}
+
+#caption6 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+#FOMODImg7 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left:2vw;
+}
+  
+#FOMODImg7:hover {opacity: 0.7;}
+
+#caption7 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+#FOMODImg8 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left:2vw;
+}
+  
+#FOMODImg8:hover {opacity: 0.7;}
+
+#caption8 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+#FOMODImg9 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left:2vw;
+}
+  
+#FOMODImg9:hover {opacity: 0.7;}
+
+#caption9 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+#FOMODImg10 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left:2vw;
+}
+  
+#FOMODImg10:hover {opacity: 0.7;}
+
+#caption10 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}

@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Quality of Life Improvements - Viva New Vegas</title>
+    <link rel="icon" type="image/ico" href="./img/logo.png"/>
+</head>
+<body>
+    <div>
+        <h1 class="maintitle">Viva New Vegas</h1>
+        <h4 class="subtitle"><em>A Comprehensive 2019 Fallout New Vegas Modding Guide</em></h4>
+        <hr class="line">
+        <ul class="navbar">
+            <li class="navbarli"><a href="contact.html">Contact Me</a></li>
+            <li class="navbarli"><a href="https://www.nexusmods.com/newvegas/mods/66139" target="_blank">Nexus</a></li>
+            <li class="navbarli"><a href="https://discord.gg/fXYxNPt" target="_blank">Discord</a></li>
+            <li class="navbarli"><a href="index.html">Home</a></li>
+        </ul>
+    </div>
+    <div>
+        <h1 class="coretitle">Quality of Life Improvements</h1>   
+            <ul class="breadcrumb">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./core.html">General Information</a></li>
+                <li><a href="./installation.html">Installation</a></li>
+                <li><a href="./prerequisites.html">Tools</a></li>
+                <li><a href="./mo2config.html">Mod Organizer 2</a></li>
+                <li><a href="./initweaks.html">INI Tweaks</a></li>
+                <li><a href="./utilities.html">Utilities</a></li>
+                <li><a href="./bugfix.html">Bug Fixes</a></li>
+                <li>QOL Improvements</li>
+                <li><a href="./hudui.html">HUD/UI</a></li>
+                <li><a href="./corefinish.html">Finish Line</a></li>
+            </ul>
+        <hr>
+    </div>
+    <div>
+        <h2 class="modhead">Creating a Separator in Mod Organizer 2</h2>
+            <ul class="specialinstructions">
+                <li>Right-click in the left pane of MO2 and select <strong>Create Separator</strong></li>
+                <li>Input <strong>QOL Improvements</strong> into the pop-up and select <strong>OK</strong></li>
+            </ul>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/63627?tab=files" target="_blank">SafeAutoSave</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <br>
+            <p class="specialinstall"><strong>Optional tweaking available:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Double-click on <strong>SafeAutoSave</strong> in the left pane of MO2</li>
+                    <li>In the <strong>INI-Files</strong> tab, click on <strong>Config/SafeAutoSave.ini</strong></li>
+                    <li>The auto-save hotkey, the interval for automatic saves, and the amount of saves available at once can be tweaked here</li>
+                        <ul>
+                            <li>Reference the <strong>Dec</strong> column from <a class="modsublink" href="https://geck.bethsoft.com/index.php?title=IsKeyPressed" target="_blank">this</a> for what number to use for hotkeys</li>
+                        </ul>
+                </ul>
+            <p class="moddesc"> - Replaces the vanilla auto save and quick save features with a more stable and configurable version <br>
+                                &nbsp; NOTE: With this mod, disable all vanilla autosave functions and do not use the vanilla quicksave/quickload mechanics
+            </p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/59149?tab=files" target="_blank">Collision Meshes</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Fixes collision meshes, the meshes which simulate where bullets, bodies, etc. can collide with an object, so you can now shoot through fences, car windows, etc.</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/63475/?tab=files" target="_blank">Unnecessary Physics</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Adds more detailed physics to movable objects, such as working wheels on baby carriages and tricycles</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/55334?tab=files" target="_blank">Enhanced Camera</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <br>
+            <p class="specialinstall"><strong>Optional tweaking available:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Double-click on <strong>Enhanced Camera</strong> in the left pane of MO2</li>
+                    <li>In the <strong>INI-Files</strong> tab, click on <strong>NVSE/Plugins/NVSE_EnhancedCamera.ini</strong></li>
+                    <li>All the features of the mod can be turned on/off and tweaked here</li>
+                        <ul>
+                            <li>I personally set <strong>bFirstPersonDeath</strong> to <strong>0</strong> to change the death ragdoll back to third person</li>
+                            <li><strong>fDlgFocusOverride</strong> can be set to <strong>15.0</strong> to remove dialogue zoom</li>
+                        </ul>
+                </ul>
+            <p class="moddesc"> - Enables a visible body and player shadows when in 1st person and changes 3rd person animations to 1st person</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66451?tab=files" target="_blank">DiaMoveNVSE</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <br>
+            <p class="specialinstall"><strong>Special activation instructions:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Run the game and immediately exit</li>
+                    <li>Double-click on the <strong>Overwrite</strong> folder in the left pane of MO2</li>
+                    <li>Drag the <strong>NVSE</strong> folder into the <strong>DiaMoveNVSE</strong> mod in the left pane</li>
+                </ul>
+            <br>
+            <p class="specialinstall"><strong>Optional tweaking available:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Double-click on <strong>DiaMoveNVSE</strong> in the left pane of MO2</li>
+                    <li>In the <strong>INI-Files</strong> tab, click on <strong>NVSE/Plugins/DiaMoveNVSE.ini</strong></li>
+                    <li>All the features of the mod can be turned on/off and tweaked here</li>
+                </ul>
+            <p class="moddesc"> - Enables diagonal movement for the player character <br>
+</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/55085?tab=files" target="_blank">FOV Slider</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Adds an MCM menu with options for adjusting all types of FOV</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65732?tab=files" target="_blank">Motion Sickness Destroyer</a></h2>  
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Removes all motion blur, double vision, and other nasty nauseating effects that reduce visual clarity <br>
+                                &nbsp; Only install if those effects bother you
+            </p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66347?tab=files" target="_blank">lStewieAl's Tweaks</a></h2>
+            <p class="specialinstall"><strong>Files to install:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Main File: <strong>Stewie Tweaks</strong></li>
+                    <li>Optional File: <strong>Stewie Tweaks INI</strong></li>
+                </ul>
+                <br>
+            <p class="specialinstall"><strong>Mod activation instructions</strong></p>
+                <ul class="specialinstructions">
+                    <li>Run the game and immediately exit</li>
+                    <li>Double-click on <strong>lStewieAl's Tweaks</strong> in the left pane of MO2</li>
+                    <li>In the <strong>INI-Files</strong> tab, click on <strong>nvse/plugins/nvse_stewie_tweaks.ini</strong></li>
+                    <li>All the features of the mod can be turned on/off and tweaked here (they all come off by default)</li>
+                        <ul>
+                            <li>The descriptions of the features can be seen in the <strong>Textfiles</strong> tab</li>
+                            <li>I personally change the following (Additional changes will be made in the <strong>Gameplay</strong> module):</li>
+                                <ul class="initweaks">
+                                    <li>[Tweaks]</li>
+                                    <li>bNoScreenshotPopup=1</li>
+                                    <li>bNoKarmaMessages=1</li>
+                                    <li>bNoCrippleCriticalMessages=1</li>
+                                    <li>bNoAudioDistortion=1</li>
+                                    <li>bNoScrollwheelPOVChange=1</li>
+                                    <li>bFasterSleepWait=1</li>
+                                    <li>bNoXPBarInCombat=1</li>
+                                    <li>bMidairWait=1</li>
+                                    <li>bMidairFastTravel=1</li>
+                                    <li>bBetterAutoWalk=1</li>
+                                    <li>bNoPipboyOnAltTab=1</li>
+                                    <li>bNoUnconciousMessage=1</li>
+                                    <li>bGodmodeNeedsNoAmmo=1</li>
+                                    <li>bNoStartMenuDLCPopup=1</li>
+                                    <li>bUseWASDAsArrowKeys=1</li>
+                                    <li>bUseCustomHotkeys=1</li>
+                                    <li>bHardcoreTweaks=1</li>
+                                    <li>bHideEnemyMarkers=1</li>
+                                    <li>bEquipBrokenItems=1</li>
+                                    <li>bIgnoreCompanionsVATS=1</li>
+                                    <li>bDontShowContainerAfterLockpick=1</li>
+                                    <li>bKeepPipboyLightOnCellChange=1</li>
+                                    <li>bLockpickAllowMouse=1</li>
+                                    <li>bOverencumberedTweak=1</li>
+                                    <li>bNoHackingRetryDelay=1</li>
+                                    <li>bFasterSaveMenuClose=1</li>
+                                    <li>bNoQuestFailedPopup=1</li>
+                                    <li>bFasterHackingTransition=1</li>
+                                    <li>bAllowActivateWhileAnimPlays=1</li>
+                                    <li>bKeepRouletteBetAmount=1</li>
+                                    <li>bConsoleNumpadSupport=1</li>
+                                    <br>
+                                    <li>[Hotkeys]</li>
+                                    <li>These hotkeys can be changed to personal preference</li>
+                                        <ul>
+                                            <li>Reference the <strong>Dec</strong> column from <a class="modsublink" href="https://geck.bethsoft.com/index.php?title=IsKeyPressed" target="_blank">this</a> for what number to use for hotkeys</li>
+                                        </ul>
+                                    <br>
+                                    <li>[Hardcore Tweaks]</li>
+                                    <li>bEssentialCompanions=1</li>
+                                    <br>
+                                    <li>[Over Encumbered]</li>
+                                    <li>bRemoveEncumbranceMessage=1</li>
+                                    <br>
+                                    <li>[No Quest Failed]</li>
+                                    <li>bQuestFailedOnlyIfStarted=1</li>
+                                </ul>
+                        </ul>
+                </ul>        
+                <div class="installcontainer">
+                    <button class="accordioninstall">What do these tweaks do?</button>
+                        <div class="panelinstall">
+                            <table class="initable" align="center">
+                                    <tr>
+                                        <th>Tweak</th>
+                                        <th>Effect</th>
+                                    </tr>
+                                    <tr>
+                                        <td>bNoScreenshotPopup=1</td>
+                                        <td>Disables the "Screenshot Created" corner message</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bNoKarmaMessages=1</td>
+                                        <td>Disables the good/bad karma messages and sounds</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bNoCrippleCriticalMessages=1</td>
+                                        <td>Disables the corner message that appears when crippling or critical hitting an enemy</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bNoAudioDistortion=1</td>
+                                        <td>Removes the audio distortion when NPCs are wearing masks</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bNoScrollwheelPOVChange=1</td>
+                                        <td>Stop the POV (1st/3rd person) from changing when scrolling (for use with the Hotkey Scroll Wheel mod)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bFasterSleepWait=1</td>
+                                        <td>Decreases the delay between hours while waiting or sleeping</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bNoXPBarInCombat=1</td>
+                                        <td>Delays XP popups till the end of combat</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bMidairWait=1</td>
+                                        <td>Removes the restriction of waiting while in the air</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bMidairFastTravel=1</td>
+                                        <td>Removes the restriction of fast travelling while in the air</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bBetterAutoWalk=1</td>
+                                        <td>Moving left/right no longer cancels autowalk</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bNoPipboyOnAltTab=1</td>
+                                        <td>Alt-tabbing no longer opens the Pip-Boy</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bNoUnconciousMessage=1</td>
+                                        <td>Removes the "... is now unconscious" message when an actor is knocked out</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bGodmodeNeedsNoAmmo=1</td>
+                                        <td>Allows firing with 0 ammo while in god mode</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bNoStartMenuDLCPopup=1</td>
+                                        <td>Removes the "Loading extra content" pop-up at the start menu</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bUseWASDAsArrowKeys=1</td>
+                                        <td>Allows the use of WASD in place of arrow keys and E in place of the space bar in menus</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bUseCustomHotkeys=1</td>
+                                        <td>Reassign the screenshot and Pip-Boy menu hotkeys</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bHardcoreTweaks=1</td>
+                                        <td>Enables toggling of ammo weight, sleep healing and hired companions being essential</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bHideEnemyMarkers=1</td>
+                                        <td>Removes enemy markers from the compass</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bEquipBrokenItems=1</td>
+                                        <td>Allows broken items to be equipped (so repair kits can be used on them)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bIgnoreCompanionsVATS=1</td>
+                                        <td>VATS no longer targets hired companions</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bDontShowContainerAfterLockpick=1</td>
+                                        <td>Containers no longer open after you unlock them (for use with the Loot Menu mod)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bKeepPipboyLightOnCellChange=1</td>
+                                        <td>The Pip-Boy light will no longer turn off after changing cells</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bLockpickAllowMouse=1</td>
+                                        <td>Allows you to rotate locks by holding left mouse button</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bOverencumberedTweak=1</td>
+                                        <td>Mimics the Fallout 76 encumbrance system</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bNoHackingRetryDelay=1</td>
+                                        <td>Removes the delay when re-entering a locked terminal</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bFasterSaveMenuClose=1</td>
+                                        <td>Removes the 3 second delay from the pause menu after making a save</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bNoQuestFailedPopup=1</td>
+                                        <td>Removes the pop-up and sound that appears when you fail a quest</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bFasterHackingTransition=1</td>
+                                        <td>Decreases the delay after successfully hacking a terminal from 3 seconds to 0.5 seconds</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bAllowActivateWhileAnimPlays=1</td>
+                                        <td>Allows activation of doors/containers while firing, reloading, jumping, landing etc.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bKeepRouletteBetAmount=1</td>
+                                        <td>Roulette bets no longer reset to 0 after every spin</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bConsoleNumpadSupport=1</td>
+                                        <td>Allows the use of the number pad in console</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bEssentialCompanions=1</td>
+                                        <td>Hired companions are no longer able to die</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bRemoveEncumbranceMessage=1</td>
+                                        <td>Removes the "You are overcumbered and cannot run!" messages that appear every 30sec when you are overencumbered</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bQuestFailedOnlyIfStarted=1</td>
+                                        <td>"Quest failed" pop-ups will still show up, but only if the failed quest was active</td>
+                                    </tr>
+                                </table>
+                        </div>
+                </div>
+            <p class="moddesc"> - Collection of many configurable quality of life improvements <br>
+                                &nbsp; NOTE: When the mod gets updated, you need to run the game once for the new features to show up in the INI
+            </p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66879?tab=files" target="_blank">No Map Marker Popups</a></h2> 
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Removes the confirmation pop-up when placing a map marker</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66905?tab=files" target="_blank">Container Respawns Warning</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Adds a HUD prompt if a container respawns</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66468?tab=files" target="_blank">Deselect Quests</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Allows you to, well, deselect quests</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/63809?tab=files" target="_blank">Eddie Hears an Explosion</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Irons out a clunky moment in the 'I Fought the Law' quest</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/64309?tab=files" target="_blank">Janet Rakes</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Janet now rakes the ground instead of sweeping it</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/61383?tab=files" target="_blank">Barton Thorn Acts Normally</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Barton Thorn now seeks out the player for help</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66475?tab=files" target="_blank">Passive Combat Music</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Combat music will only play if you attack or get hit</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66139?tab=files" target="_blank">Ed-E No Combat Music</a></h2>
+            <p class="specialinstall"><strong>Files to install:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Main File - <strong>1.4. Core - Ed-E No Combat Music</strong></li>
+                </ul>
+            <p class="moddesc"> - Removes the music Ed-E plays when he enters combat</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66698?tab=files" target="_blank">No Cocking Sound on Rifle Equip</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Removes the cocking sound that plays every time you equip a rifle</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/63310?tab=files" target="_blank">No Weapon Wobble</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Removes the weapon wobble without actually removing spread or scope wobble, similar to Fallout 4</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66655?tab=files" target="_blank">No Weapon Movement Penalty</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Remove the movement speed penalty when a two-handed weapon is drawn</p> 
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66411?tab=files" target="_blank">Improved Quest Objectives</a></h2>
+            <p class="specialinstall"><strong>FOMOD instructions:</strong></p>
+                <img id="FOMODImg" src="./img/iqofomod1.png" alt="IQO FOMOD 1" style="width:100%;max-width:300px">
+                    <div id="FOMODModal" class="modal">
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                <img id="FOMODImg2" src="./img/iqofomod2.png" alt="VHUD Remastered FOMOD" style="width:100%;max-width:300px">
+                    <div id="FOMODModal2" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img02">
+                        <div id="caption2"></div>
+                    </div>
+            <p class="moddesc"> - Changes the quest objective text to be more clear/grammatically correct</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/62922?tab=files" target="_blank">Character Creation Streamlined</a></h2>
+            <p class="specialinstall"><strong>Files to install:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Main File: <strong>Lore Friendly</strong></li>
+                </ul>
+            <p class="moddesc"> - Streamlines the start of the game to get the player out of Doc Mitchell's house smoothly and quickly</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/63800?tab=files" target="_blank">Vanilla Intro Plus</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Restores and improves the scene where Victor pulls the player out of the grave, providing a smooth transition into Doc Mitchell's house</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/64043?tab=files" target="_blank">Stimpak Hotkey</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <br>
+            <p class="specialinstall"><strong>Optional tweaking available:</strong></p>
+                <ul class="specialinstructions">
+                    <li>In the left pane of MO2, double-click on <strong>Stimpak Hotkey</strong></li>
+                    <li>In the <strong>INI-Files</strong> tab, click on <strong>config/Stimpak Hotkey.ini</strong></li>
+                    <li>The key-bindings and the order in which different types of stimpaks are used can be changed here</li>
+                        <ul>
+                            <li>Reference the <strong>Dec</strong> column from <a class="modsublink" href="https://geck.bethsoft.com/index.php?title=IsKeyPressed" target="_blank">this</a> for what number to use for hotkeys</li>
+                        </ul>
+                </ul>
+            <p class="moddesc"> - Adds a configurable hotkey for stimpaks</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66701?tab=files" target="_blank">First Aid NVSE</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Adds a configurable menu to use consumables on NPCs</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66321?tab=files" target="_blank">Wear Glasses with Masks</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Allows you to wear glasses with masks such as the rebreather</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66424?tab=files" target="_blank">Muzzle Flash Control</a></h2>
+            <p class="specialinstall"><strong>Files to install:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Main File - <strong>Muzzleflash Control</strong></li>
+                </ul>
+            <p class="moddesc"> - Automatically disables muzzle flash on silenced weapons</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66686?tab=files" target="_blank">B42 Quickthrow</a></h2>
+            <p class="specialinstall"><strong>Files to install:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Main File - <strong>B42 Quickthrow</strong></li>
+                    <li>Main File - <strong>oHUD-iHUD compatibility patch</strong></li>
+                </ul>
+            <p class="moddesc"> - Adds a simple and modern quick throwing mechanic</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66461?tab=files" target="_blank">Retrievable Throwables</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - All throwable projectiles (besides explosives) can be picked up once thrown </p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65146?tab=files" target="_blank">Lonesome Road Roughin It Bedroll Kit Fix</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Changes the Roughin' it! Bedroll Kit into a misc. item that needs to be dropped to use, along with a few other LR-related fixes/tweaks</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65679?tab=files" target="_blank">Vendors Containers Respawn Fix</a></h2>
+            <p class="specialinstall"><strong>Files to install:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Main File - <strong>Vendors Containers Respawn Fix - Elaborate Edition</strong></li>
+                </ul>
+                <br>
+            <p class="specialinstall"><strong>Manual FNVEdit editing recommended:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Run FNVEdit through MO2</li>
+                    <li>Right-click in the <strong>Module Selection</strong> pop-up and click <strong>Select None</strong></li>
+                    <li>Check the box adjacent to <strong>Vendors Containers Respawn Fix.esp</strong> then hold down left shift and click <strong>OK</strong></li>
+                    <li>Wait for the message <strong>Background Loader: finished</strong> to appear in the right pane</li>
+                    <li>Input <strong>B1670</strong> into the FormID search box in the top left and hit enter</li>
+                    <li>Right-click on the <strong>[06] Vendors Containers Respawn Fix.esp</strong> box on the top bar of the right pane and select <strong>Jump to</strong></li>
+                    <li>Right-click on the <strong>NovacGiftShop</strong> header that pops-up in the left pane and select <strong>Remove</strong></li>
+                        <ul>
+                            <li>This tweak removes the change from this mod that removes all of the Dino toys and Repconn rockets from Cliff Briscoe's back room</li>
+                        </ul>
+                    <li>Expand the <strong>Message</strong> header in the left pane</li>
+                    <li>Remove both the <strong>REPCONCrashMessage</strong> and <strong>NVDLC03NotEnoughCapsMsg</strong></li>
+                        <ul>
+                            <li>This tweak removes unnecessary changes to certain messages</li>
+                        </ul>
+                    <li>Save and exit</li>
+                </ul>
+            <p class="moddesc"> - Fixes the erratic respawn of vendors along with many other tweaks/QOL improvements</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66139?tab=files" target="_blank">Vendor Respawn Fix - No Sleepwear</a></h2>
+            <p class="specialinstall"><strong>Files to install:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Main File - <strong>1.5. Core - Vendor Respawn Fix No Sleepwear</strong></li>
+                </ul>
+            <p class="moddesc"> - Prevents vendors such as Mick & Ralph from wearing Sexy Sleepwear at times</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66107?tab=files" target="_blank">Day Tripper and Chemist Survivalist Style Fix</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Balances many aspects of survival mode and fixes a bug that prevented the psycho and slasher effects from stacking</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66761?tab=files" target="_blank">Convenient Companion Inventory</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Automatically applies companions' avaiable carryweight to the player</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/56457/?tab=files" target="_blank">Ownerless Trash</a></h2>
+            <p class="specialinstall"><strong>Files to install:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Optional File - <strong>Ownerless Trash with DLC</strong></li>
+                </ul>
+            <p class="moddesc"> - Removes ownership from rubbish bins for all you true dumpster divers</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/44042/?tab=files" target="_blank">Lonesome Road True Faction Allegiance</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Improves the way Lonesome Road chooses your faction duster</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65126?tab=files" target="_blank">Johnson Nash NCR Ammo Fix</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Gives Johnson Nash more ammo if your make the NCR take over Primm like he says he will</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/35701/?tab=files" target="_blank">Casino Exchange All</a></h2>
+            <p class="specialinstall"><strong>Files to install:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Main File - <strong>Casino Exchange All 15</strong></li>
+                    <li>Optional File - <strong>Voices for Casino Exchange All</strong></li>
+                </ul>
+            <p class="moddesc"> - Allows you to exchange all your types of currency, including Pre-War Money, to Casinos all at once</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/50722/?tab=files" target="_blank">Common Caravan Deck</a></h2>
+            <p class="specialinstall"><strong>Files to install:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Main File - <strong>Common Caravan Deck Sierra Madre</strong></li>
+                </ul>
+            <p class="moddesc"> - Replaces the caravan deck Ringo gives you with a generic one and replaces the generic caravan cards in vendor lists to Sierra Madre cards</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65840?tab=files" target="_blank">Bypass Minigames</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Allows you to bypass the lockpicking/hacking minigames with the 'Z' key</p> 
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66807?tab=files" target="_blank">HeightMenu</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Allows you to select your character's height during character creation <br>
+                                &nbsp; Due to the nature of this mod and Vanilla Intro Plus, the height menu will show up during VIP's cinematic
+            </p>
+    </div>   
+    <div>
+        <hr>
+        <a class="arrows" href="./bugfix.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
+        <a class="arrows" href="./hudui.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
+    </div>  
+</body>
+<script>
+var modal = document.getElementById('FOMODModal');
+
+var img = document.getElementById('FOMODImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal2');
+
+var img = document.getElementById('FOMODImg2');
+var modalImg = document.getElementById("img02");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+<script>
+var acc = document.getElementsByClassName("accordioninstall");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+        panel.style.display = "none";
+    } else {
+        panel.style.display = "block";
+    }
+    });
+}
+</script>
+</html>

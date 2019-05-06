@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>LOD - Viva New Vegas</title>
+    <link rel="icon" type="image/ico" href="./img/logo.png"/>
+</head>
+<body>
+    <div>
+        <h1 class="maintitle">Viva New Vegas</h1>
+        <h4 class="subtitle"><em>A Comprehensive 2019 Fallout New Vegas Modding Guide</em></h4>
+        <hr class="line">
+        <ul class="navbar">
+            <li class="navbarli"><a href="contact.html">Contact Me</a></li>
+            <li class="navbarli"><a href="https://www.nexusmods.com/newvegas/mods/66139" target="_blank">Nexus</a></li>
+            <li class="navbarli"><a href="https://discord.gg/fXYxNPt" target="_blank">Discord</a></li>
+            <li class="navbarli"><a href="index.html">Home</a></li>
+        </ul>
+    </div>
+    <div>
+        <h1 class="coretitle">Viva New Vegas - Visuals: LOD</h1>
+            <ul class="breadcrumb">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./visuals.html">General Information</a></li>
+                <li><a href="./visualschoose.html">Section Selection</a></li>
+                <li><a href="./medtexmodels.html">Textures/Models</a></li>
+                <li><a href="./medmenuvisuals.html">Menu Visuals</a></li>
+                <li><a href="./lightingmed.html">Environment/Lighting</a></li>
+                <li>LOD</li>
+                <li><a href="./medvisualsfinish.html">Finish Line</a></li>
+            </ul>
+        <hr>
+    </div>    
+    <div>
+        <h2 class="modhead">Creating a Separator in Mod Organizer 2</h2>
+            <ul class="specialinstructions">
+                <li>Right-click in the left pane of MO2 and select <strong>Create Separator</strong></li>
+                <li>Input <strong>LOD</strong> into the pop-up and select <strong>OK</strong></li>
+            </ul>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/58562/?tab=files" target="_blank">FNVLODGen</a></h2>
+            <p class="specialinstall"><strong>Files to install:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Main File - <strong>FNVLODGen Resources</strong></li>
+                    <li>Optional File - <strong>Trees LOD Billboards Vanilla</strong></li>
+                </ul>
+            <p class="moddesc"> - Resources required for proper LOD generation</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/61206/?tab=files" target="_blank">LOD Additions and Improvements</a></h2>
+            <p class="specialinstall"><strong>Hide the following:</strong></p>
+                <ul class="specialinstructions">
+                    <li><strong>textures/clutter/billboard01blod.dds</strong></li>
+                    <li><strong>textures/clutter/billboard01blod_n.dds</strong></li>
+                </ul>
+                <br>
+            <p class="specialinstall"><strong>Manual editing required:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Move the <strong>meshes/architecture/primm/</strong> folder to <strong>textures/architecture/</strong></li>
+                </ul>
+                <br>
+            <p class="specialinstall"><strong>Manual FNVEdit editing required:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Run FNVEdit through MO2</li>
+                    <li>Right-click in the <strong>Module Selection</strong> pop-up and click <strong>Select None</strong></li>
+                    <li>Check the box adjacent to <strong>tmzlodadditions.esp</strong> then hold down left shift and click <strong>OK</strong></li>
+                    <li>Wait for the message <strong>Background Loader: finished</strong> to appear in the right pane</li>
+                    <li>Input <strong>DA726</strong> into the FormID search box in the top left and hit enter</li>
+                    <li>Drag and drop <strong>NVDefaultExterior</strong> from <strong>FalloutNV.esm</strong> on to <strong>WastelandBaseImageSpace</strong> from <strong>tmzLODadditions.esp</strong></li>
+                    <li>Save and exit</li>
+                </ul>
+            <p class="moddesc"> - New low-poly models for FNVLODGen</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/63956/?tab=files" target="_blank">Less Horrendous Vikki and Vance Casino LOD Mesh</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Replaces the terrible LOD model and textures of the Vikki and Vance</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/64805?tab=files" target="_blank">Much Needed LOD</a></h2>
+            <p class="specialinstall"><strong>Hide the following:</strong></p>
+                <ul class="specialinstructions">
+                    <li><strong>meshes/scol/</strong></li>
+                    <li><strong>textures/scol/</strong></li>
+                    <li><strong>meshes/landscape/nv_rocks/nvn_rockcanyon19_lod.nif</strong></li>
+                    <li><strong>meshes/landscape/nv_rocks/nvn_rockcanyon19blk_lod.nif</strong></li>
+                    <li><strong>meshes/landscape/nv_rocks/nvn_rockcanyon19rdrk_lod.nif</strong></li>
+                </ul>
+                <br>
+            <p class="specialinstall"><strong>Manual FNVEdit editing required:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Run FNVEdit through MO2</li>
+                    <li>Right-click in the <strong>Module Selection</strong> pop-up and click <strong>Select None</strong></li>
+                    <li>Check the box adjacent to <strong>MuchNeededLOD.esp</strong> then hold down left shift and click <strong>OK</strong></li>
+                    <li>Wait for the message <strong>Background Loader: finished</strong> to appear in the right pane</li>
+                    <li>Input <strong>119878</strong> into the FormID search box in the top left and hit enter</li>
+                    <li>In the right pane, right-click on the <strong>Visible when distant</strong> flag and select <strong>Remove</strong></li>
+                        <ul>
+                            <li>Repeat for <strong>120F46</strong>, <strong>12FC67</strong>, and <strong>144B9B</strong></li>
+                        </ul>
+                    <li>Save and exit</li>
+                </ul>
+            <p class="moddesc"> - Adds new distant LOD to vehicles, roads, barricades, rocks/cliffs, etc.</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/64698?tab=files" target="_blank">NMC LOD Texture Patch</a></h2>
+            <p class="specialinstall"><strong>Files to install:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Main File - <strong>NMC LOD Patch</strong></li>
+                </ul>
+            <p class="moddesc"> - Patches LOD files to use NMCs textures</p>
+        <h2 class="modhead"><a class="modlink" href="https://drive.google.com/open?id=1n4eYVGJsIb-iQhMDcueHBffsW8FAMNsx" target="_blank">ETL - Terrain LOD Noise</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Improves the generic LOD noise texture. Edited to reduce the <strong>terrainnoise.dds</strong> and <strong>noisemap.dds</strong> to 1k and the <strong>noisenormal_n.dds</strong> to 512px to reduce shimmering. Original mod by <a class="modsublink" href="https://www.nexusmods.com/newvegas/mods/63139" target="_blank">tgspy</a></p>
+        <h2 class="modhead">Running FNVLODGen</h2>
+            <ul class="specialinstructions">
+                <li>Right-click in the left pane of MO2 and select <strong>All Mods -> Create empty mod</strong></li>
+                <li>Input <strong>FNVLODGen Output</strong> into the pop-up and select <strong>OK</strong></li>
+                <li>Activate the mod you just created in the left pane of MO2</li>
+                <li>Click the <img src="./img/mo2executabes.png" alt="MO2 Executables Button"> button on the top bar of MO2</li>
+                <li>Select the <strong>FNVLODGen</strong> option</li>
+                <li>Check the box next to <strong>Create Files in Mod instead of Overwrite (*)</strong> and from the drop-down menu select <strong>FNVLODGen Output</strong></li>
+                <li>Select <strong>Modify</strong> and then exit</li>
+                <li>Run FNVLODGen through MO2</li>
+                <li>Configure your settings as follows:</li>
+                    <ul>
+                        <li>Each option for <strong>Setting for</strong> (LOD4, LOD8, LOD16, LOD32) is its own section that needs to be configured</li>
+                        <li>If the settings that are grayed-out are different for you, just ignore them</li>
+                    </ul>
+            </ul>
+                <img id="FOMODImg" src="./img/lodgen4.png" alt="FNVLODGen LOD4" style="width:100%;max-width:300px">
+                    <div id="FOMODModal" class="modal">
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                <img id="FOMODImg2" src="./img/lodgen8.png" alt="FNVLODGen LOD8" style="width:100%;max-width:300px">
+                    <div id="FOMODModal2" class="modal">
+                        <img class="modal-content" id="img02">
+                        <div id="caption2"></div>
+                    </div>
+                <img id="FOMODImg3" src="./img/lodgen16.png" alt="FNVLODGen LOD16" style="width:100%;max-width:300px">
+                    <div id="FOMODModal3" class="modal">
+                        <img class="modal-content" id="img03">
+                        <div id="caption3"></div>
+                    </div>
+                <img id="FOMODImg4" src="./img/lodgen32.png" alt="FNVLODgen LOD32" style="width:100%;max-width:300px">
+                    <div id="FOMODModal4" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img04">
+                        <div id="caption4"></div>
+                    </div>
+            <ul class="specialinstructions">
+                <li>Once the settings are configured, select <strong>Generate</strong></li>
+                <li>Let the generation process run (took around 1.5 hours on my i5) and close the program once the message <strong>LOD Generator finished (you can close this application now)</strong> appears</li>
+            </ul>
+    </div> 
+    <div>
+        <hr>
+        <a class="arrows" href="./lightingmed.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
+        <a class="arrows" href="./medvisualsfinish.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
+    </div>   
+</body>
+<script>
+var modal = document.getElementById('FOMODModal');
+
+var img = document.getElementById('FOMODImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal2');
+
+var img = document.getElementById('FOMODImg2');
+var modalImg = document.getElementById("img02");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal3');
+
+var img = document.getElementById('FOMODImg3');
+var modalImg = document.getElementById("img03");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal4');
+
+var img = document.getElementById('FOMODImg4');
+var modalImg = document.getElementById("img04");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+</html>

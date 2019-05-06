@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Utilities - Viva New Vegas</title>
+    <link rel="icon" type="image/ico" href="./img/logo.png"/>
+</head>
+<body>
+    <div>
+        <h1 class="maintitle">Viva New Vegas</h1>
+        <h4 class="subtitle"><em>A Comprehensive 2019 Fallout New Vegas Modding Guide</em></h4>
+        <hr class="line">
+        <ul class="navbar">
+            <li class="navbarli"><a href="contact.html">Contact Me</a></li>
+            <li class="navbarli"><a href="https://www.nexusmods.com/newvegas/mods/66139" target="_blank">Nexus</a></li>
+            <li class="navbarli"><a href="https://discord.gg/fXYxNPt" target="_blank">Discord</a></li>
+            <li class="navbarli"><a href="index.html">Home</a></li>
+        </ul>
+    </div>
+    <div>
+        <h1 class="coretitle">Utilities</h1>   
+        <ul class="breadcrumb">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./core.html">General Information</a></li>
+            <li><a href="./installation.html">Installation</a></li>
+            <li><a href="./prerequisites.html">Tools</a></li>
+            <li><a href="./mo2config.html">Mod Organizer 2</a></li>
+            <li><a href="./initweaks.html">INI Tweaks</a></li>
+            <li>Utilities</li>
+            <li><a href="./bugfix.html">Bug Fixes</a></li>
+            <li><a href="./qol.html">QOL Improvements</a></li>
+            <li><a href="./hudui.html">HUD/UI</a></li>
+            <li><a href="./corefinish.html">Finish Line</a></li>
+        </ul>
+        <hr>
+    </div>
+    <div>
+        <h2 class="modhead">A Note About Testing the Game</h2>
+            <p class="moddesc">
+                After each section in every module, you should launch the game and make sure everything is working correctly by running around for a few minutes and testing <br>
+                various parts of mods to make sure they are working correctly
+            </p>
+        <h2 class="modhead">Creating a Separator in Mod Organizer 2</h2>
+            <ul class="specialinstructions">
+                <li>Right-click in the left pane of MO2 and select <strong>Create Separator</strong></li>
+                <li>Input <strong>Utilities</strong> into the pop-up and select <strong>OK</strong></li>
+            </ul>
+        <h2 class="modhead"><a class="modlink" href="http://nvse.silverlock.org/" target="_blank">NVSE</a></h2>
+            <p class="specialinstall"><strong>Special install instructions:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Click the link next to <strong>Download (stable version 5.1b4):</strong></li>
+                    <li>Extract the files ending in <strong>.dll</strong>, the <strong>.exe</strong>, and the <strong>Data</strong> folder to the root folder</li>
+                </ul>
+            <p class="moddesc"> - Extends the scripting capabilities of the engine and is essential for most mods</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66139?tab=files" target="_blank">NVSE_Config.ini</a></h2>
+            <p class="specialinstall"><strong>Files to install:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Main File - <strong>1.1. Core - NVSE_Config.ini</strong></li>
+                </ul>    
+            <p class="moddesc"> - Increases heap allocation to help prevent suttering/crashing</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/58277?tab=files" target="_blank">JIP LN NVSE Plugin</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - NVSE extension with 800+ new functions</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/62552?tab=files" target="_blank">4GB Patcher</a></h2>
+            <p class="specialinstall"><strong>Special install intructions:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Extract the <strong>.exe</strong> from the archive to the root folder</li>
+                    <li>Right-click on <strong>FalloutNVpatch.exe</strong> and select <strong>Run as administrator</strong></li>
+                    <li>When the command prompt appears, hit enter</li>
+                    <li>The command prompt should now exit and <strong>FalloutNV_backup.exe</strong> should appear in the root folder</li>
+                    <li>From now on, run the game through the <strong>New Vegas</strong> option in MO2</li>
+                </ul>
+            <p class="moddesc"> - Makes the game large address aware, meaning it can use 4GB of RAM instead of 2GB <br>
+                                &nbsp; Verifying your game files through either Steam or GOG will undo the patch, so you must rerun it after
+            </p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/59266/?tab=files" target="_blank">OneTweak</a></h2>
+                <p class="specialinstall"><strong>Special install instructions:</strong></p>
+                    <ul class="specialinstructions">
+                        <li>Once OneTweak is installed, run the game and immediately exit</li>
+                        <li>In the left pane of MO2, double-click on <strong>OneTweak</strong></li>
+                        <li>In the <strong>INI-Files</strong> tab, click on <strong>NVSE/plugins/OneTweak.ini</strong></li>
+                        <li>Set <strong>Foreground</strong> to <strong>4</strong></li>
+                    </ul>
+                <p class="moddesc"> - Includes borderless windowed mode, alt-tabbing, and dynamic process priority <br>
+                                    &nbsp; NOTE: Some users have reported this mod causing issues such as major stuttering. If that is the case, remove the mod and remove <strong>bFull Screen=0</strong> from the <strong>FalloutCustom.ini</strong> 
+                </p>
+        <h2 class="modhead">Verifying NVSE and the 4GB Patch are Working</h2>
+            <ul class="specialinstructions">
+                <li>Run the game through MO2</li>
+                <li>Once the game has reached the title screen, open the console by pressing the <strong>Tilde (~)</strong> key</li>
+                <li>Input <strong>getnvseversion</strong> into the console and hit enter</li>
+                    <ul>
+                        <li>The console should report <strong>NVSE version: 5</strong></li>
+                            <ul>
+                                <li>If it does not, verify NVSE is installed correctly and retry</li>
+                            </ul>
+                    </ul>
+                <li>Input <strong>getislaa</strong> into the console and hit enter</li>
+                    <ul>
+                        <li>The console should report <strong>GetisLAA >> 2.0000</strong></li>
+                            <ul>
+                                <li>If the console reports <strong>GetisLAA >> 0.0000</strong>, the patch is not installed correctly</li>
+                                <li>If the console reports <strong>GetisLAA >> 1.0000</strong>, the patch is installed correctly but is not working correctly, so you must run the game as an administrator</li>
+                            </ul>
+                    </ul>
+            </ul>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/53635/?tab=files" target="_blank">New Vegs Anti-Crash</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Implements structured exception handling and sanity checking to reduce the amount of crashes</p>
+        <h2 class="modhead">For Non-Windows 10 Users Only: <a class="modlink" href="https://www.nexusmods.com/newvegas/mods/34832/?tab=files" target="_blank">New Vegas Stutter Remover</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Fixes issues in the game engine to improve worst-case performance</p>
+        <h2 class="modhead"> For Non-Windows 10 Users Only: <a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66139?tab=files" target="_blank">NVSR Updated .INI</a></h2>
+            <p class="specialinstall">Files to install:</p>
+                <ul class="specialinstructions">
+                    <li>1.2. Core - NVSR Updated .INI</li>
+                </ul>
+            <p class="moddesc"> - Updated .INI file for NVSR with the optimal settings</p>
+        <h2 class="modhead">A Note About Broken NVSR Settings:</h2>
+            <p class="moddesc">The following settings are broken in NVSR:</p>
+                <ul class="specialinstructions">
+                    <li><strong>bManageFPS:</strong> Doesn't straight up limit FPS, but maintains a minimum FPS, so it starts to disable LOD and other things to maintain that FPS (paraphrased from RoyBatty)</li>
+                    <li><strong>bHookLightCriticalSections (Only fully broken on Windows 10):</strong> Bad implementation, broken by Windows 10 because the author relied on undefined behavior instead of <br>
+                        following the API. Causes crashes every 15-ish minutes
+                    </li>
+                    <li><strong>bReplaceHeap:</strong> Old implementation, extremely unstable, not large adress aware. Performs in function by increasing FPS, but at the cost of a much higher crash rate</li>
+                </ul>
+            <p class="moddesc">These settings are broken, no ifs, ands, or buts, about it. Don't listen to anyone who tells you otherwise</p>
+        <h2 class="modhead">For Windows 10 Users Only: <a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66537?tab=files" target="_blank">New Vegas Tick Fix</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <br>
+            <p class="specialinstall"><strong>Manual Tweaking Required:</strong></p>
+                <ul class="specialinstructions">
+                    <li>In the left pane of MO2, double-click on <strong>NVTF</strong></li>
+                    <li>In the <strong>INI-Files</strong> tab, click on <strong>nvse/plugins/FastExitnTickCountReplace.ini</strong></li>
+                    <li>Set <strong>bFastResolution</strong> to <strong>1</strong></li>
+                </ul>
+            <p class="moddesc"> - Stripped down version of NVSR designed to specifically work with Windows 10</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65906?tab=files" target="_blank">Console Paste Support</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Allows you to paste text into the console, along with a few other keyboard shortcuts</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/64888?tab=files" target="_blank">GECK Extender</a></h2>
+            <p class="specialinstall"><strong>Files to install:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Main File - <strong>Geck Extender</strong></li>
+                    <li>Optional File - <strong>GECK 4GB and NVSE Patcher</strong></li>
+                </ul>
+            <p class="specialinstall"><strong>Special install instructions:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Install the <strong>Geck Extender</strong> file normally through MO2</li>
+                    <li>Extract the <strong>.exe</strong> from the <strong>GECK 4GB and NVSE Patcher</strong> file to the root folder</li>
+                    <li>Right-click on <strong>GeckNVPatch.exe</strong> and select <strong>Run as administrator</strong></li>
+                    <li>The command prompt should automatically apply the patch and allow you to exit, and <strong>Geck_backup.exe</strong> should appear in the root folder</li>
+                </ul>
+            <p class="moddesc"> - Extends GECK functionality and fixes many bugs</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65854?tab=files" target="_blank">BSA Decompressor</a></h2>
+            <p class="specialinstall"><strong>Special install instructions:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Do not install if you have your game on a slow HDD and/or are using/plan to use TTW (TTW is not a part of the guide)</li>
+                    <li>Extract the downloaded archive to your modding folder</li>
+                    <li>Right-click <strong>FNV BSA Decompressor.exe</strong> and select <strong>Run as administrator</strong></li>
+                    <li>Read and follow the instructions of the installer carefully</li>
+                    <li>Open MO2 and click the <img class="mo2setting" src="./img/mo2ini.png" alt="mo2 ini">button on the top bar and select <strong>INI Editor</strong></li>
+                    <li>Find the following line in the <strong>fallout.ini</strong> tab</li>
+                        <ul>
+                            <li>SArchiveList=</li>
+                        </ul>
+                    <li>Replace the entire line with the following (should all be on one line):</li>
+                        <ul>
+                            <li>SArchiveList=Fallout - Invalidation.bsa, Fallout - Textures.bsa, Fallout - Textures2.bsa, Fallout - Meshes.bsa, Fallout - Meshes2.bsa, Fallout - Voices1.bsa, Fallout - Sound.bsa, Fallout - Misc.bsa</li>
+                        </ul>
+                </ul>
+            <p class="moddesc"> - Decompresses BSAs and repacks them without zlib compression and fixes certain audio files that would not play in vanilla</p>
+        <h2 class="modhead">Only needed if you did not use the BSA Decompressor: <a class="modlink" href="https://www.nexusmods.com/newvegas/mods/61265?tab=files" target="_blank">Ogg Vorbis Libraries</a></h2>
+            <p class="specialinstall"><strong>Special install instructions:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Extract the <strong>.dll</strong> files from the archive to the root folder and overwrite when prompted</li>
+                </ul>
+            <p class="moddesc"> - Latest compiled Ogg Vorbis Libraries that allow the game to play certain <strong>.ogg</strong> files it wouldn't be able to play otherwise</p>
+        <h2 class="modhead"><a class="modlink" href="http://www.tesreloaded.com/thread/494/package" target="_blank">New Vegas Reloaded - NVGE</a></h2>
+            <p class="specialinstall"><strong>Special install instructions:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Right-click on the <strong>Data</strong> folder and select <strong>Set Data Directory</strong></li>
+                        <ul>
+                            <li>The <strong>.dll</strong> file can be ignored</li>
+                        </ul>
+                </ul>
+            <p class="moddesc"> - Adds a new rendering pipeline, updates the vanilla shaders, and adds memory management</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66139?tab=files" target="_blank">NVGE Custom .INI</a></h2>
+            <p class="specialinstall"><strong>Files to install:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Main File - <strong>1.3. Core - NVGE Custom .INI</strong></li>
+                </ul>
+            <p class="moddesc"> - .INI file for NVGE that turns off all visual enhancements, just leaving the performance and stability improvements. Visual enhancements will be tweaked in the <strong>Visuals</strong> module</p>
+        <h2 class="modhead">For Users with an NVIDIA GPU Only: <a class="modlink" href="https://github.com/DeadManWalkingTO/NVidiaProfileInspectorDmW/releases" target="_blank">NVIDIA Profile Inspector</a></h2>
+            <p class="specialinstall"><strong>Special install instructions:</strong></p> 
+                <ul class="specialinstructions">
+                    <li>Extract the archive to a safe location</li>
+                    <li>Run <strong>NVidiaProfileInspectorDmW.exe</strong></li>
+                    <li>Click <strong>Yes</strong> if there is a pop-up</li>
+                    <li>From the <strong>Profiles:</strong> drop-down in the top left, select <strong>Fallout - New Vegas</strong></li>
+                    <li>In the <strong>2. - Sync and Refresh</strong> section, change the following:</li>
+                        <ul>
+                            <li>Frame Rate Limiter - <strong>58 FPS</strong></li>
+                            <li>Maximum pre-rendered frames - <strong>1</strong></li>
+                            <li>Vertical Sync - <strong>Force on</strong></li>
+                                <ul>
+                                    <li>If you use G-Sync or Freesync, do not enable <strong>Vertical Sync</strong></li>
+                                </ul>
+                        </ul>
+                    <li>In the <strong>5. - Common</strong> section, change the following:</li>
+                        <ul>
+                            <li>Power management mode - <strong>Prefer maximum performance</strong></li>
+                        </ul>
+                    <li>Click the <strong>Apply changes</strong> button in the top right then exit</li>
+                </ul>
+        <h2 class="modhead">For Users with an AMD GPU Only: Tweaking the AMD Radeon Settings</h2>
+            <ul class="specialinstructions">
+                <li>Right-click on your desktop and select <strong>AMD Radeon Settings</strong></li>
+                <li>In the <strong>Gaming</strong> tab, select the <strong>Fallout New Vegas</strong> profile</li>
+                <li>In the <strong>Profile Graphics tab</strong>, change the following:</li>
+                    <ul>
+                        <li>Wait for Vertical Refresh - <strong>Enhanced Sync</strong></li>
+                            <ul>
+                                <li>If <strong>Enhanced Sync</strong> is not an option, select <strong>Always On</strong></li>
+                                <li>If you use Freesync, do not enable <strong>Wait for Vertical Refresh</strong></li>
+                            </ul>
+                        <li>Frame Rate Target Control - <strong>Enabled, 58 FPS</strong></li>
+                    </ul>
+                <li>Hit the home button in the bottom left (the settings should automatically save), and make sure the word <strong>Enabled</strong> appears below the profile name</li>
+                    <ul>
+                        <li>If not, click the three vertical dots to the right of the profile name and select <strong>Enable Profile</strong></li>
+                    </ul>
+            </ul>
+        <h2 class="modhead"><a class="modlink" href="./optionalutilities.html" target="_blank">Other helpful (and optional) utilities not used in this guide</a></h2>
+    </div>      
+    <div>
+        <hr>
+        <a class="arrows" href="./initweaks.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
+        <a class="arrows" href="./bugfix.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
+    </div>
+</body>
+</html>
