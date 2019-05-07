@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Combat/AI - Viva New Vegas</title>
+    <link rel="icon" type="image/ico" href="./img/logo.png"/>
+</head>
+<body>
+    <div>
+        <h1 class="maintitle">Viva New Vegas</h1>
+        <h4 class="subtitle"><em>A Comprehensive 2019 Fallout New Vegas Modding Guide</em></h4>
+        <hr class="line">
+        <ul class="navbar">
+            <li class="navbarli"><a href="contact.html">Contact Me</a></li>
+            <li class="navbarli"><a href="https://www.nexusmods.com/newvegas/mods/66139" target="_blank">Nexus</a></li>
+            <li class="navbarli"><a href="https://discord.gg/fXYxNPt" target="_blank">Discord</a></li>
+            <li class="navbarli"><a href="index.html">Home</a></li>
+        </ul>
+    </div>    
+    <div>
+        <h1 class="coretitle">Combat/AI</h1>   
+            <ul class="breadcrumb">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./gameplay.html">General Information</a></li>
+                <li><a href="./gameplay-ptwb.html">PushTheWinButton's Mods</a></li>
+                <li>Combat/AI</li>
+            </ul>
+        <hr>
+    </div>      
+    <div>
+        <h2 class="modhead">Creating a Separator in Mod Organizer 2</h2>
+            <ul class="specialinstructions">
+                <li>Right-click in the left pane of MO2 and select <strong>Create Separator</strong></li>
+                <li>Input <strong>Combat + AI</strong> into the pop-up and select <strong>OK</strong></li>
+            </ul>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/61141?tab=files" target="_blank">BLEED</a></h2>
+            <p class="specialinstall"><strong>Files to install:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Optional File - <strong>BLEED NV</strong></li>
+                </ul>
+            <p class="moddesc"> - Overhauls how damage and force is applied, making combat quicker and harder, and making previously unviable builds such as unarmed more viable</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66139?tab=files" target="_blank">BLEED - No Always Knockdown Explosions</a></h2>
+            <p class="specialinstall"><strong>Files to install:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Main File - <strong>3.1. Gameplay - BLEED No Always Knockdown Explosions</strong></li>
+                </ul>
+            <p class="moddesc"> - Changes the "Always Knockdown" flag back to "Knockdown by Formula" for all explosions</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/58431?tab=files" target="_blank">Combat Enhancer</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <br>
+            <p class="specialinstall"><strong>Manual FNVEdit editing required:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Once the mod is installed, run FNVEdit through MO2</li>
+                    <li>Right-click in the <strong>Module Selection</strong> pop-up and click <strong>Select None</strong></li>
+                    <li>Check the box adjacent to <strong>CombatEnhancer.esp</strong> then hold down left shift and click <strong>OK</strong></li>
+                    <li>Wait for the message <strong>Background Loader: finished</strong> to appear in the right pane</li>
+                    <li>Input <strong>2A449</strong> into the FormID search box in the top left and hit enter</li>
+                    <li>Change the <strong>DATA - Value</strong> from <strong>2700</strong> to <strong>3700</strong></li>
+                    <li>Save and exit</li>
+                        <ul>
+                            <li>This edit fixes the typo in the maximum flee range, which was lower the the minimum</li>
+                        </ul>
+                </ul>
+            <p class="moddesc"> - Edits various game setting entries for NPCs making combat a bit more interesting</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/39058?tab=files" target="_blank">Enemy AI - Tactics - NPC Healing</a></h2>
+            <p class="specialinstall"><strong>Hide the following:</strong></p>
+                <ul class="specialinstructions">
+                    <li><strong>XFO - 9db - Enemies - NPC Healing - med.esp</strong></li>
+                    <li><strong>XFO - 9dc - Enemies - NPC Healing - high.esp</strong></li>
+                </ul>
+                <br>
+            <p class="specialinstall"><strong>Optional (Advanced) Tweaking Available:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Run GECK through MO2</li>
+                    <li>Select <strong>File -> Data…</strong></li>
+                    <li>Double-click <strong>FalloutNV.esm</strong> (An X should appear in the adjacent box)</li>
+                    <li>Double-click <strong>XFO - 9db - Enemies - NPC Healing - low.esp</strong> and select <strong>Set as Active File</strong> then select <strong>OK</strong></li>
+                    <li>Wait for the GECK to finish loading</li>
+                    <li>In the Object Window, input <strong>aaForcehealDebug</strong> into the <strong>Filter</strong> box and hit enter</li>
+                    <li>Double-click on the entry that shows up</li>
+                    <li>Find the entry in the script the reads as follows:</li>
+                        <ul>
+                            <p class="moddesc">
+                                if HealYes == 1		<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pltarget.additem stimpak 1 <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pltarget.equipitem stimpak 1 <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pltarget.playidle 3rdpspecialidlestimpak <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; set justHealed to 1 <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if getrandompercent < 30  <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pltarget.forceflee <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;endif <br>
+                                endif
+                            </p>
+                        </ul>
+                    <li>Replace it with the following (make sure the indentation stays the same):</li>
+                        <ul>
+                            <p class="moddesc">
+                                    if HealYes == 1 <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pltarget.cios stimpak <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pltarget.playidle 3rdpspecialidlestimpak <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; set justHealed to 1 <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if getrandompercent < 30 <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pltarget.forceflee <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; endif <br>
+                                    endif
+                            </p>
+                        </ul>
+                    <li>Save and script and close out of the window</li>
+                    <li>Save and exit from the GECK</li>
+                        <ul>
+                            <li>This edit directly applies the healing spell to NPCs instead of adding a Stimpak to their inventory to prevent weapon bugs</li>
+                        </ul>
+                </ul>
+            <p class="moddesc"> - NPCs use more cover, smarter tactics, more creature differences, and NPC healing</p>
+
+    </div>
+</body>
+</html>
