@@ -136,26 +136,7 @@ SOFTWARE.
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/53635/?tab=files" target="_blank">New Vegs Anti-Crash</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
             <p class="moddesc"> - Implements structured exception handling and sanity checking to reduce the amount of crashes</p>
-        <h2 class="modhead">For Non-Windows 10 Users Only: <a class="modlink" href="https://www.nexusmods.com/newvegas/mods/34832/?tab=files" target="_blank">New Vegas Stutter Remover</a></h2>
-            <p class="specialinstall"><strong>Install normally</strong></p>
-            <p class="moddesc"> - Fixes issues in the game engine to improve worst-case performance</p>
-        <h2 class="modhead"> For Non-Windows 10 Users Only: <a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66139?tab=files" target="_blank">NVSR Updated .INI</a></h2>
-            <p class="specialinstall">Files to install:</p>
-                <ul class="specialinstructions">
-                    <li>1.2. Core - NVSR Updated .INI</li>
-                </ul>
-            <p class="moddesc"> - Updated .INI file for NVSR with the optimal settings</p>
-        <h2 class="modhead">A Note About Broken NVSR Settings:</h2>
-            <p class="moddesc">The following settings are broken in NVSR:</p>
-                <ul class="specialinstructions">
-                    <li><strong>bManageFPS:</strong> Doesn't straight up limit FPS, but maintains a minimum FPS, so it starts to disable LOD and other things to maintain that FPS (paraphrased from RoyBatty)</li>
-                    <li><strong>bHookLightCriticalSections (Only fully broken on Windows 10):</strong> Bad implementation, broken by Windows 10 because the author relied on undefined behavior instead of <br>
-                        following the API. Causes crashes every 15-ish minutes
-                    </li>
-                    <li><strong>bReplaceHeap:</strong> Old implementation, extremely unstable, not large adress aware. Performs in function by increasing FPS, but at the cost of a much higher crash rate</li>
-                </ul>
-            <p class="moddesc">These settings are broken, no ifs, ands, or buts, about it. Don't listen to anyone who tells you otherwise</p>
-        <h2 class="modhead">For Windows 10 Users Only: <a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66537?tab=files" target="_blank">New Vegas Tick Fix</a></h2>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66537?tab=files" target="_blank">New Vegas Tick Fix</a></h2>
             <p class="specialinstall"><strong>Special install instructions:</strong></p>
                 <ul class="specialinstructions">
                     <li>Download the mod manually</li>
@@ -167,6 +148,18 @@ SOFTWARE.
                     <li>Set <strong>bFastResolution</strong> to <strong>1</strong></li>
                 </ul>
             <p class="moddesc"> - Stripped down version of NVSR designed to specifically work with Windows 10</p>
+        <h2 class="modhead">A Note About NVSR:</h2>
+            <p class="moddesc">You may be wondering why NVSR isn't in the guide. NVSR has many broken settings, that when turned off essentially
+                just turn off the features that remove the stuttering, <br> making it pointless. There are also bugs with NVSR unrelated to settings, such as the
+                really long fingers and bouncing NPCs. That being said, the following settings are broken in NVSR:</p>
+                <ul class="specialinstructions">
+                    <li><strong>bManageFPS:</strong> Doesn't straight up limit FPS, but maintains a minimum FPS, so it starts to disable LOD and other things to maintain that FPS (paraphrased from RoyBatty)</li>
+                    <li><strong>bHookLightCriticalSections (Only fully broken on Windows 10):</strong> Bad implementation, broken by Windows 10 because the author relied on undefined behavior instead of <br>
+                        following the API. Causes crashes every 15-ish minutes
+                    </li>
+                    <li><strong>bReplaceHeap:</strong> Old implementation, extremely unstable, not large adress aware. Performs in function by increasing FPS, but at the cost of a much higher crash rate</li>
+                </ul>
+            <p class="moddesc">These settings are broken, no ifs, ands, or buts, about it. Don't listen to anyone who tells you otherwise</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65906?tab=files" target="_blank">Console Paste Support</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
             <p class="moddesc"> - Allows you to paste text into the console, along with a few other keyboard shortcuts</p>
@@ -220,7 +213,7 @@ SOFTWARE.
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66139?tab=files" target="_blank">NVGE Custom .INI</a></h2>
             <p class="specialinstall"><strong>Files to install:</strong></p>
                 <ul class="specialinstructions">
-                    <li>Main File - <strong>1.3. Core - NVGE Custom .INI</strong></li>
+                    <li>Main File - <strong>1.2. Core - NVGE Custom .INI</strong></li>
                 </ul>
             <p class="moddesc"> - .INI file for NVGE that turns off all visual enhancements, just leaving the performance and stability improvements. Visual enhancements will be tweaked in the <strong>Visuals</strong> module</p>
         <h2 class="modhead">For Users with an NVIDIA GPU Only: <a class="modlink" href="https://github.com/DeadManWalkingTO/NVidiaProfileInspectorDmW/releases" target="_blank">NVIDIA Profile Inspector</a></h2>
