@@ -163,6 +163,19 @@ SOFTWARE.
             <ul class="specialinstructions">
                 <li>Once the settings are configured, select <strong>Generate</strong></li>
                 <li>Let the generation process run (took around 1.5 hours on my i5) and close the program once the message <strong>LOD Generator finished (you can close this application now)</strong> appears</li>
+                <li>NOTE: You may get an error message at the end of generation complaining about file paths. If that is the case, do the following:</li>
+                    <ul>
+                        <li>Click the <img src="./img/mo2executabes.png" alt="MO2 Executables Button"> button on the top bar of MO2</li>
+                        <li>Select the <strong>FNVLODGen</strong> option</li>
+                        <li>Un-check the box next to <strong>Create Files in Mod instead of Overwrite (*)</strong></li>
+                        <li>In the <strong>Arguments</strong> box, add <strong>-o:"FNVLODGen path/Output"</strong></li>
+                            <ul>
+                                <li>Make sure to change the path to your specific path, for example <strong>-o:"C:\Games\Fallout New Vegas Modding\FNVLODGen\Output"</strong></li>
+                            </ul>
+                        <li>Select <strong>Modify</strong> and then exit</li>
+                        <li>Run FNVLODGen through MO2 and follow the same instructions for running it</li>
+                        <li>Once the generation is complete, navigate to the output path you used and archive the <strong>meshes</strong> and <strong>textures</strong> folder, and install the archive through MO2</li>
+                    </ul>
             </ul>
     </div> 
     <div>
