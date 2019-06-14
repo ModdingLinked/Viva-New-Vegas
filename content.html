@@ -28,7 +28,7 @@ SOFTWARE.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Core - Viva New Vegas</title>
+    <title>Content - Viva New Vegas</title>
     <link rel="icon" type="image/ico" href="./img/logo.png"/>
 </head>
 <body>
@@ -42,57 +42,26 @@ SOFTWARE.
             <li class="navbarli"><a href="https://discord.gg/fXYxNPt" target="_blank">Discord</a></li>
             <li class="navbarli"><a href="index.html">Home</a></li>
         </ul>
-    </div>
+    </div>      
     <div>
-        <h1 class="coretitle">Core: General Information</h1>
+        <h1 class="coretitle">Content: General Information</h1>   
             <ul class="breadcrumb">
                 <li><a href="./index.html">Home</a></li>
                 <li>General Information</li>
-                <li><a href="./installation.html">Installation</a></li>
-                <li><a href="./prerequisites.html">Tools</a></li>
-                <li><a href="./mo2config.html">Mod Organizer 2</a></li>
-                <li><a href="./initweaks.html">INI Tweaks</a></li>
-                <li><a href="./utilities.html">Utilities</a></li>
-                <li><a href="./bugfix.html">Bug Fixes</a></li>
-                <li><a href="./qol.html">QOL Improvements</a></li>
-                <li><a href="./hudui.html">HUD/UI</a></li>
-                <li><a href="./corefinish.html">Finish Line</a></li>
+                <li><a href="./content-cut.html">Cut Content</a></li>
             </ul>
+        <hr>
     </div>
     <div>
-        <hr>
         <h2 class="corereq">Requirements:</h2>
             <ul class="corereqlist">
-                <li>A copy Fallout New Vegas with all the DLC from either 
-                    <a class="modsublink" href="https://store.steampowered.com/sub/13435/" target="_blank">Steam</a>    
-                    or 
-                    <a class="modsublink" href="https://www.gog.com/game/fallout_new_vegas_ultimate_edition" target="_blank"> GOG</a>
-                    (There will be instructions for properly installing it in the next step)
-                </li>
-                <li>
-                    Windows 7 or newer (64bit)
-                </li>
-                <li>A text editor (I recommend 
-                    <a class="modsublink" href="https://notepad-plus-plus.org/">Notepad++</a>)
-                </li>
-                <li>
-                    An archiving tool (I recommend 
-                    <a class="modsublink" href="https://www.7-zip.org/">7-Zip</a>)
-                </li>
-                <li>Latest GPU drivers (Either
-                    <a class="modsublink" href="https://www.nvidia.de/Download/index.aspx">NVIDIA</a>
-                    or
-                    <a class="modsublink" href="https://www.amd.com/en/support">AMD</a>)
-                </li>
-                <li>12 gigabytes of free drive space</li>
-                <li>NOT fully compatible with TTW/New California out of the box. If you want to use this as a base for either of those mods, you must be aware of the incompatibilities 
-                    (<a class="modsublink" href="https://taleoftwowastelands.com/viewtopic.php?t=6878" target="_blank">TTW</a> and <a class="modsublink" href="https://docs.google.com/document/u/1/d/14OpRnF5zW4x-qZMQ62JZgM5A4Xq02TAsDoKwKd41P_s/mobilebasic" target="_blank">New California</a>)
-                </li>
+               <li>A working installation of the <strong>Core</strong> module</li>
+               <li>x gigabyte of free disk space</li>
             </ul>
         <hr>
         <h2 class="corespecs">My System Specs:</h2>
             <ul class="corereqlist">
-                <li>The <strong>Core</strong> module should run the exact same, if not better than vanilla. My specs are just here for reference</li>
+                <li>The <strong>Conent</strong> module may make the game run slightly worse on low-end hardware due to added NPCs/scripts. My specs are here for reference</li>
             </ul>
             <table class="specstable" align="center">
                 <tr>
@@ -127,26 +96,7 @@ SOFTWARE.
     <div>
         <hr>
         <a class="arrows" href="./index.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
-        <a class="arrows" href="./installation.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
+        <a class="arrows" href="content-cut.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
     </div>
 </body>
-
-<script>
-        var acc = document.getElementsByClassName("accordioninstall");
-        var i;
-      
-        for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-      
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-              panel.style.display = "none";
-            } else {
-              panel.style.display = "block";
-            }
-          });
-        }
-</script>      
-
 </html>
