@@ -69,13 +69,14 @@ SOFTWARE.
         <h2 class="modhead">Creating a Separator in Mod Organizer 2</h2>
             <ul class="specialinstructions">
                 <li>Right-click in the left pane of MO2 and select <strong>Create Separator</strong></li>
-                <li>Input <strong>Utilities</strong> into the pop-up and select <strong>OK</strong></li>
+                <li>Input <strong>Core</strong> into the pop-up and select <strong>OK</strong></li>
+                <li>Create another separator below that called <strong>Utilities</strong></li>
             </ul>
         <h2 class="modhead"><a class="modlink" href="http://nvse.silverlock.org/" target="_blank">NVSE</a></h2>
             <p class="specialinstall"><strong>Special install instructions:</strong></p>
                 <ul class="specialinstructions">
                     <li>Click the link next to <strong>Download (stable version 5.1b4):</strong></li>
-                    <li>Extract the files ending in <strong>.dll</strong>, the <strong>.exe</strong>, and the <strong>Data</strong> folder to the root folder</li>
+                    <li>Extract all files ending in <strong>.dll</strong> and the <strong>.exe</strong> to the <strong>Root</strong> folder</li>
                 </ul>
             <p class="moddesc"> - Extends the scripting capabilities of the engine and is essential for most mods</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66139?tab=files" target="_blank">NVSE_Config.ini</a></h2>
@@ -140,7 +141,7 @@ SOFTWARE.
             <p class="moddesc"> - Stripped down version of NVSR designed to specifically work with Windows 10</p>
         <h2 class="modhead">A Note About NVSR:</h2>
             <p class="moddesc">You may be wondering why NVSR isn't in the guide. NVSR has many broken settings, that when turned off essentially
-                just turn off the features that remove the stuttering, <br> making it pointless. There are also bugs with NVSR unrelated to settings, such as the
+                disable the features that remove the stuttering, making it pointless. There are also bugs with NVSR unrelated to settings, such as the
                 really long fingers and bouncing NPCs. That being said, the following settings are broken in NVSR:</p>
                 <ul class="specialinstructions">
                     <li><strong>bManageFPS:</strong> Doesn't straight up limit FPS, but maintains a minimum FPS, so it starts to disable LOD and other things to maintain that FPS (paraphrased from RoyBatty)</li>
@@ -166,6 +167,9 @@ SOFTWARE.
                     <li>Extract the <strong>.exe</strong> from the <strong>GECK 4GB and NVSE Patcher</strong> file to the root folder</li>
                     <li>Right-click on <strong>GeckNVPatch.exe</strong> and select <strong>Run as administrator</strong></li>
                     <li>The command prompt should automatically apply the patch and allow you to exit, and <strong>Geck_backup.exe</strong> should appear in the root folder</li>
+                        <ul>
+                            <li>If the patch does not work correctly, you most likely installed the Fallout 3 version of the GECK. Double-check to make sure you clicked the right linked while installing it</li>
+                        </ul>
                 </ul>
             <p class="moddesc"> - Extends GECK functionality and fixes many bugs</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65854?tab=files" target="_blank">BSA Decompressor</a></h2>
@@ -185,7 +189,12 @@ SOFTWARE.
                             <li>SArchiveList=Fallout - Invalidation.bsa, Fallout - Textures.bsa, Fallout - Textures2.bsa, Fallout - Meshes.bsa, Fallout - Meshes2.bsa, Fallout - Voices1.bsa, Fallout - Sound.bsa, Fallout - Misc.bsa</li>
                         </ul>
                 </ul>
-            <p class="moddesc"> - Decompresses BSAs and repacks them without zlib compression and fixes certain audio files that would not play in vanilla</p>
+            <p class="moddesc"> - Decompresses BSAs and repacks them without zlib compression and fixes certain audio files that would not play in vanilla <br> <br>
+                <strong>IMPORTANT!: You will receive many missing mesh errors in-game if you did not edit the .INI file per the instructions above. Please make sure you do that tweak!</strong>
+            </p>
+
+
+
         <h2 class="modhead">Only needed if you did not use the BSA Decompressor: <a class="modlink" href="https://www.nexusmods.com/newvegas/mods/61265?tab=files" target="_blank">Ogg Vorbis Libraries</a></h2>
             <p class="specialinstall"><strong>Special install instructions:</strong></p>
                 <ul class="specialinstructions">
@@ -209,7 +218,10 @@ SOFTWARE.
                                 <li>Some users have reported this tweak needing to be made in the <strong>FalloutPrefs.ini</strong> tab</li>
                             </ul>
                 </ul>
-            <p class="moddesc"> - Adds a new rendering pipeline, updates the vanilla shaders, and adds memory management</p>
+            <p class="moddesc"> - Adds a new rendering pipeline, updates the vanilla shaders, and adds memory management <br> <br>
+                NOTE: This mod adds a fake fullscreen mode, allowing you to alt+tab in and out of the game. However, this feature does not work for some users. If this is the case for you, 
+                try <a class="modsublink" href="https://www.nexusmods.com/newvegas/mods/59266?tab=files" target="_blank">OneTweak</a> 
+            </p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66139?tab=files" target="_blank">NVGE Custom .INI</a></h2>
             <p class="specialinstall"><strong>Files to install:</strong></p>
                 <ul class="specialinstructions">
@@ -250,13 +262,15 @@ SOFTWARE.
                                 <li>If you use Freesync, do not enable <strong>Wait for Vertical Refresh</strong></li>
                             </ul>
                         <li>Enable <strong>Chill (FPS)</strong></li>
-                        <li>Set <strong>Chill Min</strong> and <strong>Chill Max</strong> to <strong>60</strong></li>
+                        <li>Set <strong>Chill Min</strong> and <strong>Chill Max</strong> to <strong>58</strong></li>
                     </ul>
                 <li>Hit the home button in the bottom left (the settings should automatically save), and make sure the word <strong>Enabled</strong> appears below the profile name</li>
                     <ul>
                         <li>If not, click the three vertical dots to the right of the profile name and select <strong>Enable Profile</strong></li>
                     </ul>
             </ul>
+        <h2 class="modhead">A Note About Capping FPS</h2>
+            <p class="moddesc">FPS <strong>must</strong> be capped to 60 or below due to the Gamebryo's physics being tied to framerate. The guide uses 58 FPS because it is supposed to prevent screen tearing if not using V-Sync</p>
         <h2 class="modhead"><a class="modlink" href="./optionalutilities.html" target="_blank">Other helpful (and optional) utilities not used in this guide</a></h2>
     </div>      
     <div>

@@ -95,7 +95,7 @@ SOFTWARE.
             </ul>
             <hr>
         <h2 class="overlay">Optional: Configuring MO2's Looks</h2>
-            <p class="overlaydesc">This section is optional only if you want to clean up MO2's interface a bit and change the theme. This is all what I do, but feel free to do more/less depending on your taste</p>
+            <p class="overlaydesc">This section is optional only if you want to clean up MO2's interface a bit and change the theme. This is all up to personal preference, so feel free to configure it to your own liking</p>
                 <ul class="specialinstructions">
                     <li>Click the <img class="mo2setting" src="./img/mo2settings.png" alt="mo2 settings"> button on the top bar of MO2</li>
                     <li>In the <strong>General</strong> tab, you can select what style you want for MO2 in the drop-down right below the language selector</li>
@@ -119,7 +119,7 @@ SOFTWARE.
                     <li>Input <strong>Vanilla</strong> for the new name</li>
                     <li>With the <strong>Vanilla</strong> profile selected, select <strong>Copy</strong></li>
                     <li>Input <strong>Testing</strong> for the name and click <strong>OK</strong></li>
-                    <li>Select the <strong>Testing</strong> folder and check both <strong>use profile-specific Game INI Files</strong> and <strong>Automatic Archive Invalidation</strong></li>
+                    <li>Select the <strong>Testing</strong> folder and check both <strong>Use profile-specific Game INI Files</strong> and <strong>Automatic Archive Invalidation</strong></li>
                     <li>With the <strong>Testing</strong> profile selected, select <strong>Copy</strong></li>
                     <li>Input <strong>Viva New Vegas - Core</strong> for the name, click <strong>OK</strong> then <strong>Close</strong></li>
                 </ul>
@@ -134,12 +134,22 @@ SOFTWARE.
                     <li>Input <strong>-IKnowWhatImDoing</strong> in the <strong>Arguments</strong> box, select <strong>Add</strong>, then <strong>Close</strong></li>
                         <ul>
                             <li>Run <strong>FNVEdit</strong> through MO2</li>
-                            <li>When the pop-up called <strong>Module Selection</strong> appears, exit the program</li>
+                            <li>Right-click in the <strong>Module Selection</strong> pop-up and click <strong>Select None</strong></li>
+                            <li>Click <strong>OK</strong></li>
+                            <li>Wait for the message <strong>Background Loader: finished</strong> to appear in the right pane</li>
+                            <li>Once the message appears, exit the program</li>
                             <li>Right-click the <strong>Overwrite</strong> folder in the left pane of MO2 and select <strong>Create Mod...</strong></li>
                             <li>Input <strong>FNVEdit Cache</strong> into the pop-up and select <strong>OK</strong></li>
                             <li>Check the box adjacent to the new mod, then right-click it and select <strong>Ignore missing data</strong></li>
+                                <ul>
+                                    <li>FNVEdit cache files help speed up load times of cached files. These cache files will only be generated if you build references (which happens whenever you load files in FNVEdit normally). As more cache files appear in the <strong>Overwrite</strong> folder, add them to the <strong>FNVEdit Cache</strong> mod too</li>
+                                        <ul>
+                                            <li>If you hold down the shift key while clicking <strong>OK</strong> in FNVEdit, it skips building references. This speeds up load times significantly, but does not generate cache files. This is how the guide will handle loading files in FNVEdit</li>
+                                        </ul>
+                                </ul>
                         </ul>
-                    <li>Add a second instance of <strong>FNVEdit</strong> the same way, but input <strong>FNVEdit Cleaner</strong> into the <strong>Title box</strong> and <strong>-QuickAutoClean</strong> to the <strong>Arguments</strong> box</li>
+                    <li>Back in the executables menu, input <strong>FNVEdit Cleaner</strong> into the <strong>Title</strong> box</li>
+                    <li>Click the three dots to the right of the <strong>Binary</strong> box, and from the pop-up navigate to where FNVEdit is installed and select <strong>FNVEditQuickAutoClean.exe</strong></li>
                     <li>Back in the executables menu, input <strong>FNVLODGen</strong> into the <strong>Title</strong> box</li>
                     <li>Click the three dots to the right of the <strong>Binary</strong> box, and from the pop-up navigate to where FNVLODGen is installed and select <strong>xLODGenx64.exe</strong></li>
                     <li>Input <strong>-FNV</strong> into the <strong>Arguments</strong> box and select <strong>Add</strong>
@@ -162,6 +172,9 @@ SOFTWARE.
                         <li>When downloading multiple files from the same page, you will be prompted with a box in Mod Organizer 2 with the options <strong>Merge</strong>, <strong>Replace</strong>, and <strong>Rename</strong></li>
                             <ul>
                                 <li>For <strong>Main Files</strong>, <strong>Updates</strong>, and <strong>Hotfixes</strong>, select <strong>Merge</strong>. This will merge the mod files together into one mod in MO2</li>
+                                    <ul>
+                                        <li>If a mod has multiple <strong>Main Files</strong>, select <strong>Rename</strong>. Naming it something different will cause MO2 to install it as its own mod.</li>
+                                    </ul>
                                 <li>For <strong>Optional Files</strong>, <strong>Miscellaneous Files</strong>, and <strong>Patches</strong>, select <strong>Rename</strong>. Naming it something different will cause MO2 to install it as its own mod.</li>
                                 <li>When updating from a previous version of a mod, select <strong>Replace</strong>. This will delete all the files from the old version of the mod and just install the ones from the new version</li>
                             </ul>
@@ -172,9 +185,9 @@ SOFTWARE.
                                 <li>Navigate to the <strong>Filetree</strong> tab</li>
                                 <li>Right-click on the listed file and select <strong>Hide</strong></li>
                             </ul>
-                        <li>If there is not an option to download a file through MO2, do the following</li>
+                        <li>If there is no <strong>Mod Manager Download</strong> button for a file, do the following:</li>
                             <ul>
-                                <li>Download the mod manually</li>
+                                <li>Click the <strong>Manual Download</strong> button</li>
                                 <li>Click the <img class="mo2setting" src="./img/mo2archive.png" alt="mo2 archive buttong"> button on the top bar of MO2</li>
                                 <li>From the pop-up, navigate to where the file installed and double-click it</li>
                                 <li>Finish the install as you would any other mod</li>
