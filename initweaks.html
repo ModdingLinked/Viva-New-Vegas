@@ -65,7 +65,7 @@ SOFTWARE.
     <div>
         <h2 class="overlay">Tweaking FalloutCustom.ini:</h2>
             <ul class="specialinstructions">
-                <li>Make sure the <strong>Viva New Vegas</strong> profile is active</li>
+                <li>Make sure the <strong>Viva New Vegas - Core</strong> profile is active</li>
                 <li>Click the <img class="mo2setting" src="./img/mo2ini.png" alt="mo2 executables"> button on the top bar of MO2 and select <strong>INI Editor</strong></li>
                 <li>Navigate to the <strong>FalloutCustom.ini</strong> tab, which should be blank</li>
                 <li>Paste the following into the box:</li>
@@ -194,10 +194,20 @@ SOFTWARE.
                                 </table>
                         </div>
                 </div>
-                <hr>
+                
+        <h2 class="overlay">INI Settings to not change:</h2>
+            <p class="moddesc">
+                <strong>uGridsToLoad=5:</strong> Changes the amount of cells loaded at once. When changed, it can cause scripts to run when they aren't supposed to, will ruin performance, and will break your game if changed on an existing save <br> <br>
+                <strong>bMultiThreadAudio=0:</strong> Can cause crashes when set to 1 <br> <br>
+                <strong>INumHavokThreads=1:</strong> Any changes to it are placebo in regards to performance, can cause instability if set over 2 <br> <br>
+                <strong>bUseThreadedBlood/Morpher/TempEffects/ParticleSystem=0:</strong> Setting any of these to 1 is placebo and will not affect performance<br> <br>
+                <strong>bUseMultiThreadedFaceGen/Trees=0:</strong> Setting any of these to 1 is placebo and will not affect performance
+                
+            </p>
+        <hr>
         <h2 class="overlay">Tweaking GECKCustom.ini:</h2>
             <ul class="specialinstructions">
-                    <li>Make sure the <strong>Viva New Vegas</strong> profile is active</li>
+                    <li>Make sure the <strong>Viva New Vegas - Core</strong> profile is active</li>
                     <li>Click the <img class="mo2setting" src="./img/mo2ini.png" alt="mo2 executables"> button on the top bar of MO2 and select <strong>INI Editor</strong></li>
                     <li>Navigate to the <strong>GECKCustom.ini</strong> tab, which should be blank</li>
                     <li>Paste the following into the box:</li>

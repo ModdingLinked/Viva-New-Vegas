@@ -69,7 +69,7 @@ SOFTWARE.
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66139?tab=files" target="_blank">Core - Conflict Resolution</a></h2>
             <p class="specialinstall"><strong>Files to install:</strong></p>
                 <ul class="specialinstructions">
-                    <li>Main File - <strong>1.8. Core - Conflict Resolution FOMOD</strong></li>
+                    <li>Main File - <strong>1.7. Core - Conflict Resolution FOMOD</strong></li>
                 </ul>
                 <br>
             <p class="specialinstall"><strong>FOMOD Install Instructions:</strong></p>
@@ -80,7 +80,7 @@ SOFTWARE.
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66139?tab=files" target="_blank">Core - Load Order.txt</a></h2>
            <p class="specialinstall"><strong>Files to install:</strong></p>
             <ul class="specialinstructions">
-                <li>Main File - <strong>1.9. Core - Load Order.txt</strong></li>
+                <li>Main File - <strong>1.8. Core - Load Order.txt</strong></li>
             </ul>
             <br>
             <p class="specialinstall"><strong>Special install instructions:</strong></p>
@@ -90,7 +90,7 @@ SOFTWARE.
                 </ul>
             <p class="moddesc"> - Ensures your load order is correct for the Core module <br> <br>
                                 NOTE: This load order assumes you followed the entire guide with all the recommended options <br>
-                                For example, if you use DarnUI or installed your own mods, those plugin-ins will need to be moved back into the correct spot after the new load order is applied
+                                For example, if you installed your own mods, those plugin-ins will be moved to the bottom of the LO and need to be manually moved back into the correct spot after the new load order is applied
             </p>
         <h2 class="modhead">Using zMerge</h2>
             <ul class="specialinstructions">
@@ -108,7 +108,7 @@ SOFTWARE.
                 <li>In the <strong>Merge Settings</strong> tab, make sure the <strong>Merge output path</strong> is pointed to your MO2 mods folder and both <strong>Disable plugins</strong> and <strong>Disable mods</strong> are un-checked</li>
                 <li>Click <strong>OK</strong> to exit the settings menu</li>
                 <li>Click the <strong>Create Merge</strong> button</li>
-                <li>In the <strong>Details</strong> tab, change the <strong>Name</strong> to <strong>Core - Merge</strong> and make sure the <strong>Merge Method</strong> is <strong>Merge down (improved)</strong></li>
+                <li>In the <strong>Details</strong> tab, change the <strong>Name</strong> to <strong>Core - Merge</strong> and make sure the <strong>Merge Method</strong> is <strong>Clean - Merge down (improved)</strong></li>
                 <li>In the <strong>Plugins</strong> tab, select the following:</li>
                     <ul class="initweaks">
                         <li>
@@ -117,71 +117,40 @@ SOFTWARE.
                                 ThrowableFixes.esp <br>
                                 Melee Reach Revised.esp <br>
                                 FixHitESP.esp <br>
-                                CassFix.esp <br>
                                 Enslave Gannon fix.esp <br>
-                                Caleb McCaffery NPC and Hat Bug Fixes.esp <br>
-                                Nightkin Scripts Corrected.esp <br>
                                 Rebreather Tweaked.esp <br>
+                                Simpler Vendor Fix.esp <br>
                                 Female White Glove Society Mask.esp <br>
                                 Motion Sickness Reduction Mod.esp <br>
-                                Eddie Hears An Explosion.esp <br>
-                                BartonThornTrigger.esp <br>
                                 Combat Music.esp <br>
-                                Clean Character Creation.esp <br>
                                 Glasses Fix.esp <br>
-                                MuzzleFlash Control.esp <br>
-                                Lonesome Road Roughin It Bedroll Kit Fix.esp <br>
-                                Vendors Containers Respawn Fix - Simple Edition.esp <br>
-                                JohnsonNashNCRAmmoFix.esp <br>
-                                Void Minigame Bypass.esp <br>
+                                Logic and Consistency Fixes.esp <br>
                                 JIP Improved Recipe Menu.esp <br>
                                 Quest Item Hider.esp <br>
                                 Tutorial Killer.esp <br>
                                 NoTrapsPopup.esp <br>
                                 Simple DLC Delay.esp <br>
                                 CardMaster DM.esp <br>
+                                Inventory Search.esp <br>
                                 Vanilla UI Plus.esp (Only if you followed the VUI+ HUD Section)<br>
                                 DarNifiedUINV.esp (Only if you followed the DarnUI HUD Section) <br>
-                                Project FNVIcons - Challenge.esp <br>
                                 Core - Conflict Resolution AIO.esp <strong><u>OR</u></strong> whatever patches you selected from the Conflict Resolution FOMOD<br>
                             </strong>
                         </li>
                     </ul>
                 <li>Click <strong>OK</strong> to exit the merge menu</li>
                 <li>Click the <strong>Build</strong> button in the top right to the right of the merge name</li>
-                <li>The merge should build successfully and you can exit out of the pop-up</li> 
-                <li>Click the <strong>Create Merge</strong> button</li>
-                <li>In the <strong>Details</strong> tab, change the <strong>Name</strong> to <strong>JustModsMerged</strong> and make sure the <strong>Merge Method</strong> is <strong>Merge down (improved)</strong></li>
-                    <ul>
-                        <li>It is important that the merge .esp name is <strong>JustModsMerged.esp</strong>, or else the game will crash</li>
-                    </ul>
-                <li>In the <strong>Plugins</strong> tab, select the following:</li>
-                    <ul class="initweaks">
-                        <li>
-                            <strong>
-                                JustDynamicCrosshair.esp <br>
-                                JustVisualObjectives.esp <br>
-                                JustHitMarker.esp <br>
-                            </strong>
-                        </li>
-                    </ul>
-                <li>Click <strong>OK</strong> to exit the merge menu</li>
-                <li>Click the Build button in the top right to the right of the merge name</li>
-                <li>The merge should build successfully and you can exit out of the program</li>
+                <li>The merge should build successfully and you can exit out of the program</li> 
                 <li>Right-click in the left pane of MO2 and select <strong>All Mods -> Refresh</strong></li>
-                <li>The merges should appear in the left pane and activate them like normal</li>
-                    <ul>
-                        <li>Move <strong>JustModsMerged.esp</strong> above <strong>Core - Merge.esp</strong></li>
-                    </ul>
+                <li>The merge should appear in the left pane and activate it like normal</li>
                 <li>Click the <img class="mo2setting" src="./img/mo2ini.png" alt="MO2 INI Button"></a> on the top bar of MO2 and select <strong>Merge Plugins Hide</strong></li>
                 <li>Right-click on the <strong>Core - Merge</strong> listing, select <strong>Disable plugins</strong>, and then close</li>
                     <ul>
-                        <li>All the mods that were merged should now appear grayed-out in the left pane of MO2</li>
-                        <li>Repeat for JustModsMerged</li>
+                        <li>All the mods that were merged should now have their plugins disappear from the right pane</li>
                     </ul>
                 <li>Use the same method to reactivate the mods when you need to rebuild the merge</li>
                     <ul>
-                        <li>When you reactivate the mods, they will reappear in your load order in alphabetical order. Reinstall the <strong>Load Order.txt</strong> files to get it back into order</li>
+                        <li>When you reactivate the mods, they will reappear in your load order in alphabetical order. Reinstall the <strong>Load Order.txt</strong> file to get it back into order</li>
                     </ul>
             </ul>  
         <h2 class="modhead">Testing the Game</h2>
@@ -192,21 +161,6 @@ SOFTWARE.
                 <li>Spend at least 15-20 minutes in game doing whatever to make sure the game is running smoothly</li>
             </ul>  
         <h2 class="modhead">Tweaking the Settings/MCM</h2>
-            <ul class="specialinstructions">
-                <li>Gameplay Settings:</li>
-            </ul>
-            <img id="FOMODImg8" src="./img/gameplaysettings.png" alt="Gameplay" style="width:100%;max-width:300px">
-                <div id="FOMODModal8" class="modal">
-                    <img class="modal-content" id="img08">
-                    <div id="caption8"></div>
-                </div>
-            <ul class="specialinstructions">
-                <ul>
-                    <li>Kill Cam Mode needs to be set to None to prevent a bug with FOV Slider</li>
-                    <li>All vanilla save functions must be turned off to prevent save corruption</li>
-                    <li>The rest can be adjusted to personal preference</li>
-                </ul>
-            </ul>
             <ul class="specialinstructions">
                 <li>Display Settings: Adjust to personal preference</li>
                 <li>Audio Settings: Adjust to personal preference</li>
@@ -263,17 +217,24 @@ SOFTWARE.
                     </ul>
             <ul class="specialinstructions">
                 <li>FOV Slider: Adjust to personal preference</li>
-                <li>First Aid NVSE: Adjust to personal preference</li>
                 <li>Quickthrow: Adjust to personal preference</li>
+                <li>Just Mods Merged:</li>
+            </ul>
+                <img id="FOMODImg8" src="./img/JMMMCM.png" alt="Just Mods Merged MCM" style="width:100%;max-width:300px">
+                <div id="FOMODModal8" class="modal">
+                    <img class="modal-content" id="img08">
+                    <div id="caption8"></div>
+                </div>
+            <ul class="specialinstructions">
                 <li>The Weapon Mod Menu: Leave default</li>
                 <li>Loot Menu: Adjust to personal preference</li>
                 <li>JIP CCC Controls: Adjust to personal preference</li>
                 <li>JIP CCC Interface:</li>
             </ul>
-                <img id="FOMODImg8" src="./img/jipccc1.png" alt="JIP CCC MCM 1" style="width:100%;max-width:300px">
-                    <div id="FOMODModal8" class="modal">
-                        <img class="modal-content" id="img08">
-                        <div id="caption8"></div>
+                <img id="FOMODImg7" src="./img/jipccc1.png" alt="JIP CCC MCM 1" style="width:100%;max-width:300px">
+                    <div id="FOMODModal7" class="modal">
+                        <img class="modal-content" id="img07">
+                        <div id="caption7"></div>
                     </div>
             <ul class="specialinstructions">
                     <ul>
@@ -289,12 +250,6 @@ SOFTWARE.
                         <img class="modal-content" id="img09">
                         <div id="caption9"></div>
                     </div>
-            <ul class="specialinstructions">
-                <li>Just Mods:</li>
-                    <ul>
-                        <li>All can be adjusted to personal preference</li>
-                    </ul>
-            </ul>       
     </div>
     <div>
         <hr>

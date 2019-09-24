@@ -28,7 +28,7 @@ SOFTWARE.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Optional Utilities - Viva New Vegas</title>
+    <title>Utilities to Avoid - Viva New Vegas</title>
     <link rel="icon" type="image/ico" href="./img/logo.png"/>
 </head>
 <body>
@@ -44,7 +44,7 @@ SOFTWARE.
         </ul>
     </div>
     <div>
-        <h1 class="coretitle">Utilities</h1>   
+        <h1 class="coretitle">Utilities to Avoid</h1>   
         <ul class="breadcrumb">
             <li><a href="./index.html">Home</a></li>
             <li><a href="./core.html">General Information</a></li>
@@ -53,27 +53,30 @@ SOFTWARE.
             <li><a href="./mo2config.html">Mod Organizer 2</a></li>
             <li><a href="./initweaks.html">INI Tweaks</a></li>
             <li><a href="./utilities.html">Utilities</a></li>
-            <li>Optional Utilities</li>
+            <li>Utilities to Avoid</li>
             <li><a href="./bugfix.html">Bug Fixes</a></li>
             <li><a href="./qol.html">QOL Improvements</a></li>
             <li><a href="./hudui.html">HUD/UI</a></li>
             <li><a href="./corefinish.html">Finish Line</a></li>
         </ul>
         <hr>
-    </div>
-    <div>    
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65960?tab=files" target="_blank">Gear Lists</a></h2>
-            <p class="moddesc"> - MCM lists containing all playable weapons and armors' FormIDs, DPS, etc</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66810?tab=files" target="_blank">Show Missing Plugins on Save Load</a></h2>
-            <p class="moddesc"> - Shows you what plugins are missing when you load a save</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66049?tab=files" target="_blank">Loaded Weapon Info Dumper</a></h2>
-            <p class="moddesc"> - Holding D on the main menu will dump loaded weapon names, FormIDs, required skill, max condition, damage, etc to multiple spreadsheets in the main directory</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/62796?tab=files" target="_blank">GameSettings Profiler</a></h2>
-            <p class="moddesc"> - In-game realtime GameSettings debug and configuration tool</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/67182?tab=files" target="_blank">Discord Rich Presence</a></h2>
-            <p class="moddesc"> - Integrates Discord Rich Presence into New Vegas</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/67395?tab=files" target="_blank">Runtime Script Profiler</a></h2>
-            <p class="moddesc"> - Resource to determine how long scripts take to execute in a single frame</p>
+    </div>    
+    <div>
+        <p class="moddesc"><strong>NVSR:</strong> You may be wondering why NVSR isn't in the guide. NVSR has many broken settings, that when turned off essentially
+            disable the features that remove the stuttering, making it pointless. There are also bugs with NVSR unrelated to settings, such as the
+            really long fingers and bouncing NPCs. That being said, the following settings are broken in NVSR:</p>
+                <ul class="specialinstructions">
+                    <li><strong>bManageFPS:</strong> Doesn't straight up limit FPS, but maintains a minimum FPS, so it starts to disable LOD and other things to maintain that FPS (paraphrased from RoyBatty)</li>
+                    <li><strong>bHookLightCriticalSections (Only fully broken on Windows 10):</strong> Bad implementation, broken by Windows 10 because the author relied on undefined behavior instead of <br>
+                        following the API. Causes crashes every 15-ish minutes
+                    </li>
+                    <li><strong>bReplaceHeap:</strong> Outdated implementation, extremely unstable, not large adress aware. Performs in function by increasing FPS, but at the cost of a much higher crash rate</li>
+                </ul>
+        <p class="moddesc"><strong>ENBoost:</strong> NVR/NVGE has superior memory management as requires no tweaking, unlike ENBoost which needs a lot of system-specific tweaking to make your game not run worse</p>
+        <p class="moddesc"><strong>Zan AutoPurge Crash Protector:</strong> Unsafe/unstable, same function is performed safely by the .INI tweaks in the guide</p>
+        <p class="moddesc"><strong>PCB Hotkey:</strong> Unsafe</p>
+        <p class="moddesc"><strong>Save Cleaner:</strong> No, just no</p>
+        <p class="moddesc"><strong>Performance of the Gods (or pretty much all mods with "Performance" in the title):</strong> Performance gain is placebo, disabling random clutter items with less than 5 polygons isn't going to do anything</p>
     </div>
 </body>
 </html>

@@ -28,7 +28,7 @@ SOFTWARE.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Optional Tools - Viva New Vegas</title>
+    <title>Tools to Avoid - Viva New Vegas</title>
     <link rel="icon" type="image/ico" href="./img/logo.png"/>
 </head>
 <body>
@@ -44,13 +44,13 @@ SOFTWARE.
         </ul>
     </div>
     <div>
-        <h1 class="coretitle">Optional Tools</h1>
+        <h1 class="coretitle">Tools to Avoid</h1>
             <ul class="breadcrumb">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./core.html">General Information</a></li>
                 <li><a href="./installation.html">Installation</a></li>
                 <li><a href="./prerequisites.html">Tools</a></li>
-                <li>Optional Tools</li>
+                <li>Tools to Avoid</li>
                 <li><a href="./mo2config.html">Mod Organizer 2</a></li>
                 <li><a href="./initweaks.html">INI Tweaks</a></li>
                 <li><a href="./utilities.html">Utilities</a></li>
@@ -59,19 +59,38 @@ SOFTWARE.
                 <li><a href="./hudui.html">HUD/UI</a></li>
                 <li><a href="./corefinish.html">Finish Line</a></li>
             </ul>
-            <hr>
-    </div>    
+        <hr>    
+    </div>
     <div>
-        <h2 class="modhead"><a class="modlink" href="https://www.dotpdn.com/downloads/pdn.html" target="_blank">Paint.net</a></h2>
-            <p class="moddesc"> - Photo viewing/editing tool I always use to handle .dds files (the format used for texture files)</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/skyrimspecialedition/mods/1756?tab=files" target="_blank">BSA Browser</a></h2>
-            <p class="moddesc"> - Allows you to browse files within .BSAs and extract them</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/fallout4/mods/6821/?tab=files" target="_blank">FOMOD Creation Tool</a></h2>
-            <p class="moddesc"> - Easily create FOMOD installers for your mods</p>
-        <h2 class="moddesc"><a class="modlink" href="https://drive.google.com/file/d/1VoYOFb1V_-tjw0A-VLHIte-p-C0XRqIY/view" target="_blank">NifSkope</a></h2>
-            <p class="moddesc"> - Tool for basic creating and editing of meshes</p>
-        <h2 class="modhead"><a class="modlink" href="https://visualstudio.microsoft.com/" target="_blank">Microsoft Visual Studio Code</a></h2>
-            <p class="moddesc"> - IDE for scripting/coding</p>
+        <h2 class="overlay">Mod Managers to Avoid:</h2>
+            <p class="moddesc"><strong>Vortex:</strong> Lacks many essential features (such as manual LO sorting), has an awful UI, and is very buggy. 
+                Uses Symlinks instead of a UVFS like MO2 (see <a class="modsublink" href="https://github.com/TanninOne/usvfs/blob/master/README.md" target="_blank">here</a> for a comparison).  Avoid at all costs <br> <br>
+
+                               <strong>NMM:</strong> Lacks many of the same features as Vortex, but gives the user slightly more control. Also prone to the same bugs such as failing to install a mod completely. 
+                               Is no longer officially supported by Nexus, but I would still recommend it over Vortex. If you are for some reason use it over MO2, at least grab the version from 
+                                <a class="modsublink" href="https://github.com/Nexus-Mods/Nexus-Mod-Manager/releases" target="_blank">GitHub</a> <br> <br>
+
+                               <strong>FOMM:</strong> Not too different than NMM, but I still recommend the GitHub release of NMM over it. If you are to use it, 
+                               grab the <a class="modsublink" href="https://www.nexusmods.com/newvegas/mods/54991?tab=files" target="_blank">Fork</a> version.
+                               A big update for FOMM - Fork is in the works and will most likely be recommended over NMM once it releases <br> <br>
+
+                               <strong>MO1:</strong> MO2, even though designed for 64bit games, works perfect for New Vegas
+            </p>
+        <h2 class="overlay">Other Tools to Avoid:</h2>
+            <p class="moddesc">
+                <strong>LOOT and automated conflict resolution (kind of):</strong> These shouldn't necessarily be completely avoided, but there are better, but not as easy, ways to manage large load orders.
+                For more information on the topic, see the <strong>FIXING CONFLICTS</strong> section <a class="modsublink" href="https://thephoenixflavour.com/resources/plugins-and-load-order/" target="_blank">here</a> <br> <br>
+
+                <strong>Nexus FNVLODGen:</strong> The Nexus version of FNVLODGen does not include the option to generate terrain LOD <br> <br>
+
+                <strong>GECK Powerup:</strong> No longer supported and is obsolete with GECK Extender <br> <br>
+
+                <strong>zEdit/zClean:</strong> Has no real advantages over xEdit and lacks the essential features/support that xEdit has <br> <br>
+
+                <strong>Ordenador/DDSopt:</strong> Breaks many textures by needlessly converting/adding alpha channels, cubemaps, and mipmaps <br> <br>
+
+                <strong>BethINI/Configator:</strong> Most INI changes are placebo at best, dangerous at worst. You really won't need any other INI tweaks than the ones in the guide
+            </p>
     </div>
     <div>
         <hr>

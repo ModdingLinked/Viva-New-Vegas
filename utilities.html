@@ -64,7 +64,7 @@ SOFTWARE.
         <h2 class="modhead">A Note About Testing the Game</h2>
             <p class="moddesc">
                 After each section in every module, you should launch the game and make sure everything is working correctly by running around for a few minutes and testing <br>
-                various parts of mods to make sure they are working correctly
+                various parts of mods
             </p>
         <h2 class="modhead">Creating a Separator in Mod Organizer 2</h2>
             <ul class="specialinstructions">
@@ -75,8 +75,10 @@ SOFTWARE.
         <h2 class="modhead"><a class="modlink" href="http://nvse.silverlock.org/" target="_blank">NVSE</a></h2>
             <p class="specialinstall"><strong>Special install instructions:</strong></p>
                 <ul class="specialinstructions">
-                    <li>Click the link next to <strong>Download (stable version 5.1b4):</strong></li>
-                    <li>Extract all files ending in <strong>.dll</strong> and the <strong>.exe</strong> to the <strong>Root</strong> folder</li>
+                    <li>Click the link next to both the <strong>Download (stable version 5.1b4):</strong> and <strong>Download (unsupported releasefast 5.1b4):</strong></li>
+                        <ul>Although the version says its unsupported, it is the same code as the stable release but with improved performance for mods that use let, arrays and strings and is perfectly safe</ul>
+                    <li>Extract all files ending in <strong>.dll</strong> and the <strong>.exe</strong> from the stable version to the <strong>Root</strong> folder</li>
+                    <li>Extract the <strong>.dll</strong> file from the unsupported release and overwrite when prompted</li>
                 </ul>
             <p class="moddesc"> - Extends the scripting capabilities of the engine and is essential for most mods</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66139?tab=files" target="_blank">NVSE_Config.ini</a></h2>
@@ -99,6 +101,9 @@ SOFTWARE.
                     <li>When the command prompt appears, hit enter</li>
                     <li>The command prompt should now exit and <strong>FalloutNV_backup.exe</strong> should appear in the root folder</li>
                     <li>From now on, run the game through the <strong>New Vegas</strong> option in MO2</li>
+                        <ul>
+                            <li>DO NOT run the game through the <strong>Fallout Launcher</strong> option, this will reset the Fallout.ini and FalloutPrefs.ini in MO2</li>
+                        </ul>
                 </ul>
             <p class="moddesc"> - Makes the game large address aware, meaning it can use 4GB of RAM instead of 2GB <br>
                                 &nbsp; Verifying your game files through either Steam or GOG will undo the patch, so you must rerun it after
@@ -139,18 +144,23 @@ SOFTWARE.
                     <li>Set <strong>bFastResolution</strong> to <strong>1</strong></li>
                 </ul>
             <p class="moddesc"> - Stripped down version of NVSR designed to specifically work with Windows 10</p>
-        <h2 class="modhead">A Note About NVSR:</h2>
-            <p class="moddesc">You may be wondering why NVSR isn't in the guide. NVSR has many broken settings, that when turned off essentially
-                disable the features that remove the stuttering, making it pointless. There are also bugs with NVSR unrelated to settings, such as the
-                really long fingers and bouncing NPCs. That being said, the following settings are broken in NVSR:</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/59266?tab=files" target="_blank">OneTweak</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <br>
+            <p class="specialinstall"><strong>Manual Tweaking Required:</strong></p>
                 <ul class="specialinstructions">
-                    <li><strong>bManageFPS:</strong> Doesn't straight up limit FPS, but maintains a minimum FPS, so it starts to disable LOD and other things to maintain that FPS (paraphrased from RoyBatty)</li>
-                    <li><strong>bHookLightCriticalSections (Only fully broken on Windows 10):</strong> Bad implementation, broken by Windows 10 because the author relied on undefined behavior instead of <br>
-                        following the API. Causes crashes every 15-ish minutes
-                    </li>
-                    <li><strong>bReplaceHeap:</strong> Old implementation, extremely unstable, not large adress aware. Performs in function by increasing FPS, but at the cost of a much higher crash rate</li>
+                    <li>Click the <img class="mo2setting" src="./img/mo2ini.png" alt="mo2 executables"> button on the toolbar of MO2 and select <strong>INI Editor</strong></li>
+                    <li>Navigate to the <strong>FalloutCustom.ini</strong> tab</li>
+                    <li>Add the following under the <strong>[Display]</strong> section</li>
+                        <ul class="initweaks">
+                            <li>bFull Screen=0</li>
+                        </ul>
+                    <li>Launch the game through MO2 and exit at the main menu</li>
+                    <li>Double-click <strong>OneTweak</strong> in the left pane of MO2</li>
+                    <li>In the <strong>INI-Files</strong> tab, click on <strong>NVSE/Plugins/OneTweak.ini</strong></li>
+                    <li>Under the <strong>[Priority]</strong> header, set <strong>Foreground</strong> to <strong>4</strong></li>
                 </ul>
-            <p class="moddesc">These settings are broken, no ifs, ands, or buts, about it. Don't listen to anyone who tells you otherwise</p>
+            <p class="moddesc"> - Adds fake fullscreen and dynamic process priority</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65906?tab=files" target="_blank">Console Paste Support</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
             <p class="moddesc"> - Allows you to paste text into the console, along with a few other keyboard shortcuts</p>
@@ -179,7 +189,7 @@ SOFTWARE.
                     <li>Extract the downloaded archive to your modding folder</li>
                     <li>Right-click <strong>FNV BSA Decompressor.exe</strong> and select <strong>Run as administrator</strong></li>
                     <li>Read and follow the instructions of the installer carefully</li>
-                    <li>Open MO2 and click the <img class="mo2setting" src="./img/mo2ini.png" alt="mo2 ini">button on the top bar and select <strong>INI Editor</strong></li>
+                    <li>Open MO2 and click the <img class="mo2setting" src="./img/mo2ini.png" alt="mo2 ini">button on the toolbar and select <strong>INI Editor</strong></li>
                     <li>Find the following line in the <strong>fallout.ini</strong> tab</li>
                         <ul>
                             <li>SArchiveList=</li>
@@ -188,6 +198,7 @@ SOFTWARE.
                         <ul>
                             <li>SArchiveList=Fallout - Invalidation.bsa, Fallout - Textures.bsa, Fallout - Textures2.bsa, Fallout - Meshes.bsa, Fallout - Meshes2.bsa, Fallout - Voices1.bsa, Fallout - Sound.bsa, Fallout - Misc.bsa</li>
                         </ul>
+                    <li>Repeat for all profiles</li>
                 </ul>
             <p class="moddesc"> - Decompresses BSAs and repacks them without zlib compression and fixes certain audio files that would not play in vanilla <br> <br>
                 <strong>IMPORTANT!: You will receive many missing mesh errors in-game if you did not edit the .INI file per the instructions above. Please make sure you do that tweak!</strong>
@@ -201,52 +212,33 @@ SOFTWARE.
                     <li>Extract the <strong>.dll</strong> files from the archive to the root folder and overwrite when prompted</li>
                 </ul>
             <p class="moddesc"> - Latest compiled Ogg Vorbis Libraries that allow the game to play certain <strong>.ogg</strong> files it wouldn't be able to play otherwise</p>
-        <h2 class="modhead"><a class="modlink" href="http://www.tesreloaded.com/thread/494/package" target="_blank">New Vegas Reloaded - NVGE</a></h2>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65525?tab=files" target="_blank">New Vegas Reloaded - NVGE</a></h2>
             <p class="specialinstall"><strong>Special install instructions:</strong></p>
                 <ul class="specialinstructions">
                     <li>Manually extract everything from the <strong>Data</strong> folder except the <strong>Music</strong> folder to the Fallout New Vegas <strong>Data</strong> folder</li>
                         <ul>
                             <li>The <strong>.dll</strong> file can be ignored</li>
                         </ul>
-                    <li>Click the <img class="mo2setting" src="./img/mo2ini.png" alt="mo2 executables"> button on the top bar of MO2 and select <strong>INI Editor</strong></li>
-                    <li>Navigate to the <strong>FalloutCustom.ini</strong> tab</li>
-                    <li>Add the following under the <strong>[Display]</strong> section</li>
-                        <ul class="initweaks">
-                            <li>bFull Screen=0</li>
-                        </ul>
-                            <ul>
-                                <li>Some users have reported this tweak needing to be made in the <strong>FalloutPrefs.ini</strong> tab</li>
-                            </ul>
                 </ul>
-            <p class="moddesc"> - Adds a new rendering pipeline, updates the vanilla shaders, and adds memory management <br> <br>
-                NOTE: This mod adds a fake fullscreen mode, allowing you to alt+tab in and out of the game. However, this feature does not work for some users. If this is the case for you, 
-                try <a class="modsublink" href="https://www.nexusmods.com/newvegas/mods/59266?tab=files" target="_blank">OneTweak</a> 
-            </p>
+            <p class="moddesc"> - Adds a new rendering pipeline, updates the vanilla shaders, and adds memory management</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66139?tab=files" target="_blank">NVGE Custom .INI</a></h2>
             <p class="specialinstall"><strong>Files to install:</strong></p>
                 <ul class="specialinstructions">
                     <li>Main File - <strong>1.2. Core - NVGE Custom .INI</strong></li>
                 </ul>
             <p class="moddesc"> - .INI file for NVGE that turns off all visual enhancements, just leaving the performance and stability improvements. Visual enhancements will be tweaked in the <strong>Visuals</strong> module</p>
-        <h2 class="modhead">For Users with an NVIDIA GPU Only: <a class="modlink" href="https://github.com/DeadManWalkingTO/NVidiaProfileInspectorDmW/releases" target="_blank">NVIDIA Profile Inspector</a></h2>
+        <h2 class="modhead">For Users with an NVIDIA GPU Only: <a class="modlink" href="https://github.com/Orbmu2k/nvidiaProfileInspector/releases" target="_blank">NVIDIA Profile Inspector</a></h2>
             <p class="specialinstall"><strong>Special install instructions:</strong></p> 
                 <ul class="specialinstructions">
                     <li>Extract the archive to a safe location</li>
-                    <li>Run <strong>NVidiaProfileInspectorDmW.exe</strong></li>
-                    <li>Click <strong>Yes</strong> if there is a pop-up</li>
+                    <li>Download the <strong>1.3. Core - NVIDIA Inspector Profile Preset</strong> file <a class="modsublink" href="https://www.nexusmods.com/newvegas/mods/66139?tab=files" target="_blank">here</a></li>
+                    <li>Extract the <strong>.nip</strong> file to the same location as NVIDIA Inspector</li>
+                    <li>Run <strong>NVidiaProfileInspector.exe</strong></li>
                     <li>From the <strong>Profiles:</strong> drop-down in the top left, select <strong>Fallout - New Vegas</strong></li>
-                    <li>In the <strong>2. - Sync and Refresh</strong> section, change the following:</li>
+                    <li>Click the <img class="mo2setting" src="./img/inspectorimport.png" alt="NVIDIA Inspector Import Key"> on the toolbar of NVIDIA Inspector and select <strong>Import Profile(s)</strong></li>
+                    <li>Select the preset you just downloaded</li>
                         <ul>
-                            <li>Frame Rate Limiter - <strong>58 FPS</strong></li>
-                            <li>Maximum pre-rendered frames - <strong>1</strong></li>
-                            <li>Vertical Sync - <strong>Force on</strong></li>
-                                <ul>
-                                    <li>If you use G-Sync or Freesync, do not enable <strong>Vertical Sync</strong></li>
-                                </ul>
-                        </ul>
-                    <li>In the <strong>5. - Common</strong> section, change the following:</li>
-                        <ul>
-                            <li>Power management mode - <strong>Prefer maximum performance</strong></li>
+                            <li>If you plan on using Freesync/G-Sync, set <strong>Vertical Sync</strong> to <strong>Force off</strong></li>
                         </ul>
                     <li>Click the <strong>Apply changes</strong> button in the top right then exit</li>
                 </ul>
@@ -272,6 +264,7 @@ SOFTWARE.
         <h2 class="modhead">A Note About Capping FPS</h2>
             <p class="moddesc">FPS <strong>must</strong> be capped to 60 or below due to the Gamebryo's physics being tied to framerate. The guide uses 58 FPS because it is supposed to prevent screen tearing if not using V-Sync</p>
         <h2 class="modhead"><a class="modlink" href="./optionalutilities.html" target="_blank">Other helpful (and optional) utilities not used in this guide</a></h2>
+        <h2 class="modhead"><a class="modlink" href="./core-utilitiesavoid.html" target="_blank">UTILITIES TO AVOID!</a></h2>
     </div>      
     <div>
         <hr>

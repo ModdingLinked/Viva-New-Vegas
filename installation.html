@@ -60,27 +60,24 @@ SOFTWARE.
         </ul>
         <hr>
         <p class="installingfnvdesc">
-            The first place every modding journey starts is with installing the game. 
-              <br>  
             If you already have done a completely fresh installation of Fallout New Vegas in the correct folder, 
-              <br>
             you may skip this step. Please double-check everything is correct though.
         </p>
         <hr>
-        <h2 class="installparameters">Installation Parameters:</h2>      
+        <h2 class="overlay">Installation Parameters:</h2>      
             <p class="installparametersdesc">
-              Fallout New Vegas and all modding tools must be installed outside all default Windows folders (<strong>Program Files</strong>, <strong>Program Files (x86)</strong>, and <strong>Documents</strong> for example)
+              - Fallout New Vegas and all modding tools must be installed outside all default Windows folders (<strong>Program Files</strong>, <strong>Program Files (x86)</strong>, and <strong>Documents</strong> for example)
                 <br>
-              Fallout New Vegas and Mod Organizer 2 must be installed on the same drive, preferably on an SSD for shorter loading screens and less stutter while loading assets
+              - Fallout New Vegas and Mod Organizer 2 must be installed on the same drive, preferably on an SSD for shorter loading times and less stutter while loading assets
                 <br>
-              Fallout New Vegas itself is just about 10 gigabytes, and the total size of the entire guide is x gigabytes
+              - Fallout New Vegas itself is just about 10 gigabytes, and the total size of the entire guide is x gigabytes
                 <ul class="modulesize">
-                  <li>Core Module - 1.9 gigabytes</li>
-                  <li>Graphics Module</li>
+                  <li>Core Module - 1.75 gigabytes (not including the game, but including all the tools)</li>
+                  <li>Graphics Module:</li>
                     <ul>
-                      <li>Low: 2.5 gigabytes</li>
-                      <li>Medium: 7 gigabytes</li>
-                      <li>High: 9.5 gigabytes</li>
+                      <li>Low - 1 gigabyte</li>
+                      <li>Medium - 4.5 gigabytes</li>
+                      <li>High - 7.25 gigabytes</li>
                     </ul>
                   <li>Gameplay Module - .8 gigabytes</li>
                   <li>Content Module - x gigabytes</li>
@@ -198,12 +195,12 @@ SOFTWARE.
             Any overlays need to be disabled for Fallout New Vegas to prevent memory leakage. Some common applications that have overlays are Steam, GOG, Discord, and MSI Afterburner.
           </p>  
         <hr>
-        <h2 class="modfolder">Setting up your Fallout New Vegas Modding Folder:</h2>
+        <h2 class="overlay">Setting up your Fallout New Vegas Modding Folder:</h2>
           <p class="modfolderdesc">
             Your modding folder will act as the main directory for all the tools you install, as well as any backups/screenshots/etc. you may want to keep. This folder will be referred to as the <strong>Modding folder</strong> from now on.
               <ul class="modfolderlist">
                 <li>Create a new folder in a location of your choice outside of the default Windows folders on the same drive as your Fallout New Vegas installation, but outside of the <strong>Root</strong> folder</li>
-                <li>Name it whatever you want, e.g. <em>Fallout NV Modding</em> and create two sub-folders called <strong>Backups</strong> and <strong>Tools</strong> in it</li>
+                <li>Name it whatever you want, e.g. <strong>Fallout NV Modding</strong>, and create two sub-folders called <strong>Backups</strong> and <strong>Tools</strong> in it</li>
                 <li>Copy all of the files ending in <strong>.ESM</strong> from the <strong>Data</strong> folder and paste them into the <strong>Backups</strong> folder</li>
                   <ul>
                     <li>Backups of the .ESMs should be made  so you can recover them if you accidentally edit them in FNVEdit</li>
@@ -217,13 +214,13 @@ SOFTWARE.
             Any anti-virus you have, inluding Windows Defender, needs to have file exceptions made for your <strong>Root</strong> folder and <strong>Modding folder</strong>. I would also consider disabling it for the duration of the guide to be safe.
           </p>
           <hr>
-        <h2 class="runningfnv">Generating Fresh .INI Files:</h2>
+        <h2 class="overlay">Generating Fresh .INI Files:</h2>
           <p class="runningfnvdesc">
             <ul class="runningfnvlist">
               <li>Run <strong>FalloutNVLauncher.exe</strong> from the root folder</li>
               <li>Click OK to both the pop-ups that say <strong>Detecting Video Hardware</strong></li>
                 <ul>
-                  <li> If there isn't any pop-ups, navigate to <strong>Documents/My Games/FalloutNV</strong> and delete all the files ending in <strong>.INI</strong> then retry</li>
+                  <li> If there aren't any pop-ups, navigate to <strong>Documents/My Games/FalloutNV</strong> and delete all the files ending in <strong>.INI</strong> then retry</li>
                 </ul>
               <li>Select <strong>Options</strong></li>
               <li>Verify the game is detecting and using your GPU properly</li>

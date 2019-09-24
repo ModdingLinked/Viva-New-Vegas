@@ -65,11 +65,10 @@ SOFTWARE.
     <div>
         <h2 class="modhead">A Note About Load Order and Conflict Resolution</h2>
             <p class="moddesc">
-                LOOT is not used in this guide. The best way to sort your load order is to use FNVEdit to view the conflicts and manually sort your load order based off that/create a custom conflict resolution patch.
-                The guide will provide a handmade conflict resolution FOMOD for each module, 
-                and the order in which mods are installed are the order the mods should be in your load order unless instructed otherwise. 
-                Keep in mind that MO2 does not automatically move .ESM files to the top of the load order like it should, so you will need to manually drag mods with .ESM files to the top of the load order, below the official .ESMs.
-                There will also be instructions for checking your load order and the end of each module. 
+                LOOT is not used in this guide. The best way to sort your load order is to use FNVEdit to view the conflicts and manually sort your load order based off that and create a custom conflict resolution patch.
+                The guide will provide a fully-modular handmade conflict resolution FOMOD for each module. This means that any mods listed can be left out, 
+                but if you plan on adding any big mods, familiarize yourself with manually solving conflicts in xEdit.
+                I suggest <a class="modsublink" href="https://tes5edit.github.io/docs/" target="_blank">this</a> tutorial for familiarizing yourself with the tool and making custom conflict resolution.
                 For more information about load orders and conflict resolution, see the <strong>FIXING CONFLICTS</strong> section <a class="modsublink" href="https://thephoenixflavour.com/resources/plugins-and-load-order/" target="_blank">here.</a>
             </p>
         <h2 class="modhead">A Note About the Plugin Limit</h2>
@@ -78,12 +77,6 @@ SOFTWARE.
                 However, the stability of the game can decrease from around 110 onwards due to the limit varying on the size of plugins.
                 The guide will use the tool <strong>zMerge</strong> (a.k.a <strong>zEdit</strong>) to merge plugins together to stay below the limit. 
                 If you plan on adding your own mods in addition to the ones in the guide, familiarize yourself with the tool so you can stay below the limit as well. 
-            </p>
-        <h2 class="modhead">A Note About Modularity</h2>
-            <p class="moddesc">
-                Due to the conflict resolution being a fully-modular FOMOD, any mods listed can be left out.
-                If you plan on adding any big mods, familiarize yourself with manually solving conflicts in xEdit.
-                I suggest <a class="modsublink" href="https://tes5edit.github.io/docs/" target="_blank">this</a> tutorial for familiarizing yourself with the tool and making custom conflict resolution
             </p>
         <h2 class="modhead">A Note About MenuMode 4 Scripts</h2>
             <p class="moddesc">
@@ -131,16 +124,43 @@ SOFTWARE.
             <p class="moddesc"> - Collection of supplementary bug fixes to be used alongside YUP <br>
                                 NOTE: This mod contains what some might call "gameplay changes." I personally look at them as continuity/QOL fixes, but 
                                 if you don't want these "gameplay changes," you can either not install the optional file which contains these changes, or try 
-                                <a class="modsublink" href="https://www.nexusmods.com/newvegas/mods/65412" target="_blank">Unoffical Patch NVSE</a> as an alternative (incompatible with Heroin Zero Weapon Fixes).
+                                <a class="modsublink" href="https://www.nexusmods.com/newvegas/mods/65412" target="_blank">Unoffical Patch NVSE</a> as an alternative
             </p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65052?tab=files" target="_blank">Weapon Mesh Improvement Mod</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
+            <br>
+            <p class="specialinstall"><strong>Manual FNVEdit editing required:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Right-click in the <strong>Module Selection</strong> pop-up and click <strong>Select None</strong></li>
+                    <li>Check the box adjacent to <strong>WMIMNV.esp</strong> then hold down left shift and click <strong>OK</strong></li>
+                    <li>Wait for the message <strong>Background Loader: finished</strong> to appear in the right pane</li>
+                    <li>Input <strong>05000906</strong> into the FormID search box in the top left and hit enter</li>
+                    <li>Right-click in the right pane and select <strong>Hide no conflict and empty rows</strong></li>
+                    <li>Drag and drop the value next to <strong>Tracer Chance</strong> from <strong>FalloutNV.esm</strong> on to the value from <strong>WMIMNV.esp</strong></li>
+                        <ul>
+                            <li>Fixes a bug that caused Dragon's Breath rounds to cause micro stutter when fired</li>
+                        </ul>
+                    <li>Input <strong>3a15e</strong> into the FormID search box in the top left and hit enter</li>
+                    <li>Drag and drop <strong>WeapNVLightMachineGun "Light Machine Gun" [WEAP:000906DF]</strong> from <strong>FalloutNV.esm</strong> on to the blank box directly next to it from <strong>WMIMNV.esp</strong></li>
+                        <ul>
+                            <li>Adds LMGs back to the FormID list of weapons that Super Mutants can use to fix them spawning with them but not being able to use them</li>
+                        </ul>
+                    <li>Input <strong>121154</strong> into the FormID search box in the top left and hit enter</li>
+                    <li>Right-click on <strong>WMIMNV.esp</strong> on the top bar of the right pane and select <strong>Remove</strong></li>
+                    <li>Save and exit</li>
+                </ul>
             <p class="moddesc"> - Fixes mesh errors, UV errors, incorrect flags, missing extra data, form lists, projectiles, and other weapon related bugs <br>
                                 NOTE: Due to the nature of this mod, any other mods that edit the same weapon meshes will be incompatible. This is why you won't see the likes of mods such as WMX or EVE. 
             </p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/62767?tab=files" target="_blank">Throwable Weapon Fixes</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
             <p class="moddesc"> - Collection of fixes for throwable weapons</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/67070?tab=files" target="_blank">Asterra's Many Fixes</a></h2>
+            <p class="specialinstall"><strong>Files to install:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Main File - <strong>Asterra's Many Fixes</strong></li>
+                </ul>
+            <p class="moddesc"> - Collection of fixes not covered by either YUP or UPP</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/57729/?tab=files" target="_blank">Melee Reach Fixed</a></h2>
             <p class="specialinstall"><strong>Files to install:</strong></p>
                 <ul class="specialinstructions">
@@ -157,72 +177,33 @@ SOFTWARE.
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/64786?tab=files" target="_blank">Reactivated Hit Topics</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
             <p class="moddesc"> - Restores NPC voice lines that activate on hit that otherwise wouldn't play</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65439/?tab=files" target="_blank">Legion AI/Combat Bark Fix</a></h2>
-            <p class="specialinstall"><strong>Install normally</strong></p>
-            <p class="moddesc"> - Fixes combat-related bugs with Legionaries</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/67070?tab=files" target="_blank">Asterra's Many Fixes</a></h2>
-            <p class="specialinstall"><strong>Files to install:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Main File - <strong>Asterra's Many Fixes</strong></li>
-                </ul>
-            <p class="moddesc"> - Collection of fixes not covered by either YUP or UPP</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66442?tab=files" target="_blank">Reinforced Leather Armor Female Mesh Fix</a></h2>
-            <p class="specialinstall"><strong>Install normally</strong></p>
-            <p class="moddesc"> - Fixes the stretched out mesh for the Reinforced Leather Armor when crouched</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66545?tab=description" target="_blank">Fixed War Room Table</a></h2>
-            <p class="specialinstall"><strong>Install normally</strong></p>
-            <p class="moddesc"> - Fixes the animation from the war room table that would stop playing after a few seconds</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66775?tab=files" target="_blank">Sierra Madre Exterior Fixed</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
             <p class="moddesc"> - Fixes the messed up texture on the Sierra Madre exterior</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/45052?tab=files" target="_blank">Cass Class Fix</a></h2>
-            <p class="specialinstall"><strong>Install normally</strong></p>
-            <p class="moddesc"> - Changes Cass's tag skills to explosives, unarmed, and guns to better suit her character</p> 
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/62923/?tab=files" target="_blank">Enslaving Arcade Fix</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
             <p class="moddesc"> - Allows you to give Arcade to Caesar at any point during the 'Et Tumor, Brute?' quest</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/64722?tab=files" target="_blank">Caleb McCaffery NPC and Hat Bug Fixes</a></h2>
-            <p class="specialinstall"><strong>Install normally</strong></p>
-            <p class="moddesc"> - Fixes a few bugs relating to Caleb McCaffery and the Debt Collector quest</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/64900?tab=files" target="_blank">Nightkin Scripts Corrected</a></h2>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65051?tab=files" target="_blank">Rebreather Tweaked</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
             <br>
             <p class="specialinstall"><strong>Manual FNVEdit editing required:</strong></p>
                 <ul class="specialinstructions">
-                    <li>Run FNVEdit through MO2</li>
                     <li>Right-click in the <strong>Module Selection</strong> pop-up and click <strong>Select None</strong></li>
-                    <li>Check the box adjacent to <strong>Nightkin Scripts Corrected.esp</strong> then hold down left shift and click <strong>OK</strong></li>
+                    <li>Check the box adjacent to <strong>Rebreather Tweaked.esp</strong> then hold down left shift and click <strong>OK</strong></li>
                     <li>Wait for the message <strong>Background Loader: finished</strong> to appear in the right pane</li>
-                    <li>Expand the <strong>Nightkin Scripts Corrected.esp</strong> header</li>
-                    <li>Right-click on the <strong>Ingestible</strong> header, select <strong>Remove</strong>, and click <strong>OK</strong> to the pop-up</li>
-                        <ul>
-                            <li>This tweak removes the changes to Stealthboys that makes them only activate when you crouch</li>
-                        </ul>
-                    <li>Expand the <strong>Activator</strong> header</li>
-                    <li>Right-click on the <strong>Ash Pile</strong> record, select <strong>Remove</strong>, and confirm any pop-ups</li>
-                    <li>Repeat for the <strong>Goo Pile</strong> record</li>
-                        <ul>
-                            <li>This tweak removes the changes to the Ash/Goo piles that make them disapeer after changing cells to retain compatibilty with UPP</li>
-                        </ul>
-                    <li>Right-click on the <strong>Non-Player Character</strong> select <strong>Remove</strong>, and click <strong>OK</strong> to the pop-up</li>
-                        <ul>
-                            <li>This tweak removes unnecessary changes to NPCs to retain compatibility with other mods that edit NPCs</li>
-                        </ul>
+                    <li>Expand the <strong>Rebreather Tweaked.esp</strong> header in the left pane, and expand the <strong>Armor</strong> header within it</li>
+                    <li>Right-click on the <strong>Lucky Shades</strong> entry and select <strong>Remove</strong></li>
+                        <li>This tweak removes unnecessary changes to the Lucky Shades</li>
                     <li>Save and exit</li>
                 </ul>
-            <p class="moddesc"> - Fixes various bugs/annoyances with Nightkin and the 'Come Fly With Me' quest, along with a few other minor fixes</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65051?tab=files" target="_blank">Rebreather Tweaked</a></h2>
-            <p class="specialinstall"><strong>Install normally</strong></p>
             <p class="moddesc"> - Fixes various bugs with the Rebreather</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65679?tab=files" target="_blank">Vendors Containers Respawn Fix</a></h2>
-            <p class="specialinstall"><strong>Files to install:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Main File - <strong>Vendors Containers Respawn Fix - Simple Edition</strong></li>
-                </ul>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/67429?tab=files" target="_blank">Simpler Vendor Respawn Fix</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
             <p class="moddesc"> - Fixes the erratic respawn of vendors</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66940?tab=files" target="_blank">Female White Glove Society Mask</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
             <p class="moddesc"> - Adds a separate female mesh for the White Glove Society Mask to fix alignment issues</p>
+        <h2 class="modhead"><a class="modlink" href="./core-bugfixesavoid.html" target="_blank">BUG FIXES TO AVOID!</a></h2>
     </div>    
     <div>
         <hr>
