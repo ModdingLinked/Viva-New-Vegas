@@ -59,11 +59,6 @@ SOFTWARE.
             <li><a href="./corefinish.html">Finish Line</a></li>
         </ul>
         <hr>
-        <p class="installingfnvdesc">
-            If you already have done a completely fresh installation of Fallout New Vegas in the correct folder, 
-            you may skip this step. Please double-check everything is correct though.
-        </p>
-        <hr>
         <h2 class="overlay">Installation Parameters:</h2>      
             <p class="installparametersdesc">
               - Fallout New Vegas and all modding tools must be installed outside all default Windows folders (<strong>Program Files</strong>, <strong>Program Files (x86)</strong>, and <strong>Documents</strong> for example)
@@ -71,16 +66,16 @@ SOFTWARE.
               - Fallout New Vegas and Mod Organizer 2 must be installed on the same drive, preferably on an SSD for shorter loading times and less stutter while loading assets
                 <br>
               - Fallout New Vegas itself is just about 10 gigabytes, and the total size of the entire guide is x gigabytes
-                <ul class="modulesize">
-                  <li>Core Module - 1.75 gigabytes (not including the game, but including all the tools)</li>
-                  <li>Graphics Module:</li>
+                <ul class="specialinstructions">
+                  <li><strong>Core</strong> Module - 15 gigabytes (including the game and all the tools)</li>
+                  <li><strong>Graphics</strong> Module:</li>
                     <ul>
                       <li>Low - 1 gigabyte</li>
                       <li>Medium - 4.5 gigabytes</li>
                       <li>High - 7.25 gigabytes</li>
                     </ul>
-                  <li>Gameplay Module - .8 gigabytes</li>
-                  <li>Content Module - x gigabytes</li>
+                  <li><strong>Gameplay</strong> Module - .8 gigabytes</li>
+                  <li><strong>Content</strong> Module - x gigabytes</li>
                 </ul>
             </p>  
         <hr>    
@@ -89,7 +84,7 @@ SOFTWARE.
               <strong>Root</strong> folder: <strong>Steam/steamapps/common/Fallout New Vegas</strong> or <strong>GOG Galaxy/Games/Fallout New Vegas</strong> <br>
               <strong>Data</strong> folder: <strong>Steam/steamapps/common/Fallout New Vegas/Data</strong> or <strong>GOG Galaxy/Games/Fallout New Vegas/Data</strong> <br>
               MO2: <strong>Mod Organizer 2</strong> (will be installed shortly) <br>
-              xEdit <strong>FNVEdit</strong> (will be installed shortly)
+              xEdit: <strong>FNVEdit</strong> (will be installed shortly)
             </p>
             <hr>
         <h2 class="installingfnv">Installing Fallout New Vegas:</h2>      
@@ -102,7 +97,7 @@ SOFTWARE.
                       <li>Launch Steam and select <strong>Steam -> Settings</strong></li>
                       <li>Go to the <strong>Downloads</strong> tab and select <strong>Steam Library Folders</strong></li>
                       <li>From the pop-up, select <strong>Add Library Folder</strong></li>
-                      <li>Add a folder in a location of your choice outside of the default Windows folders (Preferrably on an SSD)</li>
+                      <li>Add a folder in a location of your choice outside of the default Windows folders (preferably on an SSD)</li>
                       <li>Exit out of the menu and go to <strong>Library</strong></li>
                       <li>Select <strong>Fallout New Vegas</strong> and click <strong>Install</strong></li>
                       <li>From the pop-up, select <strong>Choose location for install:</strong></li>
@@ -110,7 +105,7 @@ SOFTWARE.
                     <p>For GOG:</p> 
                       <li>Launch GOG and select <strong>Library</strong></li>
                       <li>Select <strong>Fallout New Vegas</strong> and click <strong>Install</strong></li>
-                      <li>Set the <strong>Install to</strong> to a location of your choice outside of the default Windows folders (Preferrably on an SSD) and install</li>
+                      <li>Set the <strong>Install to</strong> to a location of your choice outside of the default Windows folders (preferably on an SSD) and install</li>
                   </ul>
                 </p>
               </div>
@@ -137,6 +132,7 @@ SOFTWARE.
                   <ul class="steamverify">
                     <p>For Both:</p>
                       <li>Navigate to <strong>Documents/My Games/FalloutNV</strong> and delete everything except for the <strong>saves</strong> folder (if there is one)</li>
+                      <li>Delete any leftover programs such as your mod manager</li>
                       <li>Navigate to the <strong>Root</strong> folder</li>
                       <li>Delete everything in the root folder except for the <strong>Data</strong> folder</li>
                       <li>Open the <strong>Data</strong> folder and delete everything except for the following:</li>
@@ -192,7 +188,11 @@ SOFTWARE.
         <hr>
         <h2 class="overlay">Disabling Overlays:</h2>
           <p class="overlaydesc">
-            Any overlays need to be disabled for Fallout New Vegas to prevent memory leakage. Some common applications that have overlays are Steam, GOG, Discord, and MSI Afterburner.
+            Any overlays need to be disabled for Fallout New Vegas to prevent memory leakage. Some common applications that have overlays are 
+              <a class="modsublink" href="https://steamcommunity.com/discussions/forum/1/1471967615856589454/" target="_blank">Steam</a>, 
+              <a class="modsublink" href="https://imgur.com/XAhfjDy" target="_blank">GOG</a>, 
+              <a class="modsublink" href="https://www.techjunkie.com/disable-discord-overlay/" target="_blank">Discord</a>, 
+              and <a class="modsublink" href="https://www.youtube.com/watch?v=wrlgaRI6wVI" target="_blank">MSI Afterburner</a>.
           </p>  
         <hr>
         <h2 class="overlay">Setting up your Fallout New Vegas Modding Folder:</h2>
@@ -211,7 +211,7 @@ SOFTWARE.
           <hr>
         <h2 class="overlay">Disabling Anti-Virus:</h2>
           <p class="overlaydesc">
-            Any anti-virus you have, inluding Windows Defender, needs to have file exceptions made for your <strong>Root</strong> folder and <strong>Modding folder</strong>. I would also consider disabling it for the duration of the guide to be safe.
+            Any anti-virus you have, including Windows Defender, needs to have <a class="modsublink" href="https://support.microsoft.com/en-us/help/4028485/windows-10-add-an-exclusion-to-windows-security" target="_blank">file exceptions made</a> for your <strong>Root</strong> folder and <strong>Modding folder</strong>. I would also recommend disabling it for the duration of the guide to be safe.
           </p>
           <hr>
         <h2 class="overlay">Generating Fresh .INI Files:</h2>
@@ -226,7 +226,7 @@ SOFTWARE.
               <li>Verify the game is detecting and using your GPU properly</li>
               <li>Set <strong>Resolution</strong> to your preference (The launcher usually sets it to one lower than your max resolution)</li>
               <li>Set <strong>Antiailiasing</strong> to <strong>8 Samples</strong> (The launcher sets it to 4 even on ultra)</li>
-              <li>Click OK and then exit</li>
+              <li>Click <strong>OK</strong> and then <strong>Exit</strong></li>
             </ul>
           </p>
     </div>

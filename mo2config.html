@@ -90,7 +90,7 @@ SOFTWARE.
                 <li>Select <strong>Authorise</strong></li>
                 <li>Exit out of your browser and out of the settings menu in MO2</li>
                     <ul>
-                        <li>MO2 will prompt you to restart, to which you should say yes</li>
+                        <li>MO2 may prompt you to restart, to which you should say yes</li>
                     </ul>
             </ul>
             <hr>
@@ -125,6 +125,9 @@ SOFTWARE.
                     <li>Select the <strong>Testing</strong> folder and check both <strong>Use profile-specific Game INI Files</strong> and <strong>Automatic Archive Invalidation</strong></li>
                     <li>With the <strong>Testing</strong> profile selected, select <strong>Copy</strong></li>
                     <li>Input <strong>Viva New Vegas - Core</strong> for the name, click <strong>OK</strong> then <strong>Close</strong></li>
+                        <ul>
+                            <li>You may get a pop-up about a missing <strong>modlist.txt</strong>. If that is the case, simply restart MO2 and select the <strong>Viva New Vegas - Core</strong> profile again</li>
+                        </ul>
                 </ul>
                 <hr>
         <h2 class="overlay">Setting up Tools in Mod Organizer 2</h2>
@@ -135,29 +138,29 @@ SOFTWARE.
                     <li>Select the blue <strong>+</strong> sign at the top of the window</li>
                     <li>In the right pane of the same window, input <strong>FNVEdit</strong> into the <strong>Title</strong> box</li>
                     <li>Click the three dots to the right of the <strong>Binary</strong> box, and from the pop-up navigate to where FNVEdit is installed and select <strong>FNVEdit.exe</strong></li>
-                    <li>Input <strong>-IKnowWhatImDoing</strong> in the <strong>Arguments</strong> box, select <strong>Apply</strong>, then <strong>OK</strong></li>
+                    <li>Input <strong>-IKnowWhatImDoing</strong> in the <strong>Arguments</strong> box, then select <strong>Apply</strong>, then <strong>OK</strong></li>
                         <ul>
                             <li>Run <strong>FNVEdit</strong> through MO2</li>
-                            <li>Right-click in the <strong>Module Selection</strong> pop-up and click <strong>Select None</strong></li>
-                            <li>Click <strong>OK</strong></li>
+                            <li>On the <strong>Module Selection</strong> pop-up, make sure all the plugins are checked then click <strong>OK</strong></li>
                             <li>Wait for the message <strong>Background Loader: finished</strong> to appear in the right pane</li>
                             <li>Once the message appears, exit the program</li>
                             <li>Right-click the <strong>Overwrite</strong> folder in the left pane of MO2 and select <strong>Create Mod...</strong></li>
                             <li>Input <strong>FNVEdit Cache</strong> into the pop-up and select <strong>OK</strong></li>
                             <li>Check the box adjacent to the new mod, then right-click it and select <strong>Ignore missing data</strong></li>
                                 <ul>
-                                    <li>FNVEdit cache files help speed up load times of cached files. These cache files will only be generated if you build references (which happens whenever you load files in FNVEdit normally). As more cache files appear in the <strong>Overwrite</strong> folder, add them to the <strong>FNVEdit Cache</strong> mod too</li>
+                                    <li>FNVEdit cache files help speed up load times of plugins with cached files. These cache files will only be generated if you build references (which happens whenever you load files in FNVEdit normally). As more cache files appear in the <strong>Overwrite</strong> folder, add them to the <strong>FNVEdit Cache</strong> mod too</li>
                                         <ul>
                                             <li>If you hold down the shift key while clicking <strong>OK</strong> in FNVEdit, it skips building references. This speeds up load times significantly, but does not generate cache files. This is how the guide will handle loading files in FNVEdit</li>
                                         </ul>
                                 </ul>
                         </ul>
-                    <li>Back in the executables menu, input <strong>FNVEdit Cleaner</strong> into the <strong>Title</strong> box</li>
-                    <li>Click the three dots to the right of the <strong>Binary</strong> box, and from the pop-up navigate to where FNVEdit is installed and select <strong>FNVEditQuickAutoClean.exe</strong></li>
-                    <li>Back in the executables menu, input <strong>FNVLODGen</strong> into the <strong>Title</strong> box</li>
+                    <li>Back in the executables menu, select the blue <strong>+</strong> sign at the top of the window</li>
+                    <li>Input <strong>FNVEdit Cleaner</strong> into the <strong>Title</strong> box</li>
+                    <li>Click the three dots to the right of the <strong>Binary</strong> box, and from the pop-up navigate to where FNVEdit is installed and select <strong>FNVEditQuickAutoClean.exe</strong>, then click apply</li>
+                    <li>Select the blue <strong>+</strong> sign at the top of the window again and input <strong>FNVLODGen</strong> into the <strong>Title</strong> box</li>
                     <li>Click the three dots to the right of the <strong>Binary</strong> box, and from the pop-up navigate to where FNVLODGen is installed and select <strong>xLODGenx64.exe</strong></li>
                     <li>Input <strong>-FNV</strong> into the <strong>Arguments</strong> box and select <strong>Apply</strong>
-                    <li>Add <strong>zEdit</strong> and the <strong>GECK</strong> with the same method, but do not input anything into the <strong>Arguments</strong> box (GECK may have already been automatically added)</li>
+                    <li>Add <strong>zMerge</strong> and the <strong>GECK</strong> with the same method, but do not input anything into the <strong>Arguments</strong> box (GECK may have already been automatically added)</li>
                 </ul>
         <hr>
         <h2 class="overlay">Mod Installation/Tracking</h2>
@@ -166,12 +169,12 @@ SOFTWARE.
                     <li>On the Nexus page, navigate to the <strong>Files</strong> tab</li>
                     <li>For whatever files are listed in the guide, click the <strong>Mod Manager Download</strong> button to have it automatically download in MO2</li>
                     <li>On the top of the mod page above the images and to the right of the statistics, click the <strong>Track</strong> button</li>
+                    <li>You will get a notification every time a tracked mod is updated on the toolbar on the top of the Nexus website</li>
                         <ul>
-                            <li>You will get a notification every time a tracked mod is updated on the toolbar on the top of the Nexus website</li>
                             <li>MO2 also has a built system for updating mods that can be accessed by right-clicking in the left pane and selecting <strong>All Mods -> Check for updates</strong>. However, this system does not always fully work correctly</li>
                         </ul>
                 </ul>
-        <h2 class="overlay">Mod Installation Advice in Mod Organizer 2</h2>
+        <h2 class="overlay">IMPORTANT: Mod Installation Advice in Mod Organizer 2</h2>
                 <p class="overlaydesc">This is general advice to follow when installing mods in Mod Organizer 2</p>
                     <ul class="specialinstructions">
                         <li>When downloading multiple files from the same page, you will be prompted with a box in Mod Organizer 2 with the options <strong>Merge</strong>, <strong>Replace</strong>, and <strong>Rename</strong></li>
