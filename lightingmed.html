@@ -176,34 +176,28 @@ SOFTWARE.
             <p class="moddesc"> - Complete weather overhaul designed to make the game look more realistic</p>
         <h2 class="modhead">A Note About Weather/Lighting Mods:</h2>
             <p class="moddesc">If you do not like Realistic Wasteland Lighting, the two best alternatives are <a class="modsublink" href="https://www.nexusmods.com/newvegas/mods/62481" target="_blank">Clarity</a> 
-                and <a class="modsublink" href="https://www.moddb.com/mods/urwlnv-ultimate-edition-v21" target="_blank">URWLNV</a>. Clarity is a simple tint remover whereas URWLNV is based of RWL
-                and has many different weathers.
+                and <a class="modsublink" href="https://www.moddb.com/mods/urwlnv-ultimate-edition-v21" target="_blank">URWLNV</a>. Clarity is a simple tint remover whereas URWLNV is based off of RWL
+                and has many different weathers. There is also <a class="modsublink" href="https://www.nexusmods.com/newvegas/mods/67277?tab=files" target="_blank">Yellow Goodbye</a>, which is based off of Clarity with a slightly different look.
                 If you use Clarity, make sure to grab the <strong>NV_IFR_CLARITYFIX</strong> file on the Interior Fog Remover page
             </p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66650?tab=files" target="_blank">Viva New Vegas - NVGE Preset</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
             <br>
-            <p class="specialinstall"><strong>Special activation instructions:</strong></p>
+            <p class="specialinstall"><strong>Optional tweaking available:</strong></p>
                 <ul class="specialinstructions">
-                    <li>Click the <img class="mo2setting" src="./img/mo2ini.png" alt="mo2 executables"> button on the top bar of MO2 and select <strong>INI Editor</strong></li>
-                    <li>Navigate to the <strong>FalloutCustom.ini</strong> tab</li>
-                    <li>Paste the following into the box:</li>
-                        <ul class="initweaks">
-                            <li>[Water]</li>
-                            <li>bUseWaterHiRes=1</li>
-                            <li>bReflectExplosions=1</li>
-                            <li>bForceHighDetailReflections=1</li>
-                            <li>uMaxInteriorWaterReflections=60</li>
-                            <li>uMaxExteriorWaterReflections=60</li>
-                            <li>bForceHighDetailLandReflections=1</li>
-                            <li>iWaterReflectWidth=2048</li>
-                            <li>iWaterReflectHeight=2048</li>
+                    <li>Double-click on <strong>Viva New Vegas - NVGE Preset</strong> in the left pane of MO2</li>
+                    <li>In the <strong>INI-Files</strong> tab, click on <strong>nvse/plugins/NewVegasReloaded.ini</strong></li>
+                    <li>Set <strong>AmbientOcclusion</strong> to <strong>1</strong> (line 161)</li>
+                        <ul>
+                            <li>This tweak enables NVGE's Ambient Occlusion (object shadows). The reason this is not enabled in the preset by default is the fact that there is 
+                                a small bug with it where some objects, mainly grass, are slightly visible through the Pip-Boy. However, the bug is unnoticeable enough for me to keep the AO enabled
+                            </li>
                         </ul>
                 </ul>
             <p class="moddesc"> - A preset for NVGE designed to make the desert feel warmer and more realistic, including overhauled water <br>
                                 NOTE: If you experience laggy wave effects, restart your PC to clear the caches  <br>
                                 The water in NVGE, while beautiful, can be very buggy for some people. If this is the case for you, you can disable it by setting <strong>Water</strong> to <strong>0</strong>  under <strong>[Shaders]</strong>
-                                in the <strong>NewVegasReloaded.ini</strong>. You can also remove the INI tweaks
+                                in the <strong>NewVegasReloaded.ini</strong>
             </p>
     </div> 
     <div>
