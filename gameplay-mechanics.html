@@ -73,30 +73,35 @@ SOFTWARE.
                 <ul class="specialinstructions">
                     <li>Double-click on <strong>lStewieAl's Tweaks INI</strong> (or the custom INI file if you installed that) in the left pane of MO2</li>
                     <li>In the <strong>INI-Files</strong> tab, click on <strong>nvse/plugins/nvse_stewie_tweaks.ini</strong></li>
-                    <li>Set <strong>bNoSkillTags</strong> to <strong>1</strong></li>
+                    <li>Set <strong>bNoSkillTags</strong> to <strong>1</strong> (line 119)</li>
+                    <li>Set <strong>iRemoveTags</strong> to <strong>2</strong> (line 524)</li>
                         <ul>
                             <li>Additional changes can be made under the <strong>[No Skill Tags]</strong> section at the bottom of the INI</li>
                             <li> Hides the [Speech], [Barter], etc. number tags from dialogue options, for example, instead of <strong>[Speech 75]</strong>, it will say just <strong>[Speech]</strong></li>
                         </ul>
-                    <li>Set <strong>bHideEnemyMarkers</strong> to <strong>1</strong></li>
+                    <li>Set <strong>bHideEnemyMarkers</strong> to <strong>1</strong> (line 50)</li>
                         <ul>
                             <li>Removes enemy markers from the compass</li>
                         </ul>
-                    <li>Set <strong>bOverencumberedTweak</strong> to <strong>1</strong></li>
+                    <li>Set <strong>bOverencumberedTweak</strong> to <strong>1</strong> (line 278)</li>
                         <ul>
                             <li>Mimics the Fallout 76 encumbrance system</li>
                         </ul>
-                    <li>Set <strong>bEnteringVATSCostsAP</strong> to <strong>1</strong></li>
+                    <li>Set <strong>bEnteringVATSCostsAP</strong> to <strong>1</strong> (line 302)</li>
                         <ul>
                             <li>Makes entering VATS key cost 10 AP</li>
                         </ul>
-                    <li>Set <strong>bChargedAttacksCostAP</strong> to <strong>1</strong></li>
+                    <li>Set <strong>bChargedAttacksCostAP</strong> to <strong>1</strong> (line 308)</li>
                         <ul>
                             <li>Makes charged melee attacks cost AP</li>
                         </ul>
-                    <li>Set <strong>bNoGrabOwnedItems</strong> to <strong>1</strong></li>
+                    <li>Set <strong>bNoGrabOwnedItems</strong> to <strong>1</strong> (line 329)</li>
                         <ul>
                             <li>Stops the player from grabbing items owned by NPCs</li>
+                        </ul>
+                    <li>Set <strong>bWeightlessWornPowerArmor</strong> to <strong>1</strong> (line 392)</li>
+                        <ul>
+                            <li>Removes the weight of the power armor when you are wearing it like in Fallout 4</li>
                         </ul>
                 </ul>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/61141?tab=files" target="_blank">BLEED</a></h2>
@@ -111,6 +116,22 @@ SOFTWARE.
                     <li>Main File - <strong>3.2. Gameplay - BLEED No Always Knockdown Explosions</strong></li>
                 </ul>
             <p class="moddesc"> - Changes the "Always Knockdown" flag back to "Knockdown by Formula" for all explosions</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/61973?tab=files" target="_blank">Immersive Recoil 2.0</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <br>
+            <p class="specialinstall"><strong>Optional tweaking available:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Run FNVEdit through MO2</li>
+                    <li>Right-click in the <strong>Module Selection</strong> pop-up and click <strong>Select None</strong></li>
+                    <li>Check the box adjacent to <strong>ImmersiveRecoil.esp</strong> then hold down left shift and click <strong>OK</strong></li>
+                    <li>Wait for the message <strong>Background Loader: finished</strong> to appear in the right pane</li>
+                    <li>Expand the <strong>ImmersiveRecoil.esp</strong> header in the left pane, and then the <strong>Globals</strong> header within it</li>
+                    <li>These globals can be edited to enable/disable/change parts of the mod</li>
+                        <ul>
+                            <li>See the mod description for details on what the globals do</li>
+                        </ul>
+                </ul>
+            <p class="moddesc"> - Adds configurable formula-based recoil to all weapons in the game</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66187?tab=files" target="_blank">Melee Cleave (a.k.a. Sweep)</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
             <p class="moddesc">- Makes melee attacks able to hit multiple enemies, similar to the Dark Souls series</p>
