@@ -73,8 +73,14 @@ SOFTWARE.
             <p class="specialinstall"><strong>Hide the following:</strong></p>
                 <ul class="specialinstructions">
                     <li><strong>meshes/scol/</strong></li>
+                        <ul>
+                            <li>Hides meshes which are too big for xLODGen to handle</li>
+                        </ul>
                     <li><strong>textures/clutter/billboard01blod.dds</strong></li>
                     <li><strong>textures/clutter/billboard01blod_n.dds</strong></li>
+                        <ul>
+                            <li>Hides a broken LOD file that would cause some objects to turn green</li>
+                        </ul>
                 </ul>
                 <br>
             <p class="specialinstall"><strong>Manual editing required:</strong></p>
@@ -107,6 +113,9 @@ SOFTWARE.
                     <li><strong>meshes/landscape/nv_rocks/nvn_rockcanyon19blk_lod.nif</strong></li>
                     <li><strong>meshes/landscape/nv_rocks/nvn_rockcanyon19rdrk_lod.nif</strong></li>
                     <li><strong>textures/scol/</strong></li>
+                        <ul>
+                            <li>Hides meshes which are too big for xLODGen to handle</li>
+                        </ul>
                 </ul>
             <p class="moddesc"> - Adds new distant LOD to vehicles, roads, barricades, rocks/cliffs, etc.</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66139?tab=files" target="_blank">Much Needed LOD ESP Replacer</a></h2>
@@ -133,7 +142,7 @@ SOFTWARE.
                         <li>Make sure to change the path to a file path that actually exists on your computer, for example <strong>-o:"C:\Games\Fallout New Vegas Modding\FNVLODGen\Output"</strong></li>
                         <li>Makes sure you keep the <strong>-fnv</strong> argument as well</li>
                     </ul>
-                <li>Select <strong>Modify</strong> and then exit</li>
+                <li>Select <strong>Apply</strong> and then exit</li>
                 <li>Run FNVLODGen through MO2</li>
                 <li>In the left pane, right-click and select <strong>Select All</strong></li>
                 <li>In the right pane, change both <strong>Atlas size</strong> options to <strong>8192</strong></li>

@@ -143,14 +143,8 @@ SOFTWARE.
             <p class="moddesc"> - Frontend tool similar to xEdit, will only be used in the guide to merge plugins <br>
                                &nbsp; Check the linked Github page for new releases
             </p>
-        <h2 class="modhead"><a class="modlink" href="https://forum.step-project.com/topic/13451-xlodgen-terrain-lod-beta-for-fnv-fo3-fo4-fo4vr-tes5-sse-tes5vr-enderal/" target="_blank">FNVLODGen</a></h2>
-            <p class="specialinstall"><strong>Special install instructions:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Download the <strong>xLODGen beta x</strong> file</li>
-                        <ul>
-                            <li>x = the highest version number available</li>
-                        </ul>
-                </ul>
+        <h2 class="modhead"><a class="modlink" href="https://mega.nz/#!kJZ1DALZ!N-BZtK-sarhMpIfwXT5IT_n8qx7sPc5pOy9u-5RkEN4" target="_blank">FNVLODGen</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
             <p class="moddesc"> - One-click LOD generator <br>
                                 &nbsp; Developer builds can be found on the same Discord as xEdit
             </p>
@@ -175,6 +169,19 @@ SOFTWARE.
                 </ul>
             <p class="moddesc"> - Decompresses BSAs and repacks them without zlib compression and fixes certain audio files that would not play in vanilla <br>
                                 NOTE: Verifying your game files through either Steam or GOG will undo the Decompressor's effects, so you must rerun it after
+            </p>
+        <h2 class="modhead">IMPORTANT NOTE:</h2>
+            <p class="moddesc">
+                If at any point during gameplay you encounter a lot of missing mesh errors (big red triangles), do the following:
+                    <ul class="specialinstructions">
+                        <li>Click the <img class="mo2setting" src="./img/mo2ini.png" alt="mo2 executables"> button on the toolbar of MO2 and select <strong>INI Editor</strong></li>
+                        <li>Navigate to the <strong>Fallout.ini</strong> tab</li>
+                        <li>Find the line that starts with <strong>SArch=</strong></li>
+                        <li>Replace the entire line with the following (should all be on one line): </li>
+                            <ul>
+                                <li>SArchiveList=Fallout - Invalidation.bsa, Fallout - Textures.bsa, Fallout - Textures2.bsa, Fallout - Meshes.bsa, Fallout - Meshes2.bsa, Fallout - Voices1.bsa, Fallout - Sound.bsa, Fallout - Misc.bsa</li>
+                            </ul>
+                    </ul>
             </p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/61265?tab=files" target="_blank">Ogg Vorbis Libraries</a></h2>
             <p class="specialinstall"><strong>Special install instructions:</strong></p>
