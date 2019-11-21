@@ -158,7 +158,13 @@ SOFTWARE.
                     <img class="modal-content" id="img01">
                     <div id="caption"></div>
                 </div>
+            <img id="FOMODImg4" src="./img/JVSMCM.png" alt="JVS MCM Gameplay" style="width:100%;max-width:300px">
+                <div id="FOMODModal4" class="modal">
+                    <img class="modal-content" id="img04">
+                    <div id="caption4"></div>
+                </div>
             <ul class="specialinstructions">
+                <li>Everything else from Just Mods Merged: Adjust to personal preference</li>
                 <li>JSawyer Ultimate Edition: Adjust to personal preference</li>
                 <li>Mojave Arsenal:</li>
             </ul>   
@@ -220,6 +226,24 @@ SOFTWARE.
 
     span.onclick = function() { 
         modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal4');
+
+var img = document.getElementById('FOMODImg4');
+var modalImg = document.getElementById("img04");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
 }
 </script>
 <script>
