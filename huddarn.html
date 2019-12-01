@@ -81,6 +81,32 @@ SOFTWARE.
             <p class="moddesc"> -  Optimizes the crafting/recipe menu</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/62184/?tab=files" target="_blank">Quest Item Hider</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
+            <br>
+            <p class="specialinstall"><strong>Optional FNVEdit editing available:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Run FNVEdit through MO2</li>
+                    <li>Right-click in the <strong>Module Selection</strong> pop-up and click <strong>Select None</strong></li>
+                    <li>Check the boxes adjacent to <strong>FalloutNV.esm </strong> and <strong>Quest Item Hider.esp</strong> then hold down left shift and click <strong>OK</strong></li>
+                    <li>Wait for the message <strong>Background Loader: finished</strong> to appear in the right pane</li>
+                    <li>Input <strong>103B1C</strong> into the FormID search box in the top left and hit enter</li>
+                    <li>In the left pane, right-click on <strong>Sunset Sarsaparilla Star Bottle Cap</strong> and select <strong>Copy as override into...</strong></li>
+                        <img id="FOMODImg9" src="./img/Quest item hider edit.png" alt="Copy as override into..." style="width:100%;max-width:300px">
+                        <div id="FOMODModal9" class="modal">
+                            <img class="modal-content" id="img09">
+                            <div id="caption9"></div>
+                        </div>
+                    <li>Select <strong>Quest Item Hider.esp</strong> from the pop-up and select <strong>OK</strong></li>
+                    <li>In the right pane, under the <strong>Quest Item Hider</strong> hider, right-click on the <strong>Quest Item / Persistent Reference</strong> and select <strong>Remove</strong></li>
+                        <img id="FOMODImg10" src="./img/quest item hider remove.png" alt="Remove" style="width:100%;max-width:300px">
+                        <div id="FOMODModal10" class="modal">
+                            <img class="modal-content" id="img10">
+                            <div id="caption10"></div>
+                        </div>
+                        <ul>
+                            <li>Removes the "Quest Item" flag from Star Caps so they show up in the player inventory even with the Quest Item Hider</li>
+                        </ul>
+                    <li>Save and exit</li>
+                </ul>
             <p class="moddesc"> - Hides misc. quest items in your inventory </p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/63867/?tab=files" target="_blank">Universal Item Sorter</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
@@ -98,7 +124,7 @@ SOFTWARE.
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/47746/?tab=files" target="_blank">Tutorial Killer</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
             <br>
-            <p class="specialinstall"><strong>Manual FNVEdit editing recommended:</strong></p>
+            <p class="specialinstall"><strong>Optional FNVEdit editing available:</strong></p>
                 <ul class="specialinstructions">
                     <li>Run <strong>FNVEdit</strong> through MO2</li>
                     <li>Right-click in the <strong>Module Selection</strong> pop-up and click <strong>Select None</strong></li>
@@ -106,8 +132,24 @@ SOFTWARE.
                     <li>Wait for the message <strong>Background Loader: finished</strong> to appear in the right pane</li>
                     <li>Expand the <strong>Tutorial Killer.esp</strong> header and the <strong>FormID List</strong> header within it</li>
                     <li>Select <strong>TutorialKillerFormList</strong></li>
+                        <img id="FOMODImg12" src="./img/tutorial killer form.png" alt="Tutorial Killer Form List" style="width:100%;max-width:300px">
+                        <div id="FOMODModal12" class="modal">
+                            <img class="modal-content" id="img12">
+                            <div id="caption12"></div>
+                        </div>
                     <li>Right-click in the box to the right of <strong>FormIDs (sorted)</strong> and select <strong>Add</strong></li>
+                        <img id="FOMODImg13" src="./img/tutorial killer add.png" alt="Add to Form List" style="width:100%;max-width:300px">
+                        <div id="FOMODModal13" class="modal">
+                            <img class="modal-content" id="img13">
+                            <div id="caption13"></div>
+                        </div>
                     <li>Double-click on the <strong>NULL - Null Reference</strong> that appears and input <strong>CGQuestTarget [MESG:00058BEE]</strong> into the box</li>
+                        <img id="FOMODImg14" src="./img/tutorial killer paste.png" alt="CGQuestTarget [MESG:00058BEE]" style="width:100%;max-width:300px">
+                        <div id="FOMODModal14" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="img14">
+                            <div id="caption14"></div>
+                        </div>
                         <ul>
                             <li>This tweak adds a missing pop-up to the FormID that prevents the pop-ups</li>
                         </ul>
@@ -115,7 +157,7 @@ SOFTWARE.
                 </ul>
             <p class="moddesc"> - Removes tutorial pop-ups</p> 
         <h2 class="modhead"><a class="modlink" href="https://github.com/Audixas/No-Traps-Popup/releases/tag/1.2" target="_blank">No Traps Popup</a></h2>
-            <p class="specialinstall"><strong>Files to install:</strong></p>
+            <p class="specialinstall"><strong>Files to install normally:</strong></p>
                 <ul class="specialinstructions">
                     <li>Main File - <strong>No_Traps_Popup-66714-1-2-1564766664.7z</strong></li>
                 </ul>
@@ -134,6 +176,14 @@ SOFTWARE.
             <p class="moddesc">Adds a search functionality in the Pip-Boy/container/barter/recipe menus, akin to Skyrim</p>
         <h2 class="modhead"><a class="modlink" href="https://drive.google.com/open?id=16uSzPYrIUGcxyv4sA6IfYU5wrVDlm3B0" target="_blank">DarnUI</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
+            <br>
+            <p class="specialinstall"><strong>Hide the following:</strong></p>
+                <ul class="specialinstructions">
+                    <li><strong>DarNifiedUINV.esp</strong></li>
+                        <ul>
+                            <li>The .esp only changes gamesettings related to how far the map can zoom in/out, which is already done by lStewieAl's Tweaks</li>
+                        </ul>
+                </ul>
             <p class="moddesc"> - Modernizes the HUD and makes it more suitable PC</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/63560?tab=files" target="_blank">DarnUI Font Dummies</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
@@ -145,32 +195,24 @@ SOFTWARE.
             <p class="specialinstall"><strong>Install normally</strong></p>
             <p class="moddesc"> - Changes the traits menu to DarnUI's style</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65459?tab=files" target="_blank">DarnUI Extension</a></h2>
-            <p class="specialinstall"><strong>Files to install:</strong></p>
+            <p class="specialinstall"><strong>Files to install normally:</strong></p>
                 <ul class="specialinstructions">
-                    <li>Main File: <strong>Main Menu - Loading Screen Matches HUD Color</strong></li>
                     <li>Main File: <strong>Scaling support to the higher resolution icons.</strong></li>
                 </ul>
             <p class="moddesc"> - Adds new features to DarnUI</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/64102?tab=files" target="_blank">Vanilla HUD Remastered</a></h2>
             <p class="specialinstall"><strong>FOMOD instructions:</strong></p>
-                <img id="FOMODImg2" src="./img/vhudremdarnfomod1.png" alt="VHUD Remastered FOMOD" style="width:100%;max-width:300px">
+                <img id="FOMODImg2" src="./img/vhudremdarnfomod1.png" alt="Select VHR Standalone" style="width:100%;max-width:300px">
                     <div id="FOMODModal2" class="modal">
                         <img class="modal-content" id="img02">
                         <div id="caption2"></div>
                     </div>
-                <img id="FOMODImg" src="./img/vhudremdarnfomod2.png" alt="VHUD Remastered FOMOD" style="width:100%;max-width:300px">
+                <img id="FOMODImg" src="./img/vhudremdarnfomod2.png" alt="Select Normal Compass" style="width:100%;max-width:300px">
                     <div id="FOMODModal" class="modal">
                         <img class="modal-content" id="img01">
                         <div id="caption"></div>
                     </div>
             <p class="moddesc"> - Up-scales the vanilla HUD to better fit higher resolution screens</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/44757?tab=files" target="_blank">One HUD</a></h2>
-            <p class="specialinstall"><strong>Files to install:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Main File: One HUD (oHUD)</li>
-                    <li>Optional File: <strong>One HUD (oHUD) Darnified Patch</strong></li>
-                </ul>
-            <p class="moddesc"> -  Lets you take control of your HUD by adding, hiding, or removing elements</p>
         <h2 class="modhead">Optional: <a class="modlink" href="https://www.nexusmods.com/newvegas/mods/35815?tab=files" target="_blank">Colored Cursors</a></h2>
             <p class="specialinstall"><strong>Install instructions</strong></p>
                 <ul class="specialinstructions">
@@ -179,58 +221,64 @@ SOFTWARE.
                     <li>Right-click on the <strong>data</strong> folder and select <strong>Set data directory</strong></li>
                 </ul>
             <p class="moddesc"> - Changes the cursor to match HUD color. Only needed if you plan on changing your HUD color</p>
+        <h2 class="modhead"><a class="modlink" href="https://drive.google.com/open?id=13lVOP5s6JGDnz-HK-LyzxDnv_L9vaqlT" target="_blank">MTUI Dialogue Background</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Adds the dialogue menu background gradient from MTUI</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/44757?tab=files" target="_blank">One HUD</a></h2>
+            <p class="specialinstall"><strong>Files to install normally:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Main File: One HUD (oHUD)</li>
+                    <li>Optional File: <strong>One HUD (oHUD) Darnified Patch</strong></li>
+                </ul>
+            <p class="moddesc"> -  Lets you take control of your HUD by adding, hiding, or removing elements</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66686?tab=files" target="_blank">B42 Quickthrow - oHUD Patch</a></h2>
-            <p class="specialinstall"><strong>Files to install:</strong></p>
+            <p class="specialinstall"><strong>Files to install normally:</strong></p>
                 <ul class="specialinstructions">
                     <li>Main File - <strong>oHUD-iHUD compatibility patch</strong></li>
                 </ul>
             <p class="moddesc"> - Patch for B42 Quickthrow and oHUD</p>
-        <h2 class="modhead"><a class="modlink" href="https://drive.google.com/open?id=13lVOP5s6JGDnz-HK-LyzxDnv_L9vaqlT" target="_blank">MTUI Dialogue Background</a></h2>
-            <p class="specialinstall"><strong>Install normally</strong></p>
-            <p class="moddesc"> - Adds the dialogue menu background gradient from MTUI</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66876?tab=files" target="_blank">Quickthrow Stylized HUD Icons</a></h2>
-            <p class="specialinstall"><strong>Files to install:</strong></p>
+            <p class="specialinstall"><strong>Files to install normally:</strong></p>
                 <ul class="specialinstructions">
                     <li>Main File - <strong>Quickthrow Stylized FNV Icons</strong></li>
                     <li>Optional File - <strong>oHUD-iHUD Compatible Menu</strong></li>
                 </ul>
             <p class="moddesc"> - Adds better icons from B42 Quickthrow</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65046?tab=files" target="_blank">Consistent Pip-Boy Icons</a></h2>
-            <p class="specialinstall"><strong>Files to install:</strong></p>
+            <p class="specialinstall"><strong>Files to install normally:</strong></p>
                 <ul class="specialinstructions">
                     <li>Main File: <strong>The Foundation Edition 2x</strong></li>
                     <li>Optional File: <strong>(Recommended) Upscaled Consistent Pip-Boy Icons</strong></li>
                 </ul>
             <br>
             <p class="specialinstall"><strong>FOMOD instructions:</strong></p>
-                <img id="FOMODImg3" src="./img/iconfomod1.png" alt="Consistent Pip-Boy Icons FOMOD 1" style="width:100%;max-width:300px">
+                <img id="FOMODImg3" src="./img/iconfomod1.png" alt="Don't select anything" style="width:100%;max-width:300px">
                     <div id="FOMODModal3" class="modal">
                         <img class="modal-content" id="img03">
                         <div id="caption3"></div>
                     </div>
-                <img id="FOMODImg4" src="./img/iconfomod2.png" alt="Consistent Pip-Boy Icons FOMOD 2" style="width:100%;max-width:300px">
+                <img id="FOMODImg4" src="./img/iconfomod2.png" alt="Don't select anything" style="width:100%;max-width:300px">
                     <div id="FOMODModal4" class="modal">
                         <img class="modal-content" id="img04">
                         <div id="caption4"></div>
                     </div>
-                <img id="FOMODImg5" src="./img/iconfomod3.png" alt="Consistent Pip-Boy Icons FOMOD 3" style="width:100%;max-width:300px">
+                <img id="FOMODImg5" src="./img/iconfomod3.png" alt="Don't select anything" style="width:100%;max-width:300px">
                     <div id="FOMODModal5" class="modal">
                         <img class="modal-content" id="img05">
                         <div id="caption5"></div>
                     </div>
-                <img id="FOMODImg6" src="./img/iconfomod4.png" alt="Consistent Pip-Boy Icons FOMOD 4" style="width:100%;max-width:300px">
+                <img id="FOMODImg6" src="./img/iconfomod4.png" alt="Select Alternative Repairing" style="width:100%;max-width:300px">
                     <div id="FOMODModal6" class="modal">
                         <img class="modal-content" id="img06">
                         <div id="caption6"></div>
                     </div>
-                <img id="FOMODImg7" src="./img/iconfomod5.png" alt="Consistent Pip-Boy Icons FOMOD 5" style="width:100%;max-width:300px">
+                <img id="FOMODImg7" src="./img/iconfomod5.png" alt="Select Mojave Arsenal" style="width:100%;max-width:300px">
                     <div id="FOMODModal7" class="modal">
                         <img class="modal-content" id="img07">
                         <div id="caption7"></div>
                     </div>
-                <img id="FOMODImg8" src="./img/iconfomod6.png" alt="Consistent Pip-Boy Icons FOMOD 6" style="width:100%;max-width:300px">
+                <img id="FOMODImg8" src="./img/iconfomod6.png" alt="Select Cloud Grenades, Spice of Life, and Weapons of the New Millenia" style="width:100%;max-width:300px">
                     <div id="FOMODModal8" class="modal">
-                        <span class="close">&times;</span>
                         <img class="modal-content" id="img08">
                         <div id="caption7"></div>
                     </div>
@@ -240,12 +288,6 @@ SOFTWARE.
                 <ul class="specialinstructions">
                     <li>Load the <strong>The Foundation Edition 2x</strong> file after the <strong>Upscaled Consistent Pip-Boy Icons</strong> in the left pane of MO2</li>
                 </ul>
-                <br>
-            <p class="specialinstall"><strong>Hide the following:</strong></p>
-                <p class="moddesc">From <strong>The Foundation Edition 2x</strong>:</p>
-                    <ul class="specialinstructions">
-                        <li>textures/interface/icons/stats/skills_science.dds</li>
-                    </ul>
             <p class="moddesc"> - Up-scales and fixes 1000s of icons</p>
         <h2 class="modhead"><a class="modlink" href="./core-hudavoid.html" target="_blank">HUD MODS TO AVOID!</a></h2>
     </div>
@@ -278,7 +320,7 @@ span.onclick = function() {
 
 var img = document.getElementById('FOMODImg2');
 var modalImg = document.getElementById("img02");
-var captionText = document.getElementById("caption");
+var captionText = document.getElementById("caption2");
 img.onclick = function(){
   modal.style.display = "block";
   modalImg.src = this.src;
@@ -296,7 +338,7 @@ span.onclick = function() {
 
 var img = document.getElementById('FOMODImg3');
 var modalImg = document.getElementById("img03");
-var captionText = document.getElementById("caption");
+var captionText = document.getElementById("caption3");
 img.onclick = function(){
   modal.style.display = "block";
   modalImg.src = this.src;
@@ -314,7 +356,7 @@ span.onclick = function() {
 
 var img = document.getElementById('FOMODImg4');
 var modalImg = document.getElementById("img04");
-var captionText = document.getElementById("caption");
+var captionText = document.getElementById("caption4");
 img.onclick = function(){
   modal.style.display = "block";
   modalImg.src = this.src;
@@ -332,7 +374,7 @@ span.onclick = function() {
 
 var img = document.getElementById('FOMODImg5');
 var modalImg = document.getElementById("img05");
-var captionText = document.getElementById("caption");
+var captionText = document.getElementById("caption5");
 img.onclick = function(){
   modal.style.display = "block";
   modalImg.src = this.src;
@@ -350,7 +392,7 @@ span.onclick = function() {
 
 var img = document.getElementById('FOMODImg6');
 var modalImg = document.getElementById("img06");
-var captionText = document.getElementById("caption");
+var captionText = document.getElementById("caption6");
 img.onclick = function(){
   modal.style.display = "block";
   modalImg.src = this.src;
@@ -368,7 +410,7 @@ span.onclick = function() {
 
 var img = document.getElementById('FOMODImg7');
 var modalImg = document.getElementById("img07");
-var captionText = document.getElementById("caption");
+var captionText = document.getElementById("caption7");
 img.onclick = function(){
   modal.style.display = "block";
   modalImg.src = this.src;
@@ -386,7 +428,115 @@ span.onclick = function() {
 
 var img = document.getElementById('FOMODImg8');
 var modalImg = document.getElementById("img08");
-var captionText = document.getElementById("caption");
+var captionText = document.getElementById("caption8");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal9');
+
+var img = document.getElementById('FOMODImg9');
+var modalImg = document.getElementById("img09");
+var captionText = document.getElementById("caption9");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal10');
+
+var img = document.getElementById('FOMODImg10');
+var modalImg = document.getElementById("img10");
+var captionText = document.getElementById("caption10");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal11');
+
+var img = document.getElementById('FOMODImg11');
+var modalImg = document.getElementById("img11");
+var captionText = document.getElementById("caption11");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal12');
+
+var img = document.getElementById('FOMODImg12');
+var modalImg = document.getElementById("img12");
+var captionText = document.getElementById("caption12");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal13');
+
+var img = document.getElementById('FOMODImg13');
+var modalImg = document.getElementById("img13");
+var captionText = document.getElementById("caption13");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal14');
+
+var img = document.getElementById('FOMODImg14');
+var modalImg = document.getElementById("img14");
+var captionText = document.getElementById("caption14");
 img.onclick = function(){
   modal.style.display = "block";
   modalImg.src = this.src;

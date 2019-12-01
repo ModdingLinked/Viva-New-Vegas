@@ -75,6 +75,11 @@ SOFTWARE.
                         <li>Wait for the message <strong>Background Loader: finished</strong> to appear in the right pane</li>
                         <li>Input <strong>01000E10</strong> into the FormID search box in the top left and hit enter</li>
                         <li>In the right pane, right-click on the second listing of <strong>Quest Item / Persistent reference</strong> and select <strong>Remove</strong></li>
+                        <img id="FOMODImg" src="./img/futurechemsremove.png" alt="Right-click and select Remove" style="width:100%;max-width:300px">
+                        <div id="FOMODModal" class="modal">
+                            <img class="modal-content" id="img01">
+                            <div id="caption"></div>
+                        </div>
                             <ul>
                                 <li>Stops the Empty Hydra Container added by the mod for crafting from being a quest item (so its visible in the inventory)</li>
                             </ul>
@@ -98,7 +103,18 @@ SOFTWARE.
                     <li>Wait for the message <strong>Background Loader: finished</strong> to appear in the right pane</li>
                     <li>Input <strong>0200351A</strong> into the FormID search box in the top left and hit enter</li>
                     <li>In the right pane, right-click on the box adjacent to the empty box labeled <strong>Icon</strong> and select <strong>Add</strong></li>
+                        <img id="FOMODImg2" src="./img/traitsadd.png" alt="Right-click and select Remove" style="width:100%;max-width:300px">
+                        <div id="FOMODModal2" class="modal">
+                            <img class="modal-content" id="img02">
+                            <div id="caption2"></div>
+                        </div>
                     <li>Double-click on the box adjacent to the new <strong>ICON</strong> box and paste in <strong>interface\icons\pipboyimages\perks\perk_four_eyes.dds</strong></li>
+                        <img id="FOMODImg3" src="./img/traitspaste.png" alt="interface\icons\pipboyimages\perks\perk_four_eyes.dds" style="width:100%;max-width:300px">
+                        <div id="FOMODModal3" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="img03">
+                            <div id="caption3"></div>
+                        </div>
                         <ul>
                             <li>Restores the missing icon for the Four Eyes trait</li>
                         </ul>
@@ -118,4 +134,58 @@ SOFTWARE.
         <a class="arrows" href="./content-finish.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
         </div>   
 </body>
+<script>
+var modal = document.getElementById('FOMODModal');
+
+var img = document.getElementById('FOMODImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal2');
+
+var img = document.getElementById('FOMODImg2');
+var modalImg = document.getElementById("img02");
+var captionText = document.getElementById("caption2");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal3');
+
+var img = document.getElementById('FOMODImg3');
+var modalImg = document.getElementById("img03");
+var captionText = document.getElementById("caption3");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
 </html>

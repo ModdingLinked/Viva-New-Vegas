@@ -69,7 +69,7 @@ SOFTWARE.
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66139?tab=files" target="_blank">Core - Conflict Resolution</a></h2>
             <p class="specialinstall"><strong>Files to install:</strong></p>
                 <ul class="specialinstructions">
-                    <li>Main File - <strong>1.7. Core - Conflict Resolution FOMOD</strong></li>
+                    <li>Main File - <strong>1.5. Core - Conflict Resolution FOMOD</strong></li>
                 </ul>
                 <br>
             <p class="specialinstall"><strong>FOMOD Install Instructions:</strong></p>
@@ -80,7 +80,7 @@ SOFTWARE.
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66139?tab=files" target="_blank">Core - Load Order.txt</a></h2>
            <p class="specialinstall"><strong>Files to install:</strong></p>
             <ul class="specialinstructions">
-                <li>Main File - <strong>1.8. Core - Load Order.txt</strong></li>
+                <li>Main File - <strong>1.6. Core - Load Order.txt</strong></li>
             </ul>
             <br>
             <p class="specialinstall"><strong>Special install instructions:</strong></p>
@@ -88,16 +88,20 @@ SOFTWARE.
                     <li>Extract <strong>loadorder.txt</strong> to <strong>Mod Organizer 2/profiles/Viva New Vegas - Core</strong></li>
                     <li>Once the file is extracted, right-click in the left pane of MO2 and select <strong>All Mods -> Refresh</strong></li>
                 </ul>
-            <p class="moddesc"> - Ensures your load order is correct for the Core module <br> <br>
-                                NOTE: This load order assumes you followed the entire guide with all the recommended options <br>
-                                For example, if you installed your own mods, those plugin-ins will be moved to the bottom of the LO and need to be manually moved back into the correct spot after the new load order is applied
+            <p class="moddesc"> - Automatically ensures your load order is correct for the Core module <br>
+                                NOTE: This load order assumes you followed the entire guide with all the recommended options.
+                                For example, if you installed your own mods, those plugin-ins will be moved to the bottom of the LO and need to be manually moved back into the correct spot after the new load order is applied.
+                                It will still work perfectly even if you left out some mods too
             </p>
         <h2 class="modhead">Using zMerge</h2>
             <ul class="specialinstructions">
                 <li>Verify <strong>Core - Conflict Resolution.esp</strong> is in the lowest spot in your load order</li>
-                <li>Run zEdit through MO2</li>
+                <li>Run zMerge through MO2</li>
                 <li>From the top drop-down menu, select <strong>zMerge</strong>, and from the bottom select <strong>Fallout NV</strong></li>
                 <li>Click <strong>Start Session</strong></li>
+                    <ul>
+                        <li>Make sure you selected <strong>zMerge</strong> and not <strong>zEdit</strong> from the drop-down</li>
+                    </ul>
                 <li>Once zMerge is loaded, click the gear icon in the top right</li>
                 <li>In the <strong>Core</strong> tab, you can change the <strong>Application Theme</strong> to <strong>Night</strong></li>
                 <li>In the <strong>Integration Settings</strong> tab, choose <strong>Mod Organizer 2</strong> for <strong>Mod manager</strong> and <strong>Portable</strong> for the <strong>MO2 instance:</strong></li>
@@ -117,14 +121,10 @@ SOFTWARE.
                                 ThrowableFixes.esp <br>
                                 Melee Reach Revised.esp <br>
                                 FIXforLegionArmors.esp <br>
-                                FixHitESP.esp <br>
                                 Enslave Gannon fix.esp <br>
-                                Rebreather Tweaked.esp <br>
                                 Female White Glove Society Mask.esp <br>
                                 Motion Sickness Reduction Mod.esp <br>
-                                Combat Music.esp <br>
                                 Glasses Fix.esp <br>
-                                Logic and Consistency Fixes.esp <br>
                                 JIP Improved Recipe Menu.esp <br>
                                 Quest Item Hider.esp <br>
                                 Tutorial Killer.esp <br>
@@ -133,13 +133,12 @@ SOFTWARE.
                                 CardMaster DM.esp <br>
                                 Inventory Search.esp <br>
                                 Vanilla UI Plus.esp (Only if you followed the VUI+ HUD Section)<br>
-                                DarNifiedUINV.esp (Only if you followed the DarnUI HUD Section) <br>
                                 Core - Conflict Resolution AIO.esp <strong><u>OR</u></strong> whatever patches you selected from the Conflict Resolution FOMOD<br>
                             </strong>
                         </li>
                     </ul>
                 <li>Click <strong>OK</strong> to exit the merge menu</li>
-                <li>Click the <strong>Build</strong> button in the top right to the right of the merge name</li>
+                <li>Click the <strong>Build</strong> button to the right of the merge name</li>
                 <li>The merge should build successfully and you can exit out of the program</li> 
                 <li>Right-click in the left pane of MO2 and select <strong>All Mods -> Refresh</strong></li>
                 <li>The merge should appear in the left pane and activate it like normal</li>
@@ -148,112 +147,99 @@ SOFTWARE.
                     <ul>
                         <li>All the mods that were merged should now have their plugins disappear from the right pane</li>
                     </ul>
-                <li>Use the same method to reactivate the mods when you need to rebuild the merge</li>
-                    <ul>
-                        <li>When you reactivate the mods, they will reappear in your load order in alphabetical order. Reinstall the <strong>Load Order.txt</strong> file to get it back into order</li>
-                    </ul>
             </ul>  
+        <h2 class="modhead">Rebuilding Merges with zMerge</h2>
+            <p class="moddesc">For when a mod is updated/added/removed from the merge:</p>
+            <ul class="specialinstructions">
+                <li>Click the <img class="mo2setting" src="./img/mo2ini.png" alt="MO2 INI Button"></a> on the top bar of MO2 and select <strong>Merge Plugins Hide</strong></li>
+                <li>Right-click on the <strong>Core - Merge</strong> listing, select <strong>Enable plugins</strong>, and then close</li>
+                <li>Re-apply the <strong>loadorder.txt</strong> file from before</li>
+                <li>Run zMerge through MO2</li>
+                <li>From the top drop-down menu, select <strong>zMerge</strong>, and from the bottom select <strong>Fallout NV</strong></li>
+                <li>Click <strong>Start Session</strong></li>
+                <li>If you need to add/remove a mod from the merge, click <strong>Edit</strong> to the right of the merge name and select/deselect the desired plugins</li>
+                <li>Click the <strong>Build</strong> button to the right of the merge name</li>
+                <li>Exit zMerge, refresh MO2, and re-hide the plugins</li>
+            </ul>
         <h2 class="modhead">Testing the Game</h2>
             <ul class="specialinstructions">
-                <li>Run the game through MO2</li>
+                <li>Run the game through the <strong>New Vegas</strong> option in MO2</li>
                 <li>Start up a new game and quickly run through the tutorial in Doc Mitchell's house</li>
-                <li>Once you have exited Doc's house, open up the MCM menu to verify all the entries display correctly</li>
-                <li>Spend at least 15-20 minutes in game doing whatever to make sure the game is running smoothly</li>
+                <li>Run through the tutorial missions with Sunny Smiles to verify everything is running smoothly and correctly</li>
             </ul>  
-        <h2 class="modhead">A Note About MCM Settings:</h2>
-            <p class="moddesc">
-                MCM setting changes are save-specific, so if you plan on installing other modules, wait to tweak the MCM until your start the save file you intend to play on
-            </p>
-        <h2 class="modhead">Tweaking the Settings/MCM</h2>
+        <h2 class="modhead">Tweaking the MCM</h2>
+        <p class="moddesc">
+            MCM setting changes are save-specific, so if you plan on installing other modules, wait to tweak the MCM until your start the save file you intend to play on
+        </p>
             <ul class="specialinstructions">
-                <li>Display Settings: Adjust to personal preference</li>
-                <li>Audio Settings: Adjust to personal preference</li>
-                <li>Controls Settings: Adjust to personal preference</li>
                 <li>Adjustable HUD: Adjust to personal preference</li>
                 <li>Extra HUD: Adjust to personal preference</li>
                 <li>Immersive HUD:</li>
             </ul>
-                <img id="FOMODImg" src="./img/ihudgen.png" alt="iHUD MCM 1" style="width:100%;max-width:300px">
+                <img id="FOMODImg" src="./img/ihudgen.png" alt="Enable iHUD controlled Sneak Meter" style="width:100%;max-width:300px">
                     <div id="FOMODModal" class="modal">
                         <img class="modal-content" id="img01">
                         <div id="caption"></div>
                     </div>
 
-                <img id="FOMODImg2" src="./img/ihudhp.png" alt="iHUD MCM 2" style="width:100%;max-width:300px">
+                <img id="FOMODImg2" src="./img/ihudhp.png" alt="Disable Activate on combat" style="width:100%;max-width:300px">
                     <div id="FOMODModal2" class="modal">
                         <img class="modal-content" id="img02">
                         <div id="caption2"></div>
                     </div>
-                <img id="FOMODImg3" src="./img/ihudcomp.png" alt="iHUD MCM 3" style="width:100%;max-width:300px">
+                <img id="FOMODImg3" src="./img/ihudcomp.png" alt="Disable Activate on combat" style="width:100%;max-width:300px">
                     <div id="FOMODModal3" class="modal">
                         <img class="modal-content" id="img03">
                         <div id="caption3"></div>
                     </div>
-                <img id="FOMODImg4" src="./img/ihudap.png" alt="iHUD MCM 4" style="width:100%;max-width:300px">
+                <img id="FOMODImg4" src="./img/ihudap.png" alt="Disable Activate on combat" style="width:100%;max-width:300px">
                     <div id="FOMODModal4" class="modal">
                         <img class="modal-content" id="img04">
                         <div id="caption4"></div>
                     </div>
-                <img id="FOMODImg5" src="./img/ihudammo.png" alt="iHUD MCM 5" style="width:100%;max-width:300px">
+                <img id="FOMODImg5" src="./img/ihudammo.png" alt="Disable Activate on combat" style="width:100%;max-width:300px">
                     <div id="FOMODModal5" class="modal">
                         <img class="modal-content" id="img05">
                         <div id="caption5"></div>
                     </div>
-                <img id="FOMODImg6" src="./img/ihudcrosshair.png" alt="iHUD MCM 6" style="width:100%;max-width:300px">
+                <img id="FOMODImg6" src="./img/ihudcrosshair.png" alt="Disable Activate on combat" style="width:100%;max-width:300px">
                     <div id="FOMODModal6" class="modal">
                         <img class="modal-content" id="img06">
                         <div id="caption6"></div>
                     </div>
             <ul class="specialinstructions">
-                <li>iHUD: Extra HUD: Leave default</li>
-                <li>Unofficial Patch+:</li>
-            </ul>
-                <img id="FOMODImg10" src="./img/up+.png" alt="UP+ MCM" style="width:100%;max-width:300px">
-                    <div id="FOMODModal10" class="modal">
-                        <span class="close">&times;</span>
-                        <img class="modal-content" id="img10">
-                        <div id="caption10"></div>
-                    </div>
-                    <ul class="specialinstructions">
-                        <ul>
-                            <li><strong>FoTN Hotkey</strong> and <strong>VATS Cancel Hotkey</strong> can be adjusted to personal preference</li>
-                        </ul>
-                    </ul>
-            <ul class="specialinstructions">
+                <li>iHUD: Extra HUD: Adjust to personal preference</li>
+                <li>CASM: Adjust to personal preference</li>
                 <li>FOV Slider: Adjust to personal preference</li>
                 <li>Quickthrow: Adjust to personal preference</li>
                 <li>Just Mods Merged:</li>
             </ul>
-                <img id="FOMODImg8" src="./img/JMMMCM.png" alt="Just Mods Merged MCM" style="width:100%;max-width:300px">
+                <img id="FOMODImg8" src="./img/JMMMCM.png" alt="Only enable the selected options for now (the rest will be enabled during the Gameplay module" style="width:100%;max-width:300px">
                 <div id="FOMODModal8" class="modal">
+                    <span class="close">&times;</span>
                     <img class="modal-content" id="img08">
                     <div id="caption8"></div>
                 </div>
             <ul class="specialinstructions">
-                <li>The Weapon Mod Menu: Leave default</li>
-                <li>Loot Menu: Adjust to personal preference</li>
-                <li>JIP CCC Controls: Adjust to personal preference</li>
-                <li>JIP CCC Interface:</li>
-            </ul>
-                <img id="FOMODImg7" src="./img/jipccc1.png" alt="JIP CCC MCM 1" style="width:100%;max-width:300px">
-                    <div id="FOMODModal7" class="modal">
-                        <img class="modal-content" id="img07">
-                        <div id="caption7"></div>
-                    </div>
-            <ul class="specialinstructions">
                     <ul>
-                        <li><strong>Companion Bar Properties</strong> can be adjusted to personal preference</li>
-                        <li><strong>Tutorial Mode</strong> can be disabled if you are experienced with the mod</li>
+                        <li>The rest of the Just Mods Merged's settings can be adjusted to personal preference</li>
                     </ul>
-            </ul class=>
-            <ul class="specialinstructions">
-                <li>JIP CCC Optional:</li>
             </ul>
-                <img id="FOMODImg9" src="./img/jipccc2.png" alt="JIP CCC MCM 2" style="width:100%;max-width:300px">
-                    <div id="FOMODModal9" class="modal">
-                        <img class="modal-content" id="img09">
-                        <div id="caption9"></div>
-                    </div>
+            <ul class="specialinstructions">
+                <li>The Weapon Mod Menu: Adjust to personal preference</li>
+                <li>Loot Menu: Adjust to personal preference</li>
+                <li>JIP CCC:</li>
+            </ul>
+                <img id="FOMODImg7" src="./img/JIPCCCmcm.png" alt="Set Companion Bar Visibility to Selection Mode Only" style="width:100%;max-width:300px">
+                <div id="FOMODModal7" class="modal">
+                    <img class="modal-content" id="img07">
+                    <div id="caption7"></div>
+                </div>
+            <ul class="specialinstructions">
+                <ul>
+                    <li>The rest of the JIP CCC's settings can be adjusted to personal preference</li>
+                </ul>
+            </ul>
     </div>
     <div>
         <hr>
@@ -261,7 +247,6 @@ SOFTWARE.
         <a class="arrows" href="./index.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
     </div>
 </body>
-
 <script>
 var modal = document.getElementById('FOMODModal');
 
@@ -280,12 +265,13 @@ span.onclick = function() {
     modal.style.display = "none";
 }
 </script>
+
 <script>
     var modal = document.getElementById('FOMODModal2');
 
 var img = document.getElementById('FOMODImg2');
 var modalImg = document.getElementById("img02");
-var captionText = document.getElementById("caption");
+var captionText = document.getElementById("caption2");
 img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
@@ -298,12 +284,13 @@ span.onclick = function() {
     modal.style.display = "none";
 }
 </script>
+
 <script>
     var modal = document.getElementById('FOMODModal3');
 
 var img = document.getElementById('FOMODImg3');
 var modalImg = document.getElementById("img03");
-var captionText = document.getElementById("caption");
+var captionText = document.getElementById("caption3");
 img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
@@ -316,12 +303,13 @@ span.onclick = function() {
     modal.style.display = "none";
 }
 </script>
+
 <script>
     var modal = document.getElementById('FOMODModal4');
 
 var img = document.getElementById('FOMODImg4');
 var modalImg = document.getElementById("img04");
-var captionText = document.getElementById("caption");
+var captionText = document.getElementById("caption4");
 img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
@@ -334,12 +322,13 @@ span.onclick = function() {
     modal.style.display = "none";
 }
 </script>
+
 <script>
     var modal = document.getElementById('FOMODModal5');
 
 var img = document.getElementById('FOMODImg5');
 var modalImg = document.getElementById("img05");
-var captionText = document.getElementById("caption");
+var captionText = document.getElementById("caption5");
 img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
@@ -352,12 +341,13 @@ span.onclick = function() {
     modal.style.display = "none";
 }
 </script>
+
 <script>
     var modal = document.getElementById('FOMODModal6');
 
 var img = document.getElementById('FOMODImg6');
 var modalImg = document.getElementById("img06");
-var captionText = document.getElementById("caption");
+var captionText = document.getElementById("caption6");
 img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
@@ -375,7 +365,7 @@ span.onclick = function() {
 
 var img = document.getElementById('FOMODImg7');
 var modalImg = document.getElementById("img07");
-var captionText = document.getElementById("caption");
+var captionText = document.getElementById("caption7");
 img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
@@ -393,43 +383,7 @@ span.onclick = function() {
 
 var img = document.getElementById('FOMODImg8');
 var modalImg = document.getElementById("img08");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() { 
-    modal.style.display = "none";
-}
-</script>
-<script>
-    var modal = document.getElementById('FOMODModal9');
-
-var img = document.getElementById('FOMODImg9');
-var modalImg = document.getElementById("img09");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() { 
-    modal.style.display = "none";
-}
-</script>
-<script>
-    var modal = document.getElementById('FOMODModal10');
-
-var img = document.getElementById('FOMODImg10');
-var modalImg = document.getElementById("img10");
-var captionText = document.getElementById("caption");
+var captionText = document.getElementById("caption8");
 img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;

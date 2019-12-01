@@ -74,15 +74,10 @@ SOFTWARE.
             </p>
         <h2 class="modhead">A Note About the Plugin Limit</h2>
             <p class="moddesc">
-                Fallout New Vegas has a safe plugin cap of about 110 compared to the cap of 255 in Skyrim/Fallout 4. 
+                Fallout New Vegas has a safe plugin cap of about ~110 (no one knows the exact number) compared to the cap of 255 in Skyrim/Fallout 4. 
                 The cap will also vary based on the size of loaded plugins.
                 The guide will use the tool <strong>zMerge</strong> (a.k.a <strong>zEdit</strong>) to merge plugins together to stay below the limit. 
                 If you plan on adding your own mods in addition to the ones in the guide, familiarize yourself with the tool so you can stay below the limit as well. 
-            </p>
-        <h2 class="modhead">A Note About MenuMode 4 Scripts</h2>
-            <p class="moddesc">
-                MenuMode 4 is a method of activating a script added by JIP LN that fires the script when the main menu loads. 
-                In order to give scripts that fire in MenuMode 4 a chance to run, you must wait on the main menu for a second or two before starting the game
             </p>
         <h2 class="modhead">Creating a Separator in Mod Organizer 2</h2>
             <ul class="specialinstructions">
@@ -90,7 +85,7 @@ SOFTWARE.
                 <li>Input <strong>Bug Fixes</strong> into the pop-up and select <strong>OK</strong></li>
             </ul>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/51664?tab=files" target="_blank">Yukichigai Unofficial Patch</a></h2>
-            <p class="specialinstall"><strong>Files to install:</strong></p>
+            <p class="specialinstall"><strong>Files to install normally:</strong></p>
                 <ul class="specialinstructions">
                     <li>Main File: <strong>YUP - Base Game and All DLC</strong></li>
                 </ul>
@@ -98,48 +93,47 @@ SOFTWARE.
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/62041?tab=files" target="_blank">Navmesh Fixes and Improvements</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
             <p class="moddesc"> - Fixes almost all navmesh (AI navigation) issues in the base game</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/62953?tab=files" target="_blank">Unofficial Patch Plus</a></h2>
-            <p class="specialinstall"><strong>Files to install:</strong></p>
-                <ul class="specialinstructions"> 
-                    <li>Main File: <strong>Unofficial Patch Plus</strong></li>
-                    <li>Optional File: <strong>Unofficial Patch Plus - Addendum</strong></li>
-                </ul>
-                <br>
-            <p class="specialinstall"><strong>Optional FNVEdit editing recommended:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Once the mod is installed, run FNVEdit through MO2</li>
-                    <li>Right-click in the <strong>Module Selection</strong> pop-up and click <strong>Select None</strong></li>
-                    <li>Check the box adjacent to <strong>Unofficial Patch Plus.esp</strong> then hold down left shift and click <strong>OK</strong></li>
-                    <li>Wait for the message <strong>Background Loader: finished</strong> to appear in the right pane</li>
-                    <li>Input <strong>15C570</strong> into the FormID search box in the top left and hit enter</li>
-                    <li>In the right pane, change the <strong>Magnitude</strong> of the record below <strong>ReduceCarryWeight</strong> in the <strong>Unofficial Patch Plus.esp</strong> column from <strong>75</strong> to <strong>0</strong></li>
-                        <ul>
-                            <li>If you do not see the <strong>ReduceCarryWeight</strong> record, right-click in the right pane and un-check <strong>Hide no conflict rows</strong></li>
-                                <ul>
-                                    <li>This tweak removes the penalty to companions' carry weight, as I know a lot of people wouldn't like that in a bug fix mod</li> 
-                                </ul>
-                        </ul>
-                    <li>When you exit FNVEdit, you should be prompted to save the edited plug-in</li>
-                    <li>Make sure <strong>Unofficial Patch Plus.esp</strong> is checked and <strong>Backup plugins</strong> is unchecked then click <strong>OK</strong></li>
-                </ul>
-            <p class="moddesc"> - Collection of supplementary bug fixes to be used alongside YUP <br>
-                                NOTE: This mod contains what some might call "gameplay changes." I personally look at them as continuity/QOL fixes, but 
-                                if you don't want these "gameplay changes," you can either not install the optional file which contains these changes, or try 
-                                <a class="modsublink" href="https://www.nexusmods.com/newvegas/mods/65412" target="_blank">Unoffical Patch NVSE</a> as an alternative
-            </p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65412?tab=files" target="_blank">Unofficial Patch NVSE</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Pure bug fix mod similar to YUP, but takes advantage of NVSE</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65052?tab=files" target="_blank">Weapon Mesh Improvement Mod</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
             <br>
             <p class="specialinstall"><strong>Manual FNVEdit editing required:</strong></p>
                 <ul class="specialinstructions">
                     <li>Run FNVEdit through MO2</li>
+                        <img id="FOMODImg" src="./img/FNVEdit Run.png" alt="Select FNVEdit from the excecutables drop-down and run it through MO2" style="width:100%;max-width:300px">
+                        <div id="FOMODModal" class="modal">
+                            <img class="modal-content" id="img01">
+                            <div id="caption"></div>
+                        </div>
                     <li>Right-click in the <strong>Module Selection</strong> pop-up and click <strong>Select None</strong></li>
+                        <img id="FOMODImg2" src="./img/FNVEdit Choose.png" alt="Right-click anywhere on the window and click Select None" style="width:100%;max-width:300px">
+                        <div id="FOMODModal2" class="modal">
+                            <img class="modal-content" id="img02">
+                            <div id="caption2"></div>
+                        </div>
                     <li>Check the box adjacent to <strong>WMIMNV.esp</strong> then hold down left shift and click <strong>OK</strong></li>
+                        <img id="FOMODImg3" src="./img/FNVEdit OK.png" alt="Hold down shift (to skip building references) and select OK" style="width:100%;max-width:300px">
+                        <div id="FOMODModal3" class="modal">
+                            <img class="modal-content" id="img03">
+                            <div id="caption3"></div>
+                        </div>
                     <li>Wait for the message <strong>Background Loader: finished</strong> to appear in the right pane</li>
+                        <img id="FOMODImg4" src="./img/FNVEdit Finished.png" alt="Background Loader: Finished (any messages above it can be ignored)" style="width:100%;max-width:300px">
+                        <div id="FOMODModal4" class="modal">
+                            <img class="modal-content" id="img04">
+                            <div id="caption4"></div>
+                        </div>
                     <li>Input <strong>05000906</strong> into the FormID search box in the top left and hit enter</li>
+                        <img id="FOMODImg5" src="./img/FNVEdit search.png" alt="FormID Search" style="width:100%;max-width:300px">
+                        <div id="FOMODModal5" class="modal">
+                            <img class="modal-content" id="img05">
+                            <div id="caption5"></div>
+                        </div>
                         <ul>
                             <li>If xEdit doesn't find anything, your load order is probably incorrect. Make sure the order of the official .ESMs are as follows:</li>
-                                <ul>
+                                <ul class="initweaks">
                                     FalloutNV.esm <br>
                                     DeadMoney.esm <br>
                                     HonestHearts.esm <br>
@@ -153,70 +147,68 @@ SOFTWARE.
                                 </ul>
                         </ul>
                     <li>Right-click in the right pane and select <strong>Hide no conflict and empty rows</strong></li>
+                        <img id="FOMODImg6" src="./img/FNVEdit hide.png" alt="Hide no conflict and empty rows" style="width:100%;max-width:300px">
+                        <div id="FOMODModal6" class="modal">
+                            <img class="modal-content" id="img06">
+                            <div id="caption6"></div>
+                        </div>
                     <li>Drag and drop the value next to <strong>Tracer Chance</strong> from <strong>GunRunnersArsenal.esm</strong> on to the value from <strong>WMIMNV.esp</strong></li>
+                        <img id="FOMODImg7" src="./img/WMIM Tracer.png" alt="Drag and drop" style="width:100%;max-width:300px">
+                        <div id="FOMODModal7" class="modal">
+                            <img class="modal-content" id="img07">
+                            <div id="caption7"></div>
+                    </div>
                         <ul>
                             <li>Fixes a bug that caused Dragon's Breath rounds to cause micro stutter when fired</li>
                         </ul>
                     <li>Input <strong>3a15e</strong> into the FormID search box in the top left and hit enter</li>
                     <li>Drag and drop <strong>WeapNVLightMachineGun "Light Machine Gun" [WEAP:000906DF]</strong> from <strong>FalloutNV.esm</strong> on to the blank box directly next to it from <strong>WMIMNV.esp</strong></li>
+                        <img id="FOMODImg8" src="./img/WMIM LMG.png" alt="Drag and Drop" style="width:100%;max-width:300px">
+                        <div id="FOMODModal8" class="modal">
+                            <img class="modal-content" id="img08">
+                            <div id="caption8"></div>
+                        </div>
                         <ul>
                             <li>Adds LMGs back to the FormID list of weapons that Super Mutants can use to fix them spawning with them but not being able to use them</li>
                         </ul>
                     <li>Input <strong>121154</strong> into the FormID search box in the top left and hit enter</li>
                     <li>Right-click on <strong>WMIMNV.esp</strong> on the top bar of the right pane and select <strong>Remove</strong></li>
+                        <img id="FOMODImg9" src="./img/WMIM Recharge.png" alt="Make sure you right-click on the WMIMNV.esp header" style="width:100%;max-width:300px">
+                        <div id="FOMODModal9" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="img09">
+                            <div id="caption9"></div>
+                        </div>
                         <ul>
                             <li>Removes absurd buffs to the Recharger Rifle</li>
                         </ul>
-                    <li>Save and exit</li>
+                    <li>Save (control+s) and exit</li>
                 </ul>
             <p class="moddesc"> - Fixes mesh errors, UV errors, incorrect flags, missing extra data, form lists, projectiles, and other weapon related bugs <br>
-                                NOTE: Due to the nature of this mod, any other mods that edit the same weapon meshes will be incompatible. This is why you won't see the likes of mods such as WMX or EVE. 
+                                NOTE: Due to the nature of this mod, any other mods that edit the same weapon meshes will be incompatible. This is why you won't see the likes of mods such as WMX or EVE 
             </p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/62767?tab=files" target="_blank">Throwable Weapon Fixes</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
             <p class="moddesc"> - Collection of fixes for throwable weapons</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/67070?tab=files" target="_blank">Asterra's Many Fixes</a></h2>
-            <p class="specialinstall"><strong>Files to install:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Main File - <strong>Asterra's Many Fixes</strong></li>
-                </ul>
-            <p class="moddesc"> - Collection of fixes not covered by either YUP or UPP</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/57729/?tab=files" target="_blank">Melee Reach Fixed</a></h2>
-            <p class="specialinstall"><strong>Files to install:</strong></p>
+            <p class="specialinstall"><strong>Files to install normally:</strong></p>
                 <ul class="specialinstructions">
                     <li>Optional File - <strong>ALTERNATIVE mastahbossu's Scripted Version</strong></li>
                 </ul>
             <p class="moddesc"> - Fixes the range of melee weapons to better represent their size</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65004?tab=files" target="_blank">Fixes for the Caesar's Legion Armors</a></h2>
-            <p class="specialinstall"><strong>Files to install:</strong></p>
+            <p class="specialinstall"><strong>Files to install normally:</strong></p>
                 <ul class="specialinstructions">
                     <li>Main File - <strong>Fix for the Legion armors</strong></li>
                     <li>Update File - <strong>Update for Yup</strong></li>
                 </ul>
             <p class="moddesc"> - Fixes many mesh issues with Legion armors</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/64786?tab=files" target="_blank">Reactivated Hit Topics</a></h2>
-            <p class="specialinstall"><strong>Install normally</strong></p>
-            <p class="moddesc"> - Restores NPC voice lines that activate on hit that otherwise wouldn't play</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66775?tab=files" target="_blank">Sierra Madre Exterior Fixed</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
             <p class="moddesc"> - Fixes the messed up texture on the Sierra Madre exterior</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/62923/?tab=files" target="_blank">Enslaving Arcade Fix</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
             <p class="moddesc"> - Allows you to give Arcade to Caesar at any point during the 'Et Tumor, Brute?' quest</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65051?tab=files" target="_blank">Rebreather Tweaked</a></h2>
-            <p class="specialinstall"><strong>Install normally</strong></p>
-            <br>
-            <p class="specialinstall"><strong>Manual FNVEdit editing required:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Right-click in the <strong>Module Selection</strong> pop-up and click <strong>Select None</strong></li>
-                    <li>Check the box adjacent to <strong>Rebreather Tweaked.esp</strong> then hold down left shift and click <strong>OK</strong></li>
-                    <li>Wait for the message <strong>Background Loader: finished</strong> to appear in the right pane</li>
-                    <li>Expand the <strong>Rebreather Tweaked.esp</strong> header in the left pane, and expand the <strong>Armor</strong> header within it</li>
-                    <li>Right-click on the <strong>Lucky Shades</strong> entry and select <strong>Remove</strong></li>
-                        <li>This tweak removes unnecessary changes to the Lucky Shades</li>
-                    <li>Save and exit</li>
-                </ul>
-            <p class="moddesc"> - Fixes various bugs with the Rebreather</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66940?tab=files" target="_blank">Female White Glove Society Mask</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
             <p class="moddesc"> - Adds a separate female mesh for the White Glove Society Mask to fix alignment issues</p>
@@ -228,4 +220,167 @@ SOFTWARE.
         <a class="arrows" href="./qol.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
     </div>
 </body>
+
+<script>
+var modal = document.getElementById('FOMODModal');
+
+var img = document.getElementById('FOMODImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal2');
+
+var img = document.getElementById('FOMODImg2');
+var modalImg = document.getElementById("img02");
+var captionText = document.getElementById("caption2");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal3');
+
+var img = document.getElementById('FOMODImg3');
+var modalImg = document.getElementById("img03");
+var captionText = document.getElementById("caption3");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal4');
+
+var img = document.getElementById('FOMODImg4');
+var modalImg = document.getElementById("img04");
+var captionText = document.getElementById("caption4");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal5');
+
+var img = document.getElementById('FOMODImg5');
+var modalImg = document.getElementById("img05");
+var captionText = document.getElementById("caption5");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal6');
+
+var img = document.getElementById('FOMODImg6');
+var modalImg = document.getElementById("img06");
+var captionText = document.getElementById("caption6");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal7');
+
+var img = document.getElementById('FOMODImg7');
+var modalImg = document.getElementById("img07");
+var captionText = document.getElementById("caption7");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal8');
+
+var img = document.getElementById('FOMODImg8');
+var modalImg = document.getElementById("img08");
+var captionText = document.getElementById("caption8");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal9');
+
+var img = document.getElementById('FOMODImg9');
+var modalImg = document.getElementById("img09");
+var captionText = document.getElementById("caption9");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
 </html>

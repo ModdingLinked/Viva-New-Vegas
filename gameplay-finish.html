@@ -86,13 +86,13 @@ SOFTWARE.
                     <li>Extract <strong>loadorder.txt</strong> to <strong>Mod Organizer 2/profiles/Viva New Vegas - Gameplay</strong></li>
                     <li>Once the file is extracted, right-click in the left pane of MO2 and select <strong>All Mods -> Refresh</strong></li>
                 </ul>
-            <p class="moddesc"> - Ensures your load order is correct for the Gameplay module <br> <br>
-                NOTE: This load order assumes you followed the entire guide with all the recommended options <br>
-                For example, if you installed your own mods, those plugin-ins will need to be moved back into the correct spot after the new load order is applied
-            </p>
+                <p class="moddesc"> - Automatically ensures your load order is correct for the Gameplay module <br>
+                    NOTE: This load order assumes you followed the entire guide with all the recommended options.
+                    For example, if you installed your own mods, those plugin-ins will be moved to the bottom of the LO and need to be manually moved back into the correct spot after the new load order is applied.
+                    It will still work perfectly even if you left out some mods too
+                </p>
         <h2 class="modhead">Using zMerge</h2>
             <ul class="specialinstructions">
-                <li>Verify <strong>Gameplay - Conflict Resolution.esp</strong> is in the correct spot in your load order</li>
                 <li>Run zEdit through MO2</li>
                 <li>From the top drop-down menu, select <strong>zMerge</strong>, and from the bottom select <strong>Fallout NV</strong></li>
                 <li>Click <strong>Start Session</strong></li>
@@ -102,25 +102,24 @@ SOFTWARE.
                     <ul class="initweaks">
                         <li>
                             <strong>
-                                Economy Overhaul Snowglobes Fix.esp <br>
+                                Economy Overhaul Addendum Fix.esp <br>
                                 JSawyer Ultimate - Mojave Arsenal Patch.esp <br>
                                 Mojave Raiders - 22LR Varmint Rifle.esp <br>
                                 Character Expansions Revised - MR Patch.esp <br>
                                 Follower Tweaks.esp <br>
-                                BLEED - No Explosion Knockdowns.esp <br>
                                 ImmersiveRecoil.esp <br>
                                 Yukichigai Gameplay Tweaks.esp <br>
+                                VNV Follower Tweaks.esp <br>
                                 Alternative Repairing - Honest Hearts.esp <br>
                                 Alternative Repairing - Lonesome Road.esp <br>
                                 Void Minigame Bypass.esp <br>
                                 Pickpocket Overhaul.esp <br>
-                                Faction Armor Redone.esp <br>
-                                Loot Vehicles.esp <br>
                                 migWellRested.esp <br>
                                 BetterNCRSupplyCache.esp <br>
                                 Honest Hearts Workbench Crate Luck.esp <br>
                                 CIB Supermutants.esp <br>
                                 Rewarding Exploring.esp <br>
+                                Less Rewarding Exploring <br>
                                 Take Chems Make Fiends.esp <br>
                                 Gameplay - Conflict Resolution AIO (Core + Visuals + Gameplay).esp <br>
                                 WRP - JSUE Patch.esp <u>OR</u></strong> whatever patches you selected from the Conflict Resolution FOMOD <br>
@@ -128,7 +127,7 @@ SOFTWARE.
                         </li>
                     </ul>
                 <li>Click <strong>OK</strong> to exit the merge menu</li>
-                <li>Click the <strong>Build</strong> button in the top right to the right of the merge name</li>
+                <li>Click the <strong>Build</strong> button to the right of the merge name</li>
                 <li>The merge should build successfully and you can exit out of the program</li>
                 <li>Right-click in the left pane of MO2 and select <strong>All Mods -> Refresh</strong></li>
                 <li>The merge should appear in the left pane and activate it like normal</li>
@@ -136,40 +135,37 @@ SOFTWARE.
                 <li>Click the <img class="mo2setting" src="./img/mo2ini.png" alt="MO2 INI Button"></a> on the top bar of MO2 and select <strong>Merge Plugins Hide</strong></li>
                 <li>Right-click on the <strong>Gameplay - Merge</strong> listing, select <strong>Disable plugins</strong>, and then close</li>
                     <ul>
-                        <li>All the mods that were merged should now appear grayed-out in the left pane of MO2</li>
-                    </ul>
-                <li>Use the same method to reactivate the mods when you need to rebuild the merge</li>
-                    <ul>
-                        <li>When you reactivate the mods, they will reappear in your load order in alphabetical order. Reinstall the <strong>Load Order.txt</strong> file to get it back into order</li>
+                        <li>If the application fails to find your instance or points to another game, just click the folder icon and manually set them</li>
                     </ul>
             </ul>
         <h2 class="modhead">Testing the Game</h2>
             <ul class="specialinstructions">
-                <li>Run the game through MO2</li>
+                <li>Run the game through the <strong>New Vegas</strong> option in MO2</li>
                 <li>Start up a new game and quickly run through the tutorial in Doc Mitchell's house</li>
-                <li>Once you have exited Doc's house, open up the MCM menu to verify all the entries display correctly</li>
-                <li>Spend at least 15-20 minutes in game doing whatever to make sure the game is running smoothly</li>
-            </ul> 
+                <li>Run through the tutorial missions with Sunny Smiles to verify everything is running smoothly and correctly</li>
+            </ul>  
         <h2 class="modhead">Tweaking the MCM</h2>
             <ul class="specialinstructions">
                 <li>JustModsMerged (From the Core module):</li>
             </ul>   
-            <img id="FOMODImg" src="./img/JMM-Gameplay.png" alt="JMM MCM Gameplay" style="width:100%;max-width:300px">
+            <img id="FOMODImg" src="./img/JMM-Gameplay.png" alt="Enable everything" style="width:100%;max-width:300px">
                 <div id="FOMODModal" class="modal">
                     <img class="modal-content" id="img01">
                     <div id="caption"></div>
                 </div>
-            <img id="FOMODImg4" src="./img/JVSMCM.png" alt="JVS MCM Gameplay" style="width:100%;max-width:300px">
+            <img id="FOMODImg4" src="./img/JVSMCM.png" alt="Disable Sprint Jumping" style="width:100%;max-width:300px">
                 <div id="FOMODModal4" class="modal">
                     <img class="modal-content" id="img04">
                     <div id="caption4"></div>
                 </div>
             <ul class="specialinstructions">
-                <li>Everything else from Just Mods Merged: Adjust to personal preference</li>
+                <ul>
+                    <li>Everything else from Just Mods Merged: Adjust to personal preference</li>
+                </ul>
                 <li>JSawyer Ultimate Edition: Adjust to personal preference</li>
                 <li>Mojave Arsenal:</li>
             </ul>   
-            <img id="FOMODImg2" src="./img/arsenalmcm.png" alt="Mojave Arsenal MCM" style="width:100%;max-width:300px">
+            <img id="FOMODImg2" src="./img/arsenalmcm.png" alt="Uncheck Weapons Mods and Custom Weapons, check everything else" style="width:100%;max-width:300px">
                 <div id="FOMODModal2" class="modal">
                     <img class="modal-content" id="img02">
                     <div id="caption2"></div>
@@ -177,7 +173,7 @@ SOFTWARE.
             <ul class="specialinstructions">
                 <li>Melee Cleave:</li>
             </ul>
-            <img id="FOMODImg3" src="./img/cleavemcm.png" alt="Melee Cleave MCM" style="width:100%;max-width:300px">
+            <img id="FOMODImg3" src="./img/cleavemcm.png" alt="Change Fist Weapon AOE to 20" style="width:100%;max-width:300px">
                 <div id="FOMODModal3" class="modal">
                     <span class="close">&times;</span>
                     <img class="modal-content" id="img03">
@@ -216,7 +212,7 @@ SOFTWARE.
 
     var img = document.getElementById('FOMODImg2');
     var modalImg = document.getElementById("img02");
-    var captionText = document.getElementById("caption");
+    var captionText = document.getElementById("caption2");
     img.onclick = function(){
         modal.style.display = "block";
         modalImg.src = this.src;
@@ -234,7 +230,7 @@ SOFTWARE.
 
 var img = document.getElementById('FOMODImg4');
 var modalImg = document.getElementById("img04");
-var captionText = document.getElementById("caption");
+var captionText = document.getElementById("caption4");
 img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
@@ -252,7 +248,7 @@ span.onclick = function() {
 
 var img = document.getElementById('FOMODImg3');
 var modalImg = document.getElementById("img03");
-var captionText = document.getElementById("caption");
+var captionText = document.getElementById("caption3");
 img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;

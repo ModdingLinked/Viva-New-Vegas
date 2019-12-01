@@ -70,9 +70,9 @@ SOFTWARE.
                 </ul>
             <p class="moddesc"> - Makes the street lights in New Vegas functional</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66139?tab=files" target="_blank">Simple Street Lights ESP Replacer</a></h2>
-            <p class="specialinstall"><strong>Files to install:</strong></p>
+            <p class="specialinstall"><strong>Files to install normally:</strong></p>
                 <ul class="specialinstructions">
-                    <li>Main File - <strong>2.3. Visuals - Simple Street Lights ESP Replacer</strong></li>
+                    <li>Main File - <strong>2.2. Visuals - Simple Street Lights ESP Replacer</strong></li>
                 </ul>
             <p class="moddesc"> - Fixes ITMs, UDRs, many many wild edits that could have potentially broken the game, and forwards YUPs placement fixes</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/43485/?tab=files" target="_blank">Old Word Blues Path Lighting</a></h2>
@@ -88,13 +88,13 @@ SOFTWARE.
             <p class="specialinstall"><strong>Install normally</strong></p>
             <p class="moddesc"> - Fires actually light when you activate them</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66139?tab=files" target="_blank">Burning Campfire Redone Fix</a></h2>
-            <p class="specialinstall"><strong>Files to install:</strong></p>
+            <p class="specialinstall"><strong>Files to install normally:</strong></p>
                 <ul class="specialinstructions">
-                    <li>Main File - <strong>2.4. Visuals - Burning Campfire Redone Fix</strong></li>
+                    <li>Main File - <strong>2.3. Visuals - Burning Campfire Redone Fix</strong></li>
                 </ul>
             <p class="moddesc"> - Fixes a script edit that reverted changes made by the Honest Hearts DLC and fixes the flame effect continually stacking every time you activate it</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/52017?tab=files" target="_blank">Enhanced Grass</a></h2>
-            <p class="specialinstall"><strong>Files to install:</strong></p>
+            <p class="specialinstall"><strong>Files to install normally:</strong></p>
                 <ul class="specialinstructions">
                     <li>Main File - <strong>Enhanced Grass No VL</strong></li>
                 </ul>
@@ -105,14 +105,18 @@ SOFTWARE.
                     <li>Right-click in the <strong>Module Selection</strong> pop-up and click <strong>Select None</strong></li>
                     <li>Check the box adjacent to <strong>EnhancedGrass_NoVL.esp</strong> then hold down left shift and click <strong>OK</strong></li>
                     <li>Wait for the message <strong>Background Loader: finished</strong> to appear in the right pane</li>
-                    <li>Expand the <strong>EnhancedGrass_NoVL.esp</strong> header and then the <strong>Grass</strong> head within it</li>
-                    <li>Right-click on the <strong>GrassWasteland04</strong> record in the left pane and select <strong>Remove</strong></li>
-                        <ul>    
-                            <li>Repeat for <strong>NVSeaGrass01</strong></li>
-                        </ul>
-                    <li>Select the <strong>GrassWasteland05nv</strong> record in the left pane</li>
+                    <li>Input <strong>10633c</strong> into the FormID search box in the top left and hit enter</li>
                     <li>Right-click in the right pane and select <strong>Hide no conflict and empty rows</strong></li>
                     <li>In the right pane, right-click on the <strong>Vertex Lighting</strong> box and select <strong>Remove</strong></li>
+                        <img id="FOMODImg5" src="./img/grass edit.png" alt="Remove" style="width:100%;max-width:300px">
+                        <div id="FOMODModal5" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="img05">
+                            <div id="caption5"></div>
+                        </div>
+                        <ul>
+                            <li>Removes the vertex lighting flag from a type of grass that was accidentally left over</li>
+                        </ul>
                     <li>Save and exit</li>
                 </ul>
             <p class="moddesc"> - Makes grass and bushes swing more</p>
@@ -121,63 +125,45 @@ SOFTWARE.
             <p class="moddesc"> - Lets you change the range, brightness, color, and activation timing of the pip-boy light</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/35794?tab=files" target="_blank">Interior Lighting Overhaul</a></h2>
             <p class="specialinstall"><strong>FOMOD instructions:</strong></p>
-                <img id="FOMODImg" src="./img/ilofomod1.png" alt="ILO FOMOD 1" style="width:100%;max-width:300px">
+                <img id="FOMODImg" src="./img/ilofomod1.png" alt="Select Ultimate Edition" style="width:100%;max-width:300px">
                     <div id="FOMODModal" class="modal">
                         <img class="modal-content" id="img01">
                         <div id="caption"></div>
                     </div>
-                <img id="FOMODImg2" src="./img/ilofomod2.png" alt="ILO FOMOD 2" style="width:100%;max-width:300px">
+                <img id="FOMODImg2" src="./img/ilofomod2.png" alt="Select None" style="width:100%;max-width:300px">
                     <div id="FOMODModal2" class="modal">
                         <img class="modal-content" id="img02">
                         <div id="caption2"></div>
                     </div>
-                <img id="FOMODImg3" src="./img/ilofomod3.png" alt="ILO FOMOD 3" style="width:100%;max-width:300px">
+                <img id="FOMODImg3" src="./img/ilofomod3.png" alt="Select None" style="width:100%;max-width:300px">
                     <div id="FOMODModal3" class="modal">
                         <img class="modal-content" id="img03">
                         <div id="caption3"></div>
                     </div>
-                <img id="FOMODImg4" src="./img/ilofomod4.png" alt="ILO FOMOD 4" style="width:100%;max-width:300px">
+                <img id="FOMODImg4" src="./img/ilofomod4.png" alt="Select YUP Patch" style="width:100%;max-width:300px">
                     <div id="FOMODModal4" class="modal">
                         <span class="close">&times;</span>
                         <img class="modal-content" id="img04">
                         <div id="caption4"></div>
                     </div>
-                    <br>
-                    <br>
-                    <br>
-                    <p class="specialinstall"><strong>FNVEdit editing required:</strong></p>
-                        <ul class="specialinstructions">
-                            <li>Only needed if you installed <a class="modsublink" href="https://www.nexusmods.com/newvegas/mods/67168?tab=files" target="_blank">Logic and Consistency Fixes</a> from the Core - QOL section </li>
-                            <li>Run FNVEdit through MO2</li>
-                            <li>Right-click in the <strong>Module Selection</strong> pop-up and click <strong>Select None</strong></li>
-                            <li>Check the box adjacent to <strong>Core - Merge.esp</strong> and <strong>Interior Lighting Overhaul - Ultimate Edition.esp</strong> then hold down left shift and click <strong>OK</strong></li>
-                            <li>Wait for the message <strong>Background Loader: finished</strong> to appear in the right pane</li>
-                            <li>Input <strong>D8052</strong> into the FormID search box in the top left and hit enter</li>
-                            <li>Right-click in the right pane and check <strong>Hide no conflict and empty rows</strong></li>
-                            <li>Drag and drop <strong>HELIOS One Control Room</strong> option from <strong>Core - Merge.esp</strong> onto <strong>HELIOS One Observation Level</strong> from <strong>Interior Lighting Overhaul - Ultimate Edition.esp</strong></li>
-                            <li>Save and exit</li>
-                        </ul>
             <p class="moddesc"> - Modifies all interior cells giving them a realistic look and a more creepy feel <br>
                                 NOTE: May cause small performance hits on weaker machines in large interiors such as Camp McCarran
             </p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/63749?tab=files" target="_blank">Interior Fog Remover</a></h2>
-            <p class="specialinstall"><strong>Files to install:</strong></p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/35998?tab=files" target="_blank">Nevada Skies</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Adds many different lore friendly weather types to the game</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66139?tab=files" target="_blank">Nevada Skies - No Pop-up</a></h2>
+            <p class="specialinstall"><strong>Files to install normally:</strong></p>
                 <ul class="specialinstructions">
-                    <li>Main File - <strong>NV_IFR</strong></li>
-                    <li>Optional File - <strong>NV_IFR_ILOFIX</strong></li>
+                    <li>Main File - <strong>2.4. Visuals - Nevada Skies No Pop-up</strong></li>
                 </ul>
-            <p class="moddesc"> - Removes foggy veil from everywhere indoors</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/52037?tab=files" target="_blank">Realistic Wasteland Lighting</a></h2>
-            <p class="specialinstall"><strong>Files to install:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Main File - <strong>FNV Realistic Wasteland Lighting - All DLC</strong></li>
-                </ul>
-            <p class="moddesc"> - Complete weather overhaul designed to make the game look more realistic</p>
+            <p class="moddesc"> - Removes the pop-up from Nevada Skies that appears when you first load the game and automatically selects the <strong>Minimalist</strong> version <br>
+                                NOTE: If you want to install either of the other two versions of Nevada Skies, skip this mod and select them from the pop-up
+            </p>
         <h2 class="modhead">A Note About Weather/Lighting Mods:</h2>
-            <p class="moddesc">If you do not like Realistic Wasteland Lighting, the two best alternatives are <a class="modsublink" href="https://www.nexusmods.com/newvegas/mods/62481" target="_blank">Clarity</a> 
-                and <a class="modsublink" href="https://www.nexusmods.com/newvegas/mods/35998" target="_blank">Nevada Skies</a> Clarity is a simple tint remover whereas Nevada Skies
-                adds many different weathers. There is also <a class="modsublink" href="https://www.nexusmods.com/newvegas/mods/67277?tab=files" target="_blank">Yellow Goodbye</a>, which is based off of Clarity with a slightly different look.
-                If you use Clarity, make sure to grab the <strong>NV_IFR_CLARITYFIX</strong> file on the Interior Fog Remover page. And if you use Nevada Skies, it has ILO and IFR built into it already, as long as Nevada Skies is loaded after both of them.
+            <p class="moddesc">If you do not like Nevada Skies, the two best alternatives are <a class="modsublink" href="https://www.nexusmods.com/newvegas/mods/62481" target="_blank">Clarity</a> 
+                and <a class="modsublink" href="https://www.nexusmods.com/newvegas/mods/52037?tab=files" target="_blank">Realistic Wasteland Lighting</a>. Clarity is a simple tint remover whereas Realistic Wasteland Lighting
+                attempts to mimic the real-life feel of the desert more closely. There is also <a class="modsublink" href="https://www.nexusmods.com/newvegas/mods/67277?tab=files" target="_blank">Yellow Goodbye</a>, which is based off of Clarity with a slightly different look.
             </p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66650?tab=files" target="_blank">Viva New Vegas - NVGE Preset</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
@@ -194,10 +180,7 @@ SOFTWARE.
                         </ul>
                 </ul>
             <p class="moddesc"> - A preset for NVGE designed to make the desert feel warmer and more realistic, including overhauled water <br>
-                                NOTE: If you experience laggy wave effects, restart your PC to clear the caches <br>
-                                The water in NVGE, while beautiful, can be very buggy for some people. If this is the case for you, you can disable it by setting <strong>Water</strong> to <strong>0</strong>  under <strong>[Shaders]</strong>
-                                in the <strong>NewVegasReloaded.ini</strong>
-            </p>
+                                NOTE: If you experience laggy wave effects, restart your PC to clear the caches </p>
     </div> 
     <div>
         <hr>
@@ -229,7 +212,7 @@ span.onclick = function() {
 
 var img = document.getElementById('FOMODImg2');
 var modalImg = document.getElementById("img02");
-var captionText = document.getElementById("caption");
+var captionText = document.getElementById("caption2");
 img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
@@ -247,7 +230,7 @@ span.onclick = function() {
 
 var img = document.getElementById('FOMODImg3');
 var modalImg = document.getElementById("img03");
-var captionText = document.getElementById("caption");
+var captionText = document.getElementById("caption3");
 img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
@@ -265,7 +248,25 @@ span.onclick = function() {
 
 var img = document.getElementById('FOMODImg4');
 var modalImg = document.getElementById("img04");
-var captionText = document.getElementById("caption");
+var captionText = document.getElementById("caption4");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal5');
+
+var img = document.getElementById('FOMODImg5');
+var modalImg = document.getElementById("img05");
+var captionText = document.getElementById("caption5");
 img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
