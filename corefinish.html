@@ -209,14 +209,21 @@ SOFTWARE.
                     </div>
             <ul class="specialinstructions">
                 <li>iHUD: Extra HUD: Adjust to personal preference</li>
-                <li>CASM: Adjust to personal preference</li>
+                <li>CASM:</li>
+            </ul>
+                <img id="FOMODImg9" src="./img/CASM MCM.png" alt="Disable Show Messages, On Enter/Exit, On Location Reached, On Leaving Combat, On Completing Challenges, On Crafting Items, On Lock Picked, and On Terminal Hacked" style="width:100%;max-width:300px">
+                <div id="FOMODModal9" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img09">
+                    <div id="caption9"></div>
+                </div>
+            <ul class="specialinstructions">
                 <li>FOV Slider: Adjust to personal preference</li>
                 <li>Quickthrow: Adjust to personal preference</li>
                 <li>Just Mods Merged:</li>
             </ul>
                 <img id="FOMODImg8" src="./img/JMMMCM.png" alt="Only enable the selected options for now (the rest will be enabled during the Gameplay module" style="width:100%;max-width:300px">
                 <div id="FOMODModal8" class="modal">
-                    <span class="close">&times;</span>
                     <img class="modal-content" id="img08">
                     <div id="caption8"></div>
                 </div>
@@ -384,6 +391,24 @@ span.onclick = function() {
 var img = document.getElementById('FOMODImg8');
 var modalImg = document.getElementById("img08");
 var captionText = document.getElementById("caption8");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal9');
+
+var img = document.getElementById('FOMODImg9');
+var modalImg = document.getElementById("img09");
+var captionText = document.getElementById("caption9");
 img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
