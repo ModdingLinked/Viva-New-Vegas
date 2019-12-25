@@ -37,9 +37,8 @@ SOFTWARE.
         <h4 class="subtitle"><em>A Comprehensive 2019 Fallout New Vegas Modding Guide</em></h4>
         <hr class="line">
         <ul class="navbar">
-            <li class="navbarli"><a href="contact.html">Contact Me</a></li>
             <li class="navbarli"><a href="https://www.nexusmods.com/newvegas/mods/66139" target="_blank">Nexus</a></li>
-            <li class="navbarli"><a href="https://discord.gg/fXYxNPt" target="_blank">Discord</a></li>
+            <li class="navbarli"><a href="https://discord.gg/U3qVfFs" target="_blank">Discord</a></li>
             <li class="navbarli"><a href="index.html">Home</a></li>
         </ul>
     </div>
@@ -60,9 +59,13 @@ SOFTWARE.
         </ul>
         <hr>
         <h2 class="overlay">Installation Parameters:</h2>      
-            <p class="installparametersdesc">
+            <p class="moddesc">
               - Fallout New Vegas and all modding tools must be installed outside all default Windows folders (<strong>Program Files</strong>, <strong>Program Files (x86)</strong>, <strong>Desktop</strong>, and <strong>Documents</strong> for example)
-                <br>
+                  <ul class="specialinstructions">
+                    <li>This is to avoid issues with Windows UAC (User Account Control) from blocking certain aspects of different tools</li>
+                  </ul>
+            </p>
+            <p class="moddesc">
               - Fallout New Vegas and Mod Organizer 2 must be installed on the same drive, preferably on an SSD for shorter loading times and less stutter while loading assets
                 <br>
               - Fallout New Vegas itself is just about 10 gigabytes, and the total size of the entire guide is 23 gigabytes (including the game and all the tools)
@@ -120,7 +123,22 @@ SOFTWARE.
                       <li>Navigate to the <strong>Local Files</strong> tab and select <strong>Move Install Folder...</strong></li>
                       <li>Select the folder you just created and click <strong>Move Folder</strong></li>
                     <p>For Steam (Moving within the same drive):</p>
-                      <li>There is no easy way to move your game folder within the same drive. Reference <a class="modsublink" href="https://youtu.be/4FEc2DUIWQU?t=130" target="_blank">this</a> video for the easiest method</li>
+                      <li>Navigate to <strong>Steam/steamapps/</strong> and open <strong>libraryfolders.vdf</strong> with a text editor (such as notepad)</li>
+                      <li>You should see something similar to this:</li>
+                        <img id="FOMODImg" src="./img/steamlibraryopen.png" alt="Steam/steamapps/libraryfolders.vdf" style="width:100%;max-width:300px">
+                        <div id="FOMODModal" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="img01">
+                            <div id="caption"></div>
+                        </div>
+                      <li>Add a new line below the lowest filepath and follow the same format for creating a new drive path</li>
+                      <li>For this example, it would be something along the lines of  &nbsp; <strong>"3" &nbsp;&nbsp;&nbsp;&nbsp;	"F:\\Games\\Steam"</strong></li>
+                        <ul>
+                          <li>Make sure the number and file path align with how many folders there already are and where you intend to create the new respectively</li>
+                        </ul>
+                      <li>Right-click on <strong>Fallout New Vegas</strong> and select <strong>Properties</strong></li>
+                      <li>Navigate to the <strong>Local Files</strong> tab and select <strong>Move Install Folder...</strong></li>
+                      <li>Select the folder you just created and click <strong>Move Folder</strong></li>
                     <p>For GOG:</p>
                       <li>GOG does not currently have a way to move an installed game, so you have to reinstall it to the correct folder</li>
                   </ul>
@@ -254,5 +272,23 @@ SOFTWARE.
     });
   }
 </script>
+<script>
+  var modal = document.getElementById('FOMODModal');
+  
+  var img = document.getElementById('FOMODImg');
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+  }
+  
+  var span = document.getElementsByClassName("close")[0];
+  
+  span.onclick = function() { 
+      modal.style.display = "none";
+  }
+  </script>
 
 </html>
