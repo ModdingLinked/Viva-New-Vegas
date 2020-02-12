@@ -59,8 +59,7 @@ SOFTWARE.
             <li><a href="./mo2config.html">Mod Organizer 2</a></li>
             <li><a href="./initweaks.html">INI Tweaks</a></li>
             <li>Utilities</li>
-            <li><a href="./bugfix.html">Bug Fixes</a></li>
-            <li><a href="./qol.html">QOL Improvements</a></li>
+            <li><a href="./bugfix.html">Bug Fixes/QOL</a></li>
             <li><a href="./hudui.html">HUD/UI</a></li>
             <li><a href="./corefinish.html">Finish Line</a></li>
         </ul>
@@ -69,8 +68,7 @@ SOFTWARE.
     <div>
         <h2 class="modhead">A Note About Testing the Game</h2>
             <p class="moddesc">
-                After each section in every module, you should launch the game and make sure everything is working correctly by running around for a few minutes and testing <br>
-                various parts of mods
+                After each section in every module, you should launch the game and make sure everything is working correctly by running around for a few minutes
             </p>
         <h2 class="modhead">Creating a Separator in Mod Organizer 2</h2>
             <ul class="specialinstructions">
@@ -85,20 +83,15 @@ SOFTWARE.
                     <li>Extract all files ending in <strong>.dll</strong> and the <strong>.exe</strong> (5 total files) from the archive to the <strong>Root</strong> folder</li>
                 </ul>
             <p class="moddesc"> - Extends the scripting capabilities of the engine and is essential for most mods</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66139?tab=files" target="_blank">NVSE_Config.ini</a></h2>
-            <p class="specialinstall"><strong>Files to install normally:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Main File - <strong>1.1. Core - NVSE_Config.ini</strong></li>
-                </ul>    
-            <p class="moddesc"> - Increases heap allocation to help prevent stuttering/crashing <br>
-                                NOTE: For files from the <strong>Viva New Vegas Patch Emporium</strong> page, rename the files from in MO2 to their actual file name
-            </p>
+        <h2 class="modhead"><a class="modlink" href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/master/NVSE_Config.ini.7z" target="_blank">NVSE_Config.ini</a></h2>
+            <p class="specialinstall"><strong>Insatll normally</strong></p>  
+            <p class="moddesc"> - Increases heap allocation to help prevent stuttering/crashing</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/58277?tab=files" target="_blank">JIP LN NVSE Plugin</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
             <p class="moddesc"> - NVSE extension with 800+ new functions</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66927?tab=files" target="_blank">JohnnyGuitar NVSE</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
-            <p class="moddesc"> - Yes, it is a real NVSE extension despite the looks</p>
+            <p class="moddesc"> - Another NVSE extender</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/62552?tab=files" target="_blank">4GB Patcher</a></h2>
             <p class="specialinstall"><strong>Special install intructions:</strong></p>
                 <ul class="specialinstructions">
@@ -146,14 +139,10 @@ SOFTWARE.
                 <ul class="specialinstructions">
                     <li>Double-click <strong>NVTF</strong> in the left pane of MO2</li>
                     <li>In the <strong>INI-Files</strong> tab, click on <strong>NVSE/Plugins/NVTF.ini</strong></li>
-                    <li>Set <strong>bFastExit</strong>, <strong>bInlineCommonFunctions</strong>, <strong>bSpinCriticalSections</strong>, and <strong>bfMaxTime</strong> to <strong>1</strong></li>
-                    <li><strong>bGTCFix</strong> and <strong>bFPSFix</strong> can be set to <strong>1</strong> to allow for playing at framerates over 60 FPS</li>
-                    <ul>
-                        <li>If you enable it, set your desired max/min framerates in the section below</li>
-                        <li>I set my max to <strong>160</strong> (a good template for finding max is your average FPS + 60) and min to <strong>24</strong></li>
-                        <li>If you enable this option, make sure to change the <abbr title="RivaTuner Statistics Server">RTSS</abbr> FPS cap from <strong>60</strong> to your desired framerate (for example, <b>160</b>)</li>
-                    </ul>
-                    <li><b>bRemoveRCSafeGuard</b> can also be set to <b>1</b> to reduce stutter but is experimental</li>
+                    <li>Set your <strong>iMaxFPS=</strong> (line 20) to your average FPS in-game + 60</li>
+                        <ul>
+                            <li>For example, mine is set to <strong>160</strong> because I average around 100 FPS in-game</li>
+                        </ul>
                 </ul>
             <p class="moddesc"> - Works to fix micro-stuttering and allows for higher framerates </p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/59266?tab=files" target="_blank">OneTweak</a></h2>
@@ -167,27 +156,8 @@ SOFTWARE.
                         <ul class="initweaks">
                             <li>bFull Screen=0</li>
                         </ul>
-                    <li>Launch the game through MO2 and exit at the main menu</li>
-                    <li>Double-click <strong>OneTweak</strong> in the left pane of MO2</li>
-                    <li>In the <strong>INI-Files</strong> tab, click on <strong>NVSE/Plugins/OneTweak.ini</strong></li>
-                    <li>Under the <strong>[Priority]</strong> header, set <strong>Foreground</strong> to <strong>4</strong> (line 13)</li>
                 </ul>
             <p class="moddesc"> - Adds fake fullscreen and dynamic process priority</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65525?tab=files" target="_blank">New Vegas Reloaded - NVGE</a></h2>
-            <p class="specialinstall"><strong>Special install instructions:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Manually extract everything from the <strong>Data</strong> folder except the <strong>Music</strong> and <strong>Video</strong> folders to the Fallout New Vegas <strong>Data</strong> folder</li>
-                        <ul>
-                            <li>The <strong>.dll</strong> file can be ignored</li>
-                        </ul>
-                </ul>
-            <p class="moddesc"> - Adds a new rendering pipeline, updates the vanilla shaders, and adds memory management</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66139?tab=files" target="_blank">NVGE Custom .INI</a></h2>
-            <p class="specialinstall"><strong>Files to install normally:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Main File - <strong>1.2. Core - NVGE Custom .INI</strong></li>
-                </ul>
-            <p class="moddesc"> - .INI file for NVGE that turns off all visual enhancements, just leaving the performance and stability improvements. Visual enhancements will be tweaked in the <strong>Visuals</strong> module</p>
         <h2 class="modhead"><a class="modlink" href="./optionalutilities.html" target="_blank">Other helpful (and optional) utilities not used in this guide</a></h2>
         <h2 class="modhead"><a class="modlink" href="./core-utilitiesavoid.html" target="_blank">UTILITIES TO AVOID!</a></h2>
     </div>      
