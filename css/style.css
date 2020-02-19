@@ -157,7 +157,6 @@ body {
 
 .corereqlist {
     color:#DCDCDC;
-    list-style-type: none;
     text-align: center;
     padding:0;
     font-size: calc(10px + .5vw);
@@ -167,6 +166,15 @@ body {
 .corereqlist li a {
     text-decoration:none;
     color:orange;
+}
+
+.corelist {
+    color:#DCDCDC;
+    list-style-type: none;
+    text-align: center;
+    padding:0;
+    font-size: calc(10px + .5vw);
+    line-height:2.25em;
 }
 
 .corespecs {
@@ -455,10 +463,9 @@ a.modsublink:hover {
 
 .initweaks {
     list-style-type: none;
-    font-size:.85vw;
+    font-size:calc(10px + .30vw);
     color:#DCDCDC;
     line-height: 1.5em;
-    padding:1em 10em;
 }
 
 .initable {
