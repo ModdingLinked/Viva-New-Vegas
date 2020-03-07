@@ -148,27 +148,6 @@ SOFTWARE.
             <p class="moddesc">- Makes melee attacks able to hit multiple enemies, similar to the Dark Souls series</p>
         <h2 class="modhead"><a class="modlink" href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/master/Yukichigai%20Gameplay%20Tweaks.7z" target="_blank">Yukichigai Gameplay Tweaks</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
-            <br>
-            <p class="specialinstall"><strong>Manual FNVEdit editing required:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Run FNVEdit through MO2</li>
-                    <li>Right-click in the <strong>Module Selection</strong> pop-up and click <strong>Select None</strong></li>
-                    <li>Check the boxes adjacent to <strong>RWL Tweaked.esp</strong> and <strong>Yukichigai Gameplay Tweaks</strong> then hold down left shift and click <strong>OK</strong></li>
-                    <li>Wait for the message <strong>Background Loader: finished</strong> to appear in the right pane</li>
-                    <li>Input <strong>D8052</strong> into the FormID search box in the top left and hit enter</li>
-                    <li>Right-click in the right pane and select <strong>Hide no conflict and empty rows</strong></li>
-                    <li>Drag and drop <strong>HELIOS One Control Room</strong> from <strong>Yukichigai Gameplay Tweaks.esp</strong> to <strong>RWL Tweaked.esp</strong></li>
-                    <img id="FOMODImg2" src="./img/ygt edit.png" alt="Drag and Drop" style="width:100%;max-width:300px">
-                        <div id="FOMODModal2" class="modal">
-                            <span class="close">&times;</span>
-                            <img class="modal-content" id="img02">
-                            <div id="caption2"></div>
-                        </div>
-                        <ul>
-                            <li>Forwards a cell name change from YGT to RWL, since RWL will be loaded after YGT</li>
-                        </ul>
-                    <li>Save and exit</li>
-                </ul>
             <p class="moddesc"> - Collection of small gameplay changes that enhance vanilla aspects without drastically overhauling anything. For a list of the included mods, see the Read-Me included in the archive
             </p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/50468/?tab=files" target="_blank">JIP Companions Command and Control</a></h2>
@@ -252,24 +231,6 @@ var modal = document.getElementById('FOMODModal');
 var img = document.getElementById('FOMODImg');
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() { 
-    modal.style.display = "none";
-}
-</script>
-<script>
-    var modal = document.getElementById('FOMODModal2');
-
-var img = document.getElementById('FOMODImg2');
-var modalImg = document.getElementById("img02");
-var captionText = document.getElementById("caption2");
 img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
