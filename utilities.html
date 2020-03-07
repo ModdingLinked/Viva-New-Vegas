@@ -151,6 +151,8 @@ SOFTWARE.
             <p class="specialinstall"><strong>Manual tweaking required:</strong></p>
                 <ul class="specialinstructions">
                     <li>Navigate to <strong>Data/nvse/plugins</strong> and open <strong>NVTF.ini</strong></li>
+                    <li>Set <strong>bSpinCriticalSections=</strong> to <strong>0</strong></li>
+                    <li>Set <strong>bRemoveRCSafeGuard=</strong> to <strong>1</strong></li>
                     <li>Set your <strong>iMaxFPS=</strong> (line 20) to your average FPS in-game + 60</li>
                         <ul>
                             <li>For example, mine is set to <strong>160</strong> because I average around 100 FPS in-game</li>
@@ -158,6 +160,8 @@ SOFTWARE.
                                 Therefore, it should be set to an FPS you won't get in-game much if ever
                             </li>
                         </ul>
+                    <li>Set <strong>iMinFPS=</strong> to <strong>40</strong></li>
+                    <li>Remove the <strong>;</strong> from in front of <strong>iSpinCount=0</strong></li>
                 </ul>
             <p class="moddesc"> - Works to fix micro-stuttering and allows for higher framerates </p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/skyrim/mods/40706?tab=files" target="_blank">OneTweak</a></h2>
