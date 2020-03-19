@@ -151,19 +151,12 @@ SOFTWARE.
             <p class="specialinstall"><strong>Manual tweaking required:</strong></p>
                 <ul class="specialinstructions">
                     <li>Navigate to <strong>Data/nvse/plugins</strong> and open <strong>NVTF.ini</strong></li>
-                    <li>Set <strong>bSpinCriticalSections=</strong> to <strong>0</strong></li>
-                    <li>Set <strong>bRemoveRCSafeGuard=</strong> to <strong>1</strong></li>
                     <li>Set your <strong>iMaxFPS=</strong> (line 20) to your average FPS in-game + 60</li>
                         <ul>
                             <li>For example, mine is set to <strong>160</strong> because I average around 100 FPS in-game</li>
                             <li><strong>iMaxFPS</strong> is <strong><u>NOT</u></strong> an FPS cap, but rather a failsafe that disables the FPS fix if your FPS goes above what you have set for <strong>iMaxFPS</strong>. 
-                                Therefore, it should be set to an FPS you won't get in-game much if ever
+                                Therefore, it should be set to an FPS you won't reach in-game much if ever. If you set it to too low of a number, you will notice sped up physics and lip sync
                             </li>
-                        </ul>
-                    <li>Set <strong>iMinFPS=</strong> to <strong>40</strong></li>
-                    <li>Remove the <strong>;</strong> from in front of <strong>iSpinCount=0</strong></li>
-                        <ul>
-                            <li>These settings <i>may</i> not work perfectly out of the box for everyone, but they should be fine for a majority of people. If that isn't the case for you, reset the .ini back to default, but change <strong>iMaxFPS</strong> back to what you originally changed it to. You can continue to tweak it yourself if you are still not happy</li>
                         </ul>
                 </ul>
             <p class="moddesc"> - Works to fix micro-stuttering and allows for higher framerates </p>
