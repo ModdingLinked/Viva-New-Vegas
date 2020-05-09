@@ -90,6 +90,21 @@ SOFTWARE.
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/68312?tab=files" target="_blank">Dead Money Toxic Cloud Fix</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
             <p class="moddesc"> - Changes the damage calculation formula for the toxic cloud in DM to take poison resistance into account</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/68721?tab=files" target="_blank">Starting Gear Overhaul</a></h2>
+            <p class="specialinstall"><strong>FOMOD instructions:</strong></p>
+                <img id="FOMODImg" src="./img/SGO FOMOD.png" alt="You can select either option, but the regular version is recommended" style="width:100%;max-width:300px">
+                    <div id="FOMODModal" class="modal">
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                <img id="FOMODImg2" src="./img/SGO FOMOD 2.png" alt="Select 'I am NOT using CSS'" style="width:100%;max-width:300px">
+                    <div id="FOMODModal2" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img02">
+                        <div id="caption2"></div>
+                    </div>
+            <p class="moddesc"> - Specializes starting gear based on your tagged skills</p>
+
     </div>
     <div>
         <hr>
@@ -97,4 +112,40 @@ SOFTWARE.
         <a class="arrows" href="./gameplay-finish.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
     </div>
 </body>
+<script>
+var modal = document.getElementById('FOMODModal');
+
+var img = document.getElementById('FOMODImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal2');
+
+var img = document.getElementById('FOMODImg2');
+var modalImg = document.getElementById("img02");
+var captionText = document.getElementById("caption2");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
 </html>
