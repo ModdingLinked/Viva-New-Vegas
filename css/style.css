@@ -157,10 +157,10 @@ body {
 
 .corereqlist {
     color:#DCDCDC;
-    text-align: center;
     padding:0;
     font-size: calc(10px + .5vw);
     line-height:2.25em;
+    margin-left:2vw;
 }
 
 .corereqlist li a {
