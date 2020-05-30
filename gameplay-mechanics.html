@@ -177,6 +177,26 @@ SOFTWARE.
                             <li>Only needed if you installed <a class="modsublink" href="https://www.nexusmods.com/newvegas/mods/44757" target="_blank">oHUD</a> from the <strong>Core - HUD/UI</strong> section</li>
                         </ul>
                 </ul>
+                <br>
+                <p class="specialinstall"><strong>Manual FNVEdit editing required:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Run FNVEdit through MO2</li>
+                    <li>Right-click in the <strong>Module Selection</strong> pop-up and click <strong>Select None</strong></li>
+                    <li>Check the box adjacent to <strong>Quickthrow.esp</strong> then hold down left shift and click <strong>OK</strong></li>
+                    <li>Wait for the message <strong>Background Loader: finished</strong> to appear in the right pane</li>
+                    <li>Input <strong>01008ED4</strong> into the FormID search box in the top left and hit enter</li>
+                    <li>In the right pane, right-click on <strong>MaleAdult01Default [VTYP:0000002D]</strong> next to <strong>VTCK - Voice</strong> and select <strong>Edit</strong></li>
+                    <li>Input <strong>VoiceDoNotRecordM [VTYP:00094EEC]</strong> into the pop-up box</li>
+                    <img id="FOMODImg" src="./img/quickthrow edit.png" alt="VoiceDoNotRecordM [VTYP:00094EEC]" style="width:100%;max-width:300px">
+                        <div id="FOMODModal" class="modal">
+                            <img class="modal-content" id="img01">
+                            <div id="caption"></div>
+                        </div>
+                        <ul>
+                            <li>This tweak makes the "NPC" who essentially spawns in you to throw items silent, so he doesn't scream every time you throw something</li>
+                        </ul>
+                    <li>Save and exit</li>
+                </ul>
             <p class="moddesc"> - Adds a simple and modern quick throwing mechanic</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66876?tab=files" target="_blank">Quickthrow Stylized HUD Icons</a></h2>
             <p class="specialinstall"><strong>Files to install normally:</strong></p>
@@ -209,11 +229,11 @@ SOFTWARE.
                     <li>Input <strong>15FFF0</strong> into the FormID search box in the top left and hit enter</li>
                     <li>Right-click in the right pane and select <strong>Hide no conflict and empty rows</strong></li>
                     <li>Right-click on the empty box above <strong>NightkinFaction</strong> in the <strong>CIB Supermutants.esp</strong> column and select <strong>Remove</strong></li>
-                    <img id="FOMODImg" src="./img/supermutant form remove.png" alt="Right-click and select Remove" style="width:100%;max-width:300px">
-                        <div id="FOMODModal" class="modal">
+                    <img id="FOMODImg2" src="./img/supermutant form remove.png" alt="Right-click and select Remove" style="width:100%;max-width:300px">
+                        <div id="FOMODModal2" class="modal">
                             <span class="close">&times;</span>
-                            <img class="modal-content" id="img01">
-                            <div id="caption"></div>
+                            <img class="modal-content" id="img02">
+                            <div id="caption2"></div>
                         </div>
                         <ul>
                             <li>This tweak removes the custom Nightkin faction that makes them aggro to the player from a Nightkin that is supposed to be passive</li>
@@ -251,6 +271,24 @@ var span = document.getElementsByClassName("close")[0];
 
 span.onclick = function() { 
     modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal2');
+
+var img = document.getElementById('FOMODImg2');
+var modalImg = document.getElementById("img02");
+var captionText = document.getElementById("caption2");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
 }
 </script>
 </html>
