@@ -69,7 +69,7 @@ SOFTWARE.
         <hr>
     </div> 
     <div>
-        <h2 class="overlay">Tweaking FalloutCustom.ini:</h2>
+        <h2 class="installingfnv">Tweaking FalloutCustom.ini:</h2>
             <ul class="specialinstructions">
                 <li>Make sure the <strong>Viva New Vegas - Core</strong> profile is active</li>
                 <li>Click the <img class="mo2setting" src="./img/mo2ini.png" alt="mo2 executables"> button on the top bar of MO2 and select <strong>INI Editor</strong></li>
@@ -86,18 +86,7 @@ SOFTWARE.
                             <li>bSelectivePurgeUnusedOnFastTravel=1</li>    
                             <br>
                             <li>[Display]</li>    
-                            <li>fLightLODDefaultStartFade=10240.0</li>
-                            <li>fLightLODRange=10240.0</li>
-                            <li>fLightLODMinStartFade=10240.0</li>
-                            <li>fLightLODMaxStartFade=10240.0</li>
-                            <li>fShadowLODDefaultStartFade=200.0</li>
-                            <li>fShadowLODRange=200.0</li>
-                            <li>fShadowLODMinStartFade=100.0</li>
-                            <li>fShadowLODMaxStartFade=1000.0</li>
-                            <li>fSpecularLODDefaultStartFade=10240.0</li>
-                            <li>fSpecularLODRange=10240.0</li>
-                            <li>fSpecularLODMinStartFade=10240.0</li>
-                            <li>fSpecularLODMaxStartFade=10240.0</li>   
+                            <li>bFull Screen=1</li>
                             <li>iPresentInterval=1</li>
                             <br>
                             <li>[Controls]</li>    
@@ -120,7 +109,7 @@ SOFTWARE.
                                 <ul>
                                     <li>If you do not know how many threads your CPU has, use <a class="modsublink" href="https://www.cpuid.com/softwares/cpu-z.html" target="_blank">CPU-Z</a> to find out</li>
                                 </ul>
-                            <li><strong>iPresentInterval</strong> can be set to <strong>0</strong> if you use G/Free-sync, or want to use GPU Driver v-sync</li>
+                            <li><strong>iPresentInterval</strong> can be set to <strong>0</strong> if you use G/Free-sync</li>
                             <li><strong>fXenonVertLookSpeed</strong> and <strong>fXenonHorizLookSpeed</strong> can be removed if you do not run the game in a 16:9 aspect ratio</li>
                     </ul>
                 <li>Repeat for the <strong>Testing</strong> profile</li>
@@ -154,21 +143,8 @@ SOFTWARE.
                                         <td>Helps prevent <strong>Out of Memory</strong> crashes when changing cells</td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            fLightLODDefaultStartFade=10240.0 <br>
-                                            fLightLODRange=10240.0 <br>
-                                            fLightLODMinStartFade=10240.0 <br>
-                                            fLightLODMaxStartFade=10240.0 <br>
-                                            fShadowLODDefaultStartFade=200.0 <br>
-                                            fShadowLODRange=200.0 <br>
-                                            fShadowLODMinStartFade=100.0 <br>
-                                            fShadowLODMaxStartFade=1000.0 <br>
-                                            fSpecularLODDefaultStartFade=10240.0 <br>
-                                            fSpecularLODRange=10240.0 <br>
-                                            fSpecularLODMinStartFade=10240.0 <br>
-                                            fSpecularLODMaxStartFade=10240.0 <br>
-                                        </td>
-                                        <td>Increases light distance fade</td>
+                                        <td>bFull Screen=1</td>
+                                        <td>Ensures the game runs in fullscreen mode</td>
                                     </tr>
                                     <tr>
                                         <td>iPresentInterval=1</td>
@@ -202,7 +178,7 @@ SOFTWARE.
                         </div>
                 </div>
                 
-        <h2 class="overlay">INI Settings to not change:</h2>
+        <h2 class="installingfnv">INI Settings to not change:</h2>
             <p class="moddesc">
                 <strong>uGridsToLoad=5:</strong> Changes the amount of cells loaded at once. When changed, it can cause scripts to run when they aren't supposed to, will ruin performance, and will break your game if changed on an existing save <br> <br>
                 <strong>bMultiThreadAudio=0:</strong> Can cause crashes when set to 1 <br> <br>

@@ -69,7 +69,7 @@ SOFTWARE.
     </div>    
     <div>
         <p class="moddesc">You may be wondering why some mods/tools aren't in the guide, or are looking to add your own mods. If so, please reference this list:</p>
-        <h2 class="overlay">Mod Managers to Avoid:</h2>
+        <h2 class="installingfnv">Mod Managers to Avoid:</h2>
         <p class="moddesc"><strong>Vortex:</strong> Lacks many essential features (such as manual load order control) and has some critical bugs. 
             Uses Symlinks instead of a UVFS like MO2 (see <a class="modsublink" href="https://github.com/TanninOne/usvfs/blob/master/README.md" target="_blank">here</a> for a comparison). Probably the second best mod manager, but there is literally no reason to use it over MO2 <br> <br>
 
@@ -79,7 +79,7 @@ SOFTWARE.
 
                            <strong>MO1:</strong> MO2, even though designed for 64bit games, works perfect for New Vegas
         </p>
-        <h2 class="overlay">Other Tools to Avoid:</h2>
+        <h2 class="installingfnv">Other Tools to Avoid:</h2>
         <p class="moddesc">
             <strong>LOOT and automated conflict resolution (kind of):</strong> Automated tools will never be able to manage a large load order well on their own. For small (sub-50 mod) load orders, they will suffice.
             However, if you use any large amount of mods, the only way to ensure perfection is looking at conflicts in xEdit, sorting your load order to minimize conflicts, and then creating your own conflict resolution to cover what can't be fixed by load order adjustment.
@@ -93,8 +93,8 @@ SOFTWARE.
 
             <strong>BethINI/Configator:</strong> Most INI changes are placebo at best, dangerous at worst. You really won't need any other INI tweaks than the ones in the guide
         </p>
-        <h2 class="overlay">Utilities to Avoid:</h2>
-            <p class="moddesc"><strong>NVSR:</strong> NVTF is a modern recreation of NVSR that works perfectly, there is no reason to use NVSR over NVTF. The following settings are broken in NVSR:</p>
+        <h2 class="installingfnv">Utilities to Avoid:</h2>
+            <p class="moddesc"><strong>NVSR:</strong> NVTF is a modern recreation of NVSR that works perfectly and has many more features, there is no reason to use NVSR over NVTF. The following settings are broken in NVSR:</p>
                     <ul class="specialinstructions">
                         <li><strong>bManageFPS:</strong> Doesn't straight up limit FPS, but maintains a minimum FPS, so it starts to disable LOD and other things to maintain that FPS (paraphrased from RoyBatty)</li>
                         <li><strong>bHookLightCriticalSections (Only fully broken on Windows 10):</strong> Bad implementation, broken by Windows 10 because the author relied on undefined behavior instead of <br>
@@ -109,11 +109,11 @@ SOFTWARE.
             <p class="moddesc"><strong>Performance of the Gods (or pretty much all mods with "Performance" in the title):</strong> Performance gain is placebo, disabling random clutter items with less than 5 polygons isn't going to do anything. 
                 Potentially dangerous if they use Mark for Delete instead of Initially Disabled
             </p>
-        <h2 class="overlay">Bug Fixes to Avoid:</h2>
+        <h2 class="installingfnv">Bug Fixes to Avoid:</h2>
             <p class="moddesc"><strong>Mission Mojave:</strong> Breaks more than it fixes, will cause crashes, very outdated, far inferior to YUP</p>
-            <p class="moddesc"><strong>Pretty much any old single bug fix mod such as Reload Speed Game Start Fix:</strong> - In most cases, these fixes are included in YUP/UPP/lStewieAl's Tweaks, and if they are not its most likely because of poor implementation on the mod's end or the bug the mod fixes not actually being considered a bug</p>
-        <h2 class="overlay">HUD Mods to Avoid:</h2>
-            <p class="moddesc"><strong>MTUI:</strong> Old and obsolete. <a class="modsublink" href="https://imgur.com/a/PFSVi" target="_blank">Also has a lot of problems</a></p>
+            <p class="moddesc"><strong>Pretty much any old single bug fix mod, such as Reload Speed Game Start Fix:</strong> - In most cases, these fixes are included in YUP/UPNVSE/lStewieAl's Tweaks, and if they are not its most likely because of poor implementation on the mod's end or the bug the mod fixes not actually being considered a bug</p>
+        <h2 class="installingfnv">HUD Mods to Avoid:</h2>
+            <p class="moddesc"><strong>MTUI:</strong> Old and obsolete, <a class="modsublink" href="https://imgur.com/a/PFSVi" target="_blank">and has a lot of problems</a></p>
             <p class="moddesc"><strong>Unified HUD Project - uHUD:</strong> Abandoned by the author in favor of UIO</p>
             <p class="moddesc"><strong>No Dialogue Tags (NVSE) (DLC - TTW - Mods):</strong> Hides all text in brackets, including Christine's dialogue in Dead Money. Use the updated, ESPless implementation in lStewieAl's Tweaks instead</p>
             <p class="moddesc"><strong>DarnUI Texture Preloading:</strong> Causes performance drops</p>

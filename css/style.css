@@ -178,7 +178,7 @@ body {
 }
 
 .corespecs {
-    font-size:1.5vw;
+    font-size: calc(10px + 1.2vw);
     color:orange;
     text-align: center;
 }
@@ -239,7 +239,7 @@ th, td {
 .installingfnv {
     margin:2vw;
     color:orange;
-    font-size:1.5vw;
+    font-size: calc(10px + 1.2vw);
 }
 
 .installingfnvdesc {

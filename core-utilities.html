@@ -80,6 +80,7 @@ SOFTWARE.
                             <li><strong>nvse_steam_loader.dll</strong> is still needed with the GOG version of the game</li>
                         </ul>
                 </ul>
+                <p class="moddesc">NOTE: If you do not know what the <strong>Root</strong> folder is, go to the <a class="modsublink" href="./core-installation.html">Core - Installation</a> page and read the <strong>Common Terminology</strong> section</p>
             <p class="moddesc"> - An updated version of NVSE, which extends the scripting capabilities of the engine and is essential for most mods</p>
         <h2 class="modhead"><a class="modlink" href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/master/NVSE_Config.ini.7z" target="_blank">NVSE_Config.ini</a></h2>
         <p class="specialinstall"><strong>Installation Instructions:</strong></p>
@@ -119,7 +120,7 @@ SOFTWARE.
             </p>
         <h2 class="modhead">Verifying NVSE and the 4GB Patch are Working</h2>
             <ul class="specialinstructions">
-                <li>Run the game through MO2</li>
+                <li>Run the game through the <strong>New Vegas</strong> option in MO2</li>
                 <li>Once the game has reached the title screen, open the console by pressing the <strong>Tilde (~)</strong> key</li>
                 <li>Input <strong>getnvseversion</strong> into the console and hit enter</li>
                     <ul>
@@ -157,7 +158,12 @@ SOFTWARE.
                     <li>Open <strong>NVTF.ini</strong></li>
                     <li>Set <strong>bUseD3D9Ex</strong> to <strong>1</strong> (line 38)</li>
                     <li>Set <strong>bUseFlipExSwapMode</strong> to <strong>1</strong> (line 61)</li>
-                    <li>Set <strong>iMaxFPSTolerance</strong> to <strong>240</strong> (line 73)</li>
+                        <ul>
+                            <li>NOTE: If you are on Windows 7, you do not need to enable the previous two options</li>
+                            <li>Enabling this option will break the in-game screenshot function, but will allow for safe alt-tabbing in fullscreen</li>
+                        </ul>
+                    <li>Set <strong>iMaxFPSTolerance</strong> to 1 less than your monitor's refresh rate (line 73)</li>
+                </ul>
                 </ul>
             <p class="moddesc"> - Works to fix micro-stuttering, improve performance, and allow playing at higher framerates </p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/68714?tab=files" target="_blank">Mod Limit Fix</a></h2>

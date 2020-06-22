@@ -67,7 +67,7 @@ SOFTWARE.
         <hr>
         <p class="installingfnvdesc">These steps will take you over how to do a fresh installation of Fallout New Vegas, which is required for this guide</p>
         <hr>
-        <h2 class="overlay">Installation Parameters:</h2>      
+        <h2 class="installingfnv">Installation Parameters:</h2>      
         <p class="moddesc">
           - Fallout New Vegas and all modding tools must be installed outside all default Windows folders (<strong>Program Files</strong>, <strong>Program Files (x86)</strong>, <strong>Desktop</strong>, and <strong>Documents</strong> for example)
               <ul class="specialinstructions">
@@ -91,7 +91,7 @@ SOFTWARE.
                 </ul>
             </p>  
         <hr>    
-        <h2 class="overlay">Common Terminology:</h2>
+        <h2 class="installingfnv">Common Terminology:</h2>
           <ul class="specialinstructions">
             <li><strong>Root</strong> folder: Where you have installed Fallout New Vegas</li>
               <ul>
@@ -104,9 +104,47 @@ SOFTWARE.
                 <li>For GOG it is <strong>GOG Galaxy/Games/Fallout New Vegas/Data</strong></li>
               </ul>
             <li> MO2: <strong>Mod Organizer 2</strong> (will be installed shortly)<br></li>
-            <li>xEdit: <strong>FNVEdit</strong> (will be installed shortly)</li>
           </ul>
           <hr>
+            <h2 class="installingfnv">Installing Prerequisites:</h2>
+              <h2 class="modhead"><a class="modlink" href="http://download.microsoft.com/download/0/5/6/056dcda9-d667-4e27-8001-8a0c6971d6b1/vcredist_x86.exe" target="_blank">Microsoft VC++ 2013</a></h2>
+              <p class="specialinstall"><strong>Installation Instructions:</strong></p>
+                  <ul class="specialinstructions">
+                      <li>Run the installer and follow the given instructions</li>
+                          <ul>
+                              <li>If you get a message that the program is already installed, just exit out of the installer</li>
+                          </ul>
+                  </ul>
+              <p class="moddesc"> - Required libraries for FNV and the 4GB Patcher</p>
+              <h2 class="modhead"><a class="modlink" href="https://support.microsoft.com/en-gb/help/2977003/the-latest-supported-visual-c-downloads" target="_blank">Microsoft VC++ 2015, 2017, 2019</a></h2>
+                <p class="specialinstall"><strong>Installation Instructions:</strong></p>
+                  <ul class="specialinstructions">
+                      <li>Click the <strong>x86: vc_redist.x86.exe</strong> and <strong>x64: vc_redist.x64.exe</strong> links under the <strong>Visual Studio 2015, 2017 and 2019</strong> header</li>
+                      <li>Run both of the <strong>.exe</strong> files and follow the given instructions</li>
+                          <ul>
+                              <li>If you get a message that the program is already installed, just exit out of the installer</li>
+                          </ul>
+                  </ul>
+                <p class="moddesc"> - Required libraries for Mod Organizer 2</p>
+              <h2 class="modhead">Updating Audio Drivers</h2>
+                  <ul class="specialinstructions">
+                    <li>Windows search for <strong>Device Manager</strong></li>
+                    <li>In the device manager, expand the <strong>Audio inputs and outputs</strong> section, right-click on your primary audio device, and select <strong>Update driver</strong> </li>
+                      <img id="FOMODImg" src="./img/update driver.png" alt="Select 'Portable'" style="width:100%;max-width:300px">
+                      <div id="FOMODModal" class="modal">
+                          <img class="modal-content" id="img01">
+                          <div id="caption"></div>
+                      </div>
+                    <li>From the pop-up, select <strong>Search automatically for updated driver software</strong></li>
+                      <img id="FOMODImg2" src="./img/search auto.png" alt="'Search automatically for updated driver software'" style="width:100%;max-width:300px">
+                        <div id="FOMODModal2" class="modal">
+                            <img class="modal-content" id="img02">
+                            <div id="caption2"></div>
+                        </div>
+                    <li>If the search reports that you already have the latest drivers, you can exit the window</li>
+                    <li>If it says your drivers are outdated, let it update your drivers to the latest version</li>
+                  </ul>
+                <hr>
         <h2 class="installingfnv">Installing Fallout New Vegas:</h2>      
           <div class="installcontainer">
             <button class="accordioninstall">I do not have Fallout New Vegas installed</button>
@@ -114,17 +152,35 @@ SOFTWARE.
                 <p>
                   <ul class="steaminstall"> 
                     <p>For Steam:</p>
+                    <p class="moddesc">NOTE: If you already have a Steam library folder set up outside of the default Windows folders, you can simply install FNV to that library folder</p>
                       <li>Launch Steam and select <strong>Steam -> Settings</strong></li>
                       <li>Go to the <strong>Downloads</strong> tab and select <strong>Steam Library Folders</strong></li>
                       <li>From the pop-up, select <strong>Add Library Folder</strong></li>
                       <li>Add a folder in a location of your choice outside of the default Windows folders (preferably on an SSD)</li>
                         <ul>
-                          <li>If you do not have another drive to create a folder on, see the <strong>I have Fallout New Vegas installed on the wrong drive/folder</strong> step to see how to make another Steam folder on the same drive</li>
+                          <li>If you do not have another drive to create a folder on, follow these steps (Requires <a class="modsublink" href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a>):</li>
+                            <ul>
+                              <li>Navigate to <strong>Steam/steamapps/</strong> and open <strong>libraryfolders.vdf</strong> with Notepad++)</li>
+                              <li>You should see something similar to this:</li>
+                              <img id="FOMODImg3" src="./img/steamlibraryopen.png" alt="Steam/steamapps/libraryfolders.vdf" style="width:100%;max-width:300px">
+                                <div id="FOMODModal3" class="modal">
+                                    <img class="modal-content" id="img03">
+                                    <div id="caption3"></div>
+                                </div>
+                              <li>Add a new line below the lowest filepath and follow the same format for creating a new drive path</li>
+                                <ul>
+                                  <li>If you do not see a line that starts with <strong>"1"</strong> and is followed by a filepath, just add it right below <strong>"ContentStatsID"</strong></li>
+                                </ul>
+                              <li>For this example, it would be something along the lines of  &nbsp; <strong>"3" &nbsp;&nbsp;&nbsp;&nbsp;	"E:\\Games\\Library 2 Steam"</strong></li>
+                                <ul>
+                                  <li>Make sure the number and file path align with how many folders there already are and where you intend to create the new respectively. You also must manually create the file you are pointing it to, Steam will not create it for you</li>
+                                </ul>
+                            </ul>
                         </ul>
                       <li>Exit out of the menu and go to <strong>Library</strong></li>
                       <li>Select <strong>Fallout New Vegas</strong> and click <strong>Install</strong></li>
                       <li>From the pop-up, select <strong>Choose location for install:</strong></li>
-                      <li>Select the folder you just created and install it</li>
+                      <li>Select the folder you just created outside of the default Windows folders and install it</li>
                     <p>For GOG:</p> 
                       <li>Launch GOG and select <strong>Library</strong></li>
                       <li>Select <strong>Fallout New Vegas</strong> and click <strong>Install</strong></li>
@@ -132,103 +188,55 @@ SOFTWARE.
                   </ul>
                 </p>
               </div>
-            <button class="accordioninstall">I have Fallout New Vegas installed on the wrong drive/folder</button>
-              <div class="panelinstall">
-                <p>
-                  <ul class="steammove">
-                    <p>For Steam (Moving to a separate drive):</p>
-                      <li>If you have not created a separate Steam directory, do so in the same way as the first step</li>
-                      <li>Launch Steam and select <strong>Library</strong></li>
-                      <li>Right-click on <strong>Fallout New Vegas</strong> and select <strong>Properties</strong></li>
-                      <li>Navigate to the <strong>Local Files</strong> tab and select <strong>Move Install Folder...</strong></li>
-                      <li>Select the folder you just created and click <strong>Move Folder</strong></li>
-                    <p>For Steam (Moving within the same drive):</p>
-                      <p>NOTE: You must have <a class="modsublink" href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a> for this step to work</p>
-                      <li>Navigate to <strong>Steam/steamapps/</strong> and open <strong>libraryfolders.vdf</strong> with a text editor (such as notepad)</li>
-                      <li>You should see something similar to this:</li>
-                        <img id="FOMODImg" src="./img/steamlibraryopen.png" alt="Steam/steamapps/libraryfolders.vdf" style="width:100%;max-width:300px">
-                        <div id="FOMODModal" class="modal">
-                            <span class="close">&times;</span>
-                            <img class="modal-content" id="img01">
-                            <div id="caption"></div>
-                        </div>
-                      <li>Add a new line below the lowest filepath and follow the same format for creating a new drive path</li>
-                        <ul>
-                          <li>If you do not see a line that starts with <strong>"1"</strong> and is followed by a filepath, just add it right below <strong>"ContentStatsID"</strong></li>
-                        </ul>
-                      <li>For this example, it would be something along the lines of  &nbsp; <strong>"3" &nbsp;&nbsp;&nbsp;&nbsp;	"E:\\Games\\Library 2 Steam"</strong></li>
-                        <ul>
-                          <li>Make sure the number and file path align with how many folders there already are and where you intend to create the new respectively. You also must manually create the file you are pointing it to, Steam will not create it for you</li>
-                        </ul>
-                      <li>Right-click on <strong>Fallout New Vegas</strong> and select <strong>Properties</strong></li>
-                      <li>Navigate to the <strong>Local Files</strong> tab and select <strong>Move Install Folder...</strong></li>
-                      <li>Select the folder you just created and click <strong>Move Folder</strong></li>
-                    <p>For GOG:</p>
-                      <li>GOG does not currently have a way to move an installed game, so you have to reinstall it to the correct folder</li>
-                  </ul>
-                </p>
-              </div>
-            <button class="accordioninstall">My Fallout New Vegas installation was previously modded and may have leftover mod files</button>
+          </div>
+            <button class="accordioninstall">I have Fallout New Vegas installed and/or may have leftover mod files</button>
               <div class="panelinstall">
                 <p>
                   <ul class="steamverify">
                     <p>For Both:</p>
-                      <li>Navigate to <strong>Documents/My Games/FalloutNV</strong> and delete everything (you can keep the <strong>saves</strong> folder if you want, but old saves will not be compatible with the guide</li>
-                      <li>Delete any leftover programs such as your mod manager</li>
-                      <li>Navigate to the <strong>Root</strong> folder</li>
-                      <li>Delete everything in the root folder except for the <strong>Data</strong> folder</li>
-                      <li>Open the <strong>Data</strong> folder and delete everything except for the following:</li>
-                        <ul>
-                          <strong>
-                          <li>CaravanPack.esm</li>  
-                          <li>ClassicPack.esm</li>  
-                          <li>DeadMoney.esm</li>  
-                          <li>FalloutNV.esm</li>  
-                          <li>GunRunnersArsenal.esm</li>  
-                          <li>HonestHearts.esm</li>  
-                          <li>LonesomeRoad.esm</li>  
-                          <li>MercenaryPack.esm</li>  
-                          <li>OldWorldBlues.esm</li>  
-                          <li>TribalPack.esm</li>  
-                          <li>CaravanPack - Main.bsa</li>  
-                          <li>ClassicPack - Main.bsa</li>  
-                          <li>DeadMoney - Main.bsa</li>  
-                          <li>DeadMoney - Sounds.bsa</li>  
-                          <li>Fallout - Meshes.bsa</li>  
-                          <li>Fallout Misc.bsa</li>  
-                          <li>Fallout - Sound.bsa</li>  
-                          <li>Fallout - Textures.bsa</li>  
-                          <li>Fallout - Textures2.bsa</li>  
-                          <li>Fallout - Voices1.bsa</li>  
-                          <li>GunRunnersArsenal - Main.bsa</li>  
-                          <li>GunRunnersArsenal - Sounds.bsa</li>  
-                          <li>Honest Hearts - Main.bsa</li>  
-                          <li>Honest Hearts - Sounds.bsa</li>  
-                          <li>LonesomeRoad - Main.bsa</li>  
-                          <li>LonesomeRoad - Sounds.bsa</li>  
-                          <li>MercenaryPack - Main.bsa</li>  
-                          <li>OldWorldBlues - Main.bsa</li>  
-                          <li>OldWorldBlues - Sounds.bsa</li>  
-                          <li>TribalPack - Main.bsa</li>  
-                          <li>Update.bsa</li>  
-                          </strong>  
-                        
-                        </ul> 
-                    <p>For Steam:</p>  
-                      <li>Launch Steam and select <strong>Library</strong></li>
-                      <li>Right-click on <strong>Fallout New Vegas</strong> and select <strong>Properties</strong></li>
-                      <li>Navigate to the <strong>Local Files</strong> tab and select <strong>Verify Integrity of Game Files...</strong></li>
-                      <li>Wait for the verification to complete, and then exit that window and wait for the download to finish</li>
-                    <p>For GOG:</p>  
-                      <li>Launch GOG and select <strong>Library</strong></li>
-                      <li>Select <strong>Fallout New Vegas</strong> and then select <strong>More -> Manage installation -> Verify / Repair...</strong></li>
-                      <li>From the pop-up, select <strong>Verify Game</strong> and wait for the process to complete</li> 
+                      <li>Navigate to <strong>Documents/My Games/FalloutNV</strong> and delete everything (you can keep the <strong>saves</strong> folder if you want, but old saves will not be compatible with this guide)</li>
+                      <li>Navigate to the where you have Fallout New Vegas installed, and completely delete the entire game folder</li>
+                      <p>For Steam:</p>
+                      <p class="moddesc">NOTE: If you already have a Steam library folder set up outside of the default Windows folders, you can simply install FNV to that library folder</p>
+                        <li>Launch Steam and select <strong>Steam -> Settings</strong></li>
+                        <li>Go to the <strong>Downloads</strong> tab and select <strong>Steam Library Folders</strong></li>
+                        <li>From the pop-up, select <strong>Add Library Folder</strong></li>
+                        <li>Add a folder in a location of your choice outside of the default Windows folders (preferably on an SSD)</li>
+                          <ul>
+                            <li>If you do not have another drive to create a folder on, follow these steps (Requires <a class="modsublink" href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a>):</li>
+                              <ul>
+                                <li>Navigate to <strong>Steam/steamapps/</strong> and open <strong>libraryfolders.vdf</strong> with Notepad++)</li>
+                                <li>You should see something similar to this:</li>
+                                <img id="FOMODImg4" src="./img/steamlibraryopen.png" alt="Steam/steamapps/libraryfolders.vdf" style="width:100%;max-width:300px">
+                                  <div id="FOMODModal4" class="modal">
+                                    <span class="close">&times;</span>
+                                      <img class="modal-content" id="img04">
+                                      <div id="caption4"></div>
+                                  </div>
+                                <li>Add a new line below the lowest filepath and follow the same format for creating a new drive path</li>
+                                  <ul>
+                                    <li>If you do not see a line that starts with <strong>"1"</strong> and is followed by a filepath, just add it right below <strong>"ContentStatsID"</strong></li>
+                                  </ul>
+                                <li>For this example, it would be something along the lines of  &nbsp; <strong>"3" &nbsp;&nbsp;&nbsp;&nbsp;	"E:\\Games\\Library 2 Steam"</strong></li>
+                                  <ul>
+                                    <li>Make sure the number and file path align with how many folders there already are and where you intend to create the new respectively. You also must manually create the file you are pointing it to, Steam will not create it for you</li>
+                                  </ul>
+                              </ul>
+                          </ul>
+                        <li>Exit out of the menu and go to <strong>Library</strong></li>
+                        <li>Select <strong>Fallout New Vegas</strong> and click <strong>Install</strong></li>
+                        <li>From the pop-up, select <strong>Choose location for install:</strong></li>
+                        <li>Select the folder you just created outside of the default Windows folders and install it</li>
+                      <p>For GOG:</p> 
+                        <li>Launch GOG and select <strong>Library</strong></li>
+                        <li>Select <strong>Fallout New Vegas</strong> and click <strong>Install</strong></li>
+                        <li>Set the <strong>Install to</strong> to a location of your choice outside of the default Windows folders (preferably on an SSD) and install</li>
                   </ul>
                 </p>
               </div>
           </div>
         <hr>
-        <h2 class="overlay">Setting up your Fallout New Vegas Modding Folder:</h2>
+        <h2 class="installingfnv">Setting up your Fallout New Vegas Modding Folder:</h2>
           <p class="modfolderdesc">
             Your modding folder will act as the main directory for all the tools you install, as well as any backups/screenshots/etc. you may want to keep. This folder will be referred to as the <strong>Modding folder</strong> from now on
               <ul class="modfolderlist">
@@ -242,13 +250,13 @@ SOFTWARE.
             </p>    
           </p>
           <hr>
-        <h2 class="overlay">Disabling Anti-Virus:</h2>
+        <h2 class="installingfnv">Disabling Anti-Virus:</h2>
           <p class="overlaydesc">
             Any anti-virus you have, including Windows Defender, needs to have <a class="modsublink" href="https://support.microsoft.com/en-us/help/4028485/windows-10-add-an-exclusion-to-windows-security" target="_blank">file exceptions made</a> for your <strong>Root</strong> folder and <strong>Modding folder</strong>.
-            Completely disabling your anti-virus for the duration of the guide to avoid downloaded files being flagged as dangerous is recommended as well.
+            It is also recommended (but not required) to completely disable your anti-virus for the duration of the guide to avoid downloaded files being flagged as dangerous.
           </p>
           <hr>
-        <h2 class="overlay">Generating Fresh .INI Files:</h2>
+        <h2 class="installingfnv">Generating Fresh .INI Files:</h2>
           <p class="runningfnvdesc">
             <ul class="modfolderlist">
               <li>Run <strong>FalloutNVLauncher.exe</strong> from the root folder</li>
@@ -264,12 +272,76 @@ SOFTWARE.
                     </ul>
                 <li>Select <strong>Advanced -> Shadows</strong> and un-check <strong>Enable Shadows</strong> (New Vegas does not have real shadows, only actor shadows which are rarely visible, so you probably won't even see the difference)</li>
                     <ul>
-                      <li>These settings will look nearly identical to the <strong>Ultra</strong>, but with a noticeable performance increase</li>
+                      <li>These settings will look nearly identical to the <strong>Ultra</strong>, but with a noticeable performance increase. You can still select the <strong>Ultra</strong> preset if you <i>really</i> want to</li>
                     </ul>
               <li>Set <strong>Resolution</strong> to your preference (The launcher usually does not properly set it to your max resolution)</li>
               <li>Click <strong>OK</strong> and then <strong>Exit</strong></li>
             </ul>
           </p>
+                <h2 class="installingfnv">Capping FPS</h2>
+        <div class="installcontainer">
+          <button class="accordioninstall">For Users with an NVIDIA GPU</button>
+            <div class="panelinstall">
+              <p>
+        <h2 class="modhead"><a class="modlink" href="https://github.com/DeadManWalkingTO/NVidiaProfileInspectorDmW/releases" target="_blank">NVIDIA Profile Inspector</a></h2>
+        <ul class="specialinstructions">
+          <li>Download the <strong>NVidiaProfileInspectorDmW</strong> (non-portable) file</li>
+          <li>Extract the archive to a safe location</li>
+          <li>Run <strong>NVidiaProfileInspectorDmW.exe</strong></li>
+          <li>Click <strong>Yes</strong> if there is a pop-up</li>
+          <li>From the <strong>Profiles:</strong> drop-down in the top left, select <strong>Fallout - New Vegas</strong></li>
+          <li>In the <strong>2. - Sync and Refresh</strong> section, set <strong>Frame Rate Limiter</strong> to 1 less than your monitor's refresh rate</li>
+            <ul>
+            <li>If you do not know your monitor's refresh rate, do the following:</li>
+              <ul>
+              <li>Right-click on your desktop and select <strong>Display settings</strong></li>
+              <li>Scroll to the bottom of the window and select <strong>Advanced display settings</strong></li>
+              <li>Make sure the monitor you play on is selected from the drop-down menu at the top of the window, and your refresh rate will be shown below <strong>Display information</strong></li>
+                <img id="FOMODImg4" src="./img/display info.png" alt="Advanced display settings" style="width:100%;max-width:300px">
+                <div id="FOMODModal4" class="modal">
+                  <span class="close">&times;</span>
+                  <img class="modal-content" id="img04">
+                  <div id="caption4"></div>
+                </div>
+              </ul>
+            </ul>
+          <li>Click the <strong>Apply changes</strong> button in the top right then exit</li>
+        </ul>
+              </p>
+            </div>
+        </div>
+        <div class="installcontainer">
+            <button class="accordioninstall">For Users with an AMD GPU</button>
+              <div class="panelinstall">
+                <p>
+                  <ul class="specialinstructions">
+                    <li>Right-click on your desktop and select <strong>AMD Radeon Settings</strong></li>
+                    <li>In the <strong>Gaming</strong> tab, select the <strong>Fallout New Vegas</strong> profile</li>
+                    <li>In the <strong>Profile Graphics tab</strong>, change the following:</li>
+                    <li>Enable <strong>Chill (FPS)</strong></li>
+                    <li>Set <strong>Chill Min</strong> and <strong>Chill Max</strong> to 1 less than your monitor's refresh rate</li>
+                      <ul>
+                      <li>If you do not know your monitor's refresh rate, do the following:</li>
+                        <ul>
+                        <li>Right-click on your desktop and select <strong>Display settings</strong></li>
+                        <li>Scroll to the bottom of the window and select <strong>Advanced display settings</strong></li>
+                        <li>Make sure the monitor you play on is selected from the drop-down menu at the top of the window, and your refresh rate will be shown below <strong>Display information</strong></li>
+                          <img id="FOMODImg4" src="./img/display info.png" alt="Advanced display settings" style="width:100%;max-width:300px">
+                          <div id="FOMODModal4" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="img04">
+                            <div id="caption4"></div>
+                          </div>
+                        </ul>
+                      </ul>
+                    <li>Hit the home button in the bottom left (the settings should automatically save), and make sure the word <strong>Enabled</strong> appears below the profile name</li>
+                      <ul>
+                        <li>If not, click the three vertical dots to the right of the profile name and select <strong>Enable Profile</strong></li>
+                      </ul>
+                  </ul>
+                </p>
+              </div>
+        </div>
     </div>
     <div>
       <hr>
@@ -295,23 +367,5 @@ SOFTWARE.
     });
   }
 </script>
-<script>
-  var modal = document.getElementById('FOMODModal');
-  
-  var img = document.getElementById('FOMODImg');
-  var modalImg = document.getElementById("img01");
-  var captionText = document.getElementById("caption");
-  img.onclick = function(){
-      modal.style.display = "block";
-      modalImg.src = this.src;
-      captionText.innerHTML = this.alt;
-  }
-  
-  var span = document.getElementsByClassName("close")[0];
-  
-  span.onclick = function() { 
-      modal.style.display = "none";
-  }
-  </script>
 
 </html>
