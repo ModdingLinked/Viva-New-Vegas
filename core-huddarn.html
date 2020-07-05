@@ -122,6 +122,7 @@ SOFTWARE.
                 <img id="FOMODImg" src="./img/vhudremdarnfomod2.png" alt="Select Normal Compass" style="width:100%;max-width:300px">
                     <div id="FOMODModal" class="modal">
                         <img class="modal-content" id="img01">
+                        <span class="close">&times;</span>
                         <div id="caption"></div>
                     </div>
                     <br>
@@ -143,49 +144,13 @@ SOFTWARE.
                 </ul>
             <p class="moddesc"> -  Lets you take control of your HUD by adding, hiding, or removing elements</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65046?tab=files" target="_blank">Consistent Pip-Boy Icons</a></h2>
-            <p class="specialinstall"><strong>Files to install normally:</strong></p>
+            <p class="specialinstall"><strong>Installation instructions:</strong></p>
                 <ul class="specialinstructions">
-                    <li>Main File: <strong>The Foundation Edition 2x</strong></li>
-                    <li>Optional File: <strong>(Recommended) Upscaled Consistent Pip-Boy Icons</strong></li>
-                </ul>
-            <br>
-            <p class="specialinstall"><strong>FOMOD instructions:</strong></p>
-                <img id="FOMODImg3" src="./img/iconfomod1.png" alt="Don't select anything" style="width:100%;max-width:300px">
-                    <div id="FOMODModal3" class="modal">
-                        <img class="modal-content" id="img03">
-                        <div id="caption3"></div>
-                    </div>
-                <img id="FOMODImg4" src="./img/iconfomod2.png" alt="Don't select anything" style="width:100%;max-width:300px">
-                    <div id="FOMODModal4" class="modal">
-                        <img class="modal-content" id="img04">
-                        <div id="caption4"></div>
-                    </div>
-                <img id="FOMODImg5" src="./img/iconfomod3.png" alt="Don't select anything" style="width:100%;max-width:300px">
-                    <div id="FOMODModal5" class="modal">
-                        <img class="modal-content" id="img05">
-                        <div id="caption5"></div>
-                    </div>
-                <img id="FOMODImg6" src="./img/iconfomod4.png" alt="Select Alternative Repairing" style="width:100%;max-width:300px">
-                    <div id="FOMODModal6" class="modal">
-                        <img class="modal-content" id="img06">
-                        <div id="caption6"></div>
-                    </div>
-                <img id="FOMODImg7" src="./img/iconfomod5.png" alt="Select Mojave Arsenal" style="width:100%;max-width:300px">
-                    <div id="FOMODModal7" class="modal">
-                        <img class="modal-content" id="img07">
-                        <div id="caption7"></div>
-                    </div>
-                <img id="FOMODImg8" src="./img/iconfomod6.png" alt="Select Cloud Grenades, Spice of Life, and Weapons of the New Millenia" style="width:100%;max-width:300px">
-                    <div id="FOMODModal8" class="modal">
-                        <span class="close">&times;</span>
-                        <img class="modal-content" id="img08">
-                        <div id="caption8"></div>
-                    </div>
-                    <br>
-                    <br>
-            <p class="specialinstall"><strong>Special activation instructions:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Move the <strong>The Foundation Edition 2x</strong> file below the <strong>Upscaled Consistent Pip-Boy Icons</strong> in the left pane of MO2</li>
+                    <li>Download just the main file normally</li>
+                    <li>In the FOMOD Installer, just select <strong>Install</strong></li>
+                        <ul>
+                            <li>You can look through the FOMOD and select/deselect custom icons if you want, but the default settings will work fine</li>
+                        </ul>
                 </ul>
             <p class="moddesc"> - Up-scales and fixes 1000s of icons</p>
         <h2 class="modhead"><a class="modlink" href="./core-optionalhuddarn.html" target="_blank">Additional Optional HUD/UI Mods</a></h2>
@@ -220,114 +185,6 @@ span.onclick = function() {
 var img = document.getElementById('FOMODImg2');
 var modalImg = document.getElementById("img02");
 var captionText = document.getElementById("caption2");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() { 
-  modal.style.display = "none";
-}
-</script>
-<script>
-    var modal = document.getElementById('FOMODModal3');
-
-var img = document.getElementById('FOMODImg3');
-var modalImg = document.getElementById("img03");
-var captionText = document.getElementById("caption3");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() { 
-  modal.style.display = "none";
-}
-</script>
-<script>
-    var modal = document.getElementById('FOMODModal4');
-
-var img = document.getElementById('FOMODImg4');
-var modalImg = document.getElementById("img04");
-var captionText = document.getElementById("caption4");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() { 
-  modal.style.display = "none";
-}
-</script>
-<script>
-    var modal = document.getElementById('FOMODModal5');
-
-var img = document.getElementById('FOMODImg5');
-var modalImg = document.getElementById("img05");
-var captionText = document.getElementById("caption5");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() { 
-  modal.style.display = "none";
-}
-</script>
-<script>
-    var modal = document.getElementById('FOMODModal6');
-
-var img = document.getElementById('FOMODImg6');
-var modalImg = document.getElementById("img06");
-var captionText = document.getElementById("caption6");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() { 
-  modal.style.display = "none";
-}
-</script>
-<script>
-    var modal = document.getElementById('FOMODModal7');
-
-var img = document.getElementById('FOMODImg7');
-var modalImg = document.getElementById("img07");
-var captionText = document.getElementById("caption7");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() { 
-  modal.style.display = "none";
-}
-</script>
-<script>
-    var modal = document.getElementById('FOMODModal8');
-
-var img = document.getElementById('FOMODImg8');
-var modalImg = document.getElementById("img08");
-var captionText = document.getElementById("caption8");
 img.onclick = function(){
   modal.style.display = "block";
   modalImg.src = this.src;

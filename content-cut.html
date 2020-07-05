@@ -103,11 +103,31 @@ SOFTWARE.
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66726?tab=files" target="_blank">Functional Post Game Ending</a></h2>
             <p class="specialinstall"><strong>Files to install normally:</strong></p>
                 <ul class="specialinstructions">
-                    <li>Main File - <strong>Functional Post Game Ending</strong></li>
-                    <li>Optional File - <strong>Functional Post Game Ending - Uncut Wasteland Extra Collection Patch</strong></li>
-                    <li>Optional File - <strong>Functional Post Game Ending - Uncut Wasteland plus NPCs Patch</strong></li>
-                    <li>Optional File - <strong>Functional Post Game Ending - YUP Patch</strong></li>
+                    <li>Main File - <strong>Functional Post Game Ending - FOMOD Installer</strong></li>
                 </ul>
+                <br>
+            <p class="specialinstall"><strong>FOMOD instructions:</strong></p>
+                <img id="FOMODImg" src="./img/fpge 1.png" alt="Select 'New Vegas'" style="width:100%;max-width:300px">
+                    <div id="FOMODModal" class="modal">
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                <img id="FOMODImg2" src="./img/fpge 2.png" alt="Select 'Uncut Wasteland plus NPCs patch' and 'YUP Patch'" style="width:100%;max-width:300px">
+                    <div id="FOMODModal2" class="modal">
+                        <img class="modal-content" id="img02">
+                        <div id="caption2"></div>
+                    </div>
+                <img id="FOMODImg3" src="./img/fpge 3.png" alt="Select 'None'" style="width:100%;max-width:300px">
+                    <div id="FOMODModal3" class="modal">
+                        <img class="modal-content" id="img03">
+                        <div id="caption3"></div>
+                    </div>
+                <img id="FOMODImg4" src="./img/fpge 4.png" alt="Select 'None'" style="width:100%;max-width:300px">
+                    <div id="FOMODModal4" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img04">
+                        <div id="caption4"></div>
+                    </div>
             <p class="moddesc"> - Adds a fully functional post-game world to the game that changes based on your choices in-game</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/64623?tab=files" target="_blank">The Living Desert</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
@@ -159,4 +179,76 @@ SOFTWARE.
         <a class="arrows" href="./content-quests.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
     </div>
 </body>
+<script>
+var modal = document.getElementById('FOMODModal');
+
+var img = document.getElementById('FOMODImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal2');
+
+var img = document.getElementById('FOMODImg2');
+var modalImg = document.getElementById("img02");
+var captionText = document.getElementById("caption2");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal3');
+
+var img = document.getElementById('FOMODImg3');
+var modalImg = document.getElementById("img03");
+var captionText = document.getElementById("caption3");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal4');
+
+var img = document.getElementById('FOMODImg4');
+var modalImg = document.getElementById("img04");
+var captionText = document.getElementById("caption4");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
 </html>
