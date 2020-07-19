@@ -130,14 +130,15 @@ SOFTWARE.
                   <ul class="specialinstructions">
                     <li>Windows search for <strong>Device Manager</strong></li>
                     <li>In the device manager, expand the <strong>Audio inputs and outputs</strong> section, right-click on your primary audio device, and select <strong>Update driver</strong> </li>
-                      <img id="FOMODImg" src="./img/update driver.png" alt="Select 'Portable'" style="width:100%;max-width:300px">
+                      <img id="FOMODImg" src="./img/update driver.png" alt="Select 'Update Driver'" style="width:100%;max-width:300px">
                       <div id="FOMODModal" class="modal">
                           <img class="modal-content" id="img01">
                           <div id="caption"></div>
                       </div>
                     <li>From the pop-up, select <strong>Search automatically for updated driver software</strong></li>
-                      <img id="FOMODImg2" src="./img/search auto.png" alt="'Search automatically for updated driver software'" style="width:100%;max-width:300px">
+                      <img id="FOMODImg2" src="./img/search auto.png" alt="Select 'Search automatically for updated driver software'" style="width:100%;max-width:300px">
                         <div id="FOMODModal2" class="modal">
+                            <span class="close">&times;</span>
                             <img class="modal-content" id="img02">
                             <div id="caption2"></div>
                         </div>
@@ -156,27 +157,10 @@ SOFTWARE.
                       <li>Launch Steam and select <strong>Steam -> Settings</strong></li>
                       <li>Go to the <strong>Downloads</strong> tab and select <strong>Steam Library Folders</strong></li>
                       <li>From the pop-up, select <strong>Add Library Folder</strong></li>
-                      <li>Add a folder in a location of your choice outside of the default Windows folders (preferably on an SSD)</li>
-                        <ul>
-                          <li>If you do not have another drive to create a folder on, follow these steps (Requires <a class="modsublink" href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a>):</li>
-                            <ul>
-                              <li>Navigate to <strong>Steam/steamapps/</strong> and open <strong>libraryfolders.vdf</strong> with Notepad++)</li>
-                              <li>You should see something similar to this:</li>
-                              <img id="FOMODImg3" src="./img/steamlibraryopen.png" alt="Steam/steamapps/libraryfolders.vdf" style="width:100%;max-width:300px">
-                                <div id="FOMODModal3" class="modal">
-                                    <img class="modal-content" id="img03">
-                                    <div id="caption3"></div>
-                                </div>
-                              <li>Add a new line below the lowest filepath and follow the same format for creating a new drive path</li>
-                                <ul>
-                                  <li>If you do not see a line that starts with <strong>"1"</strong> and is followed by a filepath, just add it right below <strong>"ContentStatsID"</strong></li>
-                                </ul>
-                              <li>For this example, it would be something along the lines of  &nbsp; <strong>"3" &nbsp;&nbsp;&nbsp;&nbsp;	"E:\\Games\\Library 2 Steam"</strong></li>
-                                <ul>
-                                  <li>Make sure the number and file path align with how many folders there already are and where you intend to create the new respectively. You also must manually create the file you are pointing it to, Steam will not create it for you</li>
-                                </ul>
-                            </ul>
-                        </ul>
+                      <li>Add a folder on a different drive in a location of your choice outside of the default Windows folders (preferably on an SSD)</li>
+                          <ul>
+                            <li>If you do not have another drive to create a folder on, follow <a class="modsublink" href="https://github.com/LostDragonist/steam-library-setup-tool/wiki/Usage-Guide" target="_blank">these instructions</a> to create a new library in a safe location on the same drive</li>
+                          </ul>
                       <li>Exit out of the menu and go to <strong>Library</strong></li>
                       <li>Select <strong>Fallout New Vegas</strong> and click <strong>Install</strong></li>
                       <li>From the pop-up, select <strong>Choose location for install:</strong></li>
@@ -201,28 +185,10 @@ SOFTWARE.
                         <li>Launch Steam and select <strong>Steam -> Settings</strong></li>
                         <li>Go to the <strong>Downloads</strong> tab and select <strong>Steam Library Folders</strong></li>
                         <li>From the pop-up, select <strong>Add Library Folder</strong></li>
-                        <li>Add a folder in a location of your choice outside of the default Windows folders (preferably on an SSD)</li>
-                          <ul>
-                            <li>If you do not have another drive to create a folder on, follow these steps (Requires <a class="modsublink" href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a>):</li>
-                              <ul>
-                                <li>Navigate to <strong>Steam/steamapps/</strong> and open <strong>libraryfolders.vdf</strong> with Notepad++)</li>
-                                <li>You should see something similar to this:</li>
-                                <img id="FOMODImg4" src="./img/steamlibraryopen.png" alt="Steam/steamapps/libraryfolders.vdf" style="width:100%;max-width:300px">
-                                  <div id="FOMODModal4" class="modal">
-                                    <span class="close">&times;</span>
-                                      <img class="modal-content" id="img04">
-                                      <div id="caption4"></div>
-                                  </div>
-                                <li>Add a new line below the lowest filepath and follow the same format for creating a new drive path</li>
-                                  <ul>
-                                    <li>If you do not see a line that starts with <strong>"1"</strong> and is followed by a filepath, just add it right below <strong>"ContentStatsID"</strong></li>
-                                  </ul>
-                                <li>For this example, it would be something along the lines of  &nbsp; <strong>"3" &nbsp;&nbsp;&nbsp;&nbsp;	"E:\\Games\\Library 2 Steam"</strong></li>
-                                  <ul>
-                                    <li>Make sure the number and file path align with how many folders there already are and where you intend to create the new respectively. You also must manually create the file you are pointing it to, Steam will not create it for you</li>
-                                  </ul>
-                              </ul>
-                          </ul>
+                        <li>Add a folder on a different drive in a location of your choice outside of the default Windows folders (preferably on an SSD)</li>
+                            <ul>
+                              <li>If you do not have another drive to create a folder on, follow <a class="modsublink" href="https://github.com/LostDragonist/steam-library-setup-tool/wiki/Usage-Guide" target="_blank">these instructions</a> to create a new library in a safe location on the same drive</li>
+                            </ul>
                         <li>Exit out of the menu and go to <strong>Library</strong></li>
                         <li>Select <strong>Fallout New Vegas</strong> and click <strong>Install</strong></li>
                         <li>From the pop-up, select <strong>Choose location for install:</strong></li>
@@ -299,7 +265,6 @@ SOFTWARE.
               <li>Make sure the monitor you play on is selected from the drop-down menu at the top of the window, and your refresh rate will be shown below <strong>Display information</strong></li>
                 <img id="FOMODImg4" src="./img/display info.png" alt="Advanced display settings" style="width:100%;max-width:300px">
                 <div id="FOMODModal4" class="modal">
-                  <span class="close">&times;</span>
                   <img class="modal-content" id="img04">
                   <div id="caption4"></div>
                 </div>
@@ -367,5 +332,40 @@ SOFTWARE.
     });
   }
 </script>
+<script>
+var modal = document.getElementById('FOMODModal');
 
+var img = document.getElementById('FOMODImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal2');
+
+var img = document.getElementById('FOMODImg2');
+var modalImg = document.getElementById("img02");
+var captionText = document.getElementById("caption2");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
 </html>
