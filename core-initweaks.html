@@ -103,6 +103,9 @@ SOFTWARE.
                             <li>[Audio]</li>
                             <li>iAudioCacheSize=8192</li>
                             <li>iMaxSizeForCachedSound=1024</li>
+                            <br>
+                            <li>[Archive]</li>
+                            <li>SArchiveList=Fallout - Invalidation.bsa, Fallout - Textures.bsa, Fallout - Textures2.bsa, Fallout - Meshes.bsa, Fallout - Meshes2.bsa, Fallout - Voices1.bsa, Fallout - Sound.bsa, Fallout - Misc.bsa</li>
                     </ul>
                     <ul>
                             <li>Change <strong>INumHWThreads</strong> to the number of threads your CPU has</li>
@@ -111,6 +114,7 @@ SOFTWARE.
                                 </ul>
                             <li><strong>iPresentInterval</strong> can be set to <strong>0</strong> if you use G/Free-sync</li>
                             <li><strong>fXenonVertLookSpeed</strong> and <strong>fXenonHorizLookSpeed</strong> can be removed if you do not run the game in a 16:9 aspect ratio</li>
+                            <li>The <strong>SArchiveList</strong> tweak is only needed if you used the BSA Decompressor from <a class="modsublink" href="./core-tools.html" target="_blank">Core - Tools</a>, and make sure the entire list is on one line</li>
                     </ul>
                 <li>Repeat for the <strong>Testing</strong> profile</li>
             </ul>
@@ -173,6 +177,10 @@ SOFTWARE.
                                             iMaxSizeForCachedSound=1024
                                         </td>
                                         <td>Increases the audio cache to prevent stuttering and audio not playing</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SArchiveList=</td>
+                                        <td>Adds the BSAs created by the BSA Decompressor to the list of BSAs loaded by the game</td>
                                     </tr>
                                 </table>
                         </div>

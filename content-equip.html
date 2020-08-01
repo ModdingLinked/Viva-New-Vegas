@@ -153,7 +153,24 @@ SOFTWARE.
                 </ul>
             <p class="moddesc"> - Lore-friendly armor/clothing pack based on vanilla armors</p>
         <h2 class="modhead"><a class="modlink" href="https://drive.google.com/open?id=1ObrLuKDDRyPpNMihsuzDqqLNvSWn76M_" target="_blank">Lore Friendly Armor Pack</a></h2>
-            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="specialinstall"><strong>Installation Instructions:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Install the file normally</li>
+                    <li>Once installed, right-click on <strong>Spice of Life - Vanilla Body Patch</strong> in the left pane of MO2 and select open in explorer</li>
+                    <li>Right-click on <strong>1nivVSLArmors.bsa</strong> and select <strong>Copy</strong></li>
+                    <li>Close out of that window, then right click on <strong>Lore Friendly Armor Pack</strong> in the left pane of MO2</li>
+                    <li>Paste the <strong>.BSA</strong> into the folder, right-click on it, and select <strong>Rename</strong></li>
+                    <li>Name the .BSA <strong>Lore Friendly Armor Pack.bsa</strong></li>
+                    <img id="FOMODImg" src="./img/lfap.png" alt="Lore Friendly Armor Pack.bsa" style="width:100%;max-width:300px">
+                        <div id="FOMODModal" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="img01">
+                            <div id="caption"></div>
+                        </div>
+                        <ul>
+                            <li>The .BSA must be named exactly that in order for it to work</li>
+                        </ul>
+                </ul>
             <p class="moddesc"> - Changes many aspects of the previous armors to perfectly fit in with the vanilla game such as balancing/renaming/removing certain aspects/proper leveled list integration <br>
                                 NOTE: Make sure you have all of the previous armor mods installed and active with the plugins hidden in MO2
             </p>
@@ -164,4 +181,22 @@ SOFTWARE.
         <a class="arrows" href="./content-misc.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
     </div>
 </body>
+<script>
+var modal = document.getElementById('FOMODModal');
+
+var img = document.getElementById('FOMODImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
 </html>

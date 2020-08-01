@@ -74,38 +74,45 @@ SOFTWARE.
                     <ul>
                         <li>Enables Fallout 3-style repair in which weapons can only be repaired up to a condition % equal to your repair skill</li>
                     </ul>
+                <li>Set <strong>bNPCWeaponMods</strong> to <strong>1</strong> (line 72)</li>
+                    <ul>
+                        <li>Allows NPCs to use weapon attachments</li>
+                    </ul>
             </ul>
         <h2 class="modhead">Enabling More Features in lStewieAl's Tweaks</h2>
                 <ul class="specialinstructions">
-                    <li>Double-click on <strong>lStewieAl's Tweaks INI</strong> (or the custom INI file if you installed that) in the left pane of MO2</li>
-                    <li>In the <strong>INI-Files</strong> tab, click on <strong>nvse/plugins/nvse_stewie_tweaks.ini</strong></li>
-                    <li>Set <strong>bNoSkillTags</strong> to <strong>1</strong> (line 422, line numbers are only accurate when using the Custom INI file from the guide)</li>
-                    <li>Set <strong>iRemoveTags</strong> to <strong>2</strong> (line ~1022, number will not be fully accurate)</li>
+                    <li>Right-click on <strong>lStewieAl's Tweaks INI</strong> (or the custom INI file if you installed that) in the left pane of MO2 and select <strong>Open in Explorer</strong></li>
+                    <li>Open <strong>nvse/plugins/nvse_stewie_tweaks.ini</strong> in a text editor</li>
+                    <li>Set <strong>bNoSkillTags</strong> to <strong>1</strong> </li>
+                        <ul>
+                            <li>Use control+f to easily find settings</li>
+                        </ul>
+                    <li>Set <strong>iRemoveTags</strong> to <strong>2</strong></li>
                         <ul>
                             <li>Additional changes can be made under the <strong>[No Skill Tags]</strong> section at the bottom of the INI</li>
                             <li> Hides the [Speech], [Barter], etc. number tags from dialogue options. For example, instead of <strong>[Speech 75]</strong>, it will say just <strong>[Speech]</strong></li>
                         </ul>
-                    <li>Set <strong>bHideEnemyMarkers</strong> to <strong>1</strong> (line 50)</li>
+                    <li>Set <strong>bHideEnemyMarkers</strong> to <strong>1</strong></li>
                         <ul>
                             <li>Removes enemy markers from the compass like in Fallout 4 Survival</li>
                         </ul>
-                    <li>Set <strong>bNoGrabOwnedItems</strong> to <strong>1</strong> (line 239)</li>
+                    <li>Set <strong>bNoGrabOwnedItems</strong> to <strong>1</strong></li>
                         <ul>
-                            <li>Stops the player from grabbing items owned by NPCs</li>
+                            <li>Stops the player from z-grabbing (not stealing) items owned by NPCs</li>
                         </ul>
-                    <li>Set <strong>bWeightlessWornPowerArmor</strong> to <strong>1</strong> (line 296)</li>
+                    <li>Set <strong>bWeightlessWornPowerArmor</strong> to <strong>1</strong></li>
                         <ul>
                             <li>Removes the weight of the power armor when you are wearing it like in Fallout 4</li>
                         </ul>
-                    <li>Set <strong>bSneakCriticalsOnlyMeleeWeapons</strong> to <strong>1</strong> (line 797)</li>
+                    <li>Set <strong>bSneakCriticalsOnlyMeleeWeapons</strong> to <strong>1</strong> </li>
                         <ul>
                             <li>Disables the ridiculously OP sneak attack automatic criticals with all weapons except melee/unarmed</li>
                         </ul>
-                    <li>Set <strong>bNoScaleNpcDamageThresholdByCondition</strong> to <strong>1</strong> (line 602) and <strong>bNoScaleNpcDamageResistanceByCondition</strong> to <strong>1</strong> (line 707)</li>
+                    <li>Set <strong>bNoScaleNpcDamageThresholdByCondition</strong> to <strong>1</strong>  and <strong>bNoScaleNpcDamageResistanceByCondition</strong> to <strong>1</strong></li>
                         <ul>
                             <li>NPCs' armor DT/DR will no longer scale with condition (does not apply to the player)</li>
                         </ul>
-                    <li>Set <strong>bBarterCheckActorBuySellFlags</strong> to <strong>1</strong> (line 608)</li>
+                    <li>Set <strong>bBarterCheckActorBuySellFlags</strong> to <strong>1</strong> </li>
                         <ul>
                             <li>Makes barter a lot more difficult by making the player only allowed to sell certain item types to certain vendors.
                                 If you enable it, install <a class="modsublink" href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/master/Changed%20Vendor%20Flags.7z" target="_blank">this mod</a> which makes the items that certain vendors accept more logical
@@ -120,7 +127,7 @@ SOFTWARE.
             <p class="moddesc"> - Overhauls how damage and force is applied, making combat quicker and harder, and making previously unviable builds such as unarmed more viable</p>
         <h2 class="modhead"><a class="modlink" href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/master/BLEED%20Addendum.7z" target="_blank">BLEED Addendum</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
-            <p class="moddesc"> - Balance changes/fixes for BLEED</p>
+            <p class="moddesc"> - Balance changes/fixes for BLEED. See in the included read-me for a list of changes</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/68179" target="_blank">NPCs Sprint in Combat</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
             <p class="moddesc"> - Melee-wielding enemies will now sprint at you in combat</p>
@@ -159,7 +166,7 @@ SOFTWARE.
             </p>
         <h2 class="modhead"><a class="modlink" href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/master/Qolore%20Gameplay%20Tweaks.7z" target="_blank">Qolore Gameplay Tweaks</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
-            <p class="moddesc"> - My personal gameplay changes that balance many aspects of the game. For a list of the included changes, see the Read-Me included in the archive </p>
+            <p class="moddesc"> - My personal gameplay changes that balance many aspects of the game. See in the included read-me for a list of changes </p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/50468" target="_blank">JIP Companions Command and Control</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
             <p class="moddesc"> - Changes the way companions are controlled and interacted with and adds new tactical features similar to isometric RPGs</p>
