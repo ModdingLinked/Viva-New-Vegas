@@ -62,12 +62,14 @@ SOFTWARE.
                 <li><a href="./core-utilities.html">Utilities</a></li>
                 <li><a href="./core-bugfix.html">Bug Fixes/QOL</a></li>
                 <li><a href="./core-hud.html">HUD/UI</a></li>
+                <li><a href="./core-optional.html">Optional Core Mods/Tools</a></li>
                 <li>Finish Line</li>
             </ul>
             <hr>
     </div>    
     <div>
         <h2 class="modhead"><a class="modlink" href="./core-avoid.html" target="_blank">Core Mods/Tools To Avoid</a></h2>
+            <p class="moddesc">NOTE: It is very important to read the above link, especially if you plan on adding your own mods</p>
         <h2 class="modhead">Creating a Separator in Mod Organizer 2</h2>
             <ul class="specialinstructions">
                 <li>Right-click in the left pane of MO2 and select <strong>Create Separator</strong></li>
@@ -120,7 +122,7 @@ SOFTWARE.
                                 Tutorial Killer.esp <br>
                                 Simple DLC Delay.esp <br>
                                 Vanilla UI Plus.esp (Only if you followed the VUI+ HUD Section)<br>
-                                Any mods you selected from the optional sections <u>EXCEPT</u> FOVSlider.esp<br>
+                                Any mods you selected from the <a class="modsublink" href="./core-optional.html" target="_blank">Optional Core Mods</a> section<br>
                                 Core - Conflict Resolution AIO.esp <strong><u>OR</u></strong> whatever patches you selected from the Conflict Resolution FOMOD<br>
                             </strong>
                         </li>
@@ -192,23 +194,20 @@ SOFTWARE.
                 <img id="FOMODImg5" src="./img/ihudammo.png" alt="Disable Activate on combat" style="width:100%;max-width:300px">
                     <div id="FOMODModal5" class="modal">
                         <img class="modal-content" id="img05">
+                        <span class="close">&times;</span>
                         <div id="caption5"></div>
                     </div>
-                <img id="FOMODImg6" src="./img/ihudcrosshair.png" alt="Disable Activate on combat" style="width:100%;max-width:300px">
-                    <div id="FOMODModal6" class="modal">
-                        <span class="close">&times;</span>
-                        <img class="modal-content" id="img06">
-                        <div id="caption6"></div>
-                    </div>
             <ul class="specialinstructions">
+                    <ul>
+                        <li>Adjust the rest to personal preference</li>
+                    </ul>
                 <li>iHUD: Extra HUD: Adjust to personal preference</li>
-                <li>The Weapon Mod Menu: Adjust to personal preference</li>
                 <li>DarnUI (only if you followed the DarnUI HUD section): Adjust to personal preference</li>
             </ul>
     </div>
     <div>
         <hr>
-        <a class="arrows" href="./core-hud.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
+        <a class="arrows" href="./core-optional.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
         <a class="arrows" href="./index.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
     </div>
 </body>
@@ -294,25 +293,6 @@ span.onclick = function() {
 var img = document.getElementById('FOMODImg5');
 var modalImg = document.getElementById("img05");
 var captionText = document.getElementById("caption5");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() { 
-    modal.style.display = "none";
-}
-</script>
-
-<script>
-    var modal = document.getElementById('FOMODModal6');
-
-var img = document.getElementById('FOMODImg6');
-var modalImg = document.getElementById("img06");
-var captionText = document.getElementById("caption6");
 img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;

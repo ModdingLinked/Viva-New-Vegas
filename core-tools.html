@@ -62,6 +62,7 @@ SOFTWARE.
                 <li><a href="./core-utilities.html">Utilities</a></li>
                 <li><a href="./core-bugfix.html">Bug Fixes/QOL</a></li>
                 <li><a href="./core-hud.html">HUD/UI</a></li>
+                <li><a href="./core-optional.html">Optional Core Mods/Tools</a></li>
                 <li><a href="./core-finish.html">Finish Line</a></li>
             </ul>
         <hr>
@@ -81,16 +82,22 @@ SOFTWARE.
                         <ul>
                             <li>If the option does not show up for you, ignore that step</li>
                         </ul>
-                    <li>Once you have extracted the archive, right-click on <strong>ModOrganizer.exe</strong> and select <strong>Properties</strong></li>
+                    <li>Once you have extracted the archive to your <strong>Modding Folder</strong>, right-click on <strong>ModOrganizer.exe</strong> and select <strong>Properties</strong></li>
                     <li>Navigate to the <strong>Compatibility</strong> tab and check the box adjacent to <strong>Run this program as an administrator</strong></li>
                     <li>Select <strong>Apply</strong> then <strong>OK</strong></li>
                 </ul>
             <p class="moddesc"> - By far the best mod manager for all Bethesda games, takes advantage of a Virtual File System to keep your Data folder completely clean</p>
-        <h2 class="modhead"><a class="modlink" href="https://github.com/deorder/mo2-plugins" target="_blank">MO2 Plugins</a></h2>
+        <h2 class="modhead"><a class="modlink" href="https://github.com/deorder/mo2-plugins" target="_blank">Mod Organizer 2 Plugins</a></h2>
             <p class="specialinstall"><strong>Installation Instructions:</strong></p>
                 <ul class="specialinstructions">
-                    <li>Select the green button in the top left labeled <strong>Code</strong> and then slect <strong>Download ZIP</strong></li>
-                    <li>Extract the following from the archive to <strong>Mod Organizer 2 Path/plugins</strong></li>
+                    <li>Select the green button in the top left labeled <strong>Code</strong> and then select <strong>Download ZIP</strong></li>
+                        <img id="FOMODImg" src="./img/mo2 plugins install.png" alt="Download ZIP" style="width:100%;max-width:300px">
+                            <div id="FOMODModal" class="modal">
+                                <img class="modal-content" id="img01">
+                                <span class="close">&times;</span>
+                                <div id="caption"></div>
+                            </div>
+                    <li>Extract the following from the archive to <strong>Mod Organizer 2/plugins</strong></li>
                         <ul>
                             <li><strong>/data</strong></li>
                             <li><strong>pySyncModOrder.py</strong></li>
@@ -109,7 +116,8 @@ SOFTWARE.
         <h2 class="modhead"><a class="modlink" href="https://forum.step-project.com/topic/13451-xlodgen-terrain-lod-beta-for-fnv-fo3-fo4-fo4vr-tes5-sse-tes5vr-enderal/" target="_blank">FNVLODGen</a></h2>
             <p class="specialinstall"><strong>Installation Instructions:</strong></p>
                 <ul class="specialinstructions">
-                    <li>Click the download link of the beta version with the highest number (there may only be one link anyways)</li>           
+                    <li>Click the download link of the beta version with the highest number (there may only be one link anyways)</li>     
+                    <li>Extract the archive to your <strong>Modding Folder</strong></li>      
                 </ul>
             <p class="moddesc"> - Tool for automatically generating LOD </p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65854" target="_blank">BSA Decompressor</a></h2>
@@ -139,8 +147,6 @@ SOFTWARE.
                             </ul>
                     </ul>
                 </p>
-        <hr>
-        <h2 class="modhead"><a class="modlink" href="./core-optionaltools.html" target="_blank">Other helpful (and optional) tools not used in this guide</a></h2>
     </div>
     <div>
         <hr>
@@ -148,5 +154,22 @@ SOFTWARE.
         <a class="arrows" href="./core-mo2config.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
     </div>
 </body>
+<script>
+var modal = document.getElementById('FOMODModal');
 
+var img = document.getElementById('FOMODImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
 </html>

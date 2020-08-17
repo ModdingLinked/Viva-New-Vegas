@@ -64,6 +64,7 @@ SOFTWARE.
                 <li><a href="./core-utilities.html">Utilities</a></li>
                 <li>Bug Fixes/QOL</li>
                 <li><a href="./core-hud.html">HUD/UI</a></li>
+                <li><a href="./core-optional.html">Optional Core Mods/Tools</a></li>
                 <li><a href="./core-finish.html">Finish Line</a></li>
             </ul>
         <hr>
@@ -72,7 +73,7 @@ SOFTWARE.
         <h2 class="modhead">A Note About Load Order and Conflict Resolution</h2>
             <p class="moddesc">
                 LOOT is not used in this guide. The best way to sort your load order is to use FNVEdit to view conflicts and manually sort your load order based off that and then create a custom conflict resolution patch.
-                The guide will provide a fully-modular handmade conflict resolution FOMOD along with the proper load order for each module. This means that any mods listed can be left out without missing out on the pre-made conflict resolution/load order. 
+                The guide will provide a fully-modular handmade conflict resolution FOMOD along with the proper load order for each module, so you do not need to worry about either of those if you are just following the guide. This means that any mods listed can be left out without missing out on the pre-made conflict resolution/load order. 
                 However, if you plan on adding any big mods, you will need to familiarize yourself with manually solving conflicts in xEdit.
                 I suggest <a class="modsublink" href="https://tes5edit.github.io/docs/" target="_blank">this</a> tutorial for familiarizing yourself with the tool 
                 and for making custom conflict resolution.
@@ -97,42 +98,35 @@ SOFTWARE.
                 <ul class="specialinstructions">
                     <li>Main File: <strong>YUP - Base Game and All DLC</strong></li>
                 </ul>
+                <p class="moddesc">NOTE: If you do not know what <strong>Install normally</strong> means (or how to install mods using Mod Organizer 2), go back to the <a class="modsublink" href="./core-mo2config.html" target="_blank">Core - MO2 Config</a> page and read the <strong>IMPORTANT: Mod Installation Advice in Mod Organizer 2</strong> section</p> 
             <p class="moddesc"> – Purely fixes numerous bugs in the vanilla game and DLCs</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/62041" target="_blank">Navmesh Fixes and Improvements</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
             <p class="moddesc"> - Fixes almost all navmesh (AI navigation) issues in the base game</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65412" target="_blank">Unofficial Patch NVSE</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
-            <p class="moddesc"> - Pure bug fix mod similar to YUP, but takes advantage of NVSE</p>
+            <p class="moddesc"> - Pure bug fix mod similar to YUP, but takes advantage of NVSE and JIP LN NVSE</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65052" target="_blank">Weapon Mesh Improvement Mod</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
             <p class="moddesc"> - Fixes mesh errors, UV errors, incorrect flags, missing extra data, form lists, projectiles, and other weapon related bugs <br>
-                                NOTE: Due to the nature of this mod, any other mods that edit the same weapon meshes will be incompatible. This is why you won't see mods such as WMX or EVE 
+                                NOTE: Due to the nature of this mod, any other mods that edit the same weapon meshes will be incompatible. This is why you won't see mods such as WMX, EVE, or Asurah's Animations in the guide 
             </p>
         <h2 class="modhead"><a class="modlink" href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/master/WMIM%20Addendum.7z" target="_blank">WMIM Addendum</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
-            <p class="moddesc"> - Fixes bugs and removes unnecessary weapon buffs within Weapon Mesh Improvement Mod</p>
+            <p class="moddesc"> - Fixes bugs and removes unnecessary weapon buffs within Weapon Mesh Improvement Mod. See the included read-me for details</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/62767" target="_blank">Throwable Weapon Fixes</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
             <p class="moddesc"> - Collection of fixes for throwable weapons</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65004" target="_blank">Fixes for the Caesar's Legion Armors</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>  
             <p class="moddesc"> - Fixes many mesh issues with Legion armors</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/59149" target="_blank">Collision Meshes</a></h2>
-            <p class="specialinstall"><strong>Files to install normally:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Main File - <strong>Collision Meshes FNV</strong></li>
-                    <li>Update File - <strong>update Collision Meshes FNV 1.6.3 to 1.6.4</strong></li>
-                </ul>
-                <p class="moddesc">NOTE: If you do not know what to do when installing multiple files from the same page through MO2, go back to the <a class="modsublink" href="./core-mo2config.html" target="_blank">Core - MO2 Config</a> page and read the <strong>IMPORTANT: Mod Installation Advice in Mod Organizer 2</strong> section</p> 
-            <p class="moddesc"> - Improves collision meshes, the meshes which simulate where bullets, bodies, etc. can collide with an object, so you can now shoot through fences, car windows, etc.</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66347" target="_blank">lStewieAl's Tweaks</a></h2>
             <p class="specialinstall"><strong>Files to install normally:</strong></p>
                 <ul class="specialinstructions">
                     <li>Main File: <strong>Stewie Tweaks</strong></li>
                     <li>Optional File: <strong>Stewie Tweaks INI</strong></li>
                 </ul>
-
+                <p class="moddesc">NOTE: If you do not know what to do when installing multiple files from the same page through MO2, go back to the <a class="modsublink" href="./core-mo2config.html" target="_blank">Core - MO2 Config</a> page and read the <strong>IMPORTANT: Mod Installation Advice in Mod Organizer 2</strong> section</p> 
                 <br>
             <p class="specialinstall"><strong>Special activation instructions:</strong></p>
                 <ul class="specialinstructions">
@@ -141,10 +135,7 @@ SOFTWARE.
                     <li>In the <strong>INI-Files</strong> tab, click on <strong>nvse/plugins/nvse_stewie_tweaks.ini</strong></li>
                     <li>All the features of the mod can be turned on/off and tweaked here (they are all off by default) <strong><u>OR</u></strong> download my preset INI <a class="modsublink" href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/master/lStewieAl's%20Tweaks%20Custom%20INI.7z" target="_blank">here</a></li>
                 </ul>        
-            <p class="moddesc"> - Collection of many configurable quality of life improvements/bug fixes <br>
-                                NOTE: When the mod gets updated, you need to run the game once for the new features to show up in the INI
-            </p>
-        <h2 class="modhead"><a class="modlink" href="./core-optionalbugfixes.html" target="_blank">Additional Optional Bug Fix/QOL Mods</a></h2>
+            <p class="moddesc"> - Collection of many configurable quality of life improvements/bug fixes </p>
     </div>    
     <div>
         <hr>

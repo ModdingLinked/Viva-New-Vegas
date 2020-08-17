@@ -62,6 +62,7 @@ SOFTWARE.
             <li>Utilities</li>
             <li><a href="./core-bugfix.html">Bug Fixes/QOL</a></li>
             <li><a href="./core-hud.html">HUD/UI</a></li>
+            <li><a href="./core-optional.html">Optional Core Mods/Tools</a></li>
             <li><a href="./core-finish.html">Finish Line</a></li>
         </ul>
         <hr>
@@ -69,7 +70,7 @@ SOFTWARE.
     <div>
         <h2 class="modhead">A Note About Testing the Game</h2>
             <p class="moddesc">
-                After each section in every module, you should launch the game and make sure everything is working correctly by running around for a few minutes
+                After each section in every module, you should launch the game and make sure everything is working correctly by running in-game around for a few minutes
             </p>
         <h2 class="modhead"><a class="modlink" href="https://github.com/xNVSE/NVSE/releases" target="_blank">xNVSE</a></h2>
             <p class="specialinstall"><strong>Installation Instructions:</strong></p>
@@ -87,13 +88,22 @@ SOFTWARE.
             <ul class="specialinstructions">
                 <li>Extract the <strong>nvse</strong> folder from the archive to the game's <strong>Data</strong> folder</li>
             </ul>
+            <p class="moddesc">NOTE: If you do not know what the <strong>Data</strong> folder is, go to the <a class="modsublink" href="./core-installation.html">Core - Installation</a> page and read the <strong>Common Terminology</strong> section</p>
             <p class="moddesc"> - Increases heap allocation to help prevent stuttering/crashing</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/58277" target="_blank">JIP LN NVSE Plugin</a></h2>
             <p class="specialinstall"><strong>Installation Instructions:</strong></p>
                 <ul class="specialinstructions">
                     <li>Download the mod manually</li>
                     <li>Extract the <strong>nvse</strong> folder from the archive to the game's <strong>Data</strong> folder</li>
+                    <li>The files from the mod, and the rest of the NVSE plugins in this section, should end up like this (pay attention to the filepath at the top)</li>
+                        <img id="FOMODImg" src="./img/JIP Install.png" alt="Fallout New Vegas/Data/NVSE/Plugins" style="width:100%;max-width:300px">
+                            <div id="FOMODModal" class="modal">
+                                <span class="close">&times;</span>
+                                <img class="modal-content" id="img01">
+                                <div id="caption"></div>
+                            </div>
                 </ul>
+                <p class="moddesc">NOTE: The reason that these NVSE plugins are installed directly into the data folder and not through MO2 is that MO2's virtual file system can (rarely) fail to hook the .DLLs in time when launching the game and therefore they will not work in-game</p>
             <p class="moddesc"> - NVSE extension with 800+ new functions</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66927" target="_blank">JohnnyGuitar NVSE</a></h2>
             <p class="specialinstall"><strong>Installation Instructions:</strong></p>
@@ -101,7 +111,7 @@ SOFTWARE.
                     <li>Download the mod manually</li>
                     <li>Extract the <strong>nvse</strong> folder from the archive to the game's <strong>Data</strong> folder</li>
                 </ul>
-            <p class="moddesc"> - Another NVSE extender</p>
+            <p class="moddesc"> - Another NVSE extender similar to JIP LN</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/62552" target="_blank">4GB Patcher</a></h2>
             <p class="specialinstall"><strong>Installation Instructions:</strong></p>
                 <ul class="specialinstructions">
@@ -121,6 +131,9 @@ SOFTWARE.
         <h2 class="modhead">Verifying NVSE and the 4GB Patch are Working</h2>
             <ul class="specialinstructions">
                 <li>Run the game through the <strong>New Vegas</strong> option in MO2</li>
+                    <ul>
+                        <li>You do not need to use the <strong>NVSE</strong> option, as the 4GB patch autoloads NVSE when the game is ran through the default executable. And the default executable is used because, only in the GOG version, the <strong>NVSE_Config.ini</strong> from above will not be loaded if you use run through NVSE</li>
+                    </ul>
                 <li>Once the game has reached the title screen, open the console by pressing the <strong>Tilde (~)</strong> key</li>
                 <li>Input <strong>getnvseversion</strong> into the console and hit enter</li>
                     <ul>
@@ -163,7 +176,7 @@ SOFTWARE.
                     <li>Set <strong>bUseFlipExSwapMode</strong> to <strong>1</strong> (line 61)</li>
                         <ul>
                             <li>NOTE: If you are on Windows 7, you do not need to enable the previous two options</li>
-                            <li>Enabling this option will break the in-game screenshot function, but will allow for safe alt-tabbing in fullscreen</li>
+                            <li>Enabling this option will break the in-game screenshot function (Windows print screen will still work), but will allow for safe alt-tabbing in fullscreen. It is fine to leave disabled if you don't alt-tab and want to use in-game screenshots</li>
                         </ul>
                     <li>Set <strong>iMaxFPSTolerance</strong> to 1 less than your monitor's refresh rate (line 73)</li>
                 </ul>
@@ -175,10 +188,9 @@ SOFTWARE.
                     <li>Download the mod manually</li>
                     <li>Extract the <strong>NVSE</strong> folder from the archive to the game's <strong>Data</strong> folder</li>
                 </ul>
-            <p class="moddesc"> - Raises the game's ~120 plugin limit to 255, may also increase performance and decrease load times <br>
+            <p class="moddesc"> - Raises the game's ~120 plugin limit to 255. May also increase performance and decrease load times, especially with more heavily-modded games <br>
                                 NOTE: Although this does raise the plugin limit, it is still recommended to stay below ~120 plugins for optimal performance/load times
             </p>
-        <h2 class="modhead"><a class="modlink" href="./core-optionalutilities.html" target="_blank">Other helpful (and optional) utilities not used in this guide</a></h2>
     </div>      
     <div>
         <hr>
@@ -186,4 +198,22 @@ SOFTWARE.
         <a class="arrows" href="./core-bugfix.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
     </div>
 </body>
+<script>
+var modal = document.getElementById('FOMODModal');
+
+var img = document.getElementById('FOMODImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
 </html>
