@@ -157,10 +157,10 @@ body {
 
 .corereqlist {
     color:#DCDCDC;
-    text-align: center;
     padding:0;
     font-size: calc(10px + .5vw);
     line-height:2.25em;
+    margin-left:2vw;
 }
 
 .corereqlist li a {
@@ -178,7 +178,7 @@ body {
 }
 
 .corespecs {
-    font-size:1.5vw;
+    font-size: calc(10px + 1.2vw);
     color:orange;
     text-align: center;
 }
@@ -239,7 +239,7 @@ th, td {
 .installingfnv {
     margin:2vw;
     color:orange;
-    font-size:1.5vw;
+    font-size: calc(10px + 1.2vw);
 }
 
 .installingfnvdesc {
@@ -874,6 +874,94 @@ a.toclink:hover {
 #FOMODImg14:hover {opacity: 0.7;}
 
 #caption14 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+#FOMODImg15 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left:2vw;
+}
+
+#FOMODImg15:hover {opacity: 0.7;}
+
+#caption15 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+#FOMODImg16 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left:2vw;
+}
+
+#FOMODImg16:hover {opacity: 0.7;}
+
+#caption16 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+#FOMODImg17 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left:2vw;
+}
+
+#FOMODImg17:hover {opacity: 0.7;}
+
+#caption17 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+#FOMODImg18 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left:2vw;
+}
+
+#FOMODImg18:hover {opacity: 0.7;}
+
+#caption18 {
     margin: auto;
     display: block;
     width: 80%;

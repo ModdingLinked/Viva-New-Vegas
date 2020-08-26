@@ -46,29 +46,74 @@ SOFTWARE.
         <ul class="navbar">
             <li class="navbarli"><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium" target="_blank">GitHub</a></li>
             <li class="navbarli"><a href="https://discord.gg/DhX5S27" target="_blank">Discord</a></li>
+            <li class="navbarli"><a href="https://www.patreon.com/vivanewvegas" target="_blank" rel="nofollow">Patreon</a></li>
             <li class="navbarli"><a href="index.html">Home</a></li>
         </ul>
     </div>
     <div>
-        <h1 class="coretitle">Core: General Information</h1>
-            <ul class="breadcrumb">
-                <li><a href="./index.html">Home</a></li>
-                <li>General Information</li>
-                <li><a href="./installation.html">Installation</a></li>
-                <li><a href="./prerequisites.html">Tools</a></li>
-                <li><a href="./mo2config.html">Mod Organizer 2</a></li>
-                <li><a href="./initweaks.html">INI Tweaks</a></li>
-                <li><a href="./utilities.html">Utilities</a></li>
-                <li><a href="./bugfix.html">Bug Fixes/QOL</a></li>
-                <li><a href="./hudui.html">HUD/UI</a></li>
-                <li><a href="./corefinish.html">Finish Line</a></li>
-            </ul>
+        <h1 class="coretitle">General Information</h1>   
+        <ul class="breadcrumb">
+            <li><a href="./index.html">Home</a></li>
+            <li>General Information</li>
+            <li><a href="./core-installation.html">Installation</a></li>
+            <li><a href="./core-tools.html">Tools</a></li>
+            <li><a href="./core-mo2config.html">Mod Organizer 2</a></li>
+            <li><a href="./core-initweaks.html">INI Tweaks</a></li>
+            <li><a href="./core-utilities.html">Utilities</a></li>
+            <li><a href="./core-bugfix.html">Bug Fixes/QOL</a></li>
+            <li><a href="./core-hud.html">HUD/UI</a></li>
+            <li><a href="./core-optional.html">Optional Core Mods/Tools</a></li>
+            <li><a href="./core-finish.html">Finish Line</a></li>
+        </ul>
+        <hr>
     </div>
-    <hr>
     <div>
+        <h2 class="corespecs">The Goal of the Core Module:</h2>
+            <p class="moddesc">
+                The goal of this module is to set up all the essential modding tools for FNV as well as some essential bug fixes/quality of life improvements that give a very similar feel to vanilla, 
+                just without all the bugs and oversights. It is intended for anyone with any level of modding experience to be able follow it easily. It is all also fully modular, 
+                meaning you can leave out any mods you don't like (the same goes for the other modules as well). All other changes such as graphic overhauls, gameplay mods, 
+                and new quests/weapons that you may be accustomed to in fully modded setups are covered in the other 3 modules.
+            </p>
+        <hr>
+        <h2 class="corespecs">Requirements:</h2>
+        <ul class="corereqlist">
+            <li>
+                An English copy of <abbr title="Fallout New Vegas">FNV</abbr> with all the DLC from either 
+                <a class="modsublink" href="https://store.steampowered.com/sub/13435/" target="_blank">Steam</a>    
+                or 
+                <a class="modsublink" href="https://www.gog.com/game/fallout_new_vegas_ultimate_edition" target="_blank">GOG</a>
+                (Instructions for properly installing it are in the next step)
+                    <ul>
+                        <li>Only the English versions of FNV/FO3 are supported. If your game is not English, follow <a class="modsublink" href="https://taleoftwowastelands.com/faq#Game-versions" target="_blank">these steps</a> to switch it</li>
+                        <li>IMPORTANT: The Bethesda.net version does not work with the 4gb patcher, NVSE, or any of its plugins. It can not be used with this guide</li>
+                    </ul>
+            </li>
+            <li>
+                Windows 7 or higher (64bit)
+            </li>
+            <li>
+                A text editor (I recommend <a class="modsublink" href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a>, but default Windows notepad will work)
+            </li>
+            <li>
+                An archiving tool (I recommend <a class="modsublink" href="https://www.7-zip.org/" target="_blank">7-Zip</a>)
+            </li>
+            <li>
+                Latest GPU drivers (Either
+                <a class="modsublink" href="https://www.nvidia.de/Download/index.aspx" target="_blank">NVIDIA</a>
+                or
+                <a class="modsublink" href="https://www.amd.com/en/support" target="_blank">AMD</a>)
+            </li>
+            <li>At least 15 gigabytes of free drive space for just the <strong>Core</strong> module, and 23 gigabytes for the entire guide</li>
+            <li>NOT compatible with a Tale of Two Wastelands; if you want to use TTW, use my <a class="modsublink" href="https://thebestoftimes.github.io/" target="_blank">TTW Guide</a></li>
+            <li>A <a class="modsublink" href="https://users.nexusmods.com/register" target="_blank">Nexus Mods</a> account</li>
+        </ul>
+        <hr>
         <h2 class="corespecs">My System Specs:</h2>
             <ul class="corelist">
-                <li>The <strong>Core</strong> module should run the exact same, if not better than vanilla. My specs are just here for reference</li>
+                <li>The <strong>Core</strong> module should run much better than the vanilla game 
+                    (<a class="modsublink" href="https://help.bethesda.net/app/answers/detail/a_id/16744/~/what-are-the-system-requirements-for-fallout%3A-new-vegas%3F" target="_blank">here</a> are the minimum requirements for FNV). 
+                    My specs are just here for reference</li>
             </ul>
             <table class="specstable" align="center">
                 <tr>
@@ -103,7 +148,7 @@ SOFTWARE.
     <div>
         <hr>
         <a class="arrows" href="./index.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
-        <a class="arrows" href="./installation.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
+        <a class="arrows" href="./core-installation.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
     </div>
 </body>
 

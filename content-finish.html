@@ -48,6 +48,7 @@ SOFTWARE.
         <ul class="navbar">
             <li class="navbarli"><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium" target="_blank">GitHub</a></li>
             <li class="navbarli"><a href="https://discord.gg/DhX5S27" target="_blank">Discord</a></li>
+            <li class="navbarli"><a href="https://www.patreon.com/vivanewvegas" target="_blank" rel="nofollow">Patreon</a></li>
             <li class="navbarli"><a href="index.html">Home</a></li>
         </ul>
     </div>   
@@ -59,33 +60,39 @@ SOFTWARE.
                 <li><a href="./content-cut.html">Restored/Improved Vanilla Content</a></li>
                 <li><a href="./content-quests.html">New Quests/Locations</a></li>
                 <li><a href="./content-equip.html">Equipment</a></li>
-                <li><a href="./content-misc.html">Miscellaneous Content</a></li>
+                <li><a href="./content-perks.html">Perks/Traits</a></li>
+                <li><a href="./content-audio.html">Audio</a></li>
                 <li>Finish Line</li>
             </ul>
         <hr>
     </div>    
     <div>
+        <h2 class="modhead"><a class="modlink" href="./content-avoid.html" target="_blank">Content Mods to Avoid</a></h2>
         <h2 class="modhead">Creating a Separator in Mod Organizer 2</h2>
             <ul class="specialinstructions">
                 <li>Right-click in the left pane of MO2 and select <strong>Create Separator</strong></li>
                 <li>Input <strong>Content - Finish Line</strong> into the pop-up and select <strong>OK</strong></li>
             </ul>
+        <h2 class="modhead">Moving Consistent Pip-Boy Icons</h2>
+            <ul class="specialinstructions">
+                <li>Move Consistent Pip-Boy Icons below the Content - Finish Line separator (from below the <strong>Gameplay - Finish Line</strong> separator, or the <strong>Core - HUD + UI</strong> separator if you did not use the Gameplay module) in the left pane of MO2</li>
+            </ul>
         <h2 class="modhead"><a class="modlink" href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/master/Content%20Conflict%20Resolution%20FOMOD.7z" target="_blank">Content - Conflict Resolution</a></h2>
-            <p class="specialinstall"><strong>FOMOD Install Instructions:</strong></p>
+            <p class="specialinstall"><strong>FOMOD Instructions:</strong></p>
                 <ul class="specialinstructions">
                     <li>Choose all files that apply to what mods you have installed from the guide</li>
                 </ul>
             <p class="moddesc"> - Resolves conflicts between the mods from this module and the previous modules</p>
         <h2 class="modhead"><a class="modlink" href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/master/Content%20Load%20Order.txt.7z" target="_blank">Content - Load Order.txt</a></h2>
-            <p class="specialinstall"><strong>Special install instructions:</strong></p>
+            <p class="specialinstall"><strong>Installation Instructions:</strong></p>
                 <ul class="specialinstructions">
                     <li>Extract <strong>loadorder.txt</strong> to <strong>Mod Organizer 2/profiles/Viva New Vegas - Content</strong></li>
                     <li>Once the file is extracted, right-click in the left pane of MO2 and select <strong>All Mods -> Refresh</strong></li>
                 </ul>
-            <p class="moddesc"> - Automatically ensures your load order is correct for the Core module <br>
+            <p class="moddesc"> - Automatically ensures your load order is correct for the Content module <br>
                                 NOTE: This load order assumes you followed the entire guide with all the recommended options.
-                                For example, if you installed your own mods, those plugin-ins will be moved to the bottom of the LO and need to be manually moved back into the correct spot after the new load order is applied.
-                                It will still work perfectly even if you left out some mods too
+                                If you installed your own mods, those plugin-ins will be moved to the bottom of the LO and need to be manually moved back into the correct spot after the new load order is applied.
+                                It will still work perfectly even if you left out some mods
             </p>
         <h2 class="modhead">Using zMerge</h2>
             <ul class="specialinstructions">
@@ -99,20 +106,25 @@ SOFTWARE.
                     <ul class="initweaks">
                         <li>
                             <strong>
+                                NorthRoadLegionFactionFix.esp <br>
+                                NorthRoadRemasteredToddPerkFix.esp <br>
                                 Character Expansions Revised - UW.esp <br>
                                 Cut Sewers Restored.esp <br>
                                 TMCOTT - Restored.esp <br>
-                                Functional Post Game Ending - Uncut Wasteland Patch.esp <br>
                                 Functional Post Game Ending - YUP Patch.esp <br>
-                                Lucky38Overhaul.esp <br>
-                                REPCONN Blues Delayer.esp <br>
+                                Functional Post Game Ending - Uncut Wasteland Patch.esp <br>
+                                Functional Post Game Ending - Uncut Extra Collection Patch.esp <br>
+                                SecuritronsOnAlert.esp <br>
+                                Mojave Raiders - TLD Patch.esp <br>
+                                The REPCONN Blues Tweaks.esp <br>
+                                Afterschool Special Tweaks.esp <br>
                                 YUP - AutumnLeaves Patch.esp <br>
                                 Delay Autumn Leaves.esp <br>
-                                TraitMod.esp <br>
+                                FNVOppositeTraits.esp <br>
                                 Improved Traits.esp <br>
-                                Baddarkl Perk Overhaul.esp <br>
                                 Burden to Bear Armor.esp <br>
-                                Content - Conflict Resolution AIO (All Modules).esp <u>AND/OR</u> whatever patches you selected from the Conflict Resolution FOMOD <br>
+                                Combat Music.esp <br>
+                                Content - Conflict Resolution AIO (All Modules).esp <u>OR</u> whatever patches you selected from the Conflict Resolution FOMOD <br>
                             </strong>
                         </li>
                     </ul>
@@ -121,7 +133,7 @@ SOFTWARE.
                 <li>The merge should build successfully and you can exit out of the program</li>
                 <li>Right-click in the left pane of MO2 and select <strong>All Mods -> Refresh</strong></li>
                 <li>The merge should appear in the left pane and activate it like normal</li>
-                <li>Move <strong>Content - Merge.esp</strong> above <strong>Interior Lighting Overhaul - Ultimate Edition.esp</strong> in the right pane of MO2</li>
+                <li>Move <strong>Content - Merge.esp</strong> above <strong>FNVLODGen.esp</strong> in the right pane of MO2</li>
                 <li>Click the <img class="mo2setting" src="./img/mo2ini.png" alt="MO2 INI Button"></a> on the top bar of MO2 and select <strong>Merge Plugins Hide</strong></li>
                 <li>Right-click on the <strong>Content - Merge</strong> listing, select <strong>Disable plugins</strong>, and then close</li>
                     <ul>
@@ -137,12 +149,13 @@ SOFTWARE.
         <h2 class="modhead">Congratulations!</h2>
             <p class="moddesc">
                 You are now done with your modding journey! Get on in the game and kick some ass out there! Remember, if you run into any trouble in your playthrough, join the Discord and we'll be sure to help you out.
+                Do NOT bother the authors of any of the mods in the guide if you have issues, that's what the Discord is for.
             </p>
     
     </div>
     <div>
         <hr>
-        <a class="arrows" href="./content-misc.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
+        <a class="arrows" href="./content-audio.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
         <a class="arrows" href="./index.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
     </div>
 </body>

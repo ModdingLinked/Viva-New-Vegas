@@ -46,6 +46,7 @@ SOFTWARE.
         <ul class="navbar">
             <li class="navbarli"><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium" target="_blank">GitHub</a></li>
             <li class="navbarli"><a href="https://discord.gg/DhX5S27" target="_blank">Discord</a></li>
+            <li class="navbarli"><a href="https://www.patreon.com/vivanewvegas" target="_blank" rel="nofollow">Patreon</a></li>
             <li class="navbarli"><a href="index.html">Home</a></li>
         </ul>
     </div>    
@@ -56,6 +57,7 @@ SOFTWARE.
                 <li><a href="./gameplay.html">General Information</a></li>
                 <li><a href="./gameplay-ptwb.html">PushTheWinButton's Mods</a></li>
                 <li>Mechanics</li>
+                <li><a href="./gameplay-optional.html">Optional Gameplay Mods</a></li>
                 <li><a href="./gameplay-finish.html">Finish Line</a></li>
             </ul>
         <hr>
@@ -68,114 +70,109 @@ SOFTWARE.
             </ul>
         <h2 class="modhead">Enabling Fallout 3 Repair in JIP LN</h2>
             <ul class="specialinstructions">
-                <li>Navigate to <strong>Data/nvse/plugins/</strong> and open <strong>jip_nvse.ini</strong></li>
+                <li>Navigate to <strong>Fallout New Vegas/Data/nvse/plugins/</strong> in and open <strong>jip_nvse.ini</strong></li>
                 <li>Set <strong>bEnableFO3Repair</strong> to <strong>1</strong> (line 6)</li>
                     <ul>
                         <li>Enables Fallout 3-style repair in which weapons can only be repaired up to a condition % equal to your repair skill</li>
                     </ul>
+                <li>Set <strong>bNPCWeaponMods</strong> to <strong>1</strong> (line 72)</li>
+                    <ul>
+                        <li>Allows NPCs to use weapon attachments</li>
+                    </ul>
             </ul>
         <h2 class="modhead">Enabling More Features in lStewieAl's Tweaks</h2>
                 <ul class="specialinstructions">
-                    <li>Double-click on <strong>lStewieAl's Tweaks INI</strong> (or the custom INI file if you installed that) in the left pane of MO2</li>
-                    <li>In the <strong>INI-Files</strong> tab, click on <strong>nvse/plugins/nvse_stewie_tweaks.ini</strong></li>
-                    <li>Set <strong>bNoSkillTags</strong> to <strong>1</strong> (line 422, line numbers are only accurate when using the Custom INI file from the guide)</li>
-                    <li>Set <strong>iRemoveTags</strong> to <strong>2</strong> (line 794)</li>
+                    <li>Right-click on <strong>lStewieAl's Tweaks INI</strong> (or the custom INI file if you installed that) in the left pane of MO2 and select <strong>Open in Explorer</strong></li>
+                    <li>Open <strong>nvse/plugins/nvse_stewie_tweaks.ini</strong> in a text editor</li>
+                    <li>Set <strong>bNoSkillTags</strong> to <strong>1</strong> </li>
+                        <ul>
+                            <li>Use control+f to easily find settings</li>
+                        </ul>
+                    <li>Set <strong>iRemoveTags</strong> to <strong>2</strong></li>
                         <ul>
                             <li>Additional changes can be made under the <strong>[No Skill Tags]</strong> section at the bottom of the INI</li>
                             <li> Hides the [Speech], [Barter], etc. number tags from dialogue options. For example, instead of <strong>[Speech 75]</strong>, it will say just <strong>[Speech]</strong></li>
                         </ul>
-                    <li>Set <strong>bHideEnemyMarkers</strong> to <strong>1</strong> (line 50)</li>
+                    <li>Set <strong>bHideEnemyMarkers</strong> to <strong>1</strong></li>
                         <ul>
                             <li>Removes enemy markers from the compass like in Fallout 4 Survival</li>
                         </ul>
-                    <li>Set <strong>bNoGrabOwnedItems</strong> to <strong>1</strong> (line 239)</li>
+                    <li>Set <strong>bNoGrabOwnedItems</strong> to <strong>1</strong></li>
                         <ul>
-                            <li>Stops the player from grabbing items owned by NPCs</li>
+                            <li>Stops the player from z-grabbing (not stealing) items owned by NPCs</li>
                         </ul>
-                    <li>Set <strong>bWeightlessWornPowerArmor</strong> to <strong>1</strong> (line 296)</li>
+                    <li>Set <strong>bWeightlessWornPowerArmor</strong> to <strong>1</strong></li>
                         <ul>
                             <li>Removes the weight of the power armor when you are wearing it like in Fallout 4</li>
                         </ul>
-                    <li>Set <strong>bNoSneakAttacksCriticals</strong> to <strong>1</strong> (line 479)</li>
+                    <li>Set <strong>bSneakCriticalsOnlyMeleeWeapons</strong> to <strong>1</strong> </li>
                         <ul>
-                            <li>Disables the ridiculously OP sneak attack automatic criticals</li>
+                            <li>Disables the ridiculously OP sneak attack automatic criticals with all weapons except melee/unarmed</li>
                         </ul>
-                    <li>Set <strong>bBarterCheckActorBuySellFlags</strong> to <strong>1</strong> (line 608)</li>
+                    <li>Set <strong>bNoScaleNpcDamageThresholdByCondition</strong> to <strong>1</strong>  and <strong>bNoScaleNpcDamageResistanceByCondition</strong> to <strong>1</strong></li>
                         <ul>
-                            <li>THIS SETTING IS NOT FOR THE CASUAL PLAYER! It makes barter a lot more difficult by making the player only allowed to sell certain item types to certain vendors.
+                            <li>NPCs' armor DT/DR will no longer scale with condition (does not apply to the player)</li>
+                        </ul>
+                    <li>Set <strong>bBarterCheckActorBuySellFlags</strong> to <strong>1</strong> </li>
+                        <ul>
+                            <li>Makes barter a lot more difficult by making the player only allowed to sell certain item types to certain vendors.
                                 If you enable it, install <a class="modsublink" href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/master/Changed%20Vendor%20Flags.7z" target="_blank">this mod</a> which makes the items that certain vendors accept more logical
                             </li>
                         </ul>
                 </ul>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/61141?tab=files" target="_blank">BLEED</a></h2>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/61141" target="_blank">BLEED</a></h2>
             <p class="specialinstall"><strong>Files to install normally:</strong></p>
                 <ul class="specialinstructions">
                     <li>Optional File - <strong>BLEEDNV</strong></li>
                 </ul>
             <p class="moddesc"> - Overhauls how damage and force is applied, making combat quicker and harder, and making previously unviable builds such as unarmed more viable</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/68179?tab=files" target="_blank">NPCs Sprint in Combat</a></h2>
+        <h2 class="modhead"><a class="modlink" href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/master/BLEED%20Addendum.7z" target="_blank">BLEED Addendum</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Balance changes/fixes for BLEED. See in the included read-me for a list of changes</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/68179" target="_blank">NPCs Sprint in Combat</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
             <p class="moddesc"> - Melee-wielding enemies will now sprint at you in combat</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/61973?tab=files" target="_blank">Immersive Recoil 2.0</a></h2>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/62153" target="_blank">Real Recoil</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
-            <br>
-            <p class="specialinstall"><strong>Optional tweaking available:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Run FNVEdit through MO2</li>
-                    <li>Right-click in the <strong>Module Selection</strong> pop-up and click <strong>Select None</strong></li>
-                    <li>Check the box adjacent to <strong>ImmersiveRecoil.esp</strong> then hold down left shift and click <strong>OK</strong></li>
-                    <li>Wait for the message <strong>Background Loader: finished</strong> to appear in the right pane</li>
-                    <li>Expand the <strong>ImmersiveRecoil.esp</strong> header in the left pane, and then the <strong>Globals</strong> header within it</li>
-                    <li>These globals can be edited to enable/disable/change parts of the mod</li>
-                        <ul>
-                            <li>See the mod description for details on what the globals do</li>
-                        </ul>
-                </ul>
-            <p class="moddesc"> - Adds configurable formula-based recoil to all weapons in the game</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/67760?tab=files" target="_blank">Iron Sights Recoil Animations</a></h2>
-            <p class="specialinstall"><strong>Files to install normally:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Main File - <strong>Iron Sights Recoil Anims -TTW or WMIM</strong></li>
-                    <li>Optional File - <strong>Iron Sights Recoil Anims - Weapon Retexture Project</strong> (only if you installed Weapon Retexture Project from Visuals - Textures/Models)</li>
-                </ul>
-            <p class="moddesc"> - Adds actual visual kick/muzzle flip to the iron sights fire animations</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66187?tab=files" target="_blank">Melee Cleave (a.k.a. Sweep)</a></h2>
+            <p class="moddesc"> - Adds smooth and realistic (and configurable) recoil</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/67944" target="_blank">AnonPlum's Real Recoil Fixes and Additional Patches</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Fixes downward recoil and adds support for JSawyer Ultimate Edition <br>
+                                NOTE: Since this mod is just a configuration file, MO2 will see it as having no valid game data. This error is safe to ignore
+            </p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/68620" target="_blank">Ammo Count Memory</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Makes weapons no longer automatically reload when you switch between them</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66187" target="_blank">Melee Cleave (a.k.a. Sweep)</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
             <p class="moddesc">- Makes melee attacks able to hit multiple enemies, similar to the Dark Souls series</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/59149" target="_blank">Collision Meshes</a></h2>
+            <p class="specialinstall"><strong>Files to install normally:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Main File - <strong>Collision Meshes FNV</strong></li>
+                    <li>Update File - <strong>update Collision Meshes FNV 1.6.3 to 1.6.4</strong></li>
+                    <li>Optional File - <strong>OJO BUENO Texture Pack compatibility</strong> (NOTE: You only need this file if you installed <a class="modsublink" href="https://www.nexusmods.com/newvegas/mods/42028" target="_blank">Poco Bueno</a> from the <strong>Visuals</strong> module)</li>
+                </ul>
+            <p class="moddesc"> - Improves collision meshes, the meshes which simulate where bullets, bodies, etc. can collide with an object, so you can now shoot through fences, car windows, etc.</p>
         <h2 class="modhead"><a class="modlink" href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/master/Yukichigai%20Gameplay%20Tweaks.7z" target="_blank">Yukichigai Gameplay Tweaks</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
-            <br>
-            <p class="specialinstall"><strong>Manual FNVEdit editing required:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Run FNVEdit through MO2</li>
-                    <li>Right-click in the <strong>Module Selection</strong> pop-up and click <strong>Select None</strong></li>
-                    <li>Check the boxes adjacent to <strong>RWL Tweaked.esp</strong> and <strong>Yukichigai Gameplay Tweaks</strong> then hold down left shift and click <strong>OK</strong></li>
-                    <li>Wait for the message <strong>Background Loader: finished</strong> to appear in the right pane</li>
-                    <li>Input <strong>D8052</strong> into the FormID search box in the top left and hit enter</li>
-                    <li>Right-click in the right pane and select <strong>Hide no conflict and empty rows</strong></li>
-                    <li>Drag and drop <strong>HELIOS One Control Room</strong> from <strong>Yukichigai Gameplay Tweaks.esp</strong> to <strong>RWL Tweaked.esp</strong></li>
-                    <img id="FOMODImg2" src="./img/ygt edit.png" alt="Drag and Drop" style="width:100%;max-width:300px">
-                        <div id="FOMODModal2" class="modal">
-                            <span class="close">&times;</span>
-                            <img class="modal-content" id="img02">
-                            <div id="caption2"></div>
-                        </div>
-                        <ul>
-                            <li>Forwards a cell name change from YGT to RWL, since RWL will be loaded after YGT</li>
-                        </ul>
-                    <li>Save and exit</li>
-                </ul>
             <p class="moddesc"> - Collection of small gameplay changes that enhance vanilla aspects without drastically overhauling anything. For a list of the included mods, see the Read-Me included in the archive
             </p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/50468/?tab=files" target="_blank">JIP Companions Command and Control</a></h2>
+        <h2 class="modhead"><a class="modlink" href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/master/Qolore%20Gameplay%20Tweaks.7z" target="_blank">Qolore Gameplay Tweaks</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - My personal gameplay changes that balance many aspects of the game. See in the included read-me for a list of changes </p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/50468" target="_blank">JIP Companions Command and Control</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
             <p class="moddesc"> - Changes the way companions are controlled and interacted with and adds new tactical features similar to isometric RPGs</p>
+        <h2 class="modhead"><a class="modlink" href="https://cdn.discordapp.com/attachments/229635753989242881/731516637605265418/ccc_icons_v2.7z" target="_blank">Perk-Style JIP CCC Icons</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Makes the companion portraits from JIP CCC fit the game better by <a class="modsublink" href="https://cdn.discordapp.com/attachments/229635753989242881/731516640965033984/v2.jpg" target="_blank">mimicking the style of the perk icons</a>. Made by <a class="modsublink" href="https://www.nexusmods.com/users/31380295" target="_blank">TheIncredibleKraken</a></p>
         <h2 class="modhead"><a class="modlink" href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/master/VNV%20Follower%20Tweaks.7z" target="_blank">VNV Follower Tweaks</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
-            <p class="moddesc"> - Changes the follower formula to your charisma/2 rounded down and makes you have to supply companions with actual ammo. 
+            <p class="moddesc"> - Changes the follower formula to your charisma/2 rounded down.
                 Based off <a class="modsublink" href="https://www.nexusmods.com/newvegas/mods/44027" target="_blank">Cirosan's Classic Overhaul</a>
             </p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66686?tab=files" target="_blank">B42 Quickthrow</a></h2>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66686" target="_blank">B42 Quickthrow</a></h2>
             <p class="specialinstall"><strong>Files to install normally:</strong></p>
                 <ul class="specialinstructions">
                     <li>Main File - <strong>B42 Quickthrow</strong></li>
@@ -184,8 +181,28 @@ SOFTWARE.
                             <li>Only needed if you installed <a class="modsublink" href="https://www.nexusmods.com/newvegas/mods/44757" target="_blank">oHUD</a> from the <strong>Core - HUD/UI</strong> section</li>
                         </ul>
                 </ul>
+                <br>
+                <p class="specialinstall"><strong>Manual FNVEdit editing required:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Run FNVEdit through MO2</li>
+                    <li>Right-click in the <strong>Module Selection</strong> pop-up and click <strong>Select None</strong></li>
+                    <li>Check the box adjacent to <strong>Quickthrow.esp</strong> then hold down left shift and click <strong>OK</strong></li>
+                    <li>Wait for the message <strong>Background Loader: finished</strong> to appear in the right pane</li>
+                    <li>Input <strong>01008ED4</strong> into the FormID search box in the top left and hit enter</li>
+                    <li>In the right pane, right-click on <strong>MaleAdult01Default [VTYP:0000002D]</strong> next to <strong>VTCK - Voice</strong> and select <strong>Edit</strong></li>
+                    <li>Input <strong>VoiceDoNotRecordM [VTYP:00094EEC]</strong> into the pop-up box</li>
+                    <img id="FOMODImg" src="./img/quickthrow edit.png" alt="VoiceDoNotRecordM [VTYP:00094EEC]" style="width:100%;max-width:300px">
+                        <div id="FOMODModal" class="modal">
+                            <img class="modal-content" id="img01">
+                            <div id="caption"></div>
+                        </div>
+                        <ul>
+                            <li>This tweak makes the "NPC" who essentially spawns in you to throw items silent, so he doesn't scream every time you throw something</li>
+                        </ul>
+                    <li>Save and exit</li>
+                </ul>
             <p class="moddesc"> - Adds a simple and modern quick throwing mechanic</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66876?tab=files" target="_blank">Quickthrow Stylized HUD Icons</a></h2>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66876" target="_blank">Quickthrow Stylized HUD Icons</a></h2>
             <p class="specialinstall"><strong>Files to install normally:</strong></p>
                 <ul class="specialinstructions">
                     <li>Main File - <strong>Quickthrow Stylized FNV Icons</strong></li>
@@ -195,13 +212,13 @@ SOFTWARE.
                         </ul>
                 </ul>
             <p class="moddesc"> - Better-looking icons for B42 Quickthrow</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66666?tab=files" target="_blank">Just Mods Assorted</a></h2>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66666" target="_blank">Just Mods Assorted</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
             <p class="moddesc"> - Merge of many highly configurable QOL improvements/gameplay changes</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/52510?tab=files" target="_blankk">Alternative Repairing</a></h2>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/52510" target="_blank">Alternative Repairing</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
             <p class="moddesc"> - Adds specialized repair parts that can be crafted or bought on top of the vanilla repair system</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/64293?tab=files" target="_blank">Super Mutant Overhaulord</a></h2>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/64293" target="_blank">Super Mutant Overhaulord</a></h2>
             <p class="specialinstall"><strong>Files to install normally:</strong></p>
                 <ul class="specialinstructions">
                     <li>Main File - <strong>Super Mutant Overhaul - No overlords</strong></li>
@@ -216,11 +233,11 @@ SOFTWARE.
                     <li>Input <strong>15FFF0</strong> into the FormID search box in the top left and hit enter</li>
                     <li>Right-click in the right pane and select <strong>Hide no conflict and empty rows</strong></li>
                     <li>Right-click on the empty box above <strong>NightkinFaction</strong> in the <strong>CIB Supermutants.esp</strong> column and select <strong>Remove</strong></li>
-                    <img id="FOMODImg" src="./img/supermutant form remove.png" alt="Right-click and select Remove" style="width:100%;max-width:300px">
-                        <div id="FOMODModal" class="modal">
+                    <img id="FOMODImg2" src="./img/supermutant form remove.png" alt="Right-click and select Remove" style="width:100%;max-width:300px">
+                        <div id="FOMODModal2" class="modal">
                             <span class="close">&times;</span>
-                            <img class="modal-content" id="img01">
-                            <div id="caption"></div>
+                            <img class="modal-content" id="img02">
+                            <div id="caption2"></div>
                         </div>
                         <ul>
                             <li>This tweak removes the custom Nightkin faction that makes them aggro to the player from a Nightkin that is supposed to be passive</li>
@@ -228,18 +245,17 @@ SOFTWARE.
                     <li>Save and exit</li>
                 </ul>
             <p class="moddesc"> - Overhauls Super Mutants to be more of a threat to the player</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/68153?tab=files" target="_blank">GRA Unique Weapons Relocated</a></h2>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/68153" target="_blank">GRA Unique Weapons Relocated</a></h2>
             <p class="specialinstall"><strong>Files to install normally:</strong></p>
                 <ul class="specialinstructions">
                     <li>Main File - <strong>GUWR Unbalanced YUP</strong></li>
                 </ul>
             <p class="moddesc"> - Relocates the GRA unique weapons to logical places among the Mojave and the DLCs</p>
-        <h2 class="modhead"><a class="modlink" href="./gameplay-optionalmechanics.html" target="_blank">Additional Optional Gameplay Mods</a></h2>
     </div>
     <div>
         <hr>
         <a class="arrows" href="./gameplay-ptwb.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
-        <a class="arrows" href="./gameplay-finish.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
+        <a class="arrows" href="./gameplay-optional.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
     </div>
 </body>
 <script>
@@ -267,15 +283,15 @@ var img = document.getElementById('FOMODImg2');
 var modalImg = document.getElementById("img02");
 var captionText = document.getElementById("caption2");
 img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
 }
 
 var span = document.getElementsByClassName("close")[0];
 
 span.onclick = function() { 
-    modal.style.display = "none";
+  modal.style.display = "none";
 }
 </script>
 </html>

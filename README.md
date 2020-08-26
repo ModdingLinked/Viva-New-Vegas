@@ -4,5 +4,5 @@
 
 ### A Comprehensive Fallout New Vegas Modding Guide
 
-Viva New Vegas is a comprehensive Fallout New Vegas modding guide, for beginners and veterans alike.
-The original author began this guide to make a different approach to Fallout New Vegas modding without grabbing to the standard (and unoptimized) mods like Project Nevada and EVE. Since then, it has become a community effort to make it the best guide in the world.
+Viva New Vegas is a comprehensive Fallout New Vegas modding guide for beginners and veterans alike. All instructions are written in great detail, with the more complex instructions having accompanying pictures. 24/7 support is also available on the [Discord](https://discord.com/invite/DhX5S27). It is fully modular and comes with pre-made conflict resolution and load order.
+All mods have been carefully picked out to avoid old, inefficient, or broken popular mods such as Project Nevada and EVE. This guide will provide you with the most stable Fallout New Vegas experience possible, along with adding/reworking amazing content/mechanics.

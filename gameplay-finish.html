@@ -46,6 +46,7 @@ SOFTWARE.
         <ul class="navbar">
             <li class="navbarli"><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium" target="_blank">GitHub</a></li>
             <li class="navbarli"><a href="https://discord.gg/DhX5S27" target="_blank">Discord</a></li>
+            <li class="navbarli"><a href="https://www.patreon.com/vivanewvegas" target="_blank" rel="nofollow">Patreon</a></li>
             <li class="navbarli"><a href="index.html">Home</a></li>
         </ul>
     </div>    
@@ -56,11 +57,13 @@ SOFTWARE.
                 <li><a href="./gameplay.html">General Information</a></li>
                 <li><a href="./gameplay-ptwb.html">PushTheWinButton's Mods</a></li>
                 <li><a href="./gameplay-mechanics.html">Mechanics</a></li>
+                <li><a href="./gameplay-optional.html">Optional Gameplay Mods</a></li>
                 <li>Finish Line</li>
             </ul>
         <hr>
     </div>   
     <div>
+        <h2 class="modhead"><a class="modlink" href="./gameplay-avoid.html" target="_blank">Gameplay Mods to Avoid</a></h2>
         <h2 class="modhead">Creating a Separator in Mod Organizer 2</h2>
             <ul class="specialinstructions">
                 <li>Right-click in the left pane of MO2 and select <strong>Create Separator</strong></li>
@@ -68,24 +71,24 @@ SOFTWARE.
             </ul>
         <h2 class="modhead">Moving Consistent Pip-Boy Icons</h2>
             <ul class="specialinstructions">
-                <li>Move both Consistent Pip-Boy Icons mods from Core - HUD/UI to below the Gameplay - Finish Line separator (make sure they stay in the same order)</li>
+                <li>Move Consistent Pip-Boy Icons (from Core - HUD/UI) below the Gameplay - Finish Line separator in the left pane of MO2</li>
             </ul>
         <h2 class="modhead"><a class="modlink" href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/master/Gameplay%20Conflict%20Resolution%20FOMOD.7z" target="_blank">Gameplay - Conflict Resolution</a></h2>
-            <p class="specialinstall"><strong>FOMOD Install Instructions:</strong></p>
+            <p class="specialinstall"><strong>FOMOD Instructions:</strong></p>
                 <ul class="specialinstructions">
                     <li>Choose all files that apply to what mods you have installed from the guide</li>
                 </ul>
         <p class="moddesc"> - Resolves conflicts between the mods from this module and the previous modules</p>
         <h2 class="modhead"><a class="modlink" href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/master/Gameplay%20Load%20Order.txt.7z" target="_blank">Gameplay - Load Order.txt</a></h2>
-            <p class="specialinstall"><strong>Special install instructions:</strong></p>
+            <p class="specialinstall"><strong>Installation Instructions:</strong></p>
                 <ul class="specialinstructions">
                     <li>Extract <strong>loadorder.txt</strong> to <strong>Mod Organizer 2/profiles/Viva New Vegas - Gameplay</strong></li>
                     <li>Once the file is extracted, right-click in the left pane of MO2 and select <strong>All Mods -> Refresh</strong></li>
                 </ul>
                 <p class="moddesc"> - Automatically ensures your load order is correct for the Gameplay module <br>
                     NOTE: This load order assumes you followed the entire guide with all the recommended options.
-                    For example, if you installed your own mods, those plugin-ins will be moved to the bottom of the LO and need to be manually moved back into the correct spot after the new load order is applied.
-                    It will still work perfectly even if you left out some mods too
+                    If you installed your own mods, those plugin-ins will be moved to the bottom of the LO and need to be manually moved back into the correct spot after the new load order is applied.
+                    It will still work perfectly even if you left out some mods
                 </p>
         <h2 class="modhead">Using zMerge</h2>
             <ul class="specialinstructions">
@@ -98,21 +101,22 @@ SOFTWARE.
                     <ul class="initweaks">
                         <li>
                             <strong>
+                                JSUE Addendum.esp <br>
                                 Economy Overhaul Addendum.esp <br>
                                 JSawyer Ultimate - Mojave Arsenal Patch.esp <br>
                                 Mojave Raiders - 22LR Varmint Rifle.esp <br>
-                                Character Expansions Revised - MR Patch.esp <br>
+                                Mojave Raiders Addendum.esp <br>
+                                Character Expansions Revised - MR.esp <br>
                                 Follower Tweaks.esp <br>
                                 Changed Vendor Flags.esp <br>
-                                NPCsSprint.esp <br>
-                                ImmersiveRecoil.esp <br>
+                                BLEED Addendum.esp <br>
                                 Yukichigai Gameplay Tweaks.esp <br>
                                 Alternative Repairing - Honest Hearts.esp <br>
                                 Alternative Repairing - Lonesome Road.esp <br>
                                 CIB Supermutants.esp <br>
                                 GRA Scavenger Hunt Unbalanced YUP.esp <br>
-                                Any mods you selected from the optional sections<br>
-                                Gameplay - Conflict Resolution AIO (Core + Visuals + Gameplay).esp <strong><u>AND/OR</u></strong> whatever patches you selected from the Conflict Resolution FOMOD<br>
+                                Any mods you selected from the <a class="modsublink" href="./gameplay-optional.html" target="_blank">Optional Gameplay Mods</a> section<br>
+                                Gameplay - Conflict Resolution AIO (Core + Visuals + Gameplay).esp <strong><u>AND/OR</u></strong> whatever patches you selected from the Conflict Resolution FOMOD (including the WRP - JSUE Patch.esp if you selected it)<br>
                             </strong>
                         </li>
                     </ul>
@@ -122,10 +126,13 @@ SOFTWARE.
                 <li>Right-click in the left pane of MO2 and select <strong>All Mods -> Refresh</strong></li>
                 <li>The merge should appear in the left pane and activate it like normal</li>
                 <li>Move <strong>Gameplay - Merge.esp</strong> above <strong>FNVLODGen.esp</strong> in the right pane of MO2</li>
+                    <ul>
+                        <li>If you did not follow the <strong>Visuals</strong> module and therefore do not have <strong>FNVLODGen.esp</strong>, leave the merge at the bottom of the load order</li>
+                    </ul>
                 <li>Click the <img class="mo2setting" src="./img/mo2ini.png" alt="MO2 INI Button"></a> on the top bar of MO2 and select <strong>Merge Plugins Hide</strong></li>
                 <li>Right-click on the <strong>Gameplay - Merge</strong> listing, select <strong>Disable plugins</strong>, and then close</li>
                     <ul>
-                        <li>If the application fails to find your instance or points to another game, just click the folder icon and manually set them</li>
+                        <li>All the mods that were merged should now have their plugins disappear from the right pane</li>
                     </ul>
             </ul>
         <h2 class="modhead">Testing the Game</h2>
@@ -135,14 +142,6 @@ SOFTWARE.
                 <li>Run through the tutorial missions with Sunny Smiles to verify everything is running smoothly and correctly</li>
             </ul>  
         <h2 class="modhead">Tweaking the MCM</h2>
-            <ul class="specialinstructions">
-                <li>JSawyer Ultimate Edition:</li>
-            </ul>
-            <img id="FOMODImg" src="./img/JSUE MCM 1.png" alt="Set XP Rewards to JSawyer Ultimate" style="width:100%;max-width:300px">
-            <div id="FOMODModal" class="modal">
-                <img class="modal-content" id="img01">
-                <div id="caption"></div>
-            </div>
             <ul class="specialinstructions">
                 <li>Mojave Arsenal:</li>
             </ul>   
@@ -168,6 +167,9 @@ SOFTWARE.
                         <div id="caption5"></div>
                     </div>
             <ul class="specialinstructions">
+                    <ul>
+                        <li>Adjust the rest of the settings to personal preference</li>
+                    </ul>
                 <li>Alternative Repairing: Leave default</li>
                 <li>Quickthrow: Adjust to personal preference</li>
                 <li>Just Mods Assorted:</li>
@@ -186,12 +188,13 @@ SOFTWARE.
             <ul class="specialinstructions">
                 <ul>
                     <li>Adjust everything else to personal preference</li>
+                    <li>Depending on which HUD mod you chose, you may want to tweak the font used for Just Loot Menu. If you change the font, you will also probably need to change the <strong>Text Adjustment</strong> to make everything align properly</li>
                 </ul>
             </ul>    
     </div> 
     <div>
         <hr>
-        <a class="arrows" href="./gameplay-mechanics.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
+        <a class="arrows" href="./gameplay-optional.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
         <a class="arrows" href="./index.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
     </div>     
 </body>

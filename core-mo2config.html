@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+MIT License
+
+Copyright (c) 2020 Quinn Olore
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Mod Organizer 2 - Viva New Vegas</title>
+    <link rel="icon" type="image/ico" href="./img/logo.png"/>
+    <meta name="description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied.">
+    <meta name="twitter:card" value="summary"> 
+    <meta property="og:title" content="Viva New Vegas" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://vivanewvegas.github.io/" />
+    <meta property="og:image" content="https://vivanewvegas.github.io/img/logo.png" />
+    <meta property="og:description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied." /> 
+</head>
+<body>
+    <div>
+        <h1 class="maintitle">Viva New Vegas</h1>
+        <h4 class="subtitle"><em>A Comprehensive 2020 Fallout New Vegas Modding Guide</em></h4>
+        <hr class="line">
+        <ul class="navbar">
+            <li class="navbarli"><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium" target="_blank">GitHub</a></li>
+            <li class="navbarli"><a href="https://discord.gg/DhX5S27" target="_blank">Discord</a></li>
+            <li class="navbarli"><a href="https://www.patreon.com/vivanewvegas" target="_blank" rel="nofollow">Patreon</a></li>
+            <li class="navbarli"><a href="index.html">Home</a></li>
+        </ul>
+    </div>
+    <div>
+        <h1 class="coretitle">Mod Organizer 2</h1>
+            <ul class="breadcrumb">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./core.html">General Information</a></li>
+                <li><a href="./core-installation.html">Installation</a></li>
+                <li><a href="./core-tools.html">Tools</a></li>
+                <li>Mod Organizer 2</li>
+                <li><a href="./core-initweaks.html">INI Tweaks</a></li>
+                <li><a href="./core-utilities.html">Utilities</a></li>
+                <li><a href="./core-bugfix.html">Bug Fixes/QOL</a></li>
+                <li><a href="./core-hud.html">HUD/UI</a></li>
+                <li><a href="./core-optional.html">Optional Core Mods/Tools</a></li>
+                <li><a href="./core-finish.html">Finish Line</a></li>
+            </ul>
+        <hr>
+        <p class="installingfnvdesc">
+            In this step, we will configure MO2 to set it up for installing mods and using the tools we just installed. If you are completely unfamiliar with Mod Organizer 2, I suggest watching <a class="modsublink" href="https://www.youtube.com/watch?v=7v0wWVuOagA&list=PLlN8weLk86Xh3ue76x2ibqtmMramwQmHB&index=2" target="_blank">GamerPoet's tutorial series </a> (it was made for Skyrim, so it has some information that does not apply to New Vegas such as the Steam Workshop part. You can ignore these)
+        </p>
+        <hr class="modline">
+    </div>
+    <div>
+        <h2 class="installingfnv">Configuring Mod Organizer 2</h2>
+            <ul class="specialinstructions">
+                <li>Run <strong>ModOrganizer.exe</strong></li>
+                <li>From the pop-up called <strong>Choose Instance</strong>, select <strong>Portable</strong></li>
+                    <img id="FOMODImg" src="./img/MO2 portable.png" alt="Select 'Portable'" style="width:100%;max-width:300px">
+                        <div id="FOMODModal" class="modal">
+                            <img class="modal-content" id="img01">
+                            <div id="caption"></div>
+                        </div>
+                <li>From the pop-up called <strong>Please select the game to manage</strong>, select <strong>New Vegas</strong> </li>
+                    <img id="FOMODImg2" src="./img/MO2 New Vegas.png" alt="Select 'New Vegas'" style="width:100%;max-width:300px">
+                        <div id="FOMODModal2" class="modal">
+                            <img class="modal-content" id="img02">
+                            <div id="caption2"></div>
+                        </div>
+                    <ul>
+                        <li>If the option <strong>New Vegas</strong> does not appear, select <strong>Browse...</strong>, then navigate to the root folder and select <strong>FalloutNV.exe</strong></li>
+                    </ul>
+                <li>If there is a pop-up called <strong>INI file is read-only</strong>, select <strong>Remember my choice</strong> from the drop-down box at the bottom then select <strong>Clear the read-only flag</strong></li>
+                    <img id="FOMODImg3" src="./img/MO2 read only.png" alt="Clear the read-only flag, remember my choice" style="width:100%;max-width:300px">
+                        <div id="FOMODModal3" class="modal">
+                            <img class="modal-content" id="img03">
+                            <div id="caption3"></div>
+                        </div>
+                <li>From the pop-up called <strong>Show Tutorial?</strong>, select <strong>No</strong></li>
+                    <img id="FOMODImg4" src="./img/mo2 tutorial.png" alt="Select 'No'" style="width:100%;max-width:300px">
+                        <div id="FOMODModal4" class="modal">
+                            <img class="modal-content" id="img04">
+                            <div id="caption4"></div>
+                        </div>
+                <li>From the pop-up called <strong>Register?</strong>, select <strong>Yes</strong></li>
+                        <ul>
+                            <li>This pop-up will not show up if you have already registered a different instance of MO2</li>
+                        </ul>
+                <li>If all of the plugins in the right pane are not checked, right-click and select <strong>Enable all</strong></li>
+                    <img id="FOMODImg5" src="./img/mo2 enable.png" alt="Enable All" style="width:100%;max-width:300px">
+                        <div id="FOMODModal5" class="modal">
+                            <img class="modal-content" id="img05">
+                            <div id="caption5"></div>
+                        </div>
+                <li>Click the <strong>Sort</strong> button above the right pane and then click <strong>OK</strong> to any pop-up boxes</li>
+                    <img id="FOMODImg6" src="./img/mo2sort.png" alt="Click the 'Sort' button above the right pane" style="width:100%;max-width:300px">
+                    <div id="FOMODModal6" class="modal">
+                        <img class="modal-content" id="img06">
+                        <div id="caption6"></div>
+                    </div>
+                    <ul>
+                        <li>This is the only time you should use the <strong>Sort</strong> button, never use it when you have mods installed</li>
+                    </ul>
+                <li>Change the order of the mods in the left pane to match the order of the plugins in the right pane</li>
+                    <ul>
+                        <li>NOTE: Make sure you are changing the order of the *LEFT* pane, not the right</li>
+                        <li>There may be a <strong>FalloutNV_lang.esp</strong> in the right pane. If so, navigate to the <strong>Data</strong> folder and delete it</li>
+                            <ul>
+                                <li>The translation plugin edits 1000s records and will break mods</li>
+                            </ul>
+                    </ul>
+                <li>Click the <img class="mo2setting" src="./img/mo2settings.png" alt="mo2 settings"> button on the toolbar of MO2</li>
+                <li>In the <strong>General</strong> tab, you can select what style you want for MO2 in the drop-down right below the language selector</li>
+                    <ul>
+                        <li>I use <strong>vs15 Dark</strong></li>
+                    </ul>
+                <li>Navigate to the <strong>Paths</strong> tab</li>
+                <li>If you are on an SSD or an HDD with little space, set the <strong>Downloads</strong> path to a location on a drive with plenty of space</li>
+                <li>In the <strong>Nexus</strong> tab, click the box that says <strong>Connect to Nexus</strong></li>
+                    <img id="FOMODImg7" src="./img/mo2 connect.png" alt="Settings -> Nexus -> 'Connect to Nexus'" style="width:100%;max-width:300px">
+                    <div id="FOMODModal7" class="modal">
+                        <img class="modal-content" id="img07">
+                        <div id="caption7"></div>
+                    </div>
+                    <ul>
+                        <li>If you have already linked your Nexus account on a different instance of MO2 you won't need to again</li>
+                    </ul>
+                <li>MO2 should open a Nexus page in your browser</li>
+                <li>Select <strong>Authorise</strong></li>
+                    <img id="FOMODImg8" src="./img/mo2 authorise.png" alt="Authorise" style="width:100%;max-width:300px">
+                    <div id="FOMODModal8" class="modal">
+                        <img class="modal-content" id="img08">
+                        <div id="caption8"></div>
+                    </div>
+                <li>Exit out of your browser and out of the settings menu in MO2</li>
+                <li>MO2 may prompt you to restart, to which you should say yes</li>
+                    <img id="FOMODImg9" src="./img/mo2 restart.png" alt="Restart" style="width:100%;max-width:300px">
+                    <div id="FOMODModal9" class="modal">
+                        <img class="modal-content" id="img09">
+                        <div id="caption9"></div>
+                    </div>
+            </ul>
+            <hr>
+        <h2 class="installingfnv">Creating New Profiles in Mod Organizer 2</h2>
+        <p class="overlaydesc">Mod Organizer 2's "Profiles" feature allows for easy switching between different mod configurations. In this step, we will setup a testing profile and a main profile. The default profile will stay completely untouched and act as a backup. The testing profile will be configured the same as the main profile for the guide, but will have all mods unchecked, allowing you to only activate certain mods for easy testing/troubleshooting. And finally, the main profile is where we will install and enable all of our mods. Profiles can be selected via the drop-down menu above the left pane</p>
+                <ul class="specialinstructions">   
+                    <li>Click the <img class="mo2setting" src="./img/mo2profiles.png" alt="mo2 executables"> button on the toolbar of MO2</li>
+                        <img id="FOMODImg10" src="./img/mo2 select profile.png" alt="Above the left pane of MO2" style="width:100%;max-width:300px">
+                            <div id="FOMODModal10" class="modal">
+                                <img class="modal-content" id="img10">
+                                <div id="caption10"></div>
+                            </div>
+                    <li>Select the <strong>Default</strong> profile selected, select <strong>Copy</strong></li>
+                    <li>Input <strong>Testing</strong> for the name and click <strong>OK</strong></li>
+                        <img id="FOMODImg12" src="./img/mo2 testing.png" alt="Copy -> Testing" style="width:100%;max-width:300px">
+                            <div id="FOMODModal12" class="modal">
+                                <img class="modal-content" id="img12">
+                                <div id="caption12"></div>
+                            </div>
+                    <li>Select the <strong>Testing</strong> folder and make sure both <strong>Use profile-specific Game INI Files</strong> and <strong>Automatic Archive Invalidation</strong> are checked</li>
+                        <img id="FOMODImg13" src="./img/mo2 checked.png" alt="Check both 'Use profile-specific Game INI Files' and 'Automatic Archive Invalidation'" style="width:100%;max-width:300px">
+                            <div id="FOMODModal13" class="modal">
+                                <img class="modal-content" id="img13">
+                                <div id="caption13"></div>
+                            </div>
+                    <li>With the <strong>Testing</strong> profile selected, select <strong>Copy</strong></li>
+                    <li>Input <strong>Viva New Vegas - Core</strong> for the name, click <strong>OK</strong> then <strong>Close</strong></li>
+                        <ul>
+                            <li>You may get a pop-up about a missing <strong>modlist.txt</strong>. If that is the case, restart MO2 and select the <strong>Viva New Vegas - Core</strong> profile again</li>
+                        </ul>
+                    <li>Select the <strong>Viva New Vegas - Core</strong> profile from the drop-down menu above the left pane</li>
+                        <img id="FOMODImg14" src="./img/mo2 core profile.png" alt="Select the 'Viva New Vegas - Core' profile" style="width:100%;max-width:300px">
+                            <div id="FOMODModal14" class="modal">
+                                <img class="modal-content" id="img14">
+                                <div id="caption14"></div>
+                            </div>
+                </ul>
+                <hr>
+        <h2 class="installingfnv">Setting up Tools in Mod Organizer 2</h2>
+            <p class="overlaydesc">In order for programs to recognize MO2's virtual file system, the programs need to be ran directly through MO2. Programs can be selected via the drop-down menu in the top right, but first we have to add them.</p>
+                <ul class="specialinstructions">
+                    <li>Switch to the <strong>Viva New Vegas</strong> profile</li>
+                    <li>Click the <img class="mo2setting" src="./img/mo2executabes.png" alt="mo2 executables"> button on the toolbar of MO2</li>
+                        <img id="FOMODImg15" src="./img/mo2 select executables.png" alt="Above the left pane of MO2" style="width:100%;max-width:300px">
+                            <div id="FOMODModal15" class="modal">
+                                <img class="modal-content" id="img15">
+                                <div id="caption15"></div>
+                            </div>
+                    <li>Select the blue <strong>+</strong> sign at the top of the window and the select <strong>Add from file...</strong></li>
+                        <img id="FOMODImg16" src="./img/mo2 add from file.png" alt="+ -> Add from file..." style="width:100%;max-width:300px">
+                            <div id="FOMODModal16" class="modal">
+                                <img class="modal-content" id="img16">
+                                <div id="caption16"></div>
+                            </div>
+                    <li>From the pop-up, navigate to where FNVEdit is installed and select <strong>FNVEdit.exe</strong></li>
+                        <img id="FOMODImg17" src="./img/mo2 select xedit.png" alt="Select 'FNVEdit.exe'" style="width:100%;max-width:300px">
+                            <div id="FOMODModal17" class="modal">
+                                <img class="modal-content" id="img17">
+                                <div id="caption17"></div>
+                            </div>
+                    <li>In the right pane of the executables menu, input <strong>-IKnowWhatImDoing</strong> in the <strong>Arguments</strong> box then select <strong>Apply</strong></li>
+                        <img id="FOMODImg18" src="./img/mo2 argument.png" alt="-IKnowWhatImDoing" style="width:100%;max-width:300px">
+                            <div id="FOMODModal18" class="modal">
+                                <span class="close">&times;</span>
+                                <img class="modal-content" id="img18">
+                                <div id="caption18"></div>
+                            </div>
+                            <ul>
+                                <li>This argument removes a pop-up that would appear every time you edit something in FNVEdit</li>
+                            </ul>
+                    <li>Back in the executables menu, select the blue <strong>+</strong> sign at the top of the window and the select <strong>Add from file...</strong></li>
+                    <li>From the pop-up, navigate to where FNVLODGen is installed and select <strong>xLODGenx64.exe</strong></li>
+                    <li>Input <strong>FNVLODGen</strong> into the <strong>Title</strong> box</li>
+                    <li>Input <strong>-FNV</strong> into the <strong>Arguments</strong> box and select <strong>Apply</strong>
+                    <li>Add <strong>zMerge</strong> (a.k.a. <strong>zEdit</strong>) with the same method, but do not input anything into the <strong>Arguments</strong> box </li>
+                </ul>
+        <hr>
+        <h2 class="installingfnv">IMPORTANT: Mod Installation Advice in Mod Organizer 2</h2>
+                <p class="overlaydesc">This is general advice to follow when installing mods in Mod Organizer 2</p>
+                    <ul class="specialinstructions">
+                        <li>If the guide says <strong>Install normally</strong>, go to the <strong>Files</strong> tab on the Nexus page and install just the main file of the mod by using the <strong>Mod Manager Download</strong> button to download it through MO2</li>
+                        <li>When downloading multiple files from the same page, you will be prompted with a box in Mod Organizer 2 with the options <strong>Merge</strong>, <strong>Replace</strong>, and <strong>Rename</strong></li>
+                            <ul>
+                                <li>For <strong>Main Files</strong>, <strong>Updates</strong>, and <strong>Hotfixes</strong>, select <strong>Merge</strong>. This will merge the mod files together into one mod in MO2</li>
+                                    <ul>
+                                        <li>If a mod has multiple <strong>Main Files</strong>, select <strong>Rename</strong>. Naming it something different will cause MO2 to install it as its own mod.</li>
+                                    </ul>
+                                <li>For <strong>Optional Files</strong>, <strong>Miscellaneous Files</strong>, and <strong>Patches</strong>, select <strong>Rename</strong>. Naming it something different will cause MO2 to install it as its own mod.</li>
+                                <li>When updating from a previous version of a mod, select <strong>Replace</strong>. This will delete all the files from the old version of the mod and just install the ones from the new version</li>
+                            </ul>
+                        <li>If the guide says <strong>Hide the following:</strong>, do the following:</li>
+                            <ul>
+                                <li>Once the mod is installed, double-click it in the left pane of MO2</li>
+                                <li>Navigate to the <strong>Filetree</strong> tab</li>
+                                <li>Right-click on the listed file and select <strong>Hide</strong></li>
+                            </ul>
+                        <li>If MO2 gives you a <strong>No game data on top level</strong> message while installing a mod: </li>
+                            <ul>
+                                <li>Expand the main folder</li>
+                                <li>Find the <strong>Data</strong> folder, right-click on it, and select <strong>Set data directory</strong></li>
+                                    <ul>
+                                        <li>If there is no folder called <strong>Data</strong>, find the folder that contains the mod data (textures, meshes, and/or an .esp) and follow the same instructions as above</li>
+                                    </ul>
+                            </ul>
+                        <li>If there is no <strong>Mod Manager Download</strong> button for a file, or if a file isn't hosted on Nexus, do the following:</li>
+                            <ul>
+                                <li>Click the <strong>Manual Download</strong> button (or whatever the download button is for the respective site)</li>
+                                <li>Click the <img class="mo2setting" src="./img/mo2archive.png" alt="mo2 archive buttong"> button on the toolbar of MO2</li>
+                                <li>From the pop-up, navigate to where the file installed and double-click it</li>
+                                <li>Finish the install as you would any other mod</li>
+                            </ul>
+                    </ul>
+    </div>
+    <div>
+        <hr>
+        <a class="arrows" href="./core-tools.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
+        <a class="arrows" href="./core-initweaks.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
+    </div>
+</body>
+<script>
+var modal = document.getElementById('FOMODModal');
+
+var img = document.getElementById('FOMODImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal2');
+
+var img = document.getElementById('FOMODImg2');
+var modalImg = document.getElementById("img02");
+var captionText = document.getElementById("caption2");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal3');
+
+var img = document.getElementById('FOMODImg3');
+var modalImg = document.getElementById("img03");
+var captionText = document.getElementById("caption3");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal4');
+
+var img = document.getElementById('FOMODImg4');
+var modalImg = document.getElementById("img04");
+var captionText = document.getElementById("caption4");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal5');
+
+var img = document.getElementById('FOMODImg5');
+var modalImg = document.getElementById("img05");
+var captionText = document.getElementById("caption5");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal6');
+
+var img = document.getElementById('FOMODImg6');
+var modalImg = document.getElementById("img06");
+var captionText = document.getElementById("caption6");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal7');
+
+var img = document.getElementById('FOMODImg7');
+var modalImg = document.getElementById("img07");
+var captionText = document.getElementById("caption7");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal8');
+
+var img = document.getElementById('FOMODImg8');
+var modalImg = document.getElementById("img08");
+var captionText = document.getElementById("caption8");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal9');
+
+var img = document.getElementById('FOMODImg9');
+var modalImg = document.getElementById("img09");
+var captionText = document.getElementById("caption9");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal10');
+
+var img = document.getElementById('FOMODImg10');
+var modalImg = document.getElementById("img10");
+var captionText = document.getElementById("caption10");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal11');
+
+var img = document.getElementById('FOMODImg11');
+var modalImg = document.getElementById("img11");
+var captionText = document.getElementById("caption11");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal12');
+
+var img = document.getElementById('FOMODImg12');
+var modalImg = document.getElementById("img12");
+var captionText = document.getElementById("caption12");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal13');
+
+var img = document.getElementById('FOMODImg13');
+var modalImg = document.getElementById("img13");
+var captionText = document.getElementById("caption13");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal14');
+
+var img = document.getElementById('FOMODImg14');
+var modalImg = document.getElementById("img14");
+var captionText = document.getElementById("caption14");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal15');
+
+var img = document.getElementById('FOMODImg15');
+var modalImg = document.getElementById("img15");
+var captionText = document.getElementById("caption15");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal16');
+
+var img = document.getElementById('FOMODImg16');
+var modalImg = document.getElementById("img16");
+var captionText = document.getElementById("caption16");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal17');
+
+var img = document.getElementById('FOMODImg17');
+var modalImg = document.getElementById("img17");
+var captionText = document.getElementById("caption17");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal18');
+
+var img = document.getElementById('FOMODImg18');
+var modalImg = document.getElementById("img18");
+var captionText = document.getElementById("caption18");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+var acc = document.getElementsByClassName("accordioninstall");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+        panel.style.display = "none";
+    } else {
+        panel.style.display = "block";
+    }
+    });
+}
+</script>
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+MIT License
+
+Copyright (c) 2020 Quinn Olore
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Installation - Viva New Vegas</title>
+    <link rel="icon" type="image/ico" href="./img/logo.png"/>
+    <meta name="description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied.">
+    <meta name="twitter:card" value="summary"> 
+    <meta property="og:title" content="Viva New Vegas" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://vivanewvegas.github.io/" />
+    <meta property="og:image" content="https://vivanewvegas.github.io/img/logo.png" />
+    <meta property="og:description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied." /> 
+</head>
+<body>
+    <div>
+        <h1 class="maintitle">Viva New Vegas</h1>
+        <h4 class="subtitle"><em>A Comprehensive 2020 Fallout New Vegas Modding Guide</em></h4>
+        <hr class="line">
+        <ul class="navbar">
+            <li class="navbarli"><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium" target="_blank">GitHub</a></li>
+            <li class="navbarli"><a href="https://discord.gg/DhX5S27" target="_blank">Discord</a></li>
+            <li class="navbarli"><a href="https://www.patreon.com/vivanewvegas" target="_blank" rel="nofollow">Patreon</a></li>
+            <li class="navbarli"><a href="index.html">Home</a></li>
+        </ul>
+    </div>
+    <div>
+        <h1 class="installationtitle">Installation</h1>
+          <ul class="breadcrumb">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./core.html">General Information</a></li>
+            <li>Installation</li>
+            <li><a href="./core-tools.html">Tools</a></li>
+            <li><a href="./core-mo2config.html">Mod Organizer 2</a></li>
+            <li><a href="./core-initweaks.html">INI Tweaks</a></li>
+            <li><a href="./core-utilities.html">Utilities</a></li>
+            <li><a href="./core-bugfix.html">Bug Fixes/QOL</a></li>
+            <li><a href="./core-hud.html">HUD/UI</a></li>
+            <li><a href="./core-optional.html">Optional Core Mods/Tools</a></li>
+            <li><a href="./core-finish.html">Finish Line</a></li>
+        </ul>
+        <hr>
+        <p class="installingfnvdesc">These steps will take you over how to do a fresh installation of Fallout New Vegas, which is required for this guide</p>
+        <hr>
+        <h2 class="installingfnv">Installation Parameters:</h2>      
+        <p class="moddesc">
+          - Fallout New Vegas and all modding tools must be installed outside all default Windows folders (<strong>Program Files</strong>, <strong>Program Files (x86)</strong>, <strong>Desktop</strong>, and <strong>Documents</strong> for example)
+              <ul class="specialinstructions">
+                <li>This is to avoid issues with Windows UAC (User Account Control) from blocking certain aspects of different tools</li>
+              </ul>
+        </p>
+            <p class="moddesc">
+              - Fallout New Vegas and Mod Organizer 2 must be installed on the same drive, preferably on an SSD for shorter loading times and less stutter while loading assets
+                <br>
+              - You will need at least 15 gigabytes of free drive space for just the <strong>Core</strong> module (including the size of the game), and the total size of the entire guide is 25 gigabytes (including the game and all the tools)
+                <ul class="specialinstructions">
+                  <li><strong>Core</strong> Module - 15 gigabytes (including the game and all the tools)</li>
+                  <li><strong>Graphics</strong> Module:</li>
+                    <ul>
+                      <li>Low - 1 gigabyte</li>
+                      <li>Medium - 4.5 gigabytes</li>
+                      <li>High - 7.25 gigabytes</li>
+                    </ul>
+                  <li><strong>Gameplay</strong> Module - 0.8 gigabytes</li>
+                  <li><strong>Content</strong> Module - 2 gigabytes</li>
+                </ul>
+            </p>  
+        <hr>    
+        <h2 class="installingfnv">Common Terminology:</h2>
+          <ul class="specialinstructions">
+            <li><strong>Root</strong> folder: Where Fallout New Vegas is installed</li>
+              <ul>
+                <li>For Steam it is <strong>Steam/steamapps/common/Fallout New Vegas</strong></li>
+                <li>For GOG it is <strong>GOG Galaxy/Games/Fallout New Vegas</strong> (unless you manually changed the installation path)</li>
+              </ul>
+            <li><strong>Data</strong> folder: The <b>Data</b> folder that's located in your <b>Root</b> folder<br></li>
+              <ul>
+                <li>For Steam it is <strong>Steam/steamapps/common/Fallout New Vegas/Data</strong></li> 
+                <li>For GOG it is <strong>GOG Galaxy/Games/Fallout New Vegas/Data</strong></li>
+              </ul>
+            <li> MO2: <strong>Mod Organizer 2</strong> (will be installed shortly)<br></li>
+          </ul>
+          <hr>
+            <h2 class="installingfnv">Installing Prerequisites:</h2>
+              <h2 class="modhead"><a class="modlink" href="http://download.microsoft.com/download/0/5/6/056dcda9-d667-4e27-8001-8a0c6971d6b1/vcredist_x86.exe" target="_blank">Microsoft VC++ 2013</a></h2>
+              <p class="specialinstall"><strong>Installation Instructions:</strong></p>
+                  <ul class="specialinstructions">
+                      <li>Run the installer and follow the given instructions</li>
+                          <ul>
+                              <li>If you get a message that the program is already installed, just exit out of the installer</li>
+                          </ul>
+                  </ul>
+              <p class="moddesc"> - Required libraries for FNV and the 4GB Patcher</p>
+              <h2 class="modhead"><a class="modlink" href="https://support.microsoft.com/en-gb/help/2977003/the-latest-supported-visual-c-downloads" target="_blank">Microsoft VC++ 2015, 2017, 2019</a></h2>
+                <p class="specialinstall"><strong>Installation Instructions:</strong></p>
+                  <ul class="specialinstructions">
+                      <li>Click the <strong>x86: vc_redist.x86.exe</strong> and <strong>x64: vc_redist.x64.exe</strong> links under the <strong>Visual Studio 2015, 2017 and 2019</strong> header</li>
+                      <li>Run both of the <strong>.exe</strong> files and follow the given instructions</li>
+                          <ul>
+                              <li>If you get a message that the program is already installed, just exit out of the installer</li>
+                          </ul>
+                  </ul>
+                <p class="moddesc"> - Required libraries for Mod Organizer 2</p>
+              <h2 class="modhead">Updating Audio Drivers</h2>
+                  <ul class="specialinstructions">
+                    <li>Windows search for <strong>Device Manager</strong></li>
+                    <li>In the device manager, expand the <strong>Audio inputs and outputs</strong> section, right-click on your primary audio device, and select <strong>Update driver</strong> </li>
+                      <img id="FOMODImg" src="./img/update driver.png" alt="Select 'Update Driver'" style="width:100%;max-width:300px">
+                      <div id="FOMODModal" class="modal">
+                          <img class="modal-content" id="img01">
+                          <div id="caption"></div>
+                      </div>
+                    <li>From the pop-up, select <strong>Search automatically for updated driver software</strong></li>
+                      <img id="FOMODImg2" src="./img/search auto.png" alt="Select 'Search automatically for updated driver software'" style="width:100%;max-width:300px">
+                        <div id="FOMODModal2" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="img02">
+                            <div id="caption2"></div>
+                        </div>
+                    <li>If the search reports that you already have the latest drivers, you can exit the window</li>
+                    <li>If it says your drivers are outdated, let it update your drivers to the latest version</li>
+                  </ul>
+                <hr>
+        <h2 class="installingfnv">Installing Fallout New Vegas:</h2>      
+          <div class="installcontainer">
+            <button class="accordioninstall">I do not have Fallout New Vegas installed</button>
+              <div class="panelinstall">
+                <p>
+                  <ul class="steaminstall"> 
+                    <p>For Steam:</p>
+                    <p class="moddesc">NOTE: If you already have a Steam library folder set up outside of the default Windows folders, you can simply install FNV to that library folder</p>
+                      <li>Launch Steam and select <strong>Steam -> Settings</strong></li>
+                      <li>Go to the <strong>Downloads</strong> tab and select <strong>Steam Library Folders</strong></li>
+                      <li>From the pop-up, select <strong>Add Library Folder</strong></li>
+                      <li>Add a folder on a different drive in a location of your choice outside of the default Windows folders (preferably on an SSD)</li>
+                          <ul>
+                            <li>If you do not have another drive to create a folder on, follow <a class="modsublink" href="https://github.com/LostDragonist/steam-library-setup-tool/wiki/Usage-Guide" target="_blank">these instructions</a> to create a new library in a safe location on the same drive</li>
+                          </ul>
+                      <li>Exit out of the menu and go to <strong>Library</strong></li>
+                      <li>Select <strong>Fallout New Vegas</strong> and click <strong>Install</strong></li>
+                      <li>From the pop-up, select <strong>Choose location for install:</strong></li>
+                      <li>Select the folder you just created outside of the default Windows folders and install it</li>
+                    <p>For GOG:</p> 
+                      <li>Launch GOG and select <strong>Library</strong></li>
+                      <li>Select <strong>Fallout New Vegas</strong> and click <strong>Install</strong></li>
+                      <li>Set the <strong>Install to</strong> to a location of your choice outside of the default Windows folders (preferably on an SSD) and install</li>
+                  </ul>
+                </p>
+              </div>
+          </div>
+            <button class="accordioninstall">I have Fallout New Vegas installed and/or may have leftover mod files</button>
+              <div class="panelinstall">
+                <p>
+                  <ul class="steamverify">
+                    <p>For Both Steam and GOG:</p>
+                      <li>Navigate to <strong>Documents/My Games/FalloutNV</strong> and delete everything (you can keep the <strong>saves</strong> folder if you want, but old saves will not be compatible with this guide)</li>
+                      <li>Navigate to the where you have Fallout New Vegas installed, and completely delete the entire game folder</li>
+                      <p>For Steam:</p>
+                      <p class="moddesc">NOTE: If you already have a Steam library folder set up outside of the default Windows folders, you can simply install FNV to that library folder</p>
+                        <li>Launch Steam and select <strong>Steam -> Settings</strong></li>
+                        <li>Go to the <strong>Downloads</strong> tab and select <strong>Steam Library Folders</strong></li>
+                        <li>From the pop-up, select <strong>Add Library Folder</strong></li>
+                        <li>Add a folder on a different drive in a location of your choice outside of the default Windows folders (preferably on an SSD)</li>
+                            <ul>
+                              <li>If you do not have another drive to create a folder on, follow <a class="modsublink" href="https://github.com/LostDragonist/steam-library-setup-tool/wiki/Usage-Guide" target="_blank">these instructions</a> to create a new library in a safe location on the same drive</li>
+                            </ul>
+                        <li>Exit out of the menu and go to <strong>Library</strong></li>
+                        <li>Select <strong>Fallout New Vegas</strong> and click <strong>Install</strong></li>
+                        <li>From the pop-up, select <strong>Choose location for install:</strong></li>
+                        <li>Select the folder you just created outside of the default Windows folders and install it</li>
+                      <p>For GOG:</p> 
+                        <li>Launch GOG and select <strong>Library</strong></li>
+                        <li>Select <strong>Fallout New Vegas</strong> and click <strong>Install</strong></li>
+                        <li>Set the <strong>Install to</strong> to a location of your choice outside of the default Windows folders (preferably on an SSD) and install</li>
+                  </ul>
+                </p>
+              </div>
+          </div>
+        <hr>
+        <h2 class="installingfnv">Setting up your Fallout New Vegas Modding Folder:</h2>
+          <p class="modfolderdesc">
+            Your modding folder will act as the main directory for all the tools you install, as well as any backups/screenshots/etc. you may want to keep. This folder will be referred to as the <strong>Modding folder</strong> from now on
+              <ul class="modfolderlist">
+                <li>Create a new folder in a location of your choice outside of the default Windows folders on the same drive as your Fallout New Vegas installation, but outside of the <strong>Root</strong> folder</li>
+                <li>Name it whatever you want, e.g. <strong>Fallout NV Modding</strong>, and create two sub-folders called <strong>Backups</strong> and <strong>Tools</strong> in it</li>
+                <li>Copy all of the files ending in <strong>.ESM</strong> from the <strong>Data</strong> folder and paste them into the <strong>Backups</strong> folder</li>
+                  <ul>
+                    <li>Backups of the .ESMs should be made so you can recover them if you accidentally edit/delete them</li>
+                  </ul>
+              </ul>
+            </p>    
+          </p>
+          <hr>
+        <h2 class="installingfnv">Disabling Anti-Virus:</h2>
+          <p class="overlaydesc">
+            Any anti-virus you have, including Windows Defender, needs to have <a class="modsublink" href="https://support.microsoft.com/en-us/help/4028485/windows-10-add-an-exclusion-to-windows-security" target="_blank">file exceptions made</a> for your <strong>Root</strong> folder and <strong>Modding folder</strong>.
+            If you don't do this, critical files from mods or tools can be deleted by your anti-virus.
+            It is also recommended (but not required) to completely disable your anti-virus for the duration of the guide to avoid downloaded files being flagged as dangerous.
+          </p>
+          <hr>
+        <h2 class="installingfnv">Generating Fresh .INI Files:</h2>
+          <p class="runningfnvdesc">
+            <ul class="modfolderlist">
+              <li>Run <strong>FalloutNVLauncher.exe</strong> from the root folder</li>
+              <li>Click OK to both the pop-ups that say <strong>Detecting Video Hardware</strong></li>
+                <ul>
+                  <li> If there aren't any pop-ups, navigate to <strong>Documents/My Games/FalloutNV</strong> and delete all the files ending in <strong>.INI</strong> then retry</li>
+                </ul>
+              <li>Select <strong>Options</strong></li>
+              <li>Verify the game is detecting and using your GPU properly</li>
+                <li>Select the <strong>High</strong> preset</li>
+                    <ul>
+                      <li>You can select a lower one if your PC still can't handle it, but pretty much any semi-modern PC should be able to handle the <strong>High</strong> preset fine</li>
+                    </ul>
+                <li>Select <strong>Advanced -> Shadows</strong> and un-check <strong>Enable Shadows</strong> (New Vegas does not have real shadows, only actor shadows which are rarely visible, so you probably won't even see the difference)</li>
+                    <ul>
+                      <li>These settings will look nearly identical to the <strong>Ultra</strong>, but with a noticeable performance increase. You can still select the <strong>Ultra</strong> preset if you <i>really</i> want to</li>
+                    </ul>
+              <li>Set <strong>Resolution</strong> to your preference (The launcher usually does not properly set it to your max resolution)</li>
+              <li>Click <strong>OK</strong> and then <strong>Exit</strong></li>
+            </ul>
+          </p>
+                <h2 class="installingfnv">Capping FPS</h2>
+        <div class="installcontainer">
+          <button class="accordioninstall">For Users with an NVIDIA GPU</button>
+            <div class="panelinstall">
+              <p>
+        <ul class="specialinstructions">
+          <li>Right-click on your desktop and select <strong>NVIDIA Control Panel</strong></li>
+          <li>In the left pane, select <strong>Manage 3D Settings</strong></li>
+          <li>In the right pane, select the <strong>Program Settings</strong> tab and select <strong>Fallout - New Vegas</strong> from the drop down</li>
+            <ul>
+              <li>If you do not see an option for Fallout New Vegas, select <strong>Add</strong> and then select <strong>Fallout NV</strong> from the pop-up</li>
+                <ul>
+                  <li>If <strong>Fallout NV</strong> <i>still</i> doesn't show up, select <strong>Browse...</strong>, navigate to where you have FNV installed, and select <strong>FalloutNV.exe</strong></li>
+                </ul>
+            </ul>
+          <li>Scroll down in the settings box and click on <strong>Max Frame Rate</strong></li>
+          <li>In the pop-up menu, select the circle next to <strong>On</strong>, and set the limiter to 1 less than your monitor's refresh rate</li>
+            <ul>
+                <li>If you do not know your monitor's refresh rate, do the following:</li>
+            <ul>
+          <li>Right-click on your desktop and select <strong>Display settings</strong></li>
+          <li>Scroll to the bottom of the window and select <strong>Advanced display settings</strong></li>
+          <li>Make sure the monitor you play on is selected from the drop-down menu at the top of the window, and your refresh rate will be shown below <strong>Display information</strong></li>
+            <img id="FOMODImg4" src="./img/display info.png" alt="Advanced display settings" style="width:100%;max-width:300px">
+            <div id="FOMODModal4" class="modal">
+              <img class="modal-content" id="img04">
+              <div id="caption4"></div>
+            </div>
+          </ul>
+        </ul>
+          <li>Click the <strong>Apply changes</strong> button in the top right then exit</li>
+        </ul>
+              </p>
+            </div>
+        </div>
+        <div class="installcontainer">
+            <button class="accordioninstall">For Users with an AMD GPU</button>
+              <div class="panelinstall">
+                <p>
+                  <ul class="specialinstructions">
+                    <li>Right-click on your desktop and select <strong>AMD Radeon Settings</strong></li>
+                    <li>In the <strong>Gaming</strong> tab, select the <strong>Fallout New Vegas</strong> profile</li>
+                    <li>In the <strong>Profile Graphics tab</strong>, change the following:</li>
+                    <li>Enable <strong>Chill (FPS)</strong></li>
+                    <li>Set <strong>Chill Min</strong> and <strong>Chill Max</strong> to 1 less than your monitor's refresh rate</li>
+                      <ul>
+                      <li>If you do not know your monitor's refresh rate, do the following:</li>
+                        <ul>
+                        <li>Right-click on your desktop and select <strong>Display settings</strong></li>
+                        <li>Scroll to the bottom of the window and select <strong>Advanced display settings</strong></li>
+                        <li>Make sure the monitor you play on is selected from the drop-down menu at the top of the window, and your refresh rate will be shown below <strong>Display information</strong></li>
+                          <img id="FOMODImg4" src="./img/display info.png" alt="Advanced display settings" style="width:100%;max-width:300px">
+                          <div id="FOMODModal4" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="img04">
+                            <div id="caption4"></div>
+                          </div>
+                        </ul>
+                      </ul>
+                    <li>Hit the home button in the bottom left (the settings should automatically save), and make sure the word <strong>Enabled</strong> appears below the profile name</li>
+                      <ul>
+                        <li>If not, click the three vertical dots to the right of the profile name and select <strong>Enable Profile</strong></li>
+                      </ul>
+                  </ul>
+                </p>
+              </div>
+        </div>
+    </div>
+    <div>
+      <hr>
+      <a class="arrows" href="./core.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
+      <a class="arrows" href="./core-tools.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
+  </div>
+</body>
+
+<script>
+  var acc = document.getElementsByClassName("accordioninstall");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+</script>
+<script>
+var modal = document.getElementById('FOMODModal');
+
+var img = document.getElementById('FOMODImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+    var modal = document.getElementById('FOMODModal2');
+
+var img = document.getElementById('FOMODImg2');
+var modalImg = document.getElementById("img02");
+var captionText = document.getElementById("caption2");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+</html>

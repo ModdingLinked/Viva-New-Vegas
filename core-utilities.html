@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+MIT License
+
+Copyright (c) 2020 Quinn Olore
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Utilities - Viva New Vegas</title>
+    <link rel="icon" type="image/ico" href="./img/logo.png"/>
+    <meta name="description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied.">
+    <meta name="twitter:card" value="summary"> 
+    <meta property="og:title" content="Viva New Vegas" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://vivanewvegas.github.io/" />
+    <meta property="og:image" content="https://vivanewvegas.github.io/img/logo.png" />
+    <meta property="og:description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied." /> 
+</head>
+<body>
+    <div>
+        <h1 class="maintitle">Viva New Vegas</h1>
+        <h4 class="subtitle"><em>A Comprehensive 2020 Fallout New Vegas Modding Guide</em></h4>
+        <hr class="line">
+        <ul class="navbar">
+            <li class="navbarli"><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium" target="_blank">GitHub</a></li>
+            <li class="navbarli"><a href="https://discord.gg/DhX5S27" target="_blank">Discord</a></li>
+            <li class="navbarli"><a href="https://www.patreon.com/vivanewvegas" target="_blank" rel="nofollow">Patreon</a></li>
+            <li class="navbarli"><a href="index.html">Home</a></li>
+        </ul>
+    </div>
+    <div>
+        <h1 class="coretitle">Utilities</h1>   
+        <ul class="breadcrumb">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./core.html">General Information</a></li>
+            <li><a href="./core-installation.html">Installation</a></li>
+            <li><a href="./core-tools.html">Tools</a></li>
+            <li><a href="./core-mo2config.html">Mod Organizer 2</a></li>
+            <li><a href="./core-initweaks.html">INI Tweaks</a></li>
+            <li>Utilities</li>
+            <li><a href="./core-bugfix.html">Bug Fixes/QOL</a></li>
+            <li><a href="./core-hud.html">HUD/UI</a></li>
+            <li><a href="./core-optional.html">Optional Core Mods/Tools</a></li>
+            <li><a href="./core-finish.html">Finish Line</a></li>
+        </ul>
+        <hr>
+    </div>
+    <div>
+        <h2 class="modhead">A Note About Testing the Game</h2>
+            <p class="moddesc">
+                After each section in every module, you should launch the game and make sure everything is working correctly by running in-game around for a few minutes
+            </p>
+        <h2 class="modhead"><a class="modlink" href="https://github.com/xNVSE/NVSE/releases" target="_blank">xNVSE</a></h2>
+            <p class="specialinstall"><strong>Installation Instructions:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Download the most recent version at the top of the page</li>
+                    <li>Extract all files ending in <strong>.dll</strong> and the <strong>.exe</strong> (4 total files) from the archive to the <strong>Root</strong> folder</li>
+                        <ul>
+                            <li><strong>nvse_steam_loader.dll</strong> is still needed with the GOG version of the game</li>
+                        </ul>
+                </ul>
+                <p class="moddesc">NOTE: If you do not know what the <strong>Root</strong> folder is, go to the <a class="modsublink" href="./core-installation.html">Core - Installation</a> page and read the <strong>Common Terminology</strong> section</p>
+            <p class="moddesc"> - An updated version of NVSE, which extends the scripting capabilities of the engine and is essential for most mods</p>
+        <h2 class="modhead"><a class="modlink" href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/master/NVSE_Config.ini.7z" target="_blank">NVSE_Config.ini</a></h2>
+        <p class="specialinstall"><strong>Installation Instructions:</strong></p>
+            <ul class="specialinstructions">
+                <li>Extract the <strong>nvse</strong> folder from the archive to the game's <strong>Data</strong> folder</li>
+            </ul>
+            <p class="moddesc">NOTE: If you do not know what the <strong>Data</strong> folder is, go to the <a class="modsublink" href="./core-installation.html">Core - Installation</a> page and read the <strong>Common Terminology</strong> section</p>
+            <p class="moddesc"> - Increases heap allocation to help prevent stuttering/crashing</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/58277" target="_blank">JIP LN NVSE Plugin</a></h2>
+            <p class="specialinstall"><strong>Installation Instructions:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Download the mod manually</li>
+                    <li>Extract the <strong>nvse</strong> folder from the archive to the game's <strong>Data</strong> folder</li>
+                    <li>The files from the mod, and the rest of the NVSE plugins in this section, should end up like this (pay attention to the filepath at the top)</li>
+                        <img id="FOMODImg" src="./img/JIP Install.png" alt="Fallout New Vegas/Data/NVSE/Plugins" style="width:100%;max-width:300px">
+                            <div id="FOMODModal" class="modal">
+                                <span class="close">&times;</span>
+                                <img class="modal-content" id="img01">
+                                <div id="caption"></div>
+                            </div>
+                </ul>
+                <p class="moddesc">NOTE: The reason that these NVSE plugins are installed directly into the data folder and not through MO2 is that MO2's virtual file system can (rarely) fail to hook the .DLLs in time when launching the game and therefore they will not work in-game</p>
+            <p class="moddesc"> - NVSE extension with 800+ new functions</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66927" target="_blank">JohnnyGuitar NVSE</a></h2>
+            <p class="specialinstall"><strong>Installation Instructions:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Download the mod manually</li>
+                    <li>Extract the <strong>nvse</strong> folder from the archive to the game's <strong>Data</strong> folder</li>
+                </ul>
+            <p class="moddesc"> - Another NVSE extender similar to JIP LN</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/62552" target="_blank">4GB Patcher</a></h2>
+            <p class="specialinstall"><strong>Installation Instructions:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Extract the <strong>.exe</strong> from the archive to the root folder</li>
+                    <li>Right-click on <strong>FalloutNVpatch.exe</strong> and select <strong>Run as administrator</strong></li>
+                    <li>When the command prompt appears, hit enter</li>
+                    <li>The command prompt should now exit and <strong>FalloutNV_backup.exe</strong> should appear in the root folder</li>
+                    <li>From now on, run the game through the <strong>New Vegas</strong> option in MO2</li>
+                        <ul>
+                            <li>DO NOT run the game through the <strong>Fallout Launcher</strong> option, this will reset the Fallout.ini and FalloutPrefs.ini in MO2</li>
+                        </ul>
+                </ul>
+            <p class="moddesc"> - Makes the game large address aware, meaning it can use 4GB of RAM instead of 2GB <br>
+                                NOTE: Verifying your game files through either Steam or GOG will undo the patch, so you must rerun it after <br>
+                                NOTE 2: THIS PATCH IS STILL NEEDED WITH THE GOG VERSION OF THE GAME FOR THE NVSE INTEGRATION
+            </p>
+        <h2 class="modhead">Verifying NVSE and the 4GB Patch are Working</h2>
+            <ul class="specialinstructions">
+                <li>Run the game through the <strong>New Vegas</strong> option in MO2</li>
+                    <ul>
+                        <li>You do not need to use the <strong>NVSE</strong> option, as the 4GB patch autoloads NVSE when the game is ran through the default executable. And the default executable is used because, only in the GOG version, the <strong>NVSE_Config.ini</strong> from above will not be loaded if you use run through NVSE</li>
+                    </ul>
+                <li>Once the game has reached the title screen, open the console by pressing the <strong>Tilde (~)</strong> key</li>
+                <li>Input <strong>getnvseversion</strong> into the console and hit enter</li>
+                    <ul>
+                        <li>The console should report <strong>NVSE version: 5</strong></li>
+                            <ul>
+                                <li>If it does not, verify NVSE is installed correctly and retry</li>
+                            </ul>
+                    </ul>
+                <li>Input <strong>getislaa</strong> into the console and hit enter</li>
+                    <ul>
+                        <li>The console should report <strong>GetisLAA >> 2.0000</strong></li>
+                            <ul>
+                                <li>If the console reports <strong>GetisLAA >> 0.0000</strong>, the patch is not installed correctly</li>
+                                <li>If the console reports <strong>GetisLAA >> 1.0000</strong>, the patch is installed correctly but is not working correctly, so you must run the game as an administrator</li>
+                                <li>If the console reports an error message, you did not install JIP LN NVSE correctly</li>
+                            </ul>
+                    </ul>
+            </ul>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/53635" target="_blank">New Vegas Anti-Crash</a></h2>
+            <p class="specialinstall"><strong>Installation Instructions:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Download the mod manually</li>
+                    <li>Extract the <strong>nvse</strong> folder from the archive to the game's <strong>Data</strong> folder</li>
+                </ul>
+            <p class="moddesc"> - Implements structured exception handling and sanity checking to reduce the amount of crashes</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66537" target="_blank">New Vegas Tick Fix</a></h2>
+            <p class="specialinstall"><strong>Installation Instructions:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Download the mod manually</li>
+                    <li>Extract the <strong>nvse</strong> folder from the archive to the game's <strong>Data</strong> folder</li>
+                </ul>
+                <br>
+            <p class="specialinstall"><strong>Manual editing required:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Open <strong>NVTF.ini</strong> in <strong>Fallout New Vegas/Data/nvse/plugins</strong></li>
+                    <li>Set <strong>bModifyDirectXBehavior</strong> to <strong>1</strong> (line 26)</li>
+                    <li>Set <strong>bUseD3D9Ex</strong> to <strong>1</strong> (line 42)</li>
+                        <ul>
+                            <li>With this setting enabled, you must run the game in exclusive fullscreen mode (the INI tweaks from the previous step already force the game to run in exclusive fullscreen)</li>
+                        </ul>
+                    <li>Set <strong>bToggleTripleBuffering</strong> to <strong>1</strong> (line 47)</li>
+                    <li>Set <strong>bUseFlipExSwapMode</strong> to <strong>1</strong> (line 65)</li>
+                        <ul>
+                            <li>NOTE: If you are on Windows 7, you do not need to enable the previous three options</li>
+                            <li>Enabling this option will break the in-game screenshot function (Windows print screen will still work), but will allow for safe alt-tabbing in fullscreen. It is fine to leave disabled if you don't alt-tab and want to use in-game screenshots</li>
+                        </ul>
+                    <li>Set <strong>bResizeHashtables</strong> to <strong>1</strong> (line 84)</li>
+                    <li>Set <strong>iMaxFPSTolerance</strong> to 1 less than your monitor's refresh rate (line 91)</li>
+                </ul>
+                </ul>
+            <p class="moddesc"> - Works to fix micro-stuttering, improve performance, and allow playing at higher framerates <br>
+                                NOTE: If you experience incredibly low frame rates and bad stuttering with this mod, set <strong>bUseD3D9Ex</strong> to 0. This setting can rarely cause that on some systems             
+            </p>
+        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/68714" target="_blank">Mod Limit Fix</a></h2>
+            <p class="specialinstall"><strong>Installation Instructions:</strong></p>
+                <ul class="specialinstructions">
+                    <li>Download the mod manually</li>
+                    <li>Extract the <strong>NVSE</strong> folder from the archive to the game's <strong>Data</strong> folder</li>
+                </ul>
+            <p class="moddesc"> - Raises the game's ~120 plugin limit to 255. May also increase performance and decrease load times, especially with more heavily-modded games <br>
+                                NOTE: Although this does raise the plugin limit, it is still recommended to stay below ~120 plugins for optimal performance/load times
+            </p>
+    </div>      
+    <div>
+        <hr>
+        <a class="arrows" href="./core-initweaks.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
+        <a class="arrows" href="./core-bugfix.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
+    </div>
+</body>
+<script>
+var modal = document.getElementById('FOMODModal');
+
+var img = document.getElementById('FOMODImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+</html>
