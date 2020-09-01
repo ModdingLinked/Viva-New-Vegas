@@ -125,6 +125,15 @@ SOFTWARE.
                     <li>Main File - <strong>JSawyer Ultimate Edition - Mojave Arsenal Patch</strong></li>
                 </ul>
             <p class="moddesc"> - Renames ammo from JSUE to match Mojave Arsenal's naming scheme and fixes a few conflicts</p>
+        <h2 class="modhead"><a class="modlink" href="https://www.moddb.com/games/fallout-new-vegas/addons/item-icons-redux" target="_blank">Item Icons Redux Patches</a></h2>
+            <p class="specialinstall"><strong>FOMOD instructions:</strong></p>
+                <img id="FOMODImg" src="./img/itemiconsFOMOD2.png" alt="Mod Patches" style="width:100%;max-width:300px">
+                    <div id="FOMODModal" class="modal">
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                        <span class="close">&times;</span>
+                    </div>
+            <p class="moddesc"> - Patches for Item Icons Redux and JSawyer Ultimate Edition/Mojave Arsenal. Only needed if you installed <a class="modsublink" href="https://www.moddb.com/games/fallout-new-vegas/addons/item-icons-redux" target="_blank">Item Icons Redux</a> from <a class="modsublink" href="./core-hud.html" target="_blank">Core - HUD/UI</a></p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/64638" target="_blank">Mojave Wildlife</a></h2>  
             <p class="specialinstall"><strong>Files to install normally:</strong></p>
                 <ul class="specialinstructions">
@@ -176,4 +185,22 @@ SOFTWARE.
         <a class="arrows" href="./gameplay-mechanics.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
     </div>
 </body>
+<script>
+var modal = document.getElementById('FOMODModal');
+
+var img = document.getElementById('FOMODImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
 </html>
