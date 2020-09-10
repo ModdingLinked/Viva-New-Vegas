@@ -214,6 +214,7 @@ SOFTWARE.
                     </div>
                 <img id="FOMODImg5" src="./img/adamfomod4.png" alt="Select Original Gloves" style="width:100%;max-width:300px">
                     <div id="FOMODModal5" class="modal">
+                        <span class="close">&times;</span>
                         <img class="modal-content" id="img05">
                         <div id="caption5"></div>
                     </div>
@@ -403,31 +404,14 @@ SOFTWARE.
             <p class="specialinstall"><strong>Install normally</strong></p>
             <p class="moddesc"> - Replaces the camera movement in every 1st person animation with more subtle motion</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/67760" target="_blank">Iron Sights Recoil Animations</a></h2>
-            <p class="specialinstall"><strong>Installation instructions:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Install the main file normally</li>
-                    <li>Run <strong>Sniff</strong> through MO2</li>
-                    <li>Set the <strong>Input directory</strong> at the top of the program to <strong>Mod Organizer 2\mods\Weapon Mesh Improvement Mod\meshes</strong> (make sure <strong>Include subdirectories</strong> is checked)</li>
-                        <img id="FOMODImg6" src="./img/sniff1.png" alt="'Mod Organizer 2\mods\Weapon Mesh Improvement Mod\meshes'" style="width:100%;max-width:300px">
-                            <div id="FOMODModal6" class="modal">
-                                <img class="modal-content" id="img06">
-                                <div id="caption6"></div>
-                            </div>
-                    <li>Under the <strong>Nif</strong> header, select <strong>Attach parent NiNode</strong></li>
-                    <li>Set <strong>NiNode name to find</strong> to <strong>##SightingNode</strong> and set <strong>Attached parent NiNode name</strong> to <strong>##ISControl</strong></li>
-                        <img id="FOMODImg7" src="./img/sniff2.png" alt="'Attach parent NiNode'" style="width:100%;max-width:300px">
-                            <div id="FOMODModal7" class="modal">
-                                <span class="close">&times;</span>
-                                <img class="modal-content" id="img07">
-                                <div id="caption7"></div>
-                            </div>
-                    <li>Set the <strong>Output directory</strong> at the bottom of the program to <strong>Mod Organizer 2\mods\Iron Sights Recoil Animations - Patched Files\meshes</strong> (you will need to manually create this folder)</li>
-                    <li>Select <strong>Process</strong>, let the program finish converting the NIFs, then select <strong>Exit</strong></li>
-                    <li>Re-launch <strong>Sniff</strong> and repeat the same process, but with <strong>Mod Organizer 2\mods\Weapon Retexture Project\meshes</strong> as the <strong>Input directory</strong> (same preset options and <strong>Output directory</strong> path)</li>
-                    <li>Back in MO2, right-click in the left pane and select <strong>All Mods -> Refresh</strong></li>
-                    <li>Activate <strong>Iron Sights Recoil Animations - Patched Files</strong> in the left pane of MO2</li>
-                </ul>
+            <p class="specialinstall"><strong>Install normally</strong></p>
             <p class="moddesc"> - Adds actual visual kick/muzzle flip to the iron sights fire animations</p>
+        <h2 class="modhead"><a class="modlink" href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/master/Iron%20Sights%20Recoil%20Animations%20-%20WMIM%20Patch.7z" target="_blank">Iron Sights Recoil Animations - Weapon Mesh Improvement Mod Patch</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Patches Iron Sights Recoil Animations to use WMIM's fixed meshes</p>
+        <h2 class="modhead"><a class="modlink" href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/master/Iron%20Sights%20Recoil%20Animations%20-%20WRP%20Patch.7z" target="_blank">Iron Sights Recoil Animations - Weapon Retexture Project Patch</a></h2>
+            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Patches Iron Sights Recoil Animations to use WRP's custom meshes (which are based on WMIM's fixed meshes)</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/69403" target="_blank">1st Person Animation Replacers</a></h2>
             <p class="specialinstall"><strong>Install normally</strong></p>
             <p class="moddesc"> Brand-new reload animations for a handful of guns</p>
@@ -526,42 +510,6 @@ var span = document.getElementsByClassName("close")[0];
 
 span.onclick = function() { 
   modal.style.display = "none";
-}
-</script>
-<script>
-    var modal = document.getElementById('FOMODModal6');
-
-var img = document.getElementById('FOMODImg6');
-var modalImg = document.getElementById("img06");
-var captionText = document.getElementById("caption6");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() { 
-    modal.style.display = "none";
-}
-</script>
-<script>
-    var modal = document.getElementById('FOMODModal7');
-
-var img = document.getElementById('FOMODImg7');
-var modalImg = document.getElementById("img07");
-var captionText = document.getElementById("caption7");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() { 
-    modal.style.display = "none";
 }
 </script>
 </html>
