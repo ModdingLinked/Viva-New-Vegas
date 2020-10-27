@@ -30,7 +30,7 @@ SOFTWARE.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Bug Fixes/QOL - Viva New Vegas</title>
+    <title>Bug Fixes/QOL | Viva New Vegas</title>
     <meta name="description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied.">
     <meta name="twitter:card" value="summary"> 
     <meta property="og:title" content="Viva New Vegas" />
@@ -48,7 +48,7 @@ SOFTWARE.
         <ul class="navbar">
             <li class="navbarli"><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium" target="_blank">GitHub</a></li>
             <li class="navbarli"><a href="https://discord.gg/DhX5S27" target="_blank">Discord</a></li>
-            <li class="navbarli"><a href="https://www.patreon.com/vivanewvegas" target="_blank" rel="nofollow">Patreon</a></li>
+            <li class="navbarli"><a href="./donate.html" target="_blank" rel="nofollow">Donate</a></li>
             <li class="navbarli"><a href="index.html">Home</a></li>
         </ul>
     </div>
@@ -73,7 +73,7 @@ SOFTWARE.
         <h2 class="modhead">A Note About Load Order and Conflict Resolution</h2>
             <p class="moddesc">
                 LOOT is not used in this guide. The best way to sort your load order is to use FNVEdit to view conflicts and manually sort your load order based off that and then create a custom conflict resolution patch.
-                The guide will provide a fully-modular handmade conflict resolution FOMOD along with the proper load order for each module, so you do not need to worry about either of those if you are just following the guide. This means that any mods listed can be left out without missing out on the pre-made conflict resolution/load order. 
+                The guide will provide a fully-modular handmade conflict resolution FOMOD (if necessary) along with the proper load order for each module, so you do not need to worry about either of those if you are just following the guide. This means that any mods listed can be left out without missing out on the pre-made conflict resolution/load order. 
                 However, if you plan on adding any big mods, you will need to familiarize yourself with manually solving conflicts in xEdit.
                 I suggest <a class="modsublink" href="https://tes5edit.github.io/docs/" target="_blank">this</a> tutorial for familiarizing yourself with the tool 
                 and for making custom conflict resolution.
@@ -83,9 +83,8 @@ SOFTWARE.
                 Fallout New Vegas has a safe plugin cap of about ~120 (no one knows the exact number) in vanilla, 
                 but the <a class="modsublink" href="https://www.nexusmods.com/newvegas/mods/68714" target="_blank">Mod Limit Fix</a> 
                 in <a class="modsublink" href="./core-utilities.html" target="_blank">Core - Utilities</a> raises that to 255. 
-                However, it is still recommended to try to stay below ~120 plugins for optimal performance/load times.
-                The guide will use the tool <strong>zMerge</strong> (a.k.a <strong>zEdit</strong>) to merge plugins together to stay below the limit. 
-                If you plan on adding your own mods in addition to the ones in the guide, familiarize yourself with the tool so you can stay below the limit as well. 
+                The guide will stay far below 255, at ~140 plugins with the full guide, including optionals. If you somehow add enough of your own mods to get near the plugin cap,
+                it is not recommended to use automated merging tools like Merge Plugins Standalone or zMerge. If you need to merge, <a class="modsublink" href="https://tes5edit.github.io/docs/8-managing-mod-files.html#MergingaPluginintoanotherPluginorMaster" target="_blank">manually merging with FNVEdit</a> is the best and safest way to do it.
             </p>
         <h2 class="modhead">Creating a Separator in Mod Organizer 2</h2>
             <ul class="specialinstructions">
@@ -101,41 +100,37 @@ SOFTWARE.
                 <p class="moddesc">NOTE: If you do not know what <strong>Install normally</strong> means (or how to install mods using Mod Organizer 2), go back to the <a class="modsublink" href="./core-mo2config.html" target="_blank">Core - MO2 Config</a> page and read the <strong>IMPORTANT: Mod Installation Advice in Mod Organizer 2</strong> section</p> 
             <p class="moddesc"> – Purely fixes numerous bugs in the vanilla game and DLCs</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/62041" target="_blank">Navmesh Fixes and Improvements</a></h2>
-            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="normalinstall"><strong>Install normally</strong></p>
             <p class="moddesc"> - Fixes almost all navmesh (AI navigation) issues in the base game</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65412" target="_blank">Unofficial Patch NVSE</a></h2>
-            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="normalinstall"><strong>Install normally</strong></p>
             <p class="moddesc"> - Pure bug fix mod similar to YUP, but takes advantage of NVSE and JIP LN NVSE</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65052" target="_blank">Weapon Mesh Improvement Mod</a></h2>
-            <p class="specialinstall"><strong>Install normally</strong></p>
-            <p class="moddesc"> - Fixes mesh errors, UV errors, incorrect flags, missing extra data, form lists, projectiles, and other weapon related bugs <br>
-                                NOTE: Due to the nature of this mod, any other mods that edit the same weapon meshes will be incompatible. This is why you won't see mods such as WMX, EVE, or Asurah's Animations in the guide 
+            <p class="normalinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Fixes mesh errors, UV errors, incorrect flags, missing extra data, form lists, projectiles, and many other weapon related bugs <br>
+                                NOTE: Due to the nature of this mod, any other mods that edit the same weapon meshes will be incompatible. This is one reason why you won't see mods such as WMX, EVE, or Asurah's Animations in the guide 
             </p>
+        <h2 class="modhead"><a class="modlink" href="https://drive.google.com/file/d/1fjqpvQ1GyS7uXBxs59ymzytcwATHcBo7/view" target="_blank">WMIM Wrist Fix</a></h2>
+            <p class="normalinstall"><strong>Install normally</strong></p>
+                <p class="moddesc">NOTE: If you do not know how to install mods that do not have a <strong>Mod Manager Download</strong>, go back to the <a class="modsublink" href="./core-mo2config.html" target="_blank">Core - MO2 Config</a> page and read the <strong>IMPORTANT: Mod Installation Advice in Mod Organizer 2</strong> section</p>
+            <p class="moddesc"> - Fixes a bug in Weapon Mesh Improvement Mod that would sometimes cause enemies to hang in the air by their wrists when killed</p>
         <h2 class="modhead"><a class="modlink" href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/master/WMIM%20Addendum.7z" target="_blank">WMIM Addendum</a></h2>
-            <p class="specialinstall"><strong>Install normally</strong></p>
+            <p class="normalinstall"><strong>Install normally</strong></p>
             <p class="moddesc"> - Fixes bugs and removes unnecessary weapon buffs within Weapon Mesh Improvement Mod. See the included read-me for details</p>
-        <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/62767" target="_blank">Throwable Weapon Fixes</a></h2>
-            <p class="specialinstall"><strong>Install normally</strong></p>
-            <p class="moddesc"> - Collection of fixes for throwable weapons</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65004" target="_blank">Fixes for the Caesar's Legion Armors</a></h2>
-            <p class="specialinstall"><strong>Install normally</strong></p>  
+            <p class="normalinstall"><strong>Install normally</strong></p>  
             <p class="moddesc"> - Fixes many mesh issues with Legion armors</p>
+        <h2 class="modhead"><a class="modlink" href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/master/Fixes%20for%20the%20Caesar's%20Legion%20Armors%20ESP%20Replacer.7z" target="_blank">Fixes for the Caesar's Legion Armors ESP Replacer</a></h2>
+            <p class="normalinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Scripts the changes from the previous mod to avoid any conflicts</p>
         <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66347" target="_blank">lStewieAl's Tweaks</a></h2>
-            <p class="specialinstall"><strong>Files to install normally:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Main File: <strong>Stewie Tweaks</strong></li>
-                    <li>Optional File: <strong>Stewie Tweaks INI</strong></li>
-                </ul>
-                <p class="moddesc">NOTE: If you do not know what to do when installing multiple files from the same page through MO2, go back to the <a class="modsublink" href="./core-mo2config.html" target="_blank">Core - MO2 Config</a> page and read the <strong>IMPORTANT: Mod Installation Advice in Mod Organizer 2</strong> section</p> 
-                <br>
-            <p class="specialinstall"><strong>Special activation instructions:</strong></p>
-                <ul class="specialinstructions">
-                    <li>Run the game and exit at the main menu</li>
-                    <li>Double-click on <strong>Stewie Tweaks INI</strong> in the left pane of MO2</li>
-                    <li>In the <strong>INI-Files</strong> tab, click on <strong>nvse/plugins/nvse_stewie_tweaks.ini</strong></li>
-                    <li>All the features of the mod can be turned on/off and tweaked here (they are all off by default) <strong><u>OR</u></strong> download my preset INI <a class="modsublink" href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/master/lStewieAl's%20Tweaks%20Custom%20INI.7z" target="_blank">here</a></li>
-                </ul>        
-            <p class="moddesc"> - Collection of many configurable quality of life improvements/bug fixes </p>
+            <p class="normalinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - Collection of many configurable quality of life improvements/bug fixes. All features come disabled by default, but the next mod will take care of that </p>
+        <h2 class="modhead"><a class="modlink" href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/master/lStewieAl's%20Tweaks%20Custom%20INI.7z" target="_blank">lStewieAl's Tweaks Custom INI</a></h2>
+            <p class="normalinstall"><strong>Install normally</strong></p>
+            <p class="moddesc"> - My personal INI for Stewie's Tweaks that enables many of the Bug Fixes/QOL Improvements of the mod, but almost none of the gameplay changes; those will be covered in the <strong>Gameplay</strong> module <br>
+                                NOTE: As these are just my personal preferences, my INI can be exchanged for any other preset INI (such as <a class="modsublink" href="https://www.nexusmods.com/newvegas/mods/67185" target="_blank">Axonis's</a>), or you can go through the INI and tweak all the features to your own liking
+            </p>
     </div>    
     <div>
         <hr>

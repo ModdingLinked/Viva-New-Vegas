@@ -28,7 +28,7 @@ SOFTWARE.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Optional Core Mods/Tools - Viva New Vegas</title>
+    <title>Optional Core Mods/Tools | Viva New Vegas</title>
     <link rel="icon" type="image/ico" href="./img/logo.png"/>
     <meta name="description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied.">
     <meta name="twitter:card" value="summary"> 
@@ -46,7 +46,7 @@ SOFTWARE.
         <ul class="navbar">
             <li class="navbarli"><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium" target="_blank">GitHub</a></li>
             <li class="navbarli"><a href="https://discord.gg/DhX5S27" target="_blank">Discord</a></li>
-            <li class="navbarli"><a href="https://www.patreon.com/vivanewvegas" target="_blank" rel="nofollow">Patreon</a></li>
+            <li class="navbarli"><a href="./donate.html" target="_blank" rel="nofollow">Donate</a></li>
             <li class="navbarli"><a href="index.html">Home</a></li>
         </ul>
     </div>
@@ -68,31 +68,49 @@ SOFTWARE.
         <hr>
     </div>
     <div>  
-        <p class="moddesc">These are small and simple mods that I didn't think were major enough to be included in the main sections of the guide, or tools that aren't necessarily needed for just following the guide (but rather making/editing mods). They can easily be added on top of any mod setup and don't require any conflict resolution and can be merged at the end of the module. Inversely, they can also be skipped just as easily without messing anything up:</p>
+        <p class="moddesc">These are small and simple mods that I didn't think were major enough to be included in the main sections of the guide, or tools that aren't necessarily needed for just following the guide (but rather making/editing mods). They can easily be added on top of any mod setup and don't require any conflict resolution. Inversely, they can also be skipped just as easily without messing anything up:</p>
         <h2 class="installingfnv">Optional Tools</h2>
             <p class="moddesc">Install all of the following programs to the <strong>Tools</strong> folder in your <strong>Modding Folder</strong> unless instructed otherwise:</p>
                 <h2 class="modhead"><a class="modlink" href="https://www.dotpdn.com/downloads/pdn.html" target="_blank">Paint.net</a></h2>
-                    <p class="specialinstall"><strong>Install normally</strong></p>
+                    <p class="normalinstall"><strong>Install normally</strong></p>
                     <p class="moddesc"> - Photo viewing/editing tool I always use to handle .dds files (the format used for texture files)</p>
                 <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/skyrimspecialedition/mods/1756" target="_blank">BSA Browser</a></h2>
-                    <p class="specialinstall"><strong>Install normally</strong></p>
+                    <p class="normalinstall"><strong>Install normally</strong></p>
                     <p class="moddesc"> - Allows you to browse files within .BSAs and extract them</p>
                 <h2 class="modhead"><a class="modlink" href="https://github.com/niftools/nifskope/releases" target="_blank">NifSkope</a></h2>
-                    <p class="specialinstall"><strong>Install normally</strong></p>
+                    <p class="normalinstall"><strong>Install normally</strong></p>
                     <p class="moddesc"> - Tool for basic creating and editing of meshes</p>
                 <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/67829" target="_blank">Sniff</a></h2>
-                    <p class="specialinstall"><strong>Install normally</strong></p>
+                    <p class="normalinstall"><strong>Install normally</strong></p>
                     <p class="moddesc"> - Streamlined mass nif editor</p>
                 <h2 class="modhead"><a class="modlink" href="https://geckwiki.com/index.php?title=Garden_of_Eden_Creation_Kit" target="_blank">GECK</a></h2>
-                    <p class="specialinstall"><strong>Installation Instructions:</strong></p>
+                    <p class="specialinstall"><strong>Installation instructions:</strong></p>
                         <ul class="specialinstructions">
                             <li>Click the <strong>Download the Garden of Eden Creation Kit for Fallout New Vegas <i>here</i></strong> link</li>
                             <li>Extract the contents of the archive to the <strong>Root</strong> folder</li>
                         </ul>
                     <p class="moddesc"> - Tool that allows you to create/edit any data from the game</p>
+                <h2 class="modhead"><a class="modlink" href="https://github.com/deorder/mo2-plugins" target="_blank">Mod Organizer 2 Plugins</a></h2>
+                    <p class="specialinstall"><strong>Installation Instructions:</strong></p>
+                        <ul class="specialinstructions">
+                            <li>Select the green button in the top left labeled <strong>Code</strong> and then select <strong>Download ZIP</strong></li>
+                                <img id="FOMODImg" src="./img/mo2 plugins install.png" alt="Download ZIP" style="width:100%;max-width:300px">
+                                    <div id="FOMODModal" class="modal">
+                                        <img class="modal-content" id="img01">
+                                        <span class="close">&times;</span>
+                                        <div id="caption"></div>
+                                    </div>
+                            <li>Extract the following from the archive to <strong>Mod Organizer 2/plugins</strong></li>
+                                <ul>
+                                    <li><strong>/data</strong></li>
+                                    <li><strong>pySyncModOrder.py</strong></li>
+                                    <li><strong>pyMergePluginsHide.py</strong></li>
+                                </ul>
+                        </ul>
+                    <p class="moddesc"> - Adds two new features to MO2, the ability to hide plugins that have been merged and the ability to sync profile mod orders with one another</p>
         <h2 class="installingfnv">Optional Utilities:</h2>
             <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/68968" target="_blank">Inactive Window Scroll Fix</a></h2>
-                <p class="specialinstall"><strong>Installation Instructions:</strong></p>
+                <p class="specialinstall"><strong>Installation instructions:</strong></p>
                     <ul class="specialinstructions">
                         <li>Download the mod manually</li>
                         <li>Extract the <strong>nvse</strong> folder from the archive to the game's <strong>Data</strong> folder</li>
@@ -101,14 +119,9 @@ SOFTWARE.
                                     NOTE: The game will crash on start up with this mod if you have a controller plugged in. Wait until after you load a save to plug your controller in
                 </p>
             <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/64888" target="_blank">GECK Extender</a></h2>
-                <p class="specialinstall"><strong>Files to install:</strong></p>
+                <p class="specialinstall"><strong>Installation instructions:</strong></p>
                     <ul class="specialinstructions">
-                        <li>Main File - <strong>Geck Extender</strong></li>
-                        <li>Main File - <strong>GECK Patcher</strong></li>
-                    </ul>
-                <p class="specialinstall"><strong>Special install instructions:</strong></p>
-                    <ul class="specialinstructions">
-                        <li>Download both files manually</li>
+                        <li>Download both main files manually</li>
                         <li>Extract the <strong>nvse</strong> folder from the <strong>Geck Extender</strong> file to the <strong>Data</strong> folder</li>
                         <li>Extract the contents of the <strong>GECK Patcher</strong> archive to the root folder</li>
                         <li>Right-click on <strong>Patcher.exe</strong> and select <strong>Run as administrator</strong></li>
@@ -116,20 +129,20 @@ SOFTWARE.
                     </ul>
                 <p class="moddesc"> - Extends GECK functionality and fixes many bugs. Only needed if you installed the GECK above</p>
             <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65906" target="_blank">Console Paste Support</a></h2>
-                <p class="specialinstall"><strong>Installation Instructions:</strong></p>
+                <p class="specialinstall"><strong>Installation instructions:</strong></p>
                     <ul class="specialinstructions">
                         <li>Download the mod manually</li>
                         <li>Extract the <strong>nvse</strong> folder from the archive to the game's <strong>Data</strong> folder</li>
                     </ul>
                 <p class="moddesc"> - Allows you to paste text into the console, along with a few other keyboard shortcuts</p>
             <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/68976" target="_blank">Discord Rich Presence</a></h2>
-                <p class="specialinstall"><strong>Installation Instructions:</strong></p>
+                <p class="specialinstall"><strong>Installation instructions:</strong></p>
                     <ul class="specialinstructions">
-                        <li>Extract the <strong>Data</strong> folder and <strong>.dll</strong> from the archive to the <strong>Root</strong> folder</li>
+                        <li>Extract the contents of the archive to the <strong>Root</strong> folder</li>
                     </ul>
                 <p class="moddesc"> - Integrates Discord Rich Presence into Fallout NV</p>
             <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/67395" target="_blank">Runtime Script Profiler</a></h2>
-                <p class="specialinstall"><strong>Installation Instructions:</strong></p>
+                <p class="specialinstall"><strong>Installation instructions:</strong></p>
                     <ul class="specialinstructions">
                         <li>Download the mod manually</li>
                         <li>Extract the <strong>nvse</strong> folder from the archive to the game's <strong>Data</strong> folder</li>
@@ -138,11 +151,11 @@ SOFTWARE.
         <h2 class="installingfnv">Optional Bug Fix/QOL Mods:</h2>
             <h2 class="modhead">Creating a Separator in Mod Organizer 2</h2>
                 <ul class="specialinstructions">
-                    <li>Right-click in the left pane of MO2 and select <strong>Create Separator</strong></li>
+                    <li>Right-click in the left pane of MO2 and select <strong>All Mods -> Create Separator</strong></li>
                     <li>Input <strong>Optional Core Mods</strong> into the pop-up and select <strong>OK</strong></li>
                 </ul>
             <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/62923" target="_blank">Enslaving Arcade Fix</a></h2>
-                <p class="specialinstall"><strong>Install normally</strong></p>
+                <p class="normalinstall"><strong>Install normally</strong></p>
                 <p class="moddesc"> - Allows you to give Arcade to Caesar at any point during the 'Et Tumor, Brute?' quest</p>
             <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/57729" target="_blank">Melee Reach Fixed</a></h2>
                 <p class="specialinstall"><strong>Files to install normally:</strong></p>
@@ -151,16 +164,16 @@ SOFTWARE.
                     </ul>
                 <p class="moddesc"> - Fixes the range of melee weapons to better represent their size</p>
             <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66775" target="_blank">Sierra Madre Exterior Fixed</a></h2>
-                <p class="specialinstall"><strong>Install normally</strong></p>
+                <p class="normalinstall"><strong>Install normally</strong></p>
                 <p class="moddesc"> - Fixes the messed up texture on the Sierra Madre exterior</p>
             <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/66167" target="_blank">Psycho and Slasher Bonus Damage Fix</a></h2>
-                <p class="specialinstall"><strong>Install normally</strong></p>
+                <p class="normalinstall"><strong>Install normally</strong></p>
                 <p class="moddesc"> - Fixes the Psycho and Slasher damage buffs not stacking</p>
             <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/68379" target="_blank">Clicking Ambient Sound Fix</a></h2>
-                <p class="specialinstall"><strong>Install normally</strong></p>
+                <p class="normalinstall"><strong>Install normally</strong></p>
                 <p class="moddesc"> - Fixes faint clicking in some ambient tracks that most people won't hear, but some audiophiles might</p>
             <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/69038" target="_blank">No Muzzle Flash Lights</a></h2>
-                <p class="specialinstall"><strong>Install normally</strong></p>
+                <p class="normalinstall"><strong>Install normally</strong></p>
                 <p class="moddesc"> - Removes the lights casted on the environment by muzzle flashes, which can be very performance intensive especially on weaker systems</p>
             <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/68339" target="_blank">No Snow in Globes</a></h2>
                 <p class="specialinstall"><strong>Files to install normally:</strong></p>
@@ -168,9 +181,10 @@ SOFTWARE.
                         <li>Main File - <strong>No Snow In Globes</strong></li>
                         <li>Optional File - <strong>No Snow for Honest Hearts</strong></li>
                     </ul>
+                    <p class="moddesc">NOTE: If you do not know what to do when installing multiple files from the same page through MO2, go back to the <a class="modsublink" href="./core-mo2config.html" target="_blank">Core - MO2 Config</a> page and read the <strong>IMPORTANT: Mod Installation Advice in Mod Organizer 2</strong> section</p> 
                 <p class="moddesc"> - Removes the snow effect in snow globes which can massively boost FPS in the Lucky 38, even on high-end PCs</p>
             <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/65732" target="_blank">Motion Sickness Destroyer</a></h2>  
-                <p class="specialinstall"><strong>Install normally</strong></p>
+                <p class="normalinstall"><strong>Install normally</strong></p>
                 <p class="moddesc"> - Removes all motion blur, double vision, and other nasty nauseating effects that reduce visual clarity. Only install if those effects bother you</p>
             <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/67761" target="_blank">Faster Pip-Boy Animation</a></h2>
                 <p class="specialinstall"><strong>Files to install normally:</strong></p>
@@ -179,27 +193,14 @@ SOFTWARE.
                     </ul>
                 <p class="moddesc"> - Doubles the speed of the Pip-Boy opening animation</p>
         <h2 class="installingfnv">Optional HUD Mods:</h2>
-            <h2 class="modhead">MCM Matches HUD Color</h2>
-                <p class="specialinstall"><strong>Installation instructions:</strong></p>
-                    <ul class="specialinstructions">
-                        <li>Choose one of the following based on the HUD/UI section you chose:</li>
-                            <ul>
-                                <li><a class="modsublink" href="https://drive.google.com/file/d/1e5h0kBmMFSkQ0JJwpm_plJwyPhFH0YRE/view?usp=sharing" target="_blank">Vanilla UI Plus</a></li>
-                                <li><a class="modsublink" href="https://drive.google.com/file/d/1OketEQjITRp41_rDVk6HjbZv022TZE9j/view" target="_blank">DarnUI</a></li>
-                            </ul>
-                        <li>Download and install the mod normally</li>
-                    </ul>
+            <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/47746" target="_blank">Tutorial Killer</a></h2>
+                <p class="normalinstall"><strong>Install normally</strong></p>
+                <p class="moddesc"> - Removes tutorial pop-ups</p> 
+            <h2 class="modhead"><a class="modlink" href="https://drive.google.com/file/d/1e5h0kBmMFSkQ0JJwpm_plJwyPhFH0YRE/view?usp=sharing" target="_blank">MCM Matches HUD Color</a></h2>
+                <p class="normalinstall"><strong>Install normally</strong></p>
                 <p class="moddesc"> - Changes the MCM menu and logo to the active HUD color. Mod by <a class="modsublink" href="https://www.nexusmods.com/newvegas/users/53377026" target="_blank">ItsMeJesusHChrist</a></p>
-            <h2 class="modhead">MTUI Dialogue Background</h2>
-                <p class="specialinstall"><strong>Installation instructions:</strong></p>
-                    <ul class="specialinstructions">
-                        <li>Choose one of the following based on the HUD/UI section you chose:</li>
-                            <ul>
-                                <li><a class="modsublink" href="https://drive.google.com/file/d/1pP0Rw_1RfFAC4jYYlY7hPFBaaxSXaxKs/view?usp=sharing" target="_blank">Vanilla UI Plus</a></li>
-                                <li><a class="modsublink" href="https://drive.google.com/file/d/13lVOP5s6JGDnz-HK-LyzxDnv_L9vaqlT/view?usp=sharing" target="_blank">DarnUI</a></li>
-                            </ul>
-                        <li>Download and install the mod normally</li>
-                    </ul>
+            <h2 class="modhead"><a class="modsublink" href="https://drive.google.com/file/d/1pP0Rw_1RfFAC4jYYlY7hPFBaaxSXaxKs/view?usp=sharing" target="_blank">MTUI Dialogue Background</a></h2>
+                <p class="normalinstall"><strong>Install normally</strong></p>
                 <p class="moddesc"> - Adds the dialogue menu background gradient from MTUI</p>
             <h2 class="modhead"><a class="modlink" href="https://github.com/Audixas/No-Traps-Popup/releases/tag/1.2" target="_blank">No Traps Popup</a></h2>
                 <p class="specialinstall"><strong>Files to install normally:</strong></p>
@@ -208,10 +209,8 @@ SOFTWARE.
                     </ul>
                 <p class="moddesc"> - Removes message prompt to disarm or rearm traps</p>
             <h2 class="modhead"><a class="modlink" href="https://www.nexusmods.com/newvegas/mods/55085" target="_blank">FOV Slider</a></h2>
-                <p class="specialinstall"><strong>Install normally</strong></p>
-                <p class="moddesc"> - Allows you to adjust many different types of FOV through an MCM <br>
-                    NOTE: This mod cannot be merged since it has an MCM menu
-                </p>
+                <p class="normalinstall"><strong>Install normally</strong></p>
+                <p class="moddesc"> - Allows you to adjust many different types of FOV through an MCM </p>
     </div>
     <div>
         <hr>
@@ -219,4 +218,22 @@ SOFTWARE.
         <a class="arrows" href="./core-finish.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
     </div>
 </body>
+<script>
+var modal = document.getElementById('FOMODModal');
+
+var img = document.getElementById('FOMODImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
 </html>

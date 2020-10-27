@@ -28,7 +28,7 @@ SOFTWARE.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Gameplay Finish Line - Viva New Vegas</title>
+    <title>Gameplay Finish Line | Viva New Vegas</title>
     <link rel="icon" type="image/ico" href="./img/logo.png"/>
     <meta name="description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied.">
     <meta name="twitter:card" value="summary"> 
@@ -46,7 +46,7 @@ SOFTWARE.
         <ul class="navbar">
             <li class="navbarli"><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium" target="_blank">GitHub</a></li>
             <li class="navbarli"><a href="https://discord.gg/DhX5S27" target="_blank">Discord</a></li>
-            <li class="navbarli"><a href="https://www.patreon.com/vivanewvegas" target="_blank" rel="nofollow">Patreon</a></li>
+            <li class="navbarli"><a href="./donate.html" target="_blank" rel="nofollow">Donate</a></li>
             <li class="navbarli"><a href="index.html">Home</a></li>
         </ul>
     </div>    
@@ -66,79 +66,31 @@ SOFTWARE.
         <h2 class="modhead"><a class="modlink" href="./gameplay-avoid.html" target="_blank">Gameplay Mods to Avoid</a></h2>
         <h2 class="modhead">Creating a Separator in Mod Organizer 2</h2>
             <ul class="specialinstructions">
-                <li>Right-click in the left pane of MO2 and select <strong>Create Separator</strong></li>
+                <li>Right-click in the left pane of MO2 and select <strong>All Mods -> Create Separator</strong></li>
                 <li>Input <strong>Gameplay - Finish Line</strong> into the pop-up and select <strong>OK</strong></li>
             </ul>
-        <h2 class="modhead">Moving Consistent Pip-Boy Icons</h2>
+        <h2 class="modhead">Moving Consistent Pip-Boy Icons and Vanilla HUD Cleaned</h2>
             <ul class="specialinstructions">
-                <li>Move Consistent Pip-Boy Icons (from Core - HUD/UI) below the Gameplay - Finish Line separator in the left pane of MO2</li>
+                <li>Move both Consistent Pip-Boy Icons and Clean Vanilla HUD (from Core - HUD/UI) below the Gameplay - Finish Line separator in the left pane of MO2 (make sure they stay in the same order)</li>
             </ul>
         <h2 class="modhead"><a class="modlink" href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/master/Gameplay%20Conflict%20Resolution%20FOMOD.7z" target="_blank">Gameplay - Conflict Resolution</a></h2>
-            <p class="specialinstall"><strong>FOMOD Instructions:</strong></p>
+            <p class="specialinstall"><strong>Installation instructions:</strong></p>
                 <ul class="specialinstructions">
-                    <li>Choose all files that apply to what mods you have installed from the guide</li>
+                    <li>Download the file manually and start the installation normally through MO2</li>
+                    <li>In the FOMOD, select the <strong>All in One</strong> version if you installed all the mods listed in the FOMOD. If not, select the <strong>Individual Patches</strong> option and choose all the patches for the mods you selected</li>
                 </ul>
         <p class="moddesc"> - Resolves conflicts between the mods from this module and the previous modules</p>
         <h2 class="modhead"><a class="modlink" href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/master/Gameplay%20Load%20Order.txt.7z" target="_blank">Gameplay - Load Order.txt</a></h2>
-            <p class="specialinstall"><strong>Installation Instructions:</strong></p>
+            <p class="specialinstall"><strong>Installation instructions:</strong></p>
                 <ul class="specialinstructions">
-                    <li>Extract <strong>loadorder.txt</strong> to <strong>Mod Organizer 2/profiles/Viva New Vegas - Gameplay</strong></li>
+                    <li>Extract the <strong>loadorder.txt</strong> from the archive to <strong>Mod Organizer 2/profiles/Viva New Vegas - Gameplay</strong> and overwrite when prompted</li>
                     <li>Once the file is extracted, right-click in the left pane of MO2 and select <strong>All Mods -> Refresh</strong></li>
                 </ul>
                 <p class="moddesc"> - Automatically ensures your load order is correct for the Gameplay module <br>
-                    NOTE: This load order assumes you followed the entire guide with all the recommended options.
-                    If you installed your own mods, those plugin-ins will be moved to the bottom of the LO and need to be manually moved back into the correct spot after the new load order is applied.
-                    It will still work perfectly even if you left out some mods
+                    NOTE: This load order assumes you followed the entire guide with all the recommended options (though it will still work perfectly if you left out any mods).
+                    If you installed your own mods, those plugin-ins will be moved to the bottom of the load order and need to be manually moved back into the correct spot after the new load order is applied. 
+                    If you do not know how to check where any mods you have added should go in the load order, it may be best to not add any mods not in the guide.
                 </p>
-        <h2 class="modhead">Using zMerge</h2>
-            <ul class="specialinstructions">
-                <li>Run zEdit through MO2</li>
-                <li>From the top drop-down menu, select <strong>zMerge</strong>, and from the bottom select <strong>Fallout NV</strong></li>
-                <li>Click <strong>Start Session</strong></li>
-                <li>Click the <strong>Create Merge</strong> button</li>
-                <li>In the <strong>Details</strong> tab, change the <strong>Name</strong> to <strong>Gameplay - Merge</strong> and make sure the <strong>Merge Method</strong> is <strong>Clean - Merge down (improved)</strong></li>
-                    <ul>
-                        <li>Make sure the merge is exactly named <strong>Gameplay - Merge</strong>, or else the custom load orders from the guide will not recognize it</li>
-                    </ul>
-                <li>In the <strong>Plugins</strong> tab, select the following:</li>
-                    <ul class="initweaks">
-                        <li>
-                            <strong>
-                                JSUE Addendum.esp <br>
-                                Economy Overhaul Addendum.esp <br>
-                                Mojave Raiders - 22LR Varmint Rifle.esp <br>
-                                Mojave Raiders Addendum.esp <br>
-                                Character Expansions Revised - MR.esp <br>
-                                JSawyer Ultimate - Mojave Raiders Patch.esp <br>
-                                JSawyer Ultimate - Mojave Arsenal Patch.esp <br>
-                                Follower Tweaks.esp <br>
-                                Changed Vendor Flags.esp (only if you enabled <strong><i>bBarterCheckActorBuySellFlags</i></strong> in the <strong><i>Enabling More Features in lStewieAl's Tweaks</i></strong> section in <a class="modsublink" href="./gameplay-mechanics.html" target="_blank">Gameplay - Mechanics</a> ) <br>
-                                BLEED Addendum.esp <br>
-                                Yukichigai Gameplay Tweaks.esp <br>
-                                Alternative Repairing - Honest Hearts.esp <br>
-                                Alternative Repairing - Lonesome Road.esp <br>
-                                CIB Supermutants.esp <br>
-                                GRA Scavenger Hunt Unbalanced.esp <br>
-                                Any mods you selected from the <a class="modsublink" href="./gameplay-optional.html" target="_blank">Optional Gameplay Mods</a> section<br>
-                                Gameplay - Conflict Resolution AIO (Core + Visuals + Gameplay).esp <strong><u>AND/OR</u></strong> whatever patches you selected from the Conflict Resolution FOMOD (including the WRP - JSUE Patch.esp if you selected it)<br>
-                            </strong>
-                        </li>
-                    </ul>
-                <li>Click <strong>OK</strong> to exit the merge menu</li>
-                <li>Click the <strong>Build</strong> button to the right of the merge name</li>
-                <li>The merge should build successfully and you can exit out of the program</li>
-                <li>Right-click in the left pane of MO2 and select <strong>All Mods -> Refresh</strong></li>
-                <li>The merge should appear in the left pane and activate it like normal</li>
-                <li>Move <strong>Gameplay - Merge.esp</strong> above <strong>FNVLODGen.esp</strong> in the right pane of MO2</li>
-                    <ul>
-                        <li>If you did not follow the <strong>Visuals</strong> module and therefore do not have <strong>FNVLODGen.esp</strong>, leave the merge at the bottom of the load order</li>
-                    </ul>
-                <li>Click the <img class="mo2setting" src="./img/mo2ini.png" alt="MO2 INI Button"> on the top bar of MO2 and select <strong>Merge Plugins Hide</strong></li>
-                <li>Right-click on the <strong>Gameplay - Merge</strong> listing, select <strong>Disable plugins</strong>, and then close</li>
-                    <ul>
-                        <li>All the mods that were merged should now have their plugins disappear from the right pane</li>
-                    </ul>
-            </ul>
         <h2 class="modhead">Testing the Game</h2>
             <ul class="specialinstructions">
                 <li>Run the game through the <strong>New Vegas</strong> option in MO2</li>
@@ -155,45 +107,20 @@ SOFTWARE.
                     <div id="caption2"></div>
                 </div>
             <ul class="specialinstructions">
-                <li>Melee Cleave:</li>
-            </ul>
-            <img id="FOMODImg3" src="./img/cleavemcm.png" alt="Change Fist Weapon AOE to 20" style="width:100%;max-width:300px">
-                <div id="FOMODModal3" class="modal">
-                    <img class="modal-content" id="img03">
-                    <div id="caption3"></div>
-                </div>
-            <ul class="specialinstructions">
                 <li>JIP CCC</li>
             </ul>    
                 <img id="FOMODImg5" src="./img/JIPCCCmcm.png" alt="Set True Passive Mode to Until Hit/Player Attacks, check Manage Equipment and Draw With Player, un-check Unlimited Companions and Disable Companion Wheel" style="width:100%;max-width:300px">
                     <div id="FOMODModal5" class="modal">
                         <img class="modal-content" id="img05">
                         <div id="caption5"></div>
+                        <span class="close">&times;</span>
                     </div>
             <ul class="specialinstructions">
                     <ul>
                         <li>Adjust the rest of the settings to personal preference</li>
                     </ul>
-                <li>Alternative Repairing: Leave default</li>
                 <li>Quickthrow: Adjust to personal preference</li>
-                <li>Just Mods Assorted:</li>
-            </ul>   
-            <img id="FOMODImg6" src="./img/JMM-Gameplay.png" alt="Un-check Hold Breath and Bullet Time" style="width:100%;max-width:300px">
-                <div id="FOMODModal6" class="modal">
-                    <span class="close">&times;</span>
-                    <img class="modal-content" id="img06">
-                    <div id="caption6"></div>
-                </div>
-            <img id="FOMODImg4" src="./img/JVSMCM.png" alt="Disable Sprint Jumping" style="width:100%;max-width:300px">
-                <div id="FOMODModal4" class="modal">
-                    <img class="modal-content" id="img04">
-                    <div id="caption4"></div>
-                </div>
-            <ul class="specialinstructions">
-                <ul>
-                    <li>Adjust everything else to personal preference</li>
-                    <li>Depending on which HUD mod you chose, you may want to tweak the font used for Just Loot Menu. If you change the font, you will also probably need to change the <strong>Text Adjustment</strong> to make everything align properly</li>
-                </ul>
+                <li>Just Mods Assorted: The custom INI from the guide already changes many settings, but you should still look through and change anything you want</li>
             </ul>    
     </div> 
     <div>
@@ -202,24 +129,6 @@ SOFTWARE.
         <a class="arrows" href="./index.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
     </div>     
 </body>
-<script>
-    var modal = document.getElementById('FOMODModal');
-
-    var img = document.getElementById('FOMODImg');
-    var modalImg = document.getElementById("img01");
-    var captionText = document.getElementById("caption");
-    img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
-}
-
-    var span = document.getElementsByClassName("close")[0];
-
-    span.onclick = function() { 
-        modal.style.display = "none";
-}
-</script>
 <script>
     var modal = document.getElementById('FOMODModal2');
 
@@ -239,65 +148,11 @@ SOFTWARE.
 }
 </script>
 <script>
-    var modal = document.getElementById('FOMODModal3');
-
-var img = document.getElementById('FOMODImg3');
-var modalImg = document.getElementById("img03");
-var captionText = document.getElementById("caption3");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() { 
-    modal.style.display = "none";
-}
-</script>
-<script>
-    var modal = document.getElementById('FOMODModal4');
-
-var img = document.getElementById('FOMODImg4');
-var modalImg = document.getElementById("img04");
-var captionText = document.getElementById("caption4");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() { 
-    modal.style.display = "none";
-}
-</script>
-<script>
     var modal = document.getElementById('FOMODModal5');
 
 var img = document.getElementById('FOMODImg5');
 var modalImg = document.getElementById("img05");
 var captionText = document.getElementById("caption5");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() { 
-    modal.style.display = "none";
-}
-</script>
-<script>
-    var modal = document.getElementById('FOMODModal6');
-
-var img = document.getElementById('FOMODImg6');
-var modalImg = document.getElementById("img06");
-var captionText = document.getElementById("caption6");
 img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;

@@ -28,7 +28,7 @@ SOFTWARE.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Installation - Viva New Vegas</title>
+    <title>Installation | Viva New Vegas</title>
     <link rel="icon" type="image/ico" href="./img/logo.png"/>
     <meta name="description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied.">
     <meta name="twitter:card" value="summary"> 
@@ -46,7 +46,7 @@ SOFTWARE.
         <ul class="navbar">
             <li class="navbarli"><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium" target="_blank">GitHub</a></li>
             <li class="navbarli"><a href="https://discord.gg/DhX5S27" target="_blank">Discord</a></li>
-            <li class="navbarli"><a href="https://www.patreon.com/vivanewvegas" target="_blank" rel="nofollow">Patreon</a></li>
+            <li class="navbarli"><a href="./donate.html" target="_blank" rel="nofollow">Donate</a></li>
             <li class="navbarli"><a href="index.html">Home</a></li>
         </ul>
     </div>
@@ -78,14 +78,14 @@ SOFTWARE.
             <p class="moddesc">
               - Fallout New Vegas and Mod Organizer 2 must be installed on the same drive, preferably on an SSD for shorter loading times and less stutter while loading assets
                 <br>
-              - You will need at least 15 gigabytes of free drive space for just the <strong>Core</strong> module (including the size of the game), and the total size of the entire guide is 25 gigabytes (including the game and all the tools)
+              - You will need at least 15 gigabytes of free drive space for just the <strong>Core</strong> module (including the game and the tools), and the total size of the entire guide is 25 gigabytes
                 <ul class="specialinstructions">
-                  <li><strong>Core</strong> Module - 15 gigabytes (including the game and all the tools)</li>
+                  <li><strong>Core</strong> Module - 15 gigabytes (including the game and the tools)</li>
                   <li><strong>Graphics</strong> Module:</li>
                     <ul>
                       <li>Low - 1 gigabyte</li>
                       <li>Medium - 4.5 gigabytes</li>
-                      <li>High - 7.25 gigabytes</li>
+                      <li>High - 8.5 gigabytes</li>
                     </ul>
                   <li><strong>Gameplay</strong> Module - 0.8 gigabytes</li>
                   <li><strong>Content</strong> Module - 2 gigabytes</li>
@@ -203,7 +203,7 @@ SOFTWARE.
               </div>
           </div>
         <hr>
-        <h2 class="installingfnv">Setting up your Fallout New Vegas Modding Folder:</h2>
+        <h2 class="installingfnv">Setting up your Modding Folder:</h2>
           <p class="modfolderdesc">
             Your modding folder will act as the main directory for all the tools you install, as well as any backups/screenshots/etc. you may want to keep. This folder will be referred to as the <strong>Modding folder</strong> from now on
               <ul class="modfolderlist">
@@ -234,14 +234,11 @@ SOFTWARE.
                 </ul>
               <li>Select <strong>Options</strong></li>
               <li>Verify the game is detecting and using your GPU properly</li>
-                <li>Select the <strong>High</strong> preset</li>
-                    <ul>
-                      <li>You can select a lower one if your PC still can't handle it, but pretty much any semi-modern PC should be able to handle the <strong>High</strong> preset fine</li>
-                    </ul>
-                <li>Select <strong>Advanced -> Shadows</strong> and un-check <strong>Enable Shadows</strong> (New Vegas does not have real shadows, only actor shadows which are rarely visible, so you probably won't even see the difference)</li>
-                    <ul>
-                      <li>These settings will look nearly identical to the <strong>Ultra</strong>, but with a noticeable performance increase. You can still select the <strong>Ultra</strong> preset if you <i>really</i> want to</li>
-                    </ul>
+              <li>Select the <strong>Ultra</strong> preset</li>
+                  <ul>
+                    <li>If you have a lower-end PC, you can select the <strong>High</strong> preset. It offers pretty similar visual quality for a decent performance improvement, especially on lower end hardware</li>
+                  </ul>
+              <li>Select <strong>Advanced -> Shadows</strong> and un-check <strong>Enable Shadows</strong> (New Vegas does not have real shadows, only actor shadows which are rarely visible, so you probably won't even see the difference)</li>
               <li>Set <strong>Resolution</strong> to your preference (The launcher usually does not properly set it to your max resolution)</li>
               <li>Click <strong>OK</strong> and then <strong>Exit</strong></li>
             </ul>
@@ -256,13 +253,16 @@ SOFTWARE.
           <li>In the left pane, select <strong>Manage 3D Settings</strong></li>
           <li>In the right pane, select the <strong>Program Settings</strong> tab and select <strong>Fallout - New Vegas</strong> from the drop down</li>
             <ul>
-              <li>If you do not see an option for Fallout New Vegas, select <strong>Add</strong> and then select <strong>Fallout NV</strong> from the pop-up</li>
+              <li>If you do not see an option for Fallout New Vegas, select <strong>Add</strong> and then select <strong>Fallout NV</strong> (NOT <strong>Fallout New Vegas Launcher</strong>) from the pop-up</li>
                 <ul>
                   <li>If <strong>Fallout NV</strong> <i>still</i> doesn't show up, select <strong>Browse...</strong>, navigate to where you have FNV installed, and select <strong>FalloutNV.exe</strong></li>
                 </ul>
             </ul>
           <li>Scroll down in the settings box and click on <strong>Max Frame Rate</strong></li>
-          <li>In the pop-up menu, select the circle next to <strong>On</strong>, and set the limiter to 1 less than your monitor's refresh rate</li>
+            <ul>
+              <li>If you do not see the <strong>Max Frame Rate</strong> option, you need to update your GPU drivers</li>
+            </ul>
+          <li>In the pop-up menu, select the circle next to <strong>On</strong>, and set the limiter to 2 less than your monitor's refresh rate</li>
             <ul>
                 <li>If you do not know your monitor's refresh rate, do the following:</li>
             <ul>
@@ -290,7 +290,7 @@ SOFTWARE.
                     <li>In the <strong>Gaming</strong> tab, select the <strong>Fallout New Vegas</strong> profile</li>
                     <li>In the <strong>Profile Graphics tab</strong>, change the following:</li>
                     <li>Enable <strong>Chill (FPS)</strong></li>
-                    <li>Set <strong>Chill Min</strong> and <strong>Chill Max</strong> to 1 less than your monitor's refresh rate</li>
+                    <li>Set <strong>Chill Min</strong> and <strong>Chill Max</strong> to 2 less than your monitor's refresh rate</li>
                       <ul>
                       <li>If you do not know your monitor's refresh rate, do the following:</li>
                         <ul>

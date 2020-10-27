@@ -28,7 +28,7 @@ SOFTWARE.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Changelog - Viva New Vegas</title>
+    <title>Changelog | Viva New Vegas</title>
     <link rel="icon" type="image/ico" href="./img/logo.png"/>
     <meta name="description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied.">
     <meta name="twitter:card" value="summary"> 
@@ -46,7 +46,7 @@ SOFTWARE.
         <ul class="navbar">
             <li class="navbarli"><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium" target="_blank">GitHub</a></li>
             <li class="navbarli"><a href="https://discord.gg/DhX5S27" target="_blank">Discord</a></li>
-            <li class="navbarli"><a href="https://www.patreon.com/vivanewvegas" target="_blank" rel="nofollow">Patreon</a></li>
+            <li class="navbarli"><a href="./donate.html" target="_blank" rel="nofollow">Donate</a></li>
             <li class="navbarli"><a href="index.html">Home</a></li>
         </ul>
     </div>
@@ -57,32 +57,43 @@ SOFTWARE.
         <p class="specialinstall"><strong>Time is formatted as mm/dd/yy</strong></p>
         <br>
         <br>
-        <p class="specialinstall"><strong>10/7/20</strong></p>
-        <p class="moddesc">
-            - Changed the link for The Blue Note quest mod due redirecting issues (thanks LadyZeefa!)
-        </p>
-        <br>
-        <p class="specialinstall"><strong>9/27/20</strong></p>
-        <p class="moddesc">
-            - Removed the separate NVSE Config from Core since it is already included with xNVSE (thanks Izabill!)
-        </p>
-        <br>
-        <p class="specialinstall"><strong>9/23/20</strong></p>
+        <p class="specialinstall"><strong>10/27/20</strong></p>
             <p class="moddesc">
-                - Changed the instructions for Consistent Pip-Boy Icons in Core (again) since Vanilla UI Plus finally got scaling support<br>
-                - <strike>DarnUI users have to install a separate extension to add the same support, also noted in Core HUD, but this is untested</strike><br>
-                - Apparently, the DarnUI hosted by the guide has this extension built in
-            </p>
-        <br>
-        <p class="specialinstall"><strong>9/18/20</strong></p>
-            <p class="moddesc">
-                - Changed the instructions for Consistent Pip-Boy Icons in Core because Vanilla UI Plus hasn't got upscaling icons support at this moment
-            </p>
-        <br>
-        <p class="specialinstall"><strong>9/17/20</strong></p>
-            <p class="moddesc">
-                - Removed Item Icons Redux from Core - HUD/UI and Item Icons Redux Patches from Gameplay - PTWB's (the newest version of Consistent Pip-Boy Icons now includes it) <br>
-                - Updated the instructions for Consistent Pip-Boy Icons to select the plugin in the FOMOD (the plugin is what Item Icons Redux was merged into, the plugin is also merged into the Core - Merge)
+                Finally getting around to adding a bunch of new mods that have released recently (oh no it turned out to be a lot more than that, who is surprised). I just started college and moved houses so I've been very busy, but I finally have some free time so here it goes (why can't I stop changing stuff help me): <br>
+                If you were unfortunate enough to be in the middle of doing the guide when this update hit, I'm sorry but you are much better off just starting all the way over. <br>
+                - [General] Install normally and Special install instructions are now colored different to avoid any confusion (normal is now the same steel color as the descriptions, and the special install stuff is the same orange color as before) <br>
+                - [General] Updated all load orders and conflict resolutions to reflect the following changes <br>
+                - [General] Completely removed zMerge and anything relating to merging (merging isn't really necessary anymore with the Mod Limit Fix, the merging was a major source of confusion and can cause very big problems if done incorrectly) <br>
+                - [Core] The guide now says to use the Ultra preset in the launcher with a note about using High if you want better performance for slightly worse visuals, rather than the other way around <br>
+                - [Core] Moved MO2 Plugins to the optional core section (now that merging isn't used in the guide, it isn't necessary. But the sync mod profiles is still good) <br>
+                - [Core] Added New Vegas Heap Replacer to Utilities <br>
+                - [Core] Added Improved Lighting Shaders to Utilities <br>
+                - [Core] lStewieAl's Tweaks Custom INI updated (enabled new features <i>bHideRedCrosshairOnDistantInvisibleTargets</i>, <i>bLessRestrictiveVATSMenu</i>, <i>bNoTurningAnim</i>, <i>bScaleMusicVolumeDuringDialogue</i>, <i>bCenterOnCellAcceptsFormIDs</i>, <i>bDelayPostCombatReputationPopup</i>, <i>bLocationalMeleeDamage</i>, <i>bLoopingReloadAmmoSwapRefillClipFix</i>, <i>bNoFreeBarterItems</i>, <i>bRememberWeaponAmmos</i> and enabled the <i>Hide HUD Hotkey</i> option [set to the "I" key by default]) <br>
+                - [Core] Added WMIM Wrist Fix to Bug Fixes/QOL <br>
+                - [Core] Removed Throwable Weapon Fixes from Bug Fixes/QOL (most if not all of the actual fixes are already done by WMIM, the remaining changes are all gameplay/visual changes which didn't fit the Core module) <br>
+                - [Core] Added an ESP replacer for Fix for Legion Armors that scripts the changes from the mod to avoid conflicts (realized the mod had open permissions, so thanks to the original author YanL for doing that) <br>
+                - [Core] This is probably gonna be controversial, but its gonna save me a lot of headache. Removed DarnUI support for the HUD section (was becoming way to much of a PITA to manage both sections, especially with how little time I have now and the additions of Vanilla HUD Cleaned, the new VUI+ patch in Consistent Pip-Boy Icons, and the addition of HUD Editor [HUD Editor only supports VUI+, and VHUD Cleaned needs a little extra work to work with Darn]) <br>
+                - [Core] Replaced oHUD with HUD Editor + the "Hide HUD Hotkey" option in Stewie's Tweaks (by default, the hotkey is the "I" key. I've had my eye on HUD Editor for a while now and its finally been updated to a place where I feel comfortable finally getting rid of oHUD) <br>
+                - [Core] Moved Tutorial Killer to the Optional section (since the Core module is often used by people who have never played the game, I figured this is a little better) <br>
+                - [Core] Added Vanilla HUD Cleaned to HUD/UI <br>
+                - [Core] Removed Vanilla HUD Remastered and the Vanilla HUD Remastered - VUI+ Patch (not needed with the new Vanilla HUD Cleaned mod + the new VUI+ patch in the Consistent Pip-Boy Icons FOMOD) <br>
+                - [Visuals] Removed Millenia's Env Map Shader Package Fix from Tex/Models/Animations (not needed with Improved Lighting Shaders, as it has fixed versions of the shaders from this mod) <br>
+                - [Visuals] Added Weapon Textures from Heaven to High/Medium Textures/Models/Anims <br>
+                - [Visuals] Added instructions to install the Landscape seam fix file from WFO
+                - [Visuals] Swapped out Iron Sights Recoil Animations, its patches, and Subtle Camera Motion for Anniversary Anim Pack (by the same author, includes those mods plus a few new bits) <br>
+                - [Visuals] Swapped out Simple Street Lights for A Little More Lamplight (although Simple Street Lights covers a good bit more, More Lamplight is a lot simpler and much better made. Plus I don't think all the new lights SSL adds are all that necessary now that RWL Redesigned doesn't have very dark nights, and because the night brightness is changeable in the MCM) <br>
+                - [Gameplay] Updated the JSUE addendum to now include a pre-configured INI file <br>
+                - [Gameplay] Removed the instructions to install the <strong>Mojave Raiders - .22LR Varmint Rifle Patch</strong> file from Mojave Raiders, as its not needed with the new Mojave Raiders - JSUE patch that was added recently <br>
+                - [Gameplay] Removed Ammo Count Memory from Mechanics (redundant with newest Stewie's tweaks update) <br>
+                - [Gameplay] Removed Melee Cleave (this was mainly added to help buff melee weapons with BLEED, since the vanilla bug that caused melee damage not to be affected by damage multipliers made melee weapons really ineffective. But now that this bug is fixed in Stewie's Tweaks, I don't feel like this mod is completely necessary) <br>
+                - [Gameplay] Removed Alternative Repairing (I want Fallout 3-Style repairing from JIP LN to play more of an effect, and I want people to have to actually pay for repairs off vendors sometimes) <br>
+                - [Gameplay] Removed Super Mutant Overhaulord (Qolore Gameplay Tweaks now has similarly buffs super mutants, which is the main reason I used the mod) <br>
+                - [Gameplay] Removed Bypass Minigames (bForceLockpickNoBreakLock in Stewie's Tweaks, which makes failing a force lockpick attempt break the bobby pin instead of the lock, achieves pretty much the same goal) <br>
+                - [Gameplay] Removed Recharger Rifle Rebalance with Scope Mod (was never fully happy with the balance in this mod, it feels a bit OP. I plan on changing around the recharger rifle in QGT at some point) <br>
+                - [Gameplay] Added instructions to install the VW Perception Affects Ranged Accuracy file from Vicious Wastes Standalone Mechanics in addition to the barter file <br>
+                - [Content] Added instructions for installing the LSO uncut wasteland patch (I guess I just forgot to add it) <br>
+                - [Content] Made an optional content section, which Cut Sewers Restored, Beyond the Beef Tweaks, Securitrons on High Alert, Vault 22 Flora Overhaul, Cloud Grenades, Z-43, Burden to Bear Original, and Immersive Pickup Sounds were moved to <br> <br>
+                Holy shit its finally done, only took like a month and a half. My brain is pretty much dead now so there's totally gonna be a few typos and all that, but I think I did a pretty good job of actually adding everything to the changelog. I feel like the guide is pretty much perfect now, the only mod I can think of that I'm considering is MoreMojave, which looks amazing but it's gonna require rather extensive testing which I don't have time for currently. Maybe over Christmas break if I don't hate myself enough yet <br>
             </p>
         <br>
         <p class="specialinstall"><strong>9/13/20</strong></p>

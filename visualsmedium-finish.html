@@ -28,7 +28,7 @@ SOFTWARE.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Visuals Finish Line - Viva New Vegas</title>
+    <title>Visuals Finish Line | Viva New Vegas</title>
     <link rel="icon" type="image/ico" href="./img/logo.png"/>
     <meta name="description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied.">
     <meta name="twitter:card" value="summary"> 
@@ -46,7 +46,7 @@ SOFTWARE.
         <ul class="navbar">
             <li class="navbarli"><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium" target="_blank">GitHub</a></li>
             <li class="navbarli"><a href="https://discord.gg/DhX5S27" target="_blank">Discord</a></li>
-            <li class="navbarli"><a href="https://www.patreon.com/vivanewvegas" target="_blank" rel="nofollow">Patreon</a></li>
+            <li class="navbarli"><a href="./donate.html" target="_blank" rel="nofollow">Donate</a></li>
             <li class="navbarli"><a href="index.html">Home</a></li>
         </ul>
     </div>    
@@ -69,55 +69,20 @@ SOFTWARE.
             <p class="moddesc">NOTE: It is very important to read the above link, especially if you plan on adding your own mods</p>
         <h2 class="modhead">Creating a Separator in Mod Organizer 2</h2>
             <ul class="specialinstructions">
-                <li>Right-click in the left pane of MO2 and select <strong>Create Separator</strong></li>
+                <li>Right-click in the left pane of MO2 and select <strong>All Mods -> Create Separator</strong></li>
                 <li>Input <strong>Visuals - Finish Line</strong> into the pop-up and select <strong>OK</strong></li>
             </ul>
         <h2 class="modhead"><a class="modlink" href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/master/Visuals%20Load%20Order.txt.7z" target="_blank">Visuals - Load Order.txt</a></h2>
-             <p class="specialinstall"><strong>Installation Instructions:</strong></p>
+             <p class="specialinstall"><strong>Installation instructions:</strong></p>
                  <ul class="specialinstructions">
-                     <li>Extract <strong>loadorder.txt</strong> to <strong>Mod Organizer 2/profiles/Viva New Vegas - Visuals</strong></li>
+                     <li>Extract the <strong>loadorder.txt</strong> from the archive to <strong>Mod Organizer 2/profiles/Viva New Vegas - Visuals</strong> and overwrite when prompted</li>
                      <li>Once the file is extracted, right-click in the left pane of MO2 and select <strong>All Mods -> Refresh</strong></li>
                  </ul>
                  <p class="moddesc"> - Automatically ensures your load order is correct for the Visuals module <br>
-                    NOTE: This load order assumes you followed the entire guide with all the recommended options.
-                    If you installed your own mods, those plugin-ins will be moved to the bottom of the LO and need to be manually moved back into the correct spot after the new load order is applied.
-                    It will still work perfectly even if you left out some mods
-                </p>
-            <h2 class="modhead">Using zMerge</h2>
-                <ul class="specialinstructions">
-                    <li>Run zEdit through MO2</li>
-                    <li>From the top drop-down menu, select <strong>zMerge</strong>, and from the bottom select <strong>Fallout NV</strong></li>
-                    <li>Click <strong>Start Session</strong></li>
-                    <li>Click the <strong>Create Merge</strong> button</li>
-                    <li>In the <strong>Details</strong> tab, change the <strong>Name</strong> to <strong>Visuals - Merge</strong> and make sure the <strong>Merge Method</strong> is <strong>Clean - Merge down (improved)</strong></li>
-                        <ul>
-                            <li>Make sure the merge is exactly named <strong>Visuals - Merge</strong>, or else the custom load orders from the guide will not recognize it</li>
-                        </ul>
-                    <li>In the <strong>Plugins</strong> tab, select the following:</li>
-                        <ul class="initweaks">
-                            <li>
-                                <strong>
-                                    YUP - WRP Patch.esp <br>
-                                    Character Expansions Revised - YUP.esp <br>
-                                    Burning Campfire.esp <br>
-                                    BC2.esp <br>
-                                    EnhancedGrass_NoVL.esp <br>
-                                    Any mods you selected from the <a class="modsublink" href="./visualsmedium-optional.html" target="_blank">Optional Visuals</a> section<br>
-                                </strong>
-                            </li>
-                        </ul>
-                    <li>Click <strong>OK</strong> to exit the merge menu</li>
-                    <li>Click the <strong>Build</strong> button to the right of the merge name</li>
-                    <li>The merge should build successfully and you can exit out of the program</li>
-                    <li>Right-click in the left pane of MO2 and select <strong>All Mods -> Refresh</strong></li>
-                    <li>The merge should appear in the left pane and activate it like normal</li>
-                    <li>Move <strong>Visuals - Merge.esp</strong> above <strong>FNVLODGen.esp</strong> in the right pane of MO2</li>
-                    <li>Click the <img class="mo2setting" src="./img/mo2ini.png" alt="MO2 INI Button"> on the top bar of MO2 and select <strong>Merge Plugins Hide</strong></li>
-                    <li>Right-click on the <strong>Visuals - Merge</strong> listing, select <strong>Disable plugins</strong>, and then close</li>
-                        <ul>
-                            <li>All the mods that were merged should now have their plugins disappear from the right pane</li>
-                        </ul>
-                </ul>    
+                    NOTE: This load order assumes you followed the entire guide with all the recommended options (though it will still work perfectly if you left out any mods).
+                    If you installed your own mods, those plugin-ins will be moved to the bottom of the load order and need to be manually moved back into the correct spot after the new load order is applied. 
+                    If you do not know how to check where any mods you have added should go in the load order, it may be best to not add any mods not in the guide.
+                 </p>
             <h2 class="modhead">Testing the Game</h2>
                 <ul class="specialinstructions">
                     <li>Run the game through the <strong>New Vegas</strong> option in MO2</li>
@@ -125,6 +90,7 @@ SOFTWARE.
                     <li>Run through the tutorial missions with Sunny Smiles to verify everything is running smoothly and correctly</li>
                 </ul>  
             <h2 class="modhead">Tweaking the MCM</h2>
+                <p class="moddesc">The Mod Configuration Menu can be accessed through the pause menu in-game. The settings are save-specific, so it is recommended to wait to edit the settings until you start the save you plan on actually playing on</p>
                 <ul class="specialinstructions">
                     <li>RWL Tweaked: Adjust to personal preference</li>
                 </ul>

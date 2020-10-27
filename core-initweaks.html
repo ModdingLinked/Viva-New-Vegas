@@ -28,7 +28,7 @@ SOFTWARE.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/style.css">
-    <title>INI Tweaks - Viva New Vegas</title>
+    <title>INI Tweaks | Viva New Vegas</title>
     <link rel="icon" type="image/ico" href="./img/logo.png"/>
     <meta name="description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied.">
     <meta name="twitter:card" value="summary"> 
@@ -46,7 +46,7 @@ SOFTWARE.
         <ul class="navbar">
             <li class="navbarli"><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium" target="_blank">GitHub</a></li>
             <li class="navbarli"><a href="https://discord.gg/DhX5S27" target="_blank">Discord</a></li>
-            <li class="navbarli"><a href="https://www.patreon.com/vivanewvegas" target="_blank" rel="nofollow">Patreon</a></li>
+            <li class="navbarli"><a href="./donate.html" target="_blank" rel="nofollow">Donate</a></li>
             <li class="navbarli"><a href="index.html">Home</a></li>
         </ul>
     </div>
@@ -66,7 +66,7 @@ SOFTWARE.
                 <li><a href="./core-finish.html">Finish Line</a></li>
             </ul>
         <hr>
-            <p class="installingfnvdesc"> In this step, we will edit the game's .INI files through MO2 using JIP LN's <strong>FalloutCustom.ini</strong> feature to increase performance/stability and fix some quality of life issues</p>
+            <p class="installingfnvdesc"> In this step, we will edit the game's .INI files through MO2 to increase performance/stability and fix some quality of life issues</p>
         <hr>
     </div> 
     <div>
@@ -75,6 +75,9 @@ SOFTWARE.
                 <li>Make sure the <strong>Viva New Vegas - Core</strong> profile is active</li>
                 <li>Click the <img class="mo2setting" src="./img/mo2ini.png" alt="mo2 executables"> button on the top bar of MO2 and select <strong>INI Editor</strong></li>
                 <li>Navigate to the <strong>FalloutCustom.ini</strong> tab, which should be blank</li>
+                    <ul>
+                        <li>NOTE: Make sure you are in the <strong>FalloutCustom.ini</strong> tab and NOT the <strong>Custom.ini</strong> tab</li>
+                    </ul>
                 <li>Paste the following into the box:</li>
                     <ul class="initweaks">
                             <li>[General]</li>  
@@ -88,7 +91,7 @@ SOFTWARE.
                             <br>
                             <li>[Display]</li>    
                             <li>bFull Screen=1</li>
-                            <li>iPresentInterval=1</li>
+                            <li>iPresentInterval=0</li>
                             <br>
                             <li>[Controls]</li>    
                             <li>fForegroundMouseAccelBase=0</li>    
@@ -113,7 +116,6 @@ SOFTWARE.
                                 <ul>
                                     <li>If you do not know how many threads your CPU has, use <a class="modsublink" href="https://www.cpuid.com/softwares/cpu-z.html" target="_blank">CPU-Z</a> to find out</li>
                                 </ul>
-                            <li><strong>iPresentInterval</strong> can be set to <strong>0</strong> if you use G/Free-sync (if you do not know what G/Free-Sync are, odds are you don't use them and you can leave the setting alone) </li>
                             <li><strong>fXenonVertLookSpeed</strong> and <strong>fXenonHorizLookSpeed</strong> can be removed if you do not run the game in a 16:9 aspect ratio (common 16:9 aspect ratio resolutions include but are not limited to <strong>1920x1080</strong>, <strong>1600x900</strong>, and <strong>1366x768</strong></li>
                             <li>The <strong>SArchiveList</strong> tweak is only needed if you used the BSA Decompressor from <a class="modsublink" href="./core-tools.html" target="_blank">Core - Tools</a>. Make sure the entire list of archives is on one line in the INI</li>
                     </ul>
@@ -152,8 +154,8 @@ SOFTWARE.
                                         <td>Ensures the game runs in fullscreen mode</td>
                                     </tr>
                                     <tr>
-                                        <td>iPresentInterval=1</td>
-                                        <td>Enables V-Sync</td>
+                                        <td>iPresentInterval=0</td>
+                                        <td>Disables V-Sync, as when enabled it can cause noticeable lag in menus. You can set this to <strong>1</strong> if you would rather have menu lag than potential screen tearing</td>
                                     </tr>
                                     <tr>
                                         <td>fForegroundMouseAccelBase=0	<br>
@@ -190,7 +192,6 @@ SOFTWARE.
         <h2 class="installingfnv">INI Settings to not change:</h2>
             <p class="moddesc">
                 <strong>uGridsToLoad=5:</strong> Changes the amount of cells loaded at once. When changed, it can cause scripts to run when they aren't supposed to, will ruin performance, and will break your game if changed on an existing save <br> <br>
-                <strong>bMultiThreadAudio=0:</strong> Can cause crashes when set to 1 <br> <br>
                 <strong>INumHavokThreads=1:</strong> Any changes to it are placebo in regards to performance, can cause instability if set over 2 <br> <br>
                 <strong>bUseThreadedBlood/Morpher/TempEffects/ParticleSystem=0:</strong> Setting any of these to 1 is placebo and will not affect performance<br> <br>               
             </p>

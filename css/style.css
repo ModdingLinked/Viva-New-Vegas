@@ -979,3 +979,48 @@ a.toclink:hover {
     font-size:1.5vw;
     cursor: not-allowed;	
 }
+
+.donation {
+    color:rgb(51, 122, 183);
+    font-size:1.5vw; 
+    text-align:center;
+    text-decoration: none;
+}
+
+.donation img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+  
+}
+
+.donation:hover {
+    text-decoration: underline;
+}
+
+.donation2 {
+    color:rgb(51, 122, 183);
+    font-size:1.5vw; 
+    text-align:center;
+    text-decoration: none;
+}
+
+.donation2 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+  
+}
+
+.donation2:hover {
+    text-decoration: underline;
+}
+
+.normalinstall {
+    margin-left:2vw;
+    margin-top:-.75em;
+    font-size: calc(10px + .5vw);
+    color:#DCDCDC;
+}
