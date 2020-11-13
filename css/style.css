@@ -1024,3 +1024,7 @@ a.toclink:hover {
     font-size: calc(10px + .5vw);
     color:#DCDCDC;
 }
+
+.internallink {
+    text-decoration: none;
+}
