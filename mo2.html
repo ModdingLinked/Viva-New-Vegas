@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+MIT License
+
+Copyright (c) 2020 Quinn Olore
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/e15125fcf7.js" crossorigin="anonymous"></script>
+    <title>Mod Organizer 2 | Viva New Vegas</title>
+    <meta name="description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied.">
+    <meta name="twitter:card" value="summary"> 
+    <meta property="og:title" content="Viva New Vegas" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://vivanewvegas.github.io/" />
+    <meta property="og:image" content="https://vivanewvegas.github.io/img/logo.png" />
+    <meta property="og:description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied." /> 
+</head>
+<body>
+    <div class="titlecontainer">
+        <a class="maintitle" href="./index.html"><img src="./img/logo.png" alt="logo"></img><h1>VIVA NEW VEGAS</h1></a>
+        <ul class="navbar">
+            <li class="navbarli"><a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow"><strong>Tale of Two Wastelands</strong></a></li>
+            <li class="navbarli"><a href="https://themidnightride.github.io/" target="_blank" rel="nofollow"><strong>Fallout 4</strong></a></li>
+        </ul>
+    </div>
+    <div class="sidenavleft">
+        <a href="./index.html">Home</a>
+        <a href="./intro.html">Introduction</a>
+        <a href="./setup.html">Initial Setup</a>
+        <a href="./mo2.html"><span style="color:#DCDCDC">MO2</span></a>
+        <a href="./utilities.html">Utilities</a>
+        <a href="./bugfix.html">Bug Fixes</a>
+        <a href="./hud.html">HUD/UI</a>
+        <a href="./visuals.html">Visuals</a>
+        <a href="./gameplay.html">Gameplay</a>
+        <a href="./finish.html">Finish Line</a>
+    </div>
+    <div class="sidenavright">
+        <a href="./mo2.html#installing_mo2">Installation</a>
+        <a href="./mo2.html#config_mo2">Configuration</a>
+            <ul>
+                <a href="./mo2.html#initial_setup"><span style="font-size:.9vw;">Initial Setup</span></a>
+                <a href="./mo2.html#plugins"><span style="font-size:.9vw;">Ordering Plugins</span></a>
+                <a href="./mo2.html#settings"><span style="font-size:.9vw;">Settings</span></a>
+            </ul>
+        <a href="./mo2.html#profiles">Profiles</a>
+        <a href="./mo2.html#ini_tweaks">INI Tweaks</a>
+            <ul>
+                <a href="./mo2.html#custom_ini"><span style="font-size:.9vw;">FalloutCustom.ini</span></a>
+                <a href="./mo2.html#ini_notes"><span style="font-size:.9vw;">Notes</span></a>
+            </ul>
+        <a href="./mo2.html#advice">Install Advice</a>
+    </div>
+    <div>
+        <h2 class="fullheader">
+           Mod Organizer 2
+                <p>In this step, we will install and configure Mod Organizer 2, the best mod manager for any Bethesda game.</p>
+        </h2>
+            <a class="internallink" href="#installing_mo2"><h2 class="subheader" id="installing_mo2">Installing Mod Organizer 2</h2></a>
+                <ol class="standard_ol">
+                    <li>Download the <strong>Mod Organizer 2 (Installer)</strong> file from <a href="https://www.nexusmods.com/skyrimspecialedition/mods/6194?tab=files" target="_blank">here</a></li>
+                    <li>Once the download has finished, run the installer</li>
+                    <li>When prompted to choose an install location, pick any location outside of any default Window folders and outside of the <strong>Root</strong> folder</li>
+                        <ul>
+                            <li>Although it doesn't techinically have to be installed on the same drive as the game, it is still recommended to install on an SSD if possible</li>
+                        </ul>
+                    <li>Click <strong>Next</strong> until the installer finishes</li>
+                </ol>
+            <a class="internallink" href="#config_mo2"><h2 class="subheader" id="config_mo2">Configuring Mod Organizer 2</h2></a>        
+                <a class="internallink" href="#initial_setup"><p class="smallheader" id="initial_setup">Initial Setup</p></a>
+                    <ol class="standard_ol">
+                        <li>Run <strong>ModOrganizer.exe</strong></li>
+                        <li>From the pop-up called <strong>Choose Instance</strong>, select <strong>Portable</strong></li>
+                            <img src="./img/MO2 portable.png" alt="portable instance">
+                        <li>From the pop-up called <strong>Please select game to manage</strong>, select <strong>New Vegas</strong></li>
+                        <li>From the pop-up called <strong>Register?</strong>, select Yes</li>
+                            <ul>
+                                <li>This pop-up will not show up if you have already registered a different instance of MO2</li>
+                            </ul>
+                        <li>From the pop-up called <strong>Show Tutorial?</strong>, select <strong>No</strong></li>
+                    </ol>
+                <a class="internallink" href="#plugins"><p class="smallheader" id="plugins">Ordering Plugins</p></a>
+                    <ol class="standard_ol">
+                        <li>Once Mod Organizer 2 has loaded, right-click in the right pane and select <strong>Enable all</strong></li>
+                        <li>Order the plugins in the right pane as follows:</li>
+                            <img src="./img/mo2 plugin order.png" alt="order plugins as follows:">
+                        <li>If there is a plugin called <strong>FalloutNV_lang.esp</strong> in the right pane, navigate to the <strong>Data</strong> folder and delete it</li>
+                            <ul>
+                                <li>If you do not know what the <strong>Data</strong> folder is, read the Key Terminology section from the <a class="sublink" href="./setup.html#terms" target="_blank">Initial Setup</a> page</li>
+                            </ul>
+                    </ol>
+                <a class="internallink" href="#settings"><p class="smallheader" id="settings">Configuring Settings</p></a>
+                    <ol class="standard_ol">
+                        <li>Select the <img src="./img/mo2 settings.png" alt="mo2 settings"> button at the top of MO2 to open the settings</li>
+                        <li>In the <strong>General</strong> tab, you can select a different style from the drop-down menu at the top</li>
+                            <ul>
+                                <li>I use the <strong>vs15 Dark</strong> theme</li>
+                            </ul>
+                        <li>In the <strong>Paths</strong> tab, you can change the location of the <strong>Downloads</strong> path to a different drive if you want</li>
+                            <img src="./img/mo2 downloads.png" alt="">
+                            <ul>
+                                <li>Downloads aren't effected at all by drive speeds, so if you want to preserve space on your SSD/primary drive, you can move them to a secondary drive. Downloads can be deleted when you finish with the guide.</li>
+                            </ul>
+                        <li>In the <strong>Nexus</strong> tab, select <strong>Connect to Nexus</strong></li>
+                            <img src="./img/mo2 connect.png" alt="connect to nexus">
+                            <ul>
+                                <li>This option will not show up if you have already connected your Nexus account on a different MO2 instance</li>
+                            </ul>
+                        <li>MO2 will open your browser and prompt you to authorize the connection</li>
+                        <li>Once you authorize it, you can close out of your browser and of the MO2 settings</li>
+                        <li>Allow MO2 to restart if it asks</li>
+                    </ol>
+            <a class="internallink" href="#profiles"><h2 class="subheader" id="profiles">Creating Profiles</h2></a>
+                <p class="subparagraph">
+                    Mod Organizer 2's "Profiles" feature allows for easy switching between different mod configurations. In this step, we will setup a testing profile and a main profile. 
+                    The default profile will stay completely untouched and act as a backup. The testing profile will be configured the same as the main profile for the guide, 
+                    but will have all mods unchecked, allowing you to only activate certain mods for easy testing/troubleshooting. And finally, the main profile is where we will install and enable all of our mods. 
+                    Profiles can be selected via the drop-down menu above the left pane
+                </p>
+                <br>
+                <ol class="standard_ol">
+                    <li>Select the <img src="./img/mo2 profiles.png" alt="mo2 profiles"> button at the top of MO2 to open the profiles menu</li>
+                    <li>Select the <strong>Default</strong> profile, then select <strong>Copy</strong></li>
+                    <li>Name the new profile <strong>Testing</strong></li>
+                    <li>Select the <strong>Testing</strong> profile and make sure both <strong>Use profile-specific Game INI Files</strong> and <strong>Automatic Archive Invalidation</strong> are checked at the bottom</li>
+                    <li>With the <strong>Testing</strong> profile selected, select <strong>Copy</strong></li>
+                    <li>Name the new profile <strong>Viva New Vegas</strong></li>
+                    <li>Exit out of the profiles menu and select the <strong>Viva New Vegas</strong> profile from the drop-down above the left pane</li>
+                        <img src="./img/mo2 profile select.png" alt="profile select">
+                </ol>
+            <a class="internallink" href="ini_tweaks"><h2 class="subheader" id="ini_tweaks">INI Tweaks</h2></a>
+                <a class="internallink" href="#custom_ini"><p class="smallheader" id="custom_ini">Tweaking FalloutCustom.ini</p></a>
+                    <p class="subparagraph">
+                        In this step, we will configure the game's INI files to increase performance/stability.
+                        We will take advantage of JIP LN NVSE's FalloutCustom.ini feature to make our changes,
+                        which allows for INI changes to be made safely without editing the default INIs. Because of this, these changes will not take affect until you install 
+                        JIP LN NVSE in the <a href="">Utilities</a> step.
+                    </p>
+                    <br>
+                    <ol class="standard_ol">
+                        <li>Make sure the <strong>Viva New Vegas</strong> profile is active</li>
+                        <li>Click the <img src="./img/mo2 ini.png" alt="mo2 ini button"> button at the top of MO2 and select <strong>INI Editor</strong></li>
+                        <li>Select the <strong>FalloutCustom.ini</strong> tab, which should be blank</li>
+                            <ul>
+                                <li>Make sure you are in the <strong>FalloutCustom.ini</strong> tab and NOT the <strong>Custom.ini</strong> tab</li>
+                            </ul>
+                        <li>Paste in the following:</li>
+                            <ul>
+                                <p class="smalllist">
+                                    [General] <br>
+                                    bUseThreadedAI=1 <br>
+                                    iNumHWThreads=4 <br>
+                                    bPreemptivelyUnloadCells=1<br><br>
+
+                                    [BackgroundLoad]<br>
+                                    bSelectivePurgeUnusedOnFastTravel=1<br><br>
+
+                                    [Water]<br>
+                                    bAutoWaterSilhouetteReflections=1<br>
+                                    bForceHighDetailReflections=0<br><br>
+
+                                    [Controls]<br>
+                                    fForegroundMouseAccelBase=0<br>
+                                    fForegroundMouseAccelTop=0<br>
+                                    fForegroundMouseBase=0<br>
+                                    fForegroundMouseMult=0<br><br>
+
+                                    [Audio]<br>
+                                    iAudioCacheSize=8192<br>
+                                    iMaxSizeForCachedSound=1024<br>
+                                </p>
+                            </ul>
+                        <li>Change <strong>iNumHWThreads</strong> to the number of threads (including hyper-threads) your CPU has</li>
+                            <ul>
+                                <li>If you do not know how many threads your CPU has, use <a href="https://www.cpuid.com/softwares/cpu-z.html" target="_blank">CPU-Z</a> to find out</li>
+                            </ul>
+                        <li>Repeat the INI changes on the <strong>Testing</strong> profile</li>
+                    </ol>
+                <a class="internallink" href="#ini_notes"><p class="smallheader" id="ini_notes">Notes</p></a>
+                    <p class="subparagraph">
+                        It is highly recommended to avoid changing any other INI settings not in the guide, and to avoid using INI "optimization" tools like BethINI.
+                        The changes these will make are placebo and best and dangerous at worst. You will realistically not need any other tweaks than the ones
+                        already in the guide.
+                    </p>
+            <a class="internallink" href="#advice"><h2 class="subheader" id="advice">Mod Installation Advice</h2></a>
+                <blockquote class="blockquote">
+                    If you are completely unfamiliar with Mod Organizer 2, I recommended watching <a href="https://www.youtube.com/watch?v=7v0wWVuOagA" target="_blank">GamerPoet's video</a> about mod installation in MO2. 
+                    As it was made for Skyrim, it has some information that does not apply to New Vegas, such as the Steam Workshop part which you can just ignore.
+                    However, the rest of the information about downloading/installing mods from Nexus still applies.
+                </blockquote>
+                <p class="subparagraph">
+                    When the guide says to install a mod, it will be formatted as follows: <strong>Main File - Example Mod 1.5</strong>. This is referring to the mod's category on Nexus, the file name, and the file version.
+                        <br> <br>
+                        <img style="width:85%;" src="./img/download example.png" alt="download example"> <br> <br>
+                    Unless instructed otherwise, simply download the listed file using the <strong>Mod Manager Download</strong> button and install it normally through MO2. 
+                    If you do not know how to install mods through MO2, please watch the video linked above. Sometimes, a mod will not have a <strong>Mod Manager Download</strong>, or
+                    will be hosted on a site other than Nexus. If that is the case, do the following: 
+                </p>
+                <br>
+                <ol class="standard_ol">
+                    <li>Click the <strong>Manual Download</strong> button (or whatever the download button is for the respective site)</li>
+                    <li>Once the download has finished, click the <img src="./img/mo2 archive.png" alt="mo2 archive button"> button at the top of MO2</li>
+                    <li>From the new window, navigate to where the file was downloaded to and double-click it</li>
+                    <li>Finish the install normally</li>
+                </ol>
+                <br>
+                <p class="subparagraph">
+                    When downloading multiple files from the same page, you will be prompted with a box in Mod Organizer 2 with the options <strong>Merge</strong>, <strong>Replace</strong>, and <strong>Rename</strong>.
+                    You should select the <strong>Rename</strong> option and rename the mod to its respective file name. This will make MO2 install them as separate files for easier management.
+                    If you are updating from an old version of a mod, you should select <strong>Replace</strong>. This will delete all the files from the old version of the mod and replace them,with the ones from the new version.
+                    This is the only time you should use the <strong>Replace</strong> option, otherwise always use <strong>Rename</strong>.
+                </p>
+            
+    </div>
+    <div>
+        <br> <br>
+        <hr>
+        <br>
+        <a href="./setup.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
+        <a href="./utilities.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
+        </div>
+    <div class="footer">
+        <div class="inner_footer">
+            <div class="footer_third">
+                <li><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://discord.gg/DhX5S27" target="_blank"><i class="fab fa-discord"></i></a></li>
+                <li><a href="https://www.patreon.com/vivanewvegas" target="_blank"><i class="fab fa-patreon"></i></a></li>
+                <li><a href="https://www.paypal.com/paypalme/qolore7" target="_blank"><i class="fab fa-paypal"></i></a></li>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

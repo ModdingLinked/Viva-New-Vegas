@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+MIT License
+
+Copyright (c) 2020 Quinn Olore
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/e15125fcf7.js" crossorigin="anonymous"></script>
+    <title>Finish | Viva New Vegas</title>
+    <meta name="description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied.">
+    <meta name="twitter:card" value="summary"> 
+    <meta property="og:title" content="Viva New Vegas" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://vivanewvegas.github.io/" />
+    <meta property="og:image" content="https://vivanewvegas.github.io/img/logo.png" />
+    <meta property="og:description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied." /> 
+</head>
+<body>
+    <div class="titlecontainer">
+        <a class="maintitle" href="./index.html"><img src="./img/logo.png" alt="logo"></img><h1>VIVA NEW VEGAS</h1></a>
+        <ul class="navbar">
+            <li class="navbarli"><a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow"><strong>Tale of Two Wastelands</strong></a></li>
+            <li class="navbarli"><a href="https://themidnightride.github.io/" target="_blank" rel="nofollow"><strong>Fallout 4</strong></a></li>
+        </ul>
+    </div>
+    <div class="sidenavleft">
+        <a href="./index.html">Home</a>
+        <a href="./intro.html">Introduction</a>
+        <a href="./setup.html">Initial Setup</a>
+        <a href="./mo2.html">MO2</a>
+        <a href="./utilities.html">Utilities</a>
+        <a href="./bugfix.html">Bug Fixes</a>
+        <a href="./hud.html">HUD/UI</a>
+        <a href="./visuals.html">Visuals</a>
+        <a href="./gameplay.html">Gameplay</a>
+        <a href="./finish.html"><span style="color:#DCDCDC">Finish Line</span></a>
+    </div>
+    <div class="sidenavright">
+        <a href="./finish.html">Finish Line</a>
+            <ul>
+                <a href="./finish.html#separator"><span style="font-size:.9vw;">Separator</span></a>
+                <a href="./finish.html#conflict_res"><span style="font-size:.9vw;">Conflict Resolution</span></a>
+                <a href="./finish.html#load_order"><span style="font-size:.9vw;">Load Order.txt</span></a>
+                <a href="./finish.html#tweak_mcm"><span style="font-size:.9vw;">Configuring the MCM</span></a>
+                <a href="./finish.html#notes"><span style="font-size:.9vw;">Finishing Notes</span></a>
+            </ul>
+    </div>
+    <div>
+        <h2 class="fullheader">
+           Finish Line
+        </h2>
+            <a class="internallink" href="#separator"><h2 class="smallheader" id="separator">Creating a Separator in MO2</h2></a>
+                <ol class="standard_ol">
+                    <li>Right-click anywhere in the left pane of MO2 and select <strong>All Mods -> Create Separator</strong></li>
+                    <li>Name the separator <strong>Finish Line</strong></li>
+                </ol>
+            <a class="internallink" href="#conflict_res"><h2 class="smallheader" id="conflict_res"><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/main/VNV%20Conflict%20Resolution.7z" target="_blank">Conflict Resolution FOMOD</a></h2></a>     
+                <h2 class="install">Installation instructions:</h2>              
+                    <ol class="standard_ol">
+                        <li>Download the mod manually begin the installation normally through MO2</li>
+                        <li>You will be prompted with a FOMOD installer, in which you should check all the patch options that apply to what mods you installed</li>
+                    </ol> 
+                    <blockquote class="blockquote">
+                        If you installed all the mods in the guide, select every option.
+                    </blockquote>
+                <p class="subparagraph"> - Resolves all conflicts between the mods in the guide</p>
+            <a class="internallink" href="#load_order"><h2 class="smallheader" id="load_order"><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/main/VNV%20Load%20Order.7z" target="_blank">Load Order.txt</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ol class="standard_ol">
+                        <li>Download the mod manually</li>
+                        <li>Once the file has finished downloading, click the <img style="width:2%" src="./img/mo2 folders.png" alt="mo2 folders"> button at the top of MO2 and select <strong>Open Profile folder</strong></li>
+                        <li>Extract the <strong>loadorder.txt</strong> from the archive to opened folder and overwrite when prompted</li>
+                        <li>Once the file is extracted, right-click in the left pane of MO2 and select <strong>All Mods -> Refresh</strong></li>
+                    </ol>
+                    <br>
+                <p class="subparagraph"> - Automatically ensures your load order is correct for the guide. This will still work if you didn't install certain mods, 
+                    but if you added your own mods they will be sorted to the bottom of the load order and need to be manually moved back to their proper position. 
+                    If you do not know how to check where any mods you have added should go in the load order, it may be best to not add any mods not in the guide.
+                </p>
+                <blockquote class="blockquote">
+                    If you followed the guide properly, <strong>YellowGoodbye.esp</strong> should be at the bottom of your load order after using the .txt file. 
+                    If not, you probably installed the wrong version of a mod or missed instructions to hide a plugin.
+                </blockquote>
+            <a class="internallink" href="#tweak_mcm"><h2 class="smallheader" id="tweak_mcm">Configuring the Mod Configuration Menu</h2></a>
+                <p class="subparagraph">
+                    The Mod Configuration Menu can be accessed via the in-game pause menu. The settings will be reset upon starting a new game, so it is best to wait to tweak the settings until you start the save you intend to play on.
+                </p>
+                <ul class="standard_ul">
+                    Just Mods: Adjust to personal preference
+                        <ul>
+                            <li>I personally leave everything default except for the hotkeys, which I just set to my personal preference</li>
+                        </ul>
+                </ul>
+            <a class="internallink" href="#notes"><h2 class="smallheader" id="notes">Finishing Notes</h2></a>
+                <p class="subparagraph">
+                    Congratulations! You now have modded Fallout New Vegas set up perfectly and can enjoy a completely stable/smooth experience. You may want to add your own mods on top of the guide, 
+                    but that is only recommended if you are an experienced modder. If you do not know how to do manual conflict resolution in FNVEdit, or how to sort your load order manually, 
+                    it is highly recommended to NOT add any of your own mods. And remember, I do not provide support setups that have added mods.
+                    The game is very fickle and will break under too much pressure, and many popular mods are broken and will accelerate this process greatly. 
+                    <a href="./avoid-mods.html" target="_blank">Here</a> is a list of many popular mods that you should avoid if you are adding any mods.
+                    And remember, if you run into any trouble or have any questions, join the <a href="https://discord.com/invite/DhX5S27" target="_blank">Discord</a> and we'll be sure to help you out. 
+                    DO NOT bother the authors of any of the mods in the guide if you have issues, that's what the Discord is for.
+                </p>
+    </div>
+    <div>
+        <br> <br>
+        <hr>
+        <br>
+        <a href="./gameplay.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
+        <a href="./index.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
+        </div>
+    <div class="footer">
+        <div class="inner_footer">
+            <div class="footer_third">
+                <li><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://discord.gg/DhX5S27" target="_blank"><i class="fab fa-discord"></i></a></li>
+                <li><a href="https://www.patreon.com/vivanewvegas" target="_blank"><i class="fab fa-patreon"></i></a></li>
+                <li><a href="https://www.paypal.com/paypalme/qolore7" target="_blank"><i class="fab fa-paypal"></i></a></li>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -28,8 +28,9 @@ SOFTWARE.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/e15125fcf7.js" crossorigin="anonymous"></script>
     <title>Visuals | Viva New Vegas</title>
-    <link rel="icon" type="image/ico" href="./img/logo.png"/>
     <meta name="description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied.">
     <meta name="twitter:card" value="summary"> 
     <meta property="og:title" content="Viva New Vegas" />
@@ -39,115 +40,93 @@ SOFTWARE.
     <meta property="og:description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied." /> 
 </head>
 <body>
-    <div>
-        <h1 class="maintitle">Viva New Vegas</h1>
-        <h4 class="subtitle"><em>A Comprehensive 2020 Fallout New Vegas Modding Guide</em></h4>
-        <hr class="line">
+    <div class="titlecontainer">
+        <a class="maintitle" href="./index.html"><img src="./img/logo.png" alt="logo"></img><h1>VIVA NEW VEGAS</h1></a>
         <ul class="navbar">
-            <li class="navbarli"><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium" target="_blank">GitHub</a></li>
-            <li class="navbarli"><a href="https://discord.gg/DhX5S27" target="_blank">Discord</a></li>
-            <li class="navbarli"><a href="./donate.html" target="_blank" rel="nofollow">Donate</a></li>
-            <li class="navbarli"><a href="index.html">Home</a></li>
+            <li class="navbarli"><a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow"><strong>Tale of Two Wastelands</strong></a></li>
+            <li class="navbarli"><a href="https://themidnightride.github.io/" target="_blank" rel="nofollow"><strong>Fallout 4</strong></a></li>
         </ul>
     </div>
-    <div>
-        <h1 class="coretitle">Visuals: General Information</h1>
-            <ul class="breadcrumb">
-                <li><a href="./index.html">Home</a></li>
-                <li>General Information</li>
-                <li><a href="./visuals-choose.html">Section Selection</a></li>
+    <div class="sidenavleft">
+        <a href="./index.html">Home</a>
+        <a href="./intro.html">Introduction</a>
+        <a href="./setup.html">Initial Setup</a>
+        <a href="./mo2.html">MO2</a>
+        <a href="./utilities.html">Utilities</a>
+        <a href="./bugfix.html">Bug Fixes</a>
+        <a href="./hud.html">HUD/UI</a>
+        <a href="./visuals.html"><span style="color:#DCDCDC">Visuals</span></a>
+        <a href="./gameplay.html">Gameplay</a>
+        <a href="./finish.html">Finish Line</a>
+    </div>
+    <div class="sidenavright">
+        <a href="./visuals.html">Visuals</a>
+            <ul>
+                <a href="./visuals.html#separator"><span style="font-size:.9vw;">Separator</span></a>
+                <a href="./visuals.html#anim_pack"><span style="font-size:.9vw;">Anniversary Anims</span></a>
+                <a href="./visuals.html#anim_pack"><span style="font-size:.9vw;">Improved LOD</span></a>
+                <a href="./visuals.html#yellow_goodbye"><span style="font-size:.9vw;">Yellow Goodbye</span></a>
+                <a href="./visuals.html#alternatives"><span style="font-size:.9vw;">Alternatives</span></a>
             </ul>
     </div>
     <div>
-        <hr>
-        <a class="internallink" href="#requirements"><h2 class="corereq" id="requirements">Requirements:</h2></a>
-            <ul class="corereqlist">
-               <li>A working installation of the <strong>Core</strong> module</li>
-               <li>1 gigabyte of free drive space (Low option), 4.5 gigabytes (Medium option), and 8.5 gigabytes (High option)</li>
-            </ul>
-        <hr>
-        <a class="internallink" href="#goal"><h2 class="corereq" id="goal">The Goal of the Visuals Module:</h2></a>
-            <p class="moddesc">
-                The goal of this module is to improve the looks of New Vegas greatly, with different options for all ranges of PC specs. Keep in mind that Fallout New Vegas is a game
-                from 2010, and even looked bad for its time. You will never be able to make this game look like a modern AAA game, which is why this guide does not use broken, unoptimized,
-                and frankly ugly tools such as ENBs. All mods here in this module are carefully picked out as to not lower performance much if at all, depending on your specs.
-            </p>
-            <hr>
-        <h2 class="corereq"><a class="modlink" href="https://imgur.com/a/Zlk5rRJ" target="_blank">Screenshots</a></h2>
-        <hr>
-        <a class="internallink" href="#options"><h2 class="corereq" id="options">Module Options:</h2></a>
-            <p class="moddesc">The <strong>Visuals</strong> module has three options to choose from depending on your system specs; low, medium, and high:</p>
-            <ul class="corereqlist">
-                <li><strong>Low</strong> - No major texture overhauls, just small visual enhancements and new lighting. Very small performance impact if any</li>
-                <li><strong>Medium</strong> - Texture overhauls for major objects, such as architecture, landscape, common clutter items, common firearms, and improved lighting/weathers as well. Small performance hit</li>
-                <li><strong>High</strong> - Texture overhauls for most common objects in the game, improved lighting/weathers, and new flora/trees/grass. Medium performance hit</li>
-            </ul>
-        <hr>
-        <a class="internallink" href="#specs"><h2 class="corereq" id="specs">Recommended Specs:</h2></a>
-            <ul class="corereqlist">
-                <li>For the <strong>Low</strong> option, just about any system that can run the <strong>Core</strong> module can handle it</li>
-                <li>For the <strong>Medium</strong> option, any semi-modern PC with a quad-core (or dual-core with hyperthreading) that has decent single-core performance, 6+ GB of RAM, and a GPU with 3GB+ of VRAM can handle it </li>
-                <li>For the <strong>High</strong> option, pretty much any PC that can run the <strong>Medium</strong> option can run it, just with a potentially higher performance hit</li>
-            </ul>
-        <hr>
-        <h2 class="corespecs">My System Specs:</h2>
-            <ul class="corereqlist">
-                <li>I personally run the <strong>Low</strong> option because I like to keep consistency with the style/resolution of textures and have consistently perfect performance/stability.
-                    However, my system could run the <strong>High</strong> option just fine
-                </li>
-            </ul>
-            <table class="specstable" align="center">
-                <tr>
-                    <th>Part</th>
-                    <th>Model</th>
-                </tr>
-                <tr>
-                    <td>CPU</td>
-                    <td>Intel i5 7500</td>
-                </tr>
-                <tr>
-                    <td>RAM</td>
-                    <td>16GB 2400mhz DDR4</td>
-                </tr>
-                <tr>
-                    <td>GPU</td>
-                    <td>GTX 1060 6GB GDDR5</td>
-                </tr>
-                <tr>
-                    <td>Storage</td>
-                    <td>Samsung EVO 250GB SSD
-                        <br>
-                        Toshiba 1TB 7200RPM HDD
-                    </td>
-                </tr>
-                <tr>
-                    <td>Operating System</td>
-                    <td>Windows 10 Pro</td>
-                </tr>
-            </table>
+        <h2 class="fullheader">
+           Visuals
+        </h2>
+            <a class="internallink" href="#separator"><h2 class="smallheader" id="separator">Creating a Separator in MO2</h2></a>
+                <ol class="standard_ol">
+                    <li>Right-click anywhere in the left pane of MO2 and select <strong>All Mods -> Create Separator</strong></li>
+                    <li>Name the separator <strong>Visuals</strong></li>
+                </ol>
+            <a class="internallink" href="#anim_pack"><h2 class="smallheader" id="anim_pack"><a href="https://www.nexusmods.com/newvegas/mods/70158" target="_blank">Anniversary Animation Pack</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><strong>Main File - Anniversary Anim Pack 1.8a</strong></li>
+                        <li><strong>Optional File - Weapon Mesh Improvement Mod Patch 1.7</strong></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Includes three of Hitman's previous animation mods, <a href="https://www.nexusmods.com/newvegas/mods/67728" target="_blank">Subtle Camera Motion</a>, <a href="https://www.nexusmods.com/newvegas/mods/67760" target="_blank">Iron Sights Recoil Animations</a>, and <a href="https://www.nexusmods.com/newvegas/mods/67841" target="_blank">Fire Animation Variants</a>, as well as some new previously unreleased animations</p>
+            <a class="internallink" href="#improved_lod"><h2 class="smallheader" id="improved_lod"><a href="https://www.nexusmods.com/newvegas/mods/46451" target="_blank">Improved LOD Noise Texture</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><strong>Main File - Improved LOD noise Texture v1.00</strong></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Improves the generic LOD noise texture</p>
+            <a class="internallink" href="#yellow_goodbye"><h2 class="smallheader" id="yellow_goodbye"><a href="https://www.nexusmods.com/newvegas/mods/67277" target="_blank">Yellow Goodbye</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><strong>Main File - Standard Version 1.1</strong></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Removes the atmospheric yellow tint, while still keeping a very vanilla feel</p>
+            <a class="internallink" href="#alternatives"><h2 class="smallheader" id="alternatives">Alternative Weather Mods</h2></a>
+                <p class="subparagraph">
+                    As weather mods are very subjective, here is a list of the best alternatives to Yellow Goodbye.
+                    <a href="https://www.nexusmods.com/newvegas/mods/62481" target="_blank">Clarity</a> is what Yellow Goodbye is based on. It fully removes the tint rather than keeping a little bit of orange.
+                    <a href="https://www.nexusmods.com/newvegas/mods/70534" target="_blank">Realistic HDR Lighting</a> goes for a more "realistic" and bright feel, while still staying relatively vanilla-esque.
+                    Finally, there is <a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/master/Realistic%20Wasteland%20Lighting%20Redesigned.7z" target="_blank">Realistic Wasteland Lighting Redesigned</a>.
+                    It features a MCM where you can configure many aspects of it, along with overhauled interior lighting. As it is the most feature-advanced of the four, it may come with bugs and/or performance
+                    loss, so beware. <a href="https://imgur.com/a/Zlk5rRJ" target="_blank">Here</a> are some screenshots with it.
+                </p>
+                    
     </div>
     <div>
+        <br> <br>
         <hr>
-        <a class="arrows" href="./index.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
-        <a class="arrows" href="./visuals-choose.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
+        <br>
+        <a href="./hud.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
+        <a href="./gameplay.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
+        </div>
+    <div class="footer">
+        <div class="inner_footer">
+            <div class="footer_third">
+                <li><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://discord.gg/DhX5S27" target="_blank"><i class="fab fa-discord"></i></a></li>
+                <li><a href="https://www.patreon.com/vivanewvegas" target="_blank"><i class="fab fa-patreon"></i></a></li>
+                <li><a href="https://www.paypal.com/paypalme/qolore7" target="_blank"><i class="fab fa-paypal"></i></a></li>
+            </div>
+        </div>
     </div>
 </body>
-
-<script>
-        var acc = document.getElementsByClassName("accordioninstall");
-        var i;
-      
-        for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-      
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-              panel.style.display = "none";
-            } else {
-              panel.style.display = "block";
-            }
-          });
-        }
-</script>          
 </html>
