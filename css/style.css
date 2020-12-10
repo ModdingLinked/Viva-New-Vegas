@@ -285,6 +285,15 @@ body {
     word-wrap: break-word;
 }
 
+.subheader::before {
+    display: block; 
+    content: " "; 
+    margin-top: -200px; 
+    height: 200px; 
+    visibility: hidden; 
+    pointer-events: none;
+}
+
 .subparagraph {
     color:#DCDCDC;
     margin:0 12vw;
@@ -344,6 +353,10 @@ body {
 
 .internallink {
     text-decoration: none;
+}
+
+.internallink:hover {
+    cursor:text;
 }
 
 .blockquote {
@@ -407,6 +420,15 @@ body {
     padding-right: 15vw;
     font-size: calc(11px + .5vw);
     word-wrap: break-word;
+}
+
+.install::before {
+    display: block; 
+    content: " "; 
+    margin-top: -200px; 
+    height: 200px; 
+    visibility: hidden; 
+    pointer-events: none;
 }
 
 .imgsize {
