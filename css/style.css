@@ -437,3 +437,8 @@ body {
     object-fit:cover;
     object-position:50% 50%;
 }
+
+.codeblock {
+    background-color:rgb(52, 52, 54);
+    padding: 0px 5px;
+}
