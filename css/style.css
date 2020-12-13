@@ -137,6 +137,7 @@ body {
   
 .navbarli {
     float: right;
+    font-weight: bold;
 }
   
 .navbarli a {
@@ -340,6 +341,7 @@ body {
     color:#DCDCDC;
     font-size: calc(15px + .5vw);
     word-wrap: break-word;
+    line-height:1.75em;
 }
 
 .smallheader::before {
@@ -438,7 +440,23 @@ body {
     object-position:50% 50%;
 }
 
-.codeblock {
+code {
     background-color:rgb(52, 52, 54);
     padding: 0px 5px;
+}
+
+strong {
+    color:rgb(250, 173, 121);
+}
+
+.spoiler { 
+    color:rgb(31, 31, 31);
+    background-color:rgb(31, 31, 31);
+    padding: 0 5px;
+}
+  
+.spoiler:hover{
+    color:#DCDCDC;
+    background-color:rgb(52, 52, 54);
+    transition-duration: 300ms;
 }
