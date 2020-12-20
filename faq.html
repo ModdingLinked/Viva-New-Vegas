@@ -69,6 +69,7 @@ SOFTWARE.
                 <a href="./faq.html#game_fast"><span style="font-size:.9vw;">Game Too Fast</span></a>
                 <a href="./faq.html#dlc"><span style="font-size:.9vw;">No DLCs</span></a>
                 <a href="./faq.html#mo2_popup"><span style="font-size:.9vw;">MO2 Pop-Up</span></a>
+                <a href="./faq.html#ultrawide"><span style="font-size:.9vw;">Ultrawide</span></a>
             </ul>
     </div>
     <div>
@@ -90,6 +91,27 @@ SOFTWARE.
             </p>
         <a class="internallink" href="#mo2_popup"><p class="smallheader" id="mo2_popup"><b>Q: When installing multiple mods from the same page through MO2, should I select Merge, Rename, or Replace?</b></p></a>
             <p class="subparagraph">A: Read the <strong>Mod Installation Advice</strong> section from the <a href="./mo2.html#advice" target="_blank">MO2</a> page.</p>
+        <a class="internallink" href="#ultrawide"><p class="smallheader" id="ultrawide"><b>Q: What steps do I have to take to run the game in an ultrawide resolution?</b></p></a>
+            <ol class="standard_ol">
+                <li>Click the <img src="./img/mo2 ini.png" alt="mo2 ini button"> button at the top of MO2 and select <strong>INI Editor</strong></li>
+                <li>Select the <strong>FalloutCustom.ini</strong> tab</li>
+                    <ul>
+                        <li>Make sure you are in the <strong>FalloutCustom.ini</strong> tab and NOT the <strong>Custom.ini</strong> tab</li>
+                    </ul>
+                <li>Paste in the following:</li>
+                    <ul>
+                        <p class="smalllist">
+                            [Display] <br>
+                            iSize W=3440 <br>
+                            iSize H=1440
+                        </p>
+                        <li>Change the values to whatever resolution you want to play in</li>
+                    </ul>
+                <li>Save and exit</li>
+                <li>Right-click on <strong>lStewieAl's Tweaks Custom INI</strong> mod (from Bug Fixes/QOL) in the left pane of MO2 and select <strong>Open in Explorer</strong></li>
+                <li>Navigate to <code>nvse/plugins/</code> and open <strong>nvse_stewie_tweaks.ini</strong> in a text editor</li>
+                <li>Set <strong>bUltrawideSupport</strong> to <strong>1</strong></li>
+            </ol>
     </div>
     <div>
         <br> <br>
