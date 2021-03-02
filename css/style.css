@@ -51,6 +51,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 3.5vw;
+    text-shadow: 2px 2px 4px black;
 }
 
 .button {
