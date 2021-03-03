@@ -461,3 +461,34 @@ strong {
     background-color:rgb(52, 52, 54);
     transition-duration: 300ms;
 }
+
+.sidenavrightgameplay {
+    height: 100%;
+    width: 10%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    background-color: rgb(44, 44, 44);
+    padding-top: 5.5vw;
+}
+
+.sidenavrightgameplay a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.1vw;
+    color: #818181;
+    display: block;
+}
+
+.sidenavrightgameplay ul {
+    padding: 0px 0px 0px 13px;
+    font-size: 0vw;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+}
+
+.sidenavrightgameplay a:hover {
+    color: #DCDCDC;
+}
