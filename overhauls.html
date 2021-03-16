@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+MIT License
+
+Copyright (c) 2021 VivaNewVegas
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="https://vivanewvegas.github.io/img/logo.png">
+    <script src="https://kit.fontawesome.com/e15125fcf7.js" crossorigin="anonymous"></script>
+    <title>Overhauls | Viva New Vegas</title>
+    <meta name="description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied.">
+    <meta name="twitter:card" value="summary"> 
+    <meta property="og:title" content="Viva New Vegas" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://vivanewvegas.github.io/" />
+    <meta property="og:image" content="https://vivanewvegas.github.io/img/logo.png" />
+    <meta property="og:description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied." /> 
+</head>
+<body>
+    <div class="titlecontainer">
+        <a class="maintitle" href="./index.html"><img src="./img/logo.png" alt="logo"></img><h1>VIVA NEW VEGAS</h1></a>
+        <ul class="navbar">
+            <li class="navbarli"><a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a></li>
+            <li class="navbarli"><a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4</a></li>
+            <li class="navbarli"><a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition</a></li>
+        </ul>
+    </div>
+    <div class="sidenavleft">
+        <a href="./index.html">Home</a>
+        <a href="./intro.html">Introduction</a>
+        <a href="./setup.html">Initial Setup</a>
+        <a href="./mo2.html">MO2</a>
+        <a href="./utilities.html">Utilities</a>
+        <a href="./bugfix.html">Bug Fixes</a>
+        <a href="./hud.html">HUD/UI</a>
+        <a href="./visuals.html">Visuals</a>
+        <a href="./gameplay.html">Gameplay</a>
+        <a href="./overhauls.html"><span style="color:#DCDCDC">Overhauls</span></a>
+        <a href="./finish.html">Final Steps</a>
+        <a href="./appendix.html">Appendix</a>
+    </div>
+    <div class="sidenavrightgameplay">
+        <a href="./overhauls.html">Overhauls</a>
+            <ul>
+                <a href="./overhauls.html#separator"><span style="font-size:.8vw;">Separator</span></a>
+                <a href="./overhauls.html#more_jip"><span style="font-size:.8vw;">More JIP</span></a>
+                <a href="./overhauls.html#more_stewie"><span style="font-size:.8vw;">More Stewie's Tweaks</span></a>
+                <a href="./overhauls.html#complex_vendors"><span style="font-size:.8vw;">Complex Vendors</span></a>
+                <a href="./overhauls.html#jsue_ini"><span style="font-size:.8vw;">JSawyer INI</span></a>
+                <a href="./overhauls.html#ghouls"><span style="font-size:.8vw;">Better Ghouls</span></a>
+                <a href="./overhauls.html#unfound_loot"><span style="font-size:.8vw;">Unfound Loot</span></a>
+                <a href="./overhauls.html#economy"><span style="font-size:.8vw;">Economy Overhaul</span></a>
+                <a href="./overhauls.html#follower_formula"><span style="font-size:.8vw;">Follower Formula Redone</span></a>
+                <a href="./overhauls.html#better_cc"><span style="font-size:.8vw;">Better Character Creation</span></a>
+                <a href="./overhauls.html#tld"><span style="font-size:.8vw;">The Living Desert</span></a>
+                <a href="./overhauls.html#mtb"><span style="font-size:.8vw;">Mobile Truck Base</span></a>
+            </ul>
+    </div>
+    <div>
+        <h2 class="fullheader">
+           Overhauls
+        </h2>
+            <a class="internallink" href="#separator"><h2 class="smallheader" id="separator">Creating a Separator in MO2</h2></a>
+                <ol class="standard_ol">
+                    <li>Right-click anywhere in the left pane of MO2 and select <strong>All Mods -> Create Separator</strong></li>
+                    <li>Name the separator <strong>Overhauls</strong></li>
+                </ol>
+                <br>
+                <blockquote class="blockquote">
+                    This page contains mods that greatly overhaul the game to make it much more challenging yet rewarding. These mods are not recommended for a first playthrough of the game.
+                    It is especially important to read the descriptions of these mods (you should still read the description of every mod), so you know what has changed and how to use the new features.
+                </blockquote>
+            <a class="internallink" href="#more_jip"><h2 class="smallheader" id="more_jip">Enabling More Features in JIP LN</h2></a>
+                <ol class="standard_ol">
+                    <li>Right-click on <strong>JIP LN NVSE</strong> mod (from the <a href="./utilities.html#jip" target="_blank">Utilities</a> section) in the left pane of MO2 and select <strong>Open in Explorer</strong></li>
+                    <li>Navigate to <code>nvse/plugins/</code> and open <strong>jip_nvse.ini</strong> in a text editor</li>
+                    <li>Set <strong>bEnableFO3Repair</strong> to <strong>1</strong> (line 6)</li>
+                        <ul>
+                            <li>Enables Fallout 3-style repair in which weapons can only be repaired up to a condition % equal to your repair skill</li>
+                        </ul>
+                    <li>Set <strong>bNPCWeaponMods</strong> to <strong>1</strong> (line 72)</li>
+                        <ul>
+                            <li>Allows NPCs to use weapon attachments</li>
+                        </ul>
+                </ol>
+            <a class="internallink" href="#more_stewie"><h2 class="smallheader" id="more_stewie">Enabling More Features in lStewieAl's Tweaks</h2></a>
+                <ol class="standard_ol">
+                    <li>Right-click on <strong>lStewieAl's Tweaks Custom INI</strong> mod (from the <a href="./bugfix.html#custom_ini" target="_blank">Bug Fixes/QOL</a> section) in the left pane of MO2 and select <strong>Open in Explorer</strong></li>
+                    <li>Navigate to <code>nvse/plugins/</code> and open <strong>nvse_stewie_tweaks.ini</strong> in a text editor</li>
+                    <li>Use Ctrl+F to easily find and change the following options:</li>
+                    <li>Set <strong>bNoSkillTags</strong> to <strong>1</strong> </li>
+                        <ul>
+                            <li> Hides the [Speech], [Barter], etc. tags from dialogue skill checks</li>
+                        </ul>
+                    <li>Set <strong>bHideEnemyMarkers</strong> to <strong>1</strong></li>
+                        <ul>
+                            <li>Removes enemy markers from the compass unless they are shooting</li>
+                        </ul>
+                    <li>Set <strong>bNoGrabOwnedItems</strong> to <strong>1</strong></li>
+                        <ul>
+                            <li>Stops the player from z-grabbing (not stealing) items owned by NPCs</li>
+                        </ul>
+                    <li>Set <strong>bBarterCheckActorBuySellFlags</strong> to <strong>1</strong></li>
+                        <ul>
+                            <li>Makes vendors only buy/sell items related to their profession</li>
+                        </ul>
+                    <li>Set <strong>bLuckDoesntAffectGambling</strong> to <strong>1</strong></li>
+                        <ul>
+                            <li>Prevents your Luck skill from having an effect on gambling, making it less easy to cheese casinos</li>
+                        </ul>
+                </ol>
+            <a class="internallink" href="#complex_vendors"><h2 class="smallheader" id="complex_vendors"><a href="https://www.nexusmods.com/newvegas/mods/71512" target="_blank">Complex Vendors</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - Complex Vendors 1.0</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Made for use with the <strong>bBarterCheckActorBuySellFlags</strong> in lStewieAl's Tweaks, makes what certain vendors can/can't buy more sensible</p>
+            <a class="internallink" href="#jsue_ini"><h2 class="smallheader" id="jsue_ini"><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/main/JSawyer%20Ultimate%20Edition%20Custom%20INI.7z" target="_blank">JSawyer Ultimate Custom INI</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ol">
+                        <li>Download the mod using the download button pictured below</li>
+                        <li>Finish the install normally through MO2</li>
+                    </ul>
+                    <br>
+                    <p class="subparagraph"><img style="width:90%;" src="./img/js ini install.png" alt="JSUE Custom INI"></p>
+                <p class="subparagraph"> - Enables settings in the JSUE INI to make the game more difficult, mainly enabling the <b>Survival Mode</b> feature, which makes the player deal 1.5x more damage and enemies deal 2x more damage</p>
+            <blockquote class="blockquote">
+                With the previous two mods installed, it is highly recommended to play on <b>High</b> difficulty or lower.
+            </blockquote>
+        <a class="internallink" href="#ghouls"><h2 class="smallheader" id="ghouls"><a href="https://www.nexusmods.com/newvegas/mods/71101" target="_blank">Better Ghouls</a></h2></a>
+            <h2 class="install">Installation instructions:</h2>
+                <ul class="standard_ul">
+                    <li><b>Main File - Better Ghouls 1.1</b></li>
+                </ul>
+                <br>
+            <p class="subparagraph"> - Removes ghouls "roar" animation that plays before they attack, meaning they now charge the player instantly - making them much deadlier</p>
+            <a class="internallink" href="#unfound_loot"><h2 class="smallheader" id="unfound_loot"><a href="https://www.nexusmods.com/newvegas/mods/67655" target="_blank">Unfound Loot</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - Unfound Loot 1.0rc1</b></li>
+                        <li><b>Optional File - Unfound Loot INI 1.0b11</b></li>
+                    </ul>
+                    <blockquote class="blockquote">
+                        Upon starting the installation of the <strong>Unfound Loot INI</strong>, MO2 will give a warning about the mod not having valid game data.
+                        You can ignore this warning and proceed with the installation. Once the mod has been installed, right-click on it in the left pane
+                        of MO2 and select <strong>Ignore missing data</strong>.
+                    </blockquote>
+                <p class="subparagraph"> - Dynamically lowers the amount of loot in the game</p>
+            <a class="internallink" href="#economy"><h2 class="smallheader" id="economy"><a href="https://www.nexusmods.com/newvegas/mods/62899" target="_blank">Economy Overhaul</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - Economy Overhaul 3.0.2</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Overhauls the entire economy from the ground up, making buying/selling more difficult but more rewarding</p>
+            <a class="internallink" href="follower_formula"><h2 class="smallheader" id="follower_formula"><a href="https://www.nexusmods.com/newvegas/mods/71490" target="_blank">Follower Formula Redone</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - Follower Formula Redone 1.0</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Changes the amount of followers you can have to your charisma skill/two rounded down, instead of always being able to have two</p>
+                <blockquote class="blockquote">
+                    With this mod enabled, you will not be able to hire any followers if you have 1 Charisma.
+                </blockquote>
+            <a class="internallink" href="better_cc"><h2 class="smallheader" id="better_cc"><a href="https://www.nexusmods.com/newvegas/mods/70973" target="_blank">Better Character Creation</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - Better Character Creation 1.6</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Improves the character creation by speeding up the process, adding specialized gear based on your tag skills, and making Wild Wasteland an opt-in feature rather than a trait</p>
+            <a class="internallink" href="tld"><h2 class="smallheader" id="tld"><a href="https://www.nexusmods.com/newvegas/mods/64623" target="_blank">The Living Desert</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - The Living Desert - Main File 1.67</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Adds hundreds of new NPCs and scripted events that make the world feel much more alive and reactive</p>
+                <blockquote class="blockquote">
+                    Because of all the new NPCs/scripts this mod adds, it can be somewhat performance-intensive in some areas, especially on lower-end systems.
+                    If you have a weaker PC, you may want to skip this mod.
+                </blockquote>
+            <a class="internallink" href="mtb"><h2 class="smallheader" id="mtb"><a href="https://www.nexusmods.com/newvegas/mods/71536" target="_blank">Mobile Truck Base Remastered</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - Mobile Truck Base Remastered 1.2</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Adds a vanilla-friendly new player home and fast-travel method</p>
+    </div> 
+    <div>
+        <br> <br>
+        <hr>
+        <br>
+        <a href="./gameplay.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
+        <a href="./finish.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
+        </div>
+    <div class="footer">
+        <div class="inner_footer">
+            <div class="footer_third">
+                <li><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://discord.gg/DhX5S27" target="_blank"><i class="fab fa-discord"></i></a></li>
+                <li><a href="https://www.patreon.com/vivanewvegas" target="_blank"><i class="fab fa-patreon"></i></a></li>
+                <li><a href="https://www.paypal.com/paypalme/qolore7" target="_blank"><i class="fab fa-paypal"></i></a></li>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -58,6 +58,7 @@ SOFTWARE.
         <a href="./hud.html">HUD/UI</a>
         <a href="./visuals.html">Visuals</a>
         <a href="./gameplay.html"><span style="color:#DCDCDC">Gameplay</span></a>
+        <a href="./overhauls.html">Overhauls</a>
         <a href="./finish.html">Final Steps</a>
         <a href="./appendix.html">Appendix</a>
     </div>
@@ -65,14 +66,8 @@ SOFTWARE.
         <a href="./gameplay.html">Gameplay</a>
             <ul>
                 <a href="./gameplay.html#separator"><span style="font-size:.8vw;">Separator</span></a>
-                <a href="./gameplay.html#more_jip"><span style="font-size:.8vw;">More JIP</span></a>
-                <a href="./gameplay.html#more_stewie"><span style="font-size:.8vw;">More Stewie's Tweaks</span></a>
                 <a href="./gameplay.html#jsawyer"><span style="font-size:.8vw;">JSawyer</span></a>
-                <a href="./gameplay.html#jsue_ini"><span style="font-size:.8vw;">JSawyer INI</span></a>
-                <a href="./gameplay.html#unfound_loot"><span style="font-size:.8vw;">Unfound Loot</span></a>
-                <a href="./gameplay.html#fo3_economy"><span style="font-size:.8vw;">F3 Economy</span></a>
                 <a href="./gameplay.html#follower_tweaks"><span style="font-size:.8vw;">Follower Tweaks</span></a>
-                <a href="./gameplay.html#follower_formula"><span style="font-size:.8vw;">Follower Formula Redone</span></a>
                 <a href="./gameplay.html#gra_relocated"><span style="font-size:.8vw;">GRA Relocated</span></a>
                 <a href="./gameplay.html#jlm"><span style="font-size:.8vw;">Just Loot Menu</span></a>
                 <a href="./gameplay.html#jdc"><span style="font-size:.8vw;">Just Dynamic Crosshair</span></a>
@@ -80,6 +75,7 @@ SOFTWARE.
                 <a href="./gameplay.html#marathoner"><span style="font-size:.8vw;">Marathoner</span></a>
                 <a href="./gameplay.html#recoil"><span style="font-size:.8vw;">Real Recoil</span></a>
                 <a href="./gameplay.html#recoil_ini"><span style="font-size:.8vw;">Real Recoil INI</span></a>
+                <a href="./gameplay.html#uncut"><span style="font-size:.8vw;">Uncut Wasteland</span></a>
             </ul>
     </div>
     <div>
@@ -93,39 +89,10 @@ SOFTWARE.
                 </ol>
                 <br>
                 <blockquote class="blockquote">
-                    It is especially important to read the descriptions of these mods (you should still read the description of every mod), so you know what has changed and how to use the new features.
+                    This step contains only mods that improve the gameplay without making drastic changes or making the game much more difficult. 
+                    These mods are fully recommended for a first-time playthrough.
+                    The next step will contain "overhaul" mods that make the game much harder and more interesting, but are not recommended for a first playthrough.
                 </blockquote>
-            <a class="internallink" href="#more_jip"><h2 class="smallheader" id="more_jip">Enabling More Features in JIP LN</h2></a>
-                <ol class="standard_ol">
-                    <li>Right-click on <strong>JIP LN NVSE</strong> mod (from the <a href="./utilities.html#jip" target="_blank">Utilities</a> section) in the left pane of MO2 and select <strong>Open in Explorer</strong></li>
-                    <li>Navigate to <code>nvse/plugins/</code> and open <strong>jip_nvse.ini</strong> in a text editor</li>
-                    <li>Set <strong>bEnableFO3Repair</strong> to <strong>1</strong> (line 6)</li>
-                        <ul>
-                            <li>Enables Fallout 3-style repair in which weapons can only be repaired up to a condition % equal to your repair skill</li>
-                        </ul>
-                    <li>Set <strong>bNPCWeaponMods</strong> to <strong>1</strong> (line 72)</li>
-                        <ul>
-                            <li>Allows NPCs to use weapon attachments</li>
-                        </ul>
-                </ol>
-            <a class="internallink" href="#more_stewie"><h2 class="smallheader" id="more_stewie">Enabling More Features in lStewieAl's Tweaks</h2></a>
-                <ol class="standard_ol">
-                    <li>Right-click on <strong>lStewieAl's Tweaks Custom INI</strong> mod (from the <a href="./bugfix.html#custom_ini" target="_blank">Bug Fixes/QOL</a> section) in the left pane of MO2 and select <strong>Open in Explorer</strong></li>
-                    <li>Navigate to <code>nvse/plugins/</code> and open <strong>nvse_stewie_tweaks.ini</strong> in a text editor</li>
-                    <li>Use Ctrl+F to easily find and change the following options:</li>
-                    <li>Set <strong>bNoSkillTags</strong> to <strong>1</strong> </li>
-                        <ul>
-                            <li> Hides the [Speech], [Barter], etc. tags from dialogue skill checks</li>
-                        </ul>
-                    <li>Set <strong>bHideEnemyMarkers</strong> to <strong>1</strong></li>
-                        <ul>
-                            <li>Removes enemy markers from the compass unless they are shooting</li>
-                        </ul>
-                    <li>Set <strong>bNoGrabOwnedItems</strong> to <strong>1</strong></li>
-                        <ul>
-                            <li>Stops the player from z-grabbing (not stealing) items owned by NPCs</li>
-                        </ul>
-                </ol>
             <a class="internallink" href="#jsawyer"><h2 class="smallheader" id="jsawyer"><a href="https://www.nexusmods.com/newvegas/mods/61592" target="_blank">JSawyer Ultimate Edition</a></h2></a>
                 <h2 class="install">Installation instructions:</h2> 
                     <ul class="standard_ul">
@@ -134,37 +101,6 @@ SOFTWARE.
                     </ul>
                     <br>
                 <p class="subparagraph"> - An updated and fixed version of the gameplay re-balance mod made by the lead director of the game, Josh Sawyer</p>
-            <a class="internallink" href="#jsue_ini"><h2 class="smallheader" id="jsue_ini"><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/main/JSawyer%20Ultimate%20Edition%20Custom%20INI.7z" target="_blank">JSawyer Ultimate Custom INI</a></h2></a>
-                <h2 class="install">Installation instructions:</h2>
-                    <ul class="standard_ol">
-                        <li>Download the mod using the download button pictured below</li>
-                        <li>Finish the install normally through MO2</li>
-                    </ul>
-                    <br>
-                    <p class="subparagraph"><img style="width:90%;" src="./img/js ini install.png" alt="JSUE Custom INI"></p>
-                <p class="subparagraph"> - Enables settings in the JSUE INI to make the game more difficult, mainly enabling the <b>Survival Mode</b> feature, which makes the player deal 1.5x more damage and enemies deal 2x more damage</p>
-            <blockquote class="blockquote">
-                With the previous two mods installed, it is highly recommended to play on <b>High</b> difficulty or lower.
-            </blockquote>
-            <a class="internallink" href="#unfound_loot"><h2 class="smallheader" id="unfound_loot"><a href="https://www.nexusmods.com/newvegas/mods/67655" target="_blank">Unfound Loot</a></h2></a>
-                <h2 class="install">Installation instructions:</h2>
-                    <ul class="standard_ul">
-                        <li><b>Main File - Unfound Loot 1.0rc1</b></li>
-                        <li><b>Optional File - Unfound Loot INI 1.0b11</b></li>
-                    </ul>
-                    <blockquote class="blockquote">
-                        Upon starting the installation of the <strong>Unfound Loot INI</strong>, MO2 will give a warning about the mod not having valid game data.
-                        You can ignore this warning and proceed with the installation. Once the mod has been installed, right-click on it in the left pane
-                        of MO2 and select <strong>Ignore missing data</strong>.
-                    </blockquote>
-                <p class="subparagraph"> - Dynamically lowers the amount of loot in the game</p>
-            <a class="internallink" href="#fo3_economy"><h2 class="smallheader" id="fo3_economy"><a href="https://www.nexusmods.com/newvegas/mods/67919" target="_blank">Fallout 3 Economy</a></h2></a>
-                <h2 class="install">Installation instructions:</h2>
-                    <ul class="standard_ul">
-                        <li><b>Main File - Fallout 3 Economy 2.0.0</b></li>
-                    </ul>
-                    <br>
-                <p class="subparagraph"> - Overhauls item values to be similar to Fallout 3's much tougher economy</p>
             <a class="internallink" href="#follower_tweaks"><h2 class="smallheader" id="follower_tweaks"><a href="https://www.nexusmods.com/newvegas/mods/62180" target="_blank">Follower Tweaks</a></h2></a>
                 <h2 class="install">Installation instructions:</h2>
                     <ul class="standard_ul">
@@ -172,16 +108,6 @@ SOFTWARE.
                     </ul>
                     <br>
                 <p class="subparagraph"> - Reworks Boone, Ed-E, and Rexes' companion perks to be less intrusive/annoying</p>
-            <a class="internallink" href="follower_formula"><h2 class="smallheader" id="follower_formula"><a href="https://www.nexusmods.com/newvegas/mods/71490" target="_blank">Follower Formula Redone</a></h2></a>
-                <h2 class="install">Installation instructions:</h2>
-                    <ul class="standard_ul">
-                        <li><b>Main File - Follower Formula Redone 1.0</b></li>
-                    </ul>
-                    <br>
-                <p class="subparagraph"> - Changes the amount of followers you can have to your charisma skill/two rounded down, instead of always being able to have two</p>
-                <blockquote class="blockquote">
-                    With this mod enabled, you will not be able to hire any followers if you have 1 Charisma.
-                </blockquote>
             <a class="internallink" href="#gra_relocated"><h2 class="smallheader" id="gra_relocated"><a href="https://www.nexusmods.com/newvegas/mods/68153" target="_blank">GRA Unique Weapons Relocated</a></h2></a>
                 <h2 class="install">Installation instructions:</h2>
                     <ul class="standard_ul">
@@ -238,13 +164,20 @@ SOFTWARE.
                     <br>
                     <p class="subparagraph"><img style="width:90%;" src="./img/recoil ini install.png" alt="real recoil INI install"></p>
                 <p class="subparagraph"> - Fixes downward recoil and adds support for JSawyer Ultimate Edition</p>
+            <a class="internallink" href="uncut"><h2 class="smallheader" id="uncut"><a href="https://www.nexusmods.com/newvegas/mods/56625" target="_blank">Uncut Wasteland</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - Uncut Wasteland plus NPCs. 0.91b</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Restores many pieces of cut scenery and a few NPCs that were cut because of console limitations</p>
     </div>
     <div>
         <br> <br>
         <hr>
         <br>
         <a href="./hud.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
-        <a href="./finish.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
+        <a href="./overhauls.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
         </div>
     <div class="footer">
         <div class="inner_footer">
