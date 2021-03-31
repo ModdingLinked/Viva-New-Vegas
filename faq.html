@@ -74,6 +74,7 @@ SOFTWARE.
                 <a href="./faq.html#mo2_overwrite"><span style="font-size:.8vw;">MO2 Overwrite Folder</span></a>
                 <a href="./faq.html#app_error"><span style="font-size:.8vw;">Application Load Error</span></a>
                 <a href="./faq.html#broken_lod"><span style="font-size:.8vw;">Broken LOD</span></a>
+                <a href="./faq.html#bouncing_npcs"><span style="font-size:.8vw;">Bouncing NPCs</span></a>
                 <a href="./faq.html#ultrawide"><span style="font-size:.8vw;">Ultrawide</span></a>
             </ul>
     </div>
@@ -112,6 +113,26 @@ SOFTWARE.
                                     of your mods in the left pane is the exact same as they appear in the guide. If it still happens with a proper mod order, then you installed 
                                     a texture mod that is incompatible with the LOD (such as NMCs Texture Pack) and you need to uninstall Vanilla LOD.
             </p>
+        <a class="internallink" href="#bouncing_npcs"><p class="smallheader" id="bouncing_npcs"><b>Q: How do I fix NPCs "bouncing" when playing above 60 FPS?</b></p></a>
+            <ol class="standard_ol">
+                <li>Click the <img src="./img/mo2 ini.png" alt="mo2 ini button"> button at the top of MO2 and select <strong>INI Editor</strong></li>
+                <li>Select the <strong>FalloutCustom.ini</strong> tab</li>
+                    <ul>
+                        <li>Make sure you are in the <strong>FalloutCustom.ini</strong> tab and NOT the <strong>Custom.ini</strong> tab</li>
+                    </ul>
+                <li>Paste in the following:</li>
+                    <ul>
+                        <p class="smalllist">
+                            [FootIK] <br>
+                            fOnOffGain=0.01 <br>
+                            bFootPlacementOn=0 <br>
+                            fPelvisUpDownBias=0 <br>
+                            fPelvisOffsetDamping=0 <br>
+                            fOriginalGroundHeightMS=0 <br>                          
+                        </p>
+                    </ul>
+                <li>Save and exit</li>
+            </ol>
         <a class="internallink" href="#ultrawide"><p class="smallheader" id="ultrawide"><b>Q: What steps do I have to take to run the game in an ultrawide resolution?</b></p></a>
             <ol class="standard_ol">
                 <li>Click the <img src="./img/mo2 ini.png" alt="mo2 ini button"> button at the top of MO2 and select <strong>INI Editor</strong></li>
