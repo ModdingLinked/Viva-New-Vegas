@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+MIT License
+
+Copyright (c) 2021 VivaNewVegas
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="https://vivanewvegas.github.io/img/logo.png">
+    <script src="https://kit.fontawesome.com/e15125fcf7.js" crossorigin="anonymous"></script>
+    <title>LOD Guide | Viva New Vegas</title>
+    <meta name="description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied.">
+    <meta name="twitter:card" value="summary"> 
+    <meta property="og:title" content="Viva New Vegas" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://vivanewvegas.github.io/" />
+    <meta property="og:image" content="https://vivanewvegas.github.io/img/logo.png" />
+    <meta property="og:description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied." /> 
+</head>
+<body>
+    <div class="titlecontainer">
+        <a class="maintitle" href="./index.html"><img src="./img/logo.png" alt="logo"></img><h1>VIVA NEW VEGAS</h1></a>
+        <ul class="navbar">
+            <li class="navbarli"><a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a></li>
+            <li class="navbarli"><a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4</a></li>
+            <li class="navbarli"><a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition</a></li>
+        </ul>
+    </div>
+    <div class="sidenavleft">
+        <a href="./index.html">Home</a>
+        <a href="./intro.html">Introduction</a>
+        <a href="./setup.html">Initial Setup</a>
+        <a href="./mo2.html">MO2</a>
+        <a href="./utilities.html">Utilities</a>
+        <a href="./bugfix.html">Bug Fixes</a>
+        <a href="./hud.html">HUD/UI</a>
+        <a href="./visuals.html">Visuals</a>
+        <a href="./gameplay.html">Gameplay</a>
+        <a href="./overhauls.html">Overhauls</a>
+        <a href="./finish.html">Final Steps</a>
+        <a href="./appendix.html">Appendix</a>
+        <a href="./resources.html">Resources</a>
+        <a href="./avoid-tools.html"><span style="color:#DCDCDC">LOD Guide</span></a>
+    </div>
+    <div class="sidenavright">
+        <a href="./lod.html">LOD</a>
+            <ul>
+               <a href="./lod.html#installing_lodgen" span style="font-size:.9vw;">Installing FNVLODGen</a>
+               <a href="./lod.html#installing_resources" span style="font-size:.9vw;">Installing Resources</a>
+               <a href="./lod.html#running_lodgen" span style="font-size:.9vw;">Running FNVLODGen</a>
+            </ul>
+    </div>
+    <div>
+        <h2 class="fullheader">
+            LOD Generating Guide
+        </h2>
+        <p class="subparagraph">
+            Before getting started, there are a few things you should know. First, you do not need to generate LOD if you just followed the guide. 
+            The <a href="./visuals.html#generated_lod" target="_blank">Vanilla LOD</a> mod in the guide is essentially the same as what these instructions accomplish. 
+            These instructions are only for if you installed texture mods (such as NMCs or Poco Bueno) or are using a mod that requires LOD to be generated (like MoreMojave).
+            Second, there are two versions of LODGen available: <a href="https://www.nexusmods.com/newvegas/mods/58562" target="_blank">FNVLODGen</a> and
+            <a href="https://stepmodifications.org/forum/topic/13451-xlodgen-terrain-lod-beta-76-for-fnv-fo3-fo4-fo4vr-tes5-sse-tes5vr-enderal-enderalse/" target="_blank">xLODGen</a>.
+            xLODGen is the newer (and more experimental) version, and includes the option to generate terrain LOD. However, I don't recommended generating terrain LOD unless
+            you use a mod that requires it (and the only mod that I can think of that requires terrain LOD is MoreMojave, which now includes pre-generated terrain LOD for use with vanilla textures).
+            Terrain LOD creates a much larger file size (+500mb) and potential performance loss for a very minimal visual improvement. Therefore, this guide will focus only on generating 
+            object LOD with FNVLODGen. If you need to generate xLODGen terrain LOD for whatever reason, the instructions will be the exact same except you will need to enable <b>Terrain LOD</b>
+            option in the program.
+        </p>
+        <a class="internallink" href="#installing_lodgen"><h2 class="subheader" id="installing_lodgen">Installing FNVLODGen:</h2></a>
+            <ol class="standard_ol">
+                <li>Download the <strong>Main File - FNVLODGen 3.2.1</strong> file from <a href="https://www.nexusmods.com/newvegas/mods/58562" target="_blank">here</a></li>
+                <li>Once the download has finished, extract the contents of the archive to any location outside of any default Window folders</li>
+                <li>Once the files have been extracted, open Mod Organizer 2, click the <img style="width:2%" src="./img/mo2 folders.png" alt="mo2 folders"> button at the top of MO2 and select <strong>Open Mods folder</strong></li>
+                <li>There, create a folder named <strong>FNVLODGen Output</strong></li>
+                <li>Back in MO2, select the <img src="./img/mo2 executabes.png" alt="mo2 executables"> button at the top of MO2 to open the executables menu</li>
+                <li>Click the <strong style="color:rgb(20, 162, 228)">+</strong> at the top of the window and the select <strong>Add from file...</strong></li>
+                <li>From the pop-up, navigate to where FNVLODGen is installed and select <strong>FNVLODGen.exe</strong></li>
+                <li>Select <strong>Apply</strong> then <strong>OK</strong></li>
+            </ol>
+        <a class="internallink" href="#installing_resources"><h2 class="subheader" id="installing_resources">Installing LOD Resources:</h2></a>
+            <p class="subparagraph">
+                All of the following mods should be installed normally through Mod Organizer 2. However you need to delete the <strong>.esp</strong> files from the mods if present.
+                A merged/fixed ESP will be provided at the end.
+            </p>
+            <br>
+            <ul class="standard_ul">
+                <li><a href="https://www.nexusmods.com/newvegas/mods/58562" target="_blank">FNVLODGen</a> - <b>Main File- FNVLODGen Resources 1.1</b></li>
+                <li><a href="https://www.nexusmods.com/newvegas/mods/61206" target="_blank">LOD Additions and Improvements</a> - <b>Main File - LODadditions 1.07</b></li>
+                <li><a href="https://www.nexusmods.com/newvegas/mods/63956" target="_blank">Less Horrendous Vikki and Vance Casino LOD Mesh</a> - <b>Main File - Less Horrendous Vikki and Vance Casino LOD 0.2</b></li>
+                <li>Only if you use NMCs Texture Pack: <a href="https://www.nexusmods.com/newvegas/mods/64698" target="_blank">NMC-Beuno LOD Texture Patch</a> - <b>Main File - NMC LOD Patch 0.4</b></li>
+                    <ul>
+                        <li>If you have Poco Bueno overwriting NMCs, also install the <b>Optional File - FNV Poco LOD Texture Patch 0.1a</b></li>
+                    </ul>
+                <li>Only if you use Poco Bueno overwriting NMCs: <a href="https://www.nexusmods.com/newvegas/mods/70155" target="_blank">TCM's LOD Overhaul</a> - <b>Main File - TCM's LOD Overhaul 1.0</b></li>
+            </ul>
+        <a class="internallink" href="#running_lodgen"><h2 class="subheader" id="running_lodgen">Running FNVLODGen:</h2></a>
+            <ol class="standard_ol">
+                <li>Select FNVLODGen from the executables drop-down in the top right of MO2 and click <b>Run</b></li>
+                <li>Once the program has loaded, right-click in the left pane and click <strong><u>S</u>elect All</strong></li>
+                <li>In the right pane, check <strong>Objects LOD</strong> but leave <strong>Trees LOD</strong> unchecked</li>
+            </ol>
+            <blockquote class="blockquote">
+                Tree LOD is not functional in New Vegas. LOD for trees is covered in Object LOD.
+            </blockquote>
+            <ol class="standard_ol" start="4">
+                <li>Under the <strong>Objects LOD</strong> section, change the <strong>Atlas size</strong> option to <strong>4096 </strong> x <strong> 4096</strong></li>
+                <li>Select <strong>Generate</strong></li>
+                <li>Wait for the message <strong>LOD Generator: finished (you can close this application now)</strong> to appear (should take under 15 minutes depending on your CPU), then close out of the program</li>
+                <li>Back in MO2, right-click on the <strong><i>Overwrite</i></strong> mod at the bottom of MO2 and select <strong>Move content to Mod...</strong></li>
+                <li>From the pop-up, select the <strong>FNVLODGen Output</strong> mod you created (you may need to refresh MO2 for this option to appear) then <strong>OK</strong></li>
+                <li>Enable the mod in the left pane of MO2</li>
+                <li>Download and install the <a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/main/Merged%20LOD%20Plugin.7z" target="_blank">Merged LOD Plugin</a> from here</li>
+            </ol>
+    </div>
+    <div class="footer">
+        <div class="inner_footer">
+            <div class="footer_third">
+                <li><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://discord.gg/DhX5S27" target="_blank"><i class="fab fa-discord"></i></a></li>
+                <li><a href="https://www.patreon.com/vivanewvegas" target="_blank"><i class="fab fa-patreon"></i></a></li>
+                <li><a href="https://www.paypal.com/paypalme/qolore7" target="_blank"><i class="fab fa-paypal"></i></a></li>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
