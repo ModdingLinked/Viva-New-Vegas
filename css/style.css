@@ -86,7 +86,7 @@ body {
 
 .footerindex {
     padding: 20px 0;
-    position: absolute; 
+    position: absolute;
     bottom: 0;
 }
 
@@ -95,7 +95,7 @@ body {
     margin: 0 auto;
     width: 1100px;
     height: 100%;
-    position: absolute; 
+    position: absolute;
     bottom: 0;
 }
 
@@ -122,7 +122,7 @@ body {
 .footer {
     z-index: 3;
     padding: 20px 0;
-    position: relative; 
+    position: relative;
     bottom: 0;
 }
 
@@ -135,18 +135,18 @@ body {
     top: 0;
     width: 100%;
 }
-  
+
 .navbarli {
     float: right;
     font-weight: bold;
 }
-  
+
 .navbarli a {
     display: block;
     color:#707070;
     text-align: center;
     padding:1em;
-    font-size: .9vw;
+    font-size: .75vw;
     text-decoration: none;
 }
 
@@ -163,7 +163,7 @@ body {
     z-index: 3;
     top: 0;
     width: 100%;
-    height: 9%;
+    height: 8%;
     background-color: rgb(26, 26, 26);
 }
 
@@ -179,9 +179,9 @@ body {
 }
 
 .sidenavleft a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 20px;
     text-decoration: none;
-    font-size: 1.2vw;
+    font-size: 1vw;
     color: #818181;
     display: block;
 }
@@ -202,15 +202,15 @@ body {
 }
 
 .sidenavright a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 20px;
     text-decoration: none;
-    font-size: 1.2vw;
+    font-size: 1vw;
     color: #818181;
     display: block;
 }
 
 .sidenavright ul {
-    padding: 0px 0px 0px 13px;
+    padding: 0px 0px 0px 17px;
     font-size: 0vw;
     text-decoration: none;
     color: #818181;
@@ -237,7 +237,7 @@ body {
     padding:0;
     overflow: hidden;
     position: fixed;
-    font-size: 1.3vw;
+    font-size: 1vw;
     top: 3%;
     left: 4%;
     transform: translate(-1.25%, -4%);
@@ -246,7 +246,7 @@ body {
 .maintitle img {
     width:2%;
     position: fixed;
-    top: 2%;
+    top: 1.35%;
     left: 1%;
     z-index: 4;
     transform: translate(-3%, -1%);
@@ -263,12 +263,12 @@ body {
 }
 
 .fullheader {
-    margin-top:6.5vw;
+    margin-top:6vw;
     margin-right: 12vw;
     margin-left: 12vw;
     color:orange;
-    font-size: calc(25px + 1.2vw);
-    word-wrap: break-word;
+    font-size: calc(22.5px + 1vw);
+    word-wrap: breakword;
 }
 
 .fullheader p {
@@ -281,18 +281,18 @@ body {
 }
 
 .subheader {
-    margin: 2vw 12vw;
+    margin: 1.35vw 12vw;
     color:#DCDCDC;
-    font-size: calc(10px + 1.2vw);
+    font-size: calc(10px + 1vw);
     word-wrap: break-word;
 }
 
 .subheader::before {
-    display: block; 
-    content: " "; 
-    margin-top: -200px; 
-    height: 200px; 
-    visibility: hidden; 
+    display: block;
+    content: " ";
+    margin-top: -200px;
+    height: 200px;
+    visibility: hidden;
     pointer-events: none;
 }
 
@@ -300,7 +300,7 @@ body {
     color:#DCDCDC;
     margin:0 12vw;
     padding-right: 15vw;
-    font-size: calc(10px + .5vw);
+    font-size: calc(10px + .45vw);
     line-height:1.75em;
 }
 
@@ -311,7 +311,7 @@ body {
 .subparagraph a {
     color:rgb(51, 122, 183);
     text-decoration: none;
-    font-size: calc(10px + .5vw);
+    font-size: calc(10px + .45vw);
 }
 
 .subparagraph a:hover {
@@ -322,14 +322,18 @@ body {
     color:#DCDCDC;
     margin:0 12vw;
     padding-right: 15vw;
-    font-size: calc(10px + .5vw);
+    font-size: calc(10px + .45vw);
     line-height:1.75em;
+}
+
+.standard_ul li {
+  padding: .2vw;
 }
 
 .standard_ul a {
     color:rgb(51, 122, 183);
     text-decoration: none;
-    font-size: calc(10px + .5vw);
+    font-size: calc(10px + .45vw);
 }
 
 .standard_ul a:hover {
@@ -338,19 +342,19 @@ body {
 
 .smallheader {
     margin: 1vw 12vw;
-    margin-top:2vw;
+    margin-top:1.4vw;
     color:#DCDCDC;
-    font-size: calc(15px + .5vw);
+    font-size: calc(15px + .45vw);
     word-wrap: break-word;
     line-height:1.75em;
 }
 
 .smallheader::before {
-    display: block; 
-    content: " "; 
-    margin-top: -200px; 
-    height: 200px; 
-    visibility: hidden; 
+    display: block;
+    content: " ";
+    margin-top: -200px;
+    height: 200px;
+    visibility: hidden;
     pointer-events: none;
 }
 
@@ -365,7 +369,7 @@ body {
 .blockquote {
     color:#DCDCDC;
     background-color: rgb(52, 52, 54);
-    font-size: calc(8px + .5vw);
+    font-size: calc(10px + .3vw);
     border-left: 6px solid rgb(218, 124, 3);
     padding: 0 10px;
     margin-left: 12vw;
@@ -376,7 +380,7 @@ body {
 .blockquote a {
     color:rgb(51, 122, 183);
     text-decoration: none;
-    font-size: calc(8px + .5vw);
+    font-size: calc(10px + .3vw);
 }
 
 .blockquote a:hover {
@@ -387,14 +391,18 @@ body {
     color:#DCDCDC;
     margin:0 12vw;
     padding-right: 15vw;
-    font-size: calc(10px + .5vw);
+    font-size: calc(10px + .45vw);
     line-height:1.75em;
+}
+
+.standard_ol li {
+  padding: .2vw;
 }
 
 .standard_ol a {
     color:rgb(51, 122, 183);
     text-decoration: none;
-    font-size: calc(10px + .5vw);
+    font-size: calc(10px + .45vw);
 }
 
 .standard_ol a:hover {
@@ -402,7 +410,7 @@ body {
 }
 
 .smalllist {
-    font-size: 1vw;
+    font-size: .75vw;
     line-height: 1.3em;
 }
 
@@ -426,11 +434,11 @@ body {
 }
 
 .install::before {
-    display: block; 
-    content: " "; 
-    margin-top: -200px; 
-    height: 200px; 
-    visibility: hidden; 
+    display: block;
+    content: " ";
+    margin-top: -200px;
+    height: 200px;
+    visibility: hidden;
     pointer-events: none;
 }
 
@@ -450,12 +458,12 @@ strong {
     color:rgb(250, 173, 121);
 }
 
-.spoiler { 
+.spoiler {
     color:rgb(31, 31, 31);
     background-color:rgb(31, 31, 31);
     padding: 0 5px;
 }
-  
+
 .spoiler:hover{
     color:#DCDCDC;
     background-color:rgb(52, 52, 54);
