@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- 
+<!--
 MIT License
 
 Copyright (c) 2021 VivaNewVegas
@@ -31,13 +31,13 @@ SOFTWARE.
     <link rel="icon" href="https://vivanewvegas.github.io/img/logo.png">
     <script src="https://kit.fontawesome.com/e15125fcf7.js" crossorigin="anonymous"></script>
     <title>Mods to Avoid | Viva New Vegas</title>
-    <meta name="description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied.">
-    <meta name="twitter:card" value="summary"> 
+    <meta name="description" content="List of many popular mods that are outdated/broken.">
+    <meta name="twitter:card" value="summary">
     <meta property="og:title" content="Viva New Vegas" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://vivanewvegas.github.io/" />
     <meta property="og:image" content="https://vivanewvegas.github.io/img/logo.png" />
-    <meta property="og:description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied." /> 
+    <meta property="og:description" content="List of many popular mods that are outdated/broken." />
 </head>
 <body>
     <div class="titlecontainer">
@@ -86,43 +86,41 @@ SOFTWARE.
             <br>
             <p class="subparagraph"><strong>ENBoost:</strong> New Vegas Tick Fix has much better memory management than ENBoost, and will increase performance/decrease stuttering more. ENBoost also needs a lot of system-specific configuration to work properly and can degrade performance without proper tweaking.</p>
             <br>
-            <p class="subparagraph"><strong>Zan AutoPurge Crash Protector/PCB Hotkey:</strong> Unsafe/unstable, same function is performed safely by the .INI tweaks in the guide.</p>
+            <p class="subparagraph"><strong>Zan AutoPurge Crash Protector/PCB Hotkey:</strong> Same function is performed safely by the .INI tweaks in the guide.</p>
             <br>
-            <p class="subparagraph"><strong>Save Cleaner:</strong> Saves have not been reversed engineered like in Skyrim, this will break your save.</p>
+            <p class="subparagraph"><strong>Save Cleaner:</strong> Works by going through your save file and deleting every REFR file, which will most likely break your save.</p>
             <br>
-            <p class="subparagraph"><strong>Performance of the Gods (or pretty much all mods with "Performance" in the title):</strong> Performance gain is placebo, disabling small clutter items with less than 5 polygons won't do anything. Also potentially dangerous if they mark the records as <b>Deleted</b> rather than <b>Initially Disabled</b>.</p>
+            <p class="subparagraph"><strong>Performance of the Gods (or pretty much all mods with "Performance" in the title):</strong> Performance gain is usually placebo, disabling small clutter items with less than five polygons won't do anything.
+               Also potentially dangerous if they mark the records as <b>Deleted</b> rather than <b>Initially Disabled</b>, as the game can crash if a script tries to reference a deleted object.</p>
         <a class="internallink" href="#bugfixes_avoid"><h2 class="smallheader" id="bugfixes_avoid">Bug Fixes to Avoid:</h2></a>
             <p class="subparagraph"><strong>Mission Mojave:</strong> Heavily outdated compared to <a href="https://www.nexusmods.com/newvegas/mods/51664" target="_blank">Yukichigai Unofficial Patch</a>, will break more than it fixes and cause crashing.</p>
-            <br>
-            <p class="subparagraph"><strong>Old single bug fix mods, such Reload Game Start Fix:</strong> In most cases, these fixes are included in either Yukichigai Unofficial Patch, Unofficial Patch NVSE, or lStewieAl's Tweaks, and if they are not it is most likely because of poor implementation of the fix on the mod's end and/or the thing the mod fixes not actually being considered a bug.</p>
         <a class="internallink" href="#visuals_avoid"><h2 class="smallheader" id="visuals_avoid">Visual Mods to Avoid:</h2></a>
-            <p class="subparagraph"><strong>ENB:</strong> ENBs were never fully developed for New Vegas like they were for Skyrim/Fallout 4. They have a ton of bugs and performance issues, such as broken Anti-aliasing and objects becoming transparent. They also use a lot of vision-obscuring effects like depth of field, lens flares, bloom, and chromatic aberration to obscure the broken Anti-aliasing, which makes hem very hard to play with. They are also incompatible with New Vegas Tick Fix's memory improvements.</p>
+            <p class="subparagraph"><strong>ENB:</strong> ENBs were never fully developed for New Vegas like they were for Skyrim/Fallout 4. They have a ton of bugs and performance issues, such as broken Anti-aliasing and objects becoming transparent. They also use a lot of vision-obscuring effects like depth of field, lens flares, bloom, and chromatic aberration to obscure the broken Anti-aliasing, which makes hem very hard to play with.
+              I recommend using a ReShade preset instead, such as <a href="https://www.nexusmods.com/newvegas/mods/71772" target="_blank">Vanilla Plus ReShade Preset</a>.</p>
             <br>
-            <p class="subparagraph"><strong>New Vegas Reloaded:</strong> The newest version of NVR is incredibly buggy and almost impossible to play with. If you want to use it, I recommend using the old <b>1.3</b> version instead.</p>
+            <p class="subparagraph"><strong>New Vegas Reloaded:</strong> Incredibly buggy and almost impossible to play with (flickering shadows, transparency issues, broken water LOD, performance loss). As with ENB, I recommend using <a href="https://www.nexusmods.com/newvegas/mods/71772" target="_blank">Vanilla Plus ReShade Preset</a> instead.
+            </p>
             <br>
             <p class="subparagraph"><strong>4k texture mods/texture mods with 2k normal maps</strong>: The game's engine is unable to handle textures that big without massive performance loss/stuttering and/or crashing. You also most likely won't notice that big of a visual difference compared to 2k textures with 1k normals, unless you play in 1440p/4k resolution (and if you do, the performance loss will be even greater) or look very carefully at an object up close. This includes the large version of NMCs Texture Pack and Ojo Bueno. If you want to use either of those mods, use either the low or medium versions of <a href="https://www.nexusmods.com/newvegas/mods/43135" target="_blank">NMCs Texture Pack</a> (I recommend low) and <a href="https://www.nexusmods.com/newvegas/mods/42028" target="_blank">Poco Bueno</a>.</p>
             <br>
-            <p class="subparagraph"><strong>Charge's HD Texture Pack/other AI-upscaled texture packs:</strong> Generic Ai-upscaled textures that result in a very minor visual increase for a massive performance decrease. Also upscales files it shouldn't, such as normal maps and glow maps, which causes texture artifacting.</p>
+            <p class="subparagraph"><strong>Charge's HD Texture Pack/other AI-upscaled texture packs:</strong> AI-upscaled textures usually result in a massive performance decrease for a ver minor visual increase. Charge's in particular upscales files it shouldn't such as normal maps and glow maps, and has textures with <a href="https://imgur.com/a/9VhuCkm" target="_blank">major artifacting</a>.</p>
             <br>
-            <p class="subparagraph"><strong>EVE:</strong> Incompatible with Weapon Mesh Improvement Mod and any other mods that edit weapon records (such as Yukichigai Unofficial Patch or JSawyer Ultimate Edition). The new explosion/critical effects can cause performance drops. <a  href="https://www.nexusmods.com/newvegas/mods/62989" target="_blank">EXE</a> is an updated version of EVE that covers everything but Energy Weapons (which is the main source of incompatibility with EVE). EXE is compatible with everything.</p>
-            <br>
-            <p class="subparagraph"><strong>Asurah's Reanimation Pack:</strong> Exceptionally buggy. Also makes out-of-scope changes to reload speeds and fire rates. I recommend <a  href="https://www.nexusmods.com/newvegas/mods/70158" target="_blank">Anniversary Animations Pack</a> (already in the guide) and <a href="https://www.nexusmods.com/newvegas/mods/70599" target="_blank">Clean Animations</a> instead. Both are compatible with Weapon Mesh Improvement Mod.</p>
+            <p class="subparagraph"><strong>Asurah's Reanimation Pack:</strong> Currently unfinished, which means there are a lot of bugs. Also makes out-of-scope changes to reload speeds, with the Hunting Shotgun and Grenade Launcher reload times nearly tripled (from 0.47 seconds to 1.23). I recommend <a  href="https://www.nexusmods.com/newvegas/mods/70158" target="_blank">Anniversary Animations Pack</a> (already in the guide) and <a href="https://www.nexusmods.com/newvegas/mods/70599" target="_blank">Clean Animations</a> instead. Both are compatible with Weapon Mesh Improvement Mod.</p>
             <br>
             <p class="subparagraph"><strong>Borderlands Inspired Numeric Damage:</strong> Outdated, replaced by <a href="https://www.nexusmods.com/newvegas/mods/71618" target="_blank">Samurai Floating Damage</a>.</p>
             <br>
-            <p class="subparagraph"><strong>Fallout Character Overhaul:</strong> Multiple broken file paths which cause missing mesh triangles and pink textures. The installer is also broken, and auto-selects patches for mods you don't have installed and installs the Glowing Ghouls file, which causes massive performance drops and save bloat. Doesn't cover every NPC in the game (plus NPCs from the DLCs or mods), so any uncovered NPCs look very out of place. It also requires the bLoadFaceGenHeadEGTFiles INI setting to be enabled, which causes performance loss due to generating NPC face textures on the fly in-game. I recommend <a href="https://www.nexusmods.com/newvegas/mods/71556" target="_blank">New Vegas Redesigned 2 Revised</a> instead (already in the guide).</p>
+            <p class="subparagraph"><strong>Fallout Character Overhaul:</strong> Multiple broken file paths which cause missing mesh triangles and pink textures. The installer auto-selects patches for mods you don't have installed and installs the Glowing Ghouls file which causes massive performance drops and save bloat. It doesn't cover every NPC in the game (plus NPCs from the DLCs or mods), so any uncovered NPCs look very out of place. It requires the <b>bLoadFaceGenHeadEGTFiles</b> INI setting to be enabled, which causes performance loss due to generating NPC face textures on the fly in-game. It also overwrites many YUP fixes for NPCs, though these can be patched using FNVEdit. I recommend <a href="https://www.nexusmods.com/newvegas/mods/71556" target="_blank">New Vegas Redesigned 2 Revised</a> instead (already in the guide).</p>
             <br>
-            <p class="subparagraph"><strong>Interior Lighting Overhaul</strong>: Can cause FPS drops in large interiors due to the new light sources. Also has some bugged interiors that are pitch-black. I recommend <a href="https://www.nexusmods.com/newvegas/mods/71390" target="_blank">Simple Interior Lighting Overhaul</a> instead (already in the guide).</p>
-            <br>
-            <p class="subparagraph"><strong>Handheld Pip-Boys, such as the 2500:</strong> All hand-held Pip-Boys share the same issues, such as the Pip-Boy being tilted or causing your weapon to be held on the wrong side of your body. I recommend either the <a  href="https://www.nexusmods.com/newvegas/mods/49732" target="_blank">2500a</a> or <a  href="https://www.nexusmods.com/newvegas/mods/65980" target="_blank">2000 Mk VI</a> instead.</p>
+            <p class="subparagraph"><strong>Handheld Pip-Boys, such as the 2500:</strong> All hand-held Pip-Boys share the same issues, such as the Pip-Boy being tilted or causing your weapon to be held on the wrong side of your body temporarily after exiting the Pip-Boy. The methods these mods use to hide the Pip-Boy in third person are also quite janky. I recommend either the <a  href="https://www.nexusmods.com/newvegas/mods/49732" target="_blank">2500a</a> or
+              <a  href="https://www.nexusmods.com/newvegas/mods/65980" target="_blank">2000 Mk VI</a>, or checking out <a href="https://www.nexusmods.com/newvegas/mods/66598" target="_blank">Universal Pip-Boy Customization</a> instead.</p>
             <br>
             <p class="subparagraph"><strong>Electro City:</strong> Has broken LOD that can cause crashing. Also includes unnecessary bloat such as new NPCs and boxes full of Cateye. I recommend <a  href="https://www.nexusmods.com/newvegas/mods/69226" target="_blank">A Little More Lamplight</a> instead (already in the guide).</p>
             <br>
-            <p class="subparagraph"><strong>Unnecessary Physics:</strong> Causes save bloat, since the game has to save the position of every object you move.</p>
+            <p class="subparagraph"><strong>Unnecessary Physics:</strong> Causes minor save bloat since the game has to save the position of every object you move.</p>
             <br>
             <p class="subparagraph"><strong>Vault 22 Flora Overhaul:</strong> Disables objects with the <b>Has Tree LOD</b> flag, which can cause crashing. Also has tons of unnecessary bloat such as new weapons, enemies, poison effects, skill books, and more. I recommend <a href="https://www.nexusmods.com/newvegas/mods/71521" target="_blank">Vault 22 Flora Overhaul Remastered</a> instead.</p>
             <br>
-            <p class="subparagraph"><strong>New Vegas Landscape Overhaul (including the Remastered version):</strong> Has deleted navmeshes and deleted objects with the <b>Has Tree LOD</b> flag, which will cause crashing. I recommend <a href="https://www.nexusmods.com/newvegas/mods/69406" target="_blank">Enhanced Landscape</a> instead.</p>
+            <p class="subparagraph"><strong>New Vegas Landscape Overhaul (including the Remastered version):</strong> Has deleted navmeshes and deleted objects with the <b>Has Tree LOD</b> flag, which can cause crashing. I recommend <a href="https://www.nexusmods.com/newvegas/mods/69406" target="_blank">Enhanced Landscape</a> instead.</p>
             <br>
             <p class="subparagraph"><strong>Project Reality:</strong> Very poor scripting, will cause massive performance issues and save bloat. If you want a different weather mod than Altitude, I recommend <a  href="https://www.nexusmods.com/newvegas/mods/35998" target="_blank">Nevada Skies</a> instead.</p>
         <a class="internallink" href="#gameplay_avoid"><h2 class="smallheader" id="gameplay_avoid">Gameplay Mods to Avoid:</h2></a>
@@ -130,7 +128,7 @@ SOFTWARE.
                 <ul>
                     <a class="internallink" href="#replacing_pn"><h2 class="install" id="replacing_pn"><span style="color:#DCDCDC;" >Replacing Project Nevada:</span></h2></a>
                     <p class="subparagraph">Although it may seem counterproductive to install a bunch of small mods to replace one big mod, these alternatives are all more efficient and performance friendly. They are 100% safe to use, and actually work, unlike Project Nevada:.</p>
-                    <br>    
+                    <br>
                     <p class="subparagraph"><strong>Core Module:</strong></p>
                         <ul class="standard_ul">
                                 <li>Dynamic Crosshair, Bullet Time, Sprint, and more: <a  href="https://www.nexusmods.com/newvegas/mods/66666" target="_blank">Just Assorted Mods</a></li>
@@ -160,12 +158,10 @@ SOFTWARE.
                     <p class="subparagraph"><strong>Equipment Module:</strong></p>
                         <ul class="standard_ul">
                             <li>Fallout 3 Weapons: <a  href="https://www.nexusmods.com/newvegas/mods/40007" target="_blank">Fallout 3 Weapons Restoration</a></li>
-                            <li>Classic Fallout Weapons: <a  href="https://www.nexusmods.com/newvegas/users/63424201?tab=user+files" target="_blank">WebbProductions2020's Mods</a> (require manual conflict resolution)</li>
+                            <li>Classic Fallout Weapons: <a  href="https://www.nexusmods.com/newvegas/users/63424201?tab=user+files" target="_blank">WebbProductions2020's Mods</a> (though these directly edit weapon records, so they require conflict resoluton in FNVEdit)</li>
                         </ul>
                 </ul>
                 <br>
-            <p class="subparagraph"><strong>Solid Project:</strong> Poor scripting which causes many issues, such as a multi-frame lag spike every time you start sprinting. Most features are quantity over quality, and all of the "quality" features from it have been replaced by <a  href="https://www.nexusmods.com/newvegas/mods/66666" target="_blank">Just Assorted Mods</a>.</p>
-            <br>
             <p class="subparagraph"><strong>FOOK, New Vegas Enhanced Content, and Mission Mojave Ultimate Edition:</strong> Massive compilation mods like these eventually get outdated and break other mods like Yukichigai Unofficial Patch. For example, NVEC includes the old version of the Burning Campfires that causes save bloat, an old version of EVE that is even more performance-intensive than the current one, outdated bug fixes that break Yukichigai Unofficial Patch, and much more).</p>
             <br>
             <p class="subparagraph"><strong>Unlimited Companions (or any other companion-related mods):</strong> Unlimited Companions re-compiles every script in the game and will break many mods. If you want unlimited companions, or other companion-related features like equipment managing, infinite ammo, combat-ready companions, and much more, use <a  href="https://www.nexusmods.com/newvegas/mods/50468" target="_blank">JIP Companions Command and Control</a>. Before installing any mods that edit companion behavior, you should check if JIP CCC already does it.</p>
@@ -178,31 +174,29 @@ SOFTWARE.
             <br>
             <p class="subparagraph"><strong>True Wasteland Economy:</strong> Incredibly script-heavy, will cause save bloat and deteriorate performance over time. I recommend <a href="https://www.nexusmods.com/newvegas/mods/62899" target="_blank">Economy Overhaul</a> instead (already in the guide).</p>
             <br>
-            <p class="subparagraph"><strong>DUST:</strong> Poorly made mod with almost 1000 errors in xEdit. Has a combination of deleted records, leftover null references, missing records, and more.</p>
+            <p class="subparagraph"><strong>DUST:</strong> Poorly made mod with almost 1000 errors in FNVEdit. Has a combination of deleted records, leftover null references, missing records, and more.</p>
             <br>
             <p class="subparagraph"><strong>Sinitar's Gameplay Overhaul (or anything made by Sinitar):</strong> Sinitar knows nothing about modding, as shown by his guide that includes most of the mods on this list. SGO is full of bugs, broken features, awful balance, and Sinitar's trademark typos. Avoid anything he makes at all costs.</p>
             <br>
-            <p class="subparagraph"><strong>Any AI mods:</strong> AI mods generally just edit gamesettings, which can both break scripted sequences (such as the vault in Dead Money and Liberty Prime in TTW) and make combat more frustrating than anything. They also often lead to unintended behavior, such as the Goodsprings Settler you are supposed to save at Goodsprings Source running off into the wasteland away from the Geckos.</p>
+            <p class="subparagraph"><strong>Any AI mods:</strong> AI mods generally just edit gamesettings, which can both break set scences (such as the vault in Dead Money and saving the Goodsprings settler in the tutorial mission) and make combat more frustrating than realistic.
+              Enemies can somtimes detect you the second you enter an interior, so they will all rush you at the entrance.
+            </p>
             <br>
             <p class="subparagraph"><strong>Any mods that edit timescale:</strong> Vanilla AI packages and scripts are based on the vanilla timescale, and can break and/or run when they aren't supposed to if the timescale is changed.</p>
         <a class="internallink" href="#content_avoid"><h2 class="smallheader" id="content_avoid">Content Mods to Avoid:</h2></a>
-            <p class="subparagraph"><strong>Weapon Mods Expanded/Extended:</strong> Incompatible with Weapon Mesh Improvement Mod's mesh fixes, and even if it were it would still require tons of manual conflict resolution and rebalancing.</p>
+            <p class="subparagraph"><strong>Weapon Mods Expanded/Extended:</strong> Overwrites Weapon Mesh Improvement Mod's mesh fixes and requires conflict resoluton with any mods that edit weapon records.
+              Also very unbalanced in my opinion, since many of the mods are either silencers or damage increases.
+            </p>
             <br>
-            <p class="subparagraph"><strong>More Perks:</strong> Broken/buggy perks and awful balance. I recommend <a href="https://www.nexusmods.com/newvegas/mods/70473" target="_blank">PerkPackPlus</a> instead.</p>
+            <p class="subparagraph"><strong>More Perks:</strong> Made in 2010 without the use of any script extenders, so many of the perks are broken or have poor implementation. I recommend <a href="https://www.nexusmods.com/newvegas/mods/70473" target="_blank">PerkPackPlus</a> instead.</p>
             <br>
-            <p class="subparagraph"><strong>CAGE - Continue After Games Ending:</strong> Broken and outdated. I recommend <a  href="https://www.nexusmods.com/newvegas/mods/66726" target="_blank">Functional Post Game Ending</a> instead.</p>
+            <p class="subparagraph"><strong>CAGE - Continue After Games Ending:</strong> Broken, use <a  href="https://www.nexusmods.com/newvegas/mods/66726" target="_blank">Functional Post Game Ending</a> instead.</p>
             <br>
-            <p class="subparagraph"><strong>NV Interiors Project:</strong> Causes save bloat due to the large amount of havok-enabled items in interiors that all have their individual positions stored on the save. I recommend <a href="https://www.nexusmods.com/newvegas/mods/71228" target="_blank">NV Interiors Remastered</a> instead.</p>
+            <p class="subparagraph"><strong>NV Interiors Project:</strong> Causes save bloat due to the large amount of havok-enabled items that all have their individual positions stored on the save when you enter an interior. Use <a href="https://www.nexusmods.com/newvegas/mods/71228" target="_blank">NV Interiors Remastered</a> instead.</p>
             <br>
-            <p class="subparagraph"><strong>Classic Fallout Weapons:</strong> Countless broken meshes and leveled lists, will cause crashes. If you want weapons from the classic Fallout games, use <a  href="https://www.nexusmods.com/newvegas/users/63424201?tab=user+files" target="_blank">WebbProductions2020's Mods</a> (require manual conflict resolution).</p>
+            <p class="subparagraph"><strong>Classic Fallout Weapons:</strong> Countless broken meshes and leveled lists, will cause crashes. If you want weapons from the classic Fallout games, use <a  href="https://www.nexusmods.com/newvegas/users/63424201?tab=user+files" target="_blank">WebbProductions2020's Mods</a> (though these directly edit weapon records, so they require conflict resoluton in FNVEdit).</p>
             <br>
-            <p class="subparagraph"><strong>Simply Uncut:</strong> Most of the stuff isn't cut content, but rather fan-made versions of concept art. Also lacks quality in many places. If you want restored content, use <a  href="https://www.nexusmods.com/newvegas/mods/56625" target="_blank">Uncut Wasteland</a> instead (already in the guide).</p>
-            <br>
-            <p class="subparagraph"><strong>A World of Pain:</strong> Awful balance, un-lore friendly locations, no voice acted NPCs, no room bounds/portals in interiors which can cause FPS loss. I recommend <a href="https://www.nexusmods.com/newvegas/mods/71139" target="_blank">AWOP Revised</a> instead.</p>
-            <br>
-            <p class="subparagraph"><strong>Monster Mod:</strong> Awful balance, broken meshes that will cause crashes.</p>
-            <br>
-            <p class="subparagraph"><strong>Honest Hearts Reborn:</strong> Re-compiles every script in the game. If you want to use it, you must clean it in FNVEdit first. Even if you do that though, there will still be a good few bugs with it.</p>
+            <p class="subparagraph"><strong>Honest Hearts Reborn:</strong> Re-compiles every script in the game, so if you want to use it you must clean it in FNVEdit first. It will still have many bugs after cleaning though.</p>
             <br>
             <hr>
     </div>
