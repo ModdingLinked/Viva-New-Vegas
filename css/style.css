@@ -175,7 +175,7 @@ body {
     top: 0;
     left: 0;
     background-color: rgb(44, 44, 44);
-    padding-top: 5.5vw;
+    padding-top: 4.5vw;
 }
 
 .sidenavleft a {
@@ -198,7 +198,7 @@ body {
     top: 0;
     right: 0;
     background-color: rgb(44, 44, 44);
-    padding-top: 5.5vw;
+    padding-top: 4.5vw;
 }
 
 .sidenavright a {
