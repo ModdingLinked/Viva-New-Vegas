@@ -120,12 +120,19 @@ SOFTWARE.
             <a class="internallink" href="#heap"><h2 class="smallheader" id="heap"><a href="https://www.nexusmods.com/newvegas/mods/69779" target="_blank">New Vegas Heap Replacer</a></h2></a>
                 <h2 class="install">Installation instructions:</h2>
                     <ol class="standard_ol">
-                        <li>Download the <strong>Main File - NVHR - AVX2 2.4</strong> using the <strong>Manual Download</strong> button</li>
-                        <li>From the downloaded archive, extract the <strong>.dll</strong> file to the game's <strong>Root</strong> folder</li>
+                        <li>Download the <strong>Main File - NVHR 3.0</strong> using the <strong>Manual Download</strong> button</li>
+                        <li>From the downloaded archive, run the <strong>cpu_info.exe</strong></li>
+                        <li>A command prompt will appear and it will say which version of the mod you should use</li>
+                        <img width="350px" src="./img/nvhr.png" alt="nvhr command prompt">
                     </ol>
                     <blockquote class="blockquote">
-                        If you have an older CPU (pre-2013), use the <strong>Main File - NVHR - SSE2 2.4</strong> instead.
+                        Pay attention to the line that says <b>=> Use <=</b>. For me it says <strong>AVX2</strong>, but it may be different for you.
                     </blockquote>
+                    <ol class="standard_ol" start="4">
+                      <li>Back in the downloaded archive, open the folder's which name corresponds to the version that the command prompt told you to use</li>
+                      <li>From that folder, extract the <strong>d3dx9_38.dll</strong> to the game's <strong>Root</strong> folder</li>
+                    </ol>
+                    <br>
                 <p class="subparagraph"> - Replaces the game's heap management system with a much faster hand-written version, which can lead to large performance gains</p>
             <a class="internallink" href="#jip"><h2 class="smallheader" id="jip"><a href="https://www.nexusmods.com/newvegas/mods/58277" target="_blank">JIP LN NVSE Plugin</a></h2></a>
                 <h2 class="install">Installation instructions:</h2>
