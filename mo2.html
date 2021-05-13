@@ -199,15 +199,11 @@ SOFTWARE.
                                 <p class="smalllist">
                                     [General] <br>
                                     bUseThreadedAI=1 <br>
-                                    iNumHWThreads=4 <br>
+                                    iNumHWThreads=2 <br>
                                     bPreemptivelyUnloadCells=1<br><br>
 
                                     [BackgroundLoad]<br>
-                                    bSelectivePurgeUnusedOnFastTravel=1<br><br>
-
-                                    [Water]<br>
-                                    bAutoWaterSilhouetteReflections=1<br>
-                                    bForceHighDetailReflections=0<br><br>
+                                    bSelectivePurgeUnusedOnFastTravel=1<br> <br>
 
                                     [Controls]<br>
                                     fForegroundMouseAccelBase=0<br>
@@ -220,9 +216,9 @@ SOFTWARE.
                                     iMaxSizeForCachedSound=1024<br>
                                 </p>
                             </ul>
-                        <li>Change <strong>iNumHWThreads</strong> to the number of threads (including hyper-threads) your CPU has</li>
+                        <li>Change <strong>iNumHWThreads</strong> to the number of logical processors your CPU has</li>
                             <ul>
-                                <li>If you do not know how many threads your CPU has, use <a href="https://www.cpuid.com/softwares/cpu-z.html" target="_blank">CPU-Z</a> to find out</li>
+                                <li>If you do not know how many logical processors your CPU has, use <a href="https://support.microsoft.com/en-us/windows/find-out-how-many-cores-your-processor-has-3126ef99-0247-33b3-81fc-065e9fb0c35b#:~:text=Press%20Ctrl%20%2B%20Shift%20%2B%20Esc%20to,logical%20processors%20your%20PC%20has." target="_blank">this</a> method to find out</li>
                             </ul>
                         <li>Repeat the INI changes on the <strong>Testing</strong> profile</li>
                     </ol>
