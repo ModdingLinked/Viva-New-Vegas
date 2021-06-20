@@ -70,13 +70,8 @@ SOFTWARE.
                 <a href="./intro.html#requirements"><span style="font-size:.8vw;">Requirements</span></a>
                 <a href="./intro.html#included_mods"><span style="font-size:.8vw;">Included Mods</span></a>
                 <a href="./intro.html#additional_mods"><span style="font-size:.8vw;">Additional Mods</span></a>
-                <a href="./intro.html#tools"><span style="font-size:.8vw;">Tools</span></a>
             </ul>
         <a href="./intro.html#recommended_specs">Specs</a>
-            <ul>
-                <a href="./intro.html#min_requirements"><span style="font-size:.8vw;">Minimum Specs</span></a>
-                <a href="./intro.html#my_specs"><span style="font-size:.8vw;">My Specs</span></a>
-            </ul>
         <a href="./intro.html#discord">Discord</a>
     </div>
     <div>
@@ -94,8 +89,8 @@ SOFTWARE.
                     Unlike other modding guides, it is built with customization in mind. Mods are subjective, so every mod listed in the guide is 100% optional.
                     Custom patches and a hand-made load order and will be provided for the guide, and they will still work if you skipped any mods.
                     <br> <br>
-                    The guide is highly accessible for everyone, no matter your modding experience. It has meticulously-detailed instructions, with additional notes, explanations, and/or images for the more complex instructions.
-                    It is incredibly important that you read all the instructions very carefully, even if you believe you are experienced enough to skip them.
+                    The guide is highly accessible for everyone, no matter your modding experience.
+                    It still is incredibly important that you read <u>all</u> the instructions very carefully, even if you believe you are experienced enough to skip them.
                     There are many small instructions that are vital for your game to function, and could be easily missed if you aren't careful. Although you don't need any modding experience to use this guide,
                     it is expected for you to be relatively experienced with operating a computer in general.
             </p>
@@ -105,23 +100,17 @@ SOFTWARE.
                     <li>
                         <b>Stability:</b>
                             Don't let crashing be a core feature of the game anymore! The guide includes all essential stability enhancements and no placebo/dangerous mods.
-                            With a complete install of the guide, you should have zero crashes! Of course there are no guarantees with New Vegas, but a majority of
-                            guide users report 0-2 crashes over the course of an entire playthrough.
+                            With a complete install of the guide, you should have zero crashes! Of course there are no guarantees with New Vegas though.
                     </li>
                     <li>
                         <b>Performance:</b>
                             Every tool, setting, and mod in the guide has been carefully selected and play-tested to ensure maximum possible performance.
-                            No 4k texture mods, no ENBs, no heavily-scripted weather mods, or any other unoptimized/broken mods.
-                            New Vegas Tick Fix, a mod in the guide, also allows for playing at framerates over 60FPS without the notorious physics bugs!
-                            With my mid-range PC at 1080p resolution, I get around 120 FPS everywhere except for the most intensive (and unoptimized) areas like The Strip, where it stays around 90 FPS.
+                            No 4k texture mods, no ENBs, no poorly scripted mods, or any other unoptimized/broken mods.
                     </li>
                     <li>
                         <b>Better Gameplay:</b>
-                            The guide includes many mods that greatly improve the gameplay, without drastically overhauling the core experience or straying away from the game's lore.
-                            Many modern features have been added, such as a quick-loot menu, dynamic crosshair, and hit markers, without adding any features that don't fit the RPG-style or unbalance the game.
-                            There is also an optional <b>Overhauls</b> section that will make the game much more difficult than vanilla New Vegas, without being too frustrating or cheesy.
-                            The lower difficulty settings will also still be viable for those who prefer the RPG elements of the game to the combat elements, but the Overhauls
-                            section is not recommended for first-time players.
+                            The guide includes many mods that greatly improve the gameplay, without drastically overhauling the core experience or straying away from the game's original intent.
+                            There is also an optional <b>Overhauls</b> section that will make the game much more difficult and add some new vanilla-friendly content. This section is not recommended for first time players.
                     </li>
                     <li>
                         <b>Custom Mods and Patches:</b>
@@ -137,12 +126,12 @@ SOFTWARE.
                 <ul class="standard_ul">
                     <li>An English copy of the game with all DLCs from either <a href="https://store.steampowered.com/agecheck/sub/13435" target="_blank">Steam</a> or <a href="https://www.gog.com/game/fallout_new_vegas_ultimate_edition" target="_blank">GOG</a> (instructions for properly installing it are in the next step)</li>
                         <ul>
-                            <li>Only the English version of the game is supported for maximum compatibility. The Bethesda.net version of the game is also unsupported, as it does not work with the script extender and important mods.</li>
+                            <li>Only the English version of the game is supported for maximum compatibility. The Bethesda.net and Xbox Gamepass versions of the game are also unsupported, as they do not work with xNVSE which is essential for most mods.</li>
                         </ul>
                     <li>At least 12GB of free drive space</li>
                     <li>Windows 7 or higher (64bit)</li>
                     <li><a href="https://www.microsoft.com/en-us/download/details.aspx?id=8109" target="_blank">DirectX Runtime Libraries</a></li>
-                    <li><a href="http://download.microsoft.com/download/0/5/6/056dcda9-d667-4e27-8001-8a0c6971d6b1/vcredist_x86.exe" target="_blank">Microsoft VC++ 2013</a> and <a href="https://support.microsoft.com/en-gb/help/2977003/the-latest-supported-visual-c-downloads" target="_blank">Microsoft VC++ 2015-2019</a> (x86 and x64 versions)</li>
+                    <li><a href="https://www.microsoft.com/en-us/download/details.aspx?id=40784" target="_blank">Microsoft VC++ 2013</a> (x86 version) and <a href="https://support.microsoft.com/en-gb/help/2977003/the-latest-supported-visual-c-downloads" target="_blank">Microsoft VC++ 2015-2019</a> (x86 and x64 versions)</li>
                     <li>A text editor (I recommend <a href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a>, but the default Windows notepad will work)</li>
                     <li>An archiving tool (I recommend <a href="https://www.7-zip.org/" target="_blank">7-Zip</a>)</li>
                     <li>The latest GPU drivers
@@ -220,57 +209,29 @@ SOFTWARE.
                     Even seemingly harmless mods can cause major issues. Many of the most popular mods were made right after the game came out, and as modding has advanced a lot since then, they are
                     outdated and unsafe to use. One category I'm sure that a lot of people will be disappointed in is the Visuals. My opinion on visual mods is this: Fallout New Vegas is a ten year old game,
                     and it looked dated even by 2010 standards. You will never be able to make the game look "good". Any visual improvements you make to the game come at a cost. ENBs may make for pretty screenshots,
-                    but they are near-impossible to play with due to the many bugs, performance problems, and vision-obscuring effects they use. Texture mods may improve some textures, but they can
-                    also cause performance drops and stuttering. They also create a great disparity between the new textures and the vanilla textures, both in quality and in style,
-                    making for some jarring texture transitions or seams. Fancy weather mods may add some cool new effects and make the game more realistic, but the new weather effects can be
-                    very buggy, performance intensive, and obtrusive. Overall, I do not think that these types of mods are worth it.
+                    but they are near-impossible to play with due to the many bugs, performance problems, and <a href="https://imgur.com/a/8UT356J" target="_blank">vision-obscuring effects</a> they use. Texture mods may improve some textures, but they can
+                    cause performance drops and stuttering even on higher-end PCs. The limiting factor is the game's 32-bit engine rather than your PC. They also create a great disparity between the new textures and the vanilla textures, both in quality and in style,
+                    making for some <a href="https://imgur.com/a/jMgRjBO" target="_blank">jarring texture transitions or seams</a>. Overall, I do not think that these types of mods are worth it.
                 </p>
             <a class="internallink" href="#additional_mods"><p class="smallheader" id="additional_mods">Additional Mods:</p></a>
                 <p class="subparagraph">
-                    If you are looking to add more mods to your setup, please wait until <b>after</b> you have completed the guide, or else we will be unable to help you on Discord should you need it.
+                    If you are looking to add more mods to your setup, please wait until <b>after</b> you have completed the guide, or else we will be unable to help you on <a href="https://discord.gg/DhX5S27" target="_blank">Discord</a> should you need it.
                     Unfortunately, I do not have the time or energy to provide support for setups that install extra mods on top of the guide.
                     If you do plan on adding mods after you finish the guide, please reference <a href="./avoid-mods.html" target="_blank">this</a> list of mods that you should avoid using.
                     I can not stress enough that is only recommend to add your own mods if you are an experienced modder and know how to manually
-                    make conflict resolution patches and sort your load order!
-                </p>
-            <a class="internallink" href="#tools"><p class="smallheader" id="tools">Tools:</p></a>
-                <p class="subparagraph">
-                    Viva New Vegas uses by far the best mod manager for any Bethesda game, Mod Organizer 2. MO2 is much better than any of the other available mod managers, like Vortex, Nexus Mod Manager, or Fallout Mod Manager.
-                    It has a virtual file system, meaning that the original game folder will be completely untouched, allowing for easy switching between different mod configurations and easy management of loose files conflicts.
-                    <br> <br>
-                    The guide also uses no automated load order, conflict resoluton, or merging tools. For more information about why these tools (and others) are unsafe,
-                    please reference <a href="./avoid-tools.html" target="_blank">this</a> list of tools you should avoid using.
+                    make conflict resolution patches and sort your load order! You can't just throw a bunch of mods on top of the guide without doing any conflict resolution
+                    or use automated tools and except your game to function as intended! A reminder that I will <u>not</u> supported setups that have added any mods.
                 </p>
         <a class="internallink" href="#recommended_specs"><h2 class="subheader" id="recommended_specs">Recommended Specs:</h2></a>
-            <a class="internallink" href="#min_requirements"><p class="smallheader" id="min_requirements">Minimum Requirements:</p></a>
                 <p class="subparagraph">
                     The guide will make the game run much better than vanilla. As the game is ten years old, you do not need a very strong PC to run it.
-                    The game is much more CPU-intensive than GPU-intensive. Installing the game on an SSD can drastically improve load times and decrease stuttering.
+                    Installing the game on an SSD can drastically improve load times and decrease stuttering.
                     Here are the recommended specs for being able to run the guide at 60FPS in 1080p:
                     <br> <br>
                         <ul class="standard_ul">
                             <li><b>CPU:</b> Any dual-core processor (2.5GHz or more)</li>
                             <li><b>RAM:</b> 4GB of RAM (speed shouldn't effect much)</li>
                             <li><b>GPU:</b> NVIDIA 600 series card or an AMD 5500 series card</li>
-                        </ul>
-                </p>
-                <br>
-                <p class="subparagraph">
-                    While these specs will be fine for just following the guide, you will need better specs if you plan to run big texture mods.
-                    You'll need more than 4GB of RAM and a GPU with at least 3GB of VRAM. As New Vegas is such an old and unoptimized game, you will only get diminishing returns
-                    on performance as your specs get better.
-                </p>
-            <a class="internallink" href="#my_specs"><p class="smallheader" id="my_specs">My Specs:</p></a>
-                <p class="subparagraph">
-                    For reference, here are my specs. I am able to run the game in 1080p at around 120 FPS everywhere except the most intensive (and unoptimized) areas like The Strip, where it stays around 90 FPS.
-                    Even with specs as good as mine, I still lose anywhere from 10-20 FPS on average depending on the area when I have a full texture mod setup.
-                    <br> <br>
-                        <ul class="standard_ul">
-                            <li><b>CPU:</b> Ryzen 7 1700 @ 3.0GHz</li>
-                            <li><b>RAM:</b> 16GB of DDR4 RAM @ 2400MHz </li>
-                            <li><b>GPU:</b> NVIDIA GTX 1060 6GB</li>
-                            <li><b>Storage:</b> Western Digital 512GB m.2 SSD</li>
-                            <li><b>Monitor</b> Dell 27" 1080p @ 144Hz</li>
                         </ul>
                 </p>
         <a class="internallink" href="#discord"><h2 class="subheader" id="discord">Discord:</h2></a>
