@@ -63,7 +63,6 @@ SOFTWARE.
         <a href="./appendix.html">Appendix</a>
     </div>
     <div class="sidenavright">
-        <a href="./setup.html#location">Location</a>
         <a href="./setup.html#uninstall">Uninstall</a>
             <ul>
                 <a href="./setup.html#uninstall_steam"><span style="font-size:.8vw;">Steam</span></a>
@@ -91,27 +90,6 @@ SOFTWARE.
           If you run into any issues at any point in the guide, please be sure to check the <a href="./faq.html" target="_blank">FAQ</a>.
           If your issue is not addressed there, join the <a href="https://discord.gg/DhX5S27" target="_blank">Discord</a> for support.
         </blockquote>
-            <a class="internallink" href="#location"><h2 class="subheader" id="location">Recommended Installation Location</h2></a>
-                <p class="subparagraph">
-                    A clean installation is not only required to get rid of any potential leftover mod files, but also to make sure the game is installed in a safe location.
-                    Here is what you need to know when choosing where to install your game:
-                    <br> <br>
-                        <ul class="standard_ul">
-                            <li>
-                                <b>Avoid any default Windows folders:</b>
-                                This includes but is not limited to <code>C:\Program Files</code>, <code>C:\Program Files x86</code>,
-                                your <code>Desktop</code>, and your <code>Documents</code> folders. This is due to Windows UAC (or User Account Control), which heavily monitors and protects
-                                these folders. This can cause many issues with the game and any modding tools. As an example of a safe location, my Steam directory is <code>C:\Games\Steam</code>.
-                            </li>
-                            <br>
-                            <li>
-                                <b>Install on an SSD if possible:</b>
-                                Having the game on an SSD will drastically improve load times and decrease stuttering. The game plus the guide should only
-                                take up about 12GB of space, but the importance of having extra free space on your drive should not be understated.
-                                Drives will generally performance worse the fuller they are, so you won't see as much of an improvement with load times and stuttering with a full drive.
-                            </li>
-                        </ul>
-                </p>
             <a class="internallink" href="#uninstall"><h2 class="subheader" id="uninstall">Uninstalling the Game</h2></a>
                 <blockquote class="blockquote">
                     If you do not have the game installed yet, skip this step.
@@ -136,45 +114,20 @@ SOFTWARE.
                         <li>Navigate to where the game is installed  (<code>GOG Galaxy\Games</code> by default) and, if present, delete the <strong>Fallout New Vegas</strong> folder</li>
                         <li>Navigate to <code>Documents\My Games</code> and delete the <strong>FalloutNV</strong> folder</li>
                     </ol>
-            <a class="internallink" href="#steam_library"><h2 class="subheader" id="steam_library">Making a New Steam Library</h2></a>
-                <blockquote class="blockquote">
-                    If you already have a Steam library set up outside of any default Windows folder, or you have the game on GOG, skip this step.
-                </blockquote>
-                    <p class="subparagraph">
-                        A new Steam library needs to be set up to install the game on, as the default library is in a default Windows UAC-protected folder (<code>C:\Program Files x86\Steam</code>).
-                    </p>
-                    <br> <br>
-                    <ol class="standard_ol">
-                        <li>Open Steam and select <strong>Steam -> Settings</strong> in the top left</li>
-                        <li>In the <strong>Downloads</strong> tab, select <strong>Steam Library Folders</strong></li>
-                        <li>Select <strong>Add Library Folder</strong> and select a location outside of any default Windows folders</li>
-                            <ul>
-                                <li>For example, <code>C:\Games\Steam</code></li>
-                            </ul>
-                    </ol>
-                    <blockquote class="blockquote">
-                        IMPORTANT: By default, Steam only allows one library per drive, but there is a workaround. If for example you already have the default Steam library at <code>C:\Program Files x86\Steam</code>,
-                        but still want your game on your C:\ drive, you will need to follow <a href="https://github.com/LostDragonist/steam-library-setup-tool/wiki/Usage-Guide" target="_blank">these</a>
-                        instructions to do so.
-                    </blockquote>
-                    <ol class="standard_ol" start="4">
-                        <li>Exit out of the settings when you are finished</li>
-                    </ol>
             <a class="internallink" href="#install"><h2 class="subheader" id="install">Installing the Game</h2></a>
                 <a class="internallink" href="#install_steam"><p class="smallheader" id="install_steam">For Steam:</p></a>
                     <ol class="standard_ol">
                         <li>Open Steam and go to your <strong>Library</strong></li>
                         <li>Find <strong>Fallout: New Vegas</strong> in the list and select <strong>Install</strong></li>
-                        <li>From the install pop-up, set the location for install to the Steam library you just created in the previous step</li>
                         <li>Select <strong>Next</strong> then wait for the install to finish</li>
                     </ol>
                 <a class="internallink" href="#install_gog"><p class="smallheader" id="install_gog">For GOG:</p></a>
                     <ol class="standard_ol">
                         <li>Open GOG and go to your <strong>Library</strong></li>
                         <li>Find <strong>Fallout: New Vegas</strong> in the list and select <strong>Install</strong></li>
-                        <li>Set the <strong>Install to</strong> location to a folder outside of any default Windows folders</li>
+                        <li>Set the <strong>Install to</strong> location to a location of your choice</li>
                             <ul>
-                                <li>For example, <code>C:\Games\GOG</code></li>
+                                <li>It is recommended to install the game outside of any default Windows folders (like <code>Program Files x86</code>) if possible</li>
                             </ul>
                     </ol>
             <a class="internallink" href="#post_install"><h2 class="subheader" id="post_install">Post-Installation</h2></a>
