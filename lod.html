@@ -67,9 +67,9 @@ SOFTWARE.
     <div class="sidenavright">
         <a href="./lod.html">LOD</a>
             <ul>
-               <a href="./lod.html#installing_lodgen" span style="font-size:.9vw;">Installing FNVLODGen</a>
-               <a href="./lod.html#installing_resources" span style="font-size:.9vw;">Installing Resources</a>
-               <a href="./lod.html#running_lodgen" span style="font-size:.9vw;">Running FNVLODGen</a>
+               <a href="./lod.html#installing_lodgen" span style="font-size:.8vw;">Installing FNVLODGen</a>
+               <a href="./lod.html#installing_resources" span style="font-size:.8vw;">Installing Resources</a>
+               <a href="./lod.html#running_lodgen" span style="font-size:.8vw;">Running FNVLODGen</a>
             </ul>
     </div>
     <div>
@@ -91,31 +91,34 @@ SOFTWARE.
         <a class="internallink" href="#installing_lodgen"><h2 class="subheader" id="installing_lodgen">Installing FNVLODGen:</h2></a>
             <ol class="standard_ol">
                 <li>Download the <strong>Main File - FNVLODGen 3.2.1</strong> file from <a href="https://www.nexusmods.com/newvegas/mods/58562" target="_blank">here</a></li>
-                <li>Once the download has finished, extract the contents of the archive to any location outside of any default Window folders</li>
-                <li>Once the files have been extracted, open Mod Organizer 2, click the <img style="width:2%" src="./img/mo2 folders.png" alt="mo2 folders"> button at the top of MO2 and select <strong>Open Mods folder</strong></li>
-                <li>There, create a folder named <strong>FNVLODGen Output</strong></li>
-                <li>Back in MO2, select the <img src="./img/mo2 executabes.png" alt="mo2 executables"> button at the top of MO2 to open the executables menu</li>
+                <li>Once the download has finished, extract the contents of the archive to any location of your choice</li>
+                <li>In MO2, select the <img src="./img/mo2 executabes.png" alt="mo2 executables"> button at the top of MO2 to open the executables menu</li>
                 <li>Click the <strong style="color:rgb(20, 162, 228)">+</strong> at the top of the window and the select <strong>Add from file...</strong></li>
                 <li>From the pop-up, navigate to where FNVLODGen is installed and select <strong>FNVLODGen.exe</strong></li>
+                <li>In the <b>Arguments</b> box in the right pane, enter <code>-o:"C:\Output\"</code></li>
+            </ol>
+            <blockquote class="blockquote">
+                This argument will make the files generated through FNVLODGen appear in a folder called <b>Output</b> on your <b>C:\</b> drive (the drive Windows is installed on).
+                You can change this path to whatever you would like if you would prefer the files to be generated elsewhere.
+            </blockquote>
+            <ol class="standard_ol" start="9">
                 <li>Select <strong>Apply</strong> then <strong>OK</strong></li>
             </ol>
         <a class="internallink" href="#installing_resources"><h2 class="subheader" id="installing_resources">Installing LOD Resources:</h2></a>
             <blockquote class="blockquote">
+              Make sure you disable <b>Vanilla LOD</b> before proceeding.
               The plugins from the following mods should be placed directly above <strong>Altitude.esp</strong>, or the plugin of whatever weather mod you are using.
             </blockquote>
             <ul class="standard_ul">
-                <li><a href="https://www.nexusmods.com/newvegas/mods/58562" target="_blank">FNVLODGen</a> - <b>Main File- FNVLODGen Resources 1.1</b></li>
+                <li><a href="https://www.nexusmods.com/newvegas/mods/58562" target="_blank">FNVLODGen</a> - <strong>Main File- FNVLODGen Resources 1.1</strong></li>
                   <ul>
-                    <li>If you are using NMCs Texture Pack, also install the <b>Optional File - NMC LOD texture fix</b> file</li>
+                    <li>If you are using NMCs Texture Pack, also install the <strong>Optional File - NMC LOD texture fix</strong> file</li>
                   </ul>
-                <li><a href="https://www.nexusmods.com/newvegas/mods/61206" target="_blank">LOD Additions and Improvements</a> - <b>Main File - LODadditions 1.07</b></li>
-                <li><a href="https://www.nexusmods.com/newvegas/mods/63956" target="_blank">Less Horrendous Vikki and Vance Casino LOD Mesh</a> - <b>Main File - Less Horrendous Vikki and Vance Casino LOD 0.2</b></li>
-                <li>Only if you use NMCs Texture Pack: <a href="https://www.nexusmods.com/newvegas/mods/72099" target="_blank">LOD Supplementation</a> - <b>Main File - FNV LOD Supplementation 0.07</b> </li>
-                <li>Only if you use NMCs Texture Pack: <a href="https://www.nexusmods.com/newvegas/mods/64698" target="_blank">LOD Texture Patches</a> - <b>Main File - NMC LOD Patch 0.7</b></li>
-                    <ul>
-                        <li>If you have Poco Bueno overwriting NMCs, also install the <b>Main File - Poco-Ojo LOD Texture Patch 0.1b</b></li>
-                    </ul>
-                <li>Only if you use Poco Bueno overwriting NMCs: <a href="https://www.nexusmods.com/newvegas/mods/70155" target="_blank">TCM's LOD Overhaul</a> - <b>Main File - TCM's LOD Overhaul 1.1</b></li>
+                <li><a href="https://www.nexusmods.com/newvegas/mods/61206" target="_blank">LOD Additions and Improvements</a> - <strong>Main File - LODadditions 1.07</strong></li>
+                <li>Only if you use NMCs Texture Pack: <a href="https://www.nexusmods.com/newvegas/mods/64805" target="_blank">Much Needed LOD</a> - JUST the <strong>Optional File - Much Needed LOD - NMC Patch 1.2</strong></li>
+                <li><a href="https://www.nexusmods.com/newvegas/mods/72099" target="_blank">LOD Supplementation</a> - <strong>Main File - FNV LOD Supplementation 0.07</strong> </li>
+                <li><a href="https://www.nexusmods.com/newvegas/mods/64698" target="_blank">LOD Texture Patches</a> - <strong>Main File - NMC LOD Patch 0.7</strong> and/or <strong>Main File - Poco-Ojo LOD Texture Patch 0.1b</strong> (depending on which texture mods you are using)</li>
+                <li><a href="https://www.nexusmods.com/newvegas/mods/70155" target="_blank">TCM's LOD Overhaul</a> - <strong>Main File - TCM's LOD Overhaul 1.1</strong></li>
             </ul>
         <a class="internallink" href="#running_lodgen"><h2 class="subheader" id="running_lodgen">Running FNVLODGen:</h2></a>
             <ol class="standard_ol">
@@ -130,9 +133,11 @@ SOFTWARE.
                 <li>Under the <strong>Objects LOD</strong> section, change the <strong>Atlas size</strong> option to <strong>8192 </strong> x <strong>8192</strong></li>
                 <li>Select <strong>Generate</strong></li>
                 <li>Wait for the message <strong>LOD Generator: finished (you can close this application now)</strong> to appear (should take under 15 minutes depending on your CPU), then close out of the program</li>
-                <li>Back in MO2, right-click on the <strong><i>Overwrite</i></strong> mod at the bottom of MO2 and select <strong>Move content to Mod...</strong></li>
-                <li>From the pop-up, select the <strong>FNVLODGen Output</strong> mod you created (you may need to refresh MO2 for this option to appear) then <strong>OK</strong></li>
-                <li>Enable the mod in the left pane of MO2</li>
+                <li>In MO2, right-click on the <i>Overwrite</i> folder at the bottom of the left pane and select <strong>All Mods -> Create empty mod above</strong></li>
+                <li>Title the mod <strong>FNVLODGen Output</strong></li>
+                <li>Navigate to where the LOD files were generated (by default, <code>C:\Output\</code>) and select both the <code>textures</code> and <code>meshes</code> folders</li>
+                <li>Move them to the <strong>FNVLODGen Output</strong> mod you just created (right-click on the mod and select <b>Open in Explorer)</b></li>
+                <li>The files in <code>C:\Output\</code> can be safely deleted</li>
             </ol>
     </div>
     <div class="footer">
