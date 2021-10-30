@@ -55,10 +55,12 @@ SOFTWARE.
         <a href="./mo2.html">MO2</a>
         <a href="./utilities.html">Utilities</a>
         <a href="./bugfix.html">Bug Fixes</a>
+        <a href="./tweaks.html">Tweaks</a>
         <a href="./hud.html">User Interface</a>
         <a href="./visuals.html">Visuals</a>
         <a href="./gameplay.html">Gameplay</a>
         <a href="./overhauls.html"><span style="color:#DCDCDC">Overhauls</span></a>
+        <a href="./content.html">Content</a>
         <a href="./finish.html">Final Steps</a>
         <a href="./appendix.html">Appendix</a>
     </div>
@@ -66,19 +68,17 @@ SOFTWARE.
         <a href="./overhauls.html">Overhauls</a>
             <ul>
                 <a href="./overhauls.html#separator"><span style="font-size:.8vw;">Separator</span></a>
-                <a href="./overhauls.html#more_jip"><span style="font-size:.8vw;">More JIP</span></a>
-                <a href="./overhauls.html#more_stewie"><span style="font-size:.8vw;">More Stewie's Tweaks</span></a>
+                <a href="./overhauls.html#jip_overhauls"><span style="font-size:.8vw;">JIP INI</span></a>
+                <a href="./overhauls.html#tweaks_overhauls"><span style="font-size:.8vw;">Tweaks Overhauls INI</span></a>
                 <a href="./overhauls.html#jsawyer"><span style="font-size:.8vw;">JSawyer</span></a>
-                <a href="./overhauls.html#jsue_ini"><span style="font-size:.8vw;">JSawyer INI</span></a>
-                <a href="./overhauls.html#economy"><span style="font-size:.8vw;">Economy Overhaul</span></a>
+                <a href="./overhauls.html#jsue_ini"><span style="font-size:.8vw;">JSawyer Tweaks</span></a>
+                <a href="./overhauls.html#energy_is"><span style="font-size:.8vw;">Laser Iron Sights</span></a>
                 <a href="./overhauls.html#unfound_loot"><span style="font-size:.8vw;">Unfound Loot</span></a>
                 <a href="./overhauls.html#unfoundloot_ini"><span style="font-size:.8vw;">Unfound Loot INI</span></a>
-                <a href="./overhauls.html#complex_vendors"><span style="font-size:.8vw;">Complex Vendors</span></a>
-                <a href="./overhauls.html#follower_formula"><span style="font-size:.8vw;">Follower Formula Redone</span></a>
+                <a href="./gameplay.html#player_priority"><span style="font-size:.8vw;">Player Combat Priority</span></a>
+                <a href="./gameplay.html#misc_gameplay_merge"><span style="font-size:.8vw;">Misc Gameplay Merge</span></a>
                 <a href="./overhauls.html#better_cc"><span style="font-size:.8vw;">Better Character Creation</span></a>
-                <a href="./overhauls.html#ghouls"><span style="font-size:.8vw;">Better Ghouls</span></a>
-                <a href="./overhauls.html#tld"><span style="font-size:.8vw;">The Living Desert</span></a>
-                <a href="./overhauls.html#mtb"><span style="font-size:.8vw;">Mobile Truck Base</span></a>
+
             </ul>
     </div>
     <div>
@@ -95,46 +95,23 @@ SOFTWARE.
                     This page contains mods that greatly overhaul the game by making it much more challenging (and more rewarding in turn) and adding new features. These mods are not recommended for a first playthrough of the game.
                     It is especially important to read the descriptions of these mods (you should still read the description of every mod), so you know what has changed and how to use the new features.
                 </blockquote>
-            <a class="internallink" href="#more_jip"><h2 class="smallheader" id="more_jip">Enabling More Features in JIP LN</h2></a>
-                <ol class="standard_ol">
-                    <li>Right-click on <strong>JIP LN NVSE</strong> mod (from the <a href="./utilities.html#jip" target="_blank">Utilities</a> section) in the left pane of MO2 and select <strong>Open in Explorer</strong></li>
-                    <li>Navigate to <code>nvse/plugins/</code> and open <strong>jip_nvse.ini</strong> in a text editor</li>
-                    <li>Set <strong>bEnableFO3Repair</strong> to <strong>1</strong> (line 6)</li>
-                        <ul>
-                            <li>Enables Fallout 3-style repair in which weapons can only be repaired up to a condition % equal to your repair skill</li>
-                        </ul>
-                    <li>Set <strong>bNPCWeaponMods</strong> to <strong>1</strong> (line 68)</li>
-                    <li>Set <strong>uWMChancePerLevel</strong> to <strong>1</strong></li>
-                    <li>Set <strong>uWMChanceMin</strong> to <strong>1</strong> </li>
-                    <li>Set <strong>uWMChanceMax</strong> to <strong>5</strong> </li>
-                        <ul>
-                            <li>Allows NPCs to use weapon attachments</li>
-                        </ul>
-                </ol>
-            <a class="internallink" href="#more_stewie"><h2 class="smallheader" id="more_stewie">Enabling More Features in lStewieAl's Tweaks</h2></a>
-                <ol class="standard_ol">
-                    <li>Right-click on <strong>lStewieAl's Tweaks Custom INI</strong> mod (from the <a href="./bugfix.html#custom_ini" target="_blank">Bug Fixes/QOL</a> section) in the left pane of MO2 and select <strong>Open in Explorer</strong></li>
-                    <li>Navigate to <code>nvse/plugins/</code> and open <strong>nvse_stewie_tweaks.ini</strong> in a text editor</li>
-                    <li>Use Ctrl+F to easily find and change the following options:</li>
-                    <li>Set <strong>bNoSkillTags</strong> to <strong>1</strong> </li>
-                    <li>Set <strong>iRemoveTags</strong> to <strong>2</strong></li>
-                        <ul>
-                            <li>Changes skill checks to only show the skill type and not the required value (e.g. <b>[Speech 50]</b> becomes just <b>[Speech]</b>)</li>
-                        </ul>
-                    <li>Set <strong>bHideEnemyMarkers</strong> to <strong>1</strong></li>
-                        <ul>
-                            <li>Removes enemy markers from the compass unless they are shooting</li>
-                        </ul>
-                    <li>Set <strong>bNoGrabOwnedItems</strong> to <strong>1</strong></li>
-                        <ul>
-                            <li>Stops the player from z-grabbing (not stealing) items owned by NPCs</li>
-                        </ul>
-                    <li>Set <strong>bLuckDoesntAffectGambling</strong> to <strong>1</strong></li>
-                        <ul>
-                            <li>Prevents your Luck skill from having an effect on gambling, making it less easy to cheese casinos</li>
-                        </ul>
-                </ol>
-              <a class="internallink" href="#jsawyer"><h2 class="smallheader" id="jsawyer"><a href="https://www.nexusmods.com/newvegas/mods/61592" target="_blank">JSawyer Ultimate Edition</a></h2></a>
+            <a class="internallink" href="#jip_overhauls"><h2 class="smallheader" id="jip_overhauls"><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/main/JIP%20LN%20Overhauls%20INI.7z" target="_blank">JIP LN Overhauls INI</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ol">
+                        <li>Download and install normally through MO2</li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Allows NPCs to use weapon modifications and enables Fallout 3-style repair in which weapons can only be repaired up to a condition % equal to your repair skill</p>
+            <a class="internallink" href="#tweaks_overhauls"><h2 class="smallheader" id="tweaks_overhauls"><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/main/Stewie's%20Tweaks%20Overhauls%20INI.7z" target="_blank">lStewieAl's Tweaks Overhauls INI</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ol">
+                        <li>Download and install normally through MO2</li>
+                    </ul>
+                    <blockquote class="blockquote">
+                        IMPORTANT: It is <b>HIGHLY RECOMMENDED</b> to read through the two INI files from this. They contain relatively major gameplay changes and you will be very confused if you don't. It's only a few lines and takes less than a minute to read.
+                    </blockquote>
+                <p class="subparagraph"> - Enables extra gameplay-oriented settings in Stewie's Tweaks <b>without</b> completely overwriting the original INI</p>
+            <a class="internallink" href="#jsawyer"><h2 class="smallheader" id="jsawyer"><a href="https://www.nexusmods.com/newvegas/mods/61592" target="_blank">JSawyer Ultimate Edition</a></h2></a>
                     <h2 class="install">Installation instructions:</h2>
                         <ul class="standard_ul">
                             <li><b>Main File - JSawyer Ultimate Edition 5.3.0</b></li>
@@ -145,26 +122,27 @@ SOFTWARE.
                     <blockquote class="blockquote">
                         With this mod installed, it is highly recommended to play on <b>High</b> difficulty or lower.
                     </blockquote>
-            <a class="internallink" href="#jsue_ini"><h2 class="smallheader" id="jsue_ini"><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/main/JSawyer%20Ultimate%20Edition%20Custom%20INI.7z" target="_blank">JSawyer Ultimate Custom INI</a></h2></a>
+            <a class="internallink" href="#jsue_ini"><h2 class="smallheader" id="jsue_ini"><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/main/JSawyer%20Ultimate%20Edition%20Tweaks.7z" target="_blank">JSawyer Ultimate Tweaks</a></h2></a>
                 <h2 class="install">Installation instructions:</h2>
                     <ul class="standard_ol">
-                        <li>Download the mod using the download button pictured below</li>
-                        <li>Finish the install normally through MO2</li>
+                        <li>Download and install normally through MO2</li>
                     </ul>
                     <br>
-                    <p class="subparagraph"><img width="900px" src="./img/js ini install.png" alt="JSUE Custom INI"></p>
-                <p class="subparagraph"> - Enables settings in the JSUE INI to make the game more difficult, mainly enabling the <b>Survival Mode</b> feature, which makes the player deal 1.5x more damage and enemies deal 2x more damage</p>
+                <p class="subparagraph"> - My personal INI file and other small balance/consistency tweaks for JSUE</p>
                 <blockquote class="blockquote">
                     The INI contains many configurable features, such as an adjustable level cap and carry capacity formula. You should look through the INI and see if there are any features you would like to change.
                     For example, you can set <strong>fCarryWeightBase</strong> to <strong>150</strong> if you want the vanilla carry weight formula back.
                 </blockquote>
-          <a class="internallink" href="#economy"><h2 class="smallheader" id="economy"><a href="https://www.nexusmods.com/newvegas/mods/62899" target="_blank">Economy Overhaul</a></h2></a>
+            <a class="internallink" href="#energy_is"><h2 class="smallheader" id="energy_is"><a href="https://www.nexusmods.com/newvegas/mods/70790" target="_blank">Laser Weapon Iron Sights</a></h2></a>
                 <h2 class="install">Installation instructions:</h2>
                     <ul class="standard_ul">
-                        <li><b>Main File - Economy Overhaul 3.0.2</b></li>
+                        <li><b>Main File - Laser Weapon Iron Sights - Gun Runner's Arsenal Merged 1.6</b></li>
+                        <li><b>Main File - Plasma Weapon Iron Sights - Gun Runner's Arsenal Merged 1.0</b></li>
+                        <li><b>Optional File - Laser Weapon Iron Sights - Iron Sight Recoil Animations 1.4</b></li>
+                        <li><b>Optional File - Plasma Weapon Iron Sights - Iron Sight Recoil Animations 1.0</b></li>
                     </ul>
                     <br>
-                <p class="subparagraph"> - Overhauls the entire economy from the ground up, making buying/selling more difficult but more rewarding</p>
+                <p class="subparagraph"> - Adds functional iron sights to all energy weapons</p>
             <a class="internallink" href="#unfound_loot"><h2 class="smallheader" id="unfound_loot"><a href="https://eddoursul.win/mods/unfound-loot/" target="_blank">Unfound Loot</a></h2></a>
                 <h2 class="install">Installation instructions:</h2>
                     <ol class="standard_ol">
@@ -176,68 +154,38 @@ SOFTWARE.
             <a class="internallink" href="#unfoundloot_ini"><h2 class="smallheader" id="unfoundloot_ini"><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/main/Unfound%20Loot%20Custom%20INI.7z" target="_blank">Unfound Loot Custom INI</a></h2></a>
                     <h2 class="install">Installation instructions:</h2>
                         <ul class="standard_ol">
-                            <li>Download the mod using the download button pictured below</li>
-                            <li>Finish the install normally through MO2</li>
+                            <li>Download and install normally through MO2</li>
                         </ul>
                         <br>
-                        <p class="subparagraph"><img width="900px" src="./img/unfoundloot ini install.png" alt="Unfound Loot Custom INI"></p>
-                    <p class="subparagraph"> - Balances the settings in Unfound Loot to better fit the other mods in the guide like JSawyer Ultimate Edition and Economy Overhaul</p>
-                <a class="internallink" href="#complex_vendors"><h2 class="smallheader" id="complex_vendors"><a href="https://www.nexusmods.com/newvegas/mods/71512" target="_blank">Complex Vendors</a></h2></a>
-                    <h2 class="install">Installation instructions:</h2>
-                        <ul class="standard_ul">
-                            <li><b>Main File - Complex Vendors 1.3</b></li>
-                        </ul>
-                        <br>
-                    <p class="subparagraph"> - Makes use of the <strong>bBarterCheckActorBuySellFlags</strong> setting in lStewieAl's Tweaks, which restricts vendors to only buying/selling items related to their profession</p>
-            <a class="internallink" href="follower_formula"><h2 class="smallheader" id="follower_formula"><a href="https://www.nexusmods.com/newvegas/mods/71490" target="_blank">Follower Formula Redone</a></h2></a>
+                    <p class="subparagraph"> - Balances the settings in Unfound Loot to better fit the rest of the mods in the guide</p>
+            <a class="internallink" href="#player_priority"><h2 class="smallheader" id="player_priority"><a href="https://www.nexusmods.com/newvegas/mods/71699" target="_blank">Player Combat Priority</a></h2></a>
                 <h2 class="install">Installation instructions:</h2>
                     <ul class="standard_ul">
-                        <li><b>Main File - Follower Formula Redone 1.4</b></li>
+                        <li><b>Main File - Player Combat Priority 1.0.1</b></li>
                     </ul>
                     <br>
-                <p class="subparagraph"> - Changes the amount of followers you can have to your charisma skill/two rounded down, instead of always being able to have two</p>
-                <blockquote class="blockquote">
-                    With this mod installed, you will not be able to hire any followers if you have 1 Charisma.
-                </blockquote>
+                <p class="subparagraph"> - Makes enemies focus on the player in combat rather than solely companions</p>         
+            <a class="internallink" href="#misc_gameplay_merge"><h2 class="smallheader" id="misc_gameplay_merge"><a href="https://www.nexusmods.com/newvegas/mods/73921" target="_blank">Misc Gameplay Merge</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - Misc Gameplay Merge 1.7</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Compilation of many smaller gameplay-related mods, all updated, fixed, and optimized to work together</p>
             <a class="internallink" href="better_cc"><h2 class="smallheader" id="better_cc"><a href="https://www.nexusmods.com/newvegas/mods/70973" target="_blank">Better Character Creation</a></h2></a>
                 <h2 class="install">Installation instructions:</h2>
                     <ul class="standard_ul">
-                        <li><b>Main File - Better Character Creation 1.7</b></li>
+                        <li><b>Main File - Better Character Creation 1.8</b></li>
                     </ul>
                     <br>
                 <p class="subparagraph"> - Improves the character creation by speeding up the process, adding specialized gear based on your tag skills, and making Wild Wasteland an opt-in feature rather than a trait</p>
-              <a class="internallink" href="#ghouls"><h2 class="smallheader" id="ghouls"><a href="https://www.nexusmods.com/newvegas/mods/71101" target="_blank">Better Ghouls</a></h2></a>
-                    <h2 class="install">Installation instructions:</h2>
-                        <ul class="standard_ul">
-                            <li><b>Main File - Better Ghouls 1.1</b></li>
-                        </ul>
-                        <br>
-                    <p class="subparagraph"> - Removes ghouls "roar" animation that plays before they attack, meaning they now charge the player instantly - making them much deadlier</p>
-            <a class="internallink" href="tld"><h2 class="smallheader" id="tld"><a href="https://www.nexusmods.com/newvegas/mods/64623" target="_blank">The Living Desert</a></h2></a>
-                <h2 class="install">Installation instructions:</h2>
-                    <ul class="standard_ul">
-                        <li><b>Main File - The Living Desert - Main File 2.2</b></li>
-                    </ul>
-                    <br>
-                <p class="subparagraph"> - Adds hundreds of new NPCs and scripted events that make the world feel much more alive and reactive</p>
-                <blockquote class="blockquote">
-                    Because of all the new NPCs/scripts this mod adds it can be somewhat performance-intensive in some areas, especially on lower-end systems.
-                    If you have a weaker PC, you may want to skip this mod.
-                </blockquote>
-            <a class="internallink" href="mtb"><h2 class="smallheader" id="mtb"><a href="https://www.nexusmods.com/newvegas/mods/71536" target="_blank">Mobile Truck Base Remastered</a></h2></a>
-                <h2 class="install">Installation instructions:</h2>
-                    <ul class="standard_ul">
-                        <li><b>Main File - Mobile Truck Base Remastered 1.2</b></li>
-                    </ul>
-                    <br>
-                <p class="subparagraph"> - Adds a vanilla-friendly new player home and fast-travel method</p>
     </div>
     <div>
         <br> <br>
         <hr>
         <br>
         <a href="./gameplay.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
-        <a href="./finish.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
+        <a href="./content.htmls"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
         </div>
     <div class="footer">
         <div class="inner_footer">

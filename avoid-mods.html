@@ -55,10 +55,12 @@ SOFTWARE.
         <a href="./mo2.html">MO2</a>
         <a href="./utilities.html">Utilities</a>
         <a href="./bugfix.html">Bug Fixes</a>
+        <a href="./tweaks.html">Tweaks</a>
         <a href="./hud.html">User Interface</a>
         <a href="./visuals.html">Visuals</a>
         <a href="./gameplay.html">Gameplay</a>
         <a href="./overhauls.html">Overhauls</a>
+        <a href="./content.html">Content</a>
         <a href="./finish.html">Final Steps</a>
         <a href="./appendix.html">Appendix</a>
         <a href="./resources.html">Resources</a>
@@ -114,7 +116,7 @@ SOFTWARE.
             <br>
             <p class="subparagraph"><strong>Borderlands Inspired Numeric Damage:</strong> Causes save bloat due to not destructing its strings. Also can be very performance intensive due to constantly-running scripts and has a bug that can cause NPCs to teleport directly to you upon entering an interior.</p>
             <br>
-            <p class="subparagraph"><strong>Fallout Character Overhaul:</strong> Multiple broken file paths which cause missing mesh triangles and pink textures. The installer auto-selects patches for mods you don't have installed and installs the Glowing Ghouls file which causes massive performance drops and save bloat. It doesn't cover every NPC in the game (plus NPCs from the DLCs or mods), so any <a href="https://imgur.com/a/jMgRjBO" target="_blank">uncovered NPCs look very out of place</a>. It requires the <b>bLoadFaceGenHeadEGTFiles</b> INI setting to be enabled, which causes performance loss due to generating NPC face textures on the fly in-game. It also overwrites many YUP fixes for NPCs, though these can be patched using FNVEdit. I recommend <a href="https://www.nexusmods.com/newvegas/mods/71556" target="_blank">New Vegas Redesigned 2 Revised</a> instead (already in the guide).</p>
+            <p class="subparagraph"><strong>Fallout Character Overhaul:</strong> Multiple broken file paths which cause missing mesh triangles and pink textures. The installer auto-selects patches for mods you don't have installed and installs the Glowing Ghouls file which causes massive performance drops and save bloat. It doesn't cover every NPC in the game (plus NPCs from the DLCs or mods), so any <a href="https://imgur.com/a/jMgRjBO" target="_blank">uncovered NPCs look very out of place</a>. It requires the <b>bLoadFaceGenHeadEGTFiles</b> INI setting to be enabled, which causes performance loss due to generating NPC face textures on the fly in-game. It also overwrites many YUP fixes for NPCs, though these can be patched using FNVEdit. I recommend <a href="https://www.nexusmods.com/newvegas/mods/71556" target="_blank">New Vegas Redesigned 2 Revised</a> or <a href="https://www.nexusmods.com/newvegas/mods/64862" target="_blank">Character Expansions Revised</a> instead.</p>
             <br>
             <p class="subparagraph"><strong>Handheld Pip-Boys, such as the 2500:</strong> All hand-held Pip-Boys share the <a href="https://imgur.com/a/3NBafn5" target="_blank">same common visual bugs</a> that occur if you enter/exit your Pip-Boy too fast. The methods these mods use to hide the Pip-Boy in third person are also quite janky, as they were made before NVSE extensions like JIP LN. I recommend either the <a  href="https://www.nexusmods.com/newvegas/mods/49732" target="_blank">2500a</a> or
               <a  href="https://www.nexusmods.com/newvegas/mods/65980" target="_blank">2000 Mk VI</a>, or checking out <a href="https://www.nexusmods.com/newvegas/mods/66598" target="_blank">Universal Pip-Boy Customization</a> instead.</p>
@@ -123,9 +125,9 @@ SOFTWARE.
             <br>
             <p class="subparagraph"><strong>Unnecessary Physics:</strong> Causes save bloat since the game has to save the position of every individual part of every object you move.</p>
             <br>
-            <p class="subparagraph"><strong>Vault 22 Flora Overhaul:</strong> Disables objects with the <b>Has Tree LOD</b> flag, which can cause crashing. Also has tons of unnecessary bloat such as new weapons, enemies, poison effects, skill books, and more. I recommend <a href="https://www.nexusmods.com/newvegas/mods/71521" target="_blank">Vault 22 Flora Overhaul Remastered</a> instead.</p>
+            <p class="subparagraph"><strong>Vault 22 Flora Overhaul:</strong> Disables objects with the <b>Has Tree LOD</b> flag, which can cause crashing. Also has tons of unnecessary bloat such as new weapons, enemies, poison effects, skill books, and more. I recommend <a href="https://www.nexusmods.com/newvegas/mods/71521" target="_blank">Vault 22 Flora Overhaul Remastered</a> instead. Be aware that the mod is still pretty performance-intensive and should be avoided on weaker systems</p>
             <br>
-            <p class="subparagraph"><strong>New Vegas Landscape Overhaul (including the Remastered version):</strong> Has deleted navmeshes and deleted objects with the <b>Has Tree LOD</b> flag, which can cause crashing. I recommend <a href="https://www.nexusmods.com/newvegas/mods/69406" target="_blank">Enhanced Landscape</a> instead.</p>
+            <p class="subparagraph"><strong>New Vegas Landscape Overhaul Remastered:</strong> Has broken navmeshes, deleted objects with the <b>Has Tree LOD</b> flag  (which can cause crashing), many floating/clipping objects, and bad balance. I recommend <a href="https://www.nexusmods.com/newvegas/mods/74218" target="_blank">New Vegas Landscape Overhaul Re-Remastered</a> instead. Be aware that the mod is still pretty performance-intensive and should be avoided on weaker systems.</p>
             <br>
             <p class="subparagraph"><strong>Project Reality:</strong> Very poor scripting, will cause massive performance issues and save bloat. If you want a different weather mod than Altitude, I recommend <a  href="https://www.nexusmods.com/newvegas/mods/35998" target="_blank">Nevada Skies</a> instead.</p>
         <a class="internallink" href="#gameplay_avoid"><h2 class="smallheader" id="gameplay_avoid">Gameplay Mods to Avoid:</h2></a>
@@ -138,6 +140,7 @@ SOFTWARE.
                         <ul class="standard_ul">
                                 <li>Dynamic Crosshair, Bullet Time, Sprint, and more: <a  href="https://www.nexusmods.com/newvegas/mods/66666" target="_blank">Just Assorted Mods</a></li>
                                 <li>Grenade Hotkey: <a  href="https://www.nexusmods.com/newvegas/mods/64874" target="_blank">Quick Grenade Hotkey</a> and <a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium/blob/main/Quick%20Grenade%20Hotkey%20Tweaks.7z" target="_blank"> Quick Grenade Hotkey Tweaks</a></li>
+                                <li>Headwear Overlay: <a href="https://www.nexusmods.com/newvegas/mods/67870" target="_blank">Helmet Overlay</a></li>
                                 <li>Variable Zoom and Slower Backpedaling: <a  href="https://www.nexusmods.com/newvegas/mods/66347" target="_blank">lStewieAl's Tweaks</a> (enable <strong>bAdjustableScopeZoom</strong> and <strong>bMovementPenalties</strong> in the INI)</li>
                                 <li>Immersive Health Visuals: <a  href="https://www.nexusmods.com/newvegas/mods/67696" target="_blank">Custom Health and AP Visuals</a></li>
                                 <li>Enhanced Vision: <a  href="https://eddoursul.win/mods/enhanced-vision/" target="_blank">Enhanced Vision</a></li>
@@ -163,7 +166,7 @@ SOFTWARE.
                     <p class="subparagraph"><strong>Equipment Module:</strong></p>
                         <ul class="standard_ul">
                             <li>Fallout 3 Weapons: <a  href="https://www.nexusmods.com/newvegas/mods/40007" target="_blank">Fallout 3 Weapons Restoration</a></li>
-                            <li>Classic Fallout Weapons: <a  href="https://www.nexusmods.com/newvegas/users/63424201?tab=user+files" target="_blank">WebbProductions2020's Mods</a> (though these directly edit weapon records, so they require conflict resoluton in FNVEdit)</li>
+                            <li>Classic Fallout Weapons: <a href="https://www.nexusmods.com/newvegas/mods/73805" target="_blank">Classic Fallout Weapons Remastered</a></li>
                         </ul>
                 </ul>
                 <br>
@@ -179,7 +182,7 @@ SOFTWARE.
             <br>
             <p class="subparagraph"><strong>Increased Wasteland Spawns:</strong> Causes save bloat due to using the <b>PlaceAtMe</b> function. I recommend <a  href="https://www.nexusmods.com/newvegas/mods/64638" target="_blank">Mojave Wildlife</a> (I recommend the <b>Vanilla No Chanced Spawns Version</b> version, though any version will work) and <a  href="https://www.nexusmods.com/newvegas/mods/64623" target="_blank">The Living Desert</a> (already in the guide) instead.</p>
             <br>
-            <p class="subparagraph"><strong>True Wasteland Economy:</strong> Incredibly script-heavy, will cause save bloat and deteriorate performance over time. I recommend <a href="https://www.nexusmods.com/newvegas/mods/62899" target="_blank">Economy Overhaul</a> instead (already in the guide).</p>
+            <p class="subparagraph"><strong>True Wasteland Economy:</strong> Incredibly script-heavy, will cause save bloat and deteriorate performance over time. I recommend <a href="https://www.nexusmods.com/newvegas/mods/62899" target="_blank">Economy Overhaul</a> or <a href="https://www.nexusmods.com/newvegas/mods/71604" target="_blank">New Vegas Improved Economy</a> instead.</p>
             <br>
             <p class="subparagraph"><strong>DUST:</strong> Poorly made mod with almost 1000 errors in FNVEdit. Has a combination of deleted records, leftover null references, missing records, and more.</p>
             <br>
@@ -195,13 +198,13 @@ SOFTWARE.
               Also very unbalanced in my opinion, since many of the mods are either silencers or damage increases.
             </p>
             <br>
-            <p class="subparagraph"><strong>More Perks:</strong> Made in 2010 without the use of any script extenders, so many of the perks are broken or have poor implementation. I recommend <a href="https://www.nexusmods.com/newvegas/mods/70473" target="_blank">PerkPackPlus</a> instead.</p>
+            <p class="subparagraph"><strong>More Perks:</strong> Made in 2010 without the use of any script extenders, so many of the perks are broken or have poor implementation.</p>
             <br>
-            <p class="subparagraph"><strong>CAGE - Continue After Games Ending:</strong> Broken, use <a  href="https://www.nexusmods.com/newvegas/mods/66726" target="_blank">Functional Post Game Ending</a> instead.</p>
+            <p class="subparagraph"><strong>CAGE - Continue After Games Ending:</strong> Broken, use <a  href="https://www.nexusmods.com/newvegas/mods/66726" target="_blank">Functional Post Game Ending</a> or <a href="https://www.nexusmods.com/newvegas/mods/73668" target="_blank">FPGE Lite</a> instead.</p>
             <br>
             <p class="subparagraph"><strong>NV Interiors Project:</strong> Causes save bloat due to the large amount of havok-enabled items that all have their individual positions stored on the save when you enter an interior. Use <a href="https://www.nexusmods.com/newvegas/mods/71228" target="_blank">NV Interiors Remastered</a> instead.</p>
             <br>
-            <p class="subparagraph"><strong>Classic Fallout Weapons:</strong> Countless broken meshes and leveled lists, will cause crashes. If you want weapons from the classic Fallout games, use <a  href="https://www.nexusmods.com/newvegas/users/63424201?tab=user+files" target="_blank">WebbProductions2020's Mods</a> (though these directly edit weapon records, so they require conflict resoluton in FNVEdit).</p>
+            <p class="subparagraph"><strong>Classic Fallout Weapons:</strong> Countless broken meshes and leveled lists, will cause crashes. I recommend <a href="https://www.nexusmods.com/newvegas/mods/73805" target="_blank">Classic Fallout Weapons Remastered</a> instead.</p>
             <br>
             <p class="subparagraph"><strong>Honest Hearts Reborn:</strong> Re-compiles every script in the game, so if you want to use it you must clean it in FNVEdit first. It will still have many bugs after cleaning though.</p>
             <br>
