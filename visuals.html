@@ -55,7 +55,7 @@ SOFTWARE.
         <a href="./mo2.html">MO2</a>
         <a href="./utilities.html">Utilities</a>
         <a href="./bugfix.html">Bug Fixes</a>
-        <a href="./tweaks.html">Tweaks</a>
+        
         <a href="./hud.html">User Interface</a>
         <a href="./visuals.html"><span style="color:#DCDCDC">Visuals</span></a>
         <a href="./gameplay.html">Gameplay</a>
@@ -68,14 +68,17 @@ SOFTWARE.
         <a href="./visuals.html">Visuals</a>
             <ul>
                 <a href="./visuals.html#separator"><span style="font-size:.8vw;">Separator</span></a>
+                <a href="./visuals.htmlfaster-pipboy"><span style="font-size:.8vw;">Faster Pip-Boy</span></a>
+                <a href="./visuals.html#muzzle_lights"><span style="font-size:.8vw;">No Muzzle Lights</span></a>
                 <a href="./visuals.html#anim_pack"><span style="font-size:.8vw;">Anniversary Anims</span></a>
                 <a href="./visuals.html#anim_bugfix"><span style="font-size:.8vw;">Anniversary Anims Bugfix</span></a>
+                <a href="./visuals.html#is_control"><span style="font-size:.8vw;">IS Control Enabler</span></a>
                 <a href="./visuals.html#inertia"><span style="font-size:.8vw;">Weapon Inertia</span></a>
                 <a href="./visuals.html#skeleton"><span style="font-size:.8vw;">Compatibility Skeleton</span></a>
                 <a href="./visuals.html#improved_lod"><span style="font-size:.8vw;">Improved LOD</span></a>
                 <a href="./visuals.html#generated_lod"><span style="font-size:.8vw;">Vanilla LOD</span></a>
                 <a href="./visuals.html#silo"><span style="font-size:.8vw;">Interior Lighting</span></a>
-                <a href="./visuals.html#altitude"><span style="font-size:.8vw;">Altitude</span></a>
+                <a href="./visuals.html#dn"><span style="font-size:.8vw;">DN Weathers</span></a>
                 <a href="./visuals.html#lamplight"><span style="font-size:.8vw;">More Lamplight</span></a>
             </ul>
     </div>
@@ -94,16 +97,35 @@ SOFTWARE.
                 <ol class="standard_ol">
                     <li>Right-click anywhere in the left pane of MO2 and select <strong>All Mods -> Create Separator</strong></li>
                     <li>Name the separator <strong>Visuals</strong></li>
-                </ol>
+                </ol>  
+            <a class="interallink" href="#faster_pipboy"><h2 class="smallheader" id="faster_pipboy"><a href="https://www.nexusmods.com/newvegas/mods/67761" target="_blank">Faster Pip-Boy Animation</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ol">
+                        <li><b>Main File - Faster Pip-Boy Animation (2x) 1.0</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Doubles the speed of the Pip-Boy opening animation</p>
+            <a class="interallink" href="#muzzle_lights"><h2 class="smallheader" id="muzzle_lights"><a href="https://c6-dev.github.io/mods/no_muzzle_flash_lights/" target="_blank">No Muzzle Flash Lights</a></h2></a>
+                    <h2 class="install">Installation instructions:</h2>
+                        <ol class="standard_ol">
+                            <li>Scroll to the bottom of the page and click the <strong>New Vegas</strong> link to start the download</li>
+                            <li>Finish the installation normally through MO2</li>
+                        </ol>
+                        <br>
+                    <p class="subparagraph"> - Disables the lights cast by muzzle flashes, which can greatly improve performance in combat</p>
+                <blockquote class="blockquote">
+                    This mod does not disable the actual muzzle flashes, but rather the lights the muzzle flashes cast on the environment. 
+                    It also only disables the effect for NPCs by default, but that can be configured via the included INI file. See the mod's screenshots for details.
+                    Like any mod in the guide, it can be skipped if you like the effect and don't mind the performance hit. 
+                </blockquote>
             <a class="internallink" href="#anim_pack"><h2 class="smallheader" id="anim_pack"><a href="https://www.nexusmods.com/newvegas/mods/70158" target="_blank">Anniversary Animation Pack</a></h2></a>
                 <h2 class="install">Installation instructions:</h2>
                     <ul class="standard_ul">
-                        <li><b>Main File - Anniversary Anim Pack 1.9c</b></li>
-                        <li><b>Optional File - Weapon Mesh Improvement Mod Patch 1.7</b></li>
+                        <li>Download and install the <strong>Main File - Anniversary Anim Pack 1.9c</strong> through MO2</li>
+                        <li>Once the mod has been installed, double-click it in the left pane of MO2 and select <strong>Filetree</strong></li>
+                        <li>Delete every folder <i>EXCEPT</i> the <strong>characters</strong> folder</li>
                     </ul>
-                    <blockquote class="blockquote">
-                        If you do not know what to do when installing multiple mods from the same page, read the <strong>Mod Installation Advice</strong> section from the <a href="./mo2.html#advice" target="_blank">MO2</a> page
-                    </blockquote>
+                    <br>
                 <p class="subparagraph"> - Includes three of Hitman's previous animation mods, <a href="https://www.nexusmods.com/newvegas/mods/67728" target="_blank">Subtle Camera Motion</a>, <a href="https://www.nexusmods.com/newvegas/mods/67760" target="_blank">Iron Sights Recoil Animations</a>, and <a href="https://www.nexusmods.com/newvegas/mods/67841" target="_blank">Fire Animation Variants</a>, as well as some new previously unreleased animations</p>
             <a class="internallink" href="#anim_bugfix"><h2 class="smallheader" id="anim_bugfix"><a href="https://www.nexusmods.com/newvegas/mods/72320" target="_blank">Anniversary Anim Pack - General Bugfix</a></h2></a>
                 <h2 class="install">Installation instructions:</h2>
@@ -113,6 +135,13 @@ SOFTWARE.
                     </ul>
                     <br>
                 <p class="subparagraph"> - Fixes many bugs/inconsistencies in Anniversary Anims Pack</p>
+            <a class="internallink" href="#is_control"><h2 class="smallheader" id="is_control"><a href="https://www.nexusmods.com/newvegas/mods/70158" target="_blank">ISControl Enabler</a></h2></a>
+                <h2 class="install">Installation instructions:</h2>
+                    <ul class="standard_ul">
+                        <li><b>Main File - ISControl 1.1</b></li>
+                    </ul>
+                    <br>
+                <p class="subparagraph"> - Enables all weapons to use Anniversary Anims recoil animations without patching</p>
              <a class="internallink" href="#inertia"><h2 class="smallheader" id="inertia"><a href="https://www.nexusmods.com/newvegas/mods/64335" target="_blank">B42 Weapon Inertia</a></h2></a>
                 <h2 class="install">Installation instructions:</h2>
                     <ul class="standard_ul">
@@ -150,21 +179,22 @@ SOFTWARE.
             <a class="internallink" href="#silo"><h2 class="smallheader" id="silo"><a href="https://www.nexusmods.com/newvegas/mods/71390" target="_blank">Simple Interior Lighting Overhaul</a></h2></a>
                 <h2 class="install">Installation instructions:</h2>
                     <ul class="standard_ul">
-                        <li><b>Main File - Simple Interior Lighting Overhaul 1.1</b></li>
+                        <li><b>Main File - Simple Interior Lighting Overhaul 1.2</b></li>
                     </ul>
                     <br>
                 <p class="subparagraph"> - Gives interiors a more atmospheric and immersive feel</p>
-            <a class="internallink" href="#altitude"><h2 class="smallheader" id="altitude"><a href="https://www.nexusmods.com/newvegas/mods/71404" target="_blank">Altitude</a></h2></a>
+            <a class="internallink" href="#dn"><h2 class="smallheader" id="dn"><a href="https://www.nexusmods.com/newvegas/mods/75437" target="_blank">Desert Natural Weathers</a></h2></a>
                 <h2 class="install">Installation instructions:</h2>
                     <ul class="standard_ul">
-                        <li><b>Main File - Altitude 3.1</b></li>
-                        <li><b>Optional File - Altitude - Zion Ambient Music 1.0</b></li>
+                        <li><b>Main File - Desert Natural Weathers 2.0</b></li>
+                        <li><b>Maine File - DN Weathers 2.2</b></li>
                     </ul>
                     <br>
-                <p class="subparagraph"> - Vastly improves all the weathers in the game, while still keeping a relatively vanilla-esque feeling</p>
+                <p class="subparagraph"> - Major overhaul to all of the weathers for the base game and DLCs</p>
                 <blockquote class="blockquote">
-                    As visual mods are very subjective, not everyone will like Altitude. If you want an alternative, I suggest checking out
-                    <a href="https://www.nexusmods.com/newvegas/mods/35998" target="_blank">Nevada Skies</a> plus <a href="https://www.nexusmods.com/newvegas/mods/72740" target="_blank">Nevada Skies Tweaks</a>. It's a great mod and its fully compatible with the guide if you install it <b>instead of</b> Altitude. They can not be used at the same time.
+                    As visual mods are very subjective, not everyone will like DN Weathers. If you want an alternatives, I recommend checking out <a href="https://www.nexusmods.com/newvegas/mods/71404" target="_blank">Altitude</a>,
+                    <a href="https://www.nexusmods.com/newvegas/mods/35998" target="_blank">Nevada Skies</a>, <a href="https://www.nexusmods.com/newvegas/mods/67277" target="_blank">Yellow Goodbye</a>, or <a href="https://www.nexusmods.com/newvegas/mods/62481" target="_blank">Clarity</a>.
+                    Yellow Goodbye and Clarity aim for a much more vanilla style, mostly just removing the game's atmospheric tint, whereas Nevada Skies is a complex and very customizable complete overhaul. Meanwhile, Altitude aims to strike a balance between staying vanilla-friendly and being a complete overhaul.
                 </blockquote>
             <a class="internallink" href="#lamplight"><h2 class="smallheader" id="lamplight"><a href="https://www.nexusmods.com/newvegas/mods/69226" target="_blank">A Little More Lamplight</a></h2></a>
                 <h2 class="install">Installation instructions:</h2>

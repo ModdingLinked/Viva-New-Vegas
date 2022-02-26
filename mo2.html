@@ -55,7 +55,7 @@ SOFTWARE.
         <a href="./mo2.html"><span style="color:#DCDCDC">MO2</span></a>
         <a href="./utilities.html">Utilities</a>
         <a href="./bugfix.html">Bug Fixes</a>
-        <a href="./tweaks.html">Tweaks</a>
+        
         <a href="./hud.html">User Interface</a>
         <a href="./visuals.html">Visuals</a>
         <a href="./gameplay.html">Gameplay</a>
@@ -89,7 +89,7 @@ SOFTWARE.
                 <ol class="standard_ol">
                     <li>Download the <strong>Mod Organizer 2</strong> main file from <a href="https://www.nexusmods.com/skyrimspecialedition/mods/6194?tab=files" target="_blank">here</a></li>
                     <li>Once the download has finished, run the installer</li>
-                    <li>When prompted to choose an install location, pick any location outside of any default Window folders (like <code>Program Files x86</code>) and outside of the game's <strong>Root</strong> folder</li>
+                    <li>When prompted to choose an install location, pick any location outside of any default Window folders (like <code>Program Files x86</code>) and outside of the game's <strong>Root</strong> folder (the installer's default location will work)</li>
                     <li>Click <strong>Next</strong> until the installer finishes</li>
                 </ol>
             <a class="internallink" href="#config_mo2"><h2 class="subheader" id="config_mo2">Configuring Mod Organizer 2</h2></a>
@@ -115,11 +115,6 @@ SOFTWARE.
                                 <li>This pop-up will not show up if you have already registered a different instance of MO2</li>
                             </ul>
                     </ol>
-                    <blockquote class="blockquote">
-                        If at any point you get a pop-up called <strong>INI file is read-only</strong>,
-                        select <strong>Remember my choice</strong> from the drop-down at the bottom
-                        then click <strong>Clear the read-only flag</strong>
-                    </blockquote>
                 <a class="internallink" href="#plugins"><p class="smallheader" id="plugins">Ordering Plugins</p></a>
                     <ol class="standard_ol">
                         <li>Once Mod Organizer 2 has loaded, right-click in the right pane and select <strong>Enable all</strong></li>
@@ -162,10 +157,15 @@ SOFTWARE.
                 <ol class="standard_ol">
                     <li>Select the <img src="./img/mo2 profiles.png" alt="mo2 profiles"> button at the top of MO2 to open the profiles menu</li>
                     <li>Select the <strong>Default</strong> profile, then select <strong>Copy</strong></li>
-                    <li>Name the new profile <strong>Testing</strong></li>
-                    <li>Select the <strong>Testing</strong> profile and make sure both <strong>Use profile-specific Game INI Files</strong> and <strong>Automatic Archive Invalidation</strong> are checked at the bottom</li>
-                    <li>With the <strong>Testing</strong> profile selected, select <strong>Copy</strong></li>
                     <li>Name the new profile <strong>Viva New Vegas</strong></li>
+                    <li>Select the <strong>Viva New Vegas</strong> profile and make sure both <strong>Use profile-specific Game INI Files</strong> and <strong>Automatic Archive Invalidation</strong> are checked at the bottom</li>
+                </ol>
+                    <blockquote class="blockquote">
+                        You may get a pop-up called <strong>INI file is read-only</strong> when attempting to make/select a new profile. If so then
+                        select <strong>Remember my choice</strong> from the drop-down at the bottom
+                        then click <strong>Clear the read-only flag</strong>
+                    </blockquote>
+                <ol class="standard_ol" start="5">
                     <li>Exit out of the profiles menu and select the <strong>Viva New Vegas</strong> profile from the drop-down above the left pane</li>
                         <img src="./img/mo2 profile select.png" alt="profile select">
                 </ol>
@@ -211,25 +211,24 @@ SOFTWARE.
                                     iMaxSizeForCachedSound=1024<br>
                                 </p>
                             </ul>
-                        <li>Repeat the INI changes on the <strong>Testing</strong> profile</li>
                     </ol>
                 <a class="internallink" href="#ini_notes"><p class="smallheader" id="ini_notes">Notes</p></a>
                     <p class="subparagraph">
-                        It is highly recommended to avoid changing any other INI settings not in the guide, and to avoid using INI "optimization" tools like BethINI.
+                        It is highly recommended to avoid changing any other INI settings not in the guide, and to avoid using tools like BethINI.
                         The changes these will make are placebo at best and dangerous at worst. You will realistically not need any other tweaks than the ones
                         already in the guide.
                     </p>
             <a class="internallink" href="#advice"><h2 class="subheader" id="advice">Mod Installation Advice</h2></a>
                 <blockquote class="blockquote">
                     If you are completely unfamiliar with Mod Organizer 2, I recommended watching <a href="https://www.youtube.com/watch?v=7v0wWVuOagA" target="_blank">GamerPoet's video</a> about mod installation in MO2.
-                    As it was made for Skyrim, it has some information that does not apply to New Vegas, such as the Steam Workshop part which you can just ignore.
-                    However, the rest of the information about downloading/installing mods from Nexus still applies.
+                    As it was made for Skyrim, it has some information that does not apply to New Vegas, such as the Steam Workshop part.
+                    However, the rest of the information about downloading/installing mods from Nexus applies to all Bethesda games.
                 </blockquote>
                 <p class="subparagraph">
-                    When the guide says to install a mod, it will be formatted as follows: <strong>Main File - Example Mod 1.5</strong>. This is referring to the mod's category on Nexus, the file name, and the file version.
+                    When the guide says to install a mod, it will be formatted as follows: <strong>Main File - YUP - Base Game and All DLCs 12.0</strong>. This is referring to the mod's category on Nexus, the file name, and the file version.
                         <br> <br>
                         <img width="800px;" src="./img/download example.png" alt="download example"> <br> <br>
-                    Unless instructed otherwise, simply download the listed file using the <strong>Mod Manager Download</strong> button and install it normally through MO2.
+                    Unless instructed otherwise, simply download the listed file using the <strong>Mod Manager Download</strong> button and install it through MO2.
                     If you do not know how to install mods through MO2, please watch the video linked above. Sometimes, a mod will not have a <strong>Mod Manager Download</strong>, or
                     will be hosted on a site other than Nexus. If that is the case, do the following:
                 </p>
@@ -238,7 +237,7 @@ SOFTWARE.
                     <li>Click the <strong>Manual Download</strong> button (or whatever the download button is for the respective site)</li>
                     <li>Once the download has finished, click the <img src="./img/mo2 archive.png" alt="mo2 archive button"> button at the top of MO2</li>
                     <li>From the new window, navigate to where the file was downloaded to and double-click it</li>
-                    <li>Finish the install normally</li>
+                    <li>Finish the install as you would with a <strong>Mod Manager Download</strong> mod</li>
                 </ol>
                 <br>
                 <p class="subparagraph">
