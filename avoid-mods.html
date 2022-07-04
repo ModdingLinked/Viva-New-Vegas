@@ -55,7 +55,6 @@ SOFTWARE.
         <a href="./mo2.html">MO2</a>
         <a href="./utilities.html">Utilities</a>
         <a href="./bugfix.html">Bug Fixes</a>
-        
         <a href="./hud.html">User Interface</a>
         <a href="./visuals.html">Visuals</a>
         <a href="./gameplay.html">Gameplay</a>
@@ -88,11 +87,10 @@ SOFTWARE.
               New Vegas Stutter Remover:</strong> Irreparably broken by Windows 10 due to relying on undefined behavior. Will cause crashes every ~15 minutes.
               Every single feature from NVSR has been replaced in a modern manner by the combination of <a href="https://www.nexusmods.com/newvegas/mods/66537" target="_blank">New Vegas Tick Fix</a>, <a href="https://www.nexusmods.com/newvegas/mods/69779" target="_blank">New Vegas Heap Replacer</a>,
               and <a href="https://www.nexusmods.com/newvegas/mods/66347" target="_blank">lStewieAl's Tweaks</a>. These mods also have many great features that NVSR never had, like the high FPS physics fix. There is no reason to use NVSR, even on Windows 7.
-
             </p>
             <br>
             <p class="subparagraph"><strong>ENBoost:</strong> New Vegas Tick Fix has much better memory management than ENBoost, and will increase performance/decrease stuttering more. ENBoost also needs a lot of system-specific configuration to work properly and can degrade performance without proper tweaking.
-                                                              ENB in general for New Vegas has been more or less abandoned by its author in favor of Skyrim.
+            ENB in general for New Vegas has been more or less abandoned by its author in favor of Skyrim.
             </p>
             <br>
             <p class="subparagraph"><strong>Zan AutoPurge Crash Protector/PCB Hotkey:</strong> The script command used by these mods is a leftover command from development that forcefully clears buffered cells from memory, which can lead to unforeseen consequences. Essentially the same function is performed safely by the .INI tweaks in the guide.</p>
@@ -100,12 +98,12 @@ SOFTWARE.
             <p class="subparagraph"><strong>Save Cleaner:</strong> Works by going through your save file and deleting every REFR file, which will most likely break your save.</p>
             <br>
             <p class="subparagraph"><strong>Performance of the Gods (or pretty much all mods with "Performance" in the title):</strong> Performance gain is usually placebo, disabling small clutter items with less than five polygons won't do anything.
-               Also potentially dangerous if they mark the records as <b>Deleted</b> rather than <b>Initially Disabled</b>, as the game can crash if a script tries to reference a deleted object.</p>
+            Also potentially dangerous if they mark the records as <b>Deleted</b> rather than <b>Initially Disabled</b>, as the game can crash if a script tries to reference a deleted object.</p>
         <a class="internallink" href="#bugfixes_avoid"><h2 class="smallheader" id="bugfixes_avoid">Bug Fixes to Avoid:</h2></a>
             <p class="subparagraph"><strong>Mission Mojave:</strong> Heavily outdated compared to <a href="https://www.nexusmods.com/newvegas/mods/51664" target="_blank">Yukichigai Unofficial Patch</a>, will break more than it fixes and cause crashing.</p>
         <a class="internallink" href="#visuals_avoid"><h2 class="smallheader" id="visuals_avoid">Visual Mods to Avoid:</h2></a>
             <p class="subparagraph"><strong>ENB:</strong> As mentioned earlier with ENBoost, ENBs were never fully developed for New Vegas and have been abandoned by the author. They have a ton of bugs and performance issues, such as broken Anti-aliasing, transparent objects, and glowing objects (though glowing objects can be mostly mitigated with <a href="https://www.nexusmods.com/newvegas/mods/73431" target="_blank">ENB Glowing Objects Overhaul</a>). They also use a lot of <a href="https://imgur.com/a/8UT356J" target="_blank">vision-obscuring effects</a> like depth of field, lens flares, bloom, and chromatic aberration to obscure the broken Anti-aliasing, which makes hem very hard to play with.
-              I recommend using a ReShade preset instead, such as the ReShade preset optional file from <a href="https://www.nexusmods.com/newvegas/mods/75437" target=""_blank>Desert Natural Weathers</a> or <a href="https://www.nexusmods.com/newvegas/mods/71772" target="_blank">Vanilla Plus ReShade Preset</a>.</p>
+            I recommend using a ReShade preset instead, such as the ReShade preset optional file from <a href="https://www.nexusmods.com/newvegas/mods/75437" target=""_blank>Desert Natural Weathers</a> or <a href="https://www.nexusmods.com/newvegas/mods/71772" target="_blank">Vanilla Plus ReShade Preset</a>.</p>
             <br>
             <p class="subparagraph"><strong>New Vegas Reloaded:</strong> Incredibly buggy and almost impossible to play with (flickering shadows, transparency issues, broken water LOD, performance loss). As with ENB, I recommend using the ReShade preset optional file from <a href="https://www.nexusmods.com/newvegas/mods/75437" target=""_blank>Desert Natural Weathers</a> or <a href="https://www.nexusmods.com/newvegas/mods/71772" target="_blank">Vanilla Plus ReShade Preset</a>
             </p>
@@ -119,7 +117,7 @@ SOFTWARE.
             <p class="subparagraph"><strong>Fallout Character Overhaul:</strong> Multiple broken file paths which cause missing mesh triangles and pink textures. The installer auto-selects patches for mods you don't have installed and installs the Glowing Ghouls file which causes massive performance drops and save bloat. It doesn't cover every NPC in the game (plus NPCs from the DLCs or mods), so any <a href="https://imgur.com/a/jMgRjBO" target="_blank">uncovered NPCs look very out of place</a>. It requires the <b>bLoadFaceGenHeadEGTFiles</b> INI setting to be enabled, which causes performance loss due to generating NPC face textures on the fly in-game. It also overwrites many YUP fixes for NPCs, though these can be patched using FNVEdit. I recommend <a href="https://www.nexusmods.com/newvegas/mods/71556" target="_blank">New Vegas Redesigned 2 Revised</a> or <a href="https://www.nexusmods.com/newvegas/mods/64862" target="_blank">Character Expansions Revised</a> instead.</p>
             <br>
             <p class="subparagraph"><strong>Handheld Pip-Boys, such as the 2500:</strong> All hand-held Pip-Boys share the <a href="https://imgur.com/a/3NBafn5" target="_blank">same common visual bugs</a> that occur if you enter/exit your Pip-Boy too fast. The methods these mods use to hide the Pip-Boy in third person are also quite janky, as they were made before NVSE extensions like JIP LN. I recommend either the <a  href="https://www.nexusmods.com/newvegas/mods/49732" target="_blank">2500a</a> or
-              <a  href="https://www.nexusmods.com/newvegas/mods/65980" target="_blank">2000 Mk VI</a>, or checking out <a href="https://www.nexusmods.com/newvegas/mods/66598" target="_blank">Universal Pip-Boy Customization</a> instead.</p>
+            <a  href="https://www.nexusmods.com/newvegas/mods/65980" target="_blank">2000 Mk VI</a>, or checking out <a href="https://www.nexusmods.com/newvegas/mods/66598" target="_blank">Universal Pip-Boy Customization</a> instead.</p>
             <br>
             <p class="subparagraph"><strong>Electro City:</strong> Has broken LOD that can cause crashing. Also includes <a href="https://imgur.com/a/spSSCZD" target="_blank">unnecessary bloat and leftover features from a planned quest</a>. I recommend <a  href="https://www.nexusmods.com/newvegas/mods/69226" target="_blank">A Little More Lamplight</a> instead (already in the guide).</p>
             <br>
@@ -130,7 +128,7 @@ SOFTWARE.
             <p class="subparagraph"><strong>New Vegas Landscape Overhaul Remastered:</strong> Has broken navmeshes, deleted objects with the <b>Has Tree LOD</b> flag  (which can cause crashing), many floating/clipping objects, and bad balance. I recommend <a href="https://www.nexusmods.com/newvegas/mods/74218" target="_blank">New Vegas Landscape Overhaul Re-Remastered</a> instead. Be aware that the mod is still pretty performance-intensive and should be avoided on weaker systems.</p>
             <br>
             <p class="subparagraph"><strong>Project Reality:</strong> Very poor scripting, will cause massive performance issues and save bloat. If you want a different weather mod than DN Weathers, I recommend either <a href="https://www.nexusmods.com/newvegas/mods/71404" target="_blank">Altitude</a>,
-                <a href="https://www.nexusmods.com/newvegas/mods/35998" target="_blank">Nevada Skies</a>, <a href="https://www.nexusmods.com/newvegas/mods/67277" target="_blank">Yellow Goodbye</a>, or <a href="https://www.nexusmods.com/newvegas/mods/62481" target="_blank">Clarity</a> instead.</p>
+            <a href="https://www.nexusmods.com/newvegas/mods/35998" target="_blank">Nevada Skies</a>, <a href="https://www.nexusmods.com/newvegas/mods/67277" target="_blank">Yellow Goodbye</a>, or <a href="https://www.nexusmods.com/newvegas/mods/62481" target="_blank">Clarity</a> instead.</p>
         <a class="internallink" href="#gameplay_avoid"><h2 class="smallheader" id="gameplay_avoid">Gameplay Mods to Avoid:</h2></a>
             <p class="subparagraph"><strong>Project Nevada:</strong> Outdated, inefficient, bloated, and broken. Most features have modern alternatives (see the list below). Has almost 20 scripts that run every single frame, causes save bloat due to continuous quest stages being triggered, and some features either don't work or break the game (chargeable weapons, lethal headshots, and the stealth/AI changes).</p> <br>
                 <ul>
