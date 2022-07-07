@@ -31,13 +31,13 @@ SOFTWARE.
     <link rel="icon" href="https://vivanewvegas.github.io/img/logo.png">
     <script src="https://kit.fontawesome.com/e15125fcf7.js" crossorigin="anonymous"></script>
     <title>LOD Guide | Viva New Vegas</title>
-    <meta name="description" content="Guide for generating Object LOD with FNVLODgen.">
+    <meta name="description" content="Guide for generating Object LOD with xLODgen.">
     <meta name="twitter:card" value="summary">
     <meta property="og:title" content="Viva New Vegas" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://vivanewvegas.github.io/" />
     <meta property="og:image" content="https://vivanewvegas.github.io/img/logo.png" />
-    <meta property="og:description" content="Guide for generating Object LOD with FNVLODgen." />
+    <meta property="og:description" content="Guide for generating Object LOD with xLODgen." />
 </head>
 <body>
     <div class="titlecontainer">
@@ -55,7 +55,6 @@ SOFTWARE.
         <a href="./mo2.html">MO2</a>
         <a href="./utilities.html">Utilities</a>
         <a href="./bugfix.html">Bug Fixes</a>
-        
         <a href="./hud.html">User Interface</a>
         <a href="./visuals.html">Visuals</a>
         <a href="./gameplay.html">Gameplay</a>
@@ -69,9 +68,9 @@ SOFTWARE.
     <div class="sidenavright">
         <a href="./lod.html">LOD</a>
             <ul>
-               <a href="./lod.html#installing_lodgen" span style="font-size:.8vw;">Installing FNVLODGen</a>
+               <a href="./lod.html#installing_lodgen" span style="font-size:.8vw;">Installing xLODGen</a>
                <a href="./lod.html#installing_resources" span style="font-size:.8vw;">Installing Resources</a>
-               <a href="./lod.html#running_lodgen" span style="font-size:.8vw;">Running FNVLODGen</a>
+               <a href="./lod.html#running_lodgen" span style="font-size:.8vw;">Running xLODGen</a>
             </ul>
     </div>
     <div>
@@ -82,25 +81,21 @@ SOFTWARE.
             Before getting started, there are a few things you should know. First, you do not need to generate LOD if you just followed the guide.
             The <a href="./visuals.html#generated_lod" target="_blank">Vanilla LOD</a> mod in the guide is essentially the same as what these instructions accomplish.
             These instructions are only for if you installed texture mods (such as NMCs or Poco Bueno) or are using a mod that requires LOD to be generated (like MoreMojave).
-            Second, there are two versions of LODGen available: <a href="https://www.nexusmods.com/newvegas/mods/58562" target="_blank">FNVLODGen</a> and
-            <a href="https://stepmodifications.org/forum/topic/13451-xlodgen-terrain-lod-beta-76-for-fnv-fo3-fo4-fo4vr-tes5-sse-tes5vr-enderal-enderalse/" target="_blank">xLODGen</a>.
-            xLODGen is the newer (and more experimental) version, and includes the option to generate terrain LOD. However, I don't recommended generating terrain LOD unless
-            you use a mod that requires it.
             Terrain LOD creates a much larger file size (+500mb) and potential performance loss for a very minimal visual improvement. Therefore, this guide will focus only on generating
-            object LOD with FNVLODGen. If you need to generate xLODGen terrain LOD for whatever reason, the instructions will be the exact same except you will need to enable <b>Terrain LOD</b>
+            object LOD with xLODGen. If you need to generate xLODGen terrain LOD for whatever reason, the instructions will be the exact same except you will need to enable <b>Terrain LOD</b>
             option in addition to the <b>Object LOD</b> option.
         </p>
-        <a class="internallink" href="#installing_lodgen"><h2 class="subheader" id="installing_lodgen">Installing FNVLODGen:</h2></a>
+        <a class="internallink" href="#installing_lodgen"><h2 class="subheader" id="installing_lodgen">Installing xLODGen:</h2></a>
             <ol class="standard_ol">
-                <li>Download the <strong>Main File - FNVLODGen 3.2.1</strong> file from <a href="https://www.nexusmods.com/newvegas/mods/58562" target="_blank">here</a></li>
+                <li>Download the latest <strong>xLODGen</strong> file from <a href="https://stepmodifications.org/forum/topic/13451-xlodgen-terrain-lod-beta-94-for-fnv-fo3-fo4-fo4vr-tes5-sse-tes5vr-enderal-enderalse/" target="_blank">here</a></li>
                 <li>Once the download has finished, extract the contents of the archive to any location of your choice</li>
                 <li>In MO2, select the <img src="./img/mo2 executabes.png" alt="mo2 executables"> button at the top of MO2 to open the executables menu</li>
                 <li>Click the <strong style="color:rgb(20, 162, 228)">+</strong> at the top of the window and the select <strong>Add from file...</strong></li>
-                <li>From the pop-up, navigate to where FNVLODGen is installed and select <strong>FNVLODGen.exe</strong></li>
-                <li>In the <b>Arguments</b> box in the right pane, enter <code>-o:"C:\Output\"</code></li>
+                <li>From the pop-up, navigate to where xLODGen is installed and select <strong>xLODGen.exe</strong></li>
+                <li>In the <b>Arguments</b> box in the right pane, enter <code>-FNV -O:"C:\Output\"</code></li>
             </ol>
             <blockquote class="blockquote">
-                This argument will make the files generated through FNVLODGen appear in a folder called <b>Output</b> on your <b>C:\</b> drive (the drive Windows is installed on).
+                This argument will make the files generated through xLODGen appear in a folder called <b>Output</b> on your <b>C:\</b> drive (the drive Windows is installed on).
                 You can change this path to whatever you would like if you would prefer the files to be generated elsewhere.
             </blockquote>
             <ol class="standard_ol" start="9">
@@ -112,19 +107,19 @@ SOFTWARE.
               The plugins from the following mods should be placed directly above <strong>Altitude.esp</strong>, or the plugin of whatever weather mod you are using.
             </blockquote>
             <ul class="standard_ul">
-                <li><a href="https://www.nexusmods.com/newvegas/mods/58562" target="_blank">FNVLODGen</a> - <strong>Main File- FNVLODGen Resources 1.1</strong></li>
+                <li><a href="https://www.nexusmods.com/newvegas/mods/58562" target="_blank">FNVLODGen</a> - <strong>Main File- FNVLODGen Resources</strong></li>
                   <ul>
                     <li>If you are using NMCs Texture Pack, also install the <strong>Optional File - NMC LOD texture fix</strong> file</li>
                   </ul>
-                <li><a href="https://www.nexusmods.com/newvegas/mods/61206" target="_blank">LOD Additions and Improvements</a> - <strong>Main File - LODadditions 1.07</strong></li>
-                <li>Only if you use NMCs Texture Pack: <a href="https://www.nexusmods.com/newvegas/mods/64805" target="_blank">Much Needed LOD</a> - JUST the <strong>Optional File - Much Needed LOD - NMC Patch 1.2</strong></li>
-                <li><a href="https://www.nexusmods.com/newvegas/mods/72099" target="_blank">LOD Supplementation</a> - <strong>Main File - FNV LOD Supplementation 0.07</strong> </li>
-                <li><a href="https://www.nexusmods.com/newvegas/mods/64698" target="_blank">LOD Texture Patches</a> - <strong>Main File - NMC LOD Patch 0.7</strong> and/or <strong>Main File - Poco-Ojo LOD Texture Patch 0.1b</strong> (depending on which texture mods you are using)</li>
-                <li><a href="https://www.nexusmods.com/newvegas/mods/70155" target="_blank">TCM's LOD Overhaul</a> - <strong>Main File - TCM's LOD Overhaul 1.1</strong></li>
+                <li><a href="https://www.nexusmods.com/newvegas/mods/61206" target="_blank">LOD Additions and Improvements</a> - <strong>Main File - LODadditions</strong></li>
+                <li>Only if you use NMCs Texture Pack: <a href="https://www.nexusmods.com/newvegas/mods/64805" target="_blank">Much Needed LOD</a> - JUST the <strong>Optional File - Much Needed LOD - NMC Patch</strong></li>
+                <li><a href="https://www.nexusmods.com/newvegas/mods/72099" target="_blank">LOD Supplementation</a> - <strong>Main File - FNV LOD Supplementation</strong> </li>
+                <li><a href="https://www.nexusmods.com/newvegas/mods/64698" target="_blank">LOD Texture Patches</a> - <strong>Main File - NMC LOD Patch</strong> and/or <strong>Main File - Poco-Ojo LOD Texture Patch</strong> (depending on which texture mods you are using)</li>
+                <li><a href="https://www.nexusmods.com/newvegas/mods/70155" target="_blank">TCM's LOD Overhaul</a> - <strong>Main File - TCM's LOD Overhaul</strong></li>
             </ul>
-        <a class="internallink" href="#running_lodgen"><h2 class="subheader" id="running_lodgen">Running FNVLODGen:</h2></a>
+        <a class="internallink" href="#running_lodgen"><h2 class="subheader" id="running_lodgen">Running xLODGen:</h2></a>
             <ol class="standard_ol">
-                <li>Select FNVLODGen from the executables drop-down in the top right of MO2 and click <b>Run</b></li>
+                <li>Select xLODGen from the executables drop-down in the top right of MO2 and click <b>Run</b></li>
                 <li>Once the program has loaded, right-click in the left pane and click <strong><u>S</u>elect All</strong></li>
                 <li>In the right pane, check <strong>Objects LOD</strong> but leave <strong>Trees LOD</strong> unchecked</li>
             </ol>
@@ -134,18 +129,17 @@ SOFTWARE.
             <ol class="standard_ol" start="4">
                 <li>Under the <strong>Objects LOD</strong> section, change the <strong>Atlas size</strong> option to <strong>8192 </strong> x <strong>8192</strong></li>
                 <li>Select <strong>Generate</strong></li>
-                <li>Wait for the message <strong>LOD Generator: finished (you can close this application now)</strong> to appear (should take under 15 minutes depending on your CPU), then close out of the program</li>
+                <li>Wait for the message <strong>LOD Generator: finished (you can close this application now)</strong> to appear (generation time depends on your CPU performance), then close out of the program</li>
                 <li>In MO2, right-click on the <i>Overwrite</i> folder at the bottom of the left pane and select <strong>All Mods -> Create empty mod above</strong></li>
                 <li>Title the mod <strong>FNVLODGen Output</strong></li>
                 <li>Navigate to where the LOD files were generated (by default, <code>C:\Output\</code>) and select both the <code>textures</code> and <code>meshes</code> folders</li>
-                <li>Move them to the <strong>FNVLODGen Output</strong> mod you just created (right-click on the mod and select <b>Open in Explorer)</b></li>
-                <li>The files in <code>C:\Output\</code> can be safely deleted</li>
+                <li>Cut them to the <strong>FNVLODGen Output</strong> mod you just created (right-click on the mod and select <b>Open in Explorer)</b></li>
             </ol>
     </div>
     <div class="footer">
         <div class="inner_footer">
             <div class="footer_third">
-                <li><a href="https://github.com/VivaNewVegas/Viva-New-Vegas-Patch-Emporium" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://github.com/VivaNewVegas/vivanewvegas.github.io" target="_blank"><i class="fa fa-github"></i></a></li>
                 <li><a href="https://discord.gg/DhX5S27" target="_blank"><i class="fab fa-discord"></i></a></li>
                 <li><a href="https://www.patreon.com/vivanewvegas" target="_blank"><i class="fab fa-patreon"></i></a></li>
                 <li><a href="https://www.paypal.com/paypalme/qolore7" target="_blank"><i class="fab fa-paypal"></i></a></li>
