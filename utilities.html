@@ -67,6 +67,8 @@ SOFTWARE.
         <a href="./utilities.html">Utilities</a>
             <ul>
                 <a href="./utilities.html#xnvse"><span style="font-size:.8vw;">xNVSE</span></a>
+                <a href="./utilities.html#bsa_decompressor" style="font-size:.8vw;">FNV BSA Decompressor</a>
+                <a href="./utilities.html#fixed_esms" style="font-size:.8vw;">ESM Fixes</a>
                 <a href="./utilities.html#4gb_patcher"><span style="font-size:.8vw;">4GB Patcher</span></a>
                 <a href="./utilities.html#heap"><span style="font-size:.8vw;">Heap Replacer</span></a>
                 <a href="./utilities.html#jip"><span style="font-size:.8vw;">JIP LN NVSE</span></a>
@@ -87,19 +89,71 @@ SOFTWARE.
                 Make sure the <strong>Viva New Vegas</strong> profile is active before proceeding.
             </blockquote>
             <a class="internallink" href="#xnvse"><h2 class="smallheader" id="xnvse"><a href="https://github.com/xNVSE/NVSE/releases" target="_blank">xNVSE</a></h2></a>
+            <h2 class="install">Installation instructions:</h2>
+                <ol class="standard_ol">
+                    <li>Click the <strong>nvse_x_x_x.7z</strong> link to download the latest file</li>
+                    <li>From the downloaded archive, extract the contents of the archive to the game's <strong>Root</strong> folder</li>
+                        <img width="700px" src="./img/nvse install.png" alt="nvse install">
+                        <ul>
+                            <li>If you do not know what the game's <strong>Root</strong> folder is, read the Key Terminology section from the <a class="sublink" href="./setup.html#terms" target="_blank">Initial Setup</a> page</li>
+                        </ul>
+                </ol>
+                <blockquote class="blockquote">
+                    <strong>nvse_steam_loader.dll</strong> <b>is still needed</b> with the GOG version of the game.
+                </blockquote>
+                <p class="subparagraph"> - An updated version of NVSE, which extends the scripting capabilities of the engine and is essential for most mods</p>
+            <a class="internallink" href="#bsa_decompressor"><h2 class="smallheader" id="bsa_decompressor"><a href="https://www.nexusmods.com/newvegas/mods/65854" target="_blank">FNV BSA Decompressor</a>
                 <h2 class="install">Installation instructions:</h2>
+                <blockquote class="blockquote">
+                    This mod overrides the BSA files included with the base game, and as such it is important that these
+                    instructions are correctly followed, otherwise assets and textures in-game can and will end up breaking.
+                </blockquote>
                     <ol class="standard_ol">
-                        <li>Click the <strong>nvse_x_x_x.7z</strong> link to download the latest file</li>
-                        <li>From the downloaded archive, extract the contents of the archive to the game's <strong>Root</strong> folder</li>
-                            <img width="700px" src="./img/nvse install.png" alt="nvse install">
-                            <ul>
-                                <li>If you do not know what the game's <strong>Root</strong> folder is, read the Key Terminology section from the <a class="sublink" href="./setup.html#terms" target="_blank">Initial Setup</a> page</li>
-                            </ul>
+                        <li>Download the <strong>FNV BSA Decompressor</strong> Main File</li>
+                        <li>From the extracted archive, run <strong>FNV BSA Decompressor.exe</strong></li>
+                        <li>Under the <strong>Fallout: New Vegas</strong> header, click <strong>Browse</strong> and choose the location of your game's <strong>Root</strong> folder</li>
+                        <li>Click <strong>Decompress</strong>, the BSAs will be decompressed and rebuilt</li>
                     </ol>
-                    <blockquote class="blockquote">
-                        <strong>nvse_steam_loader.dll</strong> <b>is still needed</b> with the GOG version of the game.
-                    </blockquote>
-                    <p class="subparagraph"> - An updated version of NVSE, which extends the scripting capabilities of the engine and is essential for most mods</p>
+                    <h3 class="install">INI file changes</h3>
+                    <ol class="standard_ol">
+                        <li>Click the <img src="./img/mo2 ini.png" alt="mo2 ini button"> button at the top of MO2 and select <strong>INI Editor</strong></li>
+                        <li>Select the <strong>fallout.ini</strong> tab if its not already selected</li>
+                        <li>Press <kbd>Ctrl</kbd> + <kbd>F</kbd> and search for <strong>[Archive]</strong> and click <strong>Find Next</strong></li>
+                        <li>Replace the existing section with the following:</li>
+                            <ul>
+                                <p class="smalllist">
+                                    [Archive]<br>
+                                    SInvalidationFile=<br>
+                                    iRetainFilenameOffsetTable=1<br>
+                                    iRetainFilenameStringTable=1<br>
+                                    iRetainDirectoryStringTable=1<br>
+                                    bCheckRuntimeCollisions=0<br>
+                                    bInvalidateOlderFiles=1<br>
+                                    bUseArchives=1<br>
+                                    SArchiveList=Fallout - Invalidation.bsa, Fallout - Textures.bsa, Fallout - Textures2.bsa, Fallout - Meshes.bsa, Fallout - Meshes2.bsa, Fallout - Voices1.bsa, Fallout - Sound.bsa, Fallout - Misc.bsa
+                                </p>
+                        </ul>
+                        <li>Click <strong>Save</strong> and then exit the editor.</li>
+                    </ol>
+                    <br>
+                    <p class="subparagraph">- Recompresses the BSAs without zlib compression, optimizes sound effects to use WAV instead of OGG, etc</p>
+            <a class="internallink" href="#fixed_esms"><h2 class="smallheader" id="fixed_esms"><a href="https://www.nexusmods.com/newvegas/mods/77170" target="_blank">Ultimate Edition ESM Fixes</a></h2></a>
+                <blockquote class="blockquote">
+                    This mod touches the base ESMs. It is highly important that these steps are followed, otherwise it could result
+                    in a broken game.
+                </blockquote>
+                <h2 class="install">Installation instructions</h2>
+                    <ol class="standard_ol">
+                        <li>Download the <strong>Ultimate Edition ESM Fixes</strong> Main File</li>
+                        <li>Click the <img width="24px" height="24px" src="./img/mo2 folders.png" alt="mo2 folder button"> button next to the profiles bar and select <strong>Open Mods folder</strong></li>
+                        <li>Create an empty folder called <strong>[NoDelete] Fixed ESMs</strong> inside of the Mods folder</li>
+                        <li>From the extracted archive, run <strong>Installer.exe</strong></li>
+                        <li>Under the Fallout: New Vegas header, point to the location of your game's <strong>Root</strong> folder</li>
+                        <li>Under the ESM Fixes header, point to the location of the <strong>[NoDelete] Fixed ESMs</strong> folder</li>
+                        <li>Click <strong>Install</strong> and then activate the mod in MO2. Make sure the mod is at the top of the modlist, directly below <strong>DLC: CaravanPack</strong></li>
+                    </ol>
+                    <br>
+                <p class="subparagraph"> - Optimizes the ESMs by decompressing NPC and worldspace records, restoring preorder pack records, and fixing broken landscape records.</p>
             <a class="internallink" href="#4gb_patcher"><h2 class="smallheader" id="4gb_patcher"><a href="https://www.nexusmods.com/newvegas/mods/62552" target="_blank">4GB Patcher</a></h2></a>
                 <blockquote class="blockquote">
                     This mod <b>is still needed</b> with the GOG version of the game for the NVSE integration.
