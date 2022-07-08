@@ -93,7 +93,7 @@ body {
 .inner_footer {
     display: block;
     margin: 0 auto;
-    width: 1100px;
+    width: 200px;
     height: 100%;
     position: absolute;
     bottom: 0;
@@ -107,8 +107,7 @@ body {
     font-size: 1.5vw;
     color: #DCDCDC;
     display: block;
-    padding: 0 .33vw;
-
+    padding: 0.33vw;
 }
 
 .inner_footer .footer_third a:hover {
@@ -143,7 +142,7 @@ body {
 
 .navbarli a {
     display: block;
-    color:#707070;
+    color:#cacaca;
     text-align: center;
     padding:1em;
     font-size: .75vw;
@@ -266,7 +265,7 @@ body {
     margin-top:6vw;
     margin-right: 12vw;
     margin-left: 12vw;
-    color:orange;
+    color:#ff5f25;
     font-size: calc(22.5px + 1vw);
     word-wrap: breakword;
 }
@@ -358,6 +357,24 @@ body {
     pointer-events: none;
 }
 
+.smallheaderoptional {
+    margin: 1vw 12vw;
+    margin-top:1.4vw;
+    color:#e3b732;
+    font-size: calc(15px + .45vw);
+    word-wrap: break-word;
+    line-height:1.75em;
+}
+
+.smallheaderoptional::before {
+    display: block;
+    content: " ";
+    margin-top: -200px;
+    height: 200px;
+    visibility: hidden;
+    pointer-events: none;
+}
+
 .internallink {
     text-decoration: none;
 }
@@ -424,10 +441,20 @@ body {
     text-decoration: underline;
 }
 
+.smallheaderoptional a {
+    padding-top: 1vw;
+    color:#e3b732;
+    text-decoration: none;
+}
+
+.smallheaderoptional a:hover {
+    text-decoration: underline;
+}
+
 .install {
     margin-right: 12vw;
     margin-left: 12vw;
-    color:orange;
+    color:#ff5f25;
     padding-right: 15vw;
     font-size: calc(11px + .5vw);
     word-wrap: break-word;
