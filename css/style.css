@@ -265,7 +265,7 @@ body {
     margin-top:6vw;
     margin-right: 12vw;
     margin-left: 12vw;
-    color:orange;
+    color:#ffb61a;
     font-size: calc(22.5px + 1vw);
     word-wrap: breakword;
 }
@@ -387,7 +387,7 @@ body {
     color:#DCDCDC;
     background-color: rgb(52, 52, 54);
     font-size: calc(10px + .3vw);
-    border-left: 6px solid rgb(218, 124, 3);
+    border-left: 6px solid rgb(236, 150, 37);
     padding: 0 10px;
     margin-left: 12vw;
     margin-right:26vw;
@@ -454,7 +454,7 @@ body {
 .install {
     margin-right: 12vw;
     margin-left: 12vw;
-    color:orange;
+    color:#ffb61a;
     padding-right: 15vw;
     font-size: calc(11px + .5vw);
     word-wrap: break-word;
@@ -495,4 +495,33 @@ strong {
     color:#DCDCDC;
     background-color:rgb(52, 52, 54);
     transition-duration: 300ms;
+}
+
+/* Buttons, forms and input */
+
+input,
+textarea {
+    border: 1px solid #d9d8dc;
+}
+
+input:focus,
+textarea:focus {
+    border: 1px solid #393F35;
+}
+
+textarea {
+    font-family: 'JetBrains Mono', monospace;
+    width: 100%;
+    font-size:1vw;
+}
+
+textarea, select, input[type] {
+    color: #d9d8dc;
+    padding: 6px 10px;
+    margin-bottom: 10px;
+    background-color: #393a38;
+    border: 1px solid #eba91c;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
 }

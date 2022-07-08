@@ -111,48 +111,40 @@ SOFTWARE.
                     <li>Open GOG and go to your <strong>Library</strong></li>
                     <li>Find <strong>Fallout: New Vegas</strong> in the list</li>
                     <li>Right-click on it and select <strong>Manage Installation -> Uninstall</strong></li>
-                    <li>Uninstall through GOG Galaxy. If you used offline installers then run the <strong>unins000.exe</strong> file in the game's <strong>Root</strong> folder</li>
+                    <li>Uninstall through GOG Galaxy </li>  
+                        <ul>
+                            <li> If you used offline installers then run the <strong>unins000.exe</strong> file in the game's <strong>Root</strong> folder</li>
+                        </ul>
                 </ol>
             <a class="internallink" href="#install"><h2 class="subheader" id="install">Installing the Game</h2></a>
                 <a class="internallink" href="#install_steam"><p class="smallheader" id="install_steam">For Steam:</p></a>
                 <blockquote class="blockquote">
-                    It is strongly advised to not install Fallout: New Vegas in the default folder where Steam is installed,
-                    unless it was installed outside of the default Windows folders such as <strong>Program Files (x86)</strong>, as
-                    this can lead to issues with certain mods, such as the <strong>FNV BSA Decompressor</strong>, which does not
-                    let you run the program in Program Files regardless due to Windows file protections. Instead, we will use a custom
-                    made tool called Steam Library Setup Tool to create a separate Steam library folder aside from the default. If you
-                    already have Steam installed outside of <strong>Program Files (x86)</strong>, you can skip this and move onto
-                    installing the game, ignoring the <strong>Choose location for install:</strong> installation step.
+                    It is strongly recommended to install the game outside of any default Windows folders (such as <code>Program Files (x86)</code>), 
+                    as the the strict Windows file protections of these folders can break certain mods/tools. Instead, we will use a tool called 
+                    Steam Library Setup Tool to create a new Steam library folder outside of any default Windows folders. If you
+                    already have Steam installed outside of any default windows folders (e.g., <code>Program Files (x86)</code>, <code>Documents</code>, or <code>Desktop</code>, 
+                    skip this step and simply install the game to your custom Steam library.
                 </blockquote>
-                <h3 class="install">Tool usage instructions:</h3>
                 <ol class="standard_ol">
-                    <li>Go <a href="https://github.com/LostDragonist/steam-library-setup-tool/releases">here</a> and download <strong>steam_library_setup_tool-3.2.exe</strong></li>
+                    <li>Download the <strong>steam_library_setup_tool-3.2.exe</strong> file from <a href="https://github.com/LostDragonist/steam-library-setup-tool/releases">here</a></li>
                     <li>Once downloaded, run the file and add a new entry by clicking <strong>Add Row</strong></li>
-                    <li>Type the chosen path under <strong>Path</strong>, e.g. <strong>C:\Games\Steam</strong></li>
-                    <li>Click <strong>Accept</strong>, it will prompt to create the folder, click <strong>Yes</strong></li>
+                    <li>Type the chosen path under <strong>Path</strong>, e.g. <code>C:\Games\Steam</code></li>
+                    <li>Click <strong>Accept</strong> then <strong>Yes</strong> if prompted to create a new folder</li>
                     <li>The tool will ask to exit, select <strong>OK</strong></li>
                     <img src="./img/steamlibrarysetuptool.png" alt="steam library setup tool"/>
-                </ol>
-                <h3 class="install">Steam install instructions:</h3>
-                <ol class="standard_ol">
                     <li>Open Steam and go to your <strong>Library</strong></li>
                     <li>Find <strong>Fallout: New Vegas</strong> in the list and select <strong>Install</strong></li>
                     <li>Under <strong>Choose location for install:</strong>, select the library folder created with the tool</li>
                     <img src="./img/steamlocationpicker.png" alt="example steam install locations"/>
                     <li>Select <strong>Next</strong> then wait for the install to finish</li>
                 </ol>
-                    <ol class="standard_ol">
-                        <li>Open Steam and go to your <strong>Library</strong></li>
-                        <li>Find <strong>Fallout: New Vegas</strong> in the list and select <strong>Install</strong></li>
-                        <li>Select <strong>Next</strong> then wait for the install to finish</li>
-                    </ol>
             <a class="internallink" href="#install_gog"><p class="smallheader" id="install_gog">For GOG:</p></a>
                 <ol class="standard_ol">
                     <li>Open GOG and go to your <strong>Library</strong></li>
                     <li>Find <strong>Fallout: New Vegas</strong> in the list and select <strong>Install</strong></li>
                     <li>Set the <strong>Install to</strong> location to a location of your choice</li>
                         <ul>
-                            <li>It is recommended to install the game outside of any default Windows folders (like <code>Program Files x86</code>)</li>
+                            <li>It is recommended to install the game outside of any default Windows folders (e.g., <code>Program Files x86</code>)</li>
                         </ul>
                 </ol>
             <a class="internallink" href="#post_install"><h2 class="subheader" id="post_install">Post-Installation</h2></a>
@@ -171,21 +163,6 @@ SOFTWARE.
                                 </ul>
                         </ul>
                 </ol>
-        <a class="internallink" href="#post_install"><h2 class="subheader" id="post_install">Post-Installation</h2></a>
-            <a class="internallink" href="#terms"><p class="smallheader" id="terms">Key Terminology</p></a>
-                <p class="subparagraph">Now that the game is installed, there are two folders from it that will be referred to in the guide often: </p>
-                    <ul class="standard_ul">
-                        <li><b>Root</b> folder: Where the game is installed</li>
-                            <ul>
-                                <li>For Steam: <code>Steam\steamapps\common\Fallout New Vegas</code></li>
-                                <li>For GOG: <code>GOG Galaxy\Games\Fallout New Vegas</code> (If you used an offline installer the first folder will be named <code>GOG Games</code> instead of <code>GOG Galaxy</code>)</li>
-                                </ul>
-                        <li><b>Data</b> folder: Where all of the game's assets are located</li>
-                            <ul>
-                                <li>For Steam: <code>Steam\steamapps\common\Fallout New Vegas\Data</code></li>
-                                <li>For GOG: <code>GOG Galaxy\Games\Fallout New Vegas\Data</code></li>
-                            </ul>
-                    </ul>
             <a class="internallink" href="#file_extensions"><p class="smallheader" id="file_extensions">Enabling File Extensions</p></a>
                 <p class="subparagraph">
                     By default, Windows Explorer will not show file extensions (such as .exe, .dll, or .esp). These extensions are very important when going through the guide, so it is highly recommended to enable file extensions:
