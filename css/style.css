@@ -265,7 +265,7 @@ body {
     margin-top:6vw;
     margin-right: 12vw;
     margin-left: 12vw;
-    color:#ff5f25;
+    color:orange;
     font-size: calc(22.5px + 1vw);
     word-wrap: breakword;
 }
@@ -360,7 +360,7 @@ body {
 .smallheaderoptional {
     margin: 1vw 12vw;
     margin-top:1.4vw;
-    color:#e3b732;
+    color:#fada78;
     font-size: calc(15px + .45vw);
     word-wrap: break-word;
     line-height:1.75em;
@@ -443,7 +443,7 @@ body {
 
 .smallheaderoptional a {
     padding-top: 1vw;
-    color:#e3b732;
+    color:#fada78;
     text-decoration: none;
 }
 
@@ -454,7 +454,7 @@ body {
 .install {
     margin-right: 12vw;
     margin-left: 12vw;
-    color:#ff5f25;
+    color:orange;
     padding-right: 15vw;
     font-size: calc(11px + .5vw);
     word-wrap: break-word;
