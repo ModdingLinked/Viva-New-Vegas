@@ -511,8 +511,8 @@ textarea:focus {
 
 textarea {
     font-family: 'JetBrains Mono', monospace;
-    width: 100%;
-    font-size:1vw;
+    width: 50%;
+    font-size:0.9vw;
 }
 
 textarea, select, input[type] {
