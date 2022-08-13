@@ -102,7 +102,7 @@ SOFTWARE.
                     If you do not know what the <strong>Root</strong> folder is, read the <strong>Key Terminology</strong> section from the <a href="./setup.html#terms" target="_blank">Initial Setup</a> page.
                 </blockquote>
                 <blockquote class="blockquote">
-                    <strong>nvse_steam_loader.dll</strong> <b>is still needed</b> with the GOG version of the game.
+                    Despite its name, <strong>nvse_steam_loader.dll</strong> <b>is still needed</b> with the GOG version of the game.
                 </blockquote>
             <br>
             <p class="subparagraph"> - An updated version of the original NVSE, which extends the scripting capabilities of the game</p>
@@ -129,7 +129,7 @@ SOFTWARE.
                     <li>Save and exit</li>
                 </ol>
                 <br>
-                <p class="subparagraph">- Recompresses the BSAs without zlib compression, optimizes sound effects to use WAV instead of OGG, etc</p>
+                <p class="subparagraph">- Recompresses the BSAs without zlib compression to increase performances and fixes certain sound effects not playing</p>
         <a class="internallink" href="#fixed_esms"><h2 class="smallheader" id="fixed_esms"><a href="https://www.nexusmods.com/newvegas/mods/77170" target="_blank">Ultimate Edition ESM Fixes</a></h2></a>
             <h2 class="install">Installation instructions</h2>
                 <ol class="standard_ol">
@@ -143,10 +143,10 @@ SOFTWARE.
                     <li>In Mod Organizer 2, press <kbd>F5</kbd> to refresh the left pane and active the <strong>Fixed ESMs</strong> option that should appear</li>
                 </ol>
                 <br>
-            <p class="subparagraph"> - Optimizes the ESMs by decompressing NPC and worldspace records, restoring preorder pack records, and fixing broken landscape records.</p>
+            <p class="subparagraph"> - Optimizes and fixes thousands of records across the base game and DLC ESM files to increase performance and stability</p>
         <a class="internallink" href="#4gb_patcher"><h2 class="smallheader" id="4gb_patcher"><a href="https://www.nexusmods.com/newvegas/mods/62552" target="_blank">4GB Patcher</a></h2></a>
             <blockquote class="blockquote">
-                This mod <b>is still needed</b> with the GOG version of the game for the NVSE integration.
+                This is required for both Steam & GOG users! The 4GB Patch included with the GOG release is obsolete as it lacks NVSE integration.
             </blockquote>
             <h2 class="install">Installation instructions:</h2>
                 <ol class="standard_ol">
@@ -204,9 +204,11 @@ SOFTWARE.
             <p class="subparagraph"> - Works to greatly reduce the rate of game crashes</p>
         <a class="internallink" href="#nvtf"><h2 class="smallheader" id="nvtf"><a href="https://www.nexusmods.com/newvegas/mods/66537" target="_blank">New Vegas Tick Fix</a></h2></a>
             <h2 class="install">Installation instructions:</h2>
-                <ul class="standard_ul">
-                    <li><b>Main File - NVTF</b></li>
-                </ul>
+                <ol class="standard_ol">
+                    <li>Download and install the <strong>Main File - NVTF</strong> normally through MO2</li>
+                    <li>Once the mod has been installed, double-click it in the left pane of MO2 and select the <strong>INI Files</strong> tab</li>
+                    <li>In the <code>NVSE\Plugins\NVTF.ini</code> file, set <strong>bModifyDirectXBehavior</strong> to <strong>1</strong> (line 26)</li>
+                </ol>
             <br>
             <p class="subparagraph"> - Works to fix micro-stuttering, improve performance, and allow playing at higher framerates</p>
             <blockquote class="blockquote">
@@ -234,7 +236,6 @@ SOFTWARE.
             <br>
             <p class="subparagraph"> - Adds Ctrl+V as a hotkey to paste into the in-game console, along with a few other helpful shortcuts</p>
         <a class="internallink" href="#flip"><h2 class="smallheader" id="flip"><a href="https://wallsogb.github.io/FalloutNV-Performance-Guide" target="_blank">Performance Guide</a></h2></a>
-            <br>
             <p class="subparagraph"> - In-depth information about how to optimize the game's performance covering topics such as DXVK and fullscreen VS windowed mode, highly recommended before proceeding with the guide</p>
         <a class="internallink" href="#testing"><h2 class="smallheader" id="testing">Testing Utilities</h2></a>
             <ol class="standard_ol">
@@ -251,6 +252,10 @@ SOFTWARE.
                     <ul>
                         <li>If it prints <code>>> 0</code>, then the <a href="./utilities.html#4gb_patcher">4GB Patch</a> was applied incorrectly</li>
                         <li>If it prints an error message, then <a href="./utilities.html#jip">JIP LN NVSE</a> is installed incorrectly</li>
+                    </ul>
+                <li>Next, enter <code>GetINISetting "bUseThreadedAI:General"</code> and the console should print <code>INISetting bUseThreadedAI:General >> 1</code></li>
+                    <ul>
+                        <li>If not, then the <a href="./mo2.html#custom_ini" target="_blank">Tweaking FalloutCustom.ini</a> step was done incorrectly</li>
                     </ul>
                 <li>Next, enter <code>IsDLLLoaded d3dx9_38</code>, and the console should print <code>IsDLLLoaded "d3dx9_38.dll" >> 1</code></li>
                     <ul>

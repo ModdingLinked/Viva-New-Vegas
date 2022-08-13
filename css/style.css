@@ -375,6 +375,24 @@ body {
     pointer-events: none;
 }
 
+.smallheaderperformance {
+    margin: 1vw 12vw;
+    margin-top:1.4vw;
+    color:#DCDCDC;
+    font-size: calc(15px + .45vw);
+    word-wrap: break-word;
+    line-height:1.75em;
+}
+
+.smallheaderperformance::before {
+    display: block;
+    content: " ";
+    margin-top: -200px;
+    height: 200px;
+    visibility: hidden;
+    pointer-events: none;
+}
+
 .internallink {
     text-decoration: none;
 }
@@ -448,6 +466,16 @@ body {
 }
 
 .smallheaderoptional a:hover {
+    text-decoration: underline;
+}
+
+.smallheaderperformance a {
+    padding-top: 1vw;
+    color:#ffa58a;
+    text-decoration: none;
+}
+
+.smallheaderperformance a:hover {
     text-decoration: underline;
 }
 
