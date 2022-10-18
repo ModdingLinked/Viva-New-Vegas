@@ -1,28 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--
-MIT License
-
-Copyright (c) 2021 VivaNewVegas
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
--->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,15 +16,17 @@ SOFTWARE.
     <meta property="og:image" content="https://vivanewvegas.github.io/img/logo.png" />
     <meta property="og:description" content="Clean install and initial launch of the vanilla game." />
 </head>
+
 <body>
     <div class="titlecontainer">
-        <a class="maintitle" href="./index.html"><img src="./img/logo.png" alt="logo"></img><h1>VIVA NEW VEGAS</h1></a>
+        <a class="maintitle" href="./index.html"><img src="./img/logo.png" alt="Logo"></img><h1>VIVA NEW VEGAS</h1></a>
         <ul class="navbar">
             <li class="navbarli"><a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a></li>
             <li class="navbarli"><a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4</a></li>
             <li class="navbarli"><a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition</a></li>
         </ul>
     </div>
+
     <div class="sidenavleft">
         <a href="./index.html">Home</a>
         <a href="./intro.html">Introduction</a>
@@ -63,6 +42,7 @@ SOFTWARE.
         <a href="./finish.html">Final Steps</a>
         <a href="./appendix.html">Appendix</a>
     </div>
+
     <div class="sidenavright">
         <a href="./setup.html#uninstall">Uninstall</a>
             <ul>
@@ -86,83 +66,68 @@ SOFTWARE.
             Initial Setup
             <p>In this step, we will do a clean installation and configuration of the game, which is required for the guide.</p>
         </h2>
-        <blockquote class="blockquote">
-        If you run into any issues at any point in the guide, please be sure to check the <a href="./faq.html" target="_blank">FAQ</a>.
-        If your issue is not addressed there, join the <a href="https://discord.gg/DhX5S27" target="_blank">Discord</a> for support.
-        </blockquote>
+        <blockquote class="blockquote">If you run into any issues at any point in the guide, please be sure to check the <a href="./faq.html" target="_blank">FAQ</a>. If your issue is not addressed there, join the <a href="https://discord.gg/DhX5S27" target="_blank">Discord</a> for support.</blockquote>
         <a class="internallink" href="#uninstall"><h2 class="subheader" id="uninstall">Uninstalling the Game</h2></a>
-            <blockquote class="blockquote">
-                If you do not have the game installed yet, skip this step.
-            </blockquote>
+            <blockquote class="blockquote">If you do not have the game installed yet, skip this step.</blockquote>
             <br>
-            <p class="subparagraph">
-                As the game is available on both Steam and GOG, there are separate instructions here for each version. You obviously only need to follow the directions for the version you have.
-            </p>
+            <p class="subparagraph">As the game is available on both Steam and GOG, there are separate instructions here for each version. You obviously only need to follow the directions for the version you have.</p>
             <a class="internallink" href="#uninstall_steam"><p class="smallheader" id="uninstall_steam">For Steam:</p></a>
                 <ol class="standard_ol">
-                    <li>Open Steam and go to your <strong>Library</strong></li>
-                    <li>Find <strong>Fallout: New Vegas</strong> in the list</li>
-                    <li>Right-click on it and select <strong>Manage -> Uninstall</strong></li>
-                    <li>Navigate to <code>Steam\steamapps\common\</code> and, if present, delete the <strong>Fallout New Vegas</strong> folder</li>
-                    <li>Navigate to <code>Documents\My Games</code> and delete the <strong>FalloutNV</strong> folder</li>
+                    <li>Open Steam and go to your <strong>Library</strong>.</li>
+                    <li>Find <strong>Fallout: New Vegas</strong> in the list.</li>
+                    <li>Right-click on it and select <strong>Manage -> Uninstall</strong>.</li>
+                    <li>Navigate to <code>Steam\steamapps\common\</code> and, if present, delete the <strong>Fallout New Vegas</strong> folder.</li>
+                    <li>Navigate to <code>Documents\My Games</code> and delete the <strong>FalloutNV</strong> folder.</li>
                 </ol>
             <a class="internallink" href="#uninstall_gog"><p class="smallheader" id="uninstall_gog">For GOG:</p></a>
                 <ol class="standard_ol">
-                    <li>Open GOG and go to your <strong>Library</strong></li>
-                    <li>Find <strong>Fallout: New Vegas</strong> in the list</li>
-                    <li>Right-click on it and select <strong>Manage Installation -> Uninstall</strong></li>
-                    <li>Uninstall through GOG Galaxy </li>  
+                    <li>Open GOG and go to your <strong>Library</strong>.</li>
+                    <li>Find <strong>Fallout: New Vegas</strong> in the list.</li>
+                    <li>Right-click on it and select <strong>Manage Installation -> Uninstall</strong>.</li>
+                    <li>Uninstall through GOG Galaxy.</li>  
                         <ul>
-                            <li> If you used offline installers then run the <strong>unins000.exe</strong> file in the game's <strong>Root</strong> folder</li>
+                            <li>If you used offline installers then run the <strong>unins000.exe</strong> file in the game's <strong>Root</strong> folder.</li>
                         </ul>
                 </ol>
             <a class="internallink" href="#install"><h2 class="subheader" id="install">Installing the Game</h2></a>
                 <a class="internallink" href="#install_steam"><p class="smallheader" id="install_steam">For Steam:</p></a>
-                <blockquote class="blockquote">
-                    It is strongly recommended to install the game outside of any default Windows folders (such as <code>Program Files (x86)</code>), 
-                    as the the strict Windows file protections of these folders can break certain mods/tools. Instead, we will use a tool called 
-                    Steam Library Setup Tool to create a new Steam library folder outside of any default Windows folders. If you
-                    already have Steam installed outside of any default windows folders (e.g., <code>Program Files (x86)</code>, <code>Documents</code>, or <code>Desktop</code>, 
-                    skip this step and simply install the game to your custom Steam library.
-                </blockquote>
+                <blockquote class="blockquote">It is strongly recommended to install the game outside of any default Windows folders (such as <code>Program Files (x86)</code>), as the the strict Windows file protections of these folders can break certain mods/tools. Instead, we will use a tool called Steam Library Setup Tool to create a new Steam library folder outside of any default Windows folders. If you already have Steam installed outside of any default windows folders (e.g., <code>Program Files (x86)</code>, <code>Documents</code>, or <code>Desktop</code>, skip this step and simply install the game to your custom Steam library.</blockquote>
                 <ol class="standard_ol">
-                    <li>Completely exit out of Steam using Task Manager or System Tray</li>
-                    <li>Download the <strong>steam_library_setup_tool-3.2.exe</strong> file from <a href="https://github.com/LostDragonist/steam-library-setup-tool/releases">here</a></li>
-                    <li>Once downloaded, run the file and add a new entry by clicking <strong>Add Row</strong></li>
+                    <li>Completely exit out of Steam using Task Manager or System Tray.</li>
+                    <li>Download the <strong>steam_library_setup_tool-3.2.exe</strong> file from <a href="https://github.com/LostDragonist/steam-library-setup-tool/releases">here</a>.</li>
+                    <li>Once downloaded, run the file and add a new entry by clicking <strong>Add Row</strong>.</li>
                     <li>Type the chosen path under <strong>Path</strong>, e.g. <code>C:\Games\Steam</code></li>
-                    <li>Click <strong>Accept</strong> then <strong>Yes</strong> if prompted to create a new folder</li>
-                    <li>The tool will ask to exit, select <strong>OK</strong></li>
+                    <li>Click <strong>Accept</strong> then <strong>Yes</strong> if prompted to create a new folder.</li>
+                    <li>The tool will ask to exit, select <strong>OK</strong>.</li>
                     <img src="./img/steamlibrarysetuptool.png" alt="steam library setup tool"/>
-                    <li>Open Steam and go to your <strong>Library</strong></li>
-                    <li>Find <strong>Fallout: New Vegas</strong> in the list and select <strong>Install</strong></li>
-                    <li>Under <strong>Choose location for install:</strong>, select the library folder created with the tool</li>
+                    <li>Open Steam and go to your <strong>Library</strong>.</li>
+                    <li>Find <strong>Fallout: New Vegas</strong> in the list and select <strong>Install</strong>.</li>
+                    <li>Under <strong>Choose location for install:</strong>, select the library folder created with the tool.</li>
                     <img src="./img/steamlocationpicker.png" alt="example steam install locations"/>
                 </ol>   
-                <blockquote class="blockquote">
-                       If you still do not see your new library, restart your PC
-                </blockquote>
+                <blockquote class="blockquote">If you still do not see your new library, restart your PC.</blockquote>
                 <ol class="standard_ol" start="10">
-                    <li>Select <strong>Next</strong> then wait for the install to finish</li>
+                    <li>Select <strong>Next</strong> then wait for the install to finish.</li>
                 </ol>
             <a class="internallink" href="#install_gog"><p class="smallheader" id="install_gog">For GOG:</p></a>
                 <ol class="standard_ol">
-                    <li>Open GOG and go to your <strong>Library</strong></li>
-                    <li>Find <strong>Fallout: New Vegas</strong> in the list and select <strong>Install</strong></li>
-                    <li>Set the <strong>Install to</strong> location to a location of your choice</li>
+                    <li>Open GOG and go to your <strong>Library</strong>.</li>
+                    <li>Find <strong>Fallout: New Vegas</strong> in the list and select <strong>Install</strong>.</li>
+                    <li>Set the <strong>Install to</strong> location to a location of your choice.</li>
                         <ul>
-                            <li>It is recommended to install the game outside of any default Windows folders (e.g., <code>Program Files x86</code>)</li>
+                            <li>It is recommended to install the game outside of any default Windows folders (e.g., <code>Program Files x86</code>).</li>
                         </ul>
                 </ol>
             <a class="internallink" href="#post_install"><h2 class="subheader" id="post_install">Post-Installation</h2></a>
                 <a class="internallink" href="#terms"><p class="smallheader" id="terms">Key Terminology</p></a>
-                    <p class="subparagraph">Now that the game is installed, there are two folders from it that will be referred to in the guide often: </p>
+                    <p class="subparagraph">Now that the game is installed, there are two folders from it that will be referred to in the guide often:</p>
                         <ul class="standard_ul">
-                            <li><b>Root</b> folder: Where the game is installed</li>
+                            <li><b>Root</b> folder: Where the game is installed.</li>
                                 <ul>
                                     <li>For Steam: <code>Steam\steamapps\common\Fallout New Vegas</code></li>
-                                    <li>For GOG: <code>GOG Galaxy\Games\Fallout New Vegas</code> (unless you manually changed the installation path)</li>
+                                    <li>For GOG: <code>GOG Galaxy\Games\Fallout New Vegas</code> (Unless you manually changed the installation path).</li>
                                 </ul>
-                            <li><b>Data</b> folder: Where all of the game's assets are located</li>
+                            <li><b>Data</b> folder: Where all of the game's assets are located.</li>
                                 <ul>
                                     <li>For Steam: <code>Steam\steamapps\common\Fallout New Vegas\Data</code></li>
                                     <li>For GOG: <code>GOG Galaxy\Games\Fallout New Vegas\Data</code></li>
@@ -175,41 +140,40 @@ SOFTWARE.
                 </p>
                 <br>
                 <ol class="standard_ol">
-                    <li>Open Windows Explorer</li>
-                    <li>Select the <strong>View</strong> tab at the top</li>
-                    <li>Check the box next to <strong>File name extensions</strong></li>
-                    <img src="./img/show file extensions.png" alt="show file extensions">
+                    <li>Open Windows Explorer.</li>
+                    <li>Select the <strong>View</strong> tab at the top.</li>
+                    <li>Check the box next to <strong>File name extensions</strong>.</li>
+                    <img src="./img/show file extensions.png" alt="Show file extensions">
                 </ol>
         <a class="internallink" href="#generating_inis"><p class="smallheader" id="generating_inis">Generating Fresh .INI Files</p></a>
             <ol class="standard_ol">
-                <li>Run <strong>FalloutNVLauncher.exe</strong> from the game's <strong>Root</strong> folder</li>
+                <li>Run <strong>FalloutNVLauncher.exe</strong> from the game's <strong>Root</strong> folder.</li>
                     <ul>
-                        <li>If you do not know what the game's <strong>Root</strong> folder is, read the <a class="sublink" href="./setup.html#terms">Key Terminology</a> section above</li>
+                        <li>If you do not know what the game's <strong>Root</strong> folder is, read the <a class="sublink" href="./setup.html#terms">Key Terminology</a> section above.</li>
                     </ul>
-                <li>Click OK to both pop-ups that say <strong>Detecting Video Hardware</strong></li>
+                <li>Click OK to both pop-ups that say <strong>Detecting Video Hardware</strong>.</li>
                     <ul>
-                        <li>If there aren't any pop-ups, navigate to <code>Documents\My Games\FalloutNV</code> and delete all the files ending in <strong>.INI</strong> then retry</li>
+                        <li>If there aren't any pop-ups, navigate to <code>Documents\My Games\FalloutNV</code> and delete all the files ending in <strong>.INI</strong> then retry.</li>
                     </ul>
-                <li>Select <strong>Options</strong> then select the <strong>Ultra</strong> preset option</li>
+                <li>Select <strong>Options</strong> then select the <strong>Ultra</strong> preset option.</li>
                     <ul>
                         <li>
-                            If you have a lower-end PC, or want to squeeze as much performance out of the game as possible, you can select the <strong>High</strong> preset instead.
-                            It offers pretty similar visual quality for a decent performance improvement, especially on older hardware.
-                            You can set it to an even lower preset if you want, but at that point you are only gaining diminishing returns on performance.
-                            Another great way to improve performance without drastically changing the game's visuals is by disabling shadows. New Vegas does not have real dynamic object shadows (like in Skyrim or Fallout 4), only actor shadows. Despite having a minor visual improvement, they can have a large performance impact if there are many NPCs in one area.
+                            If you have a lower-end PC, or want to squeeze as much performance out of the game as possible, you can select the <strong>High</strong> preset instead. It offers pretty similar visual quality for a decent performance improvement, especially on older hardware. You can set it to an even lower preset if you want, but at that point you are only gaining diminishing returns on performance. Another great way to improve performance without drastically changing the game's visuals is by disabling shadows. New Vegas does not have real dynamic object shadows (Like in Skyrim or Fallout 4), only actor shadows. Despite having a minor visual improvement, they can have a large performance impact if there are many NPCs in one area.
                         </li>
                     </ul>
-                <li>Set the <strong>Resolution</strong> option to your preference (the launcher usually does not set it to your monitor's max resolution)</li>
-                <li>Click <strong>OK</strong> then <strong>Exit</strong></li>
+                <li>Set the <strong>Resolution</strong> option to your preference (The launcher usually does not set it to your monitor's max resolution).</li>
+                <li>Click <strong>OK</strong> then <strong>Exit</strong>.</li>
             </ol>
     </div>
+
     <div>
-        <br><br>
-        <hr>
         <br>
-        <a href="./intro.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
-        <a href="./mo2.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
-        </div>
+        <br>
+        <hr>
+        <a href="./intro.html"><img class="backarrow" src="./img/leftarrow.png" alt="Back arrow"></a>
+        <a href="./mo2.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="Forward arrow"></a>
+    </div>
+
     <div class="footer">
         <div class="inner_footer">
             <div class="footer_third">

@@ -1,28 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--
-MIT License
-
-Copyright (c) 2021 VivaNewVegas
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
--->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,15 +16,17 @@ SOFTWARE.
     <meta property="og:image" content="https://vivanewvegas.github.io/img/logo.png" />
     <meta property="og:description" content="Solutions to many common problems with the guide." />
 </head>
+
 <body>
     <div class="titlecontainer">
-        <a class="maintitle" href="./index.html"><img src="./img/logo.png" alt="logo"></img><h1>VIVA NEW VEGAS</h1></a>
+        <a class="maintitle" href="./index.html"><img src="./img/logo.png" alt="Logo"></img><h1>VIVA NEW VEGAS</h1></a>
         <ul class="navbar">
             <li class="navbarli"><a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a></li>
             <li class="navbarli"><a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4</a></li>
             <li class="navbarli"><a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition</a></li>
         </ul>
     </div>
+
     <div class="sidenavleft">
         <a href="./index.html">Home</a>
         <a href="./intro.html">Introduction</a>
@@ -64,6 +43,7 @@ SOFTWARE.
         <a href="./appendix.html">Appendix</a>
         <a href="./faq.html"><span style="color:#DCDCDC">FAQ</span></a>
     </div>
+
     <div class="sidenavright">
         <a href="./faq.html#nvtf_cc"><span style="font-size:.8vw;">NVTF >> 0</span></a>
         <a href="./faq.html#game_fast"><span style="font-size:.8vw;">Game Too Fast</span></a>
@@ -76,29 +56,22 @@ SOFTWARE.
         <a href="./faq.html#bouncing_npcs"><span style="font-size:.8vw;">Bouncing NPCs</span></a>
         <a href="./faq.html#ultrawide"><span style="font-size:.8vw;">Ultrawide</span></a>
     </div>
+
     <div>
-        <h2 class="fullheader">
-           Frequently-Asked Questions
-        </h2>
+        <h2 class="fullheader">Frequently-Asked Questions</h2>
         <a class="internallink" href="#nvtf_cc"><p class="smallheader" id="nvtf_cc"><b>Why does the console command <code>IsDLLLoaded NVTF</code> always report back <code>>> 0</code>?</b></p></a>
-            <p class="subparagraph">
-                Install the DirectX Libraries from <a href="https://www.microsoft.com/en-us/download/details.aspx?id=8109" target="_blank">here</a>.
-            </p>
+            <p class="subparagraph">Install the DirectX Libraries from <a href="https://www.microsoft.com/en-us/download/details.aspx?id=8109" target="_blank">here</a>.</p>
         <a class="internallink" href="#game_fast"><p class="smallheader" id="game_fast"><b>Why is my game moving too fast?</b></p></a>
-            <p class="subparagraph">
-                Open <code>Fallout New Vegas/Data/NVSE/plugins/NVTF.ini</code> and make sure <strong>iMaxFPSTolerance</strong> is set to <strong>400</strong> (line 62). If that still doesn't fix it, verify that NVTF is actually working by using the console command <code>IsDLLLoaded NVTF</code>.
-            </p>
+            <p class="subparagraph">Open <code>Fallout New Vegas/Data/NVSE/plugins/NVTF.ini</code> and make sure <strong>iMaxFPSTolerance</strong> is set to <strong>400</strong> (line 62). If that still doesn't fix it, verify that NVTF is actually working by using the console command <code>IsDLLLoaded NVTF</code>.</p>
         <a class="internallink" href="#vui+"><p class="smallheader" id="vui+"><b>Can I use Vanilla UI Plus instead of DarnUI?</b></p></a>
-            <p class="subparagraph">
-                Yes, but beyond this FAQ entry support will not be provided.
-            </p>
+            <p class="subparagraph">Yes, but beyond this FAQ entry support will not be provided.</p>
             <br>
             <ol class="standard_ol">
-                <li>Uninstall <strong>DarnUI</strong></li>
-                <li>Download and install Vanilla UI Plus from <a href="https://www.moddb.com/mods/vanilla-ui-plus/downloads/vanilla-ui-plus-nv" target="_blank">here</a></li>
-                <li>You will be prompted with a FOMOD when installing in which you can tweak the settings to your personal preference</li>
-                <li>Additionally install <a href="https://www.nexusmods.com/newvegas/mods/70001" target="_blank">Clean Vanilla HUD</a> (just select <b>Install</b> in the FOMOD)</li>
-                <li>Move both <strong>Vanilla UI Plus</strong> and <strong>Clean Vanilla HUD</strong> above <strong>Consistent Pip-Boy Icons</strong> in the <b>left</b> pane of MO2</li>
+                <li>Uninstall <strong>DarnUI</strong>.</li>
+                <li>Download and install Vanilla UI Plus from <a href="https://www.moddb.com/mods/vanilla-ui-plus/downloads/vanilla-ui-plus-nv" target="_blank">here</a>.</li>
+                <li>You will be prompted with a FOMOD when installing in which you can tweak the settings to your personal preference.</li>
+                <li>Additionally install <a href="https://www.nexusmods.com/newvegas/mods/70001" target="_blank">Clean Vanilla HUD</a> (Just select <b>Install</b> in the FOMOD).</li>
+                <li>Move both <strong>Vanilla UI Plus</strong> and <strong>Clean Vanilla HUD</strong> above <strong>Consistent Pip-Boy Icons</strong> in the <b>left</b> pane of MO2.</li>
             </ol>
         <a class="internallink" href="#dlc"><p class="smallheader" id="dlc"><b>Why didn't I get any DLC pop-ups/items after starting a new game?</b></p></a>
             <p class="subparagraph">
@@ -110,28 +83,19 @@ SOFTWARE.
                 Mercenary Pack: <span class="spoiler">Bradley's Shack</span>.
             </p>
         <a class="internallink" href="#mo2_popup"><p class="smallheader" id="mo2_popup"><b>When installing multiple mods from the same page through MO2, should I select Merge, Rename, or Replace?</b></p></a>
-            <p class="subparagraph">
-                Read the <strong>Mod Installation Advice</strong> section from the <a href="./mo2.html#advice" target="_blank">MO2</a> page.
-            </p>
+            <p class="subparagraph">Read the <strong>Mod Installation Advice</strong> section from the <a href="./mo2.html#advice" target="_blank">MO2</a> page.</p>
         <a class="internallink" href="#mo2_overwritten"><p class="smallheader" id="mo2_overwritten"><b>Mod Organizer 2 is reporting that mods in the left pane have overwritten loose files. Is this okay?</b></p></a>
-            <p class="subparagraph">
-                Yes, as long as your mods in the <b>left</b> pane of MO2 are in the exact order as they appear in the guide, these overwrites are intentional and safe.
-            </p>
+            <p class="subparagraph">Yes, as long as your mods in the <b>left</b> pane of MO2 are in the exact order as they appear in the guide, these overwrites are intentional and safe.</p>
         <a class="internallink" href="#mo2_overwrite"><p class="smallheader" id="mo2_overwrite"><b>Mod Organizer 2 is reporting that there are files in my overwrite folder. Is this okay?</b></p></a>
-            <p class="subparagraph">
-                Yes, generally these files are harmless. They are usually files generated by mods (like configuration INI files) or by programs ran through MO2. These files will still be loaded fine in-game, and will be prioritized as if they are the last mod in the <b>left</b> pane of MO2.
-                Usually, you can just leave these files in the overwrite and ignore the warning.
-            </p>
+            <p class="subparagraph">Yes, generally these files are harmless. They are usually files generated by mods (like configuration INI files) or by programs ran through MO2. These files will still be loaded fine in-game, and will be prioritized as if they are the last mod in the <b>left</b> pane of MO2. Usually, you can just leave these files in the overwrite and ignore the warning.</p>
         <a class="internallink" href="#app_error"><p class="smallheader" id="app_error"><b>Why do I get a <code>Application Load Error 5:0000065434</code> message when I try to launch the game?</b></p></a>
-            <p class="subparagraph">
-                Run your game directly through Steam once. You may also need to restart Steam and/or Mod Organizer 2. If that still doesn't work, place a copy of your <strong>Steam.exe</strong> (a <b>copy</b>, not a shortcut) into the game's <strong>Root</strong> folder.
-            </p>
+            <p class="subparagraph">Run your game directly through Steam once. You may also need to restart Steam and/or Mod Organizer 2. If that still doesn't work, place a copy of your <strong>Steam.exe</strong> (a <b>copy</b>, not a shortcut) into the game's <strong>Root</strong> folder.</p>
         <a class="internallink" href="#bouncing_npcs"><p class="smallheader" id="bouncing_npcs"><b>How do I fix NPCs "bouncing" when playing above 60 FPS?</b></p></a>
             <ol class="standard_ol">
-                <li>Click the <img src="./img/mo2 ini.png" alt="mo2 ini button"> button at the top of MO2 and select <strong>INI Editor</strong></li>
-                <li>Select the <strong>FalloutCustom.ini</strong> tab</li>
+                <li>Click the <img src="./img/mo2 ini.png" alt="MO2 INI button"> button at the top of MO2 and select <strong>INI Editor</strong>.</li>
+                <li>Select the <strong>FalloutCustom.ini</strong> tab.</li>
                     <ul>
-                        <li>Make sure you are in the <strong>FalloutCustom.ini</strong> tab and NOT the <strong>Custom.ini</strong> tab</li>
+                        <li>Make sure you are in the <strong>FalloutCustom.ini</strong> tab and NOT the <strong>Custom.ini</strong> tab.</li>
                     </ul>
                 <li>Paste in the following:</li>
                     <ul>
@@ -143,14 +107,14 @@ fPelvisUpDownBias=0
 fPelvisOffsetDamping=0
 fOriginalGroundHeightMS=0</textarea>
                     </ul>
-                <li>Save and exit</li>
+                <li>Save and exit.</li>
             </ol>
         <a class="internallink" href="#ultrawide"><p class="smallheader" id="ultrawide"><b>What steps do I have to take to run the game in an ultrawide resolution?</b></p></a>
             <ol class="standard_ol">
-                <li>Click the <img src="./img/mo2 ini.png" alt="mo2 ini button"> button at the top of MO2 and select <strong>INI Editor</strong></li>
-                <li>Select the <strong>FalloutCustom.ini</strong> tab</li>
+                <li>Click the <img src="./img/mo2 ini.png" alt="MO2 INI button"> button at the top of MO2 and select <strong>INI Editor</strong>.</li>
+                <li>Select the <strong>FalloutCustom.ini</strong> tab.</li>
                     <ul>
-                        <li>Make sure you are in the <strong>FalloutCustom.ini</strong> tab and NOT the <strong>Custom.ini</strong> tab</li>
+                        <li>Make sure you are in the <strong>FalloutCustom.ini</strong> tab and NOT the <strong>Custom.ini</strong> tab.</li>
                     </ul>
                 <li>Paste in the following:</li>
                     <ul>
@@ -158,21 +122,23 @@ fOriginalGroundHeightMS=0</textarea>
 [Display] 
 iSize W=3440
 iSize H=1440</textarea> 
-                        <li>Change the values to whatever resolution you want to play in</li>
+                        <li>Change the values to whatever resolution you want to play in.</li>
                     </ul>
-                <li>Save and exit</li>
-                <li>Right-click on the <strong>Stewie Tweaks Essentials INI</strong> mod (from the <a href="./bugfix.html#custom_ini" target="_blank">Bug Fixes</a> section) in the left pane of MO2 and select <strong>Open in Explorer</strong></li>
-                <li>Navigate to <code>nvse/plugins/</code> and open <strong>nvse_stewie_tweaks.ini</strong> in a text editor</li>
-                <li>Use <kbd>Ctrl</kbd> + <kbd>F</kbd> to find and set <strong>bUltrawideSupport</strong> to <strong>1</strong></li>
+                <li>Save and exit.</li>
+                <li>Right-click on the <strong>Stewie Tweaks Essentials INI</strong> mod (From the <a href="./bugfix.html#custom_ini" target="_blank">Bug Fixes</a> section) in the left pane of MO2 and select <strong>Open in Explorer</strong>.</li>
+                <li>Navigate to <code>nvse/plugins/</code> and open <strong>nvse_stewie_tweaks.ini</strong> in a text editor.</li>
+                <li>Use <kbd>Ctrl</kbd> + <kbd>F</kbd> to find and set <strong>bUltrawideSupport</strong> to <strong>1</strong>.</li>
             </ol>
     </div>
+
     <div>
-        <br><br>
-        <hr>
         <br>
-        <a href="./appendix.html"><img class="backarrow" src="./img/leftarrow.png" alt="back arrow"></a>
-        <a href="./index.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="forward arrow"></a>
-        </div>
+        <br>
+        <hr>
+        <a href="./appendix.html"><img class="backarrow" src="./img/leftarrow.png" alt="Back arrow"></a>
+        <a href="./index.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="Forward arrow"></a>
+    </div>
+    
     <div class="footer">
         <div class="inner_footer">
             <div class="footer_third">
