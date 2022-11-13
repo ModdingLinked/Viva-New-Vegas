@@ -181,6 +181,10 @@
             <ol class="standard_ol">
                 <li>Restart your PC (Otherwise some plugins will print out 0)</li>
                 <li>Launch the game using the <strong>New Vegas</strong> option in MO2 (NOT the <strong>NVSE</strong> option)</li>
+                <li>If you see a black console window appear, it means <strong>NVHR</strong> is working</li>
+                    <ul>
+                        <li>If not, <a href="./utilities.html#heap">NVHR</a> is installed incorrectly</li>
+                    </ul>
                 <li>Once the game has reached the main menu, hit the <code>~</code> key (Above the tab key) to open the console</li>
                     <ul>
                         <li>You will need to unplug/disconnect any controllers to be able to use the keyboard</li>
@@ -197,11 +201,6 @@
                 <li>Next, enter <code>GetINISetting "bUseThreadedAI:General"</code> and the console should print <code>INISetting bUseThreadedAI:General >> 1</code></li>
                     <ul>
                         <li>If not, then the <a href="./mo2.html#custom_ini" target="_blank">Tweaking FalloutCustom.ini</a> step was done incorrectly</li>
-                    </ul>
-                <li>Next, enter <code>IsDLLLoaded d3dx9_38</code>, and the console should print <code>IsDLLLoaded "d3dx9_38.dll" >> 1</code></li>
-                    <ul>
-                        <li>If it prints <code>>> 0</code>, then <a href="./utilities.html#heap">Heap Replacer</a> is installed incorrectly</li>
-                        <li>If it prints an error message, then <a href="./utilities.html#johnny">JohnnyGuitar NVSE</a> is installed incorrectly</li>
                     </ul>
                 <li>Next, enter <code>IsDLLLoaded CobbCrashLogger</code>, and the console should print <code>IsDLLLoaded "CobbCrashLogger.dll" >> 1</code></li>
                     <ul>
