@@ -525,8 +525,6 @@ strong {
     transition-duration: 300ms;
 }
 
-/* Buttons, forms and input */
-
 input,
 textarea {
     border: 1px solid #d9d8dc;
