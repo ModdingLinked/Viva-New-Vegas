@@ -19,52 +19,66 @@
     </head>
 
     <body>
+        <!-- Titlebar -->
         <div class="titlecontainer">
-            <a class="maintitle" href="./index.html"><img src="./img/logo.png" alt="Logo"></img>
-                <h1>Viva New Vegas</h1>
-            </a>
-            <ul class="navbar">
+            <div id="sideButton" onclick="toggleNav()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <img src="./img/logo.png" alt="Logo"></img>
+            <a href="./index.html"> Viva New Vegas </a>
+            <div class="guideLinks">
                 <li class="navbarli"><a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a></li>
                 <li class="navbarli"><a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4</a></li>
                 <li class="navbarli"><a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition</a></li>
-            </ul>
+            </div>
         </div>
-        <div class="sidenavleft">
-            <a href="./index.html">Home</a>
-            <a href="./intro.html">Introduction</a>
-            <a href="./setup.html">Initial Setup</a>
-            <a href="./mo2.html">MO2</a>
-            <a href="./utilities.html"><span style="color:#DCDCDC">Utilities</span></a>
-            <a href="./bugfix.html">Bug Fixes</a>
-            <a href="./hud.html">User Interface</a>
-            <a href="./gameplay.html">Gameplay</a>
-            <a href="./overhauls.html">Overhauls</a>
-            <a href="./content.html">Content</a>
-            <a href="./visuals.html">Visuals</a>
-            <a href="./finish.html">Final Steps</a>
-            <a href="./appendix.html">Appendix</a>
+        <!-- Left sidebar -->
+        <div id="sidenavLeft">
+            <p>
+            <div>
+                <a href="./index.html">Home</a>
+                <a href="./intro.html">Introduction</a>
+                <a href="./setup.html">Initial Setup</a>
+                <a href="./mo2.html">MO2</a>
+                <a href="./utilities.html"><span style="color:#DCDCDC">Utilities</span></a>
+                <a href="./bugfix.html">Bug Fixes</a>
+                <a href="./hud.html">User Interface</a>
+                <a href="./gameplay.html">Gameplay</a>
+                <a href="./overhauls.html">Overhauls</a>
+                <a href="./content.html">Content</a>
+                <a href="./visuals.html">Visuals</a>
+                <a href="./finish.html">Final Steps</a>
+                <a href="./appendix.html">Appendix</a>
+            </div>
+            <div class="guideLinks">
+                <hr>
+                <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands </a>
+                <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4 </a>
+                <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition </a>
+            </div>
+            <div id="footer">
+                <a href="https://github.com/VivaNewVegas/vivanewvegas.github.io" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://discord.gg/DhX5S27" target="_blank">
+                    <i class="fab fa-discord"></i>
+                </a>
+                <a href="https://www.patreon.com/vivanewvegas" target="_blank">
+                    <i class="fab fa-patreon"></i>
+                </a>
+                <a href="https://www.paypal.com/paypalme/qolore7" target="_blank">
+                    <i class="fab fa-paypal"></i>
+                </a>
+            </div>
+            </p>
         </div>
-        <div class="sidenavright">
-            <a href="./utilities.html#xnvse"><span style="font-size:.8vw;">xNVSE</span></a>
-            <a href="./utilities.html#bsa_decompressor" style="font-size:.8vw;">BSA Decompressor</a>
-            <a href="./utilities.html#fixed_esms" style="font-size:.8vw;">ESM Fixes</a>
-            <a href="./utilities.html#4gb_patcher"><span style="font-size:.8vw;">4GB Patcher</span></a>
-            <a href="./utilities.html#heap"><span style="font-size:.8vw;">Heap Replacer</span></a>
-            <a href="./utilities.html#jip"><span style="font-size:.8vw;">JIP</span></a>
-            <a href="./utilities.html#johnny"><span style="font-size:.8vw;">JohnnyGuitar</span></a>
-            <a href="./utilities.html#cobb"><span style="font-size:.8vw;">Crash Logger</span></a>
-            <a href="./utilities.html#nvtf"><span style="font-size:.8vw;">NVTF</span></a>
-            <a href="./utilities.html#limit_fix"><span style="font-size:.8vw;">Mod Limit Fix</span></a>
-            <a href="./utilities.html#knvse"><span style="font-size:.8vw;">kNVSE</span></a>
-            <a href="./utilities.html#console_paste"><span style="font-size:.8vw;">Console Paste</span></a>
-            <a href="./utilities.html#flip"><span style="font-size:.8vw;">Performance Guide</span></a>
-            <a href="./utilities.html#testing"><span style="font-size:.8vw;">Testing</span></a>
-        </div>
-        <div>
-            <h2 class="fullheader">Utilities</h2>
-            <blockquote class="blockquote">Make sure the <strong>Viva New Vegas</strong> profile is active before proceeding.</blockquote>
-            <a class="internallink" href="#separator">
-                <h2 class="smallheader" id="separator">Creating a Separator in MO2</h2>
+        <!-- Content -->
+        <div class="content">
+            <p>
+            <h1> Utilities </h1>
+            <blockquote>Make sure the <strong>Viva New Vegas</strong> profile is active before proceeding.</blockquote>
+            <a href="#separator">
+                <h2>Creating a Separator in MO2</h2>
             </a>
             <ol class="standard_ol">
                 <li>Right-click the empty space in the left pane of MO2 and select <strong>Create Separator</strong>.</li>
@@ -78,13 +92,13 @@
                 <li><b>Main File - New Vegas Script Extender (NVSE)</b> (Manual Download)</li>
                 <li>From the downloaded archive, extract the contents of the archive to the game's <strong>Root</strong> folder</li>
             </ol>
-            <blockquote class="blockquote">If you do not know what the <strong>Root</strong> folder is, read the <strong>Key Terminology</strong> section from the <a href="./setup.html#terms" target="_blank">Initial Setup</a> page.</blockquote>
-            <blockquote class="blockquote">Despite its name, <strong>nvse_steam_loader.dll</strong> <b>is still needed</b> with the GOG version of the game.</blockquote>
+            <blockquote>If you do not know what the <strong>Root</strong> folder is, read the <strong>Key Terminology</strong> section from the <a href="./setup.html#terms" target="_blank">Initial Setup</a> page.</blockquote>
+            <blockquote>Despite its name, <strong>nvse_steam_loader.dll</strong> <b>is still needed</b> with the GOG version of the game.</blockquote>
             <p class="subparagraph">An updated version of the original NVSE, which extends the scripting capabilities of the game.</p>
             <a class="internallink" href="#bsa_decompressor">
                 <h2 class="smallheader" id="bsa_decompressor"><a href="https://www.nexusmods.com/newvegas/mods/65854" target="_blank">BSA Decompressor</a>
                     <h2 class="install">Installation instructions:</h2>
-                    <blockquote class="blockquote"><b>IMPORTANT:</b> Make sure you follow these instructions precisely or else you will end up with missing meshes in your game.</blockquote>
+                    <blockquote><b>IMPORTANT:</b> Make sure you follow these instructions precisely or else you will end up with missing meshes in your game.</blockquote>
                     <ol class="standard_ol">
                         <li>Download the <strong>Main File - FNV BSA Decompressor</strong> and extract the contents of the archive anywhere outside of the default Windows folders</li>
                         <li>From the extracted archive, run <strong>FNV BSA Decompressor.exe</strong></li>
@@ -97,7 +111,7 @@
                         <li>Replace the existing line with the following:</li>
                         <textarea readonly="readonly" style="width: 80rem" onclick="this.focus();this.select()">SArchiveList=Fallout - Invalidation.bsa, Fallout - Textures.bsa, Fallout - Textures2.bsa, Fallout - Meshes.bsa, Fallout - Meshes2.bsa, Fallout - Voices1.bsa, Fallout - Sound.bsa, Fallout - Misc.bsa</textarea>
                     </ol>
-                    <blockquote class="blockquote"><b>IMPORTANT:</b> Make sure the new section is one line when pasted. </blockquote>
+                    <blockquote><b>IMPORTANT:</b> Make sure the new section is one line when pasted. </blockquote>
                     <ol class="standard_ol" start="9">
                         <li>Save and exit</li>
                     </ol>
@@ -120,7 +134,7 @@
                     <a class="internallink" href="#4gb_patcher">
                         <h2 class="smallheader" id="4gb_patcher"><a href="https://www.nexusmods.com/newvegas/mods/62552" target="_blank">4GB Patcher</a></h2>
                     </a>
-                    <blockquote class="blockquote">This is required for both Steam & GOG users! The 4GB Patch included with the GOG release is obsolete as it lacks NVSE integration.</blockquote>
+                    <blockquote>This is required for both Steam & GOG users! The 4GB Patch included with the GOG release is obsolete as it lacks NVSE integration.</blockquote>
                     <h2 class="install">Installation instructions:</h2>
                     <ol class="standard_ol">
                         <li>Download the <strong>Main File - 4GB Patcher</strong></li>
@@ -131,7 +145,7 @@
                         <li>Close the command prompt and a file named <strong>FalloutNV_backup.exe</strong> should appear in the game's <strong>Root</strong> folder</li>
                     </ol>
                     <p class="subparagraph">Makes the game large address aware, meaning it can use 4GB of RAM instead of 2GB.</p>
-                    <blockquote class="blockquote">From now on, you should run the game through the <strong>New Vegas</strong> option in MO2, rather than the <strong>NVSE</strong> option. This mod makes the game auto-load NVSE when you run the game through the default executable, which is generally the safer option.</blockquote>
+                    <blockquote>From now on, you should run the game through the <strong>New Vegas</strong> option in MO2, rather than the <strong>NVSE</strong> option. This mod makes the game auto-load NVSE when you run the game through the default executable, which is generally the safer option.</blockquote>
                     <a class="internallink" href="#heap">
                         <h2 class="smallheader" id="heap"><a href="https://www.nexusmods.com/newvegas/mods/69779" target="_blank">New Vegas Heap Replacer</a></h2>
                     </a>
@@ -149,7 +163,7 @@
                         <li><b>Main File - JIP LN NVSE Plugin</b></li>
                     </ul>
                     <p class="subparagraph">NVSE extension with new functions and many engine bug fixes.</p>
-                    <blockquote class="blockquote">After installing a mod, make sure you check the box next to it in the left pane of MO2 to enable it.</blockquote>
+                    <blockquote>After installing a mod, make sure you check the box next to it in the left pane of MO2 to enable it.</blockquote>
                     <a class="internallink" href="#johnny">
                         <h2 class="smallheader" id="johnny"><a href="https://www.nexusmods.com/newvegas/mods/66927" target="_blank">JohnnyGuitar NVSE</a></h2>
                     </a>
@@ -174,7 +188,7 @@
                         <li><b>Main File - NVTF</b></li>
                     </ul>
                     <p class="subparagraph">Works to fix micro-stuttering, improve performance, and allow playing at higher framerates.</p>
-                    <blockquote class="blockquote"> In order for this mod to work properly, make sure you installed the DirectX and VC++ requirements from the <a href="./intro.html#requirements" target="_blank">Introduction</a> page. </blockquote>
+                    <blockquote> In order for this mod to work properly, make sure you installed the DirectX and VC++ requirements from the <a href="./intro.html#requirements" target="_blank">Introduction</a> page. </blockquote>
                     <a class="internallink" href="#limit_fix">
                         <h2 class="smallheader" id="limit_fix"><a href="https://www.nexusmods.com/newvegas/mods/68714" target="_blank">Mod Limit Fix</a></h2>
                     </a>
@@ -248,25 +262,63 @@
                             <li>If not, then <a href="./utilities.html#limit_fix">Mod Limit Fix</a> is installed incorrectly </li>
                         </ul>
                     </ol>
+                    <div>
+                        <p>
+                            <hr>
+                            <a href="./setup.html"><img class="navigationArrow left" src="./img/leftarrow.png" alt="Back arrow"></a>
+                            <a href="./utilities.html"><img class="navigationArrow right" src="./img/rightarrow.png" alt="Forward arrow"></a>
+                        </p>
+                    </div>
+                    </p>
         </div>
-        <div>
-            <br>
-            <br>
-            <hr>
-            <a href="./mo2.html"><img class="backarrow" src="./img/leftarrow.png" alt="Back arrow"></a>
-            <a href="./bugfix.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="Forward arrow"></a>
-        </div>
-        <div class="footer">
-            <div class="inner_footer">
-                <div class="footer_third">
-                    <li><a href="https://github.com/VivaNewVegas/vivanewvegas.github.io" target="_blank"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://discord.gg/DhX5S27" target="_blank"><i class="fab fa-discord"></i></a></li>
-                    <li><a href="https://www.patreon.com/vivanewvegas" target="_blank"><i class="fab fa-patreon"></i></a>
-                    </li>
-                    <li><a href="https://www.paypal.com/paypalme/qolore7" target="_blank"><i class="fab fa-paypal"></i></a>
-                    </li>
-                </div>
-            </div>
+        <!-- Right sidebar -->
+        <div id="sidenavRight">
+            <p>
+            <ul>
+                <li>
+                    <a href="xnvse">xNVSE</a>
+                </li>
+                <li>
+                    <a href="bsa_decompressor">BSA Decompressor</a>
+                </li>
+                <li>
+                    <a href="fixed_esms">ESM Fixes</a>
+                </li>
+                <li>
+                    <a href="4gb_patcher">4GB Patcher</a>
+                </li>
+                <li>
+                    <a href="heap">Heap Replacer</a>
+                </li>
+                <li>
+                    <a href="jip">JIP</a>
+                </li>
+                <li>
+                    <a href="johnny">JohnnyGuitar</a>
+                </li>
+                <li>
+                    <a href="cobb">Crash Logger</a>
+                </li>
+                <li>
+                    <a href="nvtf">NVTF</a>
+                </li>
+                <li>
+                    <a href="limit_fix">Mod Limit Fix</a>
+                </li>
+                <li>
+                    <a href="knvse">kNVSE</a>
+                </li>
+                <li>
+                    <a href="console_paste">Console Paste</a>
+                </li>
+                <li>
+                    <a href="flip">Performance Guide</a>
+                </li>
+                <li>
+                    <a href="testing">Testing</a>
+                </li>
+            </ul>
+            </p>
         </div>
     </body>
 
