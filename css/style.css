@@ -38,7 +38,8 @@ body {
     line-height: 1.25em;
     font-family: arial, helvetica, sans-serif;
     color: rgb(220, 220, 220);
-    background-color: rgb(43, 43, 43)
+    background-color: rgb(44, 44, 44);
+    font-size: 0.75em;
 }
 
 a {
@@ -316,8 +317,8 @@ img {
     display: block;
     height: 5em;
     width: 5em;
-    margin-left: -100px;
-    margin-right: 3em;
+    margin-left: -5em;
+    margin-right: 5em;
     cursor: pointer;
     user-select: none;
     float: left;
@@ -411,13 +412,6 @@ h2 {
     float: right;
 }
 
-
-
-.transparent {
-    background-color: rgba(255, 255, 255, 0);
-}
-
-
 @keyframes slide-down {
     from {
         max-height: 0;
@@ -452,7 +446,7 @@ h2 {
         width: 0;
         overflow-y: scroll;
         overflow-x: hidden;
-        background-color: rgb(43 43 43);
+        background-color: rgb(44 44 44);
     }
 
     #sideButton {
@@ -504,4 +498,8 @@ h2 {
     #sideButton {
         margin-left: -100px;
     }
+}
+
+.transparent {
+    background-color: rgba(255, 255, 255, 0) !important;
 }
