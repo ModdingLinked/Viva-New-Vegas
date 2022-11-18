@@ -64,6 +64,8 @@ textarea {
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.8em;
     resize: none;
+    width: 90%;
+    min-height: 2em;
 }
 
 textarea,
@@ -90,13 +92,13 @@ img {
     float: left;
     margin-top: 4em;
     margin-left: 13em;
-    padding: 2em 20em 0 2em;
+    padding: 2em 15em 0 2em;
     z-index: 0;
     background-color: rgb(64, 64, 64);
 }
 
 .section {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     line-height: 1.33em;
 }
 
@@ -106,13 +108,23 @@ img {
     height: 200px;
 }
 
-.section a {
+.section a{
     color: rgb(51, 122, 183);
     font-size: 1.025em;
 }
 
+.link{
+    color: rgb(51, 122, 183) !important;
+    font-size: 1.025em;
+}
+
+.link:hover {
+    color: hsl(208, 80%, 70%) !important; 
+    text-decoration-line: underline !important;
+}
+
 .section a:hover {
-    color: hsl(208, 80%, 70%);
+    color: hsl(208, 80%, 70%); 
     text-decoration-line: underline;
 }
 
@@ -122,12 +134,18 @@ img {
     font-size: inherit;
 }
 
-.section h2 a::before,
-.section h3 a::before {
+.section h2 a::before {
     display: block;
     content: " ";
-    margin-top: -4em;
-    height: 4em;
+    margin-top: -2em;
+    height: 2em;
+}
+
+.section h3 a::before{
+    display: block;
+    content: " ";
+    margin-top: -3em;
+    height: 3em;
 }
 
 .section ul,
@@ -161,7 +179,8 @@ img {
     text-align: center;
     margin-top: auto;
     display: flex;
-    text-shadow: 0em 0 0.9em rgb(0, 0, 0);
+    letter-spacing: 0.05em;
+    text-shadow: 0.05em 0.075em 0.05em rgba(0, 0, 0, 0.7);
 }
 
 .welcomeContent .welcomeButton {
@@ -169,13 +188,20 @@ img {
     display: flex;
     width: fit-content;
     line-height: 1.2em;
-    padding: 0.55em;
-    font-size: 2rem;
+    padding: 1em 1.5em;
+    font-size: 1.8rem;
     background-color: #235163;
     border-radius: 12pt;
     text-shadow: none;
     box-shadow: 0.1em 0.1em 0.6em rgba(0, 0, 0, 0.7);
     margin-bottom: auto;
+    text-align: center;
+}
+
+.welcomeContent .welcomeButton strong {
+    color: rgb(242, 242, 242);
+    font-weight: 500;
+    letter-spacing: 0.12em;
 }
 
 .welcomeContent .welcomeButton:hover {
@@ -193,7 +219,7 @@ img {
 .blur h2 {
     transition-timing-function: ease-in-out;
     transition-duration: 0.5s;
-    text-shadow: 0em 0 0.4em rgb(0, 0, 0);
+    text-shadow: 0.05em 0.075em 0.1em rgba(0, 0, 0, 0.7);
 }
 
 /* Titlebar */
@@ -230,7 +256,7 @@ img {
 }
 
 .titlecontainer img {
-    padding: 0.5em 1em 0.5em 0;
+    padding: 0.8em 1em 0.8em 0em;
 }
 
 /* Navbars */
@@ -370,6 +396,11 @@ h2 {
     word-wrap: break-word;
 }
 
+.install {
+    color: rgb(252, 183, 46);
+    font-size: 1.5em;
+}
+
 .optional {
     color: #fada78;
 }
@@ -411,6 +442,8 @@ h2 {
 .right {
     float: right;
 }
+
+
 
 @keyframes slide-down {
     from {
