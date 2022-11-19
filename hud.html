@@ -7,7 +7,8 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="icon" href="https://vivanewvegas.github.io/img/logo.png">
-        <script src="https://kit.fontawesome.com/e15125fcf7.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
+        <script src="javascript.js"></script>
         <title>User Interface | Viva New Vegas</title>
         <meta name="description" content="Mods that vastly improve the vanilla user interface without making any drastic stylistic changes.">
         <meta name="twitter:card" value="summary">
@@ -19,119 +20,178 @@
     </head>
 
     <body>
+        <!-- Titlebar -->
         <div class="titlecontainer">
-            <a class="maintitle" href="./index.html"><img src="./img/logo.png" alt="Logo"></img>
-                <h1>Viva New Vegas</h1>
-            </a>
-            <ul class="navbar">
-                <li class="navbarli"><a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a></li>
-                <li class="navbarli"><a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4</a></li>
-                <li class="navbarli"><a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition</a></li>
-            </ul>
-        </div>
-        <div class="sidenavleft">
-            <a href="./index.html">Home</a>
-            <a href="./intro.html">Introduction</a>
-            <a href="./setup.html">Initial Setup</a>
-            <a href="./mo2.html">MO2</a>
-            <a href="./utilities.html">Utilities</a>
-            <a href="./bugfix.html">Bug Fixes</a>
-            <a href="./hud.html"><span style="color:#DCDCDC">User Interface</span></a>
-            <a href="./gameplay.html">Gameplay</a>
-            <a href="./overhauls.html">Overhauls</a>
-            <a href="./content.html">Content</a>
-            <a href="./visuals.html">Visuals</a>
-            <a href="./finish.html">Final Steps</a>
-            <a href="./appendix.html">Appendix</a>
-        </div>
-        <div class="sidenavright">
-            <a href="./hud.html#uio"><span style="font-size:.8vw;">UIO</span></a>
-            <a href="./hud.html#mcm"><span style="font-size:.8vw;">MCM</span></a>
-            <a href="./hud.html#darn"><span style="font-size:.8vw;">DarnUI</span></a>
-            <a href="./hud.html#cpi"><span style="font-size:.8vw;">Consistent Pip-Boy Icons</span></a>
-            <a href="./hud.html#localmap"><span style="font-size:.8vw;">High Res Local Maps</span></a>
-            <a href="./hud.html#highresscreen"><span style="font-size:.8vw;">High Resolution Screens</span></a>
-        </div>
-        <div>
-            <h2 class="fullheader">User Interface</h2>
-            <a class="internallink" href="#separator">
-                <h2 class="smallheader" id="separator">Creating a Separator in MO2</h2>
-            </a>
-            <ol class="standard_ol">
-                <li>Right-click anywhere in the left pane of MO2 and select <strong>Create Separator</strong>.</li>
-                <li>Name the separator <strong>User Interface</strong>.</li>
-            </ol>
-            <a class="internallink" href="#uio">
-                <h2 class="smallheader" id="uio"><a href="https://www.nexusmods.com/newvegas/mods/57174" target="_blank">User Interface Organizer</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ul class="standard_ul">
-                <li><b>Main File - UIO - User Interface Organizer</b></li>
-            </ul>
-            <p class="subparagraph">Automatically ensures that multiple HUD extensions work together.</p>
-            <a class="internallink" href="#mcm">
-                <h2 class="smallheader" id="mcm"><a href="https://www.nexusmods.com/newvegas/mods/42507" target="_blank">The Mod Configuration Menu</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ul class="standard_ul">
-                <li><b>Main File - The Mod Configuration Menu</b></li>
-                <li><b>Update File - MCM BugFix 2</b> (You can either click <Strong>Merge</Strong> or rename the mod as the file and install that below the main)</li>
-            </ul>
-            <p class="subparagraph">Allows select mods to be configured via a single in-game menu.</p>
-            <a class="internallink" href="#darn">
-                <h2 class="smallheaderoptional" id="darn"><a href="https://www.moddb.com/mods/unofficial-darnified-ui-update/downloads/unofficial-darnified-ui-update-fnv1" target="_blank">DarnUI</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ol class="standard_ol">
-                <li>Download the mod and install manually through MO2</li>
-                <li>Additionally install <a href="https://github.com/VivaNewVegas/vivanewvegas.github.io/blob/master/files/DarnUI%20Config.7z" target="_blank">DarnUI Config</a> (Install manually in MO2)</li>
-            </ol>
-            <p class="subparagraph">Greatly improves the look and scale of the UI, especially on larger monitors.</p>
-            <blockquote class="blockquote">If you do not like the look of DarnUI, you can instead try <a href="https://www.moddb.com/mods/vanilla-ui-plus" target="_blank">Vanilla UI Plus</a>. Installation instructions can be found in the <a href="./faq.html#vui+" target="_blank">FAQ</a>.</blockquote>
-            <a class="internallink" href="#cpi">
-                <h2 class="smallheader" id="cpi"><a href="https://www.nexusmods.com/newvegas/mods/65046" target="_blank">Consistent Pip-Boy Icons</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ol class="standard_ul">
-                <li>Download and install the first 2 <b>Main Files</b> normally (When prompted with a FOMOD installer, simply select <b>Install</b>, rename the 2nd file to match it's file name)</li>
-                <li>Additionally install <a href="https://www.nexusmods.com/newvegas/mods/70486" target="_blank">Clean Companion Wheel</a> 256x256</li>
-            </ol>
-            <p class="subparagraph">Thousands of Pip-Boy icons re-made from scratch in HD along with many bug fixes.</p>
-            <a class="internallink" href="#localmap">
-                <h2 class="smallheader" id="localmap"><a href="https://www.nexusmods.com/newvegas/mods/77963" target="_blank">High Res Local Maps</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ul class="standard_ul">
-                <li><b>Main File - High Res Local Maps</b></li>
-            </ul>
-            <p class="subparagraph">Increases the resolution of local maps to a configurable target resolution.</p>
-            <a class="internallink" href="#highresscreen">
-                <h2 class="smallheader" id="highresscreen"><a href="https://www.nexusmods.com/newvegas/mods/77989" target="_blank">High Resolution Screens</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ul class="standard_ul">
-                <li><b>Main File - High Resolution Screens</b></li>
-            </ul>
-            <p class="subparagraph">Increases the render resolution of in-game screens (Pipboy, terminals, character creation menu) to match game's screen resolution.</p>
-        </div>
-        <div>
-            <br>
-            <br>
-            <hr>
-            <a href="./bugfix.html"><img class="backarrow" src="./img/leftarrow.png" alt="Back arrow"></a>
-            <a href="./gameplay.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="Forward arrow"></a>
-        </div>
-        <div class="footer">
-            <div class="inner_footer">
-                <div class="footer_third">
-                    <li><a href="https://github.com/VivaNewVegas/vivanewvegas.github.io" target="_blank"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://discord.gg/DhX5S27" target="_blank"><i class="fab fa-discord"></i></a></li>
-                    <li><a href="https://www.patreon.com/vivanewvegas" target="_blank"><i class="fab fa-patreon"></i></a>
-                    </li>
-                    <li><a href="https://www.paypal.com/paypalme/qolore7" target="_blank"><i class="fab fa-paypal"></i></a>
-                    </li>
-                </div>
+            <div id="sideButton" onclick="toggleNav()">
+                <i class="fa-solid fa-bars"></i>
             </div>
+            <img src="./img/logo.png" alt="Logo" />
+            <a href="./index.html"> Viva New Vegas </a>
+            <div class="guideLinks">
+                <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands </a>
+                <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4 </a>
+                <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition </a>
+            </div>
+        </div>
+        <!-- Left sidebar -->
+        <div id="sidenavLeft">
+            <p>
+            <div>
+                <a href="./index.html">Home</a>
+                <a href="./intro.html">Introduction</a>
+                <a href="./setup.html">Initial Setup</a>
+                <a href="./mo2.html">MO2</a>
+                <a href="./utilities.html">Utilities</a>
+                <a href="./bugfix.html">Bug Fixes</a>
+                <a class="active" href="./hud.html">User Interface</a>
+                <a href="./gameplay.html">Gameplay</a>
+                <a href="./overhauls.html">Overhauls</a>
+                <a href="./content.html">Content</a>
+                <a href="./visuals.html">Visuals</a>
+                <a href="./finish.html">Final Steps</a>
+                <a href="./appendix.html">Appendix</a>
+            </div>
+            <div class="guideLinks">
+                <hr>
+                <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands </a>
+                <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4 </a>
+                <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition </a>
+            </div>
+            <div id="footer">
+                <a href="https://github.com/VivaNewVegas/vivanewvegas.github.io" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://discord.gg/DhX5S27" target="_blank">
+                    <i class="fab fa-discord"></i>
+                </a>
+                <a href="https://www.patreon.com/vivanewvegas" target="_blank">
+                    <i class="fab fa-patreon"></i>
+                </a>
+                <a href="https://www.paypal.com/paypalme/qolore7" target="_blank">
+                    <i class="fab fa-paypal"></i>
+                </a>
+            </div>
+            </p>
+        </div>
+        <!-- Content -->
+        <div class="content">
+            <p>
+                <!-- Overview -->
+            <div class="section">
+                <p>
+                <h1>User Interface</h1>
+                <h2>Creating a Separator in MO2</h2>
+                <ol>
+                    <li>Right-click the empty space in the left pane of MO2 and select <strong>Create Separator</strong>.</li>
+                    <li>Name the separator <strong>User Interface</strong>.</li>
+                </ol>
+            </div>
+
+            <!-- UIO -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/57174" target="_blank">
+                        <h2 id="uio"> User Interface Organizer </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - UIO - User Interface Organizer</b></li>
+                </ul> Automatically ensures that multiple HUD extensions work together. </p>
+            </div>
+            <!-- MCM -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/42507" target="_blank">
+                        <h2 id="mcm"> The Mod Configuration Menu </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - The Mod Configuration Menu</b></li>
+                    <li><b>Update File - MCM BugFix 2</b> (You can either click <Strong>Merge</Strong> or rename the mod as the file and install that below the main)</li>
+                </ul> Allows select mods to be configured via a single in-game menu. </p>
+            </div>
+            <!-- Darn -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.moddb.com/mods/unofficial-darnified-ui-update/downloads/unofficial-darnified-ui-update-fnv1" target="_blank">
+                        <h2 id="darn"> DarnUI </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li>Download the mod and install manually through MO2</li>
+                    <li>Additionally install <a href="https://github.com/VivaNewVegas/vivanewvegas.github.io/blob/master/files/DarnUI%20Config.7z" target="_blank">DarnUI Config</a> (Install manually in MO2)</li>
+                </ul> Greatly improves the look and scale of the UI, adds configurable information shown on the corner. </p>
+                <blockquote>If you do not like the look of DarnUI, you can instead try <a href="https://www.moddb.com/mods/vanilla-ui-plus" target="_blank">Vanilla UI Plus</a>. Installation instructions can be found in the <a href="./faq.html#vui+"
+                        target="_blank">FAQ</a>.</blockquote>
+            </div>
+            <!-- CPI -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/65046" target="_blank">
+                        <h2 id="cpi"> Consistent Pip-Boy Icons </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li>Download and install the first 2 <b>Main Files</b> normally (When prompted with a FOMOD installer, simply select <b>Install</b>, rename the 2nd file to match its file name)</li>
+                    <li>Additionally install <a href="https://www.nexusmods.com/newvegas/mods/70486" target="_blank">Clean Companion Wheel</a> 256x256</li>
+                </ul> Thousands of Pip-Boy icons re-made from scratch in HD along with many bug fixes. </p>
+            </div>
+            <!-- HD Map -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/77963" target="_blank">
+                        <h2 id="localmap"> High Res Local Maps </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - High Res Local Maps</b></li>
+                </ul> Increases the resolution of local maps to a configurable target resolution. </p>
+            </div>
+            <!-- HD Screen -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/77989" target="_blank">
+                        <h2 id="highresscreen"> High Resolution Screens </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - High Resolution Screens</b></li>
+                </ul> Increases the render resolution of in-game screens (Pipboy, terminals, character creation menu) to match game's screen resolution. </p>
+            </div>
+            
+            <div>
+                <p>
+                    <hr>
+                    <a href="./mo2.html"><img class="navigationArrow left mirror" src="./img/arrow.png" alt="Back arrow"></a>
+                    <a href="./bugfix.html"><img class="navigationArrow right" src="./img/arrow.png" alt="Forward arrow"></a>
+                </p>
+            </div>
+            </p>
+        </div>
+        <!-- Right sidebar -->
+        <div id="sidenavRight">
+            <p>
+            <ul>
+                <li>
+                    <a href="#uio">UIO</a>
+                </li>
+                <li>
+                    <a href="#mcm">MCM</a>
+                </li>
+                <li>
+                    <a href="#darn">DarnUI</a>
+                </li>
+                <li>
+                    <a href="#cpi">CPI</a>
+                </li>
+                <li>
+                    <a href="#localmap">HD Local Maps</a>
+                </li>
+                <li>
+                    <a href="#highresscreen">HD Screens</a>
+                </li>
+            </ul>
+            </p>
         </div>
     </body>
 
