@@ -84,18 +84,19 @@ input[type] {
 img {
     max-width: 90%;
     max-height: 80%;
-    border-radius: 8pt;
+    border-radius: 4pt;
 }
 
 /* Body classes */
 
 .content {
     float: left;
-    margin-top: 4em;
-    padding: 2em 15em 0em 15em;
+
+    padding: 5em 15em 0em 15em;
     z-index: 0;
     background-color: rgb(64, 64, 64);
     width: 99vw;
+    min-height: 100vh;
 }
 
 .section {
@@ -202,7 +203,8 @@ img {
 .welcomeContent .welcomeButton strong {
     color: rgb(242, 242, 242);
     font-weight: 500;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.08em;
+    font-size: 1.3em;
 }
 
 .welcomeContent .welcomeButton:hover {
@@ -368,10 +370,10 @@ img {
 
 blockquote {
     background-color: rgb(52, 52, 52);
-    font-size: 1.07em;
+    font-size: 1.05em;
     border-left: 0.5em solid rgb(236, 150, 37);
     padding: 0.5em 0.75em;
-    line-height: 1.75em;
+    line-height: 1.4em;
     border-radius: 4pt;
 }
 
@@ -405,11 +407,11 @@ h2 {
 }
 
 .optional {
-    color: #fada78;
+    color: #fada78 !important;
 }
 
 .performance {
-    color: #d16759;
+    color: #d16759 !important;
 }
 
 #footer {
