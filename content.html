@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="./css/style.css">
         <link rel="icon" href="https://vivanewvegas.github.io/img/logo.png">
         <script src="https://kit.fontawesome.com/e15125fcf7.js" crossorigin="anonymous"></script>
+        <script src="javascript.js"></script>
         <title>Content | Viva New Vegas</title>
         <meta name="description" content="Simple Content changes/additions that make the game feel more balanced and modern.">
         <meta name="twitter:card" value="summary">
@@ -19,98 +20,148 @@
     </head>
 
     <body>
+        <!-- Titlebar -->
         <div class="titlecontainer">
-            <a class="maintitle" href="./index.html"><img src="./img/logo.png" alt="Logo"></img>
-                <h1>Viva New Vegas</h1>
-            </a>
-            <ul class="navbar">
-                <li class="navbarli"><a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a></li>
-                <li class="navbarli"><a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4</a></li>
-                <li class="navbarli"><a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition</a></li>
-            </ul>
-        </div>
-        <div class="sidenavleft">
-            <a href="./index.html">Home</a>
-            <a href="./intro.html">Introduction</a>
-            <a href="./setup.html">Initial Setup</a>
-            <a href="./mo2.html">MO2</a>
-            <a href="./utilities.html">Utilities</a>
-            <a href="./bugfix.html">Bug Fixes</a>
-            <a href="./hud.html">User Interface</a>
-            <a href="./gameplay.html">Gameplay</a>
-            <a href="./overhauls.html">Overhauls</a>
-            <a href="./Content.html"><span style="color:#DCDCDC">Content</span></a>
-            <a href="./visuals.html">Visuals</a>
-            <a href="./finish.html">Final Steps</a>
-            <a href="./appendix.html">Appendix</a>
-        </div>
-        <div class="sidenavright">
-            <a href="./content.html#uncut"><span style="font-size:.8vw;">Uncut Wasteland</span></a>
-            <a href="./content.html#essential_dlc"><span style="font-size:.8vw;">Essential DLC Enhancements</span></a>
-            <a href="./content.html#raiders"><span style="font-size:.8vw;">Mojave Raiders</span></a>
-            <a href="./content.html#tld"><span style="font-size:.8vw;">The Living Desert</span></a>
-        </div>
-        <div>
-            <h2 class="fullheader">Content</h2>
-            <a class="internallink" href="#separator">
-                <h2 class="smallheader" id="separator">Creating a Separator in MO2</h2>
-            </a>
-            <ol class="standard_ol">
-                <li>Right-click anywhere in the left pane of MO2 and select <strong>Create Separator</strong>.</li>
-                <li>Name the separator <strong>Content</strong>.</li>
-            </ol>
-            <a class="internallink" href="uncut">
-                <h2 class="smallheaderperformance" id="uncut"><a href="https://github.com/VivaNewVegas/vivanewvegas.github.io/blob/master/files/Uncut%20Wasteland.7z" target="_blank">Uncut Wasteland</a></h2>
-                <p class="subparagraph">A custom version of sandbox6's amazing <a href="https://www.nexusmods.com/newvegas/mods/56625" target="_blank">Uncut Wasteland</a> mod, which restores many pieces of cut scenery and a few NPCs that were cut because of console limitations.</p>
-            </a>
-            <h2 class="smallheader" id="essential_dlc"><a href="https://www.nexusmods.com/newvegas/mods/73803" target="_blank">Essential DLC Enhancements Merged</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ul class="standard_ul">
-                <li><b>Main File - Essential DLC Enhancements</b></li>
-            </ul>
-            <br>
-            <p class="subparagraph">Merge of many gameplay improvements for the DLCs, all updated and fixed.</p>
-            <a class="internallink" href="raiders">
-                <h2 class="smallheader" id="raiders"><a href="https://www.nexusmods.com/newvegas/mods/64660" target="_blank">Mojave Raiders</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ul class="standard_ul">
-                <li><b>Main File - Mojave Raiders</b></li>
-                <li>Additionally install <a href="https://github.com/VivaNewVegas/vivanewvegas.github.io/blob/master/files/Mojave%20Raiders%20Tweaks.7z" target="_blank">Mojave Raiders Tweaks</a> (Install manually in MO2)</li>
-                <li>Additionally install <a href="https://www.nexusmods.com/newvegas/mods/77945" target="_blank">JSawyer Ultimate - Mojave Raiders Patch</a> and <a href="https://www.nexusmods.com/newvegas/mods/77945" target="_blank">Mojave Raiders - Essential Vanilla Enhancements Merged Patch</a> (When prompted, select the name that matches the file on Nexus)</li>
-            </ul>
-            <br>
-            <p class="subparagraph">Major overhaul/balancing of the vanilla raiders, as well adding many new spawn points. </p>
-            <a class="internallink" href="tld">
-                <h2 class="smallheaderperformance" id="tld"><a href="https://www.nexusmods.com/newvegas/mods/64623" target="_blank">The Living Desert</a></h2>
-            </a>
-            <h2 class="install">Installation instructions:</h2>
-            <ul class="standard_ul">
-                <li><b>Main File - The Living Desert - Main File 2.3</b></li>
-                <li>Additionally install <a href="https://www.nexusmods.com/newvegas/mods/77945" target="_blank">The Living Desert - Essential Vanilla Enhancements Merged Patch</a> (When prompted, select the name that matches the file on Nexus)</li>
-            </ul>
-            <br>
-            <p class="subparagraph">Adds hundreds of new NPCs and scripted events that make the world feel much more alive and reactive.</p>
-        </div>
-        <div>
-            <br>
-            <br>
-            <hr>
-            <a href="./overhauls.html"><img class="backarrow" src="./img/leftarrow.png" alt="Back arrow"></a>
-            <a href="./visuals.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="Forward arrow"></a>
-        </div>
-        <div class="footer">
-            <div class="inner_footer">
-                <div class="footer_third">
-                    <li><a href="https://github.com/VivaNewVegas/vivanewvegas.github.io" target="_blank"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://discord.gg/DhX5S27" target="_blank"><i class="fab fa-discord"></i></a></li>
-                    <li><a href="https://www.patreon.com/vivanewvegas" target="_blank"><i class="fab fa-patreon"></i></a>
-                    </li>
-                    <li><a href="https://www.paypal.com/paypalme/qolore7" target="_blank"><i class="fab fa-paypal"></i></a>
-                    </li>
-                </div>
+            <div id="sideButton" onclick="toggleNav()">
+                <i class="fa-solid fa-bars"></i>
             </div>
+            <img src="./img/logo.png" alt="Logo" />
+            <a href="./index.html"> Viva New Vegas </a>
+            <div class="guideLinks">
+                <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands </a>
+                <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4 </a>
+                <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition </a>
+            </div>
+        </div>
+        <!-- Left sidebar -->
+        <div id="sidenavLeft">
+            <p>
+            <div>
+                <a href="./index.html">Home</a>
+                <a href="./intro.html">Introduction</a>
+                <a href="./setup.html">Initial Setup</span></a>
+                <a href="./mo2.html">MO2</a>
+                <a href="./utilities.html">Utilities</a>
+                <a href="./bugfix.html">Bug Fixes</a>
+                <a href="./hud.html">User Interface</a>
+                <a href="./gameplay.html">Gameplay</a>
+                <a href="./overhauls.html">Overhauls</a>
+                <a href="./content.html" class="active">Content</a>
+                <a href="./visuals.html">Visuals</a>
+                <a href="./finish.html">Final Steps</a>
+                <a href="./appendix.html">Appendix</a>
+            </div>
+            <div class="guideLinks">
+                <hr>
+                <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands </a>
+                <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4 </a>
+                <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition </a>
+            </div>
+            <div id="footer">
+                <a href="https://github.com/VivaNewVegas/vivanewvegas.github.io" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://discord.gg/DhX5S27" target="_blank">
+                    <i class="fab fa-discord"></i>
+                </a>
+                <a href="https://www.patreon.com/vivanewvegas" target="_blank">
+                    <i class="fab fa-patreon"></i>
+                </a>
+                <a href="https://www.paypal.com/paypalme/qolore7" target="_blank">
+                    <i class="fab fa-paypal"></i>
+                </a>
+            </div>
+            </p>
+        </div>
+        <!-- Content -->
+        <div class="content">
+            <p>
+                <!-- Overview -->
+            <div class="section">
+                <p>
+                <h1> Content </h1>
+                <blockquote>Make sure the <strong>Viva New Vegas</strong> profile is active before proceeding.</blockquote>
+                <h2>Creating a Separator in MO2</h2>
+                <ol>
+                    <li>Right-click the empty space in the left pane of MO2 and select <strong>Create Separator</strong>.</li>
+                    <li>Name the separator <strong>Content</strong>.</li>
+                </ol>
+                </p>
+            </div>
+            <!-- Uncut -->
+            <div class="section">
+                <p>
+                    <a class="link" href="ttps://github.com/VivaNewVegas/vivanewvegas.github.io/blob/master/files/Uncut%20Wasteland.7z" target="_blank">
+                        <h2 id="uncut"> Uncut Wasteland </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Install manually in MO2</b></li>
+                </ul> A custom version of sandbox6's amazing <a href="https://www.nexusmods.com/newvegas/mods/56625" target="_blank">Uncut Wasteland</a> mod, which restores many pieces of cut scenery and a few NPCs that were cut because of console limitations. </p>
+            </div>
+            <!-- DLC Enhancements -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/73803" target="_blank">
+                        <h2 id="essential_dlc"> Essential DLC Enhancements Merged </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - Essential DLC Enhancements</b></li>
+                </ul> Merge of many gameplay improvements for the DLCs, all updated and fixed. </p>
+            </div>
+            <!-- Mojave Raiders -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/64660" target="_blank">
+                        <h2 id="raiders"> Mojave Raiders </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - Mojave Raiders</b></li>
+                    <li>Additionally install <a href="https://github.com/VivaNewVegas/vivanewvegas.github.io/blob/master/files/Mojave%20Raiders%20Tweaks.7z" target="_blank">Mojave Raiders Tweaks</a> (Install manually in MO2)</li>
+                    <li>Additionally install <a href="https://www.nexusmods.com/newvegas/mods/77945" target="_blank">JSawyer Ultimate - Mojave Raiders Patch</a> and <a href="https://www.nexusmods.com/newvegas/mods/77945" target="_blank">Mojave Raiders - Essential Vanilla Enhancements Merged Patch</a> (When prompted, select the name that matches the file on Nexus)</li>
+                </ul> Major overhaul/balancing of the vanilla raiders, as well adding many new spawn points. </p>
+            </div>
+            <!-- The Living Desert -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/64623" target="_blank">
+                        <h2 id="tld"> The Living Desert </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - The Living Desert - Main File 2.3</b></li>
+                    <li>Additionally install <a href="https://www.nexusmods.com/newvegas/mods/77945" target="_blank">The Living Desert - Essential Vanilla Enhancements Merged Patch</a> (When prompted, select the name that matches the file on Nexus)</li>
+                </ul> Adds hundreds of new NPCs and scripted events that make the world feel much more alive and reactive. </p>
+            </div>
+            <div>
+                <p>
+                    <hr>
+                    <a href="./mo2.html"><img class="navigationArrow left mirror" src="./img/arrow.png" alt="Back arrow"></a>
+                    <a href="./bugfix.html"><img class="navigationArrow right" src="./img/arrow.png" alt="Forward arrow"></a>
+                </p>
+            </div>
+            </p>
+        </div>
+        <!-- Right sidebar -->
+        <div id="sidenavRight">
+            <p>
+            <ul>
+                <li>
+                    <a href="#uncut">Uncut Wasteland</a>
+                </li>
+                <li>
+                    <a href="#essential_dlc">DLC Enhancements</a>
+                </li>
+                <li>
+                    <a href="#raiders">Mojave Raiders</a>
+                </li>
+                <li>
+                    <a href="#tld">The Living Desert</a>
+                </li>
+            </ul>
+            </p>
         </div>
     </body>
 
