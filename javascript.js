@@ -18,12 +18,12 @@ function toggleNav() {
     }
 }
 
-function titleGlow(enable){
-    if(enable){
+function titleGlow(enable) {
+    if (enable) {
         document.getElementById("title").classList.add("glow");
         document.getElementById("backdrop").classList.add("blur");
     }
-    else{
+    else {
         document.getElementById("title").classList.remove("glow");
         document.getElementById("backdrop").classList.remove("blur");
     }
