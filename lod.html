@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="./css/style.css">
         <link rel="icon" href="https://vivanewvegas.github.io/img/logo.webp">
         <script src="https://kit.fontawesome.com/e15125fcf7.js" crossorigin="anonymous"></script>
+        <script src="javascript.js"></script>
         <title>LOD Guide | Viva New Vegas</title>
         <meta name="description" content="Guide on how to generate Object LOD with xLODgen.">
         <meta name="twitter:card" value="summary">
@@ -19,109 +20,151 @@
     </head>
 
     <body>
+        <!-- Titlebar -->
         <div class="titlecontainer">
-            <a class="maintitle" href="./index.html"><img src="./img/logo.webp" alt="Logo"></img>
-                <h1>Viva New Vegas</h1>
-            </a>
-            <ul class="navbar">
-                <li class="navbarli"><a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a></li>
-                <li class="navbarli"><a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4</a></li>
-                <li class="navbarli"><a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition</a></li>
-            </ul>
-        </div>
-        <div class="sidenavleft">
-            <a href="./index.html">Home</a>
-            <a href="./intro.html">Introduction</a>
-            <a href="./setup.html">Initial Setup</a>
-            <a href="./mo2.html">MO2</a>
-            <a href="./utilities.html">Utilities</a>
-            <a href="./bugfix.html">Bug Fixes</a>
-            <a href="./hud.html">User Interface</a>
-            <a href="./gameplay.html">Gameplay</a>
-            <a href="./overhauls.html">Overhauls</a>
-            <a href="./content.html">Content</a>
-            <a href="./visuals.html">Visuals</a>
-            <a href="./finish.html">Final Steps</a>
-            <a href="./appendix.html">Appendix</a>
-            <a href="./resources.html">Resources</a>
-            <a href="./avoid-tools.html"><span style="color:#DCDCDC">LOD Guide</span></a>
-        </div>
-        <div class="sidenavright">
-            <a href="./lod.html#installing_lodgen" span style="font-size:.8vw;">Installing xLODGen</a>
-            <a href="./lod.html#installing_resources" span style="font-size:.8vw;">Installing Resources</a>
-            <a href="./lod.html#running_lodgen" span style="font-size:.8vw;">Running xLODGen</a>
-        </div>
-        <div>
-            <h2 class="fullheader">LOD Generating Guide</h2>
-            <p class="subparagraph"> Before getting started, there are a few things you should know. First, generating LOD is not a requirement, but it will add detail in the distance thanks to the mod linked below. It becomes a requirement for proper visuals if you installed texture mods (Such as NMCs or Poco Bueno) or are using a mod that requires LOD to be generated (Like MoreMojave). Terrain LOD creates a much larger file size (+500mb) and potential performance loss for a very minimal visual improvement. Therefore, this guide will focus only on generating object LOD with xLODGen. If you need to generate xLODGen terrain LOD for whatever reason, the instructions will be the exact same except you will need to enable <b>Terrain LOD</b> option in addition to the <b>Object LOD</b> option. </p>
-            <a class="internallink" href="#installing_lodgen">
-                <h2 class="subheader" id="installing_lodgen">Installing xLODGen</h2>
-            </a>
-            <ol class="standard_ol">
-                <li>Download the latest <strong>xLODGen</strong> file from <a href="https://stepmodifications.org/forum/topic/13451-xlodgen-terrain-lod-beta-94-for-fnv-fo3-fo4-fo4vr-tes5-sse-tes5vr-enderal-enderalse/" target="_blank">here</a>.</li>
-                <li>Once the download has finished, extract the contents of the archive to any location of your choice.</li>
-                <li>In MO2, select the <img src="./img/mo2 executabes.webp" alt="MO2 executables"> button at the top of MO2 to open the executables menu.</li>
-                <li>Click the <strong style="color:rgb(20, 162, 228)">+</strong> at the top of the window and the select <strong>Add from file...</strong>
-                </li>
-                <li>From the pop-up, navigate to where xLODGen is installed and select <strong>xLODGen.exe</strong>.</li>
-                <li>In the <b>Arguments</b> box in the right pane, enter <code>-FNV -O:"C:\Output\"</code></li>
-            </ol>
-            <blockquote>This argument will make the files generated through xLODGen appear in a folder called <b>Output</b> on your <b>C:\</b> drive (the drive Windows is installed on). You can change this path to whatever you would like if you would prefer the files to be generated elsewhere (Not a UAC protected folder or the game folder).</blockquote>
-            <ol class="standard_ol" start="9">
-                <li>Select <strong>Apply</strong> then <strong>OK</strong>.</li>
-            </ol>
-            <a class="internallink" href="#installing_resources">
-                <h2 class="subheader" id="installing_resources">Installing LOD Resources</h2>
-            </a>
-            <ul class="standard_ul">
-                <li><a href="https://www.nexusmods.com/newvegas/mods/58562" target="_blank">FNVLODGen Resources</a> - <strong>Main File - FNVLODGen Resources</strong>
-                </li>
-                <ul>
-                    <li>If you are using NMCs Texture Pack, also install the <strong>Optional File - NMC LOD texture fix</strong> file.</li>
-                </ul>
-                <li><a href="https://www.nexusmods.com/newvegas/mods/61206" target="_blank">LOD Additions and Improvements</a> - <strong>Main File - LODadditions</strong></li>
-                <li>Only if you use NMCs Texture Pack: <a href="https://www.nexusmods.com/newvegas/mods/64805" target="_blank">Much Needed LOD</a> - JUST the <strong>Optional File - Much Needed LOD - NMC Patch</strong>.</li>
-                <li><a href="https://www.nexusmods.com/newvegas/mods/72099" target="_blank">LOD Supplementation</a> - <strong>Main File - FNV LOD Supplementation</strong>
-                </li>
-                <li><a href="https://www.nexusmods.com/newvegas/mods/64698" target="_blank">LOD Texture Patches</a> - <strong>Main File - NMC LOD Patch</strong> and/or <strong>Main File - Poco-Ojo LOD Texture Patch</strong> (Depending on which texture mods you are using.) </li>
-                <li><a href="https://www.nexusmods.com/newvegas/mods/70155" target="_blank">TCM's LOD Overhaul</a> - <strong>Main File - TCM's LOD Overhaul</strong>
-                </li>
-            </ul>
-            <a class="internallink" href="#running_lodgen">
-                <h2 class="subheader" id="running_lodgen">Running xLODGen</h2>
-            </a>
-            <ol class="standard_ol">
-                <li>Select xLODGen from the executables drop-down in the top right of MO2 and click <b>Run</b>.</li>
-                <li>Once the program has loaded, right-click in the left pane and click <strong>Select All</strong>.</li>
-                <li>In the right pane, check <strong>Objects LOD</strong> but leave <strong>Trees LOD</strong> unchecked. </li>
-            </ol>
-            <blockquote>Tree LOD is not functional in New Vegas. LOD for trees is covered in Object LOD. </blockquote>
-            <ol class="standard_ol" start="4">
-                <li>Under the <strong>Objects LOD</strong> section, change the <strong>Atlas size</strong> option to <strong>8192 </strong> x <strong>8192</strong>. </li>
-                <li>Click <strong>Generate</strong>.</li>
-                <li>When complete, the log will stop and at the end you will see a message saying "LOD generation complete", you can now close xLODGen.</li>
-            </ol>
-            <a class="internallink" href="#installation">
-                <h2 class="subheader" id="installation">Installation</h2>
-            </a>
-            <ol class="standard_ol">
-                <li>In MO2, right-click on the <i>Overwrite</i> folder at the bottom of the left pane and select <strong>All Mods -> Create empty mod above</strong>.</li>
-                <li>Title the mod <strong>FNVLODGen Output</strong>.</li>
-                <li>Navigate to where the LOD files were generated and select both the <code>textures</code> and <code>meshes</code> folders. </li>
-                <li>Cut them to the <strong>FNVLODGen Output</strong> mod you just created (Right-click on the mod and select <b>Open in Explorer)</b>.</li>
-            </ol>
-        </div>
-        <div class="footer">
-            <div class="inner_footer">
-                <div class="footer_third">
-                    <li><a href="https://github.com/VivaNewVegas/vivanewvegas.github.io" target="_blank"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://discord.gg/DhX5S27" target="_blank"><i class="fab fa-discord"></i></a></li>
-                    <li><a href="https://www.patreon.com/vivanewvegas" target="_blank"><i class="fab fa-patreon"></i></a>
-                    </li>
-                    <li><a href="https://www.paypal.com/paypalme/qolore7" target="_blank"><i class="fab fa-paypal"></i></a>
-                    </li>
-                </div>
+            <div id="sideButton" onclick="toggleNav()">
+                <i class="fa-solid fa-bars"></i>
             </div>
+            <img src="./img/logo.webp" alt="Logo" />
+            <a href="./index.html"> Viva New Vegas </a>
+            <div class="guideLinks">
+                <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands </a>
+                <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4 </a>
+                <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition </a>
+            </div>
+        </div>
+        <!-- Left sidebar -->
+        <div id="sidenavLeft">
+            <p>
+            <div>
+                <a href="./index.html">Home</a>
+                <a href="./intro.html">Introduction</a>
+                <a href="./setup.html">Initial Setup</span></a>
+                <a href="./mo2.html">MO2</a>
+                <a href="./utilities.html">Utilities</a>
+                <a href="./bugfix.html">Bug Fixes</a>
+                <a href="./hud.html">User Interface</a>
+                <a href="./gameplay.html">Gameplay</a>
+                <a href="./overhauls.html">Overhauls</a>
+                <a href="./content.html">Content</a>
+                <a href="./visuals.html">Visuals</a>
+                <a href="./finish.html">Final Steps</a>
+                <a href="./appendix.html">Appendix</a>
+                <a href="./lod.html" class="active">LOD Guide</a>
+            </div>
+            <div class="guideLinks">
+                <hr>
+                <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands </a>
+                <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4 </a>
+                <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition </a>
+            </div>
+            <div id="footer">
+                <a href="https://github.com/VivaNewVegas/vivanewvegas.github.io" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://discord.gg/DhX5S27" target="_blank">
+                    <i class="fab fa-discord"></i>
+                </a>
+                <a href="https://www.patreon.com/vivanewvegas" target="_blank">
+                    <i class="fab fa-patreon"></i>
+                </a>
+                <a href="https://www.paypal.com/paypalme/qolore7" target="_blank">
+                    <i class="fab fa-paypal"></i>
+                </a>
+            </div>
+            </p>
+        </div>
+        <!-- Content -->
+        <div class="content">
+            <p>
+            <div class="section">
+                <p>
+                <h1> LOD Guide </h1>
+                <p> Before getting started, there are a few things you should know. First, generating LOD is not a requirement, but it will add detail in the distance thanks to the mod linked below. It becomes a requirement for proper visuals if you installed texture mods (Such as NMCs or Poco Bueno) or are using a mod that requires LOD to be generated (Like MoreMojave). Terrain LOD creates a much larger file size (+500mb) and potential performance loss for a very minimal visual improvement. Therefore, this guide will focus only on generating object LOD with xLODGen. If you need to generate xLODGen terrain LOD for whatever reason, the instructions will be the exact same except you will need to enable <b>Terrain LOD</b> option in addition to the <b>Object LOD</b> option. </p>
+                <a>
+                    <h2 class="subheader" id="installing_xlodgen">Installing xLODGen</h2>
+                </a>
+                <ol class="standard_ol">
+                    <li>Download the latest <strong>xLODGen</strong> file from <a href="https://stepmodifications.org/forum/topic/13451-xlodgen-terrain-lod-beta-94-for-fnv-fo3-fo4-fo4vr-tes5-sse-tes5vr-enderal-enderalse/" target="_blank">here</a>.</li>
+                    <li>Once the download has finished, extract the contents of the archive to any location of your choice.</li>
+                    <li>In MO2, select the <img src="./img/mo2 executabes.webp" alt="MO2 executables"> button at the top of MO2 to open the executables menu.</li>
+                    <li>Click the <strong style="color:rgb(20, 162, 228)">+</strong> at the top of the window and the select <strong>Add from file...</strong>
+                    </li>
+                    <li>From the pop-up, navigate to where xLODGen is installed and select <strong>xLODGen.exe</strong>.</li>
+                    <li>In the <b>Arguments</b> box in the right pane, enter <code>-FNV -O:"C:\Output\"</code></li>
+                </ol>
+                <blockquote>This argument will make the files generated through xLODGen appear in a folder called <b>Output</b> on your <b>C:\</b> drive (the drive Windows is installed on). You can change this path to whatever you would like if you would prefer the files to be generated elsewhere (Not a UAC protected folder or the game folder).</blockquote>
+                <ol class="standard_ol" start="9">
+                    <li>Select <strong>Apply</strong> then <strong>OK</strong>.</li>
+                </ol>
+                <a>
+                    <h2 class="subheader" id="installing_resources">Installing LOD Resources</h2>
+                </a>
+                <ul class="standard_ul">
+                    <li><a href="https://www.nexusmods.com/newvegas/mods/58562" target="_blank">FNVLODGen Resources</a> - <strong>Main File - FNVLODGen Resources</strong>
+                    </li>
+                    <ul>
+                        <li>If you are using NMCs Texture Pack, also install the <strong>Optional File - NMC LOD texture fix</strong> file.</li>
+                    </ul>
+                    <li><a href="https://www.nexusmods.com/newvegas/mods/61206" target="_blank">LOD Additions and Improvements</a> - <strong>Main File - LODadditions</strong></li>
+                    <li>Only if you use NMCs Texture Pack: <a href="https://www.nexusmods.com/newvegas/mods/64805" target="_blank">Much Needed LOD</a> - JUST the <strong>Optional File - Much Needed LOD - NMC Patch</strong>.</li>
+                    <li><a href="https://www.nexusmods.com/newvegas/mods/72099" target="_blank">LOD Supplementation</a> - <strong>Main File - FNV LOD Supplementation</strong>
+                    </li>
+                    <li><a href="https://www.nexusmods.com/newvegas/mods/64698" target="_blank">LOD Texture Patches</a> - <strong>Main File - NMC LOD Patch</strong> and/or <strong>Main File - Poco-Ojo LOD Texture Patch</strong> (Depending on which texture mods you are using.) </li>
+                    <li><a href="https://www.nexusmods.com/newvegas/mods/70155" target="_blank">TCM's LOD Overhaul</a> - <strong>Main File - TCM's LOD Overhaul</strong>
+                    </li>
+                </ul>
+                <a>
+                    <h2 class="subheader" id="running_lodgen">Running xLODGen</h2>
+                </a>
+                <ol class="standard_ol">
+                    <li>Select xLODGen from the executables drop-down in the top right of MO2 and click <b>Run</b>.</li>
+                    <li>Once the program has loaded, right-click in the left pane and click <strong>Select All</strong>.</li>
+                    <li>In the right pane, check <strong>Objects LOD</strong> but leave <strong>Trees LOD</strong> unchecked. </li>
+                </ol>
+                <blockquote>Tree LOD is not functional in New Vegas. LOD for trees is covered in Object LOD. </blockquote>
+                <ol class="standard_ol" start="4">
+                    <li>Under the <strong>Objects LOD</strong> section, change the <strong>Atlas size</strong> option to <strong>8192 </strong> x <strong>8192</strong>. </li>
+                    <li>Click <strong>Generate</strong>.</li>
+                    <li>When complete, the log will stop and at the end you will see a message saying "LOD generation complete", you can now close xLODGen.</li>
+                </ol>
+                <a>
+                    <h2 class="subheader" id="installation">Installation</h2>
+                </a>
+                <ol class="standard_ol">
+                    <li>In MO2, right-click on the <i>Overwrite</i> folder at the bottom of the left pane and select <strong>All Mods -> Create empty mod above</strong>.</li>
+                    <li>Title the mod <strong>FNVLODGen Output</strong>.</li>
+                    <li>Navigate to where the LOD files were generated and select both the <code>textures</code> and <code>meshes</code> folders. </li>
+                    <li>Cut them to the <strong>FNVLODGen Output</strong> mod you just created (Right-click on the mod and select <b>Open in Explorer)</b>.</li>
+                </ol>
+            </div>
+            <div>
+                <p>
+                    <hr>
+                    <a href="./overhauls.html"><img class="navigationArrow left mirror" src="./img/arrow.webp" alt="Back arrow"></a>
+                    <a href="./visuals.html"><img class="navigationArrow right" src="./img/arrow.webp" alt="Forward arrow"></a>
+                </p>
+            </div>
+            </p>
+        </div>
+        <!-- Right sidebar -->
+        <div id="sidenavRight">
+            <p>
+            <ul>
+                <li>
+                    <a href="#installing_xlodgen">Installing</a>
+                </li>
+                <li>
+                    <a href="#installing_resources">Resources</a>
+                </li>
+                <li>
+                    <a href="#running_lodgen">Running</a>
+                </li>
+                <li>
+                    <a href="#installation">Installation</a>
+                </li>
+            </ul>
+            </p>
         </div>
     </body>
 
