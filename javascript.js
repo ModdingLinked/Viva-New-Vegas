@@ -7,8 +7,8 @@ document.addEventListener('keyup', (e) => {
     else if (e.code === "ArrowLeft") {
         window.open(document.getElementById("previous").href, "_self")
     }
-  
-  });
+
+});
 
 function sizeChanged() {
     if (document.documentElement.clientWidth > 760) {

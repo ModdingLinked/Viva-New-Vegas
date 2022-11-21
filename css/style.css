@@ -109,23 +109,23 @@ img {
     height: 200px;
 }
 
-.section a{
+.section a {
     color: rgb(51, 122, 183);
     font-size: 1.025em;
 }
 
-.link{
+.link {
     color: rgb(51, 122, 183) !important;
     font-size: 1.025em;
 }
 
 .link:hover {
-    color: hsl(208, 80%, 70%) !important; 
+    color: hsl(208, 80%, 70%) !important;
     text-decoration-line: underline !important;
 }
 
 .section a:hover {
-    color: hsl(208, 80%, 70%); 
+    color: hsl(208, 80%, 70%);
     text-decoration-line: underline;
 }
 
@@ -296,7 +296,7 @@ img {
     margin-right: 1.25em;
 }
 
-#sidenavLeft ul{
+#sidenavLeft ul {
     list-style: none;
     margin-left: -3em;
 }
