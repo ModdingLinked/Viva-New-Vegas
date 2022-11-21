@@ -234,6 +234,7 @@ img {
     width: 100%;
     z-index: 3;
     height: 5em;
+    box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.5);
 }
 
 .titlecontainer a {
@@ -279,6 +280,7 @@ img {
     white-space: nowrap;
     z-index: 2;
     background-color: rgb(44, 44, 44);
+    box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.4);
 }
 
 #sidenavLeft .guideLinks a,
@@ -293,6 +295,11 @@ img {
 #sidenavLeft div {
     margin-left: 1.25em;
     margin-right: 1.25em;
+}
+
+#sidenavLeft ul{
+    list-style: none;
+    margin-left: -3em;
 }
 
 .guideLinks a {
@@ -328,6 +335,7 @@ img {
     backdrop-filter: saturate(10%) blur(32px);
     background-color: rgb(44, 44, 44);
     padding-top: 5em;
+    box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.4);
 }
 
 #sidenavRight a {
@@ -487,7 +495,7 @@ h2 {
         width: 0;
         overflow-y: scroll;
         overflow-x: hidden;
-        background-color: rgb(44 44 44);
+        background-color: rgb(44 44 44) !important;
     }
 
     #sideButton {
@@ -543,4 +551,5 @@ h2 {
 
 .transparent {
     background-color: rgba(255, 255, 255, 0) !important;
+    box-shadow: none !important;
 }
