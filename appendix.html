@@ -1,3 +1,26 @@
+<!-- 
+MIT License
+
+Copyright (c) VivaNewVegas
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,73 +29,151 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="./css/style.css">
-        <link rel="icon" href="https://vivanewvegas.github.io/img/logo.png">
-        <script src="https://kit.fontawesome.com/e15125fcf7.js" crossorigin="anonymous"></script>
-        <title>Appendix | Viva New Vegas</title>
+        <link rel="icon" href="https://vivanewvegas.github.io/img/logo.webp">
+        <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
+        <script src="javascript.js"></script>
+        <title>Final Steps | Viva New Vegas</title>
         <meta name="description" content="Links for the changelog, FAQ, and various resources.">
         <meta name="twitter:card" value="summary">
         <meta property="og:title" content="Viva New Vegas" />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://vivanewvegas.github.io/" />
-        <meta property="og:image" content="https://vivanewvegas.github.io/img/logo.png" />
+        <meta property="og:image" content="https://vivanewvegas.github.io/img/logo.webp" />
         <meta property="og:description" content="Links for the changelog, FAQ, and various resources." />
     </head>
 
     <body>
+        <!-- Titlebar -->
         <div class="titlecontainer">
-            <a class="maintitle" href="./index.html"><img src="./img/logo.png" alt="Logo"></img>
-                <h1>Viva New Vegas</h1>
-            </a>
-            <ul class="navbar">
-                <li class="navbarli"><a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a></li>
-                <li class="navbarli"><a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4</a></li>
-                <li class="navbarli"><a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition</a></li>
-            </ul>
-        </div>
-        <div class="sidenavleft">
-            <a href="./index.html">Home</a>
-            <a href="./intro.html">Introduction</a>
-            <a href="./setup.html">Initial Setup</a>
-            <a href="./mo2.html">MO2</a>
-            <a href="./utilities.html">Utilities</a>
-            <a href="./bugfix.html">Bug Fixes</a>
-            <a href="./hud.html">User Interface</a>
-            <a href="./gameplay.html">Gameplay</a>
-            <a href="./overhauls.html">Overhauls</a>
-            <a href="./content.html">Content</a>
-            <a href="./visuals.html">Visuals</a>
-            <a href="./finish.html">Final Steps</a>
-            <a href="./appendix.html"><span style="color:#DCDCDC">Appendix</span></a>
-        </div>
-        <div>
-            <h2 class="fullheader">Appendix</h2>
-            <h2 class="smallheader"><a href="./changelog.html" target="_blank">Changelog</a></h2>
-            <p class="subparagraph">Catalog of all changes made to the guide</p>
-            <br>
-            <h2 class="smallheader"><a href="./faq.html" target="_blank">Frequently-Asked Questions</a></h2>
-            <p class="subparagraph">Solutions to common problems with the guide</p>
-            <br>
-            <h2 class="smallheader"><a href="./resources.html" target="_blank">Resources</a></h2>
-            <p class="subparagraph">Various tutorials and information that may be useful, especially if you plan on adding mods</p>
-        </div>
-        <div>
-            <br>
-            <br>
-            <hr>
-            <a href="./finish.html"><img class="backarrow" src="./img/leftarrow.png" alt="Back arrow"></a>
-            <a href="./index.html"><img class="forwardarrow" src="./img/rightarrow.png" alt="Forward arrow"></a>
-        </div>
-        <div class="footer">
-            <div class="inner_footer">
-                <div class="footer_third">
-                    <li><a href="https://github.com/VivaNewVegas/vivanewvegas.github.io" target="_blank"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://discord.gg/DhX5S27" target="_blank"><i class="fab fa-discord"></i></a></li>
-                    <li><a href="https://www.patreon.com/vivanewvegas" target="_blank"><i class="fab fa-patreon"></i></a>
-                    </li>
-                    <li><a href="https://www.paypal.com/paypalme/qolore7" target="_blank"><i class="fab fa-paypal"></i></a>
-                    </li>
-                </div>
+            <div id="sideButton" onclick="toggleNav()">
+                <i class="fa-solid fa-bars"></i>
             </div>
+            <img src="./img/logo.webp" alt="Logo" />
+            <a href="./index.html"> Viva New Vegas </a>
+            <div class="guideLinks">
+                <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands </a>
+                <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4 </a>
+                <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition </a>
+            </div>
+        </div>
+        <!-- Left sidebar -->
+        <div id="sidenavLeft">
+            <p>
+            <div>
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./intro.html">Introduction</a>
+                    </li>
+                    <li>
+                        <a href="./setup.html">Initial Setup</a>
+                    </li>
+                    <li>
+                        <a href="./mo2.html">MO2</a>
+                    </li>
+                    <li>
+                        <a href="./utilities.html">Utilities</a>
+                    </li>
+                    <li>
+                        <a href="./bugfix.html">Bug Fixes</a>
+                    </li>
+                    <li>
+                        <a href="./hud.html">User Interface</a>
+                    </li>
+                    <li>
+                        <a href="./gameplay.html">Gameplay</a>
+                    </li>
+                    <li>
+                        <a href="./overhauls.html">Overhauls</a>
+                    </li>
+                    <li>
+                        <a href="./content.html">Content</a>
+                    </li>
+                    <li>
+                        <a href="./visuals.html">Visuals</a>
+                    </li>
+                    <li>
+                        <a href="./finish.html">Final Steps</a>
+                    </li>
+                    <li>
+                        <a href="./appendix.html" class="active">Appendix</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="guideLinks">
+                <hr>
+                <ul>
+                    <li>
+                        <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands </a>
+                    </li>
+                    <li>
+                        <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4 </a>
+                    </li>
+                    <li>
+                        <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="footer">
+                <ul>
+                    <li>
+                        <a href="https://github.com/VivaNewVegas/vivanewvegas.github.io" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://discord.gg/DhX5S27" target="_blank">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.patreon.com/vivanewvegas" target="_blank">
+                            <i class="fab fa-patreon"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.paypal.com/paypalme/qolore7" target="_blank">
+                            <i class="fab fa-paypal"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </p>
+        </div>
+        <!-- Content -->
+        <div class="content">
+            <p>
+            <div class="section">
+                <p>
+                <h1> Appendix </h1>
+                <div class="section">
+                    <p>
+                        <a class="link" href="./changelog.html">
+                            <h2> Changelog </h2>
+                        </a> Catalog of all changes made to the guide
+                    </p>
+                    <p>
+                        <a class="link" href="./faq.html">
+                            <h2> Frequently-Asked Questions </h2>
+                        </a> Solutions to common problems with the guide
+                    </p>
+                    <p>
+                        <a class="link" href="./resources.html">
+                            <h2> Resources </h2>
+                        </a> Various tutorials and information that may be useful, especially if you plan on adding mods
+                    </p>
+                </div>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <hr>
+                    <a href="./finish.html"><img class="navigationArrow left mirror" src="./img/arrow.webp" alt="Back arrow"></a>
+                </p>
+            </div>
+            </p>
         </div>
     </body>
 

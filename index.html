@@ -25,57 +25,94 @@ SOFTWARE.
 <html lang="en">
 
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="icon" href="https://vivanewvegas.github.io/img/logo.png">
-        <script src="https://kit.fontawesome.com/e15125fcf7.js" crossorigin="anonymous"></script>
         <title>Viva New Vegas</title>
-        <meta name="description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied.">
-        <meta name="twitter:card" value="summary">
-        <meta property="og:title" content="Viva New Vegas" />
-        <meta property="og:type" content="article" />
+        <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
+        <script src="javascript.js"></script>
         <meta property="og:url" content="https://vivanewvegas.github.io/" />
-        <meta property="og:image" content="https://vivanewvegas.github.io/img/logo.png" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Viva New Vegas" />
+        <meta property="og:image" content="https://vivanewvegas.github.io/img/logo.webp" />
         <meta property="og:description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied." />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="twitter:card" value="summary">
+        <meta name="description" content="A fully modular, comprehensive, and regularly updated modding guide that allows for any personal preference to be satisfied.">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="icon" href="https://vivanewvegas.github.io/img/logo.webp">
     </head>
 
     <body>
         <style>
             body {
-                background-image: url('./img/background.png');
+                background-image: url('./img/background.webp');
                 background-repeat: no-repeat;
                 background-attachment: fixed;
                 background-size: cover;
+                background-position: center;
             }
         </style>
         <div>
-            <a class="maintitleindex" href="./index.html"><img src="./img/logo.png" alt="Logo"></img>
-                <h1>Viva New Vegas</h1>
-            </a>
-            <ul class="navbarindex">
-                <li class="navbarli"><a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands</a></li>
-                <li class="navbarli"><a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4</a></li>
-                <li class="navbarli"><a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition</a></li>
-            </ul>
-        </div>
-        <div>
-            <h2 class="welcome">Welcome to Viva New Vegas!</h2>
-        </div>
-        <div>
-            <a class="button" href="./intro.html">Get Started &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><a href="./intro.html"><img class="beginarrow" src="./img/beginarrow.png" alt="Begin"></a>
-        </div>
-        <div class="footerindex">
-            <div class="inner_footer">
-                <div class="footer_third">
-                    <li><a href="https://github.com/VivaNewVegas/vivanewvegas.github.io" target="_blank"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://discord.gg/DhX5S27" target="_blank"><i class="fab fa-discord"></i></a></li>
-                    <li><a href="https://www.patreon.com/vivanewvegas" target="_blank"><i class="fab fa-patreon"></i></a>
-                    </li>
-                    <li><a href="https://www.paypal.com/paypalme/qolore7" target="_blank"><i class="fab fa-paypal"></i></a>
+            <!-- Titlebar -->
+            <div class="titlecontainer transparent">
+                <div id="sideButton" onclick="toggleNav()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <img src="./img/logo.webp" alt="Logo" />
+                <a href="./index.html"> Viva New Vegas </a>
+                <div class="guideLinks">
+                    <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands </a>
+                    <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4 </a>
+                    <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition </a>
                 </div>
             </div>
+            <!-- Left sidebar -->
+            <div id="sidenavLeft" class="transparent">
+                <p>
+                <div class="guideLinks">
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands </a>
+                        </li>
+                        <li>
+                            <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4 </a>
+                        </li>
+                        <li>
+                            <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="footer">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/VivaNewVegas/vivanewvegas.github.io" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://discord.gg/DhX5S27" target="_blank">
+                                <i class="fab fa-discord"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.patreon.com/vivanewvegas" target="_blank">
+                                <i class="fab fa-patreon"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.paypal.com/paypalme/qolore7" target="_blank">
+                                <i class="fab fa-paypal"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                </p>
+            </div>
+        </div>
+        <div id="backdrop" class="welcomeContent">
+            <h2 id="title">Welcome to Viva New Vegas!</h2>
+            <a class="welcomeButton" href="./intro.html" onmouseover="titleGlow(1)" onmouseleave="titleGlow(0)"><strong>Get Started</strong></a><a href="./intro.html"></a>
         </div>
     </body>
 
