@@ -135,18 +135,18 @@ img {
     font-size: inherit;
 }
 
-.section h2 a::before {
-    display: block;
-    content: " ";
-    margin-top: -2em;
-    height: 2em;
-}
-
-.section h3 a::before{
-    display: block;
-    content: " ";
+.section h2::before {
+    display: flex;
+    content: "";
     margin-top: -3em;
     height: 3em;
+}
+
+.section h3::before {
+    display: flex;
+    content: "";
+    margin-top: -4em;
+    height: 4em;
 }
 
 .section ul,
