@@ -88,6 +88,10 @@ img {
     border-radius: 4pt;
 }
 
+#xnvseImg {
+    max-width: 40%;
+}
+
 /* Body classes */
 
 .content {
@@ -531,6 +535,10 @@ h2 {
 
     code {
         line-break: anywhere;
+    }
+
+    #xnvseImg {
+        max-width: 90%;
     }
 
 }
