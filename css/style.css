@@ -430,13 +430,31 @@ h2 {
     margin-top: auto;
 }
 
-#footer a {
+#footer a,
+#paypal {
     padding: 0.3em 0em;
     font-size: 2em;
+    cursor: pointer;
 }
 
-#footer a:hover {
+#footer a:hover,
+#paypal:hover {
     scale: 90%;
+}
+
+#paypalMenu {
+    position: fixed;
+    background-color: #202020;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.40);
+    border-radius: 8px;
+    padding: 1em;
+    bottom: 8em;
+    left: 0em;
+    font-size: 0.8em;
+}
+
+#paypalMenu a:hover {
+    scale: 100%;
 }
 
 .navigationArrow {
