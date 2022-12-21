@@ -12,8 +12,8 @@
     width: 12px;
 }
 
-*::-webkit-scrollbar-track {
-    background: transparent;
+::-webkit-scrollbar-track {
+    background: #2c2c2c;
 }
 
 *::-webkit-scrollbar-thumb {
@@ -38,7 +38,7 @@ body {
     line-height: 1.25em;
     font-family: arial, helvetica, sans-serif;
     color: rgb(220, 220, 220);
-    background-color: rgb(44, 44, 44);
+    background-color: rgb(64, 64, 64);
     font-size: 0.75em;
 }
 
