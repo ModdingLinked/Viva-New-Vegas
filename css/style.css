@@ -88,7 +88,7 @@ img {
     border-radius: 4pt;
 }
 
-#xnvseImg {
+#xnvse_root {
     max-width: 40%;
 }
 
@@ -537,7 +537,7 @@ h2 {
         line-break: anywhere;
     }
 
-    #xnvseImg {
+    #xnvse_root {
         max-width: 90%;
     }
 
