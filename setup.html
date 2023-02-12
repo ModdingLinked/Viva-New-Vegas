@@ -44,305 +44,306 @@ SOFTWARE.
     </head>
 
     <body>
-        <div>
-            <!-- Titlebar -->
-            <div class="titlecontainer">
-                <div id="sideButton" onclick="toggleNav()">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-                <img src="./img/logo.webp" alt="Logo" />
-                <a href="./index.html"> Viva New Vegas </a>
-                <div class="guideLinks">
-                    <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands </a>
-                    <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4 </a>
-                    <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition </a>
-                    <a href="https://gloryofcyrodiil.github.io/" target="_blank" rel="nofollow">Oblivion </a>
-                </div>
+        <!-- Titlebar -->
+        <div class="titlecontainer">
+            <div id="sideButton" onclick="toggleNav()">
+                <i class="fa-solid fa-bars"></i>
             </div>
+            <img src="./img/logo.webp" alt="Logo" />
+            <a href="./index.html"> Viva New Vegas </a>
+            <div class="guideLinks">
+                <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands </a>
+                <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4 </a>
+                <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition </a>
+                <a href="https://gloryofcyrodiil.github.io/" target="_blank" rel="nofollow">Oblivion </a>
+            </div>
+        </div>
 
-            <!-- Left Sidebar -->
-            <div id="sidenavLeft">
+        <!-- Left Sidebar -->
+        <div id="sidenavLeft">
+            <p>
+            <div>
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./intro.html">Introduction</a>
+                    </li>
+                    <li>
+                        <a href="./setup.html" class="active">Initial Setup</a>
+                    </li>
+                    <li>
+                        <a href="./mo2.html">MO2</a>
+                    </li>
+                    <li>
+                        <a href="./utilities.html">Utilities</a>
+                    </li>
+                    <li>
+                        <a href="./bugfix.html">Bug Fixes</a>
+                    </li>
+                    <li>
+                        <a href="./hud.html">User Interface</a>
+                    </li>
+                    <li>
+                        <a href="./gameplay.html">Gameplay</a>
+                    </li>
+                    <li>
+                        <a href="./overhauls.html">Overhauls</a>
+                    </li>
+                    <li>
+                        <a href="./content.html">Content</a>
+                    </li>
+                    <li>
+                        <a href="./visuals.html">Visuals</a>
+                    </li>
+                    <li>
+                        <a href="./finish.html">Final Steps</a>
+                    </li>
+                    <li>
+                        <a href="./appendix.html">Appendix</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <hr>
+                <ul>
+                    <li>
+                        <a href="./faq.html">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="./avoid-tools.html">Tools to Avoid</a>
+                    </li>
+                    <li>
+                        <a href="./avoid-mods.html">Mods to Avoid</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="guideLinks">
+                <hr>
+                <ul>
+                    <li>
+                        <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands </a>
+                    </li>
+                    <li>
+                        <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4 </a>
+                    </li>
+                    <li>
+                        <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition </a>
+                    </li>
+                    <li>
+                        <a href="https://gloryofcyrodiil.github.io/" target="_blank" rel="nofollow">Oblivion </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="footer">
+                <ul>
+                    <li>
+                        <a href="https://github.com/VivaNewVegas/vivanewvegas.github.io" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://discord.gg/DhX5S27" target="_blank">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.patreon.com/vivanewvegas" target="_blank">
+                            <i class="fab fa-patreon"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="paypal" onclick="toggleDonationMenu()">
+                            <i class="fab fa-paypal"></i>
+                        </a>
+                        <div id="paypalMenu" style="display: none;">
+                            <a href="https://www.paypal.com/paypalme/qolore7" target="_blank">
+                                Author - Qolore7
+                            </a>
+                            <a href="https://www.paypal.com/paypalme/VishVadeva50" target="_blank">
+                                Maintainer - VishVadeva50
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </p>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <!-- Introduction -->
+            <div class="section">
                 <p>
-                <div>
-                    <ul>
-                        <li>
-                            <a href="./index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="./intro.html">Introduction</a>
-                        </li>
-                        <li>
-                            <a href="./setup.html" class="active">Initial Setup</a>
-                        </li>
-                        <li>
-                            <a href="./mo2.html">MO2</a>
-                        </li>
-                        <li>
-                            <a href="./utilities.html">Utilities</a>
-                        </li>
-                        <li>
-                            <a href="./bugfix.html">Bug Fixes</a>
-                        </li>
-                        <li>
-                            <a href="./hud.html">User Interface</a>
-                        </li>
-                        <li>
-                            <a href="./gameplay.html">Gameplay</a>
-                        </li>
-                        <li>
-                            <a href="./overhauls.html">Overhauls</a>
-                        </li>
-                        <li>
-                            <a href="./content.html">Content</a>
-                        </li>
-                        <li>
-                            <a href="./visuals.html">Visuals</a>
-                        </li>
-                        <li>
-                            <a href="./finish.html">Final Steps</a>
-                        </li>
-                        <li>
-                            <a href="./appendix.html">Appendix</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <hr>
-                    <ul>
-                        <li>
-                            <a href="./avoid-tools.html">Tools to Avoid</a>
-                        </li>
-                        <li>
-                            <a href="./avoid-mods.html">Mods to Avoid</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="guideLinks">
-                    <hr>
-                    <ul>
-                        <li>
-                            <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands </a>
-                        </li>
-                        <li>
-                            <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4 </a>
-                        </li>
-                        <li>
-                            <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition </a>
-                        </li>
-                        <li>
-                            <a href="https://gloryofcyrodiil.github.io/" target="_blank" rel="nofollow">Oblivion </a>
-                        </li>
-                    </ul>
-                </div>
-                <div id="footer">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/VivaNewVegas/vivanewvegas.github.io" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://discord.gg/DhX5S27" target="_blank">
-                                <i class="fab fa-discord"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.patreon.com/vivanewvegas" target="_blank">
-                                <i class="fab fa-patreon"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a id="paypal" onclick="toggleDonationMenu()">
-                                <i class="fab fa-paypal"></i>
-                            </a>
-                            <div id="paypalMenu" style="display: none;">
-                                <a href="https://www.paypal.com/paypalme/qolore7" target="_blank">
-                                    Author - Qolore7
-                                </a>
-                                <a href="https://www.paypal.com/paypalme/VishVadeva50" target="_blank">
-                                    Maintainer - VishVadeva50
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                <h1> Initial Setup </h1>
+                <h3> In this step, we will do a clean installation and configuration of the game, which is required for the guide. </h3>
+                <blockquote> If you run into any issues at any point in the guide, please be sure to check the <a href="./faq.html" target="_blank">FAQ</a>. <br> If your issue is not addressed there, join the <a href="https://discord.gg/DhX5S27" target="_blank">Discord</a> for support. </blockquote>
                 </p>
             </div>
-
-            <!-- Content -->
-            <div class="content">
-                <!-- Introduction -->
-                <div class="section">
-                    <p>
-                    <h1> Initial Setup </h1>
-                    <h3> In this step, we will do a clean installation and configuration of the game, which is required for the guide. </h3>
-                    <blockquote> If you run into any issues at any point in the guide, please be sure to check the <a href="./faq.html" target="_blank">FAQ</a>. <br> If your issue is not addressed there, join the <a href="https://discord.gg/DhX5S27" target="_blank">Discord</a> for support. </blockquote>
-                    </p>
-                </div>
-                <!-- Recommended Location -->
-                <div class="section" id="location">
-                    <p>
-                        <a>
-                            <h2>Recommended Installation Location</h2>
-                        </a>
-                    <p class="subparagraph"> A clean installation is not only required to get rid of any potential leftover mod files, but also to make sure the game is installed in a safe location. Here is what you need to know when choosing where to install your game: <br>
-                        <br>
-                    <ul class="standard_ul">
-                        <li><b>Avoid any default Windows folders:</b> This includes but is not limited to <code>C:\Program Files</code>, <code>C:\Program Files x86</code>, your <code>Desktop</code>, and your <code>Documents</code> folders. This is due to Windows UAC (or User Account Control), which heavily monitors and protects these folders. This can cause many issues with the game and any modding tools. As an example of a safe location, my Steam directory is <code>C:\Games\Steam</code>.</li>
-                        <br>
-                        <li><b>Install on an SSD if possible:</b> Having the game on an SSD will drastically improve load times and decrease stuttering.</li>
-                    </ul>
-                    </p>
-                </div>
-                <!-- Uninstall -->
-                <div class="section" id="uninstall">
-                    <p>
-                        <a>
-                            <h2>Uninstalling the Game</h2>
-                        </a>
-                    <blockquote>If you do not have the game installed yet, skip this step.</blockquote> As the game is available on both Steam and GOG, there are separate instructions here for each version. You obviously only need to follow the directions for the version you have.
-                    <!-- Steam Uninstall -->
-                    <p>
-                        <a href="#uninstall_steam">
-                            <h3 id="uninstall_steam">For Steam:</h3>
-                        </a>
-                    <ol>
-                        <li>Open Steam and go to your <strong>Library</strong>.</li>
-                        <li>Find <strong>Fallout: New Vegas</strong> in the list.</li>
-                        <li>Right-click on it and select <strong>Manage -> Uninstall</strong>.</li>
-                        <li>Navigate to <code>Steam\steamapps\common\</code> and, if present, delete the <strong>Fallout New Vegas</strong> folder.</li>
-                        <li>Navigate to <code>Documents\My Games</code> and delete the <strong>FalloutNV</strong> folder.</li>
-                    </ol>
-                    </p>
-                    <!-- GOG Uninstall -->
-                    <p>
-                        <a href="#uninstall_gog">
-                            <h3 id="uninstall_gog">For GOG:</h3>
-                        </a>
-                    <ol>
-                        <li>Open GOG and go to your <strong>Library</strong>.</li>
-                        <li>Find <strong>Fallout: New Vegas</strong> in the list.</li>
-                        <li>Right-click on it and select <strong>Manage Installation -> Uninstall</strong>.</li>
-                        <li>Uninstall through GOG Galaxy.</li>
-                        <ul>
-                            <li>If you used offline installers then run the <strong>unins000.exe</strong> file in the game's <strong>Root</strong> folder. </li>
-                        </ul>
-                    </ol>
-                    </p>
-                    </p>
-                </div>
-                <!-- Install -->
-                <div class="section" id="install">
-                    <p>
-                        <a href="#install">
-                            <h2>Installing the Game</h2>
-                        </a>
-
-                        <!-- Steam Install -->
-                    <p>
-                        <a href="#install_steam">
-                            <h3 id="install_steam">For Steam:</h3>
-                        </a>
-                    <blockquote>It is strongly recommended to install the game outside of any default Windows folders (Such as <code>Program Files (x86)</code>), as the the strict Windows file protections of these folders can break certain mods/tools. Instead, we will use a tool called Steam Library Setup Tool to create a new Steam library folder outside of any default Windows folders. If you already have Steam installed outside of any default windows folders then skip this step and simply install the game to your custom Steam library.</blockquote>
-                    <ol>
-                        <li>Completely exit out of Steam using Task Manager or System Tray.</li>
-                        <li>Download the <strong>steam_library_setup_tool-3.2.exe</strong> file from <a href="https://github.com/LostDragonist/steam-library-setup-tool/releases">here</a>.</li>
-                        <li>Once downloaded, run the file and add a new entry by clicking <strong>Add Row</strong>.</li>
-                        <li>Type the chosen path under <strong>Path</strong>, e.g. <code>C:\Games\Steam</code></li>
-                        <li>Click <strong>Accept</strong> then <strong>Yes</strong> if prompted to create a new folder.</li>
-                        <li>The tool will ask to exit, select <strong>OK</strong>.</li>
-                        <img width="50%" src="./img/steamlibrarysetuptool.webp" alt="steam library setup tool" />
-                        <li>Open Steam and go to your <strong>Library</strong>.</li>
-                        <li>Find <strong>Fallout: New Vegas</strong> in the list and select <strong>Install</strong>.</li>
-                        <li>Under <strong>Choose location for install:</strong>, select the library folder created with the tool. </li>
-                        <img size="60%" src="./img/steamlocationpicker.webp" alt="example steam install locations" />
-                    </ol>
-                    <blockquote>If you still do not see your new library, restart your PC.</blockquote>
-                    <ol start="10">
-                        <li>Select <strong>Next</strong> then wait for the install to finish.</li>
-                    </ol>
-                    </p>
-                    <!-- GOG Install -->
-                    <p>
-                        <a href="#install_gog">
-                            <h3 id="install_gog">For GOG:</h3>
-                        </a>
-                    <ol>
-                        <li>Open GOG and go to your <strong>Library</strong>.</li>
-                        <li>Find <strong>Fallout: New Vegas</strong> in the list and select <strong>Install</strong>.</li>
-                        <li>Set the <strong>Install to</strong> location to a location of your choice.</li>
-                        <ul>
-                            <li>It is recommended to install the game outside of any default Windows folders (e.g., <code>Program Files x86</code>). </li>
-                        </ul>
-                    </ol>
-                    </p>
-                    </p>
-                </div>
-                <!-- Post-Installation -->
-                <div class="section" id="post_install">
-                    <p>
-                        <a href="#post_install">
-                            <h2>Post-Installation</h2>
-                        </a>
-
-                        <!-- Key Terminology -->
-                    <p>
-                        <a href="#terms">
-                            <h3 id="terms">Key Terminology</h3>
-                        </a> Now that the game is installed, there are two folders from it that will be referred to in the guide often:
+            <!-- Recommended Location -->
+            <div class="section" id="location">
+                <p>
+                    <a>
+                        <h2>Recommended Installation Location</h2>
+                    </a>
+                <p class="subparagraph"> A clean installation is not only required to get rid of any potential leftover mod files, but also to make sure the game is installed in a safe location. Here is what you need to know when choosing where to install your game: <br>
+                    <br>
+                <ul class="standard_ul">
+                    <li><b>Avoid any default Windows folders:</b> This includes but is not limited to <code>C:\Program Files</code>, <code>C:\Program Files x86</code>, your <code>Desktop</code>, and your <code>Documents</code> folders. This is due to Windows UAC (or User Account Control), which heavily monitors and protects these folders. This can cause many issues with the game and any modding tools. As an example of a safe location, my Steam directory is <code>C:\Games\Steam</code>.</li>
+                    <br>
+                    <li><b>Install on an SSD if possible:</b> Having the game on an SSD will drastically improve load times and decrease stuttering.</li>
+                </ul>
+                </p>
+            </div>
+            <!-- Uninstall -->
+            <div class="section" id="uninstall">
+                <p>
+                    <a>
+                        <h2>Uninstalling the Game</h2>
+                    </a>
+                <blockquote>If you do not have the game installed yet, skip this step.</blockquote> As the game is available on both Steam and GOG, there are separate instructions here for each version. You obviously only need to follow the directions for the version you have.
+                <!-- Steam Uninstall -->
+                <p>
+                    <a href="#uninstall_steam">
+                        <h3 id="uninstall_steam">For Steam:</h3>
+                    </a>
+                <ol>
+                    <li>Open Steam and go to your <strong>Library</strong>.</li>
+                    <li>Find <strong>Fallout: New Vegas</strong> in the list.</li>
+                    <li>Right-click on it and select <strong>Manage -> Uninstall</strong>.</li>
+                    <li>Navigate to <code>Steam\steamapps\common\</code> and, if present, delete the <strong>Fallout New Vegas</strong> folder.</li>
+                    <li>Navigate to <code>Documents\My Games</code> and delete the <strong>FalloutNV</strong> folder.</li>
+                </ol>
+                </p>
+                <!-- GOG Uninstall -->
+                <p>
+                    <a href="#uninstall_gog">
+                        <h3 id="uninstall_gog">For GOG:</h3>
+                    </a>
+                <ol>
+                    <li>Open GOG and go to your <strong>Library</strong>.</li>
+                    <li>Find <strong>Fallout: New Vegas</strong> in the list.</li>
+                    <li>Right-click on it and select <strong>Manage Installation -> Uninstall</strong>.</li>
+                    <li>Uninstall through GOG Galaxy.</li>
                     <ul>
-                        <li><b>Root</b> folder: Where the game is installed.</li>
-                        <ul>
-                            <li>For Steam: <code>Steam\steamapps\common\Fallout New Vegas</code></li>
-                            <li>For GOG: <code>GOG Galaxy\Games\Fallout New Vegas</code> (Unless you manually changed the installation path).</li>
-                        </ul>
-                        <li><b>Data</b> folder: Where all of the game's assets are located.</li>
-                        <ul>
-                            <li>For Steam: <code>Steam\steamapps\common\Fallout New Vegas\Data</code></li>
-                            <li>For GOG: <code>GOG Galaxy\Games\Fallout New Vegas\Data</code></li>
-                        </ul>
+                        <li>If you used offline installers then run the <strong>unins000.exe</strong> file in the game's <strong>Root</strong> folder. </li>
                     </ul>
-                    </p>
-                    <!-- File Extensions -->
-                    <p>
-                        <a href="#file_extensions">
-                            <h3 id="file_extensions">Enabling File Extensions</h3>
-                        </a> By default, Windows Explorer will not show file extensions (such as .exe, .dll, or .esp). These extensions are very important when going through the guide, so it is highly recommended to enable file extensions:
-                    <ol>
-                        <li>Open Windows Explorer.</li>
-                        <li>Select the <strong>View</strong> tab at the top.</li>
-                        <li>Enable <strong>File name extensions</strong> in the <strong>Show</strong> section.</li>
-                        <img width="60%" src="./img/show file extensions.webp" alt="Show file extensions">
-                    </ol>
-                    </p>
-                    <!-- INI Files -->
-                    <p>
-                        <a href="#generating_inis">
-                            <h3 id="generating_inis">Generating Fresh .INI Files</h3>
-                        </a>
-                    <ol>
-                        <li>Run the game from Steam/GOG Galaxy, or through FalloutNVLauncher.exe in the game files if you are using an offline copy.</li>
-                        <li>Click OK to both pop-ups that say <strong>Detecting Video Hardware</strong>.</li>
-                        <ul>
-                            <li>If there aren't any pop-ups, navigate to <code>Documents\My Games\FalloutNV</code> and delete all the files ending in <strong>.INI</strong> then retry.</li>
-                        </ul>
-                        <li>Select <strong>Options</strong> then select the <strong>Ultra</strong> preset option.</li>
-                        <ul>
-                            <li> If you have a lower-end PC, or want to squeeze as much performance out of the game as possible, you can select the <strong>High</strong> preset instead. It offers pretty similar visual quality for a decent performance improvement, especially on older hardware. You can set it to an even lower preset if you want, but at that point you are only gaining diminishing returns on performance. Another great way to improve performance without drastically changing the game's visuals is by disabling shadows. New Vegas does not have real dynamic object shadows (Like in Skyrim or Fallout 4), only actor shadows. Despite having a minor visual improvement, they can have a large performance impact if there are many NPCs in one area. </li>
-                        </ul>
-                        <li>Set the <strong>Resolution</strong> option to your preference (The launcher usually does not set it to your monitor's max resolution).</li>
-                        <li>Click <strong>OK</strong> then <strong>Exit</strong>.</li>
-                    </ol>
-                    </p>
-                    </p>
-                </div>
-                <div>
-                    <p>
-                        <hr>
-                        <a href="./intro.html" id="previous"><img class="navigationArrow left mirror" src="./img/arrow.webp" alt="Back Arrow"></a>
-                        <a href="./mo2.html" id="next"><img class="navigationArrow right" src="./img/arrow.webp" alt="Forward Arrow"></a>
-                    </p>
-                </div>
+                </ol>
+                </p>
+                </p>
+            </div>
+            <!-- Install -->
+            <div class="section" id="install">
+                <p>
+                    <a href="#install">
+                        <h2>Installing the Game</h2>
+                    </a>
+
+                    <!-- Steam Install -->
+                <p>
+                    <a href="#install_steam">
+                        <h3 id="install_steam">For Steam:</h3>
+                    </a>
+                <blockquote>It is strongly recommended to install the game outside of any default Windows folders (Such as <code>Program Files (x86)</code>), as the the strict Windows file protections of these folders can break certain mods/tools. Instead, we will use a tool called Steam Library Setup Tool to create a new Steam library folder outside of any default Windows folders. If you already have Steam installed outside of any default windows folders then skip this step and simply install the game to your custom Steam library.</blockquote>
+                <ol>
+                    <li>Completely exit out of Steam using Task Manager or System Tray.</li>
+                    <li>Download the <strong>steam_library_setup_tool-3.2.exe</strong> file from <a href="https://github.com/LostDragonist/steam-library-setup-tool/releases">here</a>.</li>
+                    <li>Once downloaded, run the file and add a new entry by clicking <strong>Add Row</strong>.</li>
+                    <li>Type the chosen path under <strong>Path</strong>, e.g. <code>C:\Games\Steam</code></li>
+                    <li>Click <strong>Accept</strong> then <strong>Yes</strong> if prompted to create a new folder.</li>
+                    <li>The tool will ask to exit, select <strong>OK</strong>.</li>
+                    <img width="50%" src="./img/steamlibrarysetuptool.webp" alt="steam library setup tool" />
+                    <li>Open Steam and go to your <strong>Library</strong>.</li>
+                    <li>Find <strong>Fallout: New Vegas</strong> in the list and select <strong>Install</strong>.</li>
+                    <li>Under <strong>Choose location for install:</strong>, select the library folder created with the tool. </li>
+                    <img size="60%" src="./img/steamlocationpicker.webp" alt="example steam install locations" />
+                </ol>
+                <blockquote>If you still do not see your new library, restart your PC.</blockquote>
+                <ol start="10">
+                    <li>Select <strong>Next</strong> then wait for the install to finish.</li>
+                </ol>
+                </p>
+                <!-- GOG Install -->
+                <p>
+                    <a href="#install_gog">
+                        <h3 id="install_gog">For GOG:</h3>
+                    </a>
+                <ol>
+                    <li>Open GOG and go to your <strong>Library</strong>.</li>
+                    <li>Find <strong>Fallout: New Vegas</strong> in the list and select <strong>Install</strong>.</li>
+                    <li>Set the <strong>Install to</strong> location to a location of your choice.</li>
+                    <ul>
+                        <li>It is recommended to install the game outside of any default Windows folders (e.g., <code>Program Files x86</code>). </li>
+                    </ul>
+                </ol>
+                </p>
+                </p>
+            </div>
+            <!-- Post-Installation -->
+            <div class="section" id="post_install">
+                <p>
+                    <a href="#post_install">
+                        <h2>Post-Installation</h2>
+                    </a>
+
+                    <!-- Key Terminology -->
+                <p>
+                    <a href="#terms">
+                        <h3 id="terms">Key Terminology</h3>
+                    </a> Now that the game is installed, there are two folders from it that will be referred to in the guide often:
+                <ul>
+                    <li><b>Root</b> folder: Where the game is installed.</li>
+                    <ul>
+                        <li>For Steam: <code>Steam\steamapps\common\Fallout New Vegas</code></li>
+                        <li>For GOG: <code>GOG Galaxy\Games\Fallout New Vegas</code> (Unless you manually changed the installation path).</li>
+                    </ul>
+                    <li><b>Data</b> folder: Where all of the game's assets are located.</li>
+                    <ul>
+                        <li>For Steam: <code>Steam\steamapps\common\Fallout New Vegas\Data</code></li>
+                        <li>For GOG: <code>GOG Galaxy\Games\Fallout New Vegas\Data</code></li>
+                    </ul>
+                </ul>
+                </p>
+                <!-- File Extensions -->
+                <p>
+                    <a href="#file_extensions">
+                        <h3 id="file_extensions">Enabling File Extensions</h3>
+                    </a> By default, Windows Explorer will not show file extensions (such as .exe, .dll, or .esp). These extensions are very important when going through the guide, so it is highly recommended to enable file extensions:
+                <ol>
+                    <li>Open Windows Explorer.</li>
+                    <li>Select the <strong>View</strong> tab at the top.</li>
+                    <li>Enable <strong>File name extensions</strong> in the <strong>Show</strong> section.</li>
+                    <img width="60%" src="./img/show file extensions.webp" alt="Show file extensions">
+                </ol>
+                </p>
+                <!-- INI Files -->
+                <p>
+                    <a href="#generating_inis">
+                        <h3 id="generating_inis">Generating Fresh .INI Files</h3>
+                    </a>
+                <ol>
+                    <li>Run the game from Steam/GOG Galaxy, or through FalloutNVLauncher.exe in the game files if you are using an offline copy.</li>
+                    <li>Click OK to both pop-ups that say <strong>Detecting Video Hardware</strong>.</li>
+                    <ul>
+                        <li>If there aren't any pop-ups, navigate to <code>Documents\My Games\FalloutNV</code> and delete all the files ending in <strong>.INI</strong> then retry.</li>
+                    </ul>
+                    <li>Select <strong>Options</strong> then select the <strong>Ultra</strong> preset option.</li>
+                    <ul>
+                        <li> If you have a lower-end PC, or want to squeeze as much performance out of the game as possible, you can select the <strong>High</strong> preset instead. It offers pretty similar visual quality for a decent performance improvement, especially on older hardware. You can set it to an even lower preset if you want, but at that point you are only gaining diminishing returns on performance. Another great way to improve performance without drastically changing the game's visuals is by disabling shadows. New Vegas does not have real dynamic object shadows (Like in Skyrim or Fallout 4), only actor shadows. Despite having a minor visual improvement, they can have a large performance impact if there are many NPCs in one area. </li>
+                    </ul>
+                    <li>Set the <strong>Resolution</strong> option to your preference (The launcher usually does not set it to your monitor's max resolution).</li>
+                    <li>Click <strong>OK</strong> then <strong>Exit</strong>.</li>
+                </ol>
+                </p>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <hr>
+                    <a href="./intro.html" id="previous"><img class="navigationArrow left mirror" src="./img/arrow.webp" alt="Back Arrow"></a>
+                    <a href="./mo2.html" id="next"><img class="navigationArrow right" src="./img/arrow.webp" alt="Forward Arrow"></a>
+                </p>
             </div>
         </div>
         <!-- Right Sidebar -->
