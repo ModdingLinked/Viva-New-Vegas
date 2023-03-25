@@ -1,4 +1,5 @@
 /* Default tags */
+
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -92,6 +93,7 @@ img {
 }
 
 /* Body classes */
+
 .content {
   float: left;
   padding: 5em 15em 0em 15em;
@@ -164,9 +166,7 @@ img {
 }
 
 .welcomeContent {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   color: rgb(220, 220, 220);
   font-size: 2.2em;
   line-height: 2em;
@@ -177,11 +177,8 @@ img {
   width: 100%;
   height: 100vh;
   transition-duration: 0s;
-  transition: -webkit-backdrop-filter 0.5s linear;
   transition: backdrop-filter 0.5s linear;
-  transition: backdrop-filter 0.5s linear, -webkit-backdrop-filter 0.5s linear;
-  -webkit-backdrop-filter: saturate(100%) blur(8px);
-          backdrop-filter: saturate(100%) blur(8px);
+  backdrop-filter: saturate(100%) blur(8px);
 }
 
 .welcomeContent h2 {
@@ -195,7 +192,6 @@ img {
 .welcomeContent .welcomeButton {
   color: rgb(220, 220, 220);
   display: flex;
-  width: -moz-fit-content;
   width: fit-content;
   line-height: 1.2em;
   padding: 1em 1.5em;
@@ -224,8 +220,7 @@ img {
 .blur {
   transition-timing-function: ease-in-out;
   transition-duration: 0.5s;
-  -webkit-backdrop-filter: saturate(100%) blur(0.5px);
-          backdrop-filter: saturate(100%) blur(0.5px);
+  backdrop-filter: saturate(100%) blur(0.5px);
 }
 
 .blur h2 {
@@ -235,6 +230,7 @@ img {
 }
 
 /* Titlebar */
+
 .titlecontainer {
   background-color: rgb(26, 26, 26);
   display: flex;
@@ -274,15 +270,14 @@ img {
 }
 
 /* Navbars */
+
 #sidenavLeft {
   display: flex;
   flex-direction: column;
   width: 13em;
   height: 100%;
   position: fixed;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   transition: all 333ms Cubic-Bezier(0, 0, 0, 1);
   padding-top: 4em;
   overflow-x: hidden;
@@ -341,8 +336,7 @@ img {
   position: fixed;
   z-index: 2;
   right: 0;
-  -webkit-backdrop-filter: saturate(10%) blur(32px);
-          backdrop-filter: saturate(10%) blur(32px);
+  backdrop-filter: saturate(10%) blur(32px);
   background-color: rgb(44, 44, 44);
   padding-top: 5em;
   box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.4);
@@ -369,9 +363,7 @@ img {
   margin-left: -5em;
   margin-right: 5em;
   cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   float: left;
   transition: all 333ms Cubic-Bezier(0, 0, 0, 1);
 }
@@ -387,6 +379,7 @@ img {
 }
 
 /* Quotes */
+
 blockquote {
   background-color: rgb(52, 52, 52);
   font-size: 1.05em;
@@ -407,6 +400,7 @@ blockquote a:hover {
 }
 
 /* Headers */
+
 h1 {
   color: #ffb61a;
   font-size: 2.5em;
@@ -475,6 +469,7 @@ h2 {
 }
 
 /* Modifier classes */
+
 .left {
   float: left;
 }
@@ -492,73 +487,90 @@ h2 {
     max-height: 0;
     margin-top: -0.12px;
   }
+
   to {
     max-height: 5000px;
   }
 }
+
 @keyframes slide-up {
   from {
     max-height: 1000px;
   }
+
   to {
     max-height: 0;
     margin-top: -0.12px;
   }
 }
+
 @media only screen and (max-width: 900px) {
   .content {
     width: 100%;
     margin-left: 0;
     padding: 5em 1em 0 1em;
   }
+
   #sidenavLeft {
     width: 0;
     overflow-y: scroll;
     overflow-x: hidden;
-    background-color: rgb(44, 44, 44) !important;
+    background-color: rgb(44 44 44) !important;
   }
+
   #sideButton {
     margin-left: 0;
     margin-right: 1em;
   }
+
   .titlecontainer .guideLinks {
     margin-top: -100px;
     margin-right: -1000px;
   }
+
   .titlecontainer img {
     display: none;
   }
+
   .titlecontainer a {
     margin-left: -0.5em;
   }
+
   #sidenavLeft .guideLinks {
     display: block;
   }
+
   #sidenavRight {
     width: 0%;
   }
+
   h1,
   h2 {
     line-height: 1.2em;
   }
+
   code {
     line-break: anywhere;
   }
+
   #xnvse_root {
     max-width: 90%;
   }
 }
+
 @media only screen and (max-width: 700px) {
   .titlecontainer a {
     font-size: 180%;
   }
 }
+
 @media only screen and (min-width: 901px) {
   #sideButton {
     margin-left: -100px;
   }
 }
+
 .transparent {
   background-color: rgba(255, 255, 255, 0) !important;
   box-shadow: none !important;
-}/*# sourceMappingURL=style.css.map */
+}
