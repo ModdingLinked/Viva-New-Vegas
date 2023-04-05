@@ -134,9 +134,13 @@ img {
   text-decoration-line: underline;
 }
 
-.section h2 a,
+.section h2 a {
+  color: hsl(0, 0%, 95%);
+  font-size: inherit;
+}
+
 .section h3 a {
-  color: rgb(220, 220, 220);
+  color: hsl(0, 0%, 85%);
   font-size: inherit;
 }
 
@@ -319,6 +323,7 @@ img {
 #sidenavRight a:hover {
   color: rgb(255, 255, 255);
   text-decoration-line: initial;
+  text-shadow: 0 0 0.1em rgba(255, 255, 255, 0.2);
 }
 
 #sidenavLeft .active {
@@ -387,6 +392,7 @@ blockquote {
   padding: 0.5em 0.75em;
   line-height: 1.4em;
   border-radius: 4pt;
+  box-shadow: 0 0.3em 0.7em hsla(0, 0%, 0%, 0.15);
 }
 
 blockquote a {
@@ -418,12 +424,43 @@ h2 {
   font-size: 1.5em;
 }
 
-.optional {
-  color: #fada78 !important;
+.optional::after {
+  display: inline-flex;
+  position: absolute;
+  transform: translateY(-0.4em);
+  content: "Optional";
+  text-shadow: 0 0.05em 0.2em rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.15em 6pt hsla(0, 0%, 0%, 0.3);
+  color: #fada78;
+  background-image: linear-gradient(to top, hsl(45, 93%, 12.5%), hsl(45, 93%, 15%));
+  border: 2pt solid hsl(45, 93%, 25%);
+  border-radius: 12pt;
+  font-size: 0.7em;
+  padding: 0.25em 0.5em 0.25em 0.5em;
+  margin-left: 1em;
 }
 
-.performance {
-  color: #d16759 !important;
+.performance::after {
+  display: inline-flex;
+  position: absolute;
+  transform: translateY(-0.4em);
+  content: "Performance Hit";
+  text-shadow: 0 0.05em 0.2em rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.15em 6pt hsla(0, 0%, 0%, 0.3);
+  color: #d16759;
+  background-image: linear-gradient(to top, hsl(7, 57%, 12.5%), hsl(7, 57%, 18%));
+  border: 2pt solid hsl(7, 57%, 25%);
+  border-radius: 12pt;
+  font-size: 0.7em; 
+  padding: 0.25em 0.5em 0.25em 0.5em;
+  margin-left: 1em;
+}
+
+blockquote .optional::after,
+blockquote .performance::after{
+  position: inherit !important;
+  margin: 0.2em 0.4em 0.2em 0.4em;
+  transform: translateY(-0.3em);
 }
 
 #footer {
