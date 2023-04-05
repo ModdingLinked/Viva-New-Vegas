@@ -584,6 +584,19 @@ blockquote .performance::after {
   #xnvse_root {
     max-width: 90%;
   }
+  .performance::after,
+  .optional::after {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 1em;
+    padding: 0.05em 0.5em 0.05em 0.5em;
+    font-size: 0.5em;
+    width: -moz-fit-content;
+    width: fit-content;
+    text-align: center;
+    margin-left: 0;
+  }
 }
 @media only screen and (max-width: 700px) {
   .titlecontainer a {

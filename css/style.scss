@@ -451,13 +451,13 @@ h2 {
   background-image: linear-gradient(to top, hsl(7, 57%, 12.5%), hsl(7, 57%, 18%));
   border: 2pt solid hsl(7, 57%, 25%);
   border-radius: 12pt;
-  font-size: 0.7em; 
+  font-size: 0.7em;
   padding: 0.25em 0.5em 0.25em 0.5em;
   margin-left: 1em;
 }
 
 blockquote .optional::after,
-blockquote .performance::after{
+blockquote .performance::after {
   position: inherit !important;
   margin: 0.2em 0.4em 0.2em 0.4em;
   transform: translateY(-0.3em);
@@ -592,6 +592,19 @@ blockquote .performance::after{
 
   #xnvse_root {
     max-width: 90%;
+  }
+
+  .performance::after,
+  .optional::after {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 1em;
+    padding: 0.05em 0.5em 0.05em 0.5em;
+    font-size: 0.5em;
+    width: fit-content;
+    text-align: center;
+    margin-left: 0;
   }
 }
 
