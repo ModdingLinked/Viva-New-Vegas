@@ -188,7 +188,10 @@ img {
           backdrop-filter: saturate(100%) blur(8px);
 }
 
-.welcomeContent h2 {
+.welcomeContent h1 {
+  color: #DCDCDC;
+  font-size: 1.8em;
+  word-wrap: break-word;
   text-align: center;
   margin-top: auto;
   display: flex;
