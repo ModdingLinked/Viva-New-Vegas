@@ -210,9 +210,6 @@ fOriginalGroundHeightMS=0</textarea>
             <ol class="standard_ol">
                 <li>Click the <img src="./img/mo2 ini.webp" alt="MO2 INI button"> button at the top of MO2 and select <strong>INI Editor</strong>. </li>
                 <li>Select the <strong>FalloutCustom.ini</strong> tab.</li>
-                <ul>
-                    <li>Make sure you are in the <strong>FalloutCustom.ini</strong> tab and NOT the <strong>Custom.ini</strong> tab. </li>
-                </ul>
                 <li>Paste in the following:</li>
                 <ul>
                     <textarea readonly="readonly" style="height: 5rem" onclick="this.focus();this.select()">
@@ -225,6 +222,19 @@ iSize H=1440</textarea>
                 <li>Right-click on the <strong>Stewie Tweaks Essentials INI</strong> mod (From the <a href="./bugfix.html#custom_ini" target="_blank">Bug Fixes</a> section) in the left pane of MO2 and select <strong>Open in Explorer</strong>.</li>
                 <li>Navigate to <code>nvse/plugins/</code> and open <strong>nvse_stewie_tweaks.ini</strong> in a text editor.</li>
                 <li>Use <kbd>Ctrl</kbd> + <kbd>F</kbd> to find and set <strong>bUltrawideSupport</strong> to <strong>1</strong>. </li>
+            </ol>
+            <!-- FOV -->
+            <h3 class="smallheader" id="ultrawide"><b></b>How do I change my FOV?</b></h3>
+            <ol class="standard_ol">
+                <li>Click the <img src="./img/mo2 ini.webp" alt="MO2 INI button"> button at the top of MO2 and select <strong>INI Editor</strong>. </li>
+                <li>Select the <strong>FalloutCustom.ini</strong> tab.</li>
+                <li>Under the <strong>[Display]</strong> section, change the following values to your preference:</li>
+                <ul>
+                    <li><strong>fDefaultFOV</strong> (FOV of the camera in relation to the world, increasing this will affect performance gradually)</li>
+                    <li><strong>fDefault1stPersonFOV</strong> (FOV of the camera in relation to the player's model, setting this too high may cause clipping)</li>
+                    <li><strong>fPipboy1stPersonFOV</strong> (FOV in the Pip-Boy or while using a terminal)</li>
+                </ul>
+                <li>Save and exit.</li>
             </ol>
         </div>
         <div>
