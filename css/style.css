@@ -210,9 +210,44 @@ img {
   background-color: #235163;
   border-radius: 12pt;
   text-shadow: none;
-  box-shadow: 0.1em 0.1em 0.6em rgba(0, 0, 0, 0.7);
+  box-shadow: 0.1em 0.1em 0.6em rgba(0, 0, 0, 0.6);
+  text-align: center;
+  z-index: 1;
+}
+
+.welcomeContent .welcomeButtonWJ {
+  color: rgb(220, 220, 220);
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  line-height: 1.2em;
+  padding: 0.2em 1em;
+  font-size: 1.5rem;
+  background-color: #1f1b24;
+  border-radius: 6pt;
+  text-shadow: none;
+  box-shadow: 0.1em 0.1em 0.6em rgba(0, 0, 0, 0.6);
+  margin-top: 0.75em;
   margin-bottom: auto;
   text-align: center;
+  z-index: 0;
+}
+
+.welcomeContent .welcomeButtonWJ strong {
+  color: rgba(242, 242, 242, 0.6);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  font-size: 0.9em;
+}
+
+.welcomeContent .welcomeButtonWJ:hover strong {
+  color: rgba(242, 242, 242, 0.9);
+}
+
+.welcomeContent .welcomeButtonWJ:hover {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #443a51;
+  box-shadow: 0em 0em 0.6em rgba(50, 114, 139, 0.37);
 }
 
 .welcomeContent .welcomeButton strong {

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preload" href="./css/style.css" as="style" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="img/logo.webp">
+    <link rel="canonical" href="https://vivanewvegas.moddinglinked.com">
+    <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
+    <script src="javascript.js"></script>
+    <title>Wabbajack | Viva New Vegas</title>
+    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, Oblivion, TESIV, TES4, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack, xLODGen, LOD Guide, Generating LOD, LODGen, Distant Objects, Wabbajack">
+    <meta name="description" content="Information and post-install instructions for the official Viva New Vegas Wabbajack modlist.">
+    <meta http-equiv='content-language' content='en-us'>
+    <meta name="twitter:card" value="summary_large_image">
+    <meta property="og:site_name" content="ModdingLinked">
+    <meta property="og:title" content="Viva New Vegas">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://vivanewvegas.moddinglinked.com">
+    <meta property="og:image" content="https://vivanewvegas.moddinglinked.com/img/card.webp">
+    <meta property="og:description" content="Information and post-install instructions for the official Viva New Vegas Wabbajack modlist.">
+</head>
+
+<body>
+    <!-- Titlebar -->
+    <div class="titlecontainer">
+        <div id="sideButton" onclick="toggleNav()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <img src="./img/logo.webp" alt="Logo">
+        <a href="./index.html"> Viva New Vegas </a>
+        <div class="guideLinks">
+            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands </a>
+            <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4 </a>
+            <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Skyrim Special Edition </a>
+            <a href="https://gloryofcyrodiil.moddinglinked.com" target="_blank" rel="nofollow">Oblivion</a>
+        </div>
+    </div>
+    <!-- Left Sidebar -->
+    <div id="sidenavLeft">
+        <div>
+            <ul>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./intro.html">Introduction</a>
+                </li>
+                <li>
+                    <a href="./setup.html">Initial Setup</a>
+                </li>
+                <li>
+                    <a href="./mo2.html">MO2</a>
+                </li>
+                <li>
+                    <a href="./utilities.html">Utilities</a>
+                </li>
+                <li>
+                    <a href="./bugfix.html">Bug Fixes</a>
+                </li>
+                <li>
+                    <a href="./hud.html">User Interface</a>
+                </li>
+                <li>
+                    <a href="./gameplay.html">Gameplay</a>
+                </li>
+                <li>
+                    <a href="./overhauls.html">Overhauls</a>
+                </li>
+                <li>
+                    <a href="./content.html">Content</a>
+                </li>
+                <li>
+                    <a href="./visuals.html">Visuals</a>
+                </li>
+                <li>
+                    <a href="./finish.html">Final Steps</a>
+                </li>
+                <li>
+                    <a href="./appendix.html">Appendix</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <hr>
+            <ul>
+                <li>
+                    <a href="./faq.html">FAQ</a>
+                </li>
+                <li>
+                    <a href="./avoid-tools.html">Tools to Avoid</a>
+                </li>
+                <li>
+                    <a href="./avoid-mods.html">Mods to Avoid</a>
+                </li>
+                <li>
+                    <a href="./wabbajack.html" class="active">Wabbajack</a>
+                </li>
+            </ul>
+        </div>
+        <div class="guideLinks">
+            <hr>
+            <ul>
+                <li>
+                    <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands </a>
+                </li>
+                <li>
+                    <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4 </a>
+                </li>
+                <li>
+                    <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Skyrim Special Edition </a>
+                </li>
+                <li>
+                    <a href="https://gloryofcyrodiil.moddinglinked.com" target="_blank" rel="nofollow">Oblivion</a>
+                </li>
+            </ul>
+        </div>
+        <div id="footer">
+            <ul>
+                <li>
+                    <a href="https://discord.gg/viva-new-vegas-659108573485465620" target="_blank">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.patreon.com/vivanewvegas" target="_blank">
+                        <i class="fab fa-patreon"></i>
+                    </a>
+                </li>
+                <li>
+                    <a id="paypal" onclick="toggleDonationMenu()">
+                        <i class="fab fa-paypal"></i>
+                    </a>
+                    <div id="paypalMenu" style="display: none;">
+                        <a href="https://www.paypal.com/paypalme/qolore7" target="_blank">
+                            Author - Qolore7
+                        </a>
+                        <a href="https://www.paypal.com/paypalme/VishVadeva50" target="_blank">
+                            Maintainer - VishVadeva
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Content -->
+    <div class="content">
+        <p>
+        <div class="section">
+            <p>
+            <h1>Wabbajack</h1>
+            <p>
+
+            </p>
+            <p>
+                <a>
+                    <h2 id="requirements">Requirements and Setup</h2>
+                </a>
+            <ul>
+                <li> An English copy of the game with all DLCs from either <a href="https://store.steampowered.com/sub/13435/" target="_blank">Steam</a> or <a href="https://www.gog.com/game/fallout_new_vegas_ultimate_edition" target="_blank">GOG</a>. </li>
+                <ul>
+                    <li> Only the English version of the game is supported for maximum compatibility. The Bethesda.net and Xbox Gamepass versions of the game are also unsupported, as they do not work with xNVSE which is essential for most mods. German release uses a "No Gore" version, making it also incompatible with xNVSE.</li>
+                </ul>
+                <li> At least 12GB of free drive space. </li>
+                <li> Windows 8 or higher (64-bit). </li>
+                <li>
+                    <a href="https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/" target="_blank">VC++ Runtime Libraries</a>.
+                </li>
+                <ul>
+                    <li> Extract the archive and run the included <strong>install_all.bat</strong> as an administrator to install all of the required libraries at once. </li>
+                </ul>
+                <li> The latest GPU drivers (Either <a href="https://www.nvidia.com/Download/index.aspx" target="_blank">NVIDIA</a>, <a href="https://www.amd.com/en/support" target="_blank">AMD</a> or <a href="https://www.intel.com/content/www/us/en/download/19344/intel-graphics-windows-dch-drivers.html" target="_blank">Intel</a>). </li>
+                <li> A <a href="https://users.nexusmods.com/register" target="_blank">Nexus Mods</a> account. </li>
+            </ul>
+            <blockquote>A Premium subscription to Nexus Mods is highly recommended since it will allow an automated installation</blockquote>
+            Once you meet the requirements, follow the <a href="./setup.html" class="active">Setup</a> page to get your game ready for the modlist installation.
+            </p>
+            <p>
+                <a>
+                    <h2 id="installation">Installation</h2>
+                </a>
+            <ol>
+                <li>Download the latest <a href="https://www.wabbajack.org/" target="_blank">Wabbajack</a></li>
+                <li>Create a new folder anywhere outside of any default Windows folders</li>
+                <li>Place the downloaded <strong>Wabbajack.exe</strong> in this folder, then run it</li>
+                <li>Locate Viva New Vegas in the gallery and click the down arrow</li>
+                <li>In <b>Installation Location</b> select an <strong>empty folder</strong> that is <b>NOT</b> the following:</li>
+                <ul>
+                    <li>The Steam folder</li>
+                    <li>Any default Windows folders</li>
+                    <li>The game folder</li>
+                    <li>The folder where you put Wabbajack.exe</li>
+                </ul>
+                <li>Begin the installation</li>
+                <li>Accept the Nexus Mods API request</li>
+                <li>If you are not a Premium user you will need to manually click download for each mod</li>
+                <li>Once complete, the installation will show a green <strong>Installation Complete</strong> screen
+                    <ul>
+                        <li>If you see a red <strong>Installation Failed</strong> screen, please join the <a href="https://discord.gg/wabbajack" target="_blank">Wabbajack</a> Discord server for support</li>
+                    </ul>
+            </ol>
+            </p>
+            <p>
+                <a>
+                    <h2 id="postInstall">Post-Install Steps</h2>
+                </a>
+            <ol>
+                <li>Head to the location where you installed the modlist</li>
+                <li>Open the <strong>Tools</strong> folder, then open the <strong>4GB Patcher</strong> folder</li>
+                <li>Copy the <strong>.exe</strong> file to the game's <strong>Root</strong> folder</li>
+                <li>Right-click on <strong>FNVpatch.exe</strong> and select <strong>Run as administrator</strong></li>
+                <li>A command prompt window will open and should say <b>FalloutNV.exe patched!</b></li>
+                <li>Close the command prompt and a file named <strong>FalloutNV_backup.exe</strong> should appear in the game's <strong>Root</strong> folder</li>
+                <li>Open Mod Organizer 2 then play the game through the <strong>New Vegas</strong> option in the top right</li>
+            </ol>
+            </p>
+            <p>
+                <a>
+                    <h2 id="optional">Optional Steps</h2>
+                </a>
+            <h3 class="smallheader" id="decompressor"><b>Decompressor</b></h3>
+            BSA Decompressor will give you slightly better performance and faster loading times at a small disk space cost.
+            <ol>
+                <li>In the same <strong>Tools</strong> folder as before, open the <strong>BSA Decompressor</strong> folder</li>
+                <li>Run <strong>FNV BSA Decompressor.exe</strong></li>
+                <li>If the game path isn't already there, enter it</li>
+                <li>Click <strong>Decompress</strong>, wait for the process the finish, then exit the program once finished</li>
+            </ol>
+            <h3 class="smallheader" id="dxvk"><b>DXVK</b></h3>
+            DXVK is mainly used to improve performance in CPU-limited scenarios, which are the main cause of low FPS in this game. DXVK will also allow you to Alt-Tab.
+            <ol>
+                <li>Read the mod description available <a href="https://www.nexusmods.com/newvegas/mods/79299" target="_blank">here</a></li>
+                <li>Once you confirm that your GPU supports DXVK 2.0 and higher, do the next step</li>
+                <li>In Mod Organizer 2, expand the <b>Utilities</b> separator and enable <strong>DXVK</strong></li>
+            </ol>
+            </p>
+        </div>
+        <div>
+            <p>
+                <hr>
+                <a href="./resources.html" id="previous" rel="prev"><img class="navigationArrow left mirror" src="./img/arrow.webp" alt="Back Arrow"></a>
+            </p>
+        </div>
+        </p>
+    </div>
+    <!-- Right Sidebar -->
+    <div id="sidenavRight">
+        <p>
+        <ul>
+            <li>
+                <a href="#requirements">Requirements and Setup</a>
+            </li>
+            <li>
+                <a href="#installation">Installation</a>
+            </li>
+            <li>
+                <a href="#postInstall">Post-Install Steps</a>
+            </li>
+            <li>
+                <a href="#optional">Optional Steps</a>
+                <ul>
+                    <li><a href="#decompressor">Decompressor</a></li>
+                    <li><a href="#dxvk">DXVK</a></li>
+                </ul>
+            </li>
+        </ul>
+        </p>
+    </div>
+</body>
+
+</html>
