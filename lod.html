@@ -185,6 +185,27 @@
             </p>
             <p>
                 <a>
+                    <h2 id="ini_tweaks">INI Tweaks</h2>
+                </a>
+            <p>
+                This will increase the LOD draw distance.
+            <ol>
+                <li>Make sure the <strong>Viva New Vegas</strong> profile is active.</li>
+                <li>Click the <img src="./img/mo2 ini.webp" alt="MO2 INI button"> button at the top of MO2 and select <strong>INI Editor</strong>. </li>
+                <li>Select the <strong>FalloutCustom.ini</strong> tab, which should have the settings copied from the <a href="./mo2.html">Mod Organizer 2</a> page.</li>
+                <ul>
+                    <li>Make sure you are in the <strong>FalloutCustom.ini</strong> tab and NOT the <strong>Custom.ini</strong> tab. </li>
+                </ul>
+                <li>Paste in the following at the end of the file:</li>
+                <textarea readonly="readonly" style="height: 5em; width: 95%;" onclick="this.focus();this.select()">
+[TerrainManager]
+fBlockLoadDistanceLow=200000
+fBlockLoadDistance=500000
+</textarea>
+            </ol>
+            </p>
+            <p>
+                <a>
                     <h2 id="installingResources">Installing Resources</h2>
                 </a>
             <ul>
@@ -242,6 +263,9 @@
         <ul>
             <li>
                 <a href="#installingXlodgen">Installing xLODGen</a>
+            </li>
+            <li>
+                <a href="#ini_tweaks">INI Tweaks</a>
             </li>
             <li>
                 <a href="#installingResources">Installing Resources</a>
