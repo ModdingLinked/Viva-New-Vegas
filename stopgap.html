@@ -11,9 +11,9 @@
     <link rel="canonical" href="https://vivanewvegas.moddinglinked.com">
     <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
     <script src="javascript.js"></script>
-    <title>Resources | Viva New Vegas</title>
+    <title>Final Steps | Viva New Vegas</title>
     <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, Oblivion, TESIV, TES4, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
-    <meta name="description" content="Various useful resources/guides for additional modding or mod creation.">
+    <meta name="description" content="Final steps necessary before playing the game.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
     <meta property="og:site_name" content="ModdingLinked">
@@ -21,7 +21,7 @@
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://vivanewvegas.moddinglinked.com">
     <meta property="og:image" content="https://vivanewvegas.moddinglinked.com/img/card.webp">
-    <meta property="og:description" content="Various useful resources/guides for additional modding or mod creation.">
+    <meta property="og:description" content="Final steps necessary before playing the game.">
 </head>
 
 <body>
@@ -62,7 +62,7 @@
                     <a href="./bugfix.html">Bug Fixes</a>
                 </li>
                 <li>
-                    <a href="./stopgap.html">Base Finish</a>
+                    <a href="./stopgap.html" class="active">Base Finish</a>
                 </li>
                 <hr>
                 <h3>Extended</h3>
@@ -87,11 +87,6 @@
                 <li>
                     <a href="./appendix.html">Appendix</a>
                 </li>
-                <ul>
-                    <li>
-                        <a href="./resources.html" class="active">Resources</a>
-                    </li>
-                </ul>
             </ul>
         </div>
         <div>
@@ -161,54 +156,61 @@
     <div class="content">
         <p>
         <div class="section">
-            <h1> Resources </h1>
             <p>
-                <a class="link" href="./avoid-tools.html">
-                    <h2> Tools to Avoid </h2>
-                </a> List of many outdated/dangerous tools.
-            </p>
+            <h1> Final Steps </h1>
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/79358" target="_blank">
+                        <h2 id="load_order"> Load Order </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ol>
+                    <li>Download the file.</li>
+                    <li>Once it has finished downloading, click the <img style="width:2%" src="./img/mo2 folders.webp" alt="MO2 folders"> button at the top of MO2 and select <strong>Open Profile folder</strong>.</li>
+                    <li>Extract the <strong>loadorder.txt</strong> from the downloaded archive to the folder you opened and overwrite when prompted.</li>
+                    <li>Once the file is extracted, click <strong>F5</strong> while you are on MO2 without any menu open.</li>
+                    <li>Right-click in the <b>right</b> pane of MO2 and select <strong>Enable all</strong>.</li>
+                </ol>
+                <blockquote>
+                    If you have not added any mods to the guide, <strong>CC - Rain.esp</strong> should be the bottom mod in your load order (the <strong>Plugins</strong> tab in the <b>right</b> pane of MO2) after applying the load order and refreshing MO2. If not, you made a mistake during mod installation.
+                    <br>
+                    Join the <a href="https://discord.gg/viva-new-vegas-659108573485465620" target="_blank">Discord</a> for support.
+                </blockquote>
+                Automatically ensures your load order is correct for the guide. This will still work if you didn't install certain mods, but if you added your own mods they will be sorted to the bottom of the load order and need to be manually moved back to their proper position. If you do not know how to check where any mods you have added should go in the load order, it may be best to not add any mods not in the guide.
+                <blockquote>
+                    REMINDER: Run the game using the New Vegas option in MO2!
+                    <br>
+                    <img src="./img/run fnv.webp" alt="Run New Vegas through MO2">
+                </blockquote>
+                </p>
+            </div>
             <p>
-                <a class="link" href="./avoid-mods.html">
-                    <h2> Mods to Avoid </h2>
-                </a> List of many outdated/dangerous mods.
-            </p>
-            <p>
-                <a class="link" href="https://wastelandsurvivalguide.com/docs/dogma.html">
-                    <h2> Dangerous Dogma </h2>
-                </a> Bad information floating around the internet that you should be aware of.
-            </p>
-            <p>
-                <a class="link" href="./lod.html">
-                    <h2> LOD Guide </h2>
-                </a> Guide on how to generate Object LOD with xLODgen.
-            </p>
-            <p>
-                <a class="link" href="https://wastelandsurvivalguide.com/docs/xedit.html">
-                    <h2> xEdit Basics </h2>
-                </a> Introduction to xEdit, which will allow you to understand how plugins work and how you can edit records.
-            </p>
-            <p>
-                <a class="link" href="https://wastelandsurvivalguide.com/docs/themethod.html">
-                    <h2> The Method </h2>
-                </a> Guide on how to use The Method, which is used while creating a modlist in order to patch it properly and hide remaining conflicts that need no intervention.
-            </p>
-            <p>
-                <a class="link" href="https://geckwiki.com/index.php/Main_Page">
-                    <h2> GECK Wiki </h2>
-                </a> Most comprehensive resource for the GECK and scripting.
-            </p>
-            <p>
-                <a class="link" href="https://anfinitinetwork.com/fallout/moddinglinked">
-                    <h2> Proton Guide </h2>
-                </a> A supplemental guide for modding Bethesda games on GNU/Linux.
+                <a href="#notes">
+                    <h2 id="notes"> Finishing Notes </h2>
+                </a> Congratulations! You now have modded Fallout New Vegas perfectly and can enjoy a completely stable/smooth experience. You may want to add your own mods on top of the guide, but that is only recommended if you are an experienced modder. If you do not know how to do manual conflict resolution in FNVEdit, how to sort your load order manually, or how to check if a mod is dangerous, it is highly recommended to NOT add any of your own mods. And remember, I do not provide support setups that have added mods, if you run into any trouble or have any questions, join the <a href="https://discord.com/invite/viva-new-vegas-659108573485465620" target="_blank">Discord</a> and we'll be sure to help you out. <br>
+            <blockquote>DO NOT bother the authors of any of the mods in the guide if you have issues, that's what the Discord is for.</blockquote>
             </p>
         </div>
         <div>
             <p>
                 <hr>
-                <a href="./appendix.html" id="previous" rel="prev"><img class="navigationArrow left mirror" src="./img/arrow.webp" alt="Back Arrow"></a>
+                <a href="./bugfix.html" id="previous" rel="prev"><img class="navigationArrow left mirror" src="./img/arrow.webp" alt="Back Arrow"></a>
+                <a href="./hud.html" id="next" rel="next"><img class="navigationArrow right" src="./img/arrow.webp" alt="Forward Arrow"></a>
             </p>
         </div>
+        </p>
+    </div>
+    <!-- Right Sidebar -->
+    <div id="sidenavRight">
+        <p>
+        <ul>
+            <li>
+                <a href="#load_order">Load Order</a>
+            </li>
+            <li>
+                <a href="#notes">Finishing Notes</a>
+            </li>
+        </ul>
         </p>
     </div>
 </body>
