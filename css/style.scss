@@ -88,8 +88,8 @@ img {
   border-radius: 4pt;
 }
 
-#xnvse_root {
-  max-width: 40%;
+#xnvseRoot {
+  max-width: 60%;
 }
 
 /* Body classes */
@@ -186,14 +186,14 @@ img {
 }
 
 .welcomeContent h1 {
-	color: #DCDCDC;
-	font-size: 1.8em;
-	word-wrap: break-word;
-	text-align: center;
-	margin-top: auto;
-	display: flex;
-	letter-spacing: 0.05em;
-	text-shadow: 0.05em 0.075em 0.05em rgba(0, 0, 0, 0.7);
+  color: #DCDCDC;
+  font-size: 1.8em;
+  word-wrap: break-word;
+  text-align: center;
+  margin-top: auto;
+  display: flex;
+  letter-spacing: 0.05em;
+  text-shadow: 0.05em 0.075em 0.05em rgba(0, 0, 0, 0.7);
 }
 
 .welcomeContent .welcomeButton {
@@ -628,7 +628,7 @@ blockquote .performance::after {
     line-break: anywhere;
   }
 
-  #xnvse_root {
+  #xnvseRoot {
     max-width: 90%;
   }
 
