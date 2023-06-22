@@ -104,6 +104,7 @@ img {
 .section {
   font-size: 1.1rem;
   line-height: 1.33em;
+  margin-bottom: 2em;
 }
 
 .section::before {
