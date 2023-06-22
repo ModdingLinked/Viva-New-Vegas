@@ -340,7 +340,7 @@ img {
   font-size: 1.33em;
   color: hsl(0, 0%, 50%);
   text-decoration: none;
-  padding: 0.6em 0em 0.6em 0em;
+  padding: 0.55em 0em 0.55em 0em;
 }
 
 #sidenavLeft div {
@@ -429,7 +429,7 @@ img {
   color: hsl(0, 0%, 70%);
 }
 
-#extended-background {
+.extended-background {
   margin-left: 0.75em !important;
   margin-right: 0.75em !important;
   padding-left: 0.5em;
@@ -438,7 +438,7 @@ img {
   border-radius: 16px;
 }
 
-#extended-background.active {
+.extended-background.active {
   background-image: linear-gradient(rgba(255, 240, 200, 0.04), rgba(255, 240, 200, 0.08), rgba(255, 240, 200, 0.055), rgba(255, 240, 200, 0.02), rgba(255, 240, 200, 0.005));
 }
 
@@ -563,13 +563,21 @@ blockquote .performance::after {
   scale: 100%;
 }
 
-.navigationArrow {
+.navigationArrow img {
   width: 7.5em;
   height: 7.5em;
   margin: 0.5em 1em 1em 1em;
 }
 
-.navigationArrow:hover {
+.navigationArrow .arrowText {
+  text-decoration: none;
+  font-size: 2.5em;
+  display: flex;
+  padding-top: 1.4em !important;
+  color: #ffffff;
+}
+
+.navigationArrow:hover img {
   scale: 90%;
   transform: scaleY(90%);
 }
@@ -606,6 +614,9 @@ blockquote .performance::after {
   }
 }
 @media only screen and (max-width: 900px) {
+  .navigationArrow .arrowText {
+    display: none;
+  }
   .content {
     width: 100%;
     margin-left: 0;
@@ -674,4 +685,15 @@ blockquote .performance::after {
 .transparent {
   background-color: rgba(255, 255, 255, 0) !important;
   box-shadow: none !important;
+}
+
+#logoex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  height: 12em;
 }/*# sourceMappingURL=style.css.map */

@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preload" href="./css/style.css" as="style" />
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="img/logo.webp">
+    <link rel="icon" href="img/logo-icon.webp">
     <link rel="canonical" href="https://vivanewvegas.moddinglinked.com">
     <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
     <script src="javascript.js"></script>
@@ -69,7 +69,7 @@
             </ul>
             <hr>
         </div>
-        <div id="extended-background">
+        <div class="extended-background">
             <ul>
                 <h3 id="extended-separator">VNV Extended</h3>
                 <li>
@@ -194,19 +194,28 @@
             </div>
 
             <!-- VNVE -->
+            
             <p>
                 <a>
                     <h2 id="vnve">VNV Extended</h2>
                 </a>
             </p>
-            You have now completed the basic section of Viva New Vegas. If you wish to follow the complete guide, head to the <a href="./hud.html">User Interface</a> page and keep reading.
+            <div class="extended-background">
+            <img src="./img/logoex.webp" alt="Logo" id="logoex">
+            <p>
+                You have now completed the basic section of Viva New Vegas. If you don't want to mod your game further, you can now start playing. Have fun!
+                <br>
+                <br>
+                If you are hungry for more mods, head to the <a href="./hud.html">User Interface</a> page and keep reading.
+            </p>
+            </div>
         </div>
 
         <!-- Arrows -->
         <div>
             <hr>
-            <a href="./bugfix.html" id="previous" rel="prev"><img class="navigationArrow left mirror" src="./img/arrow.webp" alt="Back Arrow"></a>
-            <a href="./hud.html" id="next" rel="next"><img class="navigationArrow right" src="./img/arrow.webp" alt="Forward Arrow"></a>
+            <a href="./bugfix.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/arrow.webp" alt="Back Arrow"><span class="arrowText left">Bug Fixes</span></a>
+            <a href="./hud.html" id="next" rel="next" class="navigationArrow"><img class="right" src="./img/arrow.webp" alt="Forward Arrow"><span class="arrowText right">User Interface</span></a>
         </div>
     </div>
 
