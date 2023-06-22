@@ -25,17 +25,18 @@
 </head>
 
 <body>
+
     <!-- Titlebar -->
     <div class="titlecontainer">
         <div id="sideButton" onclick="toggleNav()">
             <i class="fa-solid fa-bars"></i>
         </div>
         <img src="./img/logo.webp" alt="Logo">
-        <a href="./index.html"> Viva New Vegas </a>
+        <a href="./index.html">Viva New Vegas</a>
         <div class="guideLinks">
-            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands </a>
-            <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4 </a>
-            <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Skyrim Special Edition </a>
+            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+            <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+            <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Skyrim Special Edition</a>
             <a href="https://gloryofcyrodiil.moddinglinked.com" target="_blank" rel="nofollow">Oblivion</a>
         </div>
     </div>
@@ -63,6 +64,15 @@
                     <a href="./bugfix.html">Bug Fixes</a>
                 </li>
                 <li>
+                    <a href="./basefinish.html">Base Finish</a>
+                </li>
+            </ul>
+            <hr>
+        </div>
+        <div id="extended-background">
+            <ul>
+                <h3 id="extended-separator">VNV Extended</h3>
+                <li>
                     <a href="./hud.html">User Interface</a>
                 </li>
                 <li>
@@ -78,16 +88,16 @@
                     <a href="./visuals.html">Visuals</a>
                 </li>
                 <li>
-                    <a href="./finish.html">Final Steps</a>
-                </li>
-                <li>
-                    <a href="./appendix.html">Appendix</a>
+                    <a href="./finish.html">VNVE Finish</a>
                 </li>
             </ul>
         </div>
         <div>
             <hr>
             <ul>
+                <li>
+                    <a href="./appendix.html">Appendix</a>
+                </li>
                 <li>
                     <a href="./faq.html">FAQ</a>
                 </li>
@@ -102,16 +112,19 @@
                 </li>
             </ul>
         </div>
+
+        <!-- Guide Links -->
         <div class="guideLinks">
             <hr>
-            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands </a>
-            <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4 </a>
-            <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Skyrim Special Edition </a>
+            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+            <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+            <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Skyrim Special Edition</a>
             <a href="https://gloryofcyrodiil.moddinglinked.com" target="_blank" rel="nofollow">Oblivion</a>
         </div>
+
+        <!-- Footer -->
         <div id="footer">
             <ul>
-
                 <li>
                     <a href="https://discord.gg/viva-new-vegas-659108573485465620" target="_blank">
                         <i class="fab fa-discord"></i>
@@ -141,77 +154,77 @@
 
     <!-- Content -->
     <div class="content">
+
         <!-- Introduction -->
         <div class="section">
-            <p>
-            <h1> Mod Organizer 2 </h1>
-            <h3> In this step, we will install and configure Mod Organizer 2, the best mod manager for any Bethesda game. </h3>
-            </p>
-        </div>
-        <!-- Installing MO2 -->
-        <div class="section" id="installing_mo2">
-            <p>
-                <a href="#installing_mo2">
-                    <h2>Installing Mod Organizer 2</h2>
-                </a>
-            <ol>
-                <li>Download the <strong>Mod Organizer 2</strong> main file from <a href="https://mega.nz/file/EmxzyLLb#0y6vxJ6iy0QRWNn2wTXV56CMkhyfAF8MunZ_w1RfeKE" target="_blank">here</a></li>
-                <li>Once the download has finished, extract the archive and put the folder in any location outside of any default Window folders (like <code>Program Files x86</code>) and outside of the game's <strong>Root </strong>folder (if you are not sure, you can put it in a modding folder on your C drive)</li>
-            </ol>
-            </p>
-        </div>
-        <!-- MO2 -->
-        <div class="section" id="config_mo2">
-            <p>
-                <a href="#config_mo2">
-                    <h2>Configuring Mod Organizer 2</h2>
-                </a>
+            <h1>Mod Organizer 2</h1>
+            <h3>In this step, we will install and configure Mod Organizer 2, the best mod manager for any Bethesda game.</h3>
 
-                <!-- Initial Setup -->
+            <!-- Installing MO2 -->
             <p>
-                <a href="#initial_setup">
-                    <h3 id="initial_setup">Initial Setup</h3>
+                <a>
+                    <h2 id="installingMo2">Installing Mod Organizer 2</h2>
                 </a>
+            </p>
             <ol>
-                <li>Run <strong>ModOrganizer.exe inside the Mod Organizer 2 folder you extracted before</strong></li>
-                <li>You will be prompted with a pop-up called <strong>Creating an instance</strong>, in which you should just select <strong>Next</strong></li>
-                <li>On the next page, select <strong>Create a global instance</strong></li>
+                <li>Download the <strong>Mod Organizer 2</strong> main file from <a href="https://mega.nz/file/EmxzyLLb#0y6vxJ6iy0QRWNn2wTXV56CMkhyfAF8MunZ_w1RfeKE" target="_blank">here</a>.</li>
+                <li>Once the download has finished, extract the archive and put the folder in any location outside of any default Window folders (like <code>Program Files x86</code>) and outside of the game's <strong>Root</strong> folder (if you are not sure, you can put it in a modding folder on your C drive).</li>
+            </ol>
+
+            <!-- MO2 -->
+            <p>
+                <a>
+                    <h2 id="configMo2">Configuring Mod Organizer 2</h2>
+                </a>
+            </p>
+
+            <!-- Initial Setup -->
+            <p>
+                <a>
+                    <h3 id="initialSetup">Initial Setup</h3>
+                </a>
+            </p>
+            <ol>
+                <li>Run <strong>ModOrganizer.exe inside the Mod Organizer 2 folder you extracted before</strong>.</li>
+                <li>You will be prompted with a pop-up called <strong>Creating an instance</strong>, in which you should just select <strong>Next</strong>.</li>
+                <li>On the next page, select <strong>Create a global instance</strong>.</li>
                 <img src="./img/mo2 global instance.webp" alt="Global instance">
-                <li>On the next page, select <strong>New Vegas</strong></li>
-                <li>On the next page, keep the <strong>Location</strong> file path default</li>
+                <li>On the next page, select <strong>New Vegas</strong>.</li>
+                <li>On the next page, keep the <strong>Location</strong> file path default.</li>
             </ol>
             <blockquote>If you have MO2 installed on an SSD or a HDD with little space, you can check the <strong>Show advanced options</strong> box and change the <strong>Downloads</strong> file path to a different drive with more space. This will not effect download/game performance, and the downloads can be deleted after the mods have been installed.</blockquote>
             <ol start="6">
-                <li>On the last page, select <strong>Finish</strong></li>
-                <li>MO2 will launch and prompt you with a pop-up called <strong>Show tutorial?</strong>, in which you should select <strong>No</strong></li>
-                <li>From the pop-up called <strong>Register?</strong>, select <strong>Yes</strong></li>
+                <li>On the last page, select <strong>Finish</strong>.</li>
+                <li>MO2 will launch and prompt you with a pop-up called <strong>Show tutorial?</strong>, in which you should select <strong>No</strong>.</li>
+                <li>From the pop-up called <strong>Register?</strong>, select <strong>Yes</strong>.</li>
                 <ul>
-                    <li>This pop-up will not show up if you have already registered a different instance of MO2</li>
+                    <li>This pop-up will not show up if you have already registered a different instance of MO2.</li>
                 </ul>
             </ol>
-            </p>
+
             <!-- Plugins -->
             <p>
-                <a href="#plugins">
+                <a>
                     <h3 id="plugins">Setting Up Plugins</h3>
                 </a>
+            </p>
             <ol>
-                <li>Once Mod Organizer 2 has loaded, right-click in the right pane and select <strong>Enable all</strong>
-                </li>
+                <li>Once Mod Organizer 2 has loaded, right-click in the right pane and select <strong>Enable all</strong>.</li>
                 <li>Order the plugins in the right pane as follows:</li>
                 <img src="./img/mo2 plugin order.webp" alt="Order of DLCs">
-                <li>If there is a plugin called <strong>FalloutNV_lang.esp</strong> in the right pane, navigate to the game's <strong>Data</strong> folder and delete it</li>
+                <li>If there is a plugin called <strong>FalloutNV_lang.esp</strong> in the right pane, navigate to the game's <strong>Data</strong> folder and delete it.</li>
                 <ul>
-                    <li>If you do not know what the game's <strong>Data</strong> folder is, read the Key Terminology section from the <a class="sublink" href="./setup.html#terms" target="_blank">Initial Setup</a> page</li>
+                    <li>If you do not know what the game's <strong>Data</strong> folder is, read the Key Terminology section from the <a class="sublink" href="./setup.html#terms" target="_blank">Initial Setup</a> page.</li>
                 </ul>
             </ol>
             <blockquote>The translation plugin must be deleted because it directly edits thousands of records to change the language, which will cause many incompatibilities with most mods. Because of conflicts like this, the guide unfortunately only supports the English version of the game.</blockquote>
-            </p>
+
             <!-- Settings -->
             <p>
-                <a href="#settings">
+                <a>
                     <h3 id="settings">Configuring Settings</h3>
                 </a>
+            </p>
             <ol>
                 <li>Select the <strong>X</strong> in the bottom right of MO2 to close the log window.</li>
                 <li>Select the <img src="./img/mo2 settings.webp" alt="MO2 settings"> button at the top of MO2 to open the settings.</li>
@@ -228,176 +241,83 @@
                 <li>Once you authorize it, you can close out of your browser and of the MO2 settings.</li>
                 <li>Allow MO2 to restart if it asks.</li>
             </ol>
-            </p>
-            </p>
-        </div>
-        <!-- Profiles -->
-        <div class="section" id="profiles">
+
+            <!-- Profiles -->
             <p>
-                <a href="#profiles">
-                    <h2>Creating Profiles</h2>
-                </a> Mod Organizer 2's "Profiles" feature allows for easy switching between different mod configurations. In this step, we will create a profile for the guide while keeping a strictly-vanilla profile for testing/de-bugging. Profiles can be selected via the drop-down menu above the left pane.
+                <a>
+                    <h2 id="profiles">Creating Profiles</h2>
+                </a>
+            </p>
+            Mod Organizer 2's "Profiles" feature allows for easy switching between different mod configurations. In this step, we will create a profile for the guide while keeping a strictly-vanilla profile for testing/de-bugging. Profiles can be selected via the drop-down menu above the left pane.
             <ol>
                 <li>Select the <img src="./img/mo2 profiles.webp" alt="MO2 profiles"> button at the top of MO2 to open the profiles menu.</li>
                 <li>Select the <strong>Default</strong> profile, then select <strong>Copy</strong>.</li>
                 <li>Name the new profile <strong>Viva New Vegas</strong>.</li>
-                <li>Select the <strong>Viva New Vegas</strong> profile and make sure both <strong>Use profile-specific Game INI Files</strong> and <strong>Automatic Archive Invalidation</strong> are enabled at the bottom. </li>
+                <li>Select the <strong>Viva New Vegas</strong> profile and make sure both <strong>Use profile-specific Game INI Files</strong> and <strong>Automatic Archive Invalidation</strong> are enabled at the bottom.</li>
             </ol>
             <blockquote>You may get a pop-up called <strong>INI file is read-only</strong> when attempting to make/select a new profile. If so then select <strong>Remember my choice</strong> from the drop-down at the bottom then click <strong>Clear the read-only flag.</strong></blockquote>
             <ol start="5">
                 <li>Exit out of the profiles menu and select the <strong>Viva New Vegas</strong> profile from the drop-down above the left pane.</li>
                 <img src="./img/mo2 profile select.webp" alt="Profile selection">
             </ol>
-            </p>
-        </div>
-        <!-- INI Tweaks -->
-        <div class="section" id="ini_tweaks">
+
+            <!-- Instructions -->
             <p>
-                <a href="#ini_tweaks">
-                    <h2>INI Tweaks</h2>
+                <a>
+                    <h2 id="installation_instructions">Mod Installation Instructions</h2>
                 </a>
-
-                <!-- Tweaking FalloutCustom.ini -->
-            <p>
-                <a href="#custom_ini">
-                    <h3 id="custom_ini">Tweaking FalloutCustom.ini</h3>
-                </a> In this step, we will configure the game's INI files to increase performance/stability. We will take advantage of JIP LN NVSE's FalloutCustom.ini feature to make our changes, which allows for INI changes to be made safely without editing the default INIs. Because of this, these changes will not take affect until you install JIP LN NVSE in the <a href="#jip" target="_blank">Utilities</a>
-            <ol>
-                <li>Make sure the <strong>Viva New Vegas</strong> profile is active.</li>
-                <li>Click the <img src="./img/mo2 ini.webp" alt="MO2 INI button"> button at the top of MO2 and select <strong>INI Editor</strong>. </li>
-                <li>Select the <strong>FalloutCustom.ini</strong> tab, which should be blank.</li>
-                <ul>
-                    <li>Make sure you are in the <strong>FalloutCustom.ini</strong> tab and NOT the <strong>Custom.ini</strong> tab. </li>
-                </ul>
-                <li>Paste in the following:</li>
-                <textarea readonly="readonly" style="height: 51.5em; width: 95%;" onclick="this.focus();this.select()">
-[Audio]
-; Enables additional worker thread for minor performance improvement. Disable if you encounter audio stutter.
-bMultiThreadAudio=1
-; Disables debug logging to save memory and CPU time
-bUseAudioDebugInformation=0
-; Increases memory buffers to reduce audio issues
-iAudioCacheSize=8192
-iMaxSizeForCachedSound=1024
-
-[BackgroundLoad]
-; Forces cell unload on fast travel to lessen memory usage
-bSelectivePurgeUnusedOnFastTravel=1
-
-[Controls]
-; Disables mouse acceleration
-fForegroundMouseAccelBase=0
-fForegroundMouseAccelTop=0
-fForegroundMouseBase=0
-fForegroundMouseMult=0
-
-[Display]
-; Enables Fullscreen mode
-bFull Screen=1
-; Forces highest texture quality so the game won't crash if you had it set to anything lower
-iTexMipMapSkip=0
-; World FOV
-fDefaultFOV=75.0000
-; 1st person FOV
-fDefault1stPersonFOV=55.0000
-; Pip-Boy and terminal FOV
-fPipboy1stPersonFOV=47.0
-
-[General]
-; Forces faster cell unload to lessen memory usage
-bPreemptivelyUnloadCells=1
-; Enables multithreaded AI
-bUseThreadedAI=1
-iNumHWThreads=3
-
-[Grass]
-; Increases grass draw distance
-fGrassStartFadeDistance=11200
-
-[PipBoy]
-; Fixes flicker when opening Pip-Boy when its light is on
-fLightEffectFadeDuration=400
-</textarea>
-            </ol>
             </p>
-            <p>
-                <a href="#ini_notes">
-                    <h3 id="ini_notes">Notes</h3>
-                </a> It is highly recommended to avoid changing any other INI settings not in the guide, and to avoid using tools like BethINI. You will realistically not need any other tweaks than the ones already in the guide.
-            </p>
-            </p>
-        </div>
-        <!-- Instructions -->
-        <div class="section" id="installation_instructions">
-            <p>
-                <a href="#installation_instructions">
-                    <h2>Mod Installation Instructions</h2>
-                </a>
-            <blockquote>
-                If a mod is tagged <span class="optional"></span> it means that the mod is completely subjective and may not be suited for everyone. It can be skipped without any problems.
-                <br>
-                If a mod is tagged <strong class="performance"></strong> it means that the mod may be performance intensive on lower-end systems. It can be skipped without any problems.
-            </blockquote>
-            <p>
-                When the guide says to install a mod, it will be formatted as follows: <strong>Main File - Example 1.5</strong>. This is referring to the mod's category on Nexus and file name.
-                <br>
-                The guide will list a mod's specific file name, category, and version if you need to do more than just download the latest main file.
-            </p>
+            When the guide says to install a mod, it will be formatted as follows: <strong>Main File - Example 1.5</strong>. This is referring to the mod's category on Nexus and file name.
+            The guide will list a mod's specific file name, category, and version if you need to do more than just download the latest main file.
+            <br>
+            <br>
             <img src="./img/download example.webp" alt="Download example">
-            <p>
-                Standard mod installation procedure:
+            <br>
+            <br>
+            Standard mod installation procedure:
             <ol>
                 <li>Unless instructed otherwise by the guide, download a mod's latest main file using the <strong>Mod Manager Download</strong> button.</li>
-                <li>Once the download has finished, open <strong>Downloads</strong> tab in MO2 (Right pane, below executable selector).</li>
+                <li>Once the download has finished, open <strong>Downloads</strong> tab in MO2 (right pane, below executable selector).</li>
                 <li>Double click on the mod to install it.</li>
                 <li>Enable the mod on the left pane.</li>
             </ol>
-            </p>
-            <p>
-                Sometimes, a mod will not have a <strong>Mod Manager Download</strong>, or will be hosted on a site other than Nexus.
-                <br>
-                If that is the case, do the following:
+            Sometimes, a mod will not have a <strong>Mod Manager Download</strong>, or will be hosted on a site other than Nexus.
+            <br>
+            If that is the case, do the following:
             <ol>
-                <li>Click the <strong>Manual Download</strong> button (Or whatever the download button is for the respective site).</li>
+                <li>Click the <strong>Manual Download</strong> button (or whatever the download button is for the respective site).</li>
                 <li>Once the download has finished, click the <img src="./img/mo2 archive.webp" alt="MO2 archive button"> button at the top of MO2.</li>
                 <li>From the new window, navigate to where the file was downloaded to and double-click it.</li>
                 <li>Finish the install as you would with a <strong>Mod Manager Download</strong> mod.</li>
             </ol>
-            </p>
             When downloading multiple files from the same page, you will be prompted with a box in Mod Organizer 2 with the options <strong>Merge</strong>, <strong>Replace</strong>, and <strong>Rename</strong>.
-            <br>
-            You should select the <strong>Rename</strong> option and rename the mod to its respective file name.
-            This will make MO2 install them as separate files for easier management.
-            <br>
-            If you are updating from an old version of a mod, you should select <strong>Replace</strong>.
-            This will delete all the files from the old version of the mod and replace them,with the ones from the new version.
-            This is the only time you should use the <strong>Replace</strong> option, otherwise always use <strong>Rename</strong>.
-            <br>
-            <strong>Merge</strong> should only be used when you are sure the mod will not be updated and in situations where a hotfix is uploaded as separate file.
-            </p>
+            <ul>
+                <li>You should select the <strong>Rename</strong> option and rename the mod to its respective file name, this will make MO2 install them as separate files for easier management.</li>
+                <li>If you are updating from an old version of a mod, you should select <strong>Replace</strong>, this will automatically delete all the files from the old version of the mod and replace them with the ones from the new version.</li>
+                <li><strong>Merge</strong> should only be used when you are sure the mod will not be updated and in situations where a hotfix is uploaded as separate file.</li>
+            </ul>
         </div>
+
+        <!-- Arrows -->
         <div>
-            <p>
-                <hr>
-                <a href="./setup.html" id="previous" rel="prev"><img class="navigationArrow left mirror" src="./img/arrow.webp" alt="Back Arrow"></a>
-                <a href="./utilities.html" id="next" rel="next"><img class="navigationArrow right" src="./img/arrow.webp" alt="Forward Arrow"></a>
-            </p>
+            <hr>
+            <a href="./setup.html" id="previous" rel="prev"><img class="navigationArrow left mirror" src="./img/arrow.webp" alt="Back Arrow"></a>
+            <a href="./utilities.html" id="next" rel="next"><img class="navigationArrow right" src="./img/arrow.webp" alt="Forward Arrow"></a>
         </div>
     </div>
 
     <!-- Right Sidebar -->
     <div id="sidenavRight">
-        <p>
         <ul>
             <li>
-                <a href="#installing_mo2">Installation</a>
+                <a href="#installingMo2">Installation</a>
             </li>
             <li>
-                <a href="#config_mo2">Configuration</a>
+                <a href="#configMo2">Configuration</a>
             </li>
             <ul>
                 <li>
-                    <a href="#initial_setup">Initial Setup</a>
+                    <a href="#initialSetup">Initial Setup</a>
                 </li>
                 <li>
                     <a href="#plugins">Setting Up Plugins</a>
@@ -410,18 +330,7 @@ fLightEffectFadeDuration=400
                 <a href="#profiles">Profiles</a>
             </li>
             <li>
-                <a href="#ini_tweaks">INI Tweaks</a>
-            </li>
-            <ul>
-                <li>
-                    <a href="#custom_ini">FalloutCustom.ini</a>
-                </li>
-                <li>
-                    <a href="#ini_notes">Notes</a>
-                </li>
-            </ul>
-            <li>
-                <a href="#installation_instructions">Installation Instructions</a>
+                <a href="#installationInstructions">Installation Instructions</a>
             </li>
         </ul>
     </div>

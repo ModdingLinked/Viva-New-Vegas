@@ -11,9 +11,9 @@
     <link rel="canonical" href="https://vivanewvegas.moddinglinked.com">
     <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
     <script src="javascript.js"></script>
-    <title>Appendix | Viva New Vegas</title>
+    <title>Final Steps | Viva New Vegas</title>
     <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, Oblivion, TESIV, TES4, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
-    <meta name="description" content="Links for the changelog, FAQ, and various resources.">
+    <meta name="description" content="Final steps necessary before playing the game.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
     <meta property="og:site_name" content="ModdingLinked">
@@ -21,7 +21,7 @@
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://vivanewvegas.moddinglinked.com">
     <meta property="og:image" content="https://vivanewvegas.moddinglinked.com/img/card.webp">
-    <meta property="og:description" content="Links for the changelog, FAQ, and various resources.">
+    <meta property="og:description" content="Final steps necessary before playing the game.">
 </head>
 
 <body>
@@ -64,7 +64,7 @@
                     <a href="./bugfix.html">Bug Fixes</a>
                 </li>
                 <li>
-                    <a href="./basefinish.html">Base Finish</a>
+                    <a href="./basefinish.html" class="active">Base Finish</a>
                 </li>
             </ul>
             <hr>
@@ -96,7 +96,7 @@
             <hr>
             <ul>
                 <li>
-                    <a href="./appendix.html" class="active">Appendix</a>
+                    <a href="./appendix.html">Appendix</a>
                 </li>
                 <li>
                     <a href="./faq.html">FAQ</a>
@@ -165,28 +165,61 @@
     <!-- Content -->
     <div class="content">
         <div class="section">
-            <h1>Appendix</h1>
+            <h1>Base Finish</h1>
             <div class="section">
                 <p>
-                    <a class="link" href="./changelog.html">
-                        <h2>Changelog</h2>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/79358" target="_blank">
+                        <h2 id="load_order"> Load Order </h2>
                     </a>
-                    Catalog of all changes made to the guide
                 </p>
-                <p>
-                    <a class="link" href="./resources.html">
-                        <h2>Resources</h2>
-                    </a>
-                    Various tutorials and information that may be useful, especially if you plan on adding mods
-                </p>
+                <h2 class="install">Installation instructions:</h2>
+                <ol>
+                    <li>Download the file.</li>
+                    <li>Once it has finished downloading, click the <img style="width:2%" src="./img/mo2 folders.webp" alt="MO2 folders"> button at the top of MO2 and select <strong>Open Profile folder</strong>.</li>
+                    <li>Extract the <strong>loadorder.txt</strong> from the downloaded archive to the folder you opened and overwrite when prompted.</li>
+                    <li>Once the file is extracted, click <strong>F5</strong> while you are on MO2 without any menu open.</li>
+                    <li>Right-click in the <b>right</b> pane of MO2 and select <strong>Enable all</strong>.</li>
+                </ol>
+                <blockquote>
+                    If you have not added any mods to the guide, <strong>Strip Lights Region Fix.esp</strong> should be the bottom mod in your load order (the <strong>Plugins</strong> tab in the <b>right</b> pane of MO2) after applying the load order and refreshing MO2. If not, you made a mistake during mod installation.
+                    <br>
+                    Join the <a href="https://discord.gg/viva-new-vegas-659108573485465620" target="_blank">Discord</a> for support.
+                </blockquote>
+                Automatically ensures your load order is correct for the guide.
+                <blockquote>
+                    REMINDER: Run the game using the New Vegas option in MO2!
+                    <br>
+                    <img src="./img/run fnv.webp" alt="Run New Vegas through MO2">
+                </blockquote>
             </div>
+
+            <!-- VNVE -->
+            <p>
+                <a>
+                    <h2 id="vnve">VNV Extended</h2>
+                </a>
+            </p>
+            You have now completed the basic section of Viva New Vegas. If you wish to follow the complete guide, head to the <a href="./hud.html">User Interface</a> page and keep reading.
         </div>
 
         <!-- Arrows -->
         <div>
             <hr>
-            <a href="./finish.html" id="previous" rel="prev"><img class="navigationArrow left mirror" src="./img/arrow.webp" alt="Back Arrow"></a>
+            <a href="./bugfix.html" id="previous" rel="prev"><img class="navigationArrow left mirror" src="./img/arrow.webp" alt="Back Arrow"></a>
+            <a href="./hud.html" id="next" rel="next"><img class="navigationArrow right" src="./img/arrow.webp" alt="Forward Arrow"></a>
         </div>
+    </div>
+
+    <!-- Right Sidebar -->
+    <div id="sidenavRight">
+        <ul>
+            <li>
+                <a href="#load_order">Load Order</a>
+            </li>
+            <li>
+                <a href="#vnve">VNV Extended</a>
+            </li>
+        </ul>
     </div>
 </body>
 

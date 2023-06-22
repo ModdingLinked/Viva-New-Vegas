@@ -25,17 +25,18 @@
 </head>
 
 <body>
+
     <!-- Titlebar -->
     <div class="titlecontainer">
         <div id="sideButton" onclick="toggleNav()">
             <i class="fa-solid fa-bars"></i>
         </div>
         <img src="./img/logo.webp" alt="Logo">
-        <a href="./index.html"> Viva New Vegas </a>
+        <a href="./index.html">Viva New Vegas - Extended</a>
         <div class="guideLinks">
-            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands </a>
-            <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4 </a>
-            <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Skyrim Special Edition </a>
+            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+            <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+            <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Skyrim Special Edition</a>
             <a href="https://gloryofcyrodiil.moddinglinked.com" target="_blank" rel="nofollow">Oblivion</a>
         </div>
     </div>
@@ -63,6 +64,15 @@
                     <a href="./bugfix.html">Bug Fixes</a>
                 </li>
                 <li>
+                    <a href="./basefinish.html">Base Finish</a>
+                </li>
+            </ul>
+            <hr>
+        </div>
+        <div id="extended-background" class="active">
+            <ul>
+                <h3 id="extended-separator" class="active">VNV Extended</h3>
+                <li>
                     <a href="./hud.html">User Interface</a>
                 </li>
                 <li>
@@ -78,16 +88,16 @@
                     <a href="./visuals.html" class="active">Visuals</a>
                 </li>
                 <li>
-                    <a href="./finish.html">Final Steps</a>
-                </li>
-                <li>
-                    <a href="./appendix.html">Appendix</a>
+                    <a href="./finish.html">VNVE Finish</a>
                 </li>
             </ul>
         </div>
         <div>
             <hr>
             <ul>
+                <li>
+                    <a href="./appendix.html">Appendix</a>
+                </li>
                 <li>
                     <a href="./faq.html">FAQ</a>
                 </li>
@@ -102,26 +112,29 @@
                 </li>
             </ul>
         </div>
+
+        <!-- Guide Links -->
         <div class="guideLinks">
             <hr>
             <ul>
                 <li>
-                    <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands </a>
+                    <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
                 </li>
                 <li>
-                    <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4 </a>
+                    <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
                 </li>
                 <li>
-                    <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Skyrim Special Edition </a>
+                    <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Skyrim Special Edition</a>
                 </li>
                 <li>
                     <a href="https://gloryofcyrodiil.moddinglinked.com" target="_blank" rel="nofollow">Oblivion</a>
                 </li>
             </ul>
         </div>
+
+        <!-- Footer -->
         <div id="footer">
             <ul>
-
                 <li>
                     <a href="https://discord.gg/viva-new-vegas-659108573485465620" target="_blank">
                         <i class="fab fa-discord"></i>
@@ -151,284 +164,258 @@
 
     <!-- Content -->
     <div class="content">
-        <p>
         <div class="section">
-            <p>
             <h1>Visuals</h1>
-            <blockquote>There may be less visual mods than you may be used to with a modded game, but there is good reason for that. The game has a pretty unoptimized renderer, built on now 20 year old DirectX 9. <br>
-                <br> Mesh replacers are often grossly unoptimized, which is disastrous, since the mesh pipeline is the main performance bottleneck. <br>
-                <br> ENBs may make for pretty screenshots, but they are near-impossible to play with due to the many bugs, performance problems, and <a href="https://imgur.com/a/8UT356J" target="_blank">vision-obscuring effects</a> they use. <br>
-                <br> Texture mods often suffer from being inadequately oversized, which leads to wasteful memory usage and increased loading times and stutter. They also create a great disparity between the new textures and the vanilla textures, both in quality and in style, making for some <a href="https://imgur.com/a/jMgRjBO" target="_blank">jarring texture transitions or seams</a>.
+            <blockquote>There may be less visual mods than you may be used to with a modded game, but there is good reason for that. The game has a pretty unoptimized renderer, built on now 20 year old DirectX 9.
+                <br>
+                <br>
+                Mesh replacers are often grossly unoptimized, which is disastrous, since the mesh pipeline is the main performance bottleneck.
+                <br>
+                <br>
+                ENBs may make for pretty screenshots, but they are near-impossible to play with due to the many bugs, performance problems, and <a href="https://imgur.com/a/8UT356J" target="_blank">vision-obscuring effects</a> they use.
+                <br>
+                <br>
+                Texture mods often suffer from being inadequately oversized, which leads to wasteful memory usage and increased loading times and stutter. They also create a great disparity between the new textures and the vanilla textures, both in quality and in style, making for some <a href="https://imgur.com/a/jMgRjBO" target="_blank">jarring texture transitions or seams</a>.
             </blockquote>
             <h2>Creating a Separator in MO2</h2>
             <ol>
                 <li>Right-click the empty space in the left pane of MO2 and select <strong>Create Separator</strong>.</li>
                 <li>Name the separator <strong>Visuals</strong>.</li>
             </ol>
+
             <!-- Faster Pip-Boy -->
-            <div class="section">
-                <p>
-                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/67761" target="_blank">
-                        <h2 id="faster_pipboy"> Faster Pip-Boy Animation </h2>
-                    </a>
-                <h2 class="install">Installation instructions:</h2>
-                <ul>
-                    <li><b>Main Files - Faster Pip-Boy Animation (2x) 1.0</b></li>
-                </ul>
-                Doubles the speed of the Pip-Boy opening animation.
-            </div>
-            <!-- No Muzzle Lights -->
-            <div class="section">
-                <p>
-                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/77781" target="_blank">
-                        <h2 id="muzzle_lights" class="optional"> No Muzzle Flash Lights </h2>
-                    </a>
-                <h2 class="install">Installation instructions:</h2>
-                <ul>
-                    <li><b>Main Files - No Muzzle Flash Lights</b></li>
-                </ul>
-                Disables the lights cast by muzzle flashes, which can greatly improve performance in combat.
-                <blockquote>
-                    This mod does not disable the actual muzzle flashes, but rather the lights the muzzle flashes cast on the environment. It also only disables the effect for NPCs by default, but that can be configured via the included INI file. See the mod's screenshots for details. Like any mod in the guide, it can be skipped if you like the effect and don't mind the performance hit.
-                </blockquote>
-            </div>
-            <!-- Hitstop -->
-            <div class="section">
-                <p>
-                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/75981" target="_blank">
-                        <h2 id="hitstop" class="optional"> Melee Hitstop Effects </h2>
-                    </a>
-                <h2 class="install">Installation instructions:</h2>
-                <ul>
-                    <li><b>Main Files - Melee Hitstop Effects</b></li>
-                </ul>
-                Adds hitstop for melee weapons.
-            </div>
-            <!-- Anniversary Anims -->
-            <div class="section">
-                <p>
-                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/70158" target="_blank">
-                        <h2 id="anim_pack"> Anniversary Animation Pack </h2>
-                    </a>
-                <h2 class="install">Installation instructions:</h2>
-                <ul>
-                    <li><b>Main Files - Anniversary Anim Pack</b></li>
-                </ul>
-                Includes three of Hitman's previous animation mods, <a href="https://www.nexusmods.com/newvegas/mods/67728" target="_blank">Subtle Camera Motion</a>, <a href="https://www.nexusmods.com/newvegas/mods/67760" target="_blank">Iron Sights Recoil Animations</a>, and <a href="https://www.nexusmods.com/newvegas/mods/67841" target="_blank">Fire Animation Variants</a>, as well as some new previously unreleased animations.
-            </div>
-            <!-- Anniversary Anims Fix -->
-            <div class="section">
-                <p>
-                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/72320" target="_blank">
-                        <h2 id="anim_bugfix"> Anniversary Anim Pack - General Bugfix </h2>
-                    </a>
-                <h2 class="install">Installation instructions:</h2>
-                <ul>
-                    <li><b>Main Files - AnniAnimPack_BugFix 1.3</b></li>
-                    <li><b>Main Files - Bonus Patch</b> (select the name that matches the file on Nexus when the installation prompt comes up)</li>
-                </ul>
-                Fixes many bugs/inconsistencies in Anniversary Anims Pack.
-            </div>
-            <!-- Weapon Inertia -->
-            <div class="section">
-                <p>
-                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/64335" target="_blank">
-                        <h2 id="inertia"> B42 Weapon Inertia </h2>
-                    </a>
-                <h2 class="install">Installation instructions:</h2>
-                <ul>
-                    <li><b>Main Files - B42 Inertia V1.2</b></li>
-                </ul>
-                Gives weapons realistic inertia movement.
-            </div>
-            <!-- Compatibility Skeleton -->
-            <div class="section">
-                <p>
-                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/68776" target="_blank">
-                        <h2 id="skeleton"> Compatibility Skeleton </h2>
-                    </a>
-                <h2 class="install">Installation instructions:</h2>
-                <ul>
-                    <li><b>Optional Files - NVCS Vanilla Weights</b></li>
-                </ul>
-                Allows multiple mods that edit the skeleton mesh to work together, required for B42 Weapon Inertia.
-            </div>
-            <!-- Improved LOD Noise -->
-            <div class="section">
-                <p>
-                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/46451" target="_blank">
-                        <h2 id="improved_lod"> Improved LOD Noise Texture </h2>
-                    </a>
-                <h2 class="install">Installation instructions:</h2>
-                <ul>
-                    <li><b>Main Files - Improved LOD noise Texture</b></li>
-                </ul>
-                Improves the generic LOD noise texture.
-            </div>
-            <!-- Pipboy Shading Fix -->
-            <div class="section">
-                <p>
-                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/77957" target="_blank">
-                        <h2 id="pipshading" class="optional"> Pip-Boy Shading Fix NVSE </h2>
-                    </a>
-                <h2 class="install">Installation instructions:</h2>
-                <ul>
-                    <li><b>Main Files - Pip-Boy Shading Fix</b></li>
-                </ul>
-                Fixes Pip-Boy's shading, making it not ignore lights around it.
-            </div>
-            <!-- Strip Lights -->
-            <div class="section">
-                <p>
-                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/78906" target="_blank">
-                        <h2 id="strip_lights"> Strip Street Light Corrections </h2>
-                    </a>
-                <h2 class="install">Installation instructions:</h2>
-                <ul>
-                    <li><b>Main Files - Strip Street Light Corrections</b></li>
-                </ul>
-                Corrects several minor issues with the Strip's street lights.
-            </div>
-            <!-- A Little More Lamplight -->
-            <div class="section">
-                <p>
-                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/69226" target="_blank">
-                        <h2 id="lamplight" class="performance"> A Little More Lamplight </h2>
-                    </a>
-                <h2 class="install">Installation instructions:</h2>
-                <ul>
-                    <li><b>Main Files - A Little More Lamplight</b></li>
-                </ul>
-                Enhances the vanilla streetlights and adds new ones around Outer Vegas, Freeside, and more.
-            </div>
-            <!-- Atmospheric Lighting Tweaks -->
-            <div class="section">
-                <p>
-                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/79378" target="_blank">
-                        <h2 id="alt"> Atmospheric Lighting Tweaks </h2>
-                    </a>
-                <h2 class="install">Installation instructions:</h2>
-                <ul>
-                    <li><b>Main Files - Atmospheric Lighting Tweaks - FNV</b></li>
-                </ul>
-                Makes changes to Image Spaces and Lighting Templates to give interiors a more dynamic and atmospheric look.
-            </div>
-            <!-- DN Weathers -->
-            <div class="section">
-                <p>
-                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/75437" target="_blank">
-                        <h2 id="dn" class="performance"> Desert Natural Weathers </h2>
-                    </a>
-                <h2 class="install">Installation instructions:</h2>
-                <ul>
-                    <li><b>Main Files - Desert Natural Weathers NV</b></li>
-                </ul>
-                Major overhaul to all of the weathers for the base game and DLCs.
-                <blockquote>
-                    As visual mods are very subjective, not everyone will like DN Weathers. If you want an alternatives, I recommend checking out <a href="https://www.nexusmods.com/newvegas/mods/71404" target="_blank">Altitude</a>, <a href="https://www.nexusmods.com/newvegas/mods/67277" target="_blank">Yellow Goodbye</a>, or <a href="https://www.nexusmods.com/newvegas/mods/62481" target="_blank">Clarity</a>. Yellow Goodbye and Clarity aim for a much more vanilla style, mostly just removing the game's atmospheric tint. Meanwhile, Altitude aims to strike a balance between staying vanilla-friendly and being a complete overhaul. These three mods should have little to no performance loss, even on lower-end systems.
-                </blockquote>
-            </div>
-            <!-- MoonlightNVSE -->
-            <div class="section">
-                <p>
-                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/77683" target="_blank">
-                        <h2 id="moonlight"> MoonlightNVSE </h2>
-                    </a>
-                <h2 class="install">Installation instructions:</h2>
-                <ul>
-                    <li><b>Main Files - MoonlightNVSE</b></li>
-                </ul>
-                Fixes moonlight by making the moon the light caster instead of the sun.
-            </div>
-            <!-- High Res Bloom -->
-            <div class="section">
-                <p>
-                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/77933" target="_blank">
-                        <h2 id="bloom"> High Resolution Bloom NVSE </h2>
-                    </a>
-                <h2 class="install">Installation instructions:</h2>
-                <ul>
-                    <li><b>Main Files - High Resolution Bloom</b></li>
-                </ul>
-                Allows for customizable bloom resolution, making it possible to use resolutions other than vanilla's quarter one.
-            </div>
-            <!-- Cloud Shadows -->
-            <div class="section">
-                <p>
-                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/79147" target="_blank">
-                        <h2 id="cloud_shadows"> Cloud Shadows </h2>
-                    </a>
-                <h2 class="install">Installation instructions:</h2>
-                <ul>
-                    <li><b>Main Files - Cloud Shadows</b></li>
-                </ul>
-                Adds a cloud shadows effect.
-            </div>
-            <!-- Cloud Upgrade -->
-            <div class="section">
-                <p>
-                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/79612" target="_blank">
-                        <h2 id="cloud_upgrade"> Cloud Upgrade NVSE </h2>
-                    </a>
-                <h2 class="install">Installation instructions:</h2>
-                <ul>
-                    <li><b>Main Files - Cloud Upgrade</b></li>
-                </ul>
-                Adds pseudo-animated clouds for horizons and panoramic cloud systems.
-            </div>
-            <!-- Interior Rain -->
-            <div class="section">
-                <p>
-                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/79656" target="_blank">
-                        <h2 id="interior_rain"> Interior Rain </h2>
-                    </a>
-                <h2 class="install">Installation instructions:</h2>
-                <ul>
-                    <li><b>Main Files - Interior Rain</b></li>
-                </ul>
-                Interior rain sounds.
-            </div>
-            <!-- CC Rain -->
-            <div class="section">
-                <p>
-                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/79661" target="_blank">
-                        <h2 id="cc_rain"> Climate Control - Rain </h2>
-                    </a>
-                <h2 class="install">Installation instructions:</h2>
-                <ul>
-                    <li><b>Main Files - Climate Control - Rain</b></li>
-                </ul>
-                Fixes rain not activating or deactivating correctly, as well as new sounds and textures.
-            </div>
-        </div>
-        <div>
             <p>
+                <a class="link" href="https://www.nexusmods.com/newvegas/mods/67761" target="_blank">
+                    <h2 id="fasterPipboy">Faster Pip-Boy Animation</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - Faster Pip-Boy Animation (2x) 1.0</b></li>
+            </ul>
+            Doubles the speed of the Pip-Boy opening animation.
+
+            <!-- No Muzzle Lights -->
+            <p>
+                <a class="link" href="https://www.nexusmods.com/newvegas/mods/77781" target="_blank">
+                    <h2 id="muzzleLights">No Muzzle Flash Lights</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - No Muzzle Flash Lights</b></li>
+            </ul>
+            Disables the lights cast by muzzle flashes, which can greatly improve performance in combat.
+            <blockquote>
+                This mod does not disable the actual muzzle flashes, but rather the lights the muzzle flashes cast on the environment. It also only disables the effect for NPCs by default, but that can be configured via the included INI file. See the mod's screenshots for details. Like any mod in the guide, it can be skipped if you like the effect and don't mind the performance hit.
+            </blockquote>
+
+            <!-- Anniversary Anims -->
+            <p>
+                <a class="link" href="https://www.nexusmods.com/newvegas/mods/70158" target="_blank">
+                    <h2 id="animPack">Anniversary Animation Pack </h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - Anniversary Anim Pack</b></li>
+            </ul>
+            Includes three of Hitman's previous animation mods, <a href="https://www.nexusmods.com/newvegas/mods/67728" target="_blank">Subtle Camera Motion</a>, <a href="https://www.nexusmods.com/newvegas/mods/67760" target="_blank">Iron Sights Recoil Animations</a>, and <a href="https://www.nexusmods.com/newvegas/mods/67841" target="_blank">Fire Animation Variants</a>, as well as some new previously unreleased animations.
+
+            <!-- Anniversary Anims Fix -->
+            <p>
+                <a class="link" href="https://www.nexusmods.com/newvegas/mods/72320" target="_blank">
+                    <h2 id="animBugfix">Anniversary Anim Pack - General Bugfix</h2>
+                </a>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - AnniAnimPack_BugFix 1.3</b></li>
+                <li><b>Main Files - Bonus Patch</b> (select the name that matches the file on Nexus when the installation prompt comes up)</li>
+            </ul>
+            Fixes many bugs/inconsistencies in Anniversary Anims Pack.
+
+            <!-- Weapon Inertia -->
+            <p>
+                <a class="link" href="https://www.nexusmods.com/newvegas/mods/64335" target="_blank">
+                    <h2 id="inertia">B42 Weapon Inertia</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - B42 Inertia V1.2</b></li>
+            </ul>
+            Gives weapons realistic inertia movement.
+
+            <!-- Compatibility Skeleton -->
+            <p>
+                <a class="link" href="https://www.nexusmods.com/newvegas/mods/68776" target="_blank">
+                    <h2 id="skeleton">Compatibility Skeleton</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Optional Files - NVCS Vanilla Weights</b></li>
+            </ul>
+            Allows multiple mods that edit the skeleton mesh to work together, required for B42 Weapon Inertia.
+
+            <!-- Improved LOD Noise -->
+            <p>
+                <a class="link" href="https://www.nexusmods.com/newvegas/mods/46451" target="_blank">
+                    <h2 id="improvedLod">Improved LOD Noise Texture</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - Improved LOD noise Texture</b></li>
+            </ul>
+            Improves the generic LOD noise texture.
+
+            <!-- Pipboy Shading Fix -->
+            <p>
+                <a class="link" href="https://www.nexusmods.com/newvegas/mods/77957" target="_blank">
+                    <h2 id="pipShading">Pip-Boy Shading Fix NVSE</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - Pip-Boy Shading Fix</b></li>
+            </ul>
+            Fixes Pip-Boy's shading, making it not ignore lights around it.
+
+            <!-- Strip Lights -->
+            <p>
+                <a class="link" href="https://www.nexusmods.com/newvegas/mods/78906" target="_blank">
+                    <h2 id="stripLights">Strip Street Light Corrections</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - Strip Street Light Corrections</b></li>
+            </ul>
+            Corrects several minor issues with the Strip's street lights.
+
+            <!-- A Little More Lamplight -->
+            <p>
+                <a class="link" href="https://www.nexusmods.com/newvegas/mods/69226" target="_blank">
+                    <h2 id="lamplight" class="performance">A Little More Lamplight</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - A Little More Lamplight</b></li>
+            </ul>
+            Enhances the vanilla streetlights and adds new ones around Outer Vegas, Freeside, and more.
+
+            <!-- Atmospheric Lighting Tweaks -->
+            <p>
+                <a class="link" href="https://www.nexusmods.com/newvegas/mods/79378" target="_blank">
+                    <h2 id="alt">Atmospheric Lighting Tweaks</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - Atmospheric Lighting Tweaks - FNV</b></li>
+            </ul>
+            Makes changes to Image Spaces and Lighting Templates to give interiors a more dynamic and atmospheric look.
+
+            <!-- DN Weathers -->
+            <p>
+                <a class="link" href="https://www.nexusmods.com/newvegas/mods/75437" target="_blank">
+                    <h2 id="dnw" class="performance">Desert Natural Weathers</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - Desert Natural Weathers NV</b></li>
+            </ul>
+            Major overhaul to all of the weathers for the base game and DLCs.
+            <blockquote>
+                As visual mods are very subjective, not everyone will like DN Weathers. If you want an alternatives, I recommend checking out <a href="https://www.nexusmods.com/newvegas/mods/71404" target="_blank">Altitude</a>, <a href="https://www.nexusmods.com/newvegas/mods/67277" target="_blank">Yellow Goodbye</a>, or <a href="https://www.nexusmods.com/newvegas/mods/62481" target="_blank">Clarity</a>. Yellow Goodbye and Clarity aim for a much more vanilla style, mostly just removing the game's atmospheric tint. Meanwhile, Altitude aims to strike a balance between staying vanilla-friendly and being a complete overhaul. These three mods should have little to no performance loss, even on lower-end systems.
+            </blockquote>
+
+            <!-- High Res Bloom -->
+            <p>
+                <a class="link" href="https://www.nexusmods.com/newvegas/mods/77933" target="_blank">
+                    <h2 id="bloom">High Resolution Bloom NVSE</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - High Resolution Bloom</b></li>
+            </ul>
+            Allows for customizable bloom resolution, making it possible to use resolutions other than vanilla's quarter one.
+
+            <!-- Cloud Shadows -->
+            <p>
+                <a class="link" href="https://www.nexusmods.com/newvegas/mods/79147" target="_blank">
+                    <h2 id="cloudShadows">Cloud Shadows</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - Cloud Shadows</b></li>
+            </ul>
+            Adds a cloud shadows effect.
+
+            <!-- Cloud Upgrade -->
+            <p>
+                <a class="link" href="https://www.nexusmods.com/newvegas/mods/79612" target="_blank">
+                    <h2 id="cloudUpgrade">Cloud Upgrade NVSE</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - Cloud Upgrade</b></li>
+            </ul>
+            Adds pseudo-animated clouds for horizons and panoramic cloud systems.
+
+            <!-- Interior Rain -->
+            <p>
+                <a class="link" href="https://www.nexusmods.com/newvegas/mods/79656" target="_blank">
+                    <h2 id="interiorRain">Interior Rain</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - Interior Rain</b></li>
+            </ul>
+            Adds rain sounds to interiors.
+
+            <!-- CC Rain -->
+            <p>
+                <a class="link" href="https://www.nexusmods.com/newvegas/mods/79661" target="_blank">
+                    <h2 id="ccRain">Climate Control - Rain</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - Climate Control - Rain</b></li>
+            </ul>
+            Fixes rain not activating or deactivating correctly, as well as new sounds and textures.
+
+            <!-- Arrows -->
+            <div>
                 <hr>
                 <a href="./content.html" id="previous" rel="prev"><img class="navigationArrow left mirror" src="./img/arrow.webp" alt="Back Arrow"></a>
                 <a href="./finish.html" id="next" rel="next"><img class="navigationArrow right" src="./img/arrow.webp" alt="Forward Arrow"></a>
-            </p>
+            </div>
         </div>
-        </p>
     </div>
 
     <!-- Right Sidebar -->
     <div id="sidenavRight">
-        <p>
         <ul>
             <li>
-                <a href="#faster_pipboy">Faster Pip-Boy</a>
+                <a href="#fasterPipboy">Faster Pip-Boy</a>
             </li>
             <li>
-                <a href="#muzzle_lights">No Muzzle Lights</a>
+                <a href="#muzzleLights">No Muzzle Lights</a>
             </li>
             <li>
-                <a href="#hitstop">Hitstop</a>
+                <a href="#animPack">Anniversary Anims</a>
             </li>
             <li>
-                <a href="#anim_pack">Anniversary Anims</a>
-            </li>
-            <li>
-                <a href="#anim_bugfix">Anniversary Anims Fix</a>
+                <a href="#animBugfix">Anniversary Anims Fix</a>
             </li>
             <li>
                 <a href="#inertia">Weapon Inertia</a>
@@ -437,13 +424,13 @@
                 <a href="#skeleton">Compatibility Skeleton</a>
             </li>
             <li>
-                <a href="#improved_lod">Improved LOD Noise</a>
+                <a href="#improvedLod">Improved LOD Noise</a>
             </li>
             <li>
-                <a href="#pipshading">Pip-Boy Shading Fix</a>
+                <a href="#pipShading">Pip-Boy Shading Fix</a>
             </li>
             <li>
-                <a href="#strip_lights">Strip Lights</a>
+                <a href="#stripLights">Strip Lights</a>
             </li>
             <li>
                 <a href="#lamplight">A Little More Lamplight</a>
@@ -452,29 +439,24 @@
                 <a href="#alt">Atmospheric Lighting Tweaks</a>
             </li>
             <li>
-                <a href="#dn">DN Weathers</a>
-            </li>
-            <li>
-                <a href="#moonlight">MoonlightNVSE</a>
+                <a href="#dnw">DN Weathers</a>
             </li>
             <li>
                 <a href="#bloom">High Res Bloom</a>
             </li>
             <li>
-                <a href="#cloud_shadows">Cloud Shadows</a>
+                <a href="#cloudShadows">Cloud Shadows</a>
             </li>
             <li>
-                <a href="#cloud_upgrade">Cloud Upgrade</a>
+                <a href="#cloudUpgrade">Cloud Upgrade</a>
             </li>
             <li>
-                <a href="#interior_rain">Interior Rain</a>
+                <a href="#interiorRain">Interior Rain</a>
             </li>
             <li>
-                <a href="#cc_rain">CC Rain</a>
+                <a href="#ccRain">CC Rain</a>
             </li>
         </ul>
-        </p>
-    </div>
     </div>
 </body>
 

@@ -25,20 +25,22 @@
 </head>
 
 <body>
+
     <!-- Titlebar -->
     <div class="titlecontainer">
         <div id="sideButton" onclick="toggleNav()">
             <i class="fa-solid fa-bars"></i>
         </div>
         <img src="./img/logo.webp" alt="Logo">
-        <a href="./index.html"> Viva New Vegas </a>
+        <a href="./index.html">Viva New Vegas</a>
         <div class="guideLinks">
-            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands </a>
-            <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4 </a>
-            <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Skyrim Special Edition </a>
+            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+            <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+            <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Skyrim Special Edition</a>
             <a href="https://gloryofcyrodiil.moddinglinked.com" target="_blank" rel="nofollow">Oblivion</a>
         </div>
     </div>
+
     <!-- Left Sidebar -->
     <div id="sidenavLeft">
         <div>
@@ -62,6 +64,15 @@
                     <a href="./bugfix.html">Bug Fixes</a>
                 </li>
                 <li>
+                    <a href="./basefinish.html">Base Finish</a>
+                </li>
+            </ul>
+            <hr>
+        </div>
+        <div id="extended-background">
+            <ul>
+                <h3 id="extended-separator">VNV Extended</h3>
+                <li>
                     <a href="./hud.html">User Interface</a>
                 </li>
                 <li>
@@ -77,10 +88,7 @@
                     <a href="./visuals.html">Visuals</a>
                 </li>
                 <li>
-                    <a href="./finish.html">Final Steps</a>
-                </li>
-                <li>
-                    <a href="./appendix.html">Appendix</a>
+                    <a href="./finish.html">VNVE Finish</a>
                 </li>
                 <ul>
                     <li>
@@ -98,6 +106,9 @@
             <hr>
             <ul>
                 <li>
+                    <a href="./appendix.html">Appendix</a>
+                </li>
+                <li>
                     <a href="./faq.html">FAQ</a>
                 </li>
                 <li>
@@ -111,26 +122,29 @@
                 </li>
             </ul>
         </div>
+
+        <!-- Guide Links -->
         <div class="guideLinks">
             <hr>
             <ul>
                 <li>
-                    <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands </a>
+                    <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
                 </li>
                 <li>
-                    <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4 </a>
+                    <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
                 </li>
                 <li>
-                    <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Skyrim Special Edition </a>
+                    <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Skyrim Special Edition</a>
                 </li>
                 <li>
                     <a href="https://gloryofcyrodiil.moddinglinked.com" target="_blank" rel="nofollow">Oblivion</a>
                 </li>
             </ul>
         </div>
+
+        <!-- Footer -->
         <div id="footer">
             <ul>
-
                 <li>
                     <a href="https://discord.gg/viva-new-vegas-659108573485465620" target="_blank">
                         <i class="fab fa-discord"></i>
@@ -157,18 +171,17 @@
             </ul>
         </div>
     </div>
+
     <!-- Content -->
     <div class="content">
-        <p>
         <div class="section">
-            <p>
-            <h1> LOD Guide </h1>
-            <p> Before getting started, there are a few things you should know. First, generating LOD is <b>not</b> a requirement, but it will add detail in the distance by improving terrain geometry and the amount of things that have LOD, thanks to the resource mods listed below. It becomes a requirement if you installed texture mods that affect objects in LOD or terrain, or if you are using a mod that requires LOD to be generated because of terrain edits. Terrain LOD creates a much larger file size and will increase the amount of time it takes to run xLODGen. This guide does not need new terrain LOD, so only object LOD will be generated. If you need new terrain LOD the instructions will be the exact same except enabling <b>Terrain LOD</b> option in addition to the <b>Object LOD</b> option.
-            </p>
+            <h1>LOD Guide</h1>
+            <p>Before getting started, there are a few things you should know. First, generating LOD is <b>not</b> a requirement, but it will add detail in the distance by improving terrain geometry and the amount of things that have LOD, thanks to the resource mods listed below. It becomes a requirement if you installed texture mods that affect objects in LOD or terrain, or if you are using a mod that requires LOD to be generated because of terrain edits. Terrain LOD creates a much larger file size and will increase the amount of time it takes to run xLODGen. This guide does not need new terrain LOD, so only object LOD will be generated. If you need new terrain LOD the instructions will be the exact same except enabling <b>Terrain LOD</b> option in addition to the <b>Object LOD</b> option.</p>
             <p>
                 <a>
                     <h2 id="installingXlodgen">Installing xLODGen</h2>
                 </a>
+            </p>
             <ol>
                 <li>Download the latest <strong>xLODGen</strong> file from <a href="https://stepmodifications.org/forum/topic/13451-xlodgen-terrain-lod-beta-94-for-fnv-fo3-fo4-fo4vr-tes5-sse-tes5vr-enderal-enderalse/" target="_blank">here</a>.</li>
                 <li>Once the download has finished, extract the contents of the archive to any location of your choice.</li>
@@ -182,13 +195,12 @@
             <ol start="7">
                 <li>Select <strong>Apply</strong> then <strong>OK</strong>.</li>
             </ol>
-            </p>
             <p>
                 <a>
                     <h2 id="ini_tweaks">INI Tweaks</h2>
                 </a>
-            <p>
-                This will increase the LOD draw distance.
+            </p>
+            This will increase the LOD draw distance.
             <ol>
                 <li>Make sure the <strong>Viva New Vegas</strong> profile is active.</li>
                 <li>Click the <img src="./img/mo2 ini.webp" alt="MO2 INI button"> button at the top of MO2 and select <strong>INI Editor</strong>. </li>
@@ -199,15 +211,20 @@
                 <li>Paste in the following at the end of the file:</li>
                 <textarea readonly="readonly" style="height: 5em; width: 95%;" onclick="this.focus();this.select()">
 [TerrainManager]
+; Increases the maximum distance of LOD
 fBlockLoadDistanceLow=100000
 fBlockLoadDistance=250000
-</textarea>
+
+[SpeedTree]
+; Makes flora use the full objects instead of LOD, this negates pop-in
+bForceFullLOD=1
+                </textarea>
             </ol>
-            </p>
             <p>
                 <a>
                     <h2 id="installingResources">Installing Resources</h2>
                 </a>
+            </p>
             <ul>
                 <li><a href="https://www.nexusmods.com/newvegas/mods/58562" target="_blank">FNVLODGen Resources</a> - <strong>Main Files - FNVLODGen Resources</strong>
                 </li>
@@ -220,11 +237,11 @@ fBlockLoadDistance=250000
                 <li><a href="https://www.nexusmods.com/newvegas/mods/70155" target="_blank">TCM's LOD Overhaul</a> - <strong>Main Files - TCM's LOD Overhaul</strong>
                 </li>
             </ul>
-            </p>
             <p>
                 <a>
                     <h2 id="generatingLod">Generating the LOD</h2>
                 </a>
+            </p>
             <ol>
                 <li>Select xLODGen from the executables drop-down in the top right of MO2 and click <b>Run</b>.</li>
                 <li>Once the program has loaded, right-click in the left pane and click <strong>Select All</strong>.</li>
@@ -236,30 +253,28 @@ fBlockLoadDistance=250000
                 <li>Click <strong>Generate</strong>.</li>
                 <li>When complete, the log will stop and at the end you will see a message saying "LOD generation complete", you can now close xLODGen.</li>
             </ol>
-            </p>
             <p>
                 <a>
                     <h2 id="installingLod">Installing the LOD</h2>
                 </a>
+            </p>
             <ol>
                 <li>In MO2, right-click on the <i>Overwrite</i> folder at the bottom of the left pane and select <strong>All Mods -> Create empty mod above</strong>.</li>
                 <li>Title the mod <strong>FNVLODGen Output</strong>.</li>
                 <li>Navigate to where the LOD files were generated and select both the <code>textures</code> and <code>meshes</code> folders. </li>
                 <li>Cut them to the <strong>FNVLODGen Output</strong> mod you just created (Right-click on the mod and select <b>Open in Explorer)</b>.</li>
             </ol>
-            </p>
         </div>
+
+        <!-- Arrows -->
         <div>
-            <p>
-                <hr>
-                <a href="./resources.html" id="previous" rel="prev"><img class="navigationArrow left mirror" src="./img/arrow.webp" alt="Back Arrow"></a>
-            </p>
+            <hr>
+            <a href="./resources.html" id="previous" rel="prev"><img class="navigationArrow left mirror" src="./img/arrow.webp" alt="Back Arrow"></a>
         </div>
-        </p>
     </div>
+
     <!-- Right Sidebar -->
     <div id="sidenavRight">
-        <p>
         <ul>
             <li>
                 <a href="#installingXlodgen">Installing xLODGen</a>
@@ -277,7 +292,6 @@ fBlockLoadDistance=250000
                 <a href="#installingLod">Installing the LOD</a>
             </li>
         </ul>
-        </p>
     </div>
 </body>
 
