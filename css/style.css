@@ -50,7 +50,7 @@ b {
 }
 
 strong {
-  color: rgb(250, 173, 121);
+  color: #faad79;
 }
 
 code {
@@ -459,7 +459,7 @@ img {
 blockquote {
   background-color: rgb(52, 52, 52);
   font-size: 1.05em;
-  border-left: 0.5em solid rgb(236, 150, 37);
+  border-left: 0.5em solid #ec9625;
   padding: 0.5em 0.75em;
   line-height: 1.4em;
   border-radius: 4pt;
@@ -490,7 +490,7 @@ h2 {
 }
 
 .install {
-  color: rgb(252, 183, 46);
+  color: #fcb72e;
   font-size: 1.5em;
 }
 
