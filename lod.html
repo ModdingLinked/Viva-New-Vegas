@@ -176,7 +176,8 @@
     <div class="content">
         <div class="section">
             <h1>LOD Guide</h1>
-            <p>Before getting started, there are a few things you should know. First, generating LOD is <b>not</b> a requirement, but it will add detail in the distance by improving terrain geometry and the amount of things that have LOD, thanks to the resource mods listed below. It becomes a requirement if you installed texture mods that affect objects in LOD or terrain, or if you are using a mod that requires LOD to be generated because of terrain edits. Terrain LOD creates a much larger file size and will increase the amount of time it takes to run xLODGen. This guide does not need new terrain LOD, so only object LOD will be generated. If you need new terrain LOD the instructions will be the exact same except enabling <b>Terrain LOD</b> option in addition to the <b>Object LOD</b> option.</p>
+            <p>Generating LOD is <b>not</b> a requirement, but it will add detail in the distance by improving terrain geometry/textures and the amount of objects that have LOD while also making all LOD match your modded textures. This will also allow mods that edit the game's landscape to have LOD to reflect their changes. Terrain LOD creates a much larger file size and will take longer to generate.</p>
+            <blockquote>Viva New Vegas (even with VNV Extended) does not need new terrain LOD, but this guide will explain both the object and terrain LOD generation to account for custom modlists and Tale of Two Wastelands users.</blockquote>
             <p>
                 <a>
                     <h2 id="installingXlodgen">Installing xLODGen</h2>
@@ -189,9 +190,9 @@
                 <li>Click the <strong style="color:rgb(20, 162, 228)">+</strong> at the top of the window and the select <strong>Add from file...</strong>
                 </li>
                 <li>From the pop-up, navigate to where xLODGen is installed and select <strong>xLODGen.exe</strong>.</li>
-                <li>In the <b>Arguments</b> box in the right pane, enter <code>-FNV -O:"C:\Output\"</code></li>
+                <li>In the <b>Arguments</b> box in the right pane, enter <code>-FNV -O:"C:\Output"</code></li>
             </ol>
-            <blockquote>This argument will make the files generated through xLODGen appear in a folder called <b>Output</b> on your <b>C:\</b> drive (the drive Windows is installed on). You can change this path to whatever you would like if you would prefer the files to be generated elsewhere (Not a UAC protected folder or the game folder).</blockquote>
+            <blockquote>This argument will make the files generated through xLODGen appear in a folder called <b>Output</b> on your <b>C</b> drive (the drive Windows is installed on). You can change this path to whatever you would like if you would prefer the files to be generated elsewhere (do not use a UAC protected folder or the game folder).</blockquote>
             <ol start="7">
                 <li>Select <strong>Apply</strong> then <strong>OK</strong>.</li>
             </ol>
@@ -226,17 +227,13 @@ bForceFullLOD=1
                 </a>
             </p>
             <ul>
-                <li><a href="https://www.nexusmods.com/newvegas/mods/58562" target="_blank">FNVLODGen Resources</a> - <strong>Main Files - FNVLODGen Resources</strong>
-                </li>
-                <ul>
-                    <li>If you are using NMCs Texture Pack, also install the <strong>Optional Files - NMC LOD texture fix</strong> file.</li>
-                </ul>
+                <li><a href="https://www.nexusmods.com/newvegas/mods/58562" target="_blank">FNVLODGen Resources</a> - <strong>Main Files - FNVLODGen Resources</strong></li>
                 <li><a href="https://www.nexusmods.com/newvegas/mods/61206" target="_blank">LOD Additions and Improvements</a> - <strong>Main Files - LODadditions</strong></li>
-                <li>Only if you use NMCs Texture Pack: <a href="https://www.nexusmods.com/newvegas/mods/64805" target="_blank">Much Needed LOD</a> - JUST the <strong>Optional Files - Much Needed LOD - NMC Patch</strong>.</li>
-                <li><a href="https://www.nexusmods.com/newvegas/mods/64698" target="_blank">LOD Texture Patches</a> - <strong>Main Files - NMC LOD Patch</strong> and/or <strong>Main Files - Poco-Ojo LOD Texture Patch</strong> (Depending on which texture mods you are using.) </li>
-                <li><a href="https://www.nexusmods.com/newvegas/mods/70155" target="_blank">TCM's LOD Overhaul</a> - <strong>Main Files - TCM's LOD Overhaul</strong>
-                </li>
+                <li>Only if you use NMCs Texture Pack: <a href="https://www.nexusmods.com/newvegas/mods/64805" target="_blank">Much Needed LOD</a> - Only the <strong>Optional Files - Much Needed LOD - NMC Patch</strong></li>
+                <li><a href="https://www.nexusmods.com/newvegas/mods/64698" target="_blank">LOD Texture Patches</a> - <strong>Main Files - NMC LOD Patch</strong> and/or <strong>Main Files - Poco-Ojo LOD Texture Patch</strong> (based on which you are using)</li>
+                <li><a href="https://www.nexusmods.com/newvegas/mods/70155" target="_blank">TCM's LOD Overhaul</a> - <strong>Main Files - TCM's LOD Overhaul</strong></li>
             </ul>
+            <blockquote>Add <a href="https://www.nexusmods.com/newvegas/mods/77945" target="_blank">LOD Additions - TTW Patch</a> and <a href="https://www.nexusmods.com/newvegas/mods/79734" target="_blank">Wasted LOD - Cliffs of DC</a> if you are modding Tale of Two Wastelands.</blockquote>
             <p>
                 <a>
                     <h2 id="generatingLod">Generating the LOD</h2>
@@ -245,14 +242,43 @@ bForceFullLOD=1
             <ol>
                 <li>Select xLODGen from the executables drop-down in the top right of MO2 and click <b>Run</b>.</li>
                 <li>Once the program has loaded, right-click in the left pane and click <strong>Select All</strong>.</li>
-                <li>In the right pane, check <strong>Objects LOD</strong> but leave <strong>Trees LOD</strong> unchecked. </li>
+                <li>In the right pane, check <strong>Objects LOD</strong> but leave <strong>Trees LOD</strong> unchecked.</li>
+                <li>Under the <strong>Objects LOD</strong> section, change the <strong>Atlas size</strong> option to <b>8192</b> x <b>8192</b> and <strong>Max texture size</strong> to <b>2048</b>.</li>
             </ol>
             <blockquote>Tree LOD is not functional in New Vegas. LOD for trees is covered in Object LOD.</blockquote>
-            <ol start="4">
-                <li>Under the <strong>Objects LOD</strong> section, change the <strong>Atlas size</strong> option to <strong>8192 </strong> x <strong>8192</strong>. </li>
+            <ol>
+                <h3>If you want to generate new terrain LOD:</h3>
+                <ol>
+                    <li>In the right pane, check <strong>Terrain LOD</strong>.</li>
+                    <li>Under <b>Settings for LOD4</b>, enable <strong>Protect Borders</strong> and set both <strong>Size</strong> options from <b>256</b> to <b>512</b>.</li>
+                    <li>Enable <strong>Bake normal-maps</strong> (in the bottom left).</li>
+                    <li>On <b>all</b> levels, enable <strong>MipMap</strong> for both the diffuse and normal maps.</li>
+                    <li>Set the following <strong>Quality</strong> for each level:
+                        <ul>
+                            <li>LOD4: 5</li>
+                            <li>LOD4: 10</li>
+                            <li>LOD4: 15</li>
+                            <li>LOD4: 20</li>
+                        </ul>
+                    </li>
+                </ol>
+            </ol>
+            <ol start="5">
                 <li>Click <strong>Generate</strong>.</li>
                 <li>When complete, the log will stop and at the end you will see a message saying "LOD generation complete", you can now close xLODGen.</li>
             </ol>
+            <blockquote>
+                <h2 id="settingsDetails">What The Settings Mean</h2>
+                <ul>
+                    <li><strong>Atlas size:</strong> The <a href="https://en.wikipedia.org/wiki/Texture_atlas" target="_blank">atlas</a> is what contains all textures for the <b>Object LOD</b> meshes, increasing its size means that you can run higher resolution textures on that atlas, keep in mind that the tool will create this atlas with just the resolution it ends up needing (e.g. if you only need 1024x512 for your atlas, that will be the final resolution of it, what we set is simply the max allowed).</li>
+                    <li><strong>Max texture size:</strong> object textures above this resolution will not be allowed on the atlas, we increase this to make sure everything makes it there.</li>
+                    <li><strong>Protect borders:</strong> Prevents the ugly terrain drops at the cell borders.</li>
+                    <li><strong>Size:</strong> As a result of using <a href="https://en.wikipedia.org/wiki/Mipmap" target="_blank">mipmaps</a>, the benefit of high terrain LOD resolutions will be miniscule, 512 on LOD4 and 256 on the next levels will suffice.</li>
+                    <li><strong>Bake normal-maps:</strong> Roughens the terrain LOD texture to match the actual terrain's normal map.</li>
+                    <li><strong>Mipmap:</strong> Mipmapping textures prevents pixel crawling artifacts at a minor VRAM and storage utilization cost.</li>
+                    <li><strong>Quality:</strong> This controls the amount of detail in the LOD's geometry. Lower values have more detail and have a minor performance cost because of the tri-count.</li>
+                </ul>
+            </blockquote>
             <p>
                 <a>
                     <h2 id="installingLod">Installing the LOD</h2>
