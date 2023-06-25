@@ -177,7 +177,7 @@
         <div class="section">
             <h1>LOD Guide</h1>
             <p>Generating LOD is <b>not</b> a requirement, but it will add detail in the distance by improving terrain geometry/textures and the amount of objects that have LOD while also making all LOD match your modded textures. This will also allow mods that edit the game's landscape to have LOD to reflect their changes. Terrain LOD creates a much larger file size and will take longer to generate.</p>
-            <blockquote>Viva New Vegas (even with VNV Extended) does not need new terrain LOD, but this guide will explain both the object and terrain LOD generation to account for custom modlists and Tale of Two Wastelands users.</blockquote>
+            <blockquote>Viva New Vegas (even with VNV Extended) does not need new terrain LOD, but this guide will explain both the object and terrain LOD generation to account for custom modlists. Extra resources for Tale of Two Wastelands users are included.</blockquote>
             <p>
                 <a>
                     <h2 id="installingXlodgen">Installing xLODGen</h2>
@@ -275,7 +275,7 @@ bForceFullLOD=1
                     <li><strong>Protect borders:</strong> Prevents the ugly terrain drops at the cell borders.</li>
                     <li><strong>Size:</strong> As a result of using <a href="https://en.wikipedia.org/wiki/Mipmap" target="_blank">mipmaps</a>, the benefit of high terrain LOD resolutions will be miniscule, 512 on LOD4 and 256 on the next levels will suffice.</li>
                     <li><strong>Bake normal-maps:</strong> Roughens the terrain LOD texture to match the actual terrain's normal map.</li>
-                    <li><strong>Mipmap:</strong> Mipmapping textures prevents pixel crawling artifacts at a minor VRAM and storage utilization cost.</li>
+                    <li><strong>Mipmap:</strong> Mipmapping textures prevents <a href="https://en.wikipedia.org/wiki/Mipmap#/media/File:Mipmap_Aliasing_Comparison.png" target="_blank">pixel crawling artifacts</a> at a minor VRAM and storage utilization cost.</li>
                     <li><strong>Quality:</strong> This controls the amount of detail in the LOD's geometry. Lower values have more detail and have a minor performance cost because of the tri-count.</li>
                 </ul>
             </blockquote>
