@@ -13,7 +13,7 @@
     <script src="javascript.js"></script>
     <title>LOD Guide | Viva New Vegas</title>
     <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, Oblivion, TESIV, TES4, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack, xLODGen, LOD Guide, Generating LOD, LODGen, Distant Objects">
-    <meta name="description" content="Guide on how to generate Object LOD with xLODgen.">
+    <meta name="description" content="Guide on how to generate Object LOD with FNVLODgen.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
     <meta property="og:site_name" content="ModdingLinked">
@@ -21,7 +21,7 @@
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://vivanewvegas.moddinglinked.com">
     <meta property="og:image" content="https://vivanewvegas.moddinglinked.com/img/card.webp">
-    <meta property="og:description" content="Guide on how to generate LOD with xLODgen.">
+    <meta property="og:description" content="Guide on how to generate LOD with FNVLODgen.">
 </head>
 
 <body>
@@ -52,7 +52,7 @@
                     <a href="./intro.html">Introduction</a>
                 </li>
                 <li>
-                    <a href="./setup.html">Initial Setup</a>
+                    <a href="./setup.html">Setup</a>
                 </li>
                 <li>
                     <a href="./mo2.html">MO2</a>
@@ -187,8 +187,7 @@
                 <li>Download the latest <strong>xLODGen</strong> file from <a href="https://stepmodifications.org/forum/topic/13451-xlodgen-terrain-lod-beta-94-for-fnv-fo3-fo4-fo4vr-tes5-sse-tes5vr-enderal-enderalse/" target="_blank">here</a>.</li>
                 <li>Once the download has finished, extract the contents of the archive to any location of your choice (do not use a UAC protected folder or the game folder).</li>
                 <li>In MO2, select the <img src="./img/mo2 executabes.webp" alt="MO2 executables"> button at the top of MO2 to open the executables menu.</li>
-                <li>Click the <strong style="color:rgb(20, 162, 228)">+</strong> at the top of the window and the select <strong>Add from file...</strong>
-                </li>
+                <li>Click the <strong style="color:rgb(20, 162, 228)">+</strong> at the top of the window and the select <strong>Add from file...</strong></li>
                 <li>From the pop-up, navigate to where xLODGen is installed and select <strong>xLODGen.exe</strong>.</li>
                 <li>In the <b>Arguments</b> box in the right pane, enter <code>-FNV -O:"C:\Output"</code></li>
             </ol>
@@ -221,14 +220,14 @@ fBlockLoadDistance=250000
 bForceFullLOD=1
                 </textarea>
             </ol>
-            <h2>Creating a Separator in MO2</h2>
+            <h2>Creating a Separator in MO2.</h2>
             <ol>
                 <li>Right-click the empty space in the left pane of MO2 and select <strong>Create Separator</strong>.</li>
                 <li>Name the separator <strong>LOD</strong>.</li>
             </ol>
             <p>
                 <a>
-                    <h2 id="installingResources">Installing Resources</h2>
+                    <h2 id="installingResources">Installing LOD Resources</h2>
                 </a>
             </p>
             <ul>
@@ -284,13 +283,13 @@ bForceFullLOD=1
             <blockquote>
                 <h2 id="settingsDetails">What The Settings Mean</h2>
                 <ul>
-                    <li><strong>Atlas size:</strong> The <a href="https://en.wikipedia.org/wiki/Texture_atlas" target="_blank">atlas</a> is what contains all textures for the <b>Object LOD</b> meshes, increasing its size means that you can have more textures on the atlas (from the new resources) and they could also be higher resolution, keep in mind that the tool will create this atlas with just the resolution it ends up needing (e.g. if you only need 1024x512 for your atlas, that will be the final resolution of it, what we set is simply the max allowed).</li>
-                    <li><strong>Max texture size:</strong> Object textures above this resolution will not be allowed on the atlas, we increase this to make sure everything makes it there.</li>
-                    <li><strong>Protect borders:</strong> Prevents the ugly terrain drops at the cell borders.</li>
-                    <li><strong>Size:</strong> As a result of using <a href="https://en.wikipedia.org/wiki/Mipmap" target="_blank">mipmaps</a>, the benefit of high terrain LOD resolutions will be miniscule, 512 on LOD4 and 256 on the next levels will suffice.</li>
-                    <li><strong>Bake normal-maps:</strong> Roughens the terrain LOD texture to match the actual terrain's normal map.</li>
-                    <li><strong>Mipmap:</strong> Mipmapping textures prevents <a href="https://en.wikipedia.org/wiki/Mipmap#/media/File:Mipmap_Aliasing_Comparison.png" target="_blank">pixel crawling artifacts</a> at a minor VRAM and storage utilization cost.</li>
-                    <li><strong>Quality:</strong> This controls the amount of detail in the LOD's geometry. Lower values have more detail and have a minor performance cost because of the tri-count.</li>
+                    <li><strong>Atlas size</strong>: The <a href="https://en.wikipedia.org/wiki/Texture_atlas" target="_blank">atlas</a> is what contains all textures for the <b>Object LOD</b> meshes, increasing its size means that you can have more textures on the atlas (from the new resources) and they could also be higher resolution, keep in mind that the tool will create this atlas with just the resolution it ends up needing (e.g. if you only need 1024x512 for your atlas, that will be the final resolution of it, what we set is simply the max allowed).</li>
+                    <li><strong>Max texture size</strong>: Object textures above this resolution will not be allowed on the atlas, we increase this to make sure everything makes it there.</li>
+                    <li><strong>Protect borders</strong>: Prevents the ugly terrain drops at the cell borders.</li>
+                    <li><strong>Size</strong>: As a result of using <a href="https://en.wikipedia.org/wiki/Mipmap" target="_blank">mipmaps</a>, the benefit of high terrain LOD resolutions will be miniscule, 512 on LOD4 and 256 on the next levels will suffice.</li>
+                    <li><strong>Bake normal-maps</strong>: Roughens the terrain LOD texture to match the actual terrain's normal map.</li>
+                    <li><strong>Mipmap</strong>: Mipmapping textures prevents <a href="https://en.wikipedia.org/wiki/Mipmap#/media/File:Mipmap_Aliasing_Comparison.png" target="_blank">pixel crawling artifacts</a> at a minor VRAM and storage utilization cost.</li>
+                    <li><strong>Quality</strong>: This controls the amount of detail in the LOD's geometry. Lower values have more detail and have a minor performance cost because of the tri-count.</li>
                 </ul>
             </blockquote>
             <p>
@@ -301,7 +300,7 @@ bForceFullLOD=1
             <ol>
                 <li>In MO2, right-click on the <i>Overwrite</i> folder at the bottom of the left pane and select <strong>All Mods -> Create empty mod above</strong>.</li>
                 <li>Title the mod <strong>FNVLODGen Output</strong>.</li>
-                <li>Navigate to where the LOD files were generated and select both the <code>textures</code> and <code>meshes</code> folders. </li>
+                <li>Navigate to where the LOD files were generated and select both the <code>textures</code> and <code>meshes</code> folders.</li>
                 <li>Cut them to the <strong>FNVLODGen Output</strong> mod you just created (right-click on the mod and select <b>Open in Explorer)</b>.</li>
                 <li>If you are using <a href="./bugfix.html#aqua" target="_blank">Strip Performance Fix</a> <b>and</b> you generated terrain LOD, move Strip Performance Fix <b>below</b> your FNVLODGen Output.</li>
             </ol>

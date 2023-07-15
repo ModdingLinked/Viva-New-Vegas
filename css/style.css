@@ -159,7 +159,7 @@ img {
 
 .section ul,
 .section ol {
-  color: #dcdcdc;
+  color: #DCDCDC;
   line-height: 2em;
 }
 
@@ -484,7 +484,7 @@ h1 {
 }
 
 h2 {
-  color: #dcdcdc;
+  color: #DCDCDC;
   font-size: 1.8em;
   word-wrap: break-word;
 }

@@ -52,7 +52,7 @@
                     <a href="./intro.html">Introduction</a>
                 </li>
                 <li>
-                    <a href="./setup.html">Initial Setup</span></a>
+                    <a href="./setup.html">Setup</a>
                 </li>
                 <li>
                     <a href="./mo2.html" class="active">MO2</a>
@@ -116,10 +116,20 @@
         <!-- Guide Links -->
         <div class="guideLinks">
             <hr>
-            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-            <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
-            <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Skyrim Special Edition</a>
-            <a href="https://gloryofcyrodiil.moddinglinked.com" target="_blank" rel="nofollow">Oblivion</a>
+            <ul>
+                <li>
+                    <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                </li>
+                <li>
+                    <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+                </li>
+                <li>
+                    <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Skyrim Special Edition</a>
+                </li>
+                <li>
+                    <a href="https://gloryofcyrodiil.moddinglinked.com" target="_blank" rel="nofollow">Oblivion</a>
+                </li>
+            </ul>
         </div>
 
         <!-- Footer -->
@@ -178,10 +188,10 @@
                 </a>
             </p>
 
-            <!-- Initial Setup -->
+            <!-- MO2 Setup -->
             <p>
-                <a href="#initialSetup">
-                    <h3 id="initialSetup">Initial Setup</h3>
+                <a href="#mo2Setup">
+                    <h3 id="mo2Setup">MO2 Setup</h3>
                 </a>
             </p>
             <ol>
@@ -214,7 +224,7 @@
                 <img src="./img/mo2 plugin order.webp" alt="Order of DLCs">
                 <li>If there is a plugin called <strong>FalloutNV_lang.esp</strong> in the right pane, navigate to the game's <strong>Data</strong> folder and delete it.</li>
                 <ul>
-                    <li>If you do not know what the game's <strong>Data</strong> folder is, read the Key Terminology section from the <a class="sublink" href="./setup.html#terms" target="_blank">Initial Setup</a> page.</li>
+                    <li>If you do not know what the game's <strong>Data</strong> folder is, read the Key Terminology section from the <a class="sublink" href="./setup.html#terms" target="_blank">Setup</a> page.</li>
                 </ul>
             </ol>
             <blockquote>The translation plugin must be deleted because it directly edits thousands of records to change the language, which will cause many incompatibilities with most mods. Because of conflicts like this, the guide unfortunately only supports the English version of the game.</blockquote>
@@ -228,10 +238,7 @@
             <ol>
                 <li>Select the <strong>X</strong> in the bottom right of MO2 to close the log window.</li>
                 <li>Select the <img src="./img/mo2 settings.webp" alt="MO2 settings"> button at the top of MO2 to open the settings.</li>
-                <li>In the <strong>Theme</strong> tab, you can select a different style from the drop-down menu at the top. </li>
-                <ul>
-                    <li>I use the <strong>1809 Dark Mode</strong> theme.</li>
-                </ul>
+                <li>In the <strong>Theme</strong> tab, you can select a different style of your choosing from the drop-down menu at the top.</li>
                 <li>In the <strong>Nexus</strong> tab, select <strong>Connect to Nexus</strong>.</li>
                 <img src="./img/mo2 connect.webp" alt="Connect to Nexus">
                 <ul>
@@ -248,14 +255,14 @@
                     <h2 id="profiles">Creating Profiles</h2>
                 </a>
             </p>
-            Mod Organizer 2's "Profiles" feature allows for easy switching between different mod configurations. In this step, we will create a profile for the guide while keeping a strictly-vanilla profile for testing/de-bugging. Profiles can be selected via the drop-down menu above the left pane.
+            Mod Organizer 2's "Profiles" feature allows for easy switching between different modlist and load order configurations. In this step, we will create a profile for the guide while keeping a strictly-vanilla profile for testing/de-bugging. Profiles can be selected via the drop-down menu above the left pane.
             <ol>
                 <li>Select the <img src="./img/mo2 profiles.webp" alt="MO2 profiles"> button at the top of MO2 to open the profiles menu.</li>
                 <li>Select the <strong>Default</strong> profile, then select <strong>Copy</strong>.</li>
                 <li>Name the new profile <strong>Viva New Vegas</strong>.</li>
                 <li>Select the <strong>Viva New Vegas</strong> profile and make sure both <strong>Use profile-specific Game INI Files</strong> and <strong>Automatic Archive Invalidation</strong> are enabled at the bottom.</li>
             </ol>
-            <blockquote>You may get a pop-up called <strong>INI file is read-only</strong> when attempting to make/select a new profile. If so then select <strong>Remember my choice</strong> from the drop-down at the bottom then click <strong>Clear the read-only flag.</strong></blockquote>
+            <blockquote>You may get a pop-up called <strong>INI file is read-only</strong> when attempting to make/select a new profile. If so then select <strong>Remember my choice</strong> from the drop-down at the bottom then click <strong>Clear the read-only flag</strong>.</blockquote>
             <ol start="5">
                 <li>Exit out of the profiles menu and select the <strong>Viva New Vegas</strong> profile from the drop-down above the left pane.</li>
                 <img src="./img/mo2 profile select.webp" alt="Profile selection">
@@ -267,7 +274,11 @@
                     <h2 id="installationInstructions">Mod Installation Instructions</h2>
                 </a>
             </p>
+            <blockquote>
+                If a mod is tagged <strong class="performance"></strong> it means that the mod may be performance intensive on lower-end systems. It can be skipped without any problems.
+            </blockquote>
             When the guide says to install a mod, it will be formatted as follows: <strong>Main File - Example 1.5</strong>. This is referring to the mod's category on Nexus and file name.
+            <br>
             The guide will list a mod's specific file name, category, and version if you need to do more than just download the latest main file.
             <br>
             <br>
@@ -291,6 +302,7 @@
                 <li>Finish the install as you would with a <strong>Mod Manager Download</strong> mod.</li>
             </ol>
             When downloading multiple files from the same page, you will be prompted with a box in Mod Organizer 2 with the options <strong>Merge</strong>, <strong>Replace</strong>, and <strong>Rename</strong>.
+            <br>
             <ul>
                 <li>You should select the <strong>Rename</strong> option and rename the mod to its respective file name, this will make MO2 install them as separate files for easier management.</li>
                 <li>If you are updating from an old version of a mod, you should select <strong>Replace</strong>, this will automatically delete all the files from the old version of the mod and replace them with the ones from the new version.</li>
@@ -301,7 +313,7 @@
         <!-- Arrows -->
         <div>
             <hr>
-            <a href="./setup.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/arrow.webp" alt="Back Arrow"><span class="arrowText left">Initial Setup</span></a>
+            <a href="./setup.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/arrow.webp" alt="Back Arrow"><span class="arrowText left">Setup</span></a>
             <a href="./utilities.html" id="next" rel="next" class="navigationArrow"><img class="right" src="./img/arrow.webp" alt="Forward Arrow"><span class="arrowText right">Utilities</span></a>
         </div>
     </div>
@@ -317,7 +329,7 @@
             </li>
             <ul>
                 <li>
-                    <a href="#initialSetup">Initial Setup</a>
+                    <a href="#mo2Setup">MO2 Setup</a>
                 </li>
                 <li>
                     <a href="#plugins">Setting Up Plugins</a>

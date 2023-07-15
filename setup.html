@@ -11,7 +11,7 @@
     <link rel="canonical" href="https://vivanewvegas.moddinglinked.com">
     <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
     <script src="javascript.js"></script>
-    <title>Initial Setup | Viva New Vegas</title>
+    <title>Setup | Viva New Vegas</title>
     <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, Oblivion, TESIV, TES4, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
     <meta name="description" content="Clean install and initial launch of the vanilla game.">
     <meta http-equiv='content-language' content='en-us'>
@@ -52,7 +52,7 @@
                     <a href="./intro.html">Introduction</a>
                 </li>
                 <li>
-                    <a href="./setup.html" class="active">Initial Setup</a>
+                    <a href="./setup.html" class="active">Setup</a>
                 </li>
                 <li>
                     <a href="./mo2.html">MO2</a>
@@ -167,20 +167,29 @@
 
         <!-- Introduction -->
         <div class="section">
-            <h1>Initial Setup</h1>
+            <h1>Setup</h1>
             <h3>In this step, we will do a clean installation and configuration of the game, which is required for the guide.</h3>
+            <blockquote>
+                If you run into any issues at any point in the guide, please be sure to check the <a href="./faq.html" target="_blank">FAQ.</a>
+                <br>
+                If your issue is not addressed there, join the <a href="https://discord.gg/moddinglinked-659108573485465620" target="_blank">Discord</a> for support.
+            </blockquote>
 
             <!-- Recommended Location -->
             <p>
                 <a href="#location">
-                    <h2 id="location">Recommended Installation Location</h2>
+                    <h2 id="location">Install Location</h2>
                 </a>
             </p>
             A clean installation is not only required to get rid of any potential leftover mod files, but also to make sure the game is installed in a safe location. Here is what you need to know when choosing where to install your game:
             <br>
-            <ul class="standard_ul">
-                <li><b>Avoid any default Windows folders:</b> This includes but is not limited to <code>C:\Program Files</code>, <code>C:\Program Files x86</code>, your <code>Desktop</code>, and your <code>Documents</code> folders. This is due to Windows UAC (or User Account Control), which heavily monitors and protects these folders. This can cause many issues with the game and any modding tools. An example of a safe location is <code>C:\Games\Steam</code>.</li>
-                <li><b>Install on an SSD if possible:</b> This will drastically reduce load times and decrease stuttering.</li>
+            <ul>
+                <li>
+                    <b>Avoid any default Windows folders:</b> This includes but is not limited to <code>C:\Program Files</code>, <code>C:\Program Files x86</code>, your <code>Desktop</code>, and your <code>Documents</code> folders. This is due to Windows UAC (or User Account Control), which heavily monitors and protects these folders. This can cause many issues with the game and any modding tools. An example of a safe location is <code>C:\Games\Steam</code>.
+                </li>
+                <li>
+                    <b>Install on an SSD if possible:</b> Having the game on an SSD will drastically improve load times and decrease stuttering.
+                </li>
             </ul>
 
             <!-- Uninstall -->
@@ -201,7 +210,7 @@
             <ol>
                 <li>Open Steam and go to your <strong>Library</strong>.</li>
                 <li>Find <strong>Fallout: New Vegas</strong> in the list.</li>
-                <li>Right-click on it and select <strong>Manage -> Uninstall</strong>.</li>
+                <li>Right-click on it and select <strong>Manage</strong> -> <strong>Uninstall</strong>.</li>
                 <li>Navigate to <code>Steam\steamapps\common\</code> and, if present, delete the <strong>Fallout New Vegas</strong> folder.</li>
                 <li>Navigate to <code>Documents\My Games</code> and delete the <strong>FalloutNV</strong> folder.</li>
             </ol>
@@ -218,7 +227,7 @@
                 <li>Right-click on it and select <strong>Manage Installation -> Uninstall</strong>.</li>
                 <li>Uninstall through GOG Galaxy.</li>
                 <ul>
-                    <li>If you used offline installers then run the <strong>unins000.exe</strong> file in the game's <strong>Root</strong> folder. </li>
+                    <li>If you used offline installers then run the <strong>unins000.exe</strong> file in the game's <strong>Root</strong> folder.</li>
                 </ul>
             </ol>
 
@@ -243,11 +252,11 @@
                 <li>Type the chosen path under <strong>Path</strong>, e.g. <code>C:\Games\Steam</code></li>
                 <li>Click <strong>Accept</strong> then <strong>Yes</strong> if prompted to create a new folder.</li>
                 <li>The tool will ask to exit, select <strong>OK</strong>.</li>
-                <img width="50%" src="./img/steamlibrarysetuptool.webp" alt="steam library setup tool">
+                <img width="50%" src="./img/steam library setup tool.webp" alt="Steam library setup tool">
                 <li>Open Steam and go to your <strong>Library</strong>.</li>
                 <li>Find <strong>Fallout: New Vegas</strong> in the list and select <strong>Install</strong>.</li>
-                <li>Under <strong>Choose location for install:</strong>, select the library folder created with the tool. </li>
-                <img size="60%" src="./img/steamlocationpicker.webp" alt="example steam install locations">
+                <li>Under <strong>Choose location for install</strong>:, select the library folder created with the tool.</li>
+                <img size="60%" src="./img/steam location picker.webp" alt="Example Steam install locations">
             </ol>
             <blockquote>If you still do not see your new library, restart your PC.</blockquote>
             <ol start="10">
@@ -265,7 +274,7 @@
                 <li>Find <strong>Fallout: New Vegas</strong> in the list and select <strong>Install</strong>.</li>
                 <li>Set the <strong>Install to</strong> location to a location of your choice.</li>
                 <ul>
-                    <li>It is recommended to install the game outside of any default Windows folders (e.g. <code>Program Files x86</code>). </li>
+                    <li>It is <strong>required</strong> to install the game outside of any default Windows folders (e.g., <code>Program Files x86</code>).</li>
                 </ul>
             </ol>
 
@@ -280,8 +289,9 @@
             <p>
                 <a href="#terms">
                     <h3 id="terms">Key Terminology</h3>
-                </a> Now that the game is installed, there are two folders from it that will be referred to in the guide often:
+                </a>
             </p>
+            Now that the game is installed, there are two folders from it that will be referred to in the guide often:
             <ul>
                 <li><b>Root</b> folder: Where the game is installed.</li>
                 <ul>
@@ -301,9 +311,9 @@
                     <h3 id="fileExtensions">Enabling File Extensions</h3>
                 </a>
             </p>
-            By default, Windows Explorer will not show file extensions (such as .exe, .dll, or .esp). These extensions are very important when going through the guide, so it is highly recommended to enable file extensions:
+            By default, File Explorer will not show file extensions (such as .exe, .dll, or .esp). These extensions are very important when going through the guide, so it is highly recommended to enable visible file extensions:
             <ol>
-                <li>Open Windows Explorer.</li>
+                <li>Open File Explorer.</li>
                 <li>Select the <strong>View</strong> tab at the top.</li>
                 <li>Enable <strong>File name extensions</strong> in the <strong>Show</strong> section.</li>
                 <img width="60%" src="./img/show file extensions.webp" alt="Show file extensions">
@@ -323,7 +333,7 @@
                 </ul>
                 <li>Select <strong>Options</strong> then select the <strong>Ultra</strong> preset option.</li>
                 <ul>
-                    <li> If you have a lower-end PC, or want to squeeze as much performance out of the game as possible, you can select the <strong>High</strong> preset instead. It offers pretty similar visual quality for a decent performance improvement, especially on older hardware. You can set it to an even lower preset if you want, but at that point you are only gaining diminishing returns on performance. Another great way to improve performance without drastically changing the game's visuals is by disabling shadows. New Vegas does not have real dynamic object shadows like in newer titles, only actor shadows. Despite having a minor visual improvement, they can have a large performance impact if there are many NPCs in one area. </li>
+                    <li> If you have a lower-end PC, or want to squeeze as much performance out of the game as possible, you can select the <strong>High</strong> preset instead. It offers pretty similar visual quality for a decent performance improvement, especially on older hardware. You can set it to an even lower preset if you want, but at that point you are only gaining diminishing returns on performance. Another great way to improve performance without drastically changing the game's visuals is by disabling shadows. New Vegas does not have real dynamic object shadows like in newer titles, only actor shadows. Despite having a minor visual improvement, they can have a large performance impact if there are many NPCs in one area.</li>
                 </ul>
                 <li>Set the <strong>Resolution</strong> option to your preference (the launcher usually does not set it to your monitor's max resolution).</li>
                 <li>Click <strong>OK</strong> then <strong>Exit</strong>.</li>
@@ -342,7 +352,7 @@
     <div id="sidenavRight">
         <ul>
             <li>
-                <a href="#location">Install location</a>
+                <a href="#location">Install Location</a>
             </li>
             <li>
                 <a href="#uninstall">Uninstall</a>

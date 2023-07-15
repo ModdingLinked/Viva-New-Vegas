@@ -52,7 +52,7 @@
                     <a href="./intro.html">Introduction</a>
                 </li>
                 <li>
-                    <a href="./setup.html">Initial Setup</a>
+                    <a href="./setup.html">Setup</a>
                 </li>
                 <li>
                     <a href="./mo2.html">MO2</a>
@@ -184,7 +184,7 @@
                 <li><b>Main Files - New Vegas Script Extender (NVSE)</b> (Manual Download).</li>
                 <li>From the downloaded archive, extract <strong>everything</strong> to the game's <strong>Root</strong> folder.</li>
             </ol>
-            <blockquote>If you do not know what the <strong>Root</strong> folder is, read the <strong>Key Terminology</strong> section from the <a href="./setup.html#terms" target="_blank">Initial Setup</a> page.</blockquote>
+            <blockquote>If you do not know what the <strong>Root</strong> folder is, read the <strong>Key Terminology</strong> section from the <a href="./setup.html#terms" target="_blank">Setup</a> page.</blockquote>
             <blockquote>Despite its name, <strong>nvse_steam_loader.dll</strong> <b>is still needed</b> with the GOG version of the game.</blockquote>
             An updated version of the original NVSE, which extends the scripting capabilities of the game.
             <blockquote>
@@ -330,7 +330,7 @@
             <!-- kNVSE -->
             <p>
                 <a class="link" href="https://www.nexusmods.com/newvegas/mods/71336" target="_blank">
-                    <h2 id="knvse">kNVSE Animation Plugin</h2>
+                    <h2 id="kNvse">kNVSE Animation Plugin</h2>
                 </a>
             </p>
             <h2 class="install">Installation instructions:</h2>
@@ -338,6 +338,18 @@
                 <li><b>Main Files - kNVSE</b></li>
             </ul>
             Resource for expanding and improving the game's limited animation system.
+
+            <!-- Improved Console -->
+            <p>
+                <a class="link" href="https://www.nexusmods.com/newvegas/mods/70801" target="_blank">
+                    <h2 id="improvedConsole">Improved Console (NVSE) </h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - Improved Console</b></li>
+            </ul>
+            Enhances the console's abilities to be able to execute and print results from all available script commands. Full scripting support inside console, including creating variables and evaluating NVSE expressions (arrays, strings) for easy mod development and prototyping. Mouse wheel scrolling included too.
 
             <!-- Console Paste -->
             <p>
@@ -351,10 +363,22 @@
             </ul>
             Adds Ctrl+V as a hotkey to paste into the in-game console, along with a few other helpful shortcuts.
 
+            <!-- Basic Console Autocomplete -->
+            <p>
+                <a class="link" href="https://www.nexusmods.com/newvegas/mods/82098" target="_blank">
+                    <h2 id="consoleComplete">Basic Console Autocomplete</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - Basic Console Autocomplete</b></li>
+            </ul>
+            Adds autocomplete and reverse searching to the game console.
+
             <!-- ShowOff -->
             <p>
                 <a class="link" href="https://www.nexusmods.com/newvegas/mods/72541" target="_blank">
-                    <h2 id="showoff">ShowOff NVSE</h2>
+                    <h2 id="showOff">ShowOff NVSE</h2>
                 </a>
             </p>
             <h2 class="install">Installation instructions:</h2>
@@ -373,15 +397,15 @@
             <ul>
                 <li><b>Main Files - UIO - User Interface Organizer</b></li>
             </ul>
-            Automatically ensures that multiple HUD extensions work together.
+            Automatically ensures that multiple HUD extensions work together, as well as fixing many bugs and improving performance.
 
             <!-- Custom INI -->
             <p>
-                <a>
+                <a href="#customIni">
                     <h2 id="customIni">Custom INI</h2>
                 </a>
             </p>
-            In this step we will take advantage of JIP LN NVSE's FalloutCustom.ini feature to improve performance and stability without affecting the main INIs
+            In this step we will take advantage of JIP LN NVSE's FalloutCustom.ini feature to improve performance and stability without affecting the main INIs.
             <ol>
                 <li>Make sure the <strong>Viva New Vegas</strong> profile is active.</li>
                 <li>Click the <img src="./img/mo2 ini.webp" alt="MO2 INI button"> button at the top of MO2 and select <strong>INI Editor</strong>.</li>
@@ -463,20 +487,20 @@ fLightEffectFadeDuration=400
                 <ul>
                     <li>If not, <a href="./utilities.html#xnvse">xNVSE</a> is installed incorrectly.</li>
                 </ul>
-                <li>Enter <code>GetIsLAA</code>, and the console should print <code>GetIsLAA >> 2</code></li>
+                <li>Next, enter <code>GetIsLAA</code>, and the console should print <code>GetIsLAA >> 2</code></li>
                 <ul>
                     <li>If it prints <code>>> 0</code>, then the <a href="./utilities.html#4gbPatcher">4GB Patch</a> was applied incorrectly.</li>
                     <li>If it prints an error message, then <a href="./utilities.html#jip">JIP LN NVSE</a> is installed incorrectly.</li>
                 </ul>
-                <li>Enter <code>GetINISetting "bUseThreadedAI:General"</code> and the console should print <code>INISetting bUseThreadedAI:General >> 1</code></li>
+                <li>Next, enter <code>GetINISetting "bUseThreadedAI:General"</code> and the console should print <code>INISetting bUseThreadedAI:General >> 1</code></li>
                 <ul>
                     <li>If not, then the <a href="./mo2.html#customIni" target="_blank">Tweaking FalloutCustom.ini</a> step was done incorrectly.</li>
                 </ul>
-                <li>Enter <code>IsDLLLoaded CrashLogger</code>, and the console should print <code>IsDLLLoaded "CrashLogger.dll" >> 1</code></li>
+                <li>Next, enter <code>IsDLLLoaded CrashLogger</code>, and the console should print <code>IsDLLLoaded "CrashLogger.dll" >> 1</code></li>
                 <ul>
                     <li>If not, then <a href="./utilities.html#cobb">Crash Logger</a> is installed incorrectly.</li>
                 </ul>
-                <li>Enter <code>IsDLLLoaded NVTF</code>, and the console should print <code>IsDLLLoaded "nvtf.dll" >> 1</code></li>
+                <li>Next, enter <code>IsDLLLoaded NVTF</code>, and the console should print <code>IsDLLLoaded "nvtf.dll" >> 1</code></li>
                 <ul>
                     <li>If not, then <a href="./utilities.html#nvtf">NVTF</a> is installed incorrectly.</li>
                 </ul>
@@ -529,13 +553,19 @@ fLightEffectFadeDuration=400
                 <a href="#limitFix">Mod Limit Fix</a>
             </li>
             <li>
-                <a href="#knvse">kNVSE</a>
+                <a href="#kNvse">kNVSE</a>
+            </li>
+            <li>
+                <a href="#improvedConsole">Improved Console</a>
             </li>
             <li>
                 <a href="#consolePaste">Console Paste</a>
             </li>
             <li>
-                <a href="#showoff">ShowOff</a>
+                <a href="#consoleComplete">Basic Console Autocomplete</a>
+            </li>
+            <li>
+                <a href="#showOff">ShowOff</a>
             </li>
             <li>
                 <a href="#uio">UIO</a>
