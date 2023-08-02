@@ -313,7 +313,7 @@
                 <li><a class="link" href="https://www.nexusmods.com/newvegas/mods/81231" target="_blank">Viva Default Preset</a></li>
             </ul>
             <blockquote>IMPORTANT: If you are running the game at higher than 1080p, install the <b>Texture Modding and High Res Preset</b> instead!</blockquote>
-            Works to fix micro-stuttering, improve performance, and allow playing at higher framerates.
+            Fixes micro-stuttering, performance and allows playing at higher framerates (below 300).
 
             <!-- MLF -->
             <p>
@@ -325,7 +325,7 @@
             <ul>
                 <li><b>Main Files - MLF</b></li>
             </ul>
-            Raises the game's file handles limit and improves performance/load times, even if you are far below it.
+            Raises the game's file handles limit and improves performance/loading times, even if you are far below it.
 
             <!-- kNVSE -->
             <p>
@@ -465,7 +465,7 @@ fGrassStartFadeDistance=11200
 fLightEffectFadeDuration=400
                 </textarea>
             </ol>
-            <blockquote>It is highly recommended to avoid changing any other INI settings not in the guide, and to avoid using tools like BethINI. You will realistically not need any other tweaks than the ones already in the guide.</blockquote>
+            <blockquote>It is highly recommended to avoid changing any other INI settings not in the guide and to avoid using tools like BethINI. You will realistically not need any other tweaks than the ones already in the guide.</blockquote>
 
             <!-- Testing -->
             <p>
@@ -485,11 +485,11 @@ fLightEffectFadeDuration=400
                 <ul>
                     <li>You will need to unplug/disconnect any controllers to be able to use the keyboard.</li>
                 </ul>
-                <li>Enter <code>GetNVSEVersion</code>, and the console should print <code>NVSE version: 6</code></li>
+                <li>Enter <code>GetNVSEVersion</code> and the console should print <code>NVSE version: 6</code></li>
                 <ul>
                     <li>If not, <a href="./utilities.html#xnvse">xNVSE</a> is installed incorrectly.</li>
                 </ul>
-                <li>Next, enter <code>GetIsLAA</code>, and the console should print <code>GetIsLAA >> 2</code></li>
+                <li>Next, enter <code>GetIsLAA</code> and the console should print <code>GetIsLAA >> 2</code></li>
                 <ul>
                     <li>If it prints <code>>> 0</code>, then the <a href="./utilities.html#4gbPatcher">4GB Patch</a> was applied incorrectly.</li>
                     <li>If it prints an error message, then <a href="./utilities.html#jip">JIP LN NVSE</a> is installed incorrectly.</li>
@@ -498,15 +498,15 @@ fLightEffectFadeDuration=400
                 <ul>
                     <li>If not, then the <a href="./mo2.html#customIni" target="_blank">Tweaking FalloutCustom.ini</a> step was done incorrectly.</li>
                 </ul>
-                <li>Next, enter <code>IsDLLLoaded CrashLogger</code>, and the console should print <code>IsDLLLoaded "CrashLogger.dll" >> 1</code></li>
+                <li>Next, enter <code>IsDLLLoaded CrashLogger</code> and the console should print <code>IsDLLLoaded "CrashLogger.dll" >> 1</code></li>
                 <ul>
                     <li>If not, then <a href="./utilities.html#cobb">Crash Logger</a> is installed incorrectly.</li>
                 </ul>
-                <li>Next, enter <code>IsDLLLoaded NVTF</code>, and the console should print <code>IsDLLLoaded "nvtf.dll" >> 1</code></li>
+                <li>Next, enter <code>IsDLLLoaded NVTF</code> and the console should print <code>IsDLLLoaded "nvtf.dll" >> 1</code></li>
                 <ul>
                     <li>If not, then <a href="./utilities.html#nvtf">NVTF</a> is installed incorrectly.</li>
                 </ul>
-                <li>Lastly, enter <code>IsDLLLoaded mlf</code>, and the console should print <code>IsDLLLoaded "mlf.dll" >> 1</code></li>
+                <li>Lastly, enter <code>IsDLLLoaded mlf</code> and the console should print <code>IsDLLLoaded "mlf.dll" >> 1</code></li>
                 <ul>
                     <li>If not, then <a href="./utilities.html#limitFix">Mod Limit Fix</a> is installed incorrectly.</li>
                 </ul>

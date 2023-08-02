@@ -2,6 +2,6 @@
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-informational.svg)](https://github.com/h5bp/html5-boilerplate/blob/master/LICENSE.txt)
 
-### A Comprehensive Fallout New Vegas Modding Guide
+### A Comprehensive Fallout New Vegas Modding Guide.
 
-Viva New Vegas is a comprehensive Fallout New Vegas modding guide for beginners and veterans alike. All instructions are written in great detail, with the more complex instructions having accompanying pictures. 24/7 support is also available on the [Discord](https://discord.com/invite/viva-new-vegas-659108573485465620). It is fully modular and comes with pre-made conflict resolution and load order. All mods have been carefully picked out to avoid old, inefficient, or broken popular mods. This guide will provide you with the most stable experience possible, along with adding/reworking amazing content/mechanics.
+Viva New Vegas is a modding guide for Fallout New Vegas that will carefully walk you through how to install all the mods you will need for a perfectly stable, smooth and enjoyable experience. The guide is highly accessible for everyone, no matter your modding experience. It is still incredibly important that you read all the instructions very carefully, even if you believe you are experienced enough to skip them. There are many small instructions that are vital for your game to function, and could be easily missed if you aren't careful. Although you don't need any modding experience to use this guide, it is expected for you to be relatively experienced with operating a computer in general.
