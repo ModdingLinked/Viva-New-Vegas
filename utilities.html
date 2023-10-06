@@ -470,7 +470,6 @@ fPipboy1stPersonFOV=47.0
 ; Forces faster cell unload to lessen memory usage
 bPreemptivelyUnloadCells=1
 ; Enables multithreaded AI
-bUseThreadedAI=1
 iNumHWThreads=3
 
 [Grass]
@@ -511,7 +510,7 @@ fLightEffectFadeDuration=400
                     <li>If it prints <code>>> 0</code>, then the <a href="./utilities.html#4gbPatcher">4GB Patch</a> was applied incorrectly.</li>
                     <li>If it prints an error message, then <a href="./utilities.html#jip">JIP LN NVSE</a> is installed incorrectly.</li>
                 </ul>
-                <li>Next, enter <code>GetINISetting "bUseThreadedAI:General"</code> and the console should print <code>INISetting bUseThreadedAI:General >> 1</code></li>
+                <li>Next, enter <code>GetINISetting "iNumHWThreads:General"</code> and the console should print <code>INISetting iNumHWThreads:General >> 3</code></li>
                 <ul>
                     <li>If not, then the <a href="./mo2.html#customIni" target="_blank">Tweaking FalloutCustom.ini</a> step was done incorrectly.</li>
                 </ul>
