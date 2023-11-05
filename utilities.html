@@ -189,14 +189,16 @@
                 <li><b>Main Files - New Vegas Script Extender (NVSE)</b> (Manual Download).</li>
                 <li>From the downloaded archive, extract <strong>everything</strong> to the game's <strong>Root</strong> folder.</li>
             </ol>
-            <blockquote>If you do not know what the <strong>Root</strong> folder is, read the <strong>Key Terminology</strong> section from the <a href="./setup.html#terms" target="_blank">Setup</a> page.</blockquote>
             <blockquote>Despite its name, <strong>nvse_steam_loader.dll</strong> <b>is still needed</b> with the GOG version of the game.</blockquote>
+            <blockquote>If you do not know what the <strong>Root</strong> folder is, read the <strong>Key Terminology</strong> section from the <a href="./setup.html#terms" target="_blank">Setup</a> page.</blockquote>
+            <ol start="3">
+                <li>
+                    After proper install, your <strong>Root Folder</strong> should look like this:
+                    <br>
+                    <img src="./img/root.webp" alt="Screenshot of the root folder showcasing correct xNVSE install" id="xnvseRoot">
+                </li>
+            </ol>
             An updated version of the original NVSE, which extends the scripting capabilities of the game.
-            <blockquote>
-                After proper install, your <strong>Root Folder</strong> should look like this:
-                <br>
-                <img src="./img/root.webp" alt="Screenshot of the root folder showcasing correct xNVSE install" id="xnvseRoot">
-            </blockquote>
 
             <!-- BSA -->
             <p>
@@ -247,8 +249,7 @@
                 <li>A command prompt window will open and should say <b>FalloutNV.exe patched!</b></li>
                 <li>Close the command prompt and a file named <strong>FalloutNV_backup.exe</strong> should appear in the game's <strong>Root</strong> folder.</li>
             </ol>
-            Makes the game large address aware, meaning it can use 4GB of RAM instead of 2GB.
-            <blockquote>From now on, you should run the game through the <strong>New Vegas</strong> option in MO2, rather than the <strong>NVSE</strong> option. This mod makes the game auto-load NVSE when you run the game through the default executable, which is generally the safer option.</blockquote>
+            Allows the game to use 4GB of RAM and makes the default executable auto-load NVSE, which is safer than using the NVSE executable.
 
             <!-- NVHR -->
             <p>
@@ -294,18 +295,6 @@
             </ul>
             Adds new script functions, features and engine bug fixes.
 
-            <!-- Crash Logger -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/82540" target="_blank">
-                    <h2 id="crashLog">Yvile's Crash Logger</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ol>
-                <li><b>Main Files - Crash Logger</b></li>
-            </ol>
-            A DLL that logs raw crash data.
-
             <!-- NVTF -->
             <p>
                 <a class="link" href="https://www.nexusmods.com/newvegas/mods/66537" target="_blank">
@@ -319,6 +308,18 @@
             </ul>
             <blockquote>IMPORTANT: If you are running the game at higher than 1080p, install the <b>Texture Modding and High Res Preset</b> instead!</blockquote>
             Fixes micro-stuttering, performance and allows playing at higher framerates (below 300).
+
+            <!-- Crash Logger -->
+            <p>
+                <a class="link" href="https://www.nexusmods.com/newvegas/mods/82540" target="_blank">
+                    <h2 id="crashLog">Yvile's Crash Logger</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ol>
+                <li><b>Main Files - Crash Logger</b></li>
+            </ol>
+            A DLL that logs raw crash data.
 
             <!-- MLF -->
             <p>
@@ -562,10 +563,10 @@ fLightEffectFadeDuration=400
                 <a href="#johnny">JohnnyGuitar</a>
             </li>
             <li>
-                <a href="#crashLog">Crash Logger</a>
+                <a href="#nvtf">NVTF</a>
             </li>
             <li>
-                <a href="#nvtf">NVTF</a>
+                <a href="#crashLog">Crash Logger</a>
             </li>
             <li>
                 <a href="#limitFix">Mod Limit Fix</a>

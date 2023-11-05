@@ -488,45 +488,6 @@ h2 {
   font-size: 1.5em;
 }
 
-.optional::after {
-  display: inline-flex;
-  position: absolute;
-  transform: translateY(-0.4em);
-  content: "Optional";
-  text-shadow: 0 0.05em 0.2em rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0.15em 6pt hsla(0, 0%, 0%, 0.3);
-  color: #fada78;
-  background-image: linear-gradient(to top, hsl(45, 93%, 12.5%), hsl(45, 93%, 15%));
-  border: 2pt solid hsl(45, 93%, 25%);
-  border-radius: 12pt;
-  font-size: 0.7em;
-  padding: 0.25em 0.5em 0.25em 0.5em;
-  margin-left: 1em;
-}
-
-.performance::after {
-  display: inline-flex;
-  position: absolute;
-  transform: translateY(-0.4em);
-  content: "Performance Hit";
-  text-shadow: 0 0.05em 0.2em rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0.15em 6pt hsla(0, 0%, 0%, 0.3);
-  color: #d16759;
-  background-image: linear-gradient(to top, hsl(7, 57%, 12.5%), hsl(7, 57%, 18%));
-  border: 2pt solid hsl(7, 57%, 25%);
-  border-radius: 12pt;
-  font-size: 0.7em;
-  padding: 0.25em 0.5em 0.25em 0.5em;
-  margin-left: 1em;
-}
-
-blockquote .optional::after,
-blockquote .performance::after {
-  position: inherit !important;
-  margin: 0.2em 0.4em 0.2em 0.4em;
-  transform: translateY(-0.3em);
-}
-
 #footer {
   margin-top: auto;
 }
@@ -669,19 +630,6 @@ blockquote .performance::after {
   #xnvseRoot {
     max-width: 90%;
   }
-
-  .performance::after,
-  .optional::after {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    margin-top: 1em;
-    padding: 0.05em 0.5em 0.05em 0.5em;
-    font-size: 0.5em;
-    width: fit-content;
-    text-align: center;
-    margin-left: 0;
-  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -710,4 +658,33 @@ blockquote .performance::after {
   margin-left: auto;
   margin-right: auto;
   height: 12em;
+}
+
+/* MEG */
+
+.megcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.megimg {
+  width: 13%;
+  height: auto;
+  margin-right: 20px;
+}
+
+.megheader {
+  margin: 0;
+  color: #DCDCDC;
+  font-style: italic;
+}
+
+.megtext {
+  font-size: 20px;
+}
+
+.mega:hover {
+  text-decoration: none !important;
 }
