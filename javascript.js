@@ -1,6 +1,6 @@
 window.addEventListener('resize', sizeChanged);
 
-document.addEventListener('keyup', (e) => {
+document.addEventListener('keydown', (e) => {
     if (e.code === "ArrowRight") {
         window.open(document.getElementById("next").href, "_self")
     }
