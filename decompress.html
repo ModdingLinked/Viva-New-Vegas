@@ -11,9 +11,9 @@
     <link rel="canonical" href="https://vivanewvegas.moddinglinked.com">
     <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
     <script src="javascript.js"></script>
-    <title>Resources | Viva New Vegas</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
-    <meta name="description" content="Various useful resources/guides for additional modding or mod creation.">
+    <title>Decompression Guide | Viva New Vegas</title>
+    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack, Decompression, Decompressing, zLib, FPS, Stuttering">
+    <meta name="description" content="Guide on how to decompress all plugins in your load order for better performance and less stuttering.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
     <meta property="og:site_name" content="ModdingLinked">
@@ -21,7 +21,7 @@
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://vivanewvegas.moddinglinked.com">
     <meta property="og:image" content="https://vivanewvegas.moddinglinked.com/img/card.webp">
-    <meta property="og:description" content="Various useful resources/guides for additional modding or mod creation.">
+    <meta property="og:description" content="Guide on how to decompress all plugins in your load order for better performance and less stuttering.">
 </head>
 
 <body>
@@ -96,12 +96,17 @@
             <ul>
                 <li>
                     <a href="./appendix.html">Appendix</a>
+                </li>
+                <ul>
+                    <li>
+                        <a href="./resources.html">Resources</a>
+                    </li>
                     <ul>
                         <li>
-                            <a href="./resources.html" class="active">Resources</a>
+                            <a href="./decompress.html" class="active">Decompression Guide</a>
                         </li>
                     </ul>
-                </li>
+                </ul>
                 <li>
                     <a href="./faq.html">FAQ</a>
                 </li>
@@ -171,66 +176,53 @@
     <!-- Content -->
     <div class="content">
         <div class="section">
-            <h1>General Resources</h1>
+            <h1>Decompression Guide</h1>
             <p>
-                <a class="link" href="https://moddinglinked.com/dogmas.html">
-                    <h2>Modding Dogmas</h2>
+                <a>
+                    <h2 id="why">Why?</h2>
                 </a>
+                The vanilla game uses zLib compression for most things, plugin records included. Unfortunately, <strong>zLib is very slow</strong> and CPU heavy (especially on SSDs), which sadly results in loading stutter, especially when using mods that add lots of NPCs and/or new landscapes.
+                <br>
+                <br>
+                <a href="./utilities.html#fixedEsms">Ultimate Edition ESM Fixes</a> and <a href="https://thebestoftimes.moddinglinked.com">Tale of Two Wastelands</a> already decompress the game's base plugins for you, so <strong>all that is left to decompress is your mods</strong>. Luckily, you can very easily do this using xEdit and a simple script.
+            <blockquote>This process is recommended once your load order is complete, so that everything gets decompressed.</blockquote>
             </p>
-            Some dangerous dogmas about modding that you should be aware of.
             <p>
-                <a class="link" href="https://moddinglinked.com/xedit.html">
-                    <h2>Basics of xEdit</h2>
+                <a>
+                    <h2 id="process">The Process</h2>
                 </a>
+            <ol>
+                <li>If you haven't already, read the <a href="https://moddinglinked.com/xedit.html">xEdit guide</a> to avoid confusion with the next steps.</li>
+                <li>Download the <a href="https://www.nexusmods.com/newvegas/mods/74181">Decompress Records script</a>.</li>
+                <li>Extract the archive's contents into xEdit's <strong>Edit Scripts folder</strong>.</li>
+                <li>Run xEdit and load <strong>all of your mods</strong>.</li>
+                <li>Once loaded, select all plugins on the tree-view with CTRL+A, then right-click and <code><strong>Apply Script...</strong></code></li>
+                <img src="./img/apply script.webp" alt="Applying a script to the entire load order">
+                <li>Type <strong>Decompress Records</strong> in the filter and the script will automatically be selected.</li>
+                <img src="./img/decompress records script.webp" alt="Selecting the Decompress Records script">
+                <li>Click <code><strong>OK</strong></code> and wait for it to process everything.</li>
+                <li><strong>Close xEdit</strong>, if it asks you to save then that means the plugins listed got decompressed.</li>
+            </ol>
             </p>
-            An introduction to xEdit and its use.
-            <p>
-                <a class="link" href="https://moddinglinked.com/themethod.html">
-                    <h2>The Method</h2>
-                </a>
-            </p>
-            A full guide to The Method conflict resolution.
-            <hr>
-            <h1>FNV Resources</h1>
-            <p>
-                <a class="link" href="https://geckwiki.com/index.php/Main_Page">
-                    <h2>GECK Wiki</h2>
-                </a>
-            </p>
-            Community continuation of Bethesda's GECK wiki, maintained by NVSE modders; focused on GECK, scripting and game's inner workings.
-            <p>
-                <a class="link" href="https://fallout.wiki/wiki/Fallout_Wiki">
-                    <h2>Independent Fallout Wiki</h2>
-                </a>
-            </p>
-            Fan project focused on maintaining a high-quality, comprehensive and accessible encyclopedia about all aspects of the Fallout games, community and mods.
-            <p>
-                <a class="link" href="./lod.html">
-                    <h2>LOD Guide</h2>
-                </a>
-            </p>
-            Guide on how to generate LOD with FNVLODgen.
-            <p>
-                <a class="link" href="./decompress.html">
-                    <h2>Decompression Guide</h2>
-                </a>
-            </p>
-            Guide on how to decompress all plugins in your load order for better performance and less stuttering.
-            <!--             
-            <p>
-                <a class="link" href="https://anfinitinetwork.com/fallout/moddinglinked">
-                    <h2>Proton Guide</h2>
-                </a>
-            </p>
-            A supplemental guide for modding Bethesda games on GNU/Linux.
-            -->
         </div>
 
         <!-- Arrows -->
         <div>
             <hr>
-            <a href="./appendix.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/arrow.webp" alt="Back Arrow"><span class="arrowText left">Appendix</span></a>
+            <a href="./resources.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/arrow.webp" alt="Back Arrow"><span class="arrowText left">Resources</span></a>
         </div>
+    </div>
+
+    <!-- Right Sidebar -->
+    <div id="sidenavRight">
+        <ul>
+            <li>
+                <a href="#why">Why?</a>
+            </li>
+            <li>
+                <a href="#process">The Process</a>
+            </li>
+        </ul>
     </div>
 </body>
 

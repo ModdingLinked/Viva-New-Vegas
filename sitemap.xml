@@ -8,7 +8,7 @@
 	<url>
 		<loc>https://vivanewvegas.moddinglinked.com/resources.html</loc>
 		<priority>0.80</priority>
-		<lastmod>2023-11-06</lastmod>
+		<lastmod>2023-11-19</lastmod>
 	</url>
 	<url>
 		<loc>https://vivanewvegas.moddinglinked.com/avoid-mods.html</loc>
@@ -103,6 +103,11 @@
 	<url>
 		<loc>https://vivanewvegas.moddinglinked.com/changelog.html</loc>
 		<priority>0.51</priority>
-		<lastmod>2023-11-16</lastmod>
+		<lastmod>2023-11-19</lastmod>
+	</url>
+	<url>
+		<loc>https://vivanewvegas.moddinglinked.com/decompress.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2023-11-19</lastmod>
 	</url>
 </urlset>
