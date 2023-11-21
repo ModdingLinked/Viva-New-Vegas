@@ -169,7 +169,7 @@
             <h1>Frequently Asked Questions</h1>
             <!-- DLC Cleaning -->
             <h3 id="cleaning"><b>Why does the guide not clean the DLC plugins?</b></h3>
-            ESM Fixes already cleans and fixes issues in these plugins.
+            ESM Fixes already cleans and fixes issues in the base plugins.
 
             <!-- MO2 Popup -->
             <h3 id="mo2Popup"><b>When installing multiple mods from the same page through MO2, should I select Merge, Rename, or Replace?</b></h3>
@@ -189,7 +189,7 @@
 
             <!-- NVTF -->
             <h3 id="code0"><b>Why does the console command <code>IsDLLLoaded NVTF</code> always report back <code>>> 0</code>?</b></h3>
-            <p>Install the DirectX Libraries from <a href="https://www.microsoft.com/en-us/download/details.aspx?id=8109" target="_blank">here</a>.</p>
+            <p>Restart your computer, then install the DirectX Libraries from <a href="https://www.microsoft.com/en-us/download/details.aspx?id=8109" target="_blank">here</a>.</p>
 
             <!-- Game Fast -->
             <h3 id="fastGame"><b>Why is my game moving too fast?</b></h3>
@@ -226,6 +226,9 @@ fOriginalGroundHeightMS=0</textarea>
             <ol>
                 <li>Click the <img src="./img/mo2 ini.webp" alt="MO2 INI button"> button at the top of MO2 and select <strong>INI Editor</strong>.</li>
                 <li>Select the <strong>FalloutCustom.ini</strong> tab.</li>
+                <ul>
+                    <li>Make sure you are in the <strong>FalloutCustom.ini</strong> tab and <b>NOT</b> the <strong>Custom.ini</strong> tab.</li>
+                </ul>
                 <li>Paste in your display's resolution:</li>
                 <ul>
                     <textarea readonly="readonly" style="height: 5rem" onclick="this.focus();this.select()">
@@ -236,9 +239,7 @@ iSize H=1440
                     <li>If your resolution differs from the one above, correct the 2 values.</li>
                 </ul>
                 <li>Save and exit.</li>
-                <li>Right-click on the <strong>Stewie Tweaks Essentials INI</strong> mod (from the <a href="./bugfix.html#custom_ini" target="_blank">Bug Fixes</a> section) in the left pane of MO2 and select <strong>Open in Explorer</strong>.</li>
-                <li>Navigate to <code>nvse/plugins/</code> and open <strong>nvse_stewie_tweaks.ini</strong> in a text editor.</li>
-                <li>Use <kbd>Ctrl</kbd> + <kbd>F</kbd> to find and set <strong>bUltrawideSupport</strong> to <strong>1</strong>.</li>
+                <li>Run the game and go to Settings -> Tweaks, then type "ultrawide" in the search bar. Enable the Ultrawide Support tweak by clicking it in the panel on the lefthand side, then exit and restart the game so it takes effect.</li>
             </ol>
 
             <!-- FOV -->
