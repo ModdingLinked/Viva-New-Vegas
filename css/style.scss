@@ -141,7 +141,7 @@ img {
 }
 
 .section h3 a {
-  color: hsl(0, 0%, 85%);
+  color: hsl(0, 0%, 90%);
   font-size: inherit;
 }
 
@@ -451,12 +451,12 @@ img {
 
 blockquote {
   background-color: rgb(52, 52, 52);
-  font-size: 1.05em;
   border-left: 0.5em solid #ec9625;
   padding: 0.5em 0.75em;
   line-height: 1.4em;
   border-radius: 4pt;
   box-shadow: 0 0.3em 0.7em hsla(0, 0%, 0%, 0.15);
+  margin-left: 0em;
 }
 
 blockquote a {
@@ -687,4 +687,130 @@ h2 {
 
 .mega:hover {
   text-decoration: none !important;
+}
+
+.width-limited {
+  max-width: 90%;
+}
+
+.width-very-limited {
+  max-width: 70%;
+}
+
+@keyframes slide-up {
+  from {
+    max-height: 1000px;
+  }
+
+  to {
+    max-height: 0;
+    margin-top: -0.12px;
+  }
+}
+
+@keyframes slide-down {
+  from {
+    max-height: 0;
+    margin-top: -0.12px;
+  }
+
+  to {
+    max-height: 5000px;
+  }
+}
+
+.expander-info {
+  float: right;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.expander-top {
+  margin-bottom: 0 !important;
+  background-color: rgb(52, 52, 52);
+  font-size: 1.05em;
+  border-left: 0.5em solid #218cb7;
+  border-right: 0.5em solid #218cb7;
+  padding: 0.4em 0.75em;
+  line-height: 1.4em;
+  border-radius: 4pt;
+  box-shadow: 0 0.3em 0.7em hsla(0, 0%, 0%, 0.15);
+  margin-top: 0.9em;
+  z-index: 3;
+}
+
+.expander-top.active {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: rgba(255, 255, 255, 6.12%);
+}
+
+.expander-top.clickable {
+  cursor: pointer;
+}
+
+.expander-top.clickable:hover {
+  background-color: rgba(255, 255, 255, 8.12%);
+  border-left: 0.5em solid #c8f2ff;
+  border-right: 0.5em solid #c8f2ff;
+}
+
+.expander-top.clickable:hover .expander-info {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.expander-top.clickable:active {
+  background-color: rgba(255, 255, 255, 3%);
+}
+
+.expander-bottom {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  display: none;
+  animation: slide-up 0.4s;
+  z-index: 2;
+  position: relative;
+  overflow-y: hidden;
+  margin-top: 0 !important;
+  background-color: rgb(52, 52, 52);
+  font-size: 1.05em;
+  border-left: 0.5em solid #218cb7;
+  border-right: 0.5em solid #218cb7;
+  padding: 0.4em 0.75em;
+  line-height: 1.4em;
+  border-radius: 4pt;
+  box-shadow: 0 0.3em 0.7em hsla(0, 0%, 0%, 0.15);
+}
+
+.expander-opened {
+  animation: slide-down 2s;
+}
+
+.colors-steam {
+  border-left: 0.5em solid #30435e;
+  border-right: 0.5em solid #30435e;
+}
+
+.colors-steam.clickable:hover {
+  border-left: 0.5em solid #435e84;
+  border-right: 0.5em solid #435e84;
+}
+
+.colors-gog {
+  border-left: 0.5em solid #7c21ad;
+  border-right: 0.5em solid #7c21ad;
+}
+
+.colors-gog.clickable:hover {
+  border-left: 0.5em solid #b22ff9;
+  border-right: 0.5em solid #b22ff9;
+}
+
+.colors-epic {
+  border-left: 0.5em solid #191919;
+  border-right: 0.5em solid #191919;
+}
+
+.colors-epic.clickable:hover {
+  border-left: 0.5em solid #424242;
+  border-right: 0.5em solid #424242;
 }

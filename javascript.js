@@ -48,3 +48,27 @@ function toggleDonationMenu() {
         document.getElementById("paypalMenu").style.display = "none";
     }
 }
+
+function fadeOut(element) {
+    element.style.opacity = "0%";
+}
+
+function rotate(element, rotation = 180) {
+    element.style.transform = 'rotatex(' + rotation + 'deg)';
+}
+
+function expandCard(thisObj, $open, $dontReset) {
+    const chevron = thisObj.getElementsByClassName("expander-info")[0]
+    if ($open.classList.contains('expander-opened') && !$dontReset) {
+        chevron.textContent = "Show";
+        $open.classList.remove('expander-opened');
+        setTimeout(() => $open.style.display = "none", 400);
+        thisObj.classList.remove('active');
+    }
+    else {
+        $open.classList.add('expander-opened');
+        chevron.textContent = "Hide";
+        $open.style.display = "block";
+        thisObj.classList.add('active');
+    }
+}
