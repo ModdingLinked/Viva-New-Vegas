@@ -186,7 +186,11 @@
             <br>
             <ul>
                 <li>
-                    <b>Avoid any default Windows folders:</b> This includes but is not limited to <code>C:\Program Files</code>, <code>C:\Program Files x86</code>, your <code>Desktop</code> and your <code>Documents</code> folders. This is due to Windows UAC (or User Account Control), which heavily monitors and protects these folders. This can cause many issues with the game and any modding tools. An example of a safe location is <code>C:\Games\Steam</code>
+                    <b>Avoid any default Windows folders:</b> This includes but is not limited to <code>C:\Program Files</code>, <code>C:\Program Files x86</code>, your <code>Desktop</code> and your <code>Documents</code> folders.
+                    <br>
+                    This is because users lack write access to Program Files, while Desktop and Documents are often managed by OneDrive. This can cause many issues with the game and any modding tools.
+                    <br>
+                    An example of a safe location is <code>C:\Games\Steam</code>
                 </li>
                 <li>
                     <b>Install on an SSD if possible:</b> Having the game on an SSD will drastically improve loading times and decrease stuttering.
@@ -200,7 +204,7 @@
                 </a>
             </p>
             <blockquote>If you do not have the game installed yet, skip this step.</blockquote>
-            As the game is available on both Steam and GOG, there are separate instructions here for each version. You obviously only need to follow the directions for the version you have.
+            As the game is available on Steam, GOG and Epic Games, there are separate instructions here for each version. You obviously only need to follow the directions for the version you have.
 
             <div class="expander-top colors-steam clickable width-very-limited" onclick="expandCard(this, uninstallSteamExpander)" id="uninstallSteam">
                 Steam
@@ -235,14 +239,14 @@
                 <div class="expander-info" alt="UI element - Chevron">Show</div>
             </div>
             <div class="expander-bottom colors-epic width-very-limited" id="uninstallEpicExpander">
-                <li>Open GOG and go to your <strong>Library</strong>.</li>
+                <li>Open Epic Games Launcher and go to your <strong>Library</strong>.</li>
                 <li>Find <strong>Fallout: New Vegas</strong> in the list.</li>
-                <li>Right-click on it and select <strong>Manage Installation -> Uninstall</strong>.</li>
-                <li>Uninstall through GOG Galaxy.</li>
-                <ul>
-                    <li>If you used offline installers then run the <strong>unins000.exe</strong> file in the game's <strong>Root</strong> folder.</li>
-                </ul>
+                <li>Click on 3 dots and select uninstall from the menu.</li>
             </div>
+
+            <br>
+            <br>
+            <br>
 
             <!-- Install -->
             <p>
@@ -251,11 +255,11 @@
                 </a>
             </p>
 
-            <div class="expander-top colors-steam clickable width-very-limited" onclick="expandCard(this, uninstallSteamExpander)" id="uninstallSteam">
+            <div class="expander-top colors-steam clickable width-very-limited" onclick="expandCard(this, installSteamExpander)" id="installSteam">
                 Steam
                 <div class="expander-info" alt="UI element - Chevron">Show</div>
             </div>
-            <div class="expander-bottom colors-steam width-very-limited" id="uninstallSteamExpander">
+            <div class="expander-bottom colors-steam width-very-limited" id="installSteamExpander">
                 <blockquote>It is strongly recommended to install the game outside of any default Windows folders (such as <code>Program Files (x86)</code>), as the the strict Windows file protections of these folders can break certain mods/tools. Instead, we will use a tool called Steam Library Setup Tool to create a new Steam library folder outside of any default Windows folders. If you already have Steam installed outside of any default windows folders then skip this step and simply install the game to your custom Steam library.</blockquote>
                 <ol>
                     <li>Completely exit out of Steam using Task Manager or System Tray.</li>
@@ -276,11 +280,11 @@
                 </ol>
             </div>
 
-            <div class="expander-top colors-gog clickable width-very-limited" onclick="expandCard(this, uninstallGogExpander)" id="uninstallGog">
+            <div class="expander-top colors-gog clickable width-very-limited" onclick="expandCard(this, installGogExpander)" id="installGog">
                 GOG
                 <div class="expander-info" alt="UI element - Chevron">Show</div>
             </div>
-            <div class="expander-bottom colors-gog width-very-limited" id="uninstallGogExpander">
+            <div class="expander-bottom colors-gog width-very-limited" id="installGogExpander">
                 <ol>
                     <li>Open GOG and go to your <strong>Library</strong>.</li>
                     <li>Find <strong>Fallout: New Vegas</strong> in the list and select <strong>Install</strong>.</li>
@@ -291,20 +295,24 @@
                 </ol>
             </div>
 
-            <div class="expander-top colors-epic clickable width-very-limited" onclick="expandCard(this, uninstallEpicExpander)" id="uninstallEpic">
+            <div class="expander-top colors-epic clickable width-very-limited" onclick="expandCard(this, installEpicExpander)" id="installEpic">
                 Epic Games
                 <div class="expander-info" alt="UI element - Chevron">Show</div>
             </div>
-            <div class="expander-bottom colors-epic width-very-limited" id="uninstallEpicExpander">
+            <div class="expander-bottom colors-epic width-very-limited" id="installEpicExpander">
                 <ol>
-                    <li>Open GOG and go to your <strong>Library</strong>.</li>
-                    <li>Find <strong>Fallout: New Vegas</strong> in the list and select <strong>Install</strong>.</li>
-                    <li>Set the <strong>Install to</strong> location to a location of your choice.</li>
+                    <li>Open Epic Games Launcher and go to your <strong>Library</strong>.</li>
+                    <li>Find <strong>Fallout: New Vegas</strong> in the list.</li>
+                    <li>Click on the game to install it.</li>
                     <ul>
                         <li>It is <strong>required</strong> to install the game outside of any default Windows folders (e.g., <code>Program Files x86</code>).</li>
                     </ul>
                 </ol>
             </div>
+
+            <br>
+            <br>
+            <br>
 
             <!-- Post-Installation -->
             <p>
