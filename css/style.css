@@ -795,4 +795,17 @@ h2 {
 .colors-epic.clickable:hover {
   border-left: 0.5em solid #424242;
   border-right: 0.5em solid #424242;
+}
+
+.spoiler {
+  background-color: rgba(0, 0, 0, 0.233);
+  color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.spoiler:hover {
+  background-color: inherit;
+  color: inherit;
 }/*# sourceMappingURL=style.css.map */
