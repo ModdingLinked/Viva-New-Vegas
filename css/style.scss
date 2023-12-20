@@ -492,18 +492,18 @@ h2 {
 }
 
 #footer a,
-#paypal {
+#dono {
   padding: 0.3em 0em;
   font-size: 2em;
   cursor: pointer;
 }
 
 #footer a:hover,
-#paypal:hover {
+#dono:hover {
   scale: 90%;
 }
 
-#paypalMenu {
+#donoMenu {
   position: fixed;
   background-color: #202020;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.4);
@@ -514,7 +514,7 @@ h2 {
   font-size: 0.8em;
 }
 
-#paypalMenu a:hover {
+#donoMenu a:hover {
   scale: 100%;
 }
 

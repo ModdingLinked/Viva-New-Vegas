@@ -13,7 +13,7 @@ function sizeChanged() {
     if (document.documentElement.clientWidth > 760) {
         document.getElementById("sideButton").style.marginLeft = "";
         document.getElementById("sidenavLeft").style.width = "";
-        document.getElementById("paypalMenu").style.display = "none";
+        document.getElementById("donoMenu").style.display = "none";
     }
 }
 
@@ -25,7 +25,7 @@ function toggleNav() {
     else {
         document.getElementById("sidenavLeft").style.width = "";
         document.getElementById('sideButton').classList.remove('pressed');
-        document.getElementById("paypalMenu").style.display = "none";
+        document.getElementById("donoMenu").style.display = "none";
     }
 }
 
@@ -41,11 +41,11 @@ function titleGlow(enable) {
 }
 
 function toggleDonationMenu() {
-    if (document.getElementById("paypalMenu").style.display == "none") {
-        document.getElementById("paypalMenu").style.display = "block";
+    if (document.getElementById("donoMenu").style.display == "none") {
+        document.getElementById("donoMenu").style.display = "block";
     }
     else {
-        document.getElementById("paypalMenu").style.display = "none";
+        document.getElementById("donoMenu").style.display = "none";
     }
 }
 
