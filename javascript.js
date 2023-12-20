@@ -32,7 +32,6 @@ function toggleNav() {
         for (var i = 0; i < items.length; i++) {
             items[i].style.display = "none";
         }
-    
     }
 }
 
