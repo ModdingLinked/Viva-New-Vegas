@@ -137,15 +137,10 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.patreon.com/WallSoGB" target="_blank">
-                        <i class="fab fa-patreon"></i>
+                    <a id="dono" onclick="toggleDonationMenu(paypalMenu)">
+                        <i class="fa fa-paypal"></i>
                     </a>
-                </li>
-                <li>
-                    <a id="paypal" onclick="toggleDonationMenu()">
-                        <i class="fab fa-paypal"></i>
-                    </a>
-                    <div id="paypalMenu" style="display: none;">
+                    <div id="paypalMenu" class="donoMenu" style="display: none;">
                         <a href="https://www.paypal.com/paypalme/VishVadeva" target="_blank">
                             VishVadeva
                         </a>
@@ -155,8 +150,21 @@
                     </div>
                 </li>
                 <li>
+                    <a id="dono" onclick="toggleDonationMenu(kofiMenu)">
+                        <i class="fa fa-coffee"></i>
+                    </a>
+                    <div id="kofiMenu" class="donoMenu" style="display: none;">
+                        <a href="https://ko-fi.com/vishvadeva" target="_blank">
+                            VishVadeva
+                        </a>
+                        <a href="https://ko-fi.com/wall_sogb" target="_blank">
+                            Wall SoGB
+                        </a>
+                    </div>
+                </li>
+                <li>
                     <a href="https://github.com/WallSoGB/Viva-New-Vegas" target="_blank">
-                        <i class="fab fa-github"></i>
+                        <i class="fa fa-github"></i>
                     </a>
                 </li>
             </ul>
@@ -171,7 +179,9 @@
             <h1>Introduction</h1>
             <h3>Welcome to Viva New Vegas, a modular vanilla-plus modding guide for Fallout New Vegas!</h3>
             <blockquote>
-                IMPORTANT: Everything in this guide is written down for a reason! It is vital to read <b>everything!</b>
+                <b>IMPORTANT:</b>
+                <br>
+                Everything in this guide is written down for a reason! It is vital to read <b>everything!</b>
                 <br>
                 You can <b>NOT</b> skip any paragraphs/instructions and expect your game to function as it should.
             </blockquote>
@@ -215,25 +225,13 @@
                 </a>
             </p>
             <ul>
-                <li>An <b>English</b> copy of the game with all DLCs from either <a href="https://store.steampowered.com/sub/13435/" target="_blank">Steam</a> or <a href="https://www.gog.com/game/fallout_new_vegas_ultimate_edition" target="_blank">GOG</a>.</li>
+                <li>An <b>English</b> copy of the game with all DLCs from either <a href="https://store.steampowered.com/sub/13435/" target="_blank">Steam</a>, <a href="https://www.gog.com/game/fallout_new_vegas_ultimate_edition" target="_blank">GOG</a>, or the <a href="https://store.epicgames.com/it/p/fallout-new-vegas">Epic Games Store</a>.</li>
                 <ul>
-                    <li>
-                        Only the English version of the game is supported for maximum compatibility; translations can conflict with mods and cause issues.
-                    </li>
-                    <li>
-                        The Microsoft Store and Epic Games Store versions of the game are unsupported:
-                        <ul>
-                            <li>
-                                The <b>Microsoft Store</b> version doesn't support xNVSE which is essential for most mods.
-                            </li>
-                            <li>
-                                The <a href="https://www.nexusmods.com/newvegas/mods/81281" target="_blank">patched Epic Games version</a> will add xNVSE support, but you will have to use <a href="https://github.com/ModOrganizer2/modorganizer/releases/tag/v2.5.0rc2" target="_blank">Mod Organizer 2 2.5 RC 2</a> instead of 2.4.5 Alpha 3 (which the guide will use until a full release of 2.5 is out).
-                            </li>
-                        </ul>
-                    </li>
+                    <li>Only the English version of the game is supported for maximum compatibility; translations can conflict with mods and cause issues.</li>
+                    <li>The <b>Microsoft Store</b> version is not supported.</li>
                     <li>The german release uses a "No Gore" version, making it also incompatible with xNVSE. If you have it on Steam, you can use <a href="https://github.com/SteamRE/DepotDownloader" target="_blank">DepotDownloader</a> to download the international EXE.</li>
                 </ul>
-                <li>At least 15GB of free drive space (13GB if you delete all the downloads).</li>
+                <li>At least 15GB of free drive space, game included (13GB if you delete all the downloads).</li>
                 <li>Windows 10 or higher (64-bit).</li>
                 <li><a href="https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/" target="_blank">VC++ Runtime Libraries</a>.</li>
                 <ul>

@@ -137,15 +137,10 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.patreon.com/WallSoGB" target="_blank">
-                        <i class="fab fa-patreon"></i>
+                    <a id="dono" onclick="toggleDonationMenu(paypalMenu)">
+                        <i class="fa fa-paypal"></i>
                     </a>
-                </li>
-                <li>
-                    <a id="paypal" onclick="toggleDonationMenu()">
-                        <i class="fab fa-paypal"></i>
-                    </a>
-                    <div id="paypalMenu" style="display: none;">
+                    <div id="paypalMenu" class="donoMenu" style="display: none;">
                         <a href="https://www.paypal.com/paypalme/VishVadeva" target="_blank">
                             VishVadeva
                         </a>
@@ -155,8 +150,21 @@
                     </div>
                 </li>
                 <li>
+                    <a id="dono" onclick="toggleDonationMenu(kofiMenu)">
+                        <i class="fa fa-coffee"></i>
+                    </a>
+                    <div id="kofiMenu" class="donoMenu" style="display: none;">
+                        <a href="https://ko-fi.com/vishvadeva" target="_blank">
+                            VishVadeva
+                        </a>
+                        <a href="https://ko-fi.com/wall_sogb" target="_blank">
+                            Wall SoGB
+                        </a>
+                    </div>
+                </li>
+                <li>
                     <a href="https://github.com/WallSoGB/Viva-New-Vegas" target="_blank">
-                        <i class="fab fa-github"></i>
+                        <i class="fa fa-github"></i>
                     </a>
                 </li>
             </ul>
@@ -172,18 +180,6 @@
                 <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
                 <li>Name the separator <strong>Visuals</strong>.</li>
             </ol>
-
-            <blockquote>There may be less visual mods than you may be used to with a modded game, but there is good reason for that. The game has a pretty unoptimized renderer, built on now 20 year old DirectX 9.
-                <br>
-                <br>
-                Mesh replacers are often grossly unoptimized, which is disastrous, since the mesh pipeline is the main performance bottleneck.
-                <br>
-                <br>
-                ENBs may make for pretty screenshots, but they are near-impossible to play with due to the many bugs, performance problems and <a href="https://imgur.com/a/8UT356J" target="_blank">vision-obscuring effects</a> they use.
-                <br>
-                <br>
-                Texture mods often suffer from being inadequately oversized, which leads to wasteful memory usage and increased loading times and stutter. They also create a great disparity between the new textures and the vanilla textures, both in quality and in style. They can also create some <a href="https://imgur.com/a/jMgRjBO" target="_blank">jarring texture transitions or seams</a>, largely mitigated by <a class="link" href="https://www.nexusmods.com/newvegas/mods/83425" target="_blank">Landscape Texture Improvements</a> (already in the guide).
-            </blockquote>
 
             <!-- Fixed FaceGen -->
             <p>
@@ -282,7 +278,7 @@
                 <li><a href="https://www.nexusmods.com/newvegas/mods/82136" target="_blank"><b>B42 Optics NV Patches</b></a></li>
                 <li>You will be prompted with a FOMOD installer:
                     <ol>
-                        <li>Anniversary Anim Pack</li>
+                        <li>Anniversary Anim Pack Fix</li>
                         <li>Install</li>
                     </ol>
                 </li>

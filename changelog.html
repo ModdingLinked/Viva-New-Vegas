@@ -142,15 +142,10 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.patreon.com/WallSoGB" target="_blank">
-                        <i class="fab fa-patreon"></i>
+                    <a id="dono" onclick="toggleDonationMenu(paypalMenu)">
+                        <i class="fa fa-paypal"></i>
                     </a>
-                </li>
-                <li>
-                    <a id="paypal" onclick="toggleDonationMenu()">
-                        <i class="fab fa-paypal"></i>
-                    </a>
-                    <div id="paypalMenu" style="display: none;">
+                    <div id="paypalMenu" class="donoMenu" style="display: none;">
                         <a href="https://www.paypal.com/paypalme/VishVadeva" target="_blank">
                             VishVadeva
                         </a>
@@ -160,8 +155,21 @@
                     </div>
                 </li>
                 <li>
+                    <a id="dono" onclick="toggleDonationMenu(kofiMenu)">
+                        <i class="fa fa-coffee"></i>
+                    </a>
+                    <div id="kofiMenu" class="donoMenu" style="display: none;">
+                        <a href="https://ko-fi.com/vishvadeva" target="_blank">
+                            VishVadeva
+                        </a>
+                        <a href="https://ko-fi.com/wall_sogb" target="_blank">
+                            Wall SoGB
+                        </a>
+                    </div>
+                </li>
+                <li>
                     <a href="https://github.com/WallSoGB/Viva-New-Vegas" target="_blank">
-                        <i class="fab fa-github"></i>
+                        <i class="fa fa-github"></i>
                     </a>
                 </li>
             </ul>
@@ -173,6 +181,71 @@
         <div class="section">
             <h1>Changelog</h1>
             <h2>Time formatted in DD/MM/YY</h2>
+            <hr>
+            <h2 class="install">22/12/23</h2>
+            <h3>Safe Mid-game</h3>
+            <h2><strong>Whole Guide</strong></h2>
+            <ul>
+                <li>Added support for Epic Games copies.</li>
+            </ul>
+            <h2><strong>MO2</strong></h2>
+            <ul>
+                <li>Updated to Mod Organizer 2.5.1 RC1.</li>
+                <li>Removed the profile configuration section since it is now a step during instance creation.</li>
+            </ul>
+            <h2><strong>Utilities</strong></h2>
+            <ul>
+                <li>Added Epic Games Patcher.</li>
+            </ul>
+            <h2><strong>Bug Fixes</strong></h2>
+            <ul>
+                <li>Added Preferred Pathing Combat Fix.</li>
+                <li>Removed Strip Street Light Corrections because it is now included in YUP 12.9.</li>
+            </ul>
+            <h2><strong>Gameplay</strong></h2>
+            <ul>
+                <li>Added Bad Touch NVSE - Minimalist Preset for consistency with the DBF counterpart.</li>
+            </ul>
+            <h2><strong>Gameplay</strong></h2>
+            <ul>
+                <li>Added Misc Content Restoration - UW (VNV) Patch.</li>
+            </ul>
+            <h2><strong>LOD Guide</strong></h2>
+            <ul>
+                <li>Added the following mods:
+                    <ul>
+                        <li>LOD Fixes and Improvements - NVSE</li>
+                        <li>Trees LOD Billboards Vanilla</li>
+                    </ul>
+                </li>
+            </ul>
+            <h2><strong>Wabbajack</strong></h2>
+            <ul>
+                <li>Updated to reflect the changes above.</li>
+                <li>Added <code>d3dx9_38.tmp</code> file to the NVHR folder, this removes the command prompt window opening alongside the game.</li>
+                <li>Updated the following mods:
+                    <ul>
+                        <li>JohnnyGuitarNVSE (4.98)</li>
+                        <li>Yvile's Crash Logger (4.5.3)</li>
+                        <li>Improved Console (NVSE) (3)</li>
+                        <li>Yukichigai Unofficial Patch - YUP (12.9)</li>
+                        <li>lStewieAl's Tweaks and Engine Fixes (8.85)</li>
+                        <li>skinned mesh improvement mod (8)</li>
+                        <li>Meshes and Collision - Totally Enhanced Nifs (MAC-TEN) (2.3)</li>
+                        <li>Fallout Alpha Rendering Tweaks (2.5.1)</li>
+                        <li>Bad Touch NVSE - Player Only Version (1.6)</li>
+                        <li>EVEM - YUP Patch</li>
+                        <li>Better Brotherhood</li>
+                        <li>Better Brotherhood - YUP Patch</li>
+                        <li>Uncut Wasteland</li>
+                        <li>Misc Content Restoration - YUP Patch</li>
+                        <li>Functional Post Game Ending (6.6)</li>
+                        <li>Desert Natural Weathers NV (7.2)</li>
+                        <li>LOD additions and improvements - YUP Patch</li>
+                        <li>VNV Pre-Generated LOD</li>
+                    </ul>
+                </li>
+            </ul>
             <hr>
             <h2 class="install">25/11/23</h2>
             <h3>Safe Mid-game</h3>
@@ -317,7 +390,7 @@
             </ul>
             <h2><strong>LOD Guide</strong></h2>
             <ul>
-                <li>Added pre-generated LOD for the VNV Wabbajack and for users of the full guide (resources listed in the LOD page are still needed).</li>
+                <li>Added pre-generated LOD meant for the VNV Wabbajack, resources listed in the LOD page are still needed.</li>
             </ul>
             <h2><strong>Wabbajack</strong></h2>
             <ul>

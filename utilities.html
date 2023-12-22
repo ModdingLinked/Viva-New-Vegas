@@ -137,15 +137,10 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.patreon.com/WallSoGB" target="_blank">
-                        <i class="fab fa-patreon"></i>
+                    <a id="dono" onclick="toggleDonationMenu(paypalMenu)">
+                        <i class="fa fa-paypal"></i>
                     </a>
-                </li>
-                <li>
-                    <a id="paypal" onclick="toggleDonationMenu()">
-                        <i class="fab fa-paypal"></i>
-                    </a>
-                    <div id="paypalMenu" style="display: none;">
+                    <div id="paypalMenu" class="donoMenu" style="display: none;">
                         <a href="https://www.paypal.com/paypalme/VishVadeva" target="_blank">
                             VishVadeva
                         </a>
@@ -155,8 +150,21 @@
                     </div>
                 </li>
                 <li>
+                    <a id="dono" onclick="toggleDonationMenu(kofiMenu)">
+                        <i class="fa fa-coffee"></i>
+                    </a>
+                    <div id="kofiMenu" class="donoMenu" style="display: none;">
+                        <a href="https://ko-fi.com/vishvadeva" target="_blank">
+                            VishVadeva
+                        </a>
+                        <a href="https://ko-fi.com/wall_sogb" target="_blank">
+                            Wall SoGB
+                        </a>
+                    </div>
+                </li>
+                <li>
                     <a href="https://github.com/WallSoGB/Viva-New-Vegas" target="_blank">
-                        <i class="fab fa-github"></i>
+                        <i class="fa fa-github"></i>
                     </a>
                 </li>
             </ul>
@@ -167,12 +175,23 @@
     <div class="content">
         <div class="section">
             <h1>Utilities</h1>
-            <blockquote>Make sure the <strong>Viva New Vegas</strong> profile is active before proceeding.</blockquote>
-            <h2>Creating a Separator in MO2.</h2>
+
+            <!-- EGS Patcher -->
+            <p>
+                <a class="link" href="https://www.nexusmods.com/newvegas/mods/81281" target="_blank">
+                    <h2 id="egsPatcher">Epic Games Patcher</h2>
+                </a>
+            </p>
+            <blockquote>You obviously need to skip this mod if you have the Steam or GOG version of the game.</blockquote>
+            <h2 class="install">Installation instructions:</h2>
             <ol>
-                <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
-                <li>Name the separator <strong>Utilities</strong>.</li>
+                <li><b>Main Files - Epic Games Patcher</b> (Manual download).</li>
+                <li>From the downloaded archive, extract <strong>everything</strong> to the game's <strong>Root</strong> folder.</li>
+                <li>Double-click on <strong>Patcher.exe</strong> to run it.</li>
+                <li>A command prompt window will open and after processing it should say <b>Press any key to continue...</b></li>
+                <li>Close the command prompt and a file named <strong>FalloutNV_backup.exe</strong> should appear in the game's <strong>Root</strong> folder.</li>
             </ol>
+            An updated version of the original NVSE, which extends the scripting capabilities of the game.
 
             <!-- xNVSE -->
             <p>
@@ -236,12 +255,16 @@
                     <h2 id="4gbPatcher">FNV 4GB Patcher</h2>
                 </a>
             </p>
-            <blockquote>This is required for both Steam & GOG users! The 4GB Patch included with the GOG release is obsolete as it lacks NVSE integration.</blockquote>
+            <blockquote>This is required for both Steam & GOG users! The 4GB Patch included with the GOG release is obsolete as it lacks NVSE integration.
+                <br>
+                <br>
+                Epic Games Store users already have this patch thanks to the Epic Games Patcher.
+            </blockquote>
             <h2 class="install">Installation instructions:</h2>
             <ol>
                 <li>Download the <strong>Main Files - 4GB Patcher</strong>.</li>
                 <li>From the downloaded archive, extract the <strong>.exe</strong> file to the game's <strong>Root</strong> folder.</li>
-                <li>Right-click on <strong>FNVpatch.exe</strong> and select <strong>Run as administrator</strong>.</li>
+                <li>Double-click on <strong>FNVpatch.exe</strong> to run it.</li>
                 <li>A command prompt window will open and should say <b>FalloutNV.exe patched!</b></li>
                 <li>Close the command prompt and a file named <strong>FalloutNV_backup.exe</strong> should appear in the game's <strong>Root</strong> folder.</li>
             </ol>
@@ -260,6 +283,16 @@
             </ol>
             Replaces the game's heap management system with a much faster version, which can lead to large performance gains.
 
+            <br>
+            <br>
+            <hr>
+
+            <h2>Creating a Separator in MO2.</h2>
+            <ol>
+                <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
+                <li>Name the separator <strong>Utilities</strong>.</li>
+            </ol>
+
             <!-- JIP -->
             <p>
                 <a class="link" href="https://www.nexusmods.com/newvegas/mods/58277" target="_blank">
@@ -269,6 +302,7 @@
             <h2 class="install">Installation instructions:</h2>
             <ul>
                 <li><b>Main Files - JIP LN NVSE Plugin</b></li>
+                <li>If you see a pop-up called <strong>No category found</strong>, select <strong>Disable</strong>.</li>
                 <li><b>Main Files - JIP LN Settings INI</b></li>
             </ul>
             Adds new script functions, features and engine bug fixes.
@@ -302,7 +336,11 @@
                 <li><b>Main Files - NVTF</b></li>
                 <li><a class="link" href="https://www.nexusmods.com/newvegas/mods/81231" target="_blank">Viva Default Preset</a></li>
             </ul>
-            <blockquote>IMPORTANT: If you are planning to install texture mods, use <b>Texture Modding Preset</b> instead!</blockquote>
+            <blockquote>
+                <b>IMPORTANT:</b>
+                <br>
+                If you are planning to install texture mods, use <b>Texture Modding Preset</b> instead!
+            </blockquote>
             Fixes micro-stuttering, performance and allows playing at higher framerates (up to a safe maximum of 120).
 
             <!-- Crash Logger -->
@@ -536,6 +574,9 @@ fLightEffectFadeDuration=400</textarea>
     <!-- Right Sidebar -->
     <div id="sidenavRight">
         <ul>
+            <li>
+                <a href="#egsPatcher">EGS Patcher</a>
+            </li>
             <li>
                 <a href="#xnvse">xNVSE</a>
             </li>

@@ -137,15 +137,10 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.patreon.com/WallSoGB" target="_blank">
-                        <i class="fab fa-patreon"></i>
+                    <a id="dono" onclick="toggleDonationMenu(paypalMenu)">
+                        <i class="fa fa-paypal"></i>
                     </a>
-                </li>
-                <li>
-                    <a id="paypal" onclick="toggleDonationMenu()">
-                        <i class="fab fa-paypal"></i>
-                    </a>
-                    <div id="paypalMenu" style="display: none;">
+                    <div id="paypalMenu" class="donoMenu" style="display: none;">
                         <a href="https://www.paypal.com/paypalme/VishVadeva" target="_blank">
                             VishVadeva
                         </a>
@@ -155,8 +150,21 @@
                     </div>
                 </li>
                 <li>
+                    <a id="dono" onclick="toggleDonationMenu(kofiMenu)">
+                        <i class="fa fa-coffee"></i>
+                    </a>
+                    <div id="kofiMenu" class="donoMenu" style="display: none;">
+                        <a href="https://ko-fi.com/vishvadeva" target="_blank">
+                            VishVadeva
+                        </a>
+                        <a href="https://ko-fi.com/wall_sogb" target="_blank">
+                            Wall SoGB
+                        </a>
+                    </div>
+                </li>
+                <li>
                     <a href="https://github.com/WallSoGB/Viva-New-Vegas" target="_blank">
-                        <i class="fab fa-github"></i>
+                        <i class="fa fa-github"></i>
                     </a>
                 </li>
             </ul>
@@ -174,6 +182,11 @@
                 </a>
             </p>
             Read the <a href="./intro.html">Introduction</a> first, then proceed to the <a href="./setup.html">Setup</a> page. Once you're done, keep following this page.
+            <blockquote>
+                <b>IMPORTANT:</b>
+                <br>
+                The Epic Games Store version of the game is not supported by this Wabbajack list.
+            </blockquote>
             <p>
                 <a>
                     <h2 id="installation">Installation</h2>
@@ -208,15 +221,19 @@
             <ol>
                 <li>In your <b>Installation Location</b>, open the <strong>Tools</strong> folder, then open the <strong>4GB Patcher</strong> folder.</li>
                 <li>Copy the <strong>.exe</strong> file to the game's <strong>Root</strong> folder.</li>
-                <li>Right-click on <strong>FNVpatch.exe</strong> and select <strong>Run as administrator</strong>.</li>
+                <li>Double-click on <strong>FNVpatch.exe</strong> to run it.</li>
                 <li>A command prompt window will open and should say <b>FalloutNV.exe patched!</b></li>
                 <li>Close the command prompt and a file named <strong>FalloutNV_backup.exe</strong> should appear in the game's <strong>Root</strong> folder.</li>
                 <li>In your <b>Installation Location</b>, open Mod Organizer 2.</li>
-                <blockquote>IMPORTANT: If you are running the game at a resolution higher than 1080p, enable the <b>Texture Modding and High Res Preset</b> under the <b>Utilities</b> separator!</blockquote>
+                <blockquote>
+                    <b>IMPORTANT:</b>
+                    <br>
+                    If you are planning to install texture mods, use <b>Texture Modding Preset</b> under the <b>Utilities</b> separator!
+                </blockquote>
                 <li>Now you can play the game through the <strong>New Vegas</strong> option in the top right:</li>
                 <img src="./img/run fnv.webp" alt="Run New Vegas through MO2">
             </ol>
-            <blockquote>The Viva New Vegas Wabbajack already comes with all plugins decompressed and the <a href="https://www.nexusmods.com/newvegas/mods/79358" target="_blank">VNV FNVLODGen Output</a>.</blockquote>
+            <blockquote>This Wabbajack list ships with decompressed plugins and better LOD generated according to our <a href="./lod.html">LOD guide</a> (same file as <a href="https://www.nexusmods.com/newvegas/mods/79358" target="_blank">VNV FNVLODGen Output</a>).</blockquote>
             <p>
                 <a>
                     <h2 id="optional">Optional Steps</h2>

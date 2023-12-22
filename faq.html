@@ -137,15 +137,10 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.patreon.com/WallSoGB" target="_blank">
-                        <i class="fab fa-patreon"></i>
+                    <a id="dono" onclick="toggleDonationMenu(paypalMenu)">
+                        <i class="fa fa-paypal"></i>
                     </a>
-                </li>
-                <li>
-                    <a id="paypal" onclick="toggleDonationMenu()">
-                        <i class="fab fa-paypal"></i>
-                    </a>
-                    <div id="paypalMenu" style="display: none;">
+                    <div id="paypalMenu" class="donoMenu" style="display: none;">
                         <a href="https://www.paypal.com/paypalme/VishVadeva" target="_blank">
                             VishVadeva
                         </a>
@@ -155,8 +150,21 @@
                     </div>
                 </li>
                 <li>
+                    <a id="dono" onclick="toggleDonationMenu(kofiMenu)">
+                        <i class="fa fa-coffee"></i>
+                    </a>
+                    <div id="kofiMenu" class="donoMenu" style="display: none;">
+                        <a href="https://ko-fi.com/vishvadeva" target="_blank">
+                            VishVadeva
+                        </a>
+                        <a href="https://ko-fi.com/wall_sogb" target="_blank">
+                            Wall SoGB
+                        </a>
+                    </div>
+                </li>
+                <li>
                     <a href="https://github.com/WallSoGB/Viva-New-Vegas" target="_blank">
-                        <i class="fab fa-github"></i>
+                        <i class="fa fa-github"></i>
                     </a>
                 </li>
             </ul>
@@ -197,7 +205,13 @@
 
             <!-- DLC Start -->
             <h3 id="dlc"><b>Why didn't I get any DLC pop-ups/items after starting a new game?</b></h3>
-            <p><a href="https://www.nexusmods.com/newvegas/mods/75851" target="_blank">Delay DLC Redux</a> prevents the DLC pop-ups from showing until you reach the starting location for the DLC. <a href="https://www.nexusmods.com/newvegas/mods/61592" target="_blank">JSawyer Ultimate Edition</a> also moves the pre-order pack items to the following locations: Tribal Pack: <span class="spoiler">Lucky Jim Mine House</span>, Caravan Pack: <span class="spoiler">Hell's Motel</span>, Classic Pack: <span class="spoiler">Wrecked Highwayman</span>, Mercenary Pack: <span class="spoiler">Bradley's Shack</span>.</p>
+            <p><a href="https://www.nexusmods.com/newvegas/mods/75851" target="_blank">Delay DLC Redux</a> prevents the DLC pop-ups from showing until you reach their respective location. <a href="https://www.nexusmods.com/newvegas/mods/83576" target="_blank">Vigor</a> also moves the pre-order pack items to the following locations:</p>
+            <ul>
+                <li>Tribal Pack: <span class="spoiler">Lucky Jim Mine House</span></li>
+                <li>Caravan Pack: <span class="spoiler">Hell's Motel</span></li>
+                <li>Classic Pack: <span class="spoiler">Wrecked Highwayman</span></li>
+                <li>Mercenary Pack: <span class="spoiler">Bradley's Shack</span></li>
+            </ul>
 
             <!-- Bouncing -->
             <h3 id="bouncingNpcs"><b>How do I fix NPCs "bouncing" when playing above 60 FPS?</b></h3>
