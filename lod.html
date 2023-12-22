@@ -187,12 +187,69 @@
             <h1>LOD Guide</h1>
             <p>Generating/installing new LOD is <b>NOT</b> a requirement, but it will add detail in the distance by increasing the amount of objects that appear in the distance while also making all LOD match your modded textures. You can also generate terrain LOD, which will allow mods that edit the game's landscape to have LOD that reflects their changes. Terrain LOD creates a much larger file size and will take longer to generate.</p>
             <blockquote>Viva New Vegas (even with VNV Extended) does not need new terrain LOD, but this guide will explain both the object and terrain LOD generation to account for custom modlists or if you just want better looking terrain LOD. Extra resources for Tale of Two Wastelands users are included.</blockquote>
+
+            <!-- What is LOD -->
+            <p>
+                <a>
+                    <h2 id="whatIsLOD">What is LOD?</h2>
+                </a>
+            </p>
+            <p>
+                LOD stands for <strong>Level Of Detail</strong>.
+                <br>
+                In the context of Bethesda games, LOD mainly refers to <strong>Cell LOD</strong>, not geometry LOD. It's used to represent whole cells (the game's "chunks" of land) in the distance.
+            </p>
+
+            <p>
+                Cell LOD is <b>not</b> based on distance - it's a binary state of whether cell is either loaded or not. The LOD Block distance settings control the max draw distance of LOD itself, not the point where it begins.
+                <br>
+                This means that you will see LOD pop-in at the same distance regardless of the settings.
+            </p>
+
+            <p>
+                Cell LOD is split into 3 categories:
+            <ol>
+                <li>
+                    <strong>Object LOD</strong> - All flagged objects in a group of cells are represented as one geometry block. This LOD has only one constant quality level. Fast generation time.
+                </li>
+                <li>
+                    <strong>Terrain LOD</strong> - These blocks represent landscape of at least 4 cells. This is the only LOD that has quality levels - higher levels cover more cells. Due to the sheer size and texture count, it takes the longest to generate.
+                </li>
+                <li>
+                    <strong>Tree LOD</strong> - All flagged SpeedTree objects are merged into one block. Works similarly to Object LOD, with the difference of being tied to the plugin load order. Fastest to generate.
+                    <blockquote>
+                        Despite the name, Tree LOD is horrible for trees. It's only good for bushes and other small flora objects, for this reason trees themselves are most often made as Object LOD.
+                    </blockquote>
+                </li>
+            </ol>
+            </p>
+
+            <!-- Why generate LOD -->
+            <p>
+                <a>
+                    <h2 id="whyGenerate">Why generate LOD?</h2>
+                </a>
+            </p>
+            <p>
+                Bethesda's LOD relies on pregenerated meshes, and thus is inherently static. This decision is due to offering better performance, since game doesn't have to combine meshes and textures of individual objects on the fly.
+                <br>
+                The drawback is obvious - the game can't reflect any changes made to the landscape or objects on its own. That's where LOD generation comes in.
+                <br>
+                Thanks to LODGen, you are able to generate LOD meshes that reflect your modded game, and thus have a much more consistent experience.
+            </p>
+            <p>
+                Another reason for generation is due to the fact that the original LOD is pretty low quality, and many objects lack LOD meshes entirely, which causes them to appear out of thin air on cell load.
+                <br>
+                This is covered by individual LOD mods, which add LOD meshes to objects that lack it and/or improve the quality of existing ones.
+            </p>
+
+            <!-- INI Tweaks -->
             <p>
                 <a>
                     <h2 id="iniTweaks">INI Tweaks</h2>
                 </a>
             </p>
-            This will increase the LOD draw distance.
+            This will increase the LOD draw distance, and remove jarring transitions of SpeedTree flora.
             <ol>
                 <li>If using this guide, make sure the <strong>Viva New Vegas</strong> profile is active.</li>
                 <li>Click the <img src="./img/mo2 ini.webp" alt="MO2 INI button"> button at the top of MO2 and select <strong>INI Editor</strong>. </li>
@@ -208,21 +265,29 @@ fBlockLoadDistanceLow=100000
 fBlockLoadDistance=250000
 
 [SpeedTree]
-; Makes flora use the full objects instead of LOD, this negates pop-in
+; Makes flora use the highest LOD quality, removing the pop-in (not related to Tree LOD)
 bForceFullLOD=1</textarea>
             </ol>
+
+            <!-- Creating a Separator -->
             <h2>Creating a Separator in MO2.</h2>
             <ol>
                 <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
                 <li>Name the separator <strong>LOD</strong>.</li>
             </ol>
+
+            <!-- Installing Resources -->
             <p>
                 <a>
                     <h2 id="installingResources">Installing LOD Resources</h2>
                 </a>
             </p>
             <ul>
+                <li><a href="https://www.nexusmods.com/newvegas/mods/84171" target="_blank">LOD Fixes and Improvements - NVSE</a> - <strong>Main Files - LOD Fixes and Improvements - NVSE</strong></li>
                 <li><a href="https://www.nexusmods.com/newvegas/mods/58562" target="_blank">FNVLODGen Resources</a> - <strong>Main Files - FNVLODGen Resources</strong></li>
+                <ul>
+                    <li><a href="https://www.nexusmods.com/newvegas/mods/58562" target="_blank">FNVLODGen Resources</a> - <strong>Optional Files - Trees LOD Billboards Vanilla</strong></li>
+                </ul>
                 <li><a href="https://www.nexusmods.com/newvegas/mods/61206" target="_blank">LOD Additions and Improvements</a> - <strong>Main Files - LODadditions</strong></li>
                 <ul>
                     <li><a href="https://www.nexusmods.com/newvegas/mods/77945" target="_blank">LOD additions and improvements - YUP Patch</a></li>
@@ -246,6 +311,8 @@ bForceFullLOD=1</textarea>
             </p>
             If you installed the entirety of Viva New Vegas and VNV Extended, you can skip manual LOD generation by using this file. Simply install it as a normal mod in MO2 and put it under the resources listed in the previous section (which you still need). You can then ignore the rest of this page.
             <hr>
+
+            <!-- FNVLODGen -->
             <p>
                 <a>
                     <h2 id="fnvlodgen">FNVLODGen</h2>
@@ -263,12 +330,10 @@ bForceFullLOD=1</textarea>
             <ol start="7">
                 <li>Select xLODGen from the executables drop-down in the top right of MO2 and click <b>Run</b>.</li>
                 <li>Once the program has loaded, right-click in the left pane and click <strong>Select All</strong>.</li>
-                <li>In the right pane, check <strong>Objects LOD</strong> but leave <strong>Trees LOD</strong> unchecked.</li>
+                <li>In the right pane, check <strong>Objects LOD</strong> and <strong>Trees LOD</strong>.</li>
                 <li>Under the <strong>Objects LOD</strong> section, change the <strong>Atlas size</strong> option to <b>8192</b> x <b>8192</b> and <strong>Max texture size</strong> to <b>2048</b>.</li>
-                <li>Disable <strong>Tree LOD</strong>.</li>
             </ol>
-            <blockquote>Tree LOD is not functional in New Vegas. LOD for trees is covered in Object LOD.</blockquote>
-            <ol>
+            <blockquote>
                 <h3>If you want to generate new terrain LOD:</h3>
                 <ol>
                     <li>In the right pane, check <strong>Terrain LOD</strong>.</li>
@@ -282,16 +347,24 @@ bForceFullLOD=1</textarea>
                         </ul>
                     </li>
                 </ol>
-            </ol>
+            </blockquote>
             <ol start="11">
                 <li>Click <strong>Generate</strong>.</li>
                 <li>When complete, the log will stop and at the end you will see a message saying "LOD generation complete", you can now close xLODGen.</li>
             </ol>
             <blockquote>
                 <h2 id="settingsDetails">What The Settings Mean</h2>
+                <h3>Objects:</h3>
                 <ul>
-                    <li><strong>Atlas size</strong>: The <a href="https://en.wikipedia.org/wiki/Texture_atlas" target="_blank">atlas</a> is what contains all textures for the <b>Object LOD</b> meshes, increasing its size means that you can have more textures on the atlas (from the new resources) and they could also be higher resolution, keep in mind that the tool will create this atlas with just the resolution it ends up needing (e.g. if you only need 1024x512 for your atlas, that will be the final resolution of it, what we set is simply the max allowed).</li>
+                    <li><strong>Atlas size</strong>: The <a href="https://en.wikipedia.org/wiki/Texture_atlas" target="_blank">atlas</a> is what contains all textures for the <b>Object LOD</b> meshes, increasing its size means that you can have more textures on the atlas (from the new resources) and they could also be higher resolution.
+                        <br>
+                        Keep in mind that the tool will create this atlas with just the resolution it ends up needing (e.g. if you only need 1024x512 for your atlas, that will be the final resolution of it, what we set is simply the max allowed).
+                    </li>
                     <li><strong>Max texture size</strong>: Object textures above this resolution will not be allowed on the atlas, we increase this to make sure everything makes it there.</li>
+                </ul>
+
+                <h3>Landscape</h3>
+                <ul>
                     <li><strong>Protect borders</strong>: Prevents ugly terrain drops at the cell borders.</li>
                     <li><strong>Size</strong>: As a result of using <a href="https://en.wikipedia.org/wiki/Mipmap" target="_blank">mipmaps</a>, the benefit of high terrain LOD resolutions will be miniscule, 512 on LOD4 and 256 on the next levels will suffice.</li>
                     <li><strong>Bake normal-maps</strong>: Roughens the terrain LOD textures to match the actual terrain's normal map.</li>
@@ -299,6 +372,8 @@ bForceFullLOD=1</textarea>
                     <li><strong>Quality</strong>: This controls the amount of detail in the LOD's geometry. Lower values have more detail and have a minor performance cost because of the amount of triangles in the mesh.</li>
                 </ul>
             </blockquote>
+
+            <!-- Installing the LOD -->
             <p>
                 <a>
                     <h2 id="installingLod">Installing the LOD</h2>
@@ -311,7 +386,14 @@ bForceFullLOD=1</textarea>
                 <li>Cut them to the <strong>FNVLODGen Output</strong> mod you just created (right-click on the mod and select <b>Open in Explorer)</b>.</li>
                 <li>If you are using <a href="./bugfix.html#aqua" target="_blank">Strip Performance Fix</a> <b>and</b> you generated terrain LOD, move Strip Performance Fix <b>below</b> your FNVLODGen Output.</li>
             </ol>
-            <blockquote>IMPORTANT! Do not disable the LOD resources you installed previously, the game needs those edits for the LOD to work properly.</blockquote>
+            <blockquote>
+                <b>IMPORTANT!</b>
+                <br>
+                Do not disable the LOD resources you installed previously, the game needs those edits for the LOD to work properly.
+                <br>
+                <br>
+                Additionally, you need to regenerate <b>Tree LOD</b> in case mods that add trees are moved in the load order.
+            </blockquote>
         </div>
 
         <!-- Arrows -->
@@ -324,6 +406,12 @@ bForceFullLOD=1</textarea>
     <!-- Right Sidebar -->
     <div id="sidenavRight">
         <ul>
+            <li>
+                <a href="#whatIsLOD">What is LOD</a>
+            </li>
+            <li>
+                <a href="#whyGenerate">Why generate LOD</a>
+            </li>
             <li>
                 <a href="#iniTweaks">INI Tweaks</a>
             </li>
