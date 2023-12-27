@@ -9,14 +9,20 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
+function closeAllDonoMenus() {
+    var items = document.getElementsByClassName("donoMenu");
+    for (var i = 0; i < items.length; i++) {
+        if (items[i].style.display == "block") {
+            items[i].style.display = "none";
+        }
+    }
+}
+
 function sizeChanged() {
     if (document.documentElement.clientWidth > 760) {
         document.getElementById("sideButton").style.marginLeft = "";
         document.getElementById("sidenavLeft").style.width = "";
-        var items = document.getElementsByClassName("donoMenu");
-        for (var i = 0; i < items.length; i++) {
-            items[i].style.display = "none";
-        }
+        closeAllDonoMenus();
     }
 }
 
@@ -28,10 +34,7 @@ function toggleNav() {
     else {
         document.getElementById("sidenavLeft").style.width = "";
         document.getElementById('sideButton').classList.remove('pressed');
-        var items = document.getElementsByClassName("donoMenu");
-        for (var i = 0; i < items.length; i++) {
-            items[i].style.display = "none";
-        }
+        closeAllDonoMenus();
     }
 }
 
@@ -46,19 +49,30 @@ function titleGlow(enable) {
     }
 }
 
-function toggleDonationMenu(element) {
-    var items = document.getElementsByClassName("donoMenu");
-    for (var i = 0; i < items.length; i++) {
-        items[i].style.display = "none";
-    }
+function handleButtonClick(event, element) {
+    event.stopPropagation();
 
+    toggleDonationMenu(element);
+}
+
+function toggleDonationMenu(element) {
+    closeAllDonoMenus();
     if (element.style.display == "none") {
         element.style.display = "block";
+
+        // Close the popup after 20 seconds
+        setTimeout(function() {
+            element.style.display = "none";
+        }, 20000);
     }
     else {
         element.style.display = "none";
     }
 }
+
+document.addEventListener('click', function(event) {
+    closeAllDonoMenus();
+});
 
 function fadeOut(element) {
     element.style.opacity = "0%";
