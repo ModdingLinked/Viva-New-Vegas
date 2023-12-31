@@ -216,7 +216,7 @@
                     <strong>Terrain LOD</strong> - These blocks represent landscape of at least 4 cells. This is the only LOD that has quality levels - higher levels cover more cells. Due to the sheer size and texture count, it takes the longest to generate.
                 </li>
                 <li>
-                    <strong>Tree LOD</strong> - All flagged SpeedTree objects are merged into one block. Works similarly to Object LOD, with the difference of being tied to the plugin load order. Fastest to generate.
+                    <strong>Tree LOD</strong> - All flagged SpeedTree objects are merged into one block. Works similarly to Object LOD, with the difference of using simple 2D planes instead of actual geometry. Fastest to generate.
                     <blockquote>
                         Despite the name, Tree LOD is horrible for trees. It's only good for bushes and other small flora objects, for this reason trees themselves are most often made as Object LOD.
                     </blockquote>
@@ -387,9 +387,6 @@ bForceFullLOD=1</textarea>
                 <b>IMPORTANT:</b>
                 <br>
                 Do not disable the LOD resources you installed previously, the game needs those edits for the LOD to work properly.
-                <br>
-                <br>
-                Additionally, you need to regenerate <b>Tree LOD</b> in case mods that add trees are moved in the load order.
             </blockquote>
         </div>
 
