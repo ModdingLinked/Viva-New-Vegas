@@ -214,6 +214,7 @@ img {
   box-shadow: 0.1em 0.1em 0.6em rgba(0, 0, 0, 0.6);
   z-index: 1;
   text-align: center;
+  margin-bottom: auto;
 }
 
 .welcomeContent .welcomeButtonWJ {
