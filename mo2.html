@@ -106,7 +106,7 @@
                 <li>
                     <a href="./avoid-mods.html">Mods to Avoid</a>
                 </li>
-<!--                 <li>
+                <!--                 <li>
                     <a href="./wabbajack.html">Wabbajack</a>
                 </li> -->
             </ul>
@@ -189,10 +189,18 @@
             </p>
             <ol>
                 <li>Download <strong>Mod Organizer 2</strong> from <a href="https://github.com/ModOrganizer2/modorganizer/releases/download/v2.5.1rc2/Mod.Organizer-2.5.1rc2.7z" target="_blank">here</a>.</li>
-                <li>Once the download has finished, extract the archive anywhere <u>outside</u> of the default Windows folders (like <code>Program Files x86</code>) and <u>outside</u> of the game's <strong>Root</strong> folder.
+                <li>Once the download has finished, right click the file and open its <strong>Properties</strong>.</li>
+                <li>In the properties window, tick the <strong>Unblock</strong> checkbox under <strong>Security</strong> section.</li>
+                <blockquote>
+                    This operation is required because Windows can block MO2 files from loading.
+                    <br>
+                    If you used the installer, this action is not needed as it handles it automatically.
+                </blockquote>
+                <li>Extract the archive anywhere <u>outside</u> of the default Windows folders (like <code>Program Files x86</code>) and <u>outside</u> of the game's <strong>Root</strong> folder.
                     <br>
                     Example install path: <code>C:\Modding\MO2\Viva New Vegas</code>
                 </li>
+                <blockquote>It's discouraged to store MO2 on Desktop or Documents if you use OneDrive or similar cloud providers, due to potential issues and degraded performance.</blockquote>
             </ol>
 
             <!-- MO2 -->
@@ -233,7 +241,14 @@
                 <li>Add a <b>Folder</b> exclusion and point it to the folder <strong>Mod Organizer 2</strong> is in.</li>
                 <li>Add another exclusion for your <strong>game folder</strong> (the game's root folder, not documents).</li>
             </ol>
-            <blockquote>If you are using a third-party antivirus, you will need to find the exceptions menu and add those 2 folders mentioned previously.</blockquote>
+            <blockquote>
+                This operation is required because Windows can block MO2 and mod files from loading due to how MO2's virtualized filesystem works.
+                <br>
+                If you used the installer, this action is not needed as it handles it automatically.
+                <br>
+                <br>
+                If you are using a third-party antivirus, you will need to find the exceptions menu and add those 2 folders mentioned previously.
+            </blockquote>
 
             <!-- Plugins -->
             <p>
