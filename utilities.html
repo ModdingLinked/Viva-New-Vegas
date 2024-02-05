@@ -456,34 +456,42 @@
                 <li>Paste in the following:</li>
                 <textarea readonly="readonly" style="height: 51.5em; width: 95%;" onclick="this.focus();this.select()">
 [Audio]
-; Enables additional worker thread for minor performance improvement. Disable if you encounter audio stutter.
+; Enables additional worker thread for minor performance improvement
 bMultiThreadAudio=1
+
 ; Disables debug logging to save memory and CPU time
 bUseAudioDebugInformation=0
-; Increases memory buffers to reduce audio issues
-iAudioCacheSize=8192
-iMaxSizeForCachedSound=1024
+
+; Increase audio file cache size to reduce loading stutter
+iAudioCacheSize=16384
+iMaxSizeForCachedSound=2048
 
 [BackgroundLoad]
 ; Forces cell unload on fast travel to lessen memory usage
 bSelectivePurgeUnusedOnFastTravel=1
+
 ; Reduces stutter when loading multiple NPCs
 bBackgroundLoadLipFiles=1
 
 [Controls]
-; Disables mouse acceleration
+; Disables mouse acceleration in menus
+; Game does not have mouse acceleration for the camera
 fForegroundMouseAccelBase=0
 fForegroundMouseAccelTop=0
 fForegroundMouseBase=0
 fForegroundMouseMult=0
 
 [Display]
-; Enables Fullscreen mode
+; Enables Fullscreen mode for the best performance in D3D9
+; Refer to the Performance Guide for more info
 bFull Screen=1
+
 ; Forces highest texture quality so the game won't crash if you had it set to anything lower
 iTexMipMapSkip=0
+
 ; Disables actor shadows due to their low visual impact and high performance cost
 bDrawShadows=0
+
 ; World FOV
 fDefaultWorldFOV=75.0000
 ; 1st person FOV
@@ -494,12 +502,17 @@ fPipboy1stPersonFOV=47.0
 [General]
 ; Forces faster cell unload to lessen memory usage
 bPreemptivelyUnloadCells=1
+
 ; Enables multithreaded AI
 iNumHWThreads=3
 
 [Grass]
 ; Increases grass draw distance
 fGrassStartFadeDistance=11200
+
+; Ensures that 3.0 Vertex Shader is used, in case you don't use the Ultra Preset
+; Allows drawing more grass with better performance
+b30GrassVS=1
 
 [PipBoy]
 ; Fixes flicker when opening Pip-Boy when its light is on
