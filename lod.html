@@ -193,7 +193,7 @@
                     <strong>Object LOD</strong> - All flagged objects in a group of cells are represented as one geometry block. This LOD has only one constant quality level. Fast generation time.
                 </li>
                 <li>
-                    <strong>Terrain LOD</strong> - These blocks represent landscape of at least 4 cells. This is the only LOD that has quality levels - higher levels cover more cells. Due to the sheer size and texture count, it takes the longest to generate.
+                    <strong>Terrain LOD</strong> - These blocks represent landscape of cell groups. This is the only LOD that has quality levels - higher levels cover more cells (LOD4 - 4x4, LOD8 - 8x8, etc.). Due to the sheer size and texture count, it takes the longest to generate.
                 </li>
                 <li>
                     <strong>Tree LOD</strong> - All flagged SpeedTree objects are merged into one block. Works similarly to Object LOD, with the difference of using simple 2D planes instead of actual geometry. Fastest to generate.
