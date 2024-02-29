@@ -6,17 +6,12 @@
 		<lastmod>2023-06-22</lastmod>
 	</url>
 	<url>
-		<loc>https://vivanewvegas.moddinglinked.com/resources.html</loc>
+		<loc>https://vivanewvegas.moddinglinked.com/index.html</loc>
 		<priority>0.80</priority>
-		<lastmod>2024-01-16</lastmod>
+		<lastmod>2023-06-22</lastmod>
 	</url>
 	<url>
-		<loc>https://vivanewvegas.moddinglinked.com/avoid-mods.html</loc>
-		<priority>0.80</priority>
-		<lastmod>2024-01-16</lastmod>
-	</url>
-	<url>
-		<loc>https://vivanewvegas.moddinglinked.com/avoid-tools.html</loc>
+		<loc>https://vivanewvegas.moddinglinked.com/intro.html</loc>
 		<priority>0.80</priority>
 		<lastmod>2024-01-16</lastmod>
 	</url>
@@ -26,14 +21,19 @@
 		<lastmod>2024-01-16</lastmod>
 	</url>
 	<url>
-		<loc>https://vivanewvegas.moddinglinked.com/intro.html</loc>
+		<loc>https://vivanewvegas.moddinglinked.com/avoid-tools.html</loc>
 		<priority>0.80</priority>
 		<lastmod>2024-01-16</lastmod>
 	</url>
 	<url>
-		<loc>https://vivanewvegas.moddinglinked.com/index.html</loc>
+		<loc>https://vivanewvegas.moddinglinked.com/avoid-mods.html</loc>
 		<priority>0.80</priority>
-		<lastmod>2023-06-22</lastmod>
+		<lastmod>2024-01-16</lastmod>
+	</url>
+	<url>
+		<loc>https://vivanewvegas.moddinglinked.com/resources.html</loc>
+		<priority>0.80</priority>
+		<lastmod>2024-01-16</lastmod>
 	</url>
 	<url>
 		<loc>https://vivanewvegas.moddinglinked.com/lod.html</loc>
@@ -56,29 +56,19 @@
 		<lastmod>2024-01-22</lastmod>
 	</url>
 	<url>
-		<loc>https://vivanewvegas.moddinglinked.com/mo2.html</loc>
+		<loc>https://vivanewvegas.moddinglinked.com/finish.html</loc>
 		<priority>0.64</priority>
 		<lastmod>2024-01-16</lastmod>
 	</url>
 	<url>
-		<loc>https://vivanewvegas.moddinglinked.com/utilities.html</loc>
-		<priority>0.64</priority>
-		<lastmod>2024-01-16</lastmod>
-	</url>
-	<url>
-		<loc>https://vivanewvegas.moddinglinked.com/bugfix.html</loc>
-		<priority>0.64</priority>
-		<lastmod>2024-02-28</lastmod>
-	</url>
-	<url>
-		<loc>https://vivanewvegas.moddinglinked.com/hud.html</loc>
+		<loc>https://vivanewvegas.moddinglinked.com/visuals.html</loc>
 		<priority>0.64</priority>
 		<lastmod>2024-02-29</lastmod>
 	</url>
 	<url>
-		<loc>https://vivanewvegas.moddinglinked.com/gameplay.html</loc>
+		<loc>https://vivanewvegas.moddinglinked.com/content.html</loc>
 		<priority>0.64</priority>
-		<lastmod>2024-01-29</lastmod>
+		<lastmod>2024-02-29</lastmod>
 	</url>
 	<url>
 		<loc>https://vivanewvegas.moddinglinked.com/overhauls.html</loc>
@@ -86,17 +76,27 @@
 		<lastmod>2024-02-08</lastmod>
 	</url>
 	<url>
-		<loc>https://vivanewvegas.moddinglinked.com/content.html</loc>
+		<loc>https://vivanewvegas.moddinglinked.com/gameplay.html</loc>
+		<priority>0.64</priority>
+		<lastmod>2024-01-29</lastmod>
+	</url>
+	<url>
+		<loc>https://vivanewvegas.moddinglinked.com/hud.html</loc>
+		<priority>0.64</priority>
+		<lastmod>2024-02-29</lastmod>
+	</url>
+	<url>
+		<loc>https://vivanewvegas.moddinglinked.com/bugfix.html</loc>
+		<priority>0.64</priority>
+		<lastmod>2024-02-29</lastmod>
+	</url>
+	<url>
+		<loc>https://vivanewvegas.moddinglinked.com/utilities.html</loc>
 		<priority>0.64</priority>
 		<lastmod>2024-01-16</lastmod>
 	</url>
 	<url>
-		<loc>https://vivanewvegas.moddinglinked.com/visuals.html</loc>
-		<priority>0.64</priority>
-		<lastmod>2024-02-08</lastmod>
-	</url>
-	<url>
-		<loc>https://vivanewvegas.moddinglinked.com/finish.html</loc>
+		<loc>https://vivanewvegas.moddinglinked.com/mo2.html</loc>
 		<priority>0.64</priority>
 		<lastmod>2024-01-16</lastmod>
 	</url>
