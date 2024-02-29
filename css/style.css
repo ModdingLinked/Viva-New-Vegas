@@ -328,7 +328,7 @@ img {
      -moz-user-select: none;
           user-select: none;
   transition: all 333ms Cubic-Bezier(0, 0, 0, 1);
-  padding-top: 4em;
+  margin-top: 4em;
   overflow-x: hidden;
   white-space: nowrap;
   z-index: 2;
@@ -496,19 +496,39 @@ h2 {
 }
 
 #footer {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
   margin-top: auto;
+  margin-bottom: 4em !important;
+}
+
+#footer ul {
+  margin-block-start: 0em !important;
+  margin-block-end: 0em !important;
+  margin-inline-start: 0px !important;
+  margin-inline-end: 0px !important;
+  padding-inline-start: 0px !important;
 }
 
 #footer a,
 .dono {
-  padding: 0.3em 0em;
-  font-size: 2em;
+  padding-left: 6% !important;
+  font-size: 1.8em !important;
+  color: rgba(255, 255, 255, 0.7) !important;
   cursor: pointer;
+  transform: translateY(0.125em);
 }
 
-#footer a:hover,
+#footer i {
+  color: rgba(255, 255, 255, 0.8) !important;
+  transform: translateY(-0.125em);
+  margin-right: 2%;
+}
+
+#footer li:hover a,
 .dono:hover {
-  scale: 90%;
+  color: rgb(255, 255, 255) !important;
+  text-shadow: rgba(255, 255, 255, 0.4) 0 0 0.5em !important;
 }
 
 .donoMenu {
@@ -524,6 +544,30 @@ h2 {
 
 .donoMenu a:hover {
   scale: 100%;
+}
+
+.discord {
+  background-color: rgba(88, 101, 242, 0.5);
+}
+
+.discord:hover {
+  background-color: rgb(88, 101, 242);
+}
+
+.kofi {
+  background-color: rgba(255, 94, 91, 0.5);
+}
+
+.kofi:hover {
+  background-color: rgb(255, 94, 91);
+}
+
+.github {
+  background-color: rgba(36, 41, 47, 0.5);
+}
+
+.github:hover {
+  background-color: rgb(36, 41, 47);
 }
 
 .navigationArrow img {
@@ -587,9 +631,9 @@ h2 {
   }
   #sidenavLeft {
     width: 0;
-    overflow-y: scroll;
     overflow-x: hidden;
     background-color: rgb(44, 44, 44) !important;
+    box-shadow: 5px 0 20px hsla(0, 0%, 0%, 0.8);
   }
   #sideButton {
     margin-left: 0;
