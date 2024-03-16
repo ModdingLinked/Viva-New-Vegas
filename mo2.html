@@ -176,7 +176,7 @@
             <h4>MO2's main characteristics are:</h4>
             <ul>
                 <li>
-                    <strong>Virtual Filesystem (UVFS)</strong>: MO2 does not install mods directly into the game's folder, but rather creates a virtual filesystem that the game reads from.
+                    <strong>Virtual Filesystem (USVFS)</strong>: MO2 does not install mods directly into the game's folder, but rather creates a virtual filesystem that the game reads from.
                     <br>
                     This allows for:
                     <ul>
@@ -185,12 +185,12 @@
                         <li>Having multiple profiles with different mod setups.</li>
                         <li>Keeping orignal game files clean,.</li>
                     </ul>
-                    Nothing is perfect, and UVFS is no exception. There are some downsides to it, such as:
+                    Nothing is perfect, and USVFS is no exception. There are some downsides to it, such as:
                     <ul>
                         <li>Mods installed through MO2 are "visible" only to programs launched using MO2.</li>
                         <li>Some programs may not work properly with MO2's virtual filesystem.</li>
-                        <li>UVFS can cause performance overhead if you have tons of loose (not-BSA) files.</li>
-                        <li>UVFS works by "hooking" into the game (similarly to mods such as NVSE plugins, ReShade, etc.).
+                        <li>USVFS can cause performance overhead if you have tons of loose (not-BSA) files.</li>
+                        <li>USVFS works by "hooking" into the game (similarly to mods such as NVSE plugins, ReShade, etc.).
                             <br>
                             This method can be considered as unsafe by some Anti-Virus software due to its memory-invasive nature.
                         </li>
@@ -203,7 +203,7 @@
                     <strong>Two pane interface</strong>: MO2 is split into two sides, the left side is the mod list and the right side is the plugin list. This allows for easy conflict resolution and mod management.
                 </li>
                 <li>
-                    <strong>Portability</strong>: Thanks to the use of UVFS, MO2 has a "portable" mode that allows you to move the entire MO2 folder to another location with minimal setup.
+                    <strong>Portability</strong>: Thanks to the use of USVFS, MO2 has a "portable" mode that allows you to move the entire MO2 folder to another location with minimal setup.
                 </li>
                 <li>
                     <strong>Modding Community Integration</strong>: MO2 has built-in support for Nexus Mods, allowing you to download mods directly from the Nexus.
