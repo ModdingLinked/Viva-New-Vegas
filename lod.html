@@ -193,7 +193,7 @@
                     <strong>Object LOD</strong> - All flagged objects in a group of cells are represented as one geometry block. This LOD has only one constant quality level. Fast generation time.
                 </li>
                 <li>
-                    <strong>Terrain LOD</strong> - These blocks represent landscape of cell groups. This is the only LOD that has quality levels - higher levels cover more cells (LOD4 - 4x4, LOD8 - 8x8, etc.). Due to the sheer size and texture count, it takes the longest to generate.
+                    <strong>Terrain LOD</strong> - These blocks represent landscape of cell groups. This is the only LOD that has quality levels that change with the distance - higher levels cover more cells (LOD4 - 4x4, LOD8 - 8x8, etc.). Due to the sheer size and texture count, it takes the longest to generate.
                 </li>
                 <li>
                     <strong>Tree LOD</strong> - All flagged SpeedTree objects are merged into one block. Works similarly to Object LOD, with the difference of using simple 2D planes instead of actual geometry. Fastest to generate.
@@ -381,7 +381,8 @@ bForceFullLOD=1</textarea>
                     </ul>
                 </li>
             </ol>
-            <blockquote>If you are modding Tale of Two Wastelands, also do the following:
+            <blockquote>
+                If you are modding Tale of Two Wastelands, also do the following:
                 <ul>
                     <li>Disable or uninstall <strong>FNVLODGen Resources</strong></li>
                     <li>Install <a href="https://www.nexusmods.com/newvegas/mods/77945" target="_blank">LOD additions and improvements - TTW Patch</a></li>
@@ -392,6 +393,13 @@ bForceFullLOD=1</textarea>
             <p>
                 Make sure to enable all downloaded mods before continuing!
             </p>
+            <blockquote>
+                <b>IMPORTANT:</b>
+                <br>
+                Do not disable the LOD resources you installed previously, the game needs those edits for the LOD to work properly.
+                <br>
+                LOD Plugins can be safely merged if needed.
+            </blockquote>
 
             <p>
                 <a class="link" href="https://www.nexusmods.com/newvegas/mods/79358" target="_blank">
@@ -437,7 +445,8 @@ bForceFullLOD=1</textarea>
                         </blockquote>
                         <li>In the right pane, check <strong>Terrain LOD</strong>.</li>
                         <li>
-                            Copy all settings from images below:
+                            Lansdcape LOD had 4 different quality levels for different distances (with 4 being the closest to you, and 32 being the farthest).
+                            Copy settings for each LOD level from images below:
                             <ul>
                                 <li><b>LOD 4</b>:</li>
                                 <img src="./img/LOD/Land4.webp" alt="Landscape LOD Settings - Level 4" class="width-very-limited">
@@ -494,13 +503,6 @@ bForceFullLOD=1</textarea>
                 <li>Navigate to where the LOD files were generated and select both the <code>textures</code> and <code>meshes</code> folders.</li>
                 <li>Cut them to the <strong>FNVLODGen Output</strong> mod you just created (right-click on the mod and select <b>Open in Explorer)</b>.</li>
             </ol>
-            <blockquote>
-                <b>IMPORTANT:</b>
-                <br>
-                Do not disable the LOD resources you installed previously, the game needs those edits for the LOD to work properly.
-                <br>
-                LOD Plugins can be safely merged if needed.
-            </blockquote>
         </div>
 
         <!-- Arrows -->
