@@ -57,7 +57,7 @@ strong {
 code {
   background-color: rgba(0, 0, 0, 0.233);
   padding: 0.11em 0.33em;
-  line-break: loose;
+  white-space: pre;
   border-radius: 4px;
 }
 
@@ -597,6 +597,18 @@ h2 {
   rotate: 180deg;
 }
 
+.width-limited {
+  max-width: 90% !important;
+}
+
+.width-very-limited {
+  max-width: 70% !important;
+}
+
+.width-insanely-limited {
+  max-width: 30% !important;
+}
+
 @keyframes slide-down {
   from {
     max-height: 0;
@@ -620,6 +632,22 @@ h2 {
 }
 
 @media only screen and (max-width: 900px) {
+  .section {
+    font-size: 1rem;
+  }
+
+  .width-limited {
+    max-width: 95% !important;
+  }
+
+  .width-very-limited {
+    max-width: 95% !important;
+  }
+
+  .width-insanely-limited {
+    max-width: 70% !important;
+  }
+
   .navigationArrow .arrowText {
     display: none;
   }
@@ -666,10 +694,6 @@ h2 {
   h1,
   h2 {
     line-height: 1.2em;
-  }
-
-  code {
-    line-break: anywhere;
   }
 
   #xnvseRoot {
@@ -735,14 +759,6 @@ h2 {
 }
 
 /* Setup Expanders */
-
-.width-limited {
-  max-width: 90%;
-}
-
-.width-very-limited {
-  max-width: 70%;
-}
 
 @keyframes slide-up {
   from {
