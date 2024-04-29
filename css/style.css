@@ -610,6 +610,10 @@ h2 {
   max-width: 70% !important;
 }
 
+.width-ultra-limited {
+  max-width: 50% !important;
+}
+
 .width-insanely-limited {
   max-width: 30% !important;
 }
@@ -641,6 +645,9 @@ h2 {
   }
   .width-very-limited {
     max-width: 95% !important;
+  }
+  .width-ultra-limited {
+    max-width: 80% !important;
   }
   .width-insanely-limited {
     max-width: 70% !important;
