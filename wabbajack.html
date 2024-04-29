@@ -193,7 +193,6 @@
                     <li>The game folder,</li>
                     <li>The folder where you put Wabbajack.exe.</li>
                 </ul>
-                <li>Add your <b>Installation Location</b> and game folder as <strong>exceptions</strong> in your AV by following <a href="./mo2.html#exceptions">these steps</a>.</li>
                 <li>Begin the installation.</li>
                 <li>Accept the Nexus Mods API request.</li>
                 <li>If you are not a Premium user you will need to manually click download for each mod.</li>
@@ -222,6 +221,22 @@
                 <li>Close the command prompt and a file named <strong>FalloutNV_backup.exe</strong> should appear in the game's <strong>Root</strong> folder.</li>
             </ol>
 
+            <!-- Exclusions -->
+            <h3 class="smallheader" id="exclusions"><b>Exclusions</b></h3>
+            <ol>
+                <li>Open <a href="ms-settings:windowsdefender">Windows Security</a>.</li>
+                <li>Open <strong>Virus & threat protection</strong>.</li>
+                <li>Click <strong>Manage settings</strong> under <b>Virus & threat protection settings</b>.</li>
+                <li>Scroll down and click <strong>Add or remove exclusions</strong> under <b>Exclusions</b>.</li>
+                <li>Add a <b>Folder</b> exclusion and point it to the <strong>Installation Location</strong> folder.</li>
+            </ol>
+            <blockquote>
+                This operation is required because Windows can block MO2 and mod files from loading due to how MO2's virtualized filesystem works.
+                <br>
+                <br>
+                If you are using a third-party antivirus, you will need to find the exclusions menu and add one to the same folder.
+            </blockquote>
+
             <!-- Perf guide -->
             <p>
                 <a class="link" href="https://performance.moddinglinked.com/falloutnv.html" target="_blank">
@@ -237,7 +252,7 @@
 
             <hr>
 
-            <!-- Launching the Game -->
+            <!-- Launching -->
             <p>
                 <a>
                     <h2 id="gameLaunch">Launching the Game</h2>
@@ -294,13 +309,16 @@
                 <a href="#postInstall">Post-Install Steps</a>
                 <ul>
                     <li>
+                        <a href="#exclusions">Exclusions</a>
+                    </li>
+                    <li>
                         <a href="#root">Root Mods</a>
                     </li>
                     <li>
                         <a href="#flip">Performance Guide</a>
                     </li>
                     <li>
-                        <a href="#gameLaunch">Launching the game</a>
+                        <a href="#gameLaunch">Launching</a>
                     </li>
                 </ul>
             </li>
