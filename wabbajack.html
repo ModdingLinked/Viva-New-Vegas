@@ -143,7 +143,7 @@
                 <li class="kofi">
                     <a href="https://ko-fi.com/wall_sogb" target="_blank">
                         <i class="fa fa-coffee"></i>
-                        Support us
+                        Donate
                     </a>
                 </li>
                 <li class="github">
@@ -160,10 +160,9 @@
     <div class="content">
         <div class="section">
             <h1>Wabbajack</h1>
-            Wabbajack is currently offline, sorry for the inconvenience.
-            <!--
-            <h1>Wabbajack</h1>
             The VNV Wabbajack modlist will allow you to quickly and easily install VNV, both the basic and extended sections.
+
+            <!-- Introduction and Setup -->
             <p>
                 <a>
                     <h2 id="introSetup">Introduction and Setup</h2>
@@ -175,6 +174,8 @@
                 <br>
                 The Epic Games Store version of the game is not supported by this Wabbajack list.
             </blockquote>
+
+            <!-- Installation -->
             <p>
                 <a>
                     <h2 id="installation">Installation</h2>
@@ -187,9 +188,9 @@
                 <li>Click <strong>Browse Modlists</strong>, enable <strong>Show Unofficial Lists</strong>, then locate Viva New Vegas in the gallery and click the download button in the corner.</li>
                 <li>In <b>Installation Location</b> select an <strong>empty folder</strong> that is <b>NOT</b> the following:</li>
                 <ul>
-                    <li>The Steam folder.</li>
-                    <li>Any default Windows folders.</li>
-                    <li>The game folder.</li>
+                    <li>The Steam folder,</li>
+                    <li>Any default Windows folders,</li>
+                    <li>The game folder,</li>
                     <li>The folder where you put Wabbajack.exe.</li>
                 </ul>
                 <li>Add your <b>Installation Location</b> and game folder as <strong>exceptions</strong> in your AV by following <a href="./mo2.html#exceptions">these steps</a>.</li>
@@ -201,67 +202,82 @@
                         <li>If you see a red <strong>Installation Failed</strong> screen, please join the <a href="https://discord.gg/S99Ary5eba" target="_blank">ModdingLinked</a> Discord server for support.</li>
                     </ul>
             </ol>
+
+            <hr>
+
+            <!-- Post-Install Steps -->
             <p>
                 <a>
                     <h2 id="postInstall">Post-Install Steps</h2>
                 </a>
             </p>
+
+            <!-- Root Mods -->
+            <h3 class="smallheader" id="root"><b>Root Mods</b></h3>
             <ol>
-                <li>In your <b>Installation Location</b>, open the <strong>Tools</strong> folder, then open the <strong>4GB Patcher</strong> folder.</li>
-                <li>Copy the <strong>.exe</strong> file to the game's <strong>Root</strong> folder.</li>
-                <li>Double-click on <strong>FNVpatch.exe</strong> to run it.</li>
-                <li>A command prompt window will open and should say <b>FalloutNV.exe patched!</b></li>
+                <li>In your <b>Installation Location</b>, open the <strong>Root Mods</strong> folder,</li>
+                <li>Copy <strong>everything</strong> to the game's <strong>Root</strong> folder.</li>
+                <li>Double-click on <strong>FNVpatch.exe</strong> to run it,</li>
+                <li>A command prompt window will open and should say <b>FalloutNV.exe patched!</b>,</li>
                 <li>Close the command prompt and a file named <strong>FalloutNV_backup.exe</strong> should appear in the game's <strong>Root</strong> folder.</li>
-                <li>In your <b>Installation Location</b>, open Mod Organizer 2.</li>
-                <blockquote>
-                    <b>IMPORTANT:</b>
-                    <br>
-                    If you are planning to install texture mods, enable the <b>NVTF - Texture Modding Preset</b> mod in the <b>Utilities</b> separator!
-                </blockquote>
-                <li>Now you can play the game through the <strong>New Vegas</strong> option in the top right:</li>
-                <img src="./img/Launch/Game.webp" alt="Run New Vegas through MO2" class="width-very-limited">
-                <li>Remember to always run the game from <b>Mod Organizer 2</b>.</li>
             </ol>
-            <blockquote>This Wabbajack list ships with decompressed plugins and better LOD generated according to our <a href="./lod.html">LOD guide</a>.</blockquote>
+
+            <!-- Perf guide -->
             <p>
-                <a>
-                    <h2 id="optional">Optional Steps</h2>
+                <a class="link" href="https://performance.moddinglinked.com/falloutnv.html" target="_blank">
+                    <h2 id="flip">Performance and Stability Guide</h2>
                 </a>
             </p>
-            <h3 class="smallheader" id="limiter"><b>FPS Limiter</b></h3>
-            Follow the limiter section of the <a class="link" href="https://performance.moddinglinked.com/falloutnv.html#RecommendedLimiters" target="_blank">Performance Guide</a> in order to massively reduce your latency (this is highly recommended because the Wabbajack only comes with VSync as default, which is not meant to be used as a limiter but we cannot provide a pre-configured one).
-            <h3 class="smallheader" id="decompressor"><b>Decompressor</b></h3>
-            BSA Decompressor will give you slightly better performance and faster loading times at a small disk space cost.
-            <ol>
-                <li>In the same <strong>Tools</strong> folder as before, open the <strong>BSA Decompressor</strong> folder.</li>
-                <li>Run <strong>FNV BSA Decompressor.exe</strong>.</li>
-                <li>The <strong>Fallout: New Vegas</strong> and <strong>Decompressed Archives</strong> paths should be filled by default (root folder and data folder respectively). If they aren't, close the program and re-run your game launcher to generate the required registry key.</li>
-                <li>Click <strong>Decompress</strong>, wait for the process the finish, then exit the program once finished.</li>
-            </ol>
-            <h3 class="smallheader" id="dxvk"><b>DXVK</b></h3>
-            DXVK is mainly used to improve performance in CPU-limited scenarios, which are the main cause of low FPS in this game.
-            <ol>
-                <li>Read the mod description available <a href="https://www.nexusmods.com/newvegas/mods/79299" target="_blank">here</a>.</li>
-                <li>Once you know if your GPU supports DXVK and what version to use, enable the correct DXVK for your setup under the <strong>Utilities</strong> separator.</li>
-            </ol>
-            <h3 class="smallheader" id="nvhr"><b>NVHR</b></h3>
-            Improves performance by optimizing the game's heap.
-            <ol>
-                <li>Head to the <strong>Tools</strong> folder, then the <strong>NVHR</strong> folder.</li>
-                <li>Take <b>all</b> files and copy them to the game's <strong>root</strong> folder.</li>
-            </ol>
+            <blockquote>
+                <b>IMPORTANT:</b>
+                <br>
+                If you are an AMD GPU user, installing DXVK is <b>mandatory</b>, otherwise your game will crash.
+            </blockquote>
+            In-depth guide about how to fix the game's lackluster performance, display issues and <strong>alt-tabbing</strong>. Covers topics such as <strong>DXVK</strong>, framerate limiting, display modes, lag and HDR.
+
             <hr>
+
+            <!-- Launching the Game -->
+            <p>
+                <a>
+                    <h2 id="gameLaunch">Launching the Game</h2>
+                </a>
+            </p>
+            In your <b>Installation Location</b>, open Mod Organizer 2.</li>
+            <blockquote>If you are planning to install texture mods, enable the <b>NVTF - Texture Modding Preset</b> mod in the <b>Utilities</b> separator!</blockquote>
+            To run the game, use the <strong>New Vegas</strong> executable in Mod Organizer 2.
+            <br>
+            <br>
+            You can use the <b>Shortcut</b> drop-down to create Desktop and Start Menu shortcuts, this will allow you to launch the game without opening the MO2 GUI.
+            <img src="./img/Launch/Game.webp" alt="Run New Vegas through MO2" class="width-very-limited">
+            <blockquote>This Wabbajack list ships with <strong>decompressed plugins</strong> and <strong>better LOD</strong> (generated according to the <a href="./lod.html">LOD guide</a>).</blockquote>
+
+            <hr>
+
+            <!-- Updating -->
             <p>
                 <a>
                     <h2 id="updating">Updating the List</h2>
                 </a>
             </p>
             <ol>
-                <li>Verify files on Steam or GOG Galaxy.</li>
-                <li>Reinstall the list from the Wabbajack tool and enable the <strong>"Overwrite Installation"</strong> checkbox.</li>
-                <li>Reapply the 4GB Patcher and optionally the BSA Decompressor.</li>
+                <li><strong>Verify</strong> files on Steam or GOG Galaxy.</li>
+                <li>Reinstall the list from the Wabbajack tool and enable the "<strong>Overwrite Installation</strong>" checkbox.</li>
+                <li>Reapply the <strong>4GB Patcher</strong> by running it again.</li>
             </ol>
-            -->
+
+            <hr>
+
+            <!-- Finishing Notes -->
+            <p>
+                <a>
+                    <h2 id="notes">Finishing Notes</h2>
+                </a>
+            </p>
+            You have now completed the full Viva New Vegas guide and you can enjoy the game. You may want to add your own mods on top of the guide, but that is only recommended if you are an experienced modder since you need to know how to use <a href="https://moddinglinked.com/xedit.html" target="_blank">FNVEdit</a> and <a href="https://moddinglinked.com/themethod.html" target="_blank">The Method</a> and have good general knowledge of many game systems.
+            <br>
+            <br>
+            And remember, we may not provide support for setups that have added mods, especially if you went overboard.
         </div>
     </div>
 
@@ -276,13 +292,16 @@
             </li>
             <li>
                 <a href="#postInstall">Post-Install Steps</a>
-            </li>
-            <li>
-                <a href="#optional">Optional Steps</a>
                 <ul>
-                    <li><a href="#decompressor">Decompressor</a></li>
-                    <li><a href="#dxvk">DXVK</a></li>
-                    <li><a href="#nvhr">NVHR</a></li>
+                    <li>
+                        <a href="#root">Root Mods</a>
+                    </li>
+                    <li>
+                        <a href="#flip">Performance Guide</a>
+                    </li>
+                    <li>
+                        <a href="#gameLaunch">Launching the game</a>
+                    </li>
                 </ul>
             </li>
             <li>

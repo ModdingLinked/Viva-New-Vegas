@@ -109,9 +109,9 @@
                 <li>
                     <a href="./avoid-mods.html">Mods to Avoid</a>
                 </li>
-                <!--                 <li>
+                <li>
                     <a href="./wabbajack.html">Wabbajack</a>
-                </li> -->
+                </li>
             </ul>
         </div>
 
@@ -143,7 +143,7 @@
                 <li class="kofi">
                     <a href="https://ko-fi.com/wall_sogb" target="_blank">
                         <i class="fa fa-coffee"></i>
-                        Support us
+                        Donate
                     </a>
                 </li>
                 <li class="github">
@@ -162,38 +162,32 @@
         <!-- Introduction -->
         <div class="section">
             <h1>Mod Organizer 2</h1>
-            <h3>In this step, we will install and configure Mod Organizer 2.</h3>
+            <h3>In this step, we will set up Mod Organizer 2 and INI files.</h3>
 
             <hr>
 
             <!-- What is MO2 -->
             <p>
-                <a href="#whatIsMO2">
-                    <h2 id="whatIsMO2">What is Mod Organizer 2?</h2>
+                <a href="#whatIs">
+                    <h2 id="whatIs">What is Mod Organizer 2?</h2>
                 </a>
             </p>
-            Mod Organizer 2 (MO2) is an open source game mod manager, mainly used for Bethesda games.
-            <h4>MO2's main characteristics are:</h4>
+            Mod Organizer 2 (MO2) is an open source game mod manager, mainly used for Bethesda games. Its main features are:
             <ul>
                 <li>
-                    <strong>Virtual Filesystem (USVFS)</strong>: MO2 does not install mods directly into the game's folder, but rather creates a virtual filesystem that the game reads from.
-                    <br>
-                    This allows for:
+                    <strong>Virtual Filesystem (USVFS)</strong>: MO2 does not install mods directly into the game's folder, but rather creates a virtual filesystem that the game reads from. This allows for:
                     <ul>
-                        <li>Safe mod installation and uninstallation.</li>
-                        <li>Being able to modify mod install order at any point.</li>
-                        <li>Having multiple profiles with different mod setups.</li>
-                        <li>Keeping orignal game files clean,.</li>
+                        <li>Safe mod installation and uninstallation,</li>
+                        <li>Being able to modify mod install order at any point,</li>
+                        <li>Having multiple profiles with different mod setups,</li>
+                        <li>Keeping orignal game files clean.</li>
                     </ul>
-                    Nothing is perfect, and USVFS is no exception. There are some downsides to it, such as:
+                    The <b>downsides</b> to USVFS are:
                     <ul>
-                        <li>Mods installed through MO2 are "visible" only to programs launched using MO2.</li>
-                        <li>Some programs may not work properly with MO2's virtual filesystem.</li>
-                        <li>USVFS can cause performance overhead if you have tons of loose (not-BSA) files.</li>
-                        <li>USVFS works by "hooking" into the game (similarly to mods such as NVSE plugins, ReShade, etc.).
-                            <br>
-                            This method can be considered as unsafe by some Anti-Virus software due to its memory-invasive nature.
-                        </li>
+                        <li>Mods installed through MO2 are "visible" only to programs launched using MO2,</li>
+                        <li>Some programs may not work properly with MO2's virtual filesystem,</li>
+                        <li>USVFS can cause performance overhead if you have tons of loose (not-BSA/BA2) files,</li>
+                        <li>USVFS works by "hooking" into the game (similarly to mods such as F4SE plugins, ReShade, etc.). This method can be considered as unsafe by some antivirus software due to its memory-invasive nature.</li>
                     </ul>
                 </li>
                 <li>
@@ -210,7 +204,7 @@
                     <br>
                     It also has a plugin system that allows for creation of custom plugins to extend its functionality.
                     <blockquote>
-                        Mod Organizer 2 has <strong>NO</strong> support for Nexus' Collections feature, so you will have to download mods one by one.
+                        Mod Organizer 2 has <b>NO</b> support for Nexus' Collections feature, so you will have to download mods one by one.
                         <br>
                         This is not a big issue, as the guide will provide direct links to the mods you need, and most collections are low quality and not curated.
                         <hr>
@@ -224,17 +218,21 @@
 
             <!-- Why MO2 -->
             <p>
-                <a href="#whyMO2">
-                    <h2 id="whyMO2">Why Mod Organizer 2?</h2>
+                <a href="#why">
+                    <h2 id="why">Why Mod Organizer 2?</h2>
                 </a>
             </p>
-            Mod Organizer 2 has been chosen as <i>The</i> mod manager for our guides due to its ease of use, and its ability to keep the game's folder clean.
+            Mod Organizer 2 has been chosen for our guides due to its ease of use and its ability to keep the game's folder clean. This is important because it allows for easy conflict resolution and mod management, and makes correcting mistakes trivial - installed mods in the wrong order? Just drag them into the correct position!
             <br>
-            This is important because it allows for easy conflict resolution and mod management, and makes correcting mistakes trivial - installed mods in the wrong order? Just drag them into the correct position!
             <br>
             Compared to Vortex, MO2 doesn't hide the most important parts of modding from the user, making it easier to understand what is happening and why, albeit at the cost of potentially looking scary at first.
             <br>
+            <br>
             That said, we are well aware that MO2 is not perfect, and it has its own set of issues and limitations, but it is the best tool for the job.
+
+            <br>
+            <br>
+            <hr>
 
             <!-- Installing MO2 -->
             <p>
@@ -321,16 +319,18 @@
             <ol>
                 <li>Select the <strong>X</strong> in the bottom right of MO2 to close the log window.</li>
                 <li>Select the <img src="./img/mo2 settings.webp" alt="MO2 settings"> button at the top of MO2 to open the settings.</li>
-                <li>In the <strong>Theme</strong> tab, you can select a different style of your choosing from the drop-down menu at the top.</li>
-                <li>In the <strong>Nexus</strong> tab, select <strong>Connect to Nexus</strong>.</li>
+                <li>If you wish, you can select a different <strong>Theme</strong>.</li>
+                <li>In the <b>Nexus</b> tab, select <strong>Connect to Nexus</strong>.</li>
                 <img src="./img/mo2 connect.webp" alt="Connect to Nexus">
-                <ul>
-                    <li>This option will not show up if you have already connected your Nexus account on a different MO2 instance.</li>
-                </ul>
-                <li>MO2 will open your browser and prompt you to authorize the connection.</li>
-                <li>Once you authorize it, you can close out of your browser and of the MO2 settings.</li>
-                <li>Allow MO2 to restart.</li>
             </ol>
+            <blockquote>This option will not show up if you have already connected your Nexus account on a different MO2 instance.</blockquote>
+            <ol start="5">
+                <li>MO2 will open your browser and prompt you to <strong>authorize</strong> the connection.</li>
+                <li>Once you authorize it, you can close your browser and of the MO2 settings.</li>
+                <li>Allow MO2 to <strong>restart</strong>.</li>
+            </ol>
+
+            <hr>
 
             <!-- Game Settings -->
             <p>
@@ -379,9 +379,10 @@
                     <h2 id="instructions">Mod Installation Instructions</h2>
                 </a>
             </p>
-            When the guide says to install a mod, it will be formatted as follows: <strong>Main File - Example 1.5</strong>. This is referring to the mod's category on Nexus and file name.
+            When the guide says to install a mod, it will be formatted as <strong>Main File - Example 1.5</strong>, this is referring to the mod's category on Nexus and file name.
             <br>
-            The guide will list a mod's specific file name, category and version if you need to do more than just download the latest main file.
+            <br>
+            Unless otherwise specified, you will always use <b>Mod Manager Download</b>.
             <br>
             <br>
             <img src="./img/download example.webp" alt="Download example">
@@ -389,10 +390,10 @@
             <br>
             Standard mod installation procedure:
             <ol>
-                <li>Unless instructed otherwise by the guide, download a mod's latest main file using the <strong>Mod Manager Download</strong> button.</li>
-                <li>Once the download has finished, open <strong>Downloads</strong> tab in MO2 (right pane, below executable selector).</li>
+                <li>Download the indicated file(s).</li>
+                <li>Open the <strong>Downloads</strong> tab in MO2 (below the executable selector on the right).</li>
                 <li>Double-click on the mod to install it.</li>
-                <li>Enable the mod on the left pane.</li>
+                <li>Enable the mod on the left pane by ticking its checkbox.</li>
             </ol>
             Sometimes, a mod will not have a <strong>Mod Manager Download</strong>, or will be hosted on a site other than Nexus.
             <br>
@@ -424,10 +425,10 @@
     <div id="sidenavRight">
         <ul>
             <li>
-                <a href="#whatIsMO2">What is MO2?</a>
+                <a href="#whatIs">What is MO2?</a>
             </li>
             <li>
-                <a href="#whyMO2">Why MO2?</a>
+                <a href="#why">Why MO2?</a>
             </li>
             <li>
                 <a href="#installation">Installation</a>
