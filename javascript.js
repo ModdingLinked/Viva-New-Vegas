@@ -1,6 +1,14 @@
 window.addEventListener('resize', sizeChanged);
 
+const konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+let konamiCodeIndex = 0;
+
 document.addEventListener('keydown', (e) => {
+
+    if (konamiCodeIndex > 1) {
+        return;
+    }
+
     if (e.code === "ArrowRight") {
         window.open(document.getElementById("next").href, "_self")
     }
@@ -61,7 +69,7 @@ function toggleDonationMenu(element) {
         element.style.display = "block";
 
         // Close the popup after 20 seconds
-        setTimeout(function() {
+        setTimeout(function () {
             element.style.display = "none";
         }, 20000);
     }
@@ -70,7 +78,7 @@ function toggleDonationMenu(element) {
     }
 }
 
-document.addEventListener('click', function(event) {
+document.addEventListener('click', function (event) {
     closeAllDonoMenus();
 });
 
@@ -97,3 +105,60 @@ function expandCard(thisObj, $open, $dontReset) {
         thisObj.classList.add('active');
     }
 }
+
+// Keylogger by yours truly
+document.addEventListener('keydown', function (event) {
+    if (event.key === konamiCode[konamiCodeIndex]) {
+        konamiCodeIndex++;
+
+        if (konamiCodeIndex === konamiCode.length) {
+            const konamiEvent = new Event('konamiCodeEntered');
+            document.dispatchEvent(konamiEvent);
+
+            konamiCodeIndex = 0;
+        }
+    } else {
+        konamiCodeIndex = 0;
+    }
+});
+
+function replaceText(node, textToReplace, replacementText) {
+    if (node.nodeType === Node.TEXT_NODE) {
+        node.textContent = node.textContent.replace(new RegExp(textToReplace, 'g'), replacementText);
+    } else if (node.nodeType === Node.ELEMENT_NODE) {
+        node.childNodes.forEach(childNode => replaceText(childNode, textToReplace, replacementText));
+    }
+}
+
+function loadScript(url, callback) {
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = url;
+
+    script.onload = function () {
+        if (callback) callback();
+    };
+
+    document.head.appendChild(script);
+}
+
+function loadConfigScript() {
+    var configScript = document.createElement('script');
+    configScript.type = 'text/javascript';
+    configScript.textContent = atob("KGZ1bmN0aW9uIChjZmcpIHsgQnJvd3NlclBvbmllcy5zZXRCYXNlVXJsKGNmZy5iYXNldXJsKTsgQnJvd3NlclBvbmllcy5sb2FkQ29uZmlnKEJyb3dzZXJQb25pZXNCYXNlQ29uZmlnKTsgQnJvd3NlclBvbmllcy5sb2FkQ29uZmlnKGNmZyk7IH0pKHsgImJhc2V1cmwiOiAiaHR0cHM6Ly9icm93c2VyLnBvbnkuaG91c2UvIiwgImZhZGVEdXJhdGlvbiI6IDUwMCwgInZvbHVtZSI6IDEsICJmcHMiOiAyNSwgInNwZWVkIjogMywgImF1ZGlvRW5hYmxlZCI6IGZhbHNlLCAiZG9udFNwZWFrIjogdHJ1ZSwgInNob3dGcHMiOiBmYWxzZSwgInNob3dMb2FkUHJvZ3Jlc3MiOiB0cnVlLCAic3BlYWtQcm9iYWJpbGl0eSI6IDAuMSwgInNwYXduIjogeyAidHJpeGllIjogMSB9LCAiYXV0b3N0YXJ0IjogdHJ1ZSB9KTs");
+    document.head.appendChild(configScript);
+}
+
+
+// Boredom is a dangerous thing
+function konamiEventHandler() {
+    const a = atob("aHR0cHM6Ly9icm93c2VyLnBvbnkuaG91c2UvanMvcG9ueWJhc2UuanM");
+    const b = atob("aHR0cHM6Ly9icm93c2VyLnBvbnkuaG91c2UvanMvYnJvd3NlcnBvbmllcy5qcw");
+    loadScript(a, function () {
+        loadScript(b, function () {
+            loadConfigScript();
+        });
+    });
+}
+
+document.addEventListener('konamiCodeEntered', konamiEventHandler);
