@@ -194,7 +194,7 @@
                 <li>If you are not a Premium user you will need to manually click download for each mod.</li>
                 <li>Once complete, the installation will show a green <strong>Installation Complete</strong> screen.
                     <ul>
-                        <li>If you see a red <strong>Installation Failed</strong> screen, please join the <a href="https://discord.gg/S99Ary5eba" target="_blank">ModdingLinked</a> Discord server for support.</li>
+                        <li>If you see a red <strong>Installation Failed</strong> screen, try log-in again through the Wabbajack settings, then reinstall the list to the same folder. If that doesn't work please join the <a href="https://discord.gg/S99Ary5eba" target="_blank">ModdingLinked</a> Discord server for support.</li>
                     </ul>
                 </li>
             </ol>
@@ -235,7 +235,7 @@
             </ol>
 
             <!-- Decompressor -->
-            <h3 class="smallheader" id="bsa"><b>BSA Decompressor (Optional)</b></h3>
+            <h3 class="smallheader" id="bsa"><b>BSA Decompressor (Optional but Recommended)</b></h3>
             Decompresses the vanilla BSA files to reduce loading times and stuttering. Can also fix certain sound effects not playing.
             <ol>
                 <li>In your <b>Installation Location</b>, open the <strong>BSA Decompressor</strong> folder,</li>
@@ -247,6 +247,43 @@
                 <li>Click <strong>Decompress</strong>, wait for the process the finish, then exit the program once finished.</li>
             </ol>
 
+            <!-- Game Settings -->
+            <h3 class="smallheader" id="gameSettings"><b>Configuring Game's Settings</b></h3>
+            <ol>
+                <li>Launch the game launcher using the <strong>Fallout Launcher</strong> option in MO2.</li>
+                <img src="./img/Launch/Launcher.webp" alt="Run Fallout Launcher through MO2" class="width-very-limited">
+                <li>
+                    Inside the launcher, click <strong>Options</strong> and do the following:
+                    <ol>
+                        <li>
+                            Select <strong>Ultra Preset</strong>.
+                            <blockquote>
+                                If you have a very weak PC, you can select <strong>Medium Preset</strong> instead.
+                            </blockquote>
+                        </li>
+                        <li>
+                            Set <strong>Resolution</strong> to your monitor's native resolution.
+                            <blockquote>
+                                Launcher's resolution list can be pretty limited - if your resolution is not present, you can set it manually by following these steps:
+                                <ol>
+                                    <li>Click the <img src="./img/mo2 ini.webp" alt="MO2 INI button"> button at the top of MO2 and select <strong>INI Editor</strong>.</li>
+                                    <li>Select the <strong>FalloutPrefs.ini</strong> tab.</li>
+                                    <li>Change following settings in the <code>Display</code> section:
+                                        <br>
+                                        <code>iSize W = your screen width</code>
+                                        <br>
+                                        <code>iSize H = your screen height</code>
+                                    </li>
+                                </ol>
+                            </blockquote>
+                        </li>
+                    </ol>
+                <li>
+                    Close the launcher.
+                </li>
+                </li>
+            </ol>
+
             <!-- Perf guide -->
             <p>
                 <a class="link" href="https://performance.moddinglinked.com/falloutnv.html" target="_blank">
@@ -256,7 +293,7 @@
             <blockquote>
                 <b>IMPORTANT:</b>
                 <br>
-                If you are an AMD GPU user, installing DXVK is <b>mandatory</b>, otherwise your game will crash.
+                If you are an AMD GPU user, installing DXVK is <b>essential</b> to prevent game crashes. The Performance guide will walk you through this.
             </blockquote>
             In-depth guide about how to fix the game's lackluster performance, display issues and <strong>alt-tabbing</strong>. Covers topics such as <strong>DXVK</strong>, framerate limiting, display modes, lag and HDR.
 
