@@ -200,7 +200,7 @@
             </ol>
             </p>
 
-            <!-- Why generate LOD -->
+            <!-- Why Generate LOD -->
             <p>
                 <a>
                     <h2 id="whyGenerate">Why generate LOD?</h2>
@@ -251,7 +251,7 @@ bForceFullLOD=1</textarea>
                 <li>Name the separator <strong>LOD</strong>.</li>
             </ol>
 
-            <!-- Installing Resources -->
+            <!-- Installing LOD Resources -->
             <p>
                 <a>
                     <h2 id="installingResources">Installing LOD Resources</h2>
@@ -276,17 +276,11 @@ bForceFullLOD=1</textarea>
                         </li>
                         <blockquote>
                             To hide a file:
-                            <ul>
-                                <li>
-                                    Open the mod in Mod Organizer 2.
-                                </li>
-                                <li>
-                                    Go to the <strong>Filetree</strong> tab.
-                                </li>
-                                <li>
-                                    Right-click the file you want to hide and select <strong>Hide</strong>.
-                                </li>
-                            </ul>
+                            <ol>
+                                <li>Open the mod in Mod Organizer 2 by double-clicking it on the left pane.</li>
+                                <li>Go to the <strong>Filetree</strong> tab.</li>
+                                <li>Right-click the file you want to hide and select <strong>Hide</strong>.</li>
+                            </ol>
                         </blockquote>
                     </ul>
                 </li>
@@ -379,24 +373,20 @@ bForceFullLOD=1</textarea>
             </ol>
             <blockquote>
                 If you are modding Tale of Two Wastelands, also do the following:
-                <ul>
-                    <li>Disable or uninstall <strong>FNVLODGen Resources</strong></li>
-                    <li>Install <a href="https://www.nexusmods.com/newvegas/mods/77945" target="_blank">LOD additions and improvements - TTW Patch</a></li>
-                    <li>Install <a href="https://www.nexusmods.com/newvegas/mods/79734" target="_blank">Wasted LOD - Cliffs of DC</a></li>
-                </ul>
+                <ol>
+                    <li>Disable or uninstall <strong>FNVLODGen Resources</strong>.</li>
+                    <li>Install <a href="https://www.nexusmods.com/newvegas/mods/77945" target="_blank">LOD additions and improvements - TTW Patch</a>.</li>
+                    <li>Install <a href="https://www.nexusmods.com/newvegas/mods/79734" target="_blank">Wasted LOD - Cliffs of DC</a>.</li>
+                </ol>
             </blockquote>
 
-            <p>
-                Make sure to enable all downloaded mods before continuing!
-            </p>
             <blockquote style="display: flex; align-items: center;">
                 <img src="./img/Coco/Blockquote.webp" alt="Coco blockquote" style="margin-right: 1em;">
                 <div>
                     <b>IMPORTANT:</b>
                     <br>
-                    Do not disable the LOD resources you installed previously, the game needs those edits for the LOD to work properly.
-                    <br>
-                    LOD Plugins can be safely merged if needed.
+                    Make sure to enable all resources in MO2 before continuing!
+                </div>
             </blockquote>
 
             <p>
@@ -408,6 +398,7 @@ bForceFullLOD=1</textarea>
             <br>
             <br>
             You can then ignore the rest of this page.
+
             <hr>
 
             <!-- FNVLODGen -->
@@ -424,7 +415,9 @@ bForceFullLOD=1</textarea>
                 <li>From the pop-up, navigate to where xLODGen is installed and select <strong>xLODGen.exe</strong>.</li>
                 <li>In the <b>Arguments</b> box in the right pane, enter <code>-FNV -O:"C:\Output"</code></li>
             </ol>
+
             <blockquote>This argument will send the LOD output to a folder called <b>Output</b> on your <b>C</b> drive (the drive Windows is installed on). You can change this path if you would prefer the files to be generated elsewhere (do not use a UAC protected folder or the game folder).</blockquote>
+
             <ol start="7">
                 <li>Select xLODGen from the executables drop-down in the top right of MO2 and click <b>Run</b>.</li>
                 <li>Copy all settings from the image below:</li>
@@ -432,7 +425,7 @@ bForceFullLOD=1</textarea>
                 <img src="./img/LOD/Main.webp" alt="Main LOD Settings - Objects and Trees" class="width-very-limited">
 
                 <div class="expander-top clickable width-limited" onclick="expandCard(this, landLODExpander)" id="landLOD">
-                    Terrain LOD Generation instructions (Optional)
+                    Terrain LOD Generation instructions (Optional but Recommended)
                     <div class="expander-info" alt="UI element - Chevron">Show</div>
                 </div>
                 <div class="expander-bottom width-limited" id="landLODExpander">
@@ -445,7 +438,7 @@ bForceFullLOD=1</textarea>
                         <li>In the right pane, check <strong>Terrain LOD</strong>.</li>
                         <li>
                             Lansdcape LOD has 4 quality levels for different distances (with LOD4 being the closest to you, and LOD32 being the farthest).
-                            Copy settings for each LOD level from images below:
+                            Copy the settings for each LOD level from images below:
                             <ul>
                                 <li><b>LOD 4</b>:</li>
                                 <img src="./img/LOD/Land4.webp" alt="Landscape LOD Settings - Level 4" class="width-very-limited">
@@ -502,6 +495,15 @@ bForceFullLOD=1</textarea>
                 <li>Navigate to where the LOD files were generated and select both the <code>textures</code> and <code>meshes</code> folders.</li>
                 <li>Cut them to the <strong>FNVLODGen Output</strong> mod you just created (right-click on the mod and select <b>Open in Explorer)</b>.</li>
             </ol>
+
+            <blockquote style="display: flex; align-items: center;">
+                <img src="./img/Coco/Blockquote.webp" alt="Coco blockquote" style="margin-right: 1em;">
+                <div>
+                    <b>IMPORTANT:</b>
+                    <br>
+                    Do not disable the LOD resources you installed previously, the game needs them for the LOD to work properly.
+                </div>
+            </blockquote>
         </div>
 
         <!-- Arrows -->
