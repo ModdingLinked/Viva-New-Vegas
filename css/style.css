@@ -617,6 +617,11 @@ h2 {
   max-width: 30% !important;
 }
 
+.cocoNerd {
+  margin-right: 1em;
+  max-height: 5.5em;
+}
+
 @keyframes slide-down {
   from {
     max-height: 0;
@@ -658,6 +663,9 @@ h2 {
     width: 100%;
     margin-left: 0;
     padding: 5em 1em 0 1em;
+  }
+  .cocoNerd {
+    display: none;
   }
   #sidenavLeft {
     width: 0;
