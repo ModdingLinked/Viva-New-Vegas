@@ -657,6 +657,18 @@ h2 {
   }
 }
 
+@media screen and (min-width: 900px){
+  #title br {
+    display: none;
+  }
+  
+
+  #title::after {
+    content: " ";
+    display: inline;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   .titleContainer h1 {
     font-size: 1.5em;
