@@ -408,6 +408,8 @@ img {
   background-color: rgb(44, 44, 44);
   padding-top: 5em;
   box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.4);
+  overflow: scroll;
+  scrollbar-width: none;
 }
 
 #sidenavRight a {
