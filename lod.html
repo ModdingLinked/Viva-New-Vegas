@@ -236,8 +236,9 @@
                 <textarea readonly="readonly" style="height: 12.5em; width: 95%;" onclick="this.focus();this.select()">
 [TerrainManager]
 ; Increases the maximum distance of LOD
-fBlockLoadDistanceLow=100000
-fBlockLoadDistance=250000
+; It's not recommended to increase these values due to insanely high memory impact
+fBlockLoadDistanceLow=60000
+fBlockLoadDistance=70000
 
 [SpeedTree]
 ; Makes flora use the highest LOD quality, removing the pop-in (not related to Tree LOD)
@@ -309,6 +310,13 @@ bForceFullLOD=1</textarea>
                         <li>
                             After installing the main file, open the mod in Mod Organizer 2, and hide <strong>tmzLODadditions.esp</strong> file.
                         </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="https://www.nexusmods.com/newvegas/mods/84132" target="_blank">LOD Additions and Improvements - Billboard LOD Fix</a>
+                    <ul>
+                        <li><b>Main Files - LOD Additions and Improvements - Billboard Fix</b></li>
                     </ul>
                 </li>
 
