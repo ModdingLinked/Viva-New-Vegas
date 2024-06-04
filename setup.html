@@ -178,6 +178,36 @@
                 <img src="./img/Others/File Extensions.webp" alt="Show file extensions" class="width-very-limited">
             </ol>
 
+            <!-- Base Address Randomization -->
+            <p>
+                <a href="#baseAddress">
+                    <h2 id="baseAddress">Disabling Base Address Randomization</h2>
+                </a>
+            </p>
+            Base Address Randomization is a security feature in Windows that allows program's starting address to be randomized, which is not the expected behavior in 32-bit programs like Fallout: New Vegas. 
+            <br>
+            Having it enabled will crash the game when using NVSE plugins or the 4GB Patch.
+            <br>
+            While the feature should be disabled by default, it is still recommended to sanity check if it is disabled:
+            <ol>
+                <li>Open <strong>Windows Security</strong> from your <b>Start Menu</b>.</li>
+                <li>Click on <strong>App & browser control</strong> in the left sidebar.</li>
+                <li>Click on <strong>Exploit protection settings</strong> under <b>Exploit protection</b>.</li>
+                <li>Ensure <strong>Force randomization for images (Mandatory ASLR)</strong> is set to <strong>Use default (Off)</strong>.</li>
+                <blockquote>
+                    If you don't want to change the global setting, you can add an exception just for the game:
+                    <ol>
+                        <li>Click on <b>Program settings</b></li>
+                        <li>Click on <b>Add program to customize</b></li>
+                        <li>Select <b>Add program by name</b></li>
+                        <li>Enter <code>FalloutNV.exe</code> in the box and save.</li>
+                        <li>Find the newly created entry on the list and click <b>Edit</b>.</li>
+                        <li>Find <strong>Force randomization for images (Mandatory ASLR)</strong>.</li>
+                        <li>Check <strong>Override system settings</strong>, and set the toggle to <strong>Off</strong>.</li>
+                    </ol>
+                </blockquote>
+            </ol>
+
             <!-- Key Terminology -->
             <p>
                 <a href="#terms">
@@ -386,6 +416,9 @@
         <ul>
             <li>
                 <a href="#fileExtensions">File Extensions</a>
+            </li>
+            <li>
+                <a href="#baseAddress">Base Address Randomization</a>
             </li>
             <li>
                 <a href="#terms">Key Terms</a>
