@@ -581,6 +581,14 @@ h2 {
   background-color: rgb(255, 94, 91);
 }
 
+.paypal {
+  background-color: rgba(0, 69, 124, 0.5);
+}
+
+.paypal:hover {
+  background-color: rgb(0, 69, 124);
+}
+
 .github {
   background-color: rgba(36, 41, 47, 0.5);
 }
