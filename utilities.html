@@ -610,45 +610,13 @@ fLightEffectFadeDuration=400</textarea>
                 </a>
             </p>
             <ol>
-                <li>Restart your PC (otherwise some plugins may fail to load).</li>
+                <li>Restart your PC (otherwise some plugins might fail to load).</li>
+                <li>Install the <a href="https://www.nexusmods.com/newvegas/mods/79358" target="_blank">ML Utilities Checker</a> with Mod Organizer 2, just like the previous mods.</li>
                 <li>Launch the game using the <strong>New Vegas</strong> option in MO2 (not the <strong>NVSE</strong> option).</li>
                 <img src="./img/Others/Start Game.webp" alt="Run New Vegas through MO2" class="width-very-limited">
-                <li>If you see a black console window appear, it means <strong>NVHR</strong> is working.</li>
-                <ul>
-                    <li>If not, <a href="./utilities.html#heap">NVHR</a> is installed incorrectly.</li>
-                </ul>
-                <li>Once the game has reached the main menu, hit the <code>~</code> key (above the tab key) to open the console. Don't start a new game.</li>
-                <ul>
-                    <li>You will need to unplug/disconnect any controllers to be able to use the keyboard.</li>
-                </ul>
-                <li>Enter <code>GetNVSEVersion</code> and the console should print <code>NVSE version: 6</code></li>
-                <ul>
-                    <li>If not, <a href="./utilities.html#xnvse">xNVSE</a> is installed incorrectly.</li>
-                </ul>
-                <li>Next, enter <code>GetIsLAA</code> and the console should print <code>GetIsLAA >> 2</code></li>
-                <ul>
-                    <li>If it prints <code>>> 0</code>, then the <a href="./utilities.html#4gbPatcher">4GB Patch</a> was applied incorrectly.</li>
-                    <li>If it prints an error message, then <a href="./utilities.html#jip">JIP LN NVSE</a> is installed incorrectly.</li>
-                </ul>
-                <li>Next, enter <code>GetINISetting "iNumHWThreads:General"</code> and the console should print <code>INISetting iNumHWThreads:General >> 3</code></li>
-                <ul>
-                    <li>If not, then the <a href="./utilities.html#customIni">Tweaking FalloutCustom.ini</a> step was done incorrectly.</li>
-                </ul>
-                <li>Next, enter <code>IsDLLLoaded CrashLogger</code> and the console should print <code>IsDLLLoaded "CrashLogger.dll" >> 1</code></li>
-                <ul>
-                    <li>If not, then <a href="./utilities.html#crashLog">Crash Logger</a> is installed incorrectly.</li>
-                </ul>
-                <li>Next, enter <code>IsDLLLoaded NVTF</code> and the console should print <code>IsDLLLoaded "nvtf.dll" >> 1</code></li>
-                <ul>
-                    <li>If not, then <a href="./utilities.html#nvtf">NVTF</a> is installed incorrectly.</li>
-                </ul>
-                <li>Lastly, enter <code>IsDLLLoaded mlf</code> and the console should print <code>IsDLLLoaded "mlf.dll" >> 1</code></li>
-                <ul>
-                    <li>If not, then <a href="./utilities.html#limitFix">Mod Limit Fix</a> is installed incorrectly.</li>
-                </ul>
-                <li>
-                    Close the game.
-                </li>
+                <li>If you see a black console window appear, it means <a href="./utilities.html#heap">NVHR</a> is working.</li>
+                <li>Once the game has reached the main menu, wait a few seconds and you will see a message box from the Utilities Checker. If any check fails and the comment doesn't help you find a solution, open a support thread in the <a href="https://discord.gg/S99Ary5eba" target="_blank">ModdingLinked Discord server</a>.</li>
+                <li>Close the game and <strong>disable the ML Utilities Checker</strong>.</li>
             </ol>
         </div>
 
