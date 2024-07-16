@@ -174,7 +174,8 @@ body {
     display: none;
   }
   .welcomeContent .welcomeButton,
-  .welcomeContent .welcomeButtonYT {
+  .welcomeContent .welcomeButtonYT,
+  .welcomeContent .welcomeButtonWJ {
     width: 260px;
     height: 58px;
     font-size: 1.4rem;
