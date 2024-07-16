@@ -80,6 +80,16 @@
   margin-top: -1em;
 }
 
+.logo-container {
+  display: flex;
+}
+
+.logo-container img {
+  display: flex;
+  height: 256px !important;
+  padding: 1em;
+}
+
 @media only screen and (max-width: 900px) {
   .image-container {
     max-width: 95% !important;
@@ -89,5 +99,9 @@
   }
   .enlarged-image {
     max-height: 100vw !important;
+  }
+  .logo-container {
+    flex-direction: column;
+    align-items: center;
   }
 }/*# sourceMappingURL=images.css.map */
