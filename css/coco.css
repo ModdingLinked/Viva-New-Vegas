@@ -1,5 +1,8 @@
 .cocoNerd {
-  pointer-events: none;
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+          user-select: none !important;
+  pointer-events: none !important;
   margin-right: 1em;
   max-height: 5.5em;
 }

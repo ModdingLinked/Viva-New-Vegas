@@ -88,6 +88,8 @@
     display: flex;
     height: 256px !important;
     padding: 1em;
+    user-select: none !important;
+    pointer-events: none !important;
 }
 
 @media only screen and (max-width: 900px) {
