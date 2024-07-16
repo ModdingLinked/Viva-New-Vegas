@@ -93,7 +93,7 @@
                     User Interface
                 </a>
                 <a href="./gameplay.html" title="Gameplay">
-                    Gameplay  
+                    Gameplay
                 </a>
                 <a href="./content.html" title="Content">
                     Content
@@ -209,62 +209,61 @@
                     </p>
                 </div>
 
-                <!-- 
-                <div class="card">
+                <div class="card" id="Decompressor">
                     <p>
-                    <h3><a class="link" href="https://www.nexusmods.com/newvegas/mods/81281" target="_blank">Epic Games Patcher</a></h3>
-                        Downgrades the Epic Games EXE for xNVSE and mod support.
-
-                    <div class="card-yellow">
-                        <p>
-                            You obviously need to skip this mod if you have the Steam or GOG version of the game.
-                        </p>
-                    </div>
-
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/65854" target="_blank">FNV BSA Decompressor</a></h3>
+                    Decompresses the vanilla BSA files to reduce loading times and stuttering. Can also fix certain sound effects not playing.
                     <h3 class="install">Installation instructions</h3>
                     <ul>
                         <li>
-                            <b>Main Files</b> - Epic Games Patcher</b>
+                            <b>Main Files - FNV BSA Decompressor</b>
                             <ol>
-                                <li>From the downloaded archive, <strong>move everything</strong> to the game's <b>Root</b> folder.</li>
-                                <li>Double-click on <strong>Patcher.exe</strong> to run it.</li>
-                                <li>A command prompt window will open and after processing it should say <b>Press any key to continue...</b></li>
-                                <li>Close the command prompt and a file named <strong>FalloutNV_backup.exe</strong> should appear in the game's <b>Root</b> folder.</li>
+                                <li>Extract the archive into the <strong>Downloads</strong> folder.</li>
+                                <li>From the extracted archive, run <strong>FNV BSA Decompressor.exe</strong>.</li>
+                                <li>The <strong>Fallout: New Vegas</strong> and <strong>Decompressed Archives</strong> paths should be filled by default (Root folder and Data folder respectively). If they aren't, close the program and re-run your game launcher to generate the required registry key.
+                                    <div class="card-yellow">
+                                        <p>
+                                            Epic Games version does not create any keys! You need to select the game folder manually!
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>Click <strong>Decompress</strong>, wait for the process the finish, then exit the program once finished.</li>
+                                <li>You can now delete files created in step 1.</li>
                             </ol>
                         </li>
                     </ul>
                     </p>
                 </div>
 
-                <div class="card">
+                <div class="card" id="ESMFixes" title="ESM Fixes">
                     <p>
-                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/62552" target="_blank">4GB Patcher</a></h3>
-
-                        Makes the game large address aware, meaning it can use 4GB of RAM instead of 2GB.
-
-                    <div class="card-yellow">
-                        <p>
-                            This is required for both Steam & GOG users! The 4GB Patch included with the GOG release is obsolete as it lacks NVSE integration.
-                            <br>
-                            <br>
-                            Epic Games Store users already have this patch thanks to the Epic Games Patcher used before, so they can skip this.
-                        </p>
-                    </div>
-
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/77170" target="_blank">Ultimate Edition ESM Fixes</a></h3>
+                    Optimizes and fixes thousands of records across the base game and DLC plugins to increase performance and stability.
                     <h3 class="install">Installation instructions</h3>
                     <ul>
                         <li>
-                            <b>Main Files</b> - 4GB Patcher</b>
+                            <b>Main Files - Main Files - Ultimate Edition ESM Fixes</b>
                             <ol>
-                                <li>From the downloaded archive, <strong>move the executable</strong> file to the game's <b>Root</b> folder.</li>
-                                <li>Double-click on <strong>FNVpatch.exe</strong> to run it.</li>
-                                <li>A command prompt window will open and should say <b>FalloutNV.exe patched!</b></li>
-                                <li>Close the command prompt and a file named <strong>FalloutNV_backup.exe</strong> should appear in the game's <b>Root</b> folder.</li>
+                                <li>Extract the archive into the <strong>Downloads</strong> folder.</li>
+                                <li>Click the <img class="mo2-icon" src="./img/MO2/Folders.webp" alt="MO2 folder button"> button next to the profiles bar in MO2 and select <strong>Open Mods folder</strong>.</li>
+                                <li>Create an empty folder called <strong>Fixed ESMs</strong> inside of the Mods folder.</li>
+                                <li>From the extracted archive, run <strong>Installer.exe</strong>.</li>
+                                <li>The <strong>Fallout: New Vegas</strong> path should be filled by default (Root folder). If it isn't, close the program and re-run your game launcher to generate the required registry key.
+                                    <div class="card-yellow">
+                                        <p>
+                                            Epic Games version does not create any keys! You need to select the game folder manually!
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>Click <strong>Browse</strong> next to the <strong>ESM Fixes</strong> path field, then choose the <strong>Fixed ESMs</strong> folder you just created.</li>
+                                <li>Click <strong>Install</strong>, wait for the process the finish, then exit the program once finished.</li>
+                                <li>In Mod Organizer 2, press <kbd>F5</kbd> to refresh the left pane and enable the <strong>Fixed ESMs</strong> mod by ticking its checkbox.</li>
+                                <li>You can now delete files created in the step 1.</li>
                             </ol>
                         </li>
                     </ul>
                     </p>
-                </div> -->
+                </div>
 
                 <div class="card" id="Patchers">
                     <p>
@@ -369,17 +368,6 @@
                     </p>
                 </div>
 
-                <div class="card" id="ROOGNVSE" title="ROOGNVSE">
-                    <p>
-                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/77415" target="_blank">ROOGNVSE Plugin</a></h3>
-                    xNVSE plugin fixing bugs & adding new functions; hard requirement for TTW.
-                    <h3 class="install">Installation instructions</h3>
-                    <ul>
-                        <li><b>Main Files</b> - ROOGNVSE</li>
-                    </ul>
-                    </p>
-                </div>
-
                 <div class="card" id="JIP" title="JIP LN">
                     <p>
                     <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/58277" target="_blank">JIP LN NVSE Plugin</a></h3>
@@ -409,13 +397,14 @@
                     </p>
                 </div>
 
-                <div class="card" id="CrashLogger">
+                <div class="card" id="ShowOff" title="ShowOff">
                     <p>
-                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/82540" target="_blank">Crash Logger</a></h3>
-                    A DLL that logs raw crash data.
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/72541" target="_blank">ShowOff NVSE</a></h3>
+                    NVSE plugin adding new functions and engine-level tweaks & bugfixes.
                     <h3 class="install">Installation instructions</h3>
                     <ul>
-                        <li><b>Main Files</b> - Crash Logger</li>
+                        <li><b>Main Files</b> - ShowOff NVSE</li>
+                        <li><b>Optional Files - ShowOff INI</b></li>
                     </ul>
                     </p>
                 </div>
@@ -447,64 +436,32 @@
                     </p>
                 </div>
 
-                <div class="card" id="StewieTweaks">
+                <div class="card" id="kNVSE" title="kNVSE">
                     <p>
-                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/66347" target="_blank">lStewieAl's Tweaks and Engine Fixes</a></h3>
-                    Collection of many configurable quality of life improvements and bug fixes. Settings can be further enabled/disabled/tweaked in the new <strong>Tweaks</strong> section added to the main menu.
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/71336" target="_blank">kNVSE Animation Plugin</a></h3>
+                    Resource for expanding and improving the game's limited animation system.
                     <h3 class="install">Installation instructions</h3>
                     <ul>
-                        <li><b>Main Files</b> - Stewie Tweaks</li>
-                        <li>
-                            <h4><a class="link" href="https://www.nexusmods.com/newvegas/mods/79358" target="_blank">Viva New Vegas Resources</a></h4>
-                            <ul>
-                                <li><b>Main Files</b> - Stewie Tweaks - VNV INI</li>
-                            </ul>
-                        </li>
+                        <li><b>Main Files</b> - kNVSE</li>
                     </ul>
                     </p>
                 </div>
 
-                <div class="card" id="EngineOptimizations">
+                <div class="card" id="UIO" title="UIO">
                     <p>
-                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/80993" target="_blank">lStewieAl's Engine Optimizations</a></h3>
-                    Rewrites various slow functions in the game to decrease loading/saving time and improve general performance.
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/57174" target="_blank">User Interface Organizer</a></h3>
+                    Automatically ensures that multiple HUD extensions work together, as well as fixing many bugs and improving performance.
                     <h3 class="install">Installation instructions</h3>
                     <ul>
-                        <li><b>Main Files</b> - Engine Optimizations</li>
+                        <li><b>Main Files</b> - UIO - User Interface Organizer</li>
                     </ul>
-                    </p>
-                </div>
-
-                <div class="card" id="CombatLagFix">
-                    <p>
-                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/71973" target="_blank">Combat Lag Fix (NVSE)</a></h3>
-                    Improves framerate in combat by fixing an engine bug that lowered framerate while attacking an enemy with a health-bar visible.
-                    <h3 class="install">Installation instructions</h3>
-                    <ul>
-                        <li><b>Main Files</b> - Fast Weapon Lag Fix</li>
-                    </ul>
-                    </p>
-                </div>
-
-                <div class="card" id="VATSFix" title="VATS Lag Fix">
-                    <p>
-                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/84823" target="_blank">VATS Lag Fix</a></h3>
-                    Fixes an issue that caused the game to wait around 1-2 seconds before showing hit percentages in some cases.
-                    <h3 class="install">Installation instructions</h3>
-                    <ul>
-                        <li><b>Main Files</b> - VATS Lag Fix</li>
-                    </ul>
-                    </p>
-                </div>
-
-                <div class="card" id="SaveBloatFix">
-                    <p>
-                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/80666" target="_blank">ActorCause Save Bloat Fix</a></h3>
-                    Fixes a save bloating issue related to actors detecting the player, improving save/load speed and decreasing the size of save files by 15-30%.
-                    <h3 class="install">Installation instructions</h3>
-                    <ul>
-                        <li><b>Main Files</b> - ActorCause Save Bloat Fix</li>
-                    </ul>
+                    <div class="card-yellow">
+                        <p>
+                            <b>Linux users!</b>
+                            <br>
+                            Proton 8.0-5 crashes with UIO! Please use Proton 8-25 or newer.
+                        </p>
+                    </div>
                     </p>
                 </div>
 
@@ -519,13 +476,13 @@
                     </p>
                 </div>
 
-                <div class="card" id="kNVSE" title="kNVSE">
+                <div class="card" id="CrashLogger">
                     <p>
-                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/71336" target="_blank">kNVSE Animation Plugin</a></h3>
-                    Resource for expanding and improving the game's limited animation system.
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/82540" target="_blank">Crash Logger</a></h3>
+                    A DLL that logs raw crash data.
                     <h3 class="install">Installation instructions</h3>
                     <ul>
-                        <li><b>Main Files</b> - kNVSE</li>
+                        <li><b>Main Files</b> - Crash Logger</li>
                     </ul>
                     </p>
                 </div>
@@ -563,32 +520,25 @@
                     </p>
                 </div>
 
-                <div class="card" id="ShowOff" title="ShowOff">
+                <div class="card" id="KEYWORDS" title="KEYWORDS">
                     <p>
-                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/72541" target="_blank">ShowOff NVSE</a></h3>
-                    NVSE plugin adding new functions and engine-level tweaks & bugfixes.
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/83088" target="_blank">KEYWORDS</a></h3>
+                    Implements an ESPless framework to create, and automatically load keywords in a simple user-friendly way, via use of ini config files.
                     <h3 class="install">Installation instructions</h3>
                     <ul>
-                        <li><b>Main Files</b> - ShowOff NVSE</li>
+                        <li><b>Main Files</b> - KEYWORDS</li>
                     </ul>
                     </p>
                 </div>
 
-                <div class="card" id="UIO" title="UIO">
+                <div class="card" id="ShaderLoader">
                     <p>
-                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/57174" target="_blank">User Interface Organizer</a></h3>
-                    Automatically ensures that multiple HUD extensions work together, as well as fixing many bugs and improving performance.
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/87814" target="_blank">Shader Loader - NVSE</a></h3>
+                    Allows loading shaders from loose files.
                     <h3 class="install">Installation instructions</h3>
                     <ul>
-                        <li><b>Main Files</b> - UIO - User Interface Organizer</li>
+                        <li><b>Main Files</b> - Shader Loader - NVSE</li>
                     </ul>
-                    <div class="card-yellow">
-                        <p>
-                            <b>Linux users!</b>
-                            <br>
-                            Proton 8.0-5 crashes with UIO! Please use Proton 8-25 or newer.
-                        </p>
-                    </div>
                     </p>
                 </div>
             </span>
@@ -673,12 +623,6 @@ bPreemptivelyUnloadCells=1
 ; Values above 3 don't change anything, and the setting has nothing to do with the number of CPU cores
 iNumHWThreads=3
 
-; Tale of Two Wastelands specific
-; Sets TTW's starting quest
-SCharGenQuest=001FFFF8
-; Disables FNV intro movie
-SIntroMovie=
-
 [Grass]
 ; Increases grass draw distance
 fGrassStartFadeDistance=11200
@@ -747,7 +691,7 @@ fLightEffectFadeDuration=400
                     <img class="mirror" src="./img/UI/Arrow.svg" alt="Back Arrow">
                     <span class="arrowText"></span>
                 </a>
-        
+
                 <a href="#" id="next" rel="next" class="navigationArrow">
                     <span class="arrowText"></span>
                     <img src="./img/UI/Arrow.svg" alt="Forward Arrow">

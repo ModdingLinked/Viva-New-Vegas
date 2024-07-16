@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://vivanewvegas.moddinglinked.com/utilities.html</loc>
+		<loc>https://www.vivanewvegas.moddinglinked.com/intro.html</loc>
 		<priority>0.90</priority>
 		<lastmod>2024-07-16</lastmod>
 	</url>
 	<url>
-		<loc>https://www.vivanewvegas.moddinglinked.com/intro.html</loc>
+		<loc>https://vivanewvegas.moddinglinked.com/utilities.html</loc>
 		<priority>0.90</priority>
 		<lastmod>2024-07-16</lastmod>
 	</url>
@@ -16,32 +16,12 @@
 		<lastmod>2024-07-16</lastmod>
 	</url>
 	<url>
-		<loc>https://vivanewvegas.moddinglinked.com/visuals.html</loc>
+		<loc>https://www.vivanewvegas.moddinglinked.com/ttwintro.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2024-07-16</lastmod>
+		<lastmod>2024-06-17</lastmod>
 	</url>
 	<url>
-		<loc>https://vivanewvegas.moddinglinked.com/overhauls.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2024-07-16</lastmod>
-	</url>
-	<url>
-		<loc>https://vivanewvegas.moddinglinked.com/content.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2024-07-16</lastmod>
-	</url>
-	<url>
-		<loc>https://vivanewvegas.moddinglinked.com/gameplay.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2024-07-16</lastmod>
-	</url>
-	<url>
-		<loc>https://vivanewvegas.moddinglinked.com/hud.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2024-07-16</lastmod>
-	</url>
-	<url>
-		<loc>https://vivanewvegas.moddinglinked.com/basefinish.html</loc>
+		<loc>https://www.vivanewvegas.moddinglinked.com/setup.html</loc>
 		<priority>0.50</priority>
 		<lastmod>2024-07-16</lastmod>
 	</url>
@@ -51,13 +31,33 @@
 		<lastmod>2024-07-16</lastmod>
 	</url>
 	<url>
-		<loc>https://www.vivanewvegas.moddinglinked.com/setup.html</loc>
+		<loc>https://vivanewvegas.moddinglinked.com/basefinish.html</loc>
 		<priority>0.50</priority>
 		<lastmod>2024-07-16</lastmod>
 	</url>
 	<url>
-		<loc>https://www.vivanewvegas.moddinglinked.com/ttwintro.html</loc>
+		<loc>https://vivanewvegas.moddinglinked.com/hud.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2024-06-17</lastmod>
+		<lastmod>2024-07-16</lastmod>
+	</url>
+	<url>
+		<loc>https://vivanewvegas.moddinglinked.com/gameplay.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2024-07-16</lastmod>
+	</url>
+	<url>
+		<loc>https://vivanewvegas.moddinglinked.com/content.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2024-07-16</lastmod>
+	</url>
+	<url>
+		<loc>https://vivanewvegas.moddinglinked.com/overhauls.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2024-07-16</lastmod>
+	</url>
+	<url>
+		<loc>https://vivanewvegas.moddinglinked.com/visuals.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2024-07-16</lastmod>
 	</url>
 </urlset>
