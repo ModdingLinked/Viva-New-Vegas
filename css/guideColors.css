@@ -3,12 +3,12 @@ strong {
 }
 
 body {
-  background-color: #292724 !important;
+  background-color: #282725 !important;
 }
 
 .sidebar,
 .header {
-  background: #34322f !important;
+  background: #333230 !important;
 }
 
 .sidebar .active::before {

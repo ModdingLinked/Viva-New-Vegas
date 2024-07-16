@@ -7,8 +7,8 @@
   "scope": "/",
   "short_name": "Viva New Vegas",
   "start_url": "/",
-  "theme_color": "#34322f",
-  "background_color": "#34322f",
+  "theme_color": "#333230",
+  "background_color": "#333230",
   "icons": [
     {
       "src": "img/Coco/PWA/windows11/SmallTile.scale-100.png",
