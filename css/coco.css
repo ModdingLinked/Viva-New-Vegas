@@ -1,0 +1,11 @@
+.cocoNerd {
+  pointer-events: none;
+  margin-right: 1em;
+  max-height: 5.5em;
+}
+
+@media only screen and (max-width: 900px) {
+  .cocoNerd {
+    display: none;
+  }
+}/*# sourceMappingURL=coco.css.map */

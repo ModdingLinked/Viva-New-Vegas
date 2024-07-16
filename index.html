@@ -5,30 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preload" href="./css/style.css" as="style" />
-    <link rel="preload" href="./img/Others/Background.webp" as="image" />
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="img/Coco/Logo.webp">
     <link rel="canonical" href="https://vivanewvegas.moddinglinked.com">
-    <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
-    <script src="javascript.js"></script>
+
     <title>Viva New Vegas</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Tale of Two Wastelands, Wabbajack">
+
+    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands">
     <meta name="description" content="A fully modular, comprehensive and regularly updated Fallout New Vegas modding guide that allows for any personal preference to be satisfied.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
     <meta property="og:site_name" content="ModdingLinked">
     <meta property="og:title" content="Viva New Vegas">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://vivanewvegas.moddinglinked.com">
+<meta property="og:url" content="https://vivanewvegas.moddinglinked.com">
     <meta property="og:image" content="https://vivanewvegas.moddinglinked.com/img/Others/Card.webp">
     <meta property="og:description" content="A fully modular, comprehensive and regularly updated Fallout New Vegas modding guide that allows for any personal preference to be satisfied.">
+
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#292724">
+
+    <script src="javascript.js"></script>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/guideColors.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/images.css">
+    <link rel="stylesheet" href="css/frontPage.css">
 </head>
 
-<body>
+<body class="theme">
     <style>
         body {
-            background-image: url('./img/Others/Background.webp');
+            background-image: url('./img/Others/Background.webp') !important;
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
@@ -36,34 +45,19 @@
         }
     </style>
 
-    <!-- Titlebar -->
-    <div class="titlecontainer transparent">
-        <div id="sideButton" onclick="toggleNav()">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <img src="./img/Coco/Logo.webp" alt="Logo">
-        <a href="./index.html">Viva New Vegas</a>
-        <div class="guideLinks">
-            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-            <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
-        </div>
-    </div>
-
-    <!-- Left Sidebar -->
-    <div id="sidenavLeft" class="transparent">
-        <div class="guideLinks">
-            <ul>
-                <li>
-                    <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-                </li>
-                <li>
-                    <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
-                </li>
-            </ul>
+    <div style="overflow:auto">
+        <div class="header">
+            <div class="headerTitle">
+                <img src="./img/Coco/Logo.webp" alt="Logo" id="logo">
+                <a href="./index.html" id="headerTitle">Viva New Vegas</a>
+            </div>
+            <div class="guideLinks" id="headerLinks">
+                <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+            </div>
         </div>
     </div>
 
-    <!-- Content -->
     <div id="backdrop" class="welcomeContent">
         <div class="titleContainer">
             <img src="img/Coco/Full.webp" alt="Background Image" class="backgroundImage">
@@ -71,11 +65,11 @@
         </div>
         <div class="buttonContainer">
             <div class="buttonWrapper">
-                <a id="next" class="welcomeButton" href="./intro.html" onmouseover="titleGlow(1)" onmouseleave="titleGlow(0)"><strong>Full Guide</strong></a>
+                <a id="next" class="welcomeButton" href="./intro.html"><strong>Full Guide</strong></a>
                 <span class="buttonText">Manual step-by-step setup</span>
             </div>
             <div class="buttonWrapper">
-                <a class="welcomeButtonWJ" href="./wabbajack.html" onmouseover="titleGlow(1)" onmouseleave="titleGlow(0)"><strong>Wabbajack</strong></a>
+                <a class="welcomeButtonWJ" href="./wabbajack.html"><strong>Wabbajack</strong></a>
                 <span class="buttonText">Automated modlist installation</span>
             </div>
         </div>

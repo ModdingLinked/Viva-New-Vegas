@@ -1,0 +1,21 @@
+strong {
+    color: rgba(255, 181, 66, 0.85);
+}
+
+body {
+    background-color: #292724 !important;
+}
+
+.sidebar,
+.header {
+    // Color derived from normal cards
+    background: #34322f !important;
+}
+
+.sidebar .active::before {
+    background-color: rgba(255, 181, 66, 0.85) !important;
+}
+
+textarea {
+    border-color: rgba(255, 181, 66, 0.85) !important;
+}

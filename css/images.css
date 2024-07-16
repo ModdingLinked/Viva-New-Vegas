@@ -1,0 +1,92 @@
+.image-container {
+  margin: 1em 0 1em 0;
+  position: relative;
+  display: inline-flex;
+  cursor: pointer;
+  max-width: 80%;
+}
+
+.image-container img {
+  box-shadow: 0 2pt 4pt 0 rgba(0, 0, 0, 0.5);
+  border-radius: 6pt;
+  max-width: 100%;
+  height: auto;
+}
+
+.resize-overlay {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 0px;
+  height: 0px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: none !important;
+  padding: 5px;
+  display: flex;
+  border-radius: 6pt;
+  transition: all 0.4s;
+}
+
+.image-container:hover .resize-overlay,
+.overlay .resize-overlay {
+  width: 32px !important;
+  height: 32px !important;
+  padding: 10px !important;
+}
+
+.image-container:hover .resize-overlay.expand {
+  background-image: url("../img/UI/Maximize.svg") !important;
+}
+
+.image-container:hover .resize-overlay.shrink,
+.overlay .resize-overlay.shrink {
+  background-image: url("../img/UI/Minimize.svg") !important;
+}
+
+.image-container:hover img {
+  box-shadow: 0 0pt 10pt 0 rgba(255, 255, 255, 0.4);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  display: none;
+}
+
+.enlarged-image {
+  display: block;
+  max-height: 50vw;
+  width: auto;
+  height: auto;
+  border-radius: 6pt;
+  box-shadow: 0 2pt 4pt 0 rgba(0, 0, 0, 0.5);
+}
+
+.mo2-icon {
+  position: relative;
+  width: 2em;
+  height: 2em;
+  top: 0.5em;
+}
+
+@media only screen and (max-width: 900px) {
+  .image-container {
+    max-width: 95% !important;
+  }
+  .overlay .image-container {
+    max-width: 100% !important;
+  }
+  .enlarged-image {
+    max-height: 100vw !important;
+  }
+}/*# sourceMappingURL=images.css.map */

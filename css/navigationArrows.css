@@ -1,0 +1,58 @@
+.navigationArrowContainer {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  align-content: center;
+  padding: 0 1em;
+}
+
+.navigationArrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-wrap: nowrap;
+}
+
+.navigationArrow img {
+  width: 5.5em;
+  height: 5.5em;
+  margin: 1.25em 0em 1em 0em;
+}
+
+.navigationArrow .arrowText {
+  text-decoration: none;
+  font-size: 2.5em;
+  display: flex;
+  color: #ffffff;
+}
+
+.navigationArrow:hover img {
+  scale: 90%;
+  transform: scaleY(90%);
+}
+
+@media only screen and (max-width: 900px) {
+  .navigationArrow .arrowText {
+    font-size: 1.5em;
+  }
+  .navigationArrow#next {
+    flex-direction: column-reverse;
+    align-items: end !important;
+  }
+  .navigationArrow#next .arrowText {
+    margin-right: 0.33em;
+  }
+  .navigationArrow#previous {
+    flex-direction: column;
+    align-items: start !important;
+  }
+  .navigationArrow#previous .arrowText {
+    margin-left: 0.33em;
+  }
+}/*# sourceMappingURL=navigationArrows.css.map */

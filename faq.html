@@ -5,255 +5,1212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preload" href="./css/style.css" as="style" />
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="img/Coco/Logo.webp">
-    <link rel="canonical" href="https://vivanewvegas.moddinglinked.com">
-    <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
-    <script src="javascript.js"></script>
+    <link rel="canonical" href="https://thebestoftimes.moddinglinked.com">
+
     <title>FAQ | Viva New Vegas</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Tale of Two Wastelands, Wabbajack">
-    <meta name="description" content="Solutions to common problems you may encounter while following the guide.">
+
+    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands">
+    <meta name="description" content="Solutions to common problems you may encounter while following the guide. Also a general FAQ about TTW.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
     <meta property="og:site_name" content="ModdingLinked">
     <meta property="og:title" content="Viva New Vegas">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://vivanewvegas.moddinglinked.com">
-    <meta property="og:image" content="https://vivanewvegas.moddinglinked.com/img/Others/Card.webp">
-    <meta property="og:description" content="Solutions to common problems you may encounter while following the guide.">
+    <meta property="og:image" content="https://thebestoftimes.moddinglinked.com/img/Others/Card.webp">
+    <meta name="description" content="Solutions to common problems you may encounter while following the guide. Also a general FAQ about TTW.">
+
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#34322f">
+
+    <script src="javascript.js"></script>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigationArrows.css">
+    <link rel="stylesheet" href="css/progressBar.css">
+    <link rel="stylesheet" href="css/guideColors.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/images.css">
 </head>
 
-<body>
+<body class="theme">
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+    </div>
 
-    <!-- Titlebar -->
-    <div class="titlecontainer">
-        <div id="sideButton" onclick="toggleNav()">
-            <i class="fa-solid fa-bars"></i>
+    <div class="container">
+        <div class="header">
+            <div class="headerMenu" onclick="toggleNav()">
+                <img src="./img/UI/Navigation.svg" id="navButton">
+            </div>
+            <div class="headerTitle">
+                <img src="./img/Coco/Logo.webp" alt="Logo" id="logo">
+                <a href="./index.html" id="headerTitle">Viva New Vegas</a>
+            </div>
+            <div class="guideLinks" id="headerLinks">
+                <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+            </div>
         </div>
-        <img src="./img/Coco/Logo.webp" alt="Logo">
-        <a href="./index.html">Viva New Vegas</a>
-        <div class="guideLinks">
-            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-            <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+        <div class="sidebar left-sidebar">
+            <p class="pageLinks">
+                <a href="./index.html" title="Home">
+                    Home
+                </a>
+
+                <a href="./intro.html" title="Introduction">
+                    Introduction
+                </a>
+
+                <a href="./setup.html" title="Setup">
+                    Setup
+                </a>
+
+                <a href="./mo2.html" title="MO2">
+                    Mod Organizer 2
+                </a>
+
+                <a href="./utilities.html" title="Utilities">
+                    Utilities
+                </a>
+
+                <a href="./bugfix.html" title="Bug Fixes">
+                    Bug Fixes
+                </a>
+
+                <a href="./basefinish.html" title="Base Finish">
+                    Base Finish
+                </a>
+            </p>
+            <hr>
+            <p class="pageLinks">
+                <a href="./hud.html" title="User Interface">
+                    User Interface
+                </a>
+                <a href="./gameplay.html" title="Gameplay">
+                    Gameplay  
+                </a>
+                <a href="./content.html" title="Content">
+                    Content
+                </a>
+                <a href="./overhauls.html" title="Overhauls">
+                    Overhauls
+                </a>
+                <a href="./visuals.html" title="Visuals">
+                    Visuals
+                </a>
+                <a href="./finish.html" title="Extended Finish">
+                    Extended Finish
+                </a>
+            </p>
+            <hr>
+            <p>
+                <a href="./changelog.html" title="Changelog">
+                    Changelog
+                </a>
+
+                <a href="https://vivanewvegas.moddinglinked.com/resources.html" target="_blank" title="Resources">
+                    Resources
+                </a>
+
+                <a href="./faq.html" title="FAQ">
+                    FAQ
+                </a>
+
+                <a href="https://vivanewvegas.moddinglinked.com/avoid-tools.html" target="_blank" title="Tools to Avoid">
+                    Tools to Avoid
+                </a>
+
+                <a href="https://vivanewvegas.moddinglinked.com/avoid-mods.html" target="_blank" title="Mods to Avoid">
+                    Mods to Avoid
+                </a>
+                <a href="./wabbajack.html" title="Wabbajack">
+                    Wabbajack
+                </a>
+            </p>
+            <p class="sidebar-padder"></p>
+            <hr>
+            <p class="sidebar-bottom">
+                <a href="https://discord.gg/S99Ary5eba" title="Discord">
+                    Discord
+                </a>
+                <a href="https://paypal.me/Ungeziefi" title="Donate">
+                    Donate
+                </a>
+                <a href="https://github.com/ModdingLinked/Viva-New-Vegas" title="GitHub">
+                    GitHub
+                </a>
+            </p>
+        </div>
+
+        <div class="content">
+
+            <span id="FAQ" class="section">
+                <h2 onclick="location.href='#General'">General</h2>
+                <div class="expander-top clickable" onclick="expandCard(this, generalquestion1expander)" id="generalquestion1">
+                    <p>
+                    <h3>What is TTW?</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="generalquestion1expander">
+                    <p>
+                        Tale of Two Wastelands is <strong>a total conversion</strong> project that seamlessly merges Fallout 3 and its DLC into Fallout: New Vegas, allowing both games to be played in a single playthrough. It upgrades Fallout 3's mechanics to those of FNV, while balancing both games to feel like you're playing one full game (instead of two different games using the same character).
+                        <br>
+                        <br>
+                        New Vegas mechanics like companion wheel, companion perks, weapon mods, crafting, recipes, harvestable plants, and poisons have been added to the DC wasteland items, NPCs, and world.
+                        <br>
+                        <br>
+                        TTW also restores some cut content, fixes hundreds of thousands of bugs, add some items, changes the level cap from level 50 to 60, alters the FO3 bobbleheads to give mini perks (since it's already too easy to max SPECIAL and Skills in TTW), and more.
+                        <br>
+                        <br>
+                        TTW isn't just FO3 in FNV. It has become <strong>a unique game</strong>, with it's own balance, fixes, changes, additions and other unique things that differentiates it from both FO3 and FNV.
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, generalquestion2expander)" id="generalquestion2">
+                    <p>
+                    <h3>What mods work with TTW?</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="generalquestion2expander">
+                    <p>
+                        As TTW is a Total Conversion for Fallout: New Vegas, <strong>many FNV mods will work</strong> with TTW. However, you still want to look for explicit compatibility notes with TTW. <strong>In the case of Fallout 3 mods, it largely depends</strong>:
+                    <ul>
+                        <li>Mods that reuse content, delete it, or change shared records/scripts may not be compatible. If that's the case, you can convert them as covered in the <a href="https://geckwiki.com/index.php?title=TTW_Mod_Conversion_Package_and_Guidelines" target="_blank">TTW Mod Conversion Package and Guidelines</a> page.</li>
+                        <li>Texture mods are usually safe to use.</li>
+                        <li>Most mesh replacements will revert TTW fixes.</li>
+                    </ul>
+                    <br>
+                    There are many mods that are <strong>known to be incompatible</strong> with TTW:
+                    <ul>
+                        <li>Start by reading the list of <a href="https://vivanewvegas.moddinglinked.com/avoid-mods.html" target="_blank">mods to avoid</a>.</li>
+                        <li>Mod or patches made before the release of TTW 3.3 (DD/MM/YY 5/3/22) will most likely not work.</li>
+                        <li>Yukichigai Unofficial Patch, TTW includes its own version called YUPTTW.</li>
+                        <li>Unofficial Patch NVSE Plus.</li>
+                        <li>HeroinZero's Weapon Fixes.</li>
+                        <li>Weapon Mesh Improvement Mod, TTW includes a superior version.</li>
+                        <li>Fallout New California, even when using patches.</li>
+                        <li>Interior Lighting Overhaul, use Simple Interior Lighting Overhaul + its TTW Patch instead.</li>
+                        <li>Major overhauls and GRA integration mods other than SawyerBatty TTW.</li>
+                        <li>Asurah Reanimation Pack.</li>
+                        <li>Classic Fallout Weapons - New Vegas, use Classic Fallout Weapons Remastered instead.</li>
+                        <li>Megaton Walkway, use The Megaton Walkway - TTW instead.</li>
+                        <li>EVE, has incompatible weapon meshes and animations.</li>
+                        <li>Point Lookout Reborn, use Point Lookout Reborn TTW instead.</li>
+                        <li>Weather mods not specifically made for TTW.</li>
+                        <li>Impact, its weapon edits are incompatible.</li>
+                        <li>Project Weaponry, has multiple incompatible meshes and all its iron sights are broken with TTW.</li>
+                        <li>Armor overhauls such as NCR Overhaul, Legion Overhauls, Book of Steel (without patches), and Spice of Life. STARS TTW is a notable exception.</li>
+                        <li>Increased Wasteland Spawns, causes massive save bloat and crashes.</li>
+                        <li>Mods that edit companions looks/inventory/whatever directly will most likely need patching.</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, generalquestion3expander)" id="generalquestion3">
+                    <p>
+                    <h3>What are the requirements and supported game versions?</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="generalquestion3expander">
+                    <p>
+                        Read the <a href="./intro.html" target="_blank">Introduction</a> page.
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, generalquestion4expander)" id="generalquestion4">
+                    <p>
+                    <h3>Can I use an existing save?</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="generalquestion4expander">
+                    <p>
+                        Short answer: <strong>No</strong>.
+                        <br>
+                        <br>
+                        You cannot use an existing Fallout: New Vegas save to play TTW. Even though a save might load, there are too many changes for it to work correctly. No support is provided for FNV saves loaded with TTW.
+                        <br>
+                        <br>
+                        Saves made with previous versions of TTW will not work with 3.x. Too many changes were made to allow saves to be compatible.
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, generalquestion5expander)" id="generalquestion5">
+                    <p>
+                    <h3>What does the TTW Installer do?</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="generalquestion5expander">
+                    <p>
+                        <li>Updates Vorbis libraries to 1.3.7.</li>
+                        <li>Creates (or modifies) the <b>Custom INI</b> in <span class="card-basic">My Documents\My Games\FalloutNV</span> with the necessary archive changes and some performance improvements (not relevant if following the guide as it includes a more complete set of changes).</li>
+                        <li>Decompresses BSA files for both games (the ones in the mod folder, not the originals) for better performance.</li>
+                        <li>Fixes sound effects by transcoding them from OGG to WAV.</li>
+                        <li>Transcodes all voice files to a 24khz sample rate like New Vegas ones to virtually elminate distortion in voice modulation.</li>
+                        <li>Transcodes mono MP3 -> WAV -> stereo WAV -> MP3 to fix some FO3 radio tracks.</li>
+                        <li>Moves all MP3 files out of BSA archives and turns them into loose files so that they can play correctly.</li>
+                        <li>Patches and creates all non-unique assets dynamically from original game files.</li>
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, generalquestion6expander)" id="generalquestion6">
+                    <p>
+                    <h3>Is there a TTW discord? How about social media?</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="generalquestion6expander">
+                    <p>
+                    <ul>
+                        <li><a href="https://discord.gg/taleoftwowastelands" target="_blank">Discord</a></li>
+                        <li><a href="https://www.reddit.com/r/Taleoftwowastelands/" target="_blank">Reddit</a></li>
+                        <li><a href="https://twitter.com/ttwdevteam" target="_blank">X</a></li>
+                        <li><a href="https://www.facebook.com/TTWDev/" target="_blank">Facebook</a></li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, generalquestion7expander)" id="generalquestion7">
+                    <p>
+                    <h3>Is Linux supported?</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="generalquestion7expander">
+                    <p>
+                        <strong>We cannot provide support</strong> for Linux as we don't use it, therefore we cannot troubleshoot issues specific to it.
+                        <br>
+                        <br>
+                        Assuming you already know your way around Linux, here's <strong>some information that might help you</strong>:
+                    <ul>
+                        <li>Use Proton (for Steam) or Wine TKG or Wine-Bottles fork & Lutris (for non-Steam).</li>
+                        <li>You need Gstreamer codec suite for the game music to play.</li>
+                        <li>Direct the game so it uses a portable MO2 instance (installed in the game prefix, made by either Steam or Lutris).</li>
+                        <li>Stock Wine won't work, since stock Wine has issues with the bundled FOMOD installer.</li>
+                        <li>The TTW installer should be run on a Windows machine or a VM, running it under Linux will take way longer.</li>
+                        <li>Install Nvidia drivers if you have an Nvidia GPU.</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, generalquestion8expander)" id="generalquestion8">
+                    <p>
+                    <h3>Will pirated copies work?</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="generalquestion8expander">
+                    <p>
+                        Piracy is <strong>not supported</strong> in any way, shape, or form. Any proof that you're using a pirated copy or piracy-related talk <strong>will lead to a ban</strong> from the ModdingLinked or Tale of Two Wastelands Discord servers.
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, generalquestion9expander)" id="generalquestion9">
+                    <p>
+                    <h3>Can I use New Vegas Muliplayer (NV:MP)?</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="generalquestion9expander">
+                    <p>
+                        We (ModdingLinked and TTW) <strong>will not provide any support</strong> for NVMP, redirect all questions to their server.
+                    </p>
+                </div>
+
+                <h2 onclick="location.href='#Troubleshooting'">Troubleshooting</h2>
+                <p>You can ask for support in the <a href="https://discord.gg/S99Ary5eba" target="_blank">ModdingLinked</a> or <a href="https://discord.gg/taleoftwowastelands" target="_blank">TTW</a> Discord server in case any of the advice below does not solve your problem.</p>
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion1expander)" id="troubleshootingquestion1">
+                    <p>
+                    <h3>Possible issues when running the TTW installer</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="troubleshootingquestion1expander">
+                    <p>
+                    <ul>
+                        <li>
+                            <h4><span class="card-basic">BASS Init</span> or <span class="card-basic">XD3 Input</span></h4>
+                            Make sure you have both games installed with all DLCs and in English, run them once, then restart the TTW installer. If the problem persists, verify both game's files.
+                        </li>
+                        <li>
+                            <h4><span class="card-basic">xdelta3.dll was not found</span></h4>
+                            Extract the installer's archive before running it.
+                        </li>
+                        <li>
+                            <h4><span class="card-basic">Folder ... is not absolute for location</span></h4>
+                            This means that Windows Folder protection is active, here's how you can disable it on Windows 10 and 11 (be aware that some versions of Windows will not allow to change this settings):
+                            <ol>
+                                <li>Start Menu,</li>
+                                <li>Settings,</li>
+                                <li>Search for "Folder Protection",</li>
+                                <li>Select "Controlled Folder Access",</li>
+                                <li>Turn off the setting.</li>
+                            </ol>
+                        </li>
+                        <li>
+                            <h4>The installer closed itself or threw an <span class="card-basic">NTDLL error</span></h4>
+                            Your CPU is most likely overheating:
+                            <ul>
+                                <li>Verify your cooling solution,</li>
+                                <li>Close or suspend any heavy process running along the TTW installer,</li>
+                                <li>As a last resort, you can make the TTW installer slower and less taxing by running it with the <span class="card-basic">-threads:1</span> command line argument (through a shortcut).</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion2expander)" id="troubleshootingquestion2">
+                    <p>
+                    <h3>Crash on game start</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="troubleshootingquestion2expander">
+                    <p>
+                        This could happen for <strong>various reasons</strong>:
+                    <ul>
+                        <li>The 4GB patch or the EGS patcher weren't run. Follow <a href="./essentials.html#Patchers">the steps</a> in the guide.</li>
+                        <li>xNVSE is not installed correctly or at all, make sure that you have all of the <a href="./essentials.html" target="_blank">essential mods</a>.</li>
+                        <li>You have incompatible mods lingering in your game's Data folder, this is why <a href="./setup.html#Uninstall" target="_blank">a clean slate</a> is required.</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootquestion3expander)" id="troubleshootquestion3">
+                    <p>
+                    <h3>Pink main menu</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="troubleshootquestion3expander">
+                    <p>
+                        This is caused by <span class="card-basic">SMainMenuMovieIntro</span> in your <b>Fallout.ini</b> being set to 0 instead of having to value at all. This is a <strong>known issue with BethINI</strong>, which has no utility once you are using the guide's <a href="./essentials.html#CustomINI">Custom INI</a>.
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootquestion4expander)" id="troubleshootquestion4">
+                    <p>
+                    <h3>Missing meshes (red diamonds)</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="troubleshootquestion4expander">
+                    <p>
+                        Make sure the Tale of Two Wastelands folder size is 15.7GB. If it's not, the installation has failed and has corrupted files. In such cases, delete TTW from MO2 then <strong>reinstall Tale of two Wastelands</strong> according to <a href="./ttw.html#InstallingTTW">the guide</a>.
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootquestion5expander)" id="troubleshootquestion5">
+                    <p>
+                    <h3>How do I export my modlist and/or load order?</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="troubleshootquestion5expander">
+                    <p>
+                        As MO2 is the only supported manager, instructions for other managers will not be provided:
+                    <ol>
+                        <li>Click the <img class="mo2-icon" src="./img/MO2/Folders.webp" alt="MO2 Folders"> folders list in the top of MO2.</li>
+                        <li>Select <span class="card-basic">Open Profile Folder</span></li>
+                        <li>The modlist will be written in <strong>modlist.txt</strong> (written in reverse order but you can reverse this easily with text editors) and the load order is in <strong>loadorder.txt</strong>.</li>
+                    </ol>
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootquestion6expander)" id="troubleshootquestion6">
+                    <p>
+                    <h3>Fallout 3's IDs aren't working in the console</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="troubleshootquestion6expander">
+                    <p>
+                        Items, NPCs, Quests, and other things that only exist in Fallout 3 and it's DLCs need to <strong>change their index</strong> to the shift in the load order. Assuming you have the correct load order (forced by using a TTW instance in MO2) the new values are these:
+                    <ul>
+                        <li><b>Fallout 3</b>: Replace "00" with "06"</li>
+                        <li><b>Operation Anchorage</b>: Replace the first two numbers with "07"</li>
+                        <li><b>The Pitt</b>: Replace the first two numbers with "08"</li>
+                        <li><b>Broken Steel</b>: Replace the first two numbers with "09"</li>
+                        <li><b>Point Lookout</b>: Replace the first two numbers with "0A"</li>
+                        <li><b>Mothership Zeta</b>: Replace the first two numbers with "0B"</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootquestion7expander)" id="troubleshootquestion7">
+                    <p>
+                    <h3>GECK isn't detecting TTW or other mods</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="troubleshootquestion7expander">
+                    <p>
+                        MO2 requires that you run most tools, including GECK, through its list of executables. This allows the programs to be <strong>run with VFS</strong>, loading all the mods alongside it.
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootquestion8expander)" id="troubleshootquestion8">
+                    <p>
+                    <h3>There is no TTW option when creating an MO2 instance</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="troubleshootquestion8expander">
+                    <p>
+                        <strong>Launch both games</strong> once, then restart the MO2 installer and try again.
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootquestion9expander)" id="troubleshootquestion9">
+                    <p>
+                    <h3>How to reset your INIs</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="troubleshootquestion9expander">
+                    <p>
+                        <li>Click the <img class="mo2-icon" src="./img/MO2/INI Editor.webp" alt="MO2 INI button"> button at the top of MO2 and select <b>INI Editor</b>.</li>
+                        <li>Clear the contents of both <b>Fallout.ini</b> and <b>FalloutPrefs.ini</b>, making sure to save both.</li>
+                        <li>Run the game's launcher through MO2 and you'll have new INIs.</li>
+                    </p>
+                    <div class="card-yellow">
+                        <p>This process is done through MO2 because if you followed the guide you'll be using profile-specific INIs.</p>
+                    </div>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootquestion10expander)" id="troubleshootquestion10">
+                    <p>
+                    <h3>Is it safe to validate game files after I installed TTW?</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="troubleshootquestion10expander">
+                    <p>
+                        Verifying game files <strong>will revert the Vorbis version and the executable patch</strong>. You can solve this by manually installing the updated <a href="https://www.nexusmods.com/newvegas/mods/61265" target="_blank">Vorbis libraries</a> and <a href="./essentials.html#Patchers">re-running the correct patcher</a> based on your game version.
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootquestion11expander)" id="troubleshootquestion11">
+                    <p>
+                    <h3>Plugin reported as incompatible during query</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="troubleshootquestion11expander">
+                    <p>
+                        This is just a case of mods logging that they are not meant for the GECK if made for the game, or the other way around. <strong>Can be safely ignored</strong>.
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootquestion12expander)" id="troubleshootquestion12">
+                    <p>
+                    <h3>Application Load Error 5:0000065434</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="troubleshootquestion12expander">
+                    <p>
+                        <strong>Make sure Steam is running</strong>. If that doesn't fix it, <strong>run your game directly through Steam once</strong>. You may also need to restart Steam and/or Mod Organizer 2. If that still doesn't work, place a copy of your Steam.exe (not a shortcut) into the game's <a href="./setup.html#Terminology" target="_blank">Root folder</a>.
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootquestion13expander)" id="troubleshootquestion13">
+                    <p>
+                    <h3>Mod Organizer 2 is reporting that mods in the left pane have overwritten loose files</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="troubleshootquestion13expander">
+                    <p>
+                        This is <strong>safe and intentional</strong> as long as your mods in the left pane of MO2 are in the exact order as they appear in the guide.
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootquestion14expander)" id="troubleshootquestion14">
+                    <p>
+                    <h3>Why is the Utilities Checker reporting NVTF as missing even when it's installed correctly?</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="troubleshootquestion14expander">
+                    <p>
+                        If <strong>restarting your PC</strong> doesn't work, try this:
+                    <ol>
+                        <li>Clean all D3DX files using <a href="./files/DirectX Remover.7z" target="_blank">this script</a>.</li>
+                        <li>Install the DirectX libraries from <a href="https://www.microsoft.com/en-us/download/details.aspx?id=8109" target="_blank">here</a>.</li>
+                        <li>Restart your PC.</li>
+                    </ol>
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootquestion15expander)" id="troubleshootquestion15">
+                    <p>
+                    <h3>Bouncing NPCs or sped-up game</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="troubleshootquestion15expander">
+                    <p>
+                        <strong>Lock your FPS</strong> according to the <a href="https://performance.moddinglinked.com/falloutnv.html#RecommendedLimiters" target="_blank">Performance Guide</a>.
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootquestion16expander)" id="troubleshootquestion16">
+                    <p>
+                    <h3>Black patches of terrain</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="troubleshootquestion16expander">
+                    <p>
+                        <strong>Disable Improved Lighting Shaders</strong> in your Mod Organizer 2 modlist by unchecking its box. This issue seems to be hardware related but we do not know the specific cause at the moment.
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootquestion17expander)" id="troubleshootquestion17">
+                    <p>
+                    <h3>Mod Organizer 2 refuses to open and creates a dump file at each try</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="troubleshootquestion17expander">
+                    <p>
+                    <ol>
+                        <li>Download the <a href="https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/" target="_blank">VC++ Runtime Libraries</a>.</li>
+                        <li>Extract the archive and run the included <span class="card-basic">install_all.bat</span> as an administrator.</li>
+                        <li>Restart your PC.</li>
+                    </ol>
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootquestion18expander)" id="troubleshootquestion18">
+                    <p>
+                    <h3>I do not get the option to pick which wasteland to start in!</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="troubleshootquestion18expander">
+                    <p>
+                        Edit your <strong>Custom INI</strong> according to the <a href="./essentials.html#CustomINI">guide's steps</a>.
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootquestion19expander)" id="troubleshootquestion19">
+                    <p>
+                    <h3>Alt-tabbing crashes the game or prevents it from opening again</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="troubleshootquestion19expander">
+                    <p>
+                        This is due to using the NVTF texture modding preset, which <strong>requires DXVK</strong> in order to keep a functional Alt-Tab. Read the <a href="https://performance.moddinglinked.com/falloutnv.html" target="_blank">Performance Guide</a> for more information and the steps to solve this.
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootquestion20expander)" id="troubleshootquestion20">
+                    <p>
+                    <h3>Mods are downloading to Vortex instead of MO2</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="troubleshootquestion20expander">
+                    <p>
+                    <ol>
+                        <li>Click the <img class="mo2-icon" src="./img/MO2/Settings.webp" alt="MO2 settings"> button at the top of MO2 to open the settings.</li>
+                        <li>Go to the Nexus tab, then click <span class="card-basic"><strong>Associate with "Download with manager" links</strong></span></li>
+                    </ol>
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootquestion21expander)" id="troubleshootquestion21">
+                    <p>
+                    <h3>There is no "Tale of Two Wasteland" option in MO2's list of executables, only "New Vegas"</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="troubleshootquestion21expander">
+                    <p>
+                        <strong>You created a FNV instance</strong> instead of a TTW one:
+                    <ol>
+                        <li>Click the <img class="mo2-icon" src="./img/MO2/Folders.webp" alt="MO2 Folders"> folders list in the top of MO2.</li>
+                        <li>Select <span class="card-basic">Open Instance Folder</span></li>
+                        <li>Open <span class="card-basic">ModOrganizer.ini</span> in any text editor.</li>
+                        <li>Set the <span class="card-basic">gameName</span> (line 2) to <span class="card-basic">TTW</span></li>
+                    </ol>
+                    </p>
+                </div>
+
+                <h2 onclick="location.href='#Configuration'">Configuration</h2>
+                <div class="expander-top clickable" onclick="expandCard(this, configquestion1expander)" id="configquestion1">
+                    <p>
+                    <h3>How can I change FOV?</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="configquestion1expander">
+                    <p>
+                    <ol>
+                        <li>Click the <img class="mo2-icon" src="./img/MO2/INI Editor.webp" alt="MO2 INI button"> button at the top of MO2 and select <b>INI Editor</b>.</li>
+                        <li>Select the <b>FalloutCustom.ini</b> tab, which should already have all the guide's settings if you followed the <a href="./essentials.html#CustomINI">Custom INI steps</a>.</li>
+                        <li>Edit the 3 FOV settings to your liking, then save.</li>
+                    </ol>
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, configquestion2expander)" id="configquestion2">
+                    <p>
+                    <h3>Do I need to regenerate LOD?</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="configquestion2expander">
+                    <p>
+                        <strong>No</strong>, but you can generate vastly more detailed LOD (at a performance cost) by following the <a href="https://vivanewvegas.moddinglinked.com/lod.html" target="_blank">LOD guide</a>.
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, configquestion3expander)" id="configquestion3">
+                    <p>
+                    <h3>What INI changes are required?</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="configquestion3expander">
+                    <p>
+                        All the INI changes you'll need for stability and performance are <strong>already in the guide</strong>'s <a href="./essentials.html#CustomINI">Custom INI</a>. If you find some other settings you wish to tweak, add it to <b>FalloutCustom.ini</b> through MO2's INI Editor (<img class="mo2-icon" src="./img/MO2/INI Editor.webp" alt="MO2 INI button"> on the top of MO2).
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, configquestion4expander)" id="configquestion4">
+                    <p>
+                    <h3>Why does the guide not clean the DLC plugins?</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="configquestion4expander">
+                    <p>
+                        <strong>TTW ships with cleaned and fixed plugins</strong> (which is far more than what automated xEdit cleaning would do).
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, configquestion5expander)" id="configquestion5">
+                    <p>
+                    <h3>Is Ultrawide supported?</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="configquestion5expander">
+                    <p>
+                        <strong>Yes</strong>, but you'll have to take extra steps for it to work:
+                    <ol>
+                        <li>Click the <img class="mo2-icon" src="./img/MO2/INI Editor.webp" alt="MO2 INI button"> button at the top of MO2 and select <b>INI Editor</b>.</li>
+                        <li>Select the <b>FalloutPrefs.ini</b> tab.</li>
+                        <li>Press CTRL+F then filter <span class="card-basic">iSize</span>. You'll see 2 settings, one for height and one for width.</li>
+                        <li>Set them to the desired resolution.</li>
+                        <li>Start the game then open the <b>Tweaks</b> menu in the settings.</li>
+                        <li>Filter for <span class="card-basic">Ultrawide</span> then enable the support tweak.</li>
+                    </ol>
+                    </p>
+                </div>
+
+                <h2 onclick="location.href='#Gameplay'">Gameplay</h2>
+                <div class="expander-top clickable" onclick="expandCard(this, gameplayquestion1expander)" id="gameplayquestion1">
+                    <p>
+                    <h3>My character dies after activating Project Purity and Broken Steel DLC doesn't start. Why?</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="gameplayquestion1expander">
+                    <p>
+                        TTW (>=3.3) restored the vanilla Fallout 3 ending when playing in Hardcore Mode. This will kill the main character and end the game if they activate Project Purity themselves. To avoid this, <strong>send Sarah Lyons or one of your companions</strong> to do it instead, or turn off Hardcore Mode before turning Project Purity on.
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, gameplayquestion2expander)" id="gameplayquestion2">
+                    <p>
+                    <h3>How do I get to the Mojave and back to the Capital Wasteland?</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="gameplayquestion2expander">
+                    <p>
+                        Tale of Two Wastelands includes a large custom created Union Station, where <strong>you can take a train</strong> ride from DC to the Mojave. This train station is in a new DC worldspace called Columbus Circle. To get back to the Mojave, use the Union Station located in Freeside.
+                        <br>
+                        <br>
+                        For detailed instructions on how to reach the train station, check the forum <a href="https://taleoftwowastelands.com/viewtopic.php?f=18&t=6730" target="_blank">here</a>.
+                        <br>
+                        <br>
+                    <div class="card-yellow">
+                        <p><strong>Do not use console commands</strong> or outdated mods to move between wastelands! TTW needs to set specific variables and quests for the game to do this properly. More info in ML's <a href="https://moddinglinked.com/dogmas.html" target="_blank">list of dogmas</a>.</p>
+                    </div>
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, gameplayquestion3expander)" id="gameplayquestion3">
+                    <p>
+                    <h3>Doesn't adding FNV systems and mechanics to FO3 makes it harder and unbalanced?</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="gameplayquestion3expander">
+                    <p>
+                        Tale of Two Wastelands doesn't just slap Fallout New Vegas things into Fallout 3 and calls it a day. It has seen more than 10 years of development, testing, tweaking and balancing. A lot of time was dedicated to make playing in TTW's Capital Wasteland (CW) to be a similar experience as to playing vanilla Fallout 3.
+                        <br>
+                        <br>
+                        But Fallout New Vegas has a lot of different things and resources that don't exist in Fallout 3, this requires that TTW players use these available resources when playing the game. Usually, people who played Fallout 3 a lot and try TTW for the first time will think that TTW is harder than Fallout 3, this is because they are not used to (or know about) the new things added in FNV, so they don't use them.
+                        <br>
+                        <br>
+                        One of the most widespread misconception that is seen around is that the CW Super Mutants in TTW use the same stats as the Mojave Wasteland ones, so they are much tougher and harder than the ones from Fallout 3. This is false, the Capital Wasteland Super Mutants in TTW do not use the same stats as the New Vegas ones, they were balanced to be similar to the ones in FO3 when taken into account the new resources given to the player in TTW.
+                        <br>
+                        <br>
+                        This Super Mutant example is perfect to explain why TTW makes the CW feel harder for some players and feel similar to others when compared to Fallout 3. The CW Super Mutants in TTW are tougher than the ones from FO3, but that is because TTW adds things that make the player's character stronger and deadlier (more and stronger perks, more chems and consumables, stronger companions, way higher weapon damage, ammo types like AP, improved bobblehead effects, etc.), when the player takes advantage of some (or all) of these resources, Super Mutants will fall as fast or faster than they did in FO3. But if a player plays TTW only using the resources available in vanilla FO3, then of course the Super Mutants will be harder to deal with. TTW is a full package, everything in it is balanced to take advantage of the resources available to the players. If those resources are not used, then, of course, the game will be much harder.
+                        <br>
+                        <br>
+                        <b>TLDR</b>: The CW in TTW is harder than it is in FO3 if resources/mechanics added by TTW are ignored, but pretty much the same (or easier) when those resources are used.
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, gameplayquestion4expander)" id="gameplayquestion4">
+                    <p>
+                    <h3>Does TTW change the game economy?</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="gameplayquestion4expander">
+                    <p>
+                        TTW 3.3 introduced <strong>full game economy balancing</strong>. This had to be done because FNV's economy was broken beyond repair. Actually Obsidian fixed it in a patch, but then on a later patch they broke it again because they built that patch on a version of the game before the economy balance patch was applied (or something similar).
+                        <br>
+                        <br>
+                        This balancing was necessary because of how bad the economy was between the Fallout 3 side of TTW and the Fallout New Vegas side of TTW. The super inflated prices of NV would mean that it was almost impossible to use vendor repairs on some equipment. Other issues were stuff like some weaker armors costing more than better ones, getting rich super fast just by looting stuff like a combat armor and selling it, the huge difference between FO3 equipment and FNV (including the most powerful stuff from FO3 being super cheap compared to some weak stuff from NV). And there's many other issues with the vanilla NV economy.
+                        <br>
+                        <br>
+                        Why did we decided to change TTW to be more like FO3 economy instead or NV economy? For the reasons mentioned above and because as mentioned before, Obsidian did fix their Economy in a patch, but that fix got reverted (but not fully) for some reason. There are prices in later patches that are balanced around the "fixed" version, but other prices are not fixed, it's quite a mess. But it seems like the developers wanted their game economy fixed. It also prevents players from swimming in caps too quickly.
+                        <br>
+                        <br>
+                        The TTW team understands that this is a "Love it" or "Hate it" change from previous versions, but it was more than necessary to make both wastelands feel like they are part of the same game and universe. Which is the main objective of TTW, that everything in it feels like it's all one giant game, instead of two games merged together.
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, gameplayquestion5expander)" id="gameplayquestion5">
+                    <p>
+                    <h3>Does TTW change when perks are awarded? Sometimes I get one perk every level, others I gain one perk every two levels.</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="gameplayquestion5expander">
+                    <p>
+                        <strong>Yes</strong>, starting in TTW version 3.3, perks rates were changed. Now the player gains one perk every level when playing without Hardcore Mode active, but only gains one perk every two levels when playing in Hardcore Mode.
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, gameplayquestion6expander)" id="gameplayquestion6">
+                    <p>
+                    <h3>What perks were given to DC companions?</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="gameplayquestion6expander">
+                    <p>
+                    <ul>
+                        <li><b>Butch</b> - Tunnel Snakes Rule: Butch is a gang member at heart, and he does better with a sense of belonging. While Butch is in your party, you both gain +5% Damage if he is using the same weapon as you, and you both gain +5% DR if he is using the same armor as you, with an extra +5% DR if they are Tunnel Snake outfits.</li>
+                        <li><b>Charon</b> - The Contract: Charon is absolutely loyal to the holder of his contract, putting himself in harm's way to keep them safe. Unfortuantely for him, his contract holder lives a dangerous adventurous life... For each 10% health you are below maximum, you gain 1 DT.</li>
+                        <li><b>Clover</b> - Get Lucky: Eulogy was right about her. When you have had a hard day on the road and are ready to call it a night she will make sure you wake up with a grin. With Clover in your party, the Well Rested bonus will grant you an additional 15% experience boost and +1 Luck.</li>
+                        <li><b>Dogmeat</b> - Man's Best Friend: Dogmeat is man's best friend, and he knows how to coordinate and run interference. While he is in your party, you will deal +25% damage to knocked down targets. In addition, you can ask Dogmeat to 'mark' his territory, setting a fast-travel marker to that spot.</li>
+                        <li><b>Fawkes</b> - Over-Compensation: Fawkes' love for heavy weapons is infectious. With Fawkes in your party, weapon strength requirements are 1 point lower for you.</li>
+                        <li><b>Jericho</b> - Scrappy Survivor: Jericho's many years roughing it in the wasteland taught him to get by with nothing but scraps and ruins. You can talk to him any time to make a campfire.</li>
+                        <li><b>RL-3</b> - Drill Sergeant: Hooah! The gung-ho Sergeant RL-3 egging you on prompts you to excel at killing, whether they're Communists or not. While RL-3 is with you, you'll have -5% gun spread, and +5% Crit chance.</li>
+                        <li><b>Star Paladin Cross</b> - Second Skin: Star Paladin Cross is a seasoned veteran of power armor use and can show you how to deal with the idiosyncrasies of power armor. While Star Paladin Cross is in your party, you have +1 Agility and +30 carry weight when you are wearing Power Armor.</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, gameplayquestion7expander)" id="gameplayquestion7">
+                    <p>
+                    <h3>Where are the cross-wasteland homes for companions?</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="gameplayquestion7expander">
+                    <p>
+                        In addition to having a Lucky 38 home once you've got the suite, the DC companions also have a home in NV, and the NV companions have a home in DC:
+                    <ul>
+                        <li><b>Arcade</b>: Rivet City science lab,</li>
+                        <li><b>Boone</b>: Sniper Shack,</li>
+                        <li><b>Butch</b>: Freeside Kings,</li>
+                        <li><b>Cass</b>: Canterbury Common,</li>
+                        <li><b>Charon</b>: The Thorn,</li>
+                        <li><b>Clover</b>: Freeside train station,</li>
+                        <li><b>Dogmeat</b>: Gibson scrapyard,</li>
+                        <li><b>ED-E, Rex, and Veronica</b>: Megaton,</li>
+                        <li><b>Fawkes</b>: Jacobstown,</li>
+                        <li><b>Jericho</b>: The Atomic Wrangler,</li>
+                        <li><b>Lily and Raul</b>: Museum of History,</li>
+                        <li><b>RL-3</b>: Goodsprings,</li>
+                        <li><b>Star Paladin Cross</b>: New Vegas Medical Clinic,</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, gameplayquestion8expander)" id="gameplayquestion8">
+                    <p>
+                    <h3>What changes are made to bobbleheads?</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="gameplayquestion8expander">
+                    <p>
+                        The Charisma Bobblehead and the Speech Bobblehead got their locations swapped. You will now find the Charisma Bobblehead where you would find the Speech one in Fallout 3, while the Speech Bobblehead will be where the Charisma one was in Fallout 3 instead. Their effect was also changed:
+                    <ul>
+                        <li><b>Agility</b>: You now run 5% faster.</li>
+                        <li><b>Barter</b>: Items you buy now cost 10% less.</li>
+                        <li><b>Charisma</b>: This Bobblehead increases companion damage and damage resistance by 10%.</li>
+                        <li><b>Endurance</b>: Your Damage Resistance has been permanently increased by 5.</li>
+                        <li><b>Energy Weapons</b>: When using Energy Weapons, you ignore an additional 5 DT.</li>
+                        <li><b>Explosives</b>: Explosives now have 10% less spread.</li>
+                        <li><b>Guns</b>: Guns now deal an extra 5% more damage.</li>
+                        <li><b>Intelligence</b>: You now gain +5 extra skill points or +5% critical chance when reading relevant magazines.</li>
+                        <li><b>Lockpick</b>: Your Lockpicks are now less likely to break.</li>
+                        <li><b>Luck</b>: This bobblehead increases your chance to critically hit an opponent by a flat 2.5%.</li>
+                        <li><b>Medicine</b>: You are now 10% less likely to become addicted.</li>
+                        <li><b>Melee Weapons</b>: You now swing Melee Weapons 10% faster.</li>
+                        <li><b>Perception</b>: You are now 10% more accurate with all ballistic and energy weapons.</li>
+                        <li><b>Repair</b>: Your weapons and armor now degrade 10% slower.</li>
+                        <li><b>Science</b>: You now do 10% more damage to robots.</li>
+                        <li><b>Sneak</b>: Your sneak attack criticals now do 10% more damage.</li>
+                        <li><b>Speech</b>: You can now hire any companion regardless of your Karma.</li>
+                        <li><b>Strength</b>: You can now carry 25 lbs. more gear.</li>
+                        <li><b>Survival</b>: Positive chem effects last 10% longer.</li>
+                        <li><b>Unarmed</b>: Your unarmed attacks do double damage against blocking opponents</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, gameplayquestion9expander)" id="gameplayquestion9">
+                    <p>
+                    <h3>What changes are made to perks?</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="gameplayquestion9expander">
+                    <p>
+                        Since it's much easier to Max out all skills in TTW than it was in FNV or FO3. TTW changes the Perks that increase skills into something more useful:
+                    <ul>
+                        <li><b>Cyborg</b>: Removed Energy Weapons Boost and DT Boost and gives Fire Resistance and Energy Resistance.</li>
+                        <li><b>Daddy's Girl/Boy</b>: Makes hacking easier and gives +10% positive chem duration per rank.</li>
+                        <li><b>Gun Nut</b>: Gives -10% spread and +10% item condition per rank when using guns.</li>
+                        <li><b>Little Leaguer</b>: Gives +10% damage to bats and nail boards and 10% throwing velocity to grenades per rank.</li>
+                        <li><b>Scoundrel</b>: Gives +10% discount at vendors and +5 speech challenge XP per rank.</li>
+                        <li><b>Size Matters</b>: Gives +10% damage and +10% less spread per rank to big guns (which are in a FormList).</li>
+                        <li><b>Thief</b>: Gives +10% sneak speed and +5% pickpocket chance per rank.</li>
+                        <li><b>Special Ops</b>: Gives a +15% to pickpocket chance.</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, gameplayquestion10expander)" id="gameplayquestion10">
+                    <p>
+                    <h3>What harvestables are added?</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="gameplayquestion10expander">
+                    <p>
+                        New activatable harvestable meshes were created for several existing food items which had no plant to pick them from (some of them, like the trees, only in select places like Oasis):
+                    <ul>
+                        <li>Mutfruit plant,</li>
+                        <li>Crunchy Mutfruit plant,</li>
+                        <li>Potato plant,</li>
+                        <li>Carrot plant,</li>
+                        <li>Apple tree,</li>
+                        <li>Pear tree.</li>
+                    </ul>
+                    <br>
+                    In addition, three new edible ingredients with harvestables were created out of existing meshes:
+                    <ul>
+                        <li>Brain fungus,</li>
+                        <li>Glowing mushroom.</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, gameplayquestion11expander)" id="gameplayquestion11">
+                    <p>
+                    <h3>What recipes are added?</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="gameplayquestion11expander">
+                    <p>
+                        Many recipes were added, partly due to the majority of recipes in NV using plants that would not make sense to grow outside the desert. New recipes were created using ingredients that could be found in the Capital Wasteland. In addition, because the NV engine has ammo types, the F3 Dart Gun has recipes to craft darts for each type of poison (not just the NV poisons, but also the 5 new poison types introduced by TTW). The F3 craftable items were turned in to the NV crafting system.
+                        <br>
+                        <br>
+                        <b>Food</b>:
+                    <ul>
+                        <li>Mutfruit Marinade,</li>
+                        <li>Centaur Sangria,</li>
+                        <li>Wasteland Hot Dog,</li>
+                        <li>Brain Freeze,</li>
+                        <li>Mirelurk Special,</li>
+                        <li>Brain Food,</li>
+                        <li>Nukalurk Sushi,</li>
+                        <li>Spicy Quantum Sauce,</li>
+                        <li>Spicy Nukalurk Roll,</li>
+                        <li>Yao Guai Medallions,</li>
+                        <li>Mole Rat Steak,</li>
+                        <li>Fire Ant Bits,</li>
+                        <li>Ant Bits,</li>
+                        <li>Fire Ant Nog,</li>
+                        <li>Ant Nog,</li>
+                        <li>Bloatfly Smoothie,</li>
+                        <li>Steamed Radroach,</li>
+                        <li>Mirelurk Cakes,</li>
+                        <li>Steamed Mirelurk,</li>
+                        <li>Mirelurk Thermador,</li>
+                        <li>Startencle,</li>
+                        <li>Out Of This World Pie.</li>
+                    </ul>
+                    <br>
+                    <b>Poison</b>:
+                    <ul>
+                        <li><b>Deathclaw Poison</b>: 1 Deathclaw Hand, 2 Radscorpion Poison Glands, 5 Flamer Fuel - Effect: Damage Health 15 for 10s.</li>
+                        <li><b>Kite</b>: 1 Cigarette Pack, 1 Abraxo Cleaner, 3 Brain Fungus, 1 Nuka Cola - Effect: Damage Health 5 for 10s + 80% speed reduction for 30s (achieve the closest effect to the original Dart Gun effect).</li>
+                        <li><b>Rust Rot</b>: 1 Railway Spike, 2 Water Unpurified, 1 Turpentine, 1 Glowing Mushroom - Effect: Damage Health 5 for 10s + 25% speed reduction for 30s.</li>
+                        <li><b>Meltdown</b>: 1 Abraxo Cleaner, 1 Turpentine, 2 Glowing Mushroom - Effect: Damage Health 10 for 10s.</li>
+                        <li><b>Toxic Waste</b>: 1 Glowing Mushroom, 1 Ant Nectar, 1 Centaur Blood - Effect: Damage Health 10 for 4s + Reduced Weapon skill for 60s.</li>
+                    </ul>
+                    <br>
+                    <b>Fallout 3 Weapons</b>:
+
+                    <ul>
+                        <li>Shishkebab,</li>
+                        <li>Deathclaw Gauntlet,</li>
+                        <li>Railway Rifle,</li>
+                        <li>Rock-It Launcher,</li>
+                        <li>Molotov Cocktail,</li>
+                        <li>Trench Knife,</li>
+                        <li>Cryo Mine,</li>
+                        <li>Cryo Grenade,</li>
+                        <li>Bottlecap Mine,</li>
+                        <li>Nuka Cocktail.</li>
+                    </ul>
+                    <br>
+                    <b>Fallout 3 Ammo</b>:
+                    <ul>
+                        <li><b>.32+P</b>: 20% condition penalty, 10% damage bonus, -2 DT.</li>
+                        <li><b>.32 Match</b>: 15% damage Bonus, 35% spread reduction.</li>
+                        <li><b>.32 Junk</b>: 50% condition penalty, 25% damage penalty.</li>
+                    </ul>
+                    <br>
+                    <b>Others</b>:
+                    <ul>
+                        <li>Cryolator,</li>
+                        <li>Liquid Nitrogen,</li>
+                        <li>Optimized Liquid Nitrogen,</li>
+                        <li>10mm AP.</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, gameplayquestion12expander)" id="gameplayquestion12">
+                    <p>
+                    <h3>What items are added or restored?</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="gameplayquestion12expander">
+                    <p>
+                        <b>Weapons</b>:
+                    <ul>
+                        <li>Alloy Steel 10mm Pistol,</li>
+                        <li>Alloy Steel 10mm Submachine Gun,</li>
+                        <li>Alloy Steel Assault Rifle,</li>
+                        <li>Alloy Steel Combat Shotgun,</li>
+                        <li>Alloy Steel Silenced 10mm Pistol,</li>
+                        <li>Black Bart's Bane,</li>
+                        <li>Breaker,</li>
+                        <li>Chinese Dragoon Assault Rifle,</li>
+                        <li>Chinese Dragoon Pistol,</li>
+                        <li>Clover's Cleaver,</li>
+                        <li>Curse Breaker,</li>
+                        <li>Discharge Hammer,</li>
+                        <li>Excalibat,</li>
+                        <li>Law Dog,</li>
+                        <li>Love Tap,</li>
+                        <li>O'Grady's Peacemaker,</li>
+                        <li>Pa's Fishing Aid,</li>
+                        <li>Spanner,</li>
+                        <li>Wanda.</li>
+                    </ul>
+                    <br>
+                    <b>Armor and Clothing</b>:
+                    <ul>
+                        <li>Apocalypse Gladiator Armor and Helmet,</li>
+                        <li>Army Mechanic Jumpsuit,</li>
+                        <li>Army Power Armor,</li>
+                        <li>Army Recon Armor,</li>
+                        <li>Chinese Commando Hat,</li>
+                        <li>Chinese General Hat,</li>
+                        <li>Chinese General Uniform,</li>
+                        <li>Chinese Jumpsuit,</li>
+                        <li>Commando Armor,</li>
+                        <li>Composite Recon Armor and Helmet,</li>
+                        <li>Defender armor,</li>
+                        <li>Dirty Chinese Commando Hat,</li>
+                        <li>Doctor Li's Glasses,</li>
+                        <li>Enclave Shocktrooper Armor and Helmet,</li>
+                        <li>General Chase's Overcoat,</li>
+                        <li>Hand-Me-Down Raider Armor,</li>
+                        <li>Highway Scar Armor,</li>
+                        <li>Lab Goggles,</li>
+                        <li>Lyons' Pride Recon Armor,</li>
+                        <li>Night Vision Goggles,</li>
+                        <li>Oasis Exile Hood,</li>
+                        <li>Outcast Recon Armor and Helmet (Not unique),</li>
+                        <li>Road Rascal Leather Armor,</li>
+                        <li>"Robo-Thor" Armor and Helmet,</li>
+                        <li>Sharp-Dressed Raider's Armor,</li>
+                        <li>Shellshocked Combat Armor and Helmet,</li>
+                        <li>Scorched Sierra Power Helmet,</li>
+                        <li>T-45d Power Armor of Love (AKA Pink Power Armor),</li>
+                        <li>T-45d Power Helmet of Love,</li>
+                        <li>Tenpenny Security Helmet (Not Unique),</li>
+                        <li>Tesla Resonance Armor,</li>
+                        <li>The Devil's Pigtails,</li>
+                        <li>Vault 87 jumpsuit,</li>
+                        <li>Vault 92 jumpsuit,</li>
+                        <li>Winterized Combat Armor.</li>
+                    </ul>
+                    <br>
+                    <b>20 new weapon mods are added</b>:
+                    <ul>
+                        <li><b>.32 Rifle Extended Mag</b>: Increases ammunition capacity (+5).</li>
+                        <li><b>.32 Rifle Long Barrel</b>: Decreases spread.</li>
+                        <li><b>Combat Shotgun Reflex Sight</b>: Decreases spread.</li>
+                        <li><b>Combat Shotgun Refurbished Parts</b>: Increases Weapon Condition (+50%).</li>
+                        <li><b>Combat Shotgun Synthetic Stock</b>: Decreases weight.</li>
+                        <li><b>.32 Pistol Light Action</b>: Increases rate of fire.</li>
+                        <li><b>.32 Pistol Long Barrel</b>: Decreases spread.</li>
+                        <li><b>Chinese Assault Rifle Short Barrel</b>: Decreases weight.</li>
+                        <li><b>Chinese Assault Rifle Forged Receiver</b>: Increases condition (+50%).</li>
+                        <li><b>Assault Rifle Drums</b>: Increases ammunition capacity (+26).</li>
+                        <li><b>Assault Rifle Heavy Barrel</b>: Increases condition (+50%).</li>
+                        <li><b>Infiltrator Laser Sight</b>: Decreases spread.</li>
+                        <li><b>Infiltrator Tactical Stock</b>: Decreases spread.</li>
+                        <li><b>Lever-Action Rifle Sights</b>: Decreases spread.</li>
+                        <li><b>Lever-Action Rifle Improved Parts</b>: Increases condition (+50%).</li>
+                        <li><b>Double-Barreled Shotgun Turkey Chokes</b>: Decreases spread.</li>
+                        <li><b>Double-Barreled Shotgun Maplewood Stock</b>: Decreases Weight.</li>
+                        <li><b>Chinese Pistol Rifled Barrel</b>: Increases damage (+30%).</li>
+                        <li><b>Chinese Pistol Extended Magazine</b>: Increases clip capacity (+6).</li>
+                        <li><b>Chinese Pistol Bluing</b>: Increases condition (+20%).</li>
+                        <li><b>Silenced 10mm Pistol Fast Trigger</b>: Increases rate of fire.</li>
+                    </ul>
+                    <br>
+                    <li>Fallout New Vegas restored cut content:</li>
+                    <ul>
+                        <li><b>Junk Rounds</b>: .45 AP</li>
+                        <li><b>.45 AP Improved Sights Weapon Mod</b>: Improved aiming sights.</li>
+                        <li><b>Hunting Rev. Night Vision Scope Weapon Mod</b>: Adds night vision scope.</li>
+                        <li><b>Multiplas Rifle Tri-Barrel Weapon Mod</b>: Creates an additional projectile.</li>
+                        <li><b>Multiplas Rifle Mag. Accelerator Weapon Mod</b>: Increases speed of plasma projectile.</li>
+                        <li><b>Multiplas Rifle HD Coils Weapon Mod</b>: Increases condition (+50%).</li>
+                        <li><b>Svc. Rifle Reflex Sight Weapon Mod</b>: Adds a short-range reflex sight.</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, gameplayquestion13expander)" id="gameplayquestion13">
+                    <p>
+                    <h3>What else was added or restored?</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="gameplayquestion13expander">
+                    <p>
+                    <ul>
+                        <li>Fallout 3 weapons that do not exist in Fallout New Vegas can use different types of ammo too.</li>
+                        <li>Alien Weaponry can use both "Alien Power Cells" and "Alien Power Modules" as ammo.</li>
+                        <li>Fallout 3 weapons that do not exist in Fallout New Vegas were given custom-made iron sights.</li>
+                        <li>Weapons from Fallout New Vegas that didn't have iron sights were given custom-made new ones.</li>
+                        <li>Fallout 3 unique weapons were given unique looks - Work still in progress for some of these weapons.</li>
+                        <li>The Dart Gun cripple effect was restored. - Was removed in old TTW versions.</li>
+                        <li>Cut schematics to craft the Cryolator, Trench Knife, Nuka Cocktail and Molotov Cocktail were restored.</li>
+                        <li>Sierra Petrovita's cut lines about the Molotov Cocktail were also restored.</li>
+                        <li>Many cut lines from several NPC (ex. Mister Burke) dialogue were restored.</li>
+                        <li>Some settlements got given (map placement) some crops (usually maize) as harvesteable food sources.</li>
+                        <li>Rivet City's Laboratory was expanded with the addition of a hydroponics room where they experiment with growing fresh food.</li>
+                        <li>Oasis was given some harvestable resources for fresh fruit and vegetables (ex. pear, carrot, etc.).</li>
+                        <li>The Pitt ammo press was reworked so it allows the creation of any common ammo type (some ammo types are not available, for example Alien ammo).</li>
+                        <li>Poison Darts can be crafted.</li>
+                        <li>The Outcasts trading system from fallout 3 was expanded, it now allows to give them much more tech and there are many new reward options to pick from (including AP Ammo).</li>
+                        <li>Liquid Nitrogen was added to the things Sally rewards the player with after completing the Mothership Zeta DLC.</li>
+                        <li>Super Mutants can use Fatman weapons - Like their dialogue suggests.</li>
+                        <li>TTW also restored cut, and added, robot skins and decals. You will now see Outcasts with their own style of robots (Robobrains, Protectrons, Sentry Bots), same with the Brotherhood of Steel. Now Protectrons (like Deputy Weld and the Metro ones) will have their own stickers (decals) too.</li>
+                        <li>TTW added more Super Mutant animations. Which allows them to use more weapons.</li>
+                        <li>Capital Wasteland's Super Mutants also have access to more weapons that don't require new animations, like Bumper Swords and Fire Axes, for example.</li>
+                    </ul>
+                    <br>
+                    <b>Armors added by TTW</b>:
+                    <ul>
+                        <li>Army Recon Armor,</li>
+                        <li>Brotherhood Recon Armor,</li>
+                        <li>Dirty Chinese Commando Hat,</li>
+                        <li>Enclave Power Armor,</li>
+                        <li>Enclave Power Helmet,</li>
+                        <li>Enclave Power Armor MKI,</li>
+                        <li>Enclave Tesla Armor,</li>
+                        <li>Enclave Tesla Helmet,</li>
+                        <li>Enclave Tesla Power Armor MKI,</li>
+                        <li>Lyons' Pride Recon Armor,</li>
+                        <li>Lyons' Pride T-51b Power Armor,</li>
+                        <li>Outcast T-51b Power Armor,</li>
+                        <li>Outcast T-51b Power Helmet,</li>
+                        <li>Regulator Combat Armor,</li>
+                        <li>Regulator Combat Armor, Reinforced,</li>
+                        <li>Regulator Combat Armor, Reinforced Mark II,</li>
+                        <li>Regulator Hat,</li>
+                        <li>Reinforced Night Vision Goggles,</li>
+                        <li>Salvaged Power Armor (Non NCR version),</li>
+                        <li>Security Armor (Generic versions of the Dead Money armor),</li>
+                        <li>Talon Combat Armor, Reinforced,</li>
+                        <li>Talon Combat Armor, Reinforced Mark II,</li>
+                        <li>Talon Combat Helmet, Reinforced,</li>
+                        <li>Talon Combat Helmet, Reinforced Mark II,</li>
+                        <li>Vault 101 Security Armor, Reinforced,</li>
+                        <li>Vault 101 Security Armor, Reinforced Mk II,</li>
+                        <li>Vault 34 Security Armor, Reinforced,/li>
+                        <li>Vault 34 Security Armor, Reinforced Mk II.</li>
+                    </ul>
+                    <br>
+                    TTW also restores the crafting of FO3 weapons. This means that the ammount of schematics (for each weapon) you own, will affect the condition (HP of the weapon) or the quantity (in case of explosives) of what you craft.
+                    </p>
+                </div>
+            </span>
+
+            <!-- Arrows -->
+            <div class="navigationArrowContainer">
+                <a href="#" id="previous" rel="prev" class="navigationArrow">
+                    <img class="mirror" src="./img/UI/Arrow.svg" alt="Back Arrow">
+                    <span class="arrowText"></span>
+                </a>
+            </div>
         </div>
     </div>
 
-    <!-- Left Sidebar -->
-    <div id="sidenavLeft">
-        <div>
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./intro.html">Introduction</a>
-                </li>
-                <li>
-                    <a href="./setup.html">Setup</a>
-                </li>
-                <li>
-                    <a href="./mo2.html">MO2</a>
-                </li>
-                <li>
-                    <a href="./utilities.html">Utilities</a>
-                </li>
-                <li>
-                    <a href="./bugfix.html">Bug Fixes</a>
-                </li>
-                <li>
-                    <a href="./basefinish.html">Base Finish</a>
-                </li>
-            </ul>
-            <hr>
-        </div>
-        <div class="extended-background">
-            <ul>
-                <h3 id="extended-separator">VNV Extended</h3>
-                <li>
-                    <a href="./hud.html">User Interface</a>
-                </li>
-                <li>
-                    <a href="./gameplay.html">Gameplay</a>
-                </li>
-                <li>
-                    <a href="./content.html">Content</a>
-                </li>
-                <li>
-                    <a href="./overhauls.html">Overhauls</a>
-                </li>
-                <li>
-                    <a href="./visuals.html">Visuals</a>
-                </li>
-                <li>
-                    <a href="./finish.html">Extended Finish</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <hr>
-            <ul>
-                <li>
-                    <a href="./changelog.html">Changelog</a>
-                </li>
-                <li>
-                    <a href="./resources.html">Resources</a>
-                </li>
-                <li>
-                    <a href="./faq.html" class="active">FAQ</a>
-                </li>
-                <li>
-                    <a href="./avoid-tools.html">Tools to Avoid</a>
-                </li>
-                <li>
-                    <a href="./avoid-mods.html">Mods to Avoid</a>
-                </li>
-                <li>
-                    <a href="./wabbajack.html">Wabbajack</a>
-                </li>
-            </ul>
-        </div>
+    <footer>ModdingLinked 2024</footer>
 
-        <!-- Guide Links -->
-        <div class="guideLinks">
-            <hr>
-            <ul>
-                <li>
-                    <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-                </li>
-                <li>
-                    <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Footer -->
-        <div id="footer">
-            <ul>
-                <li class="discord">
-                    <a href="https://discord.gg/S99Ary5eba" target="_blank">
-                        <i class="fab fa-discord"></i>
-                        Discord
-                    </a>
-                </li>
-                <li class="paypal">
-                    <a href="https://paypal.me/Ungeziefi" target="_blank">
-                        <i class="fa fa-paypal"></i>
-                        Donate
-                    </a>
-                </li>
-                <li class="github">
-                    <a href="https://github.com/ModdingLinked/Viva-New-Vegas" target="_blank">
-                        <i class="fab fa-github"></i>
-                        GitHub
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Content -->
-    <div class="content">
-        <div class="section">
-            <h1>Frequently Asked Questions</h1>
-            <!-- DLC Cleaning -->
-            <h3 id="cleaning"><b>Why does the guide not clean the DLC plugins?</b></h3>
-            ESM Fixes already cleans and fixes issues in the base plugins.
-
-            <!-- MO2 Popup -->
-            <h3 id="mo2Popup"><b>When installing multiple mods from the same page through MO2, should I select Merge, Rename, or Replace?</b></h3>
-            Read the <strong>Mod Installation Instructions</strong> section from the <a href="./mo2.html#installation_instructions" target="_blank">MO2</a> page.
-
-            <!-- App Error -->
-            <h3 id="appError"><b>Why do I get a <code>Application Load Error 5:0000065434</code> message when I try to launch the game?</b></h3>
-            Run your game directly through Steam once. You may also need to restart Steam and/or Mod Organizer 2. If that still doesn't work, place a copy of your <strong>Steam.exe</strong> (not a shortcut) into the game's <strong>Root</strong> folder.
-
-            <!-- Conflicts -->
-            <h3 id="mo2Conflicts"><b>Mod Organizer 2 is reporting that mods in the left pane have overwritten loose files. Is this okay?</b></h3>
-            <p>Yes, as long as your mods in the <b>left</b> pane of MO2 are in the exact order as they appear in the guide, these overwrites are intentional and safe.</p>
-
-            <!-- Overwrite -->
-            <h3 id="mo2Overwrite"><b>Mod Organizer 2 is reporting that there are files in my overwrite folder. Is this okay?</b></h3>
-            <p>Yes, generally these files are harmless. They are usually files generated by mods (like configuration INI files) or by programs ran through MO2. These files will still be loaded fine in-game, and will be prioritized as if they are the last mod in the <b>left</b> pane of MO2. Usually, you can just leave these files in the overwrite and ignore the warning.</p>
-
-            <!-- NVTF -->
-            <h3 id="code0"><b>Why does the console command <code>IsDLLLoaded NVTF</code> always report back <code>>> 0</code>?</b></h3>
-            <p>Restart your computer, then install the DirectX Libraries from <a href="https://www.microsoft.com/en-us/download/details.aspx?id=8109" target="_blank">here</a>.</p>
-
-            <!-- Game Fast -->
-            <h3 id="fastGame"><b>Why is my game moving too fast?</b></h3>
-            <p>Verify that NVTF is actually working by using the console command <code>IsDLLLoaded NVTF</code> and limit your FPS according to the <a class="link" href="https://performance.moddinglinked.com/falloutnv.html#RecommendedLimiters" target="_blank">performance guide</a>.</p>
-
-            <!-- DLC Start -->
-            <h3 id="dlc"><b>Why didn't I get any DLC pop-ups/items after starting a new game?</b></h3>
-            <p><a href="https://www.nexusmods.com/newvegas/mods/86885" target="_blank">Leveled DLC Delay</a> delays DLC until you meet the required level or visit the respective location. <a href="https://www.nexusmods.com/newvegas/mods/87935" target="_blank">Lone Star</a> also moves the pre-order pack items to the following locations:</p>
-            <ul>
-                <li>Tribal Pack: <span class="spoiler">Lucky Jim Mine House</span></li>
-                <li>Caravan Pack: <span class="spoiler">Hell's Motel</span></li>
-                <li>Classic Pack: <span class="spoiler">Wrecked Highwayman</span></li>
-                <li>Mercenary Pack: <span class="spoiler">Bradley's Shack</span></li>
-            </ul>
-
-            <!-- Bouncing -->
-            <h3 id="bouncingNpcs"><b>How do I fix NPCs "bouncing" when playing above 60 FPS?</b></h3>
-            <ol>
-                <li>Make sure your game FPS is locked to any amount <strong>below 120</strong>. If this doesn't fix it, try the next steps.</li>
-                <li>Click the <img src="./img/MO2/INI Editor.webp" alt="MO2 INI button"> button at the top of MO2 and select <strong>INI Editor</strong>.</li>
-                <li>Select the <strong>FalloutCustom.ini</strong> tab.</li>
-                <ul>
-                    <li>Make sure you are in the <strong>FalloutCustom.ini</strong> tab and <b>NOT</b> the <strong>Custom.ini</strong> tab.</li>
-                </ul>
-                <li>Paste in the following:</li>
-                <ul>
-                    <textarea readonly="readonly" style="height: 9rem" onclick="this.focus();this.select()">
-[FootIK]
-fOnOffGain=0.01
-bFootPlacementOn=0
-fPelvisUpDownBias=0
-fPelvisOffsetDamping=0
-fOriginalGroundHeightMS=0</textarea>
-                </ul>
-                <li>Save and exit.</li>
-            </ol>
-
-            <!-- Ultrawide -->
-            <h3 id="ultrawide"><b>What steps do I have to take to run the game in an ultrawide resolution?</b></h3>
-            <ol>
-                <li>Click the <img src="./img/MO2/INI Editor.webp" alt="MO2 INI button"> button at the top of MO2 and select <strong>INI Editor</strong>.</li>
-                <li>Select the <strong>FalloutCustom.ini</strong> tab.</li>
-                <ul>
-                    <li>Make sure you are in the <strong>FalloutCustom.ini</strong> tab and <b>NOT</b> the <strong>Custom.ini</strong> tab.</li>
-                </ul>
-                <li>Paste in your display's resolution:</li>
-                <ul>
-                    <textarea readonly="readonly" style="height: 5rem" onclick="this.focus();this.select()">
-[Display]
-iSize W=3440
-iSize H=1440
-            </textarea>
-                    <li>If your resolution differs from the one above, correct the 2 values.</li>
-                </ul>
-                <li>Save and exit.</li>
-                <li>Run the game and go to Settings -> Tweaks, then type "ultrawide" in the search bar. Enable the Ultrawide Support tweak by clicking it in the panel on the lefthand side, then exit and restart the game so it takes effect.</li>
-            </ol>
-
-            <!-- FOV -->
-            <h3 id="fov"><b></b>How do I change my FOV?</b></h3>
-            <ol>
-                <li>Click the <img src="./img/MO2/INI Editor.webp" alt="MO2 INI button"> button at the top of MO2 and select <strong>INI Editor</strong>.</li>
-                <li>Select the <strong>FalloutCustom.ini</strong> tab.</li>
-                <li>Under the <strong>[Display]</strong> section, change the following values to your preference:</li>
-                <ul>
-                    <li><strong>fDefaultWorldFOV</strong> (FOV of the camera in relation to the world, increasing this will affect performance gradually)</li>
-                    <li><strong>fDefault1stPersonFOV</strong> (FOV of the camera in relation to the player's model, setting this too high may cause clipping)</li>
-                    <li><strong>fPipboy1stPersonFOV</strong> (FOV in the Pip-Boy or while using a terminal)</li>
-                </ul>
-                <li>Save and exit.</li>
-            </ol>
-
-            <!-- Dark Terrain -->
-            <h3 id="darkTerrain"><b>Why are parts of the terrain black?</b></h3>
-            <p>Disable <strong>Improved Lighting Shaders</strong> in your Mod Organizer 2 modlist by unchecking its box. This issue seems to be hardware related but we do not know the specific cause at the moment.</p>
+    <div id="image-overlay" class="overlay" hidden>
+        <div class="image-container">
+            <img id="enlarged-image" class="enlarged-image" src="" alt="Enlarged Image">
+            <div class="resize-overlay shrink"></div>
         </div>
     </div>
 </body>
