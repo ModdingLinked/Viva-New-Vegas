@@ -20,6 +20,7 @@
 
 .left-sidebar {
   left: 0;
+  overflow-y: scroll;
 }
 
 .right-sidebar {
@@ -125,7 +126,6 @@
     padding-top: 5em;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    overflow-y: scroll;
     z-index: 1;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;
   }
