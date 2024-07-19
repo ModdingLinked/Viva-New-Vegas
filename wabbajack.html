@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="css/cards.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/navigationArrows.css">
+    <link rel="stylesheet" href="css/coco.css">
     <link rel="stylesheet" href="css/progressBar.css">
     <link rel="stylesheet" href="css/guideColors.css">
     <link rel="stylesheet" href="css/sidebar.css">
@@ -149,8 +150,103 @@
         <div class="content">
 
             <span id="Wabbajack" class="section">
+                <div class="card-yellow center" style="display: flex; align-items: center; margin-top: 30px;">
+                    <p>
+                        <img src="./img/Coco/Blockquote.webp" alt="Coco blockquote" class="cocoNerd">
+                    <div>
+                        <b>IMPORTANT:</b>
+                        <br>
+                        Everything in this guide is written down for a reason! It is vital to read <b>everything!</b>
+                        <br>
+                        You can <b>NOT</b> skip any paragraphs/instructions and expect your game to function as it should.
+                    </div>
+                    </p>
+                </div>
+
                 <h2 onclick="location.href='#Wabbajack'">Wabbajack</h2>
 
+                <div class="card" id="IntroductionAndSetup">
+                    <p>
+                    <h3 onclick="location.href='#IntroductionAndSetup'">Introduction & Setup</h3>
+                    Read the <a href="./intro.html">Introduction</a> first, then proceed to the <a href="./setup.html">Setup</a> page. Once you're done, keep following this page.
+                    <div class="card-yellow">
+                        <p>
+                            <b>IMPORTANT:</b>
+                            <br>
+                            Only Steam (Global) and GOG copies of the game are supported!
+                        </p>
+                    </div>
+                    </p>
+                </div>
+
+                <div class="card" id="Installation">
+                    <p>
+                    <h3 onclick="location.href='#Installation'">Installation</h3>
+                    <ol>
+                        <li>Download the latest <a href="https://www.wabbajack.org/" target="_blank">Wabbajack</a>.</li>
+                        <li>
+                            <strong>Create a new folder</strong> anywhere outside of any default Windows folders, and the game folder itself.
+                            <br>
+                            Example: <span class="card-basic">C:\Modding\Wabbajack</span>
+                        </li>
+                        <li>Place the downloaded <strong>Wabbajack.exe</strong> in this folder, then run it.</li>
+                        <li>Click <strong>Browse Modlists</strong>, then locate Viva New Vegas in the gallery and click the download button in the corner.</li>
+                        <li>In <b>Installation Location</b> select an <strong>empty folder</strong> that is <b>NOT</b> the following:
+                            <ul>
+                                <li>The Steam folder,</li>
+                                <li>Any default Windows folders,</li>
+                                <li>The game folder,</li>
+                                <li>The folder where you put Wabbajack.exe.</li>
+                            </ul>
+                            Example: <span class="card-basic">C:\Modding\Viva New Vegas</span>
+                        </li>
+                        <li><strong>Begin</strong> the installation.</li>
+                        <li>Accept the Nexus Mods API request.</li>
+                        <li>If you are not a Premium user you will need to manually click download for each mod.</li>
+                        <li>Once complete, the installation will show a green <strong>Installation Complete</strong> screen.
+                            <ul>
+                                <li>If you see a red <b>Installation Failed</b> screen, try log-in again through the Wabbajack settings, then reinstall the list to the same folder. If that doesn't work please join the <a href="https://discord.gg/S99Ary5eba" target="_blank">ModdingLinked</a> Discord server for support.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    </p>
+                </div>
+
+                <h2 onclick="location.href='#PostInstallSteps'">Post-Install Steps</h2>
+
+                <div class="card" id="Exclusions">
+                    <p>
+                    <h3 onclick="location.href='#Exclusions'">Exclusions</h3>
+                    <ol>
+                        <li>Open <a href="ms-settings:windowsdefender">Windows Security</a>.</li>
+                        <li>Open <strong>Virus & threat protection</strong>.</li>
+                        <li>Click <strong>Manage settings</strong> under <b>Virus & threat protection settings</b>.</li>
+                        <li>Scroll down and click <strong>Add or remove exclusions</strong> under <b>Exclusions</b>.</li>
+                        <li>Add a <b>Folder</b> exclusion and point it to the <strong>Installation Location</strong> folder.</li>
+                    </ol>
+                    <div class="card-yellow">
+                        <p>
+                            This operation is required because Windows can block MO2 and mod files from loading due to how MO2's virtualized filesystem works.
+                            <br>
+                            <br>
+                            If you are using a third-party antivirus, you will need to find the exclusions menu and add one to the same folder.
+                        </p>
+                    </div>
+                    </p>
+                </div>
+
+                <div class="card" id="RootMods">
+                    <p>
+                    <h3 onclick="location.href='#RootMods'">Root Mods</h3>
+                    <ol>
+                        <li>In your <b>Installation Location</b>, open the <strong>Root Mods</strong> folder.</li>
+                        <li>Copy <strong>everything</strong> to the game's <strong>Root</strong> folder.</li>
+                        <li>Still in the game's Root folder, double-click on <strong>FNVpatch.exe</strong> to run it.</li>
+                        <li>A command prompt window will open and should say <b>FalloutNV.exe patched!</b>.</li>
+                        <li>Close the command prompt and a file named <strong>FalloutNV_backup.exe</strong> should appear in the game's <strong>Root</strong> folder.</li>
+                    </ol>
+                    </p>
+                </div>
             </span>
 
             <!-- Arrows -->
@@ -160,6 +256,11 @@
                     <span class="arrowText"></span>
                 </a>
             </div>
+        </div>
+
+        <div class="sidebar right-sidebar">
+            <p id="sidebarContent">
+            </p>
         </div>
     </div>
 
