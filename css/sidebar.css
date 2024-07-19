@@ -12,7 +12,8 @@
           user-select: none;
   background: #2b2b2b;
   outline: 1px solid rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   height: calc(100vh - 7em);
   transition: all 333ms cubic-bezier(0, 0, 0, 1);
   justify-content: flex-start;
@@ -20,7 +21,6 @@
 
 .left-sidebar {
   left: 0;
-  overflow-y: scroll;
 }
 
 .right-sidebar {
@@ -96,6 +96,10 @@
   text-decoration: none;
   transition: all 187ms Cubic-Bezier(0, 0, 0, 1);
   text-wrap: nowrap;
+}
+
+.left-sidebar hr {
+  margin: 0px 10px !important;
 }
 
 .left-sidebar a:hover {
