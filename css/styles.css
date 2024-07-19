@@ -181,19 +181,19 @@ footer {
   rotate: 180deg;
 }
 
-.width-limited {
+.width-90 {
   max-width: 90% !important;
 }
 
-.width-very-limited {
+.width-70 {
   max-width: 70% !important;
 }
 
-.width-ultra-limited {
+.width-60 {
   max-width: 60% !important;
 }
 
-.width-insanely-limited {
+.width-40 {
   max-width: 40% !important;
 }
 
@@ -252,16 +252,16 @@ textarea {
   .content {
     padding: 4px;
   }
-  .width-limited {
+  .width-90 {
     max-width: 100% !important;
   }
-  .width-very-limited {
+  .width-70 {
     max-width: 90% !important;
   }
-  .width-ultra-limited {
+  .width-60 {
     max-width: 80% !important;
   }
-  .width-insanely-limited {
+  .width-40 {
     max-width: 70% !important;
   }
 }/*# sourceMappingURL=styles.css.map */
