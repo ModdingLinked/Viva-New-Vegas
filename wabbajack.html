@@ -167,7 +167,7 @@
 
                 <div class="card" id="IntroductionAndSetup">
                     <p>
-                    <h3 onclick="location.href='#IntroductionAndSetup'">Introduction & Setup</h3>
+                    <h3 onclick="location.href='#IntroductionAndSetup'">Introduction And Setup</h3>
                     Read the <a href="./intro.html">Introduction</a> first, then proceed to the <a href="./setup.html">Setup</a> page. Once you're done, keep following this page.
                     <div class="card-yellow">
                         <p>
@@ -211,7 +211,9 @@
                     </ol>
                     </p>
                 </div>
+            </span>
 
+            <span id="PostInstallSteps" class="section">
                 <h2 onclick="location.href='#PostInstallSteps'">Post-Install Steps</h2>
 
                 <div class="card" id="Exclusions">
@@ -245,6 +247,152 @@
                         <li>A command prompt window will open and should say <b>FalloutNV.exe patched!</b>.</li>
                         <li>Close the command prompt and a file named <strong>FalloutNV_backup.exe</strong> should appear in the game's <strong>Root</strong> folder.</li>
                     </ol>
+                    </p>
+                </div>
+
+                <div class="card" id="BSADecompressor" title="BSA Decompressor">
+                    <p>
+                    <h3 onclick="location.href='#BSADecompressor'">BSA Decompressor</h3>
+                    Decompresses the vanilla BSA files to reduce loading times and stuttering. Can also fix certain sound effects not playing.
+                    <ol>
+                        <li>In your <b>Installation Location</b>, open the <strong>BSA Decompressor</strong> folder.</li>
+                        <li>Run <strong>FNV BSA Decompressor.exe</strong>.</li>
+                        <li>The <b>Fallout: New Vegas</b> and <b>Decompressed Archives</b> <strong>paths</strong> should be filled by default (Root folder and Data folder respectively).
+                            <br>
+                            If they aren't, close the program and re-run your game launcher to generate the required registry key,
+                        </li>
+                        <li>Click <strong>Decompress</strong>, wait for the process the finish, then exit the program once finished.</li>
+                    </ol>
+                    </p>
+                </div>
+
+                <div class="card" id="ModOrganizer2Setup" title="Mod Organizer 2 Setup">
+                    <p>
+                    <h3 onclick="location.href='#ModOrganizer2Setup'">Mod Organizer 2 Setup</h3>
+                    <ol>
+                        <li>Launch <strong>ModOrganizer.exe</strong> from your <strong>Installation Location</strong>.</li>
+                        <li>If you see a pop-up called <strong>FalloutNV_lang.esp was found</strong>, select <strong>Yes</strong>.</li>
+                        <li>If you see a pop-up called <strong>Register?</strong>, select <strong>Yes</strong>.</li>
+                    </ol>
+                    </p>
+                </div>
+
+                <div class="card" id="GameConfiguration">
+                    <p>
+                    <h3 onclick="location.href='#GameConfiguration'">Configuring The Game's Settings</h3>
+                    <ol>
+                        <li>Launch the game launcher using the <strong>Fallout Launcher</strong> option in MO2.</li>
+                        <div class="image-container width-60">
+                            <img class="content-img" src="./img/Others/Start Launcher.webp" alt="Run the launcher through MO2">
+                            <div class="resize-overlay expand"></div>
+                        </div>
+                        <li>
+                            Inside the launcher, click <b>Options</b> and do the following:
+                            <ol>
+                                <li>
+                                    Select <strong>Ultra Preset</strong>.
+                                    <div class="card-yellow">
+                                        <p>If you have a very weak PC, you can select <b>Medium Preset</b> instead.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    Set <strong>Resolution</strong> to your monitor's native resolution.
+                                    <div class="card-yellow">
+                                        <p>
+                                            The launcher's resolution list can be pretty limited, you can set it manually by following these steps:
+                                        <ol>
+                                            <li>Click the <img class="mo2-icon" src="./img/MO2/INI Editor.webp" alt="MO2 INI button"> button at the top of MO2 and select <strong>INI Editor</strong>.</li>
+                                            <li>Select the <strong>FalloutPrefs.ini</strong> tab.</li>
+                                            <li>Change following settings in the <span class="card-basic">Display</span> section:
+                                                <br>
+                                                <span class="card-basic">iSize W = your screen width</span>
+                                                <br>
+                                                <span class="card-basic">iSize H = your screen height</span>
+                                            </li>
+                                        </ol>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>Close the launcher.</li>
+                        </p>
+                </div>
+
+                <div class="card" id="PerformanceGuide">
+                    <p>
+                    <h3 class="link-page"><a href="https://performance.moddinglinked.com/falloutnv.html" target="_blank">Performance Guide</a></h3>
+                    In-depth guide on how to fix the game's lackluster performance, display issues and <strong>alt-tabbing</strong>. Covers topics such as DXVK, framerate limiting, display modes, lag and HDR.
+                    <div class="card-red" style="display: flex; align-items: center;">
+                        <p>
+                            <img src="./img/Coco/Blockquote.webp" alt="Coco blockquote" class="cocoNerd">
+                        <div>
+                            <b>IMPORTANT REMINDER TO AMD USERS:</b>
+                            <br>
+                            Make sure you have the latest drivers! Drivers between 24.1.1 and 24.5.1 will crash the game unless you use DXVK!
+                        </div>
+                        </p>
+                    </div>
+                    </p>
+                </div>
+
+                <div class="card" id="LaunchingTheGame">
+                    <p>
+                    <h3 onclick="location.href='#LaunchingTheGame'">Launching The Game</h3>
+                    Go to the modlist's <strong>Installation Location</strong> folder you chose at the beggining and run <strong>ModOrganizer.exe</strong>.
+                    <br>
+                    <br>
+                    Due to the way Mod Organizer 2 works, running programs through it is a requirement in order to load mods. This is done in the <strong>top-right corner</strong> of the manager, where the program to run is chosen. Here, <strong>select New Vegas</strong>.
+                    <br>
+                    <br>
+                    For the sake of convenience you may also <strong>create a shortcut</strong> (right below the <b>Run</b> button) so that you won't have to manually open MO2 each time before playing.
+                    <br>
+                    <div class="image-container width-60">
+                        <img class="content-img" src="./img/Others/Start Game.webp" alt="Launching the game">
+                        <div class="resize-overlay expand"></div>
+                    </div>
+                    <br>
+                    <div class="card-yellow">
+                        <p>
+                            <b>Q: Aren't you supposed to launch through NVSE?</b>
+                            <br>
+                            <br>
+                            A: The 4GB Patcher and the Epic Games Patcher both allow the game's main executable to automatically load the script extender.
+                            <br>
+                            <hr>
+                            Refer to the <a href="./faq.html" target="_blank">FAQ</a> section for more information and solutions to possible problems you might encounter at this stage of the guide.
+                        </p>
+                    </div>
+                    </p>
+                </div>
+
+                <div class="card" id="UpdatingTheList">
+                    <p>
+                    <h3 onclick="location.href='#UpdatingTheList'">Updating The List</h3>
+                    <ol>
+                        <li>If you added any mods to the list after installation, add the <span class="card-basic">[NoDelete]</span> prefix to their name in the left pane.</li>
+                        <li><strong>Verify files</strong> on Steam or GOG Galaxy.</li>
+                        <li><strong>Reinstall the list</strong> from the Wabbajack tool and enable the "<b>Overwrite Installation</b>" checkbox.</li>
+                        <li>Reapply the 4GB Patch, then optionally run the BSA Decompressor as well (instructions for both are provided above).</li>
+                    </ol>
+                    </p>
+                </div>
+
+                <div class="card" id="FinishingNotes">
+                    <p>
+                    <h3 onclick="location.href='#FinishingNotes'">Finishing Notes</h3>
+                    You have now installed the Viva New Vegas Wabbajack list. If you don't want to mod your game further, <strong>you can now start playing</strong>. Have fun!
+                    <br>
+                    <br>
+                    Adding mods independently and without the help of a guide is only recommended after you have learned the required information and workflow. These range from general technicalities about the game, to solving conflicts with <a href="https://moddinglinked.com/xedit.html" target="_blank">xEdit</a> through <a href="https://moddinglinked.com/themethod.html" target="_blank">The Method</a>.
+                    <br>
+                    <br>
+                    You can find sources for all this information and more in the <a href="./resources.html" target="_blank">Resources</a> section. You should also be aware of the <a href="https://vivanewvegas.moddinglinked.com/avoid-tools.html" target="_blank">Tools</a> and <a href="https://vivanewvegas.moddinglinked.com/avoid-mods.html" target="_blank">Mods to Avoid</a>.
+                    <div class="card-yellow">
+                        <p>
+                            We may not provide support for setups that have added mods, especially if you went overboard!
+                        </p>
+                    </div>
                     </p>
                 </div>
             </span>
