@@ -118,7 +118,7 @@
                 <a href="./lod.html" title="LOD Guide" class="sublink">
                     LOD Guide
                 </a>
-                
+
                 <a href="./decompress.html" title="Decompression Guide" class="sublink">
                     Decompression Guide
                 </a>
@@ -159,7 +159,44 @@
             <span id="Decompression" class="section">
                 <h2 onclick="location.href='#Decompression'">Decompression Guide</h2>
 
+                <div class="card">
+                    <p>
+                    <h3>Why?</h3>
+                    The vanilla game uses zLib compression for most things, plugin records included. Unfortunately, <strong>zLib is very slow</strong> and CPU heavy (especially on SSDs), which sadly results in loading stutter, especially when using mods that add lots of NPCs and/or new landscapes.
+                    <br>
+                    <br>
+                    <a href="./utilities.html#fixedEsms">Ultimate Edition ESM Fixes</a> and <a href="https://thebestoftimes.moddinglinked.com">Tale of Two Wastelands</a> already decompress the game's base plugins for you, so <strong>all that is left to decompress is your mods</strong>. Luckily, you can very easily do this using xEdit and a simple script.
+                    <div class="card-green">
+                        <p>
+                            This process is recommended once your load order is complete, so that everything gets decompressed.
+                        </p>
+                    </div>
+                    </p>
+                </div>
 
+                <div class="card">
+                    <p>
+                    <h3 id="process">The Process</h3>
+                    <ol>
+                        <li>If you haven't already, read the <a href="https://moddinglinked.com/xedit.html">xEdit guide</a> to avoid confusion with the next steps.</li>
+                        <li>Download the <a href="https://www.nexusmods.com/newvegas/mods/74181">Decompress Records script</a>.</li>
+                        <li>Extract the archive's contents into the <strong>xEdit folder</strong>.</li>
+                        <li>Run xEdit and load <strong>all of your mods</strong>.</li>
+                        <li>Once loaded, select all plugins on the tree-view with CTRL+A, then right-click and <strong>Apply Script...</strong></li>
+                        <div class="image-container width-40">
+                            <img class="content-img" src="./img/Others/Apply Script.webp" alt="Apply a script to the entire load order">
+                            <div class="resize-overlay expand"></div>
+                        </div>
+                        <li>Type <strong>Decompress Records</strong> in the filter and the script will automatically be selected.</li>
+                        <div class="image-container width-40">
+                            <img class="content-img" src="./img/Others/Decompress Script.webp" alt="Select the Decompress Records script">
+                            <div class="resize-overlay expand"></div>
+                        </div>
+                        <li>Click <strong>OK</strong> and wait for it to process everything.</li>
+                        <li><strong>Close xEdit</strong>, if it asks you to save then that means the plugins listed got decompressed.</li>
+                    </ol>
+                    </p>
+                </div>
 
             </span>
 
