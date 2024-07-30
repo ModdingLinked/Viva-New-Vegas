@@ -196,6 +196,10 @@ function markActivePage() {
         if (linkPage === currentPage) {
             link.classList.add("active");
             currentIndex = index;
+
+            if (link.classList.contains("sublink")){
+                link.setAttribute('style', 'display:flex !important');
+            }
         }
     });
 
