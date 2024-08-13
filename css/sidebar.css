@@ -67,11 +67,11 @@
   border: 1px solid transparent;
   background-color: transparent;
   border-radius: 4px;
-  height: 36px;
+  height: 32px;
   width: auto;
   text-align: left;
   text-decoration: none;
-  padding: 7px 12px;
+  padding: 5px 12px;
   font-size: 1.05em;
   margin: 1.5px 0;
   transition: all 187ms Cubic-Bezier(0, 0, 0, 1);
@@ -138,6 +138,11 @@
     border-bottom-left-radius: 0;
     z-index: 1;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;
+  }
+  .left-sidebar a,
+  .sublink {
+    height: 36px !important;
+    padding: 7px 12px !important;
   }
 }
 @media only screen and (max-width: 1230px) {
