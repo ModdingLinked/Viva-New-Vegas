@@ -4,7 +4,7 @@
   width: 15em;
   text-align: left;
   position: fixed;
-  margin-top: 6em;
+  margin-top: 5.75em;
   margin-left: 0.75em;
   border-radius: 4px;
   -webkit-user-select: none;
@@ -14,7 +14,7 @@
   outline: 1px solid rgba(0, 0, 0, 0.1);
   overflow-x: hidden;
   overflow-y: auto;
-  height: calc(100vh - 7em);
+  height: calc(100vh - 6.25em);
   transition: all 333ms cubic-bezier(0, 0, 0, 1);
   justify-content: flex-start;
 }

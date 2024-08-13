@@ -100,10 +100,10 @@ function updateProgressBarAndFadeIn() {
 
     var sidebars = document.getElementsByClassName("sidebar");
     if (sidebars) {
-        var styleVal = "calc(100vh - 7em)";
+        var styleVal = "calc(100vh - 6.25em)";
 
         if (document.documentElement.clientHeight > 900 && scroll > bottomMargin) {
-            styleVal = "calc(100vh - 9em)";
+            styleVal = "calc(100vh - 8.5em)";
         }
 
         for (var i = 0; i < sidebars.length; i++) {
