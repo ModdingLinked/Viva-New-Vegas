@@ -274,12 +274,19 @@ bForceFullLOD=1</textarea>
                         <p>
                             <img src="./img/Coco/Blockquote.webp" alt="Coco blockquote" class="cocoNerd">
                         <div>
-                            <b>IMPORTANT:</b>
-                            <br>
-                            Increasing LOD distances means that the object LOD will now reach the impostor meshes in Vegas, making them clip into each other!
-                            <br>
-                            <br>
-                            Install <a href="https://www.nexusmods.com/newvegas/mods/83691" target="_blank">Impostors and LOD Flicker Fix</a> to fix this problem, then move its plugin <strong>above DNWeathers.esp</strong>.
+                            <p>
+                                <b>IMPORTANT:</b>
+                                <br>
+                                Increasing LOD distances means that the object LOD will now reach the impostor meshes in Vegas, making them clip into each other!
+                                <br>
+                                <br>
+                                Install <a href="https://www.nexusmods.com/newvegas/mods/83691" target="_blank">Impostors and LOD Flicker Fix</a> to fix this problem, then move its plugin <strong>above DNWeathers.esp</strong>.
+                                <br>
+                                <br>
+                                Additionally, the increased draw distance can easily decrease performance!
+                                <br>
+                                If you notice a significant drop in FPS, it's safe to remove the [TerrainManager] section from the INI.
+                            </p>
                         </div>
                         </p>
                     </div>
@@ -574,7 +581,7 @@ bForceFullLOD=1</textarea>
 
                         <div class="expander-top clickable" onclick="expandCard(this, settingsDetailsExpander)" id="settingsDetails">
                             <p>
-                            <h3>                            Settings Explanation</h3>
+                            <h3> Settings Explanation</h3>
                             <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
                             </p>
                         </div>
@@ -605,13 +612,13 @@ bForceFullLOD=1</textarea>
 
                 <div class="card" id="InstallingLOD" title="Installing LOD">
                     <p>
-                        <h3>Installing the LOD</h3>
-                        <ol>
-                            <li>In MO2, right-click on the <i>Overwrite</i> folder at the bottom of the left pane and select <strong>All Mods -> Create empty mod above</strong>.</li>
-                            <li>Title the mod <strong>FNVLODGen Output</strong>.</li>
-                            <li>Navigate to where the LOD files were generated and select both the <code>textures</code> and <code>meshes</code> folders.</li>
-                            <li>Cut them to the <strong>FNVLODGen Output</strong> mod you just created (right-click on the mod and select <b>Open in Explorer)</b>.</li>
-                        </ol>
+                    <h3>Installing the LOD</h3>
+                    <ol>
+                        <li>In MO2, right-click on the <i>Overwrite</i> folder at the bottom of the left pane and select <strong>All Mods -> Create empty mod above</strong>.</li>
+                        <li>Title the mod <strong>FNVLODGen Output</strong>.</li>
+                        <li>Navigate to where the LOD files were generated and select both the <code>textures</code> and <code>meshes</code> folders.</li>
+                        <li>Cut them to the <strong>FNVLODGen Output</strong> mod you just created (right-click on the mod and select <b>Open in Explorer)</b>.</li>
+                    </ol>
                     </p>
                     <div class="card-yellow center" style="display: flex; align-items: center;">
                         <img src="./img/Coco/Blockquote.webp" alt="Coco blockquote" class="cocoNerd">
