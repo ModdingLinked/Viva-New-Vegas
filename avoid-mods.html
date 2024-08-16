@@ -5,15 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preload" href="./css/style.css" as="style" />
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="img/Coco/Logo.webp">
     <link rel="canonical" href="https://vivanewvegas.moddinglinked.com">
-    <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
-    <script src="javascript.js"></script>
+
     <title>Mods to Avoid | Viva New Vegas</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Tale of Two Wastelands, Wabbajack, Avoid, Don't use These, Bad Mods, Broken Mods, Broken">
-    <meta name="description" content="List of many popular mods that are outdated/broken.">
+
+    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, Fallout 4, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Tale of Two Wastelands, TTW, Wabbajack, WJ, Installer">
+    <meta name="description" content="List of many popular mods that are outdated or broken.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
     <meta property="og:site_name" content="ModdingLinked">
@@ -21,428 +19,491 @@
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://vivanewvegas.moddinglinked.com">
     <meta property="og:image" content="https://vivanewvegas.moddinglinked.com/img/Others/Card.webp">
-    <meta property="og:description" content="List of many popular mods that are outdated/broken.">
+    <meta property="og:description" content="List of many popular mods that are outdated or broken.">
+
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#333230">
+
+    <script src="javascript.js"></script>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigationArrows.css">
+    <link rel="stylesheet" href="css/progressBar.css">
+    <link rel="stylesheet" href="css/guideColors.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/images.css">
 </head>
 
-<body>
+<body class="theme">
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+    </div>
 
-    <!-- Titlebar -->
-    <div class="titlecontainer">
-        <div id="sideButton" onclick="toggleNav()">
-            <i class="fa-solid fa-bars"></i>
+    <div class="container">
+        <div class="header">
+            <div class="headerMenu" onclick="toggleNav()">
+                <img src="./img/UI/Navigation.svg" id="navButton">
+            </div>
+            <div class="headerTitle">
+                <img src="./img/Coco/Logo.webp" alt="Logo" id="logo">
+                <a href="./index.html" id="headerTitle">Viva New Vegas</a>
+            </div>
+            <div class="guideLinks" id="headerLinks">
+                <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+            </div>
         </div>
-        <img src="./img/Coco/Logo.webp" alt="Logo">
-        <a href="./index.html">Viva New Vegas</a>
-        <div class="guideLinks">
-            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-            <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+        <div class="sidebar left-sidebar">
+            <p class="pageLinks">
+                <a href="./index.html" title="Home">
+                    Home
+                </a>
+
+                <a href="./intro.html" title="Introduction">
+                    Introduction
+                </a>
+
+                <a href="./setup.html" title="Setup">
+                    Setup
+                </a>
+
+                <a href="./mo2.html" title="MO2">
+                    Mod Organizer 2
+                </a>
+
+                <a href="./utilities.html" title="Utilities">
+                    Utilities
+                </a>
+
+                <a href="./bugfix.html" title="Bug Fixes">
+                    Bug Fixes
+                </a>
+
+                <a href="./basefinish.html" title="Base Finish">
+                    Base Finish
+                </a>
+            </p>
+            <hr>
+            <p class="pageLinks">
+                <a href="./hud.html" title="User Interface">
+                    User Interface
+                </a>
+                <a href="./gameplay.html" title="Gameplay">
+                    Gameplay
+                </a>
+                <a href="./content.html" title="Content">
+                    Content
+                </a>
+                <a href="./overhauls.html" title="Overhauls">
+                    Overhauls
+                </a>
+                <a href="./visuals.html" title="Visuals">
+                    Visuals
+                </a>
+                <a href="./finish.html" title="Extended Finish">
+                    Extended Finish
+                </a>
+            </p>
+            <hr>
+            <p>
+                <a href="./changelog.html" title="Changelog">
+                    Changelog
+                </a>
+
+                <a href="./resources.html" title="Resources">
+                    Resources
+                </a>
+
+                <a href="./lod.html" title="LOD Guide" class="sublink">
+                    LOD Guide
+                </a>
+                
+                <a href="./decompress.html" title="Decompression Guide" class="sublink">
+                    Decompression Guide
+                </a>
+
+                <a href="./faq.html" title="FAQ">
+                    FAQ
+                </a>
+
+                <a href="./avoid-tools.html" title="Tools to Avoid">
+                    Tools to Avoid
+                </a>
+
+                <a href="./avoid-mods.html" title="Mods to Avoid">
+                    Mods to Avoid
+                </a>
+
+                <a href="./wabbajack.html" title="Wabbajack">
+                    Wabbajack
+                </a>
+            </p>
+            <p class="sidebar-padder"></p>
+            <hr>
+            <p class="sidebar-bottom">
+                <a href="https://discord.gg/S99Ary5eba" title="Discord">
+                    Discord
+                </a>
+                <a href="https://paypal.me/Ungeziefi" title="Donate">
+                    Donate
+                </a>
+                <a href="https://github.com/ModdingLinked/Viva-New-Vegas" title="GitHub">
+                    GitHub
+                </a>
+            </p>
+        </div>
+
+        <div class="content">
+
+            <span id="ModsToAvoid" class="section">
+
+                <h2 onclick="location.href='#ModsToAvoid'">Mods to Avoid</h2>
+
+                <div class="card-yellow">
+                    <p>
+                        This list is far from comprehensive. There are still tons of mods not listed here that will break your game. This is why it is very important to have some modding knowledge before adding any mods.
+                        <br>
+                        Always view every plugin you install with <a href="https://moddinglinked.com/xedit.html" target="_blank">FNVEdit</a> to check for conflicts.
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, bugfixmodsexpander)" id="bugfixmods">
+                    <p>
+                    <h3>Bugfix & Optimization Mods</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="bugfixmodsexpander">
+                    <p>
+                    <h3>New Vegas Stutter Remover</h3>
+                    Will cause crashes roughly every 15 minutes. Every single feature from NVSR has been replaced in a modern manner by the combination of <a href="https://www.nexusmods.com/newvegas/mods/66537" target="_blank">New Vegas Tick Fix</a>, <a href="https://www.nexusmods.com/newvegas/mods/69779" target="_blank">New Vegas Heap Replacer</a> and <a href="https://www.nexusmods.com/newvegas/mods/66347" target="_blank">lStewieAl's Tweaks</a>. These mods also have many great features that NVSR never had, like the high FPS physics fix. There is no reason to use NVSR, even on Windows 7.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>ENBoost</h3>
+                    ENBoost works around an issue (which NVTF already fixes properly) with a hacky memory sharing across processes. It also requires configuration based on the user's system and much like ENB, has been abandoned.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>Zan AutoPurge Crash Protector, PCB Hotkey, and Clear Cache Hotkey</h3>
+                    The script command used by these mods is a leftover command from development that forcefully clears buffered cells from memory, which can lead to unforeseen consequences. Essentially the same function is performed safely by the INI tweaks in the guide.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>Mission Mojave</h3>
+                    Heavily outdated compared to <a href="https://www.nexusmods.com/newvegas/mods/51664" target="_blank">Yukichigai Unofficial Patch</a>, it will cause more problems and crashes.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>FOOK, New Vegas Enhanced Content and Mission Mojave Ultimate Edition</h3>
+                    Massive compilation mods like these eventually get outdated and break other mods like Yukichigai Unofficial Patch. For example, NVEC includes the old version of the Burning Campfires that causes save bloat, an old version of EVE that is even more performance-intensive than the current one, outdated bug fixes that break Yukichigai Unofficial Patch and much more.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>NVAC</h3>
+                    <ul>
+                        <li>It mostly consists of very generic null checks that allow the program to run even when it should not be able to.</li>
+                        <li>It can lead to increased instability and save corruption because of the unpredictable behavior after ignoring an error.</li>
+                        <li>Crash logging is impossible with NVAC, meaning you will get nonsensical and useless crash logs.</li>
+                        <li>NVAC's aggressive inlining and patching can conflict with other NVSE plugins. Due to the closed source nature of NVAC, not every conflict point is known, thus there's always a chance for NVAC to actually cause crashes due to memory corruption.</li>
+                        <li>Most engine issues have been fixed in other plugins, meaning that the only use case NVAC has in the modern day is to hide issues of "normal" mods (scripts, meshes etc.).</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, visualmodsexpander)" id="visualmods">
+                    <p>
+                    <h3>Visual Mods</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="visualmodsexpander">
+                    <p>
+                    <h3>Oversized textures</h3>
+                    Based on the object size and how the texture is wrapped around it, you should pick textures with a reasonable resolution and avoid the very big ones also based on your display resolution. Keep in mind that the textures will not be displayed with their full resolution at all times, in fact they will be scaled down because of <a href="https://imgsli.com/MTMwNjU2" target="" _blank>mipmaps</a> based on distance and other factors, as shown with these sliders. Just for reference, a maximum of 2K at 1080p is a pretty safe bet in terms of balance.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>ENB</h3>
+                    As mentioned earlier with ENBoost, ENBs were never fully developed for New Vegas and have been abandoned by the author. They have a ton of bugs and performance issues, such as broken anti-aliasing, transparent objects and glowing objects (though glowing objects can be mostly mitigated with <a href="https://www.nexusmods.com/newvegas/mods/73431" target="_blank">ENB Glowing Objects Overhaul</a>). They also use a lot of <a href="https://imgur.com/a/8UT356J" target="_blank">vision-obscuring effects</a> like depth of field, lens flares, bloom and chromatic aberration to obscure the broken anti-aliasing, which makes them very hard to play with. I recommend using a ReShade preset instead, such as <a href="https://www.nexusmods.com/newvegas/mods/76715" target="_blank">Vibrance</a> or <a href="https://www.nexusmods.com/newvegas/mods/71772" target="_blank">Vanilla Plus ReShade Preset</a>.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>AI-upscaled texture packs</h3>
+                    Mods upscaled with AI or other lazy techniques generally are not worth the higher VRAM usage.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>Fallout Character Overhaul</h3>
+                    Multiple broken file paths which cause missing mesh triangles and pink textures. The installer auto-selects patches for mods you don't have installed and installs the Glowing Ghouls file which causes massive performance drops and save bloat. It doesn't cover every NPC in the game (plus NPCs from the DLCs or mods), so any <a href="https://imgur.com/a/jMgRjBO" target="_blank">uncovered NPCs look very out of place</a>. It requires the <b>bLoadFaceGenHeadEGTFiles</b> INI setting to be enabled, which causes performance loss due to generating NPC face textures on the fly in-game. It also overwrites many YUP fixes for NPCs. I recommend <a href="https://www.nexusmods.com/newvegas/mods/71556" target="_blank">New Vegas Redesigned 2 Revised</a> or <a href="https://www.nexusmods.com/newvegas/mods/64862" target="_blank">Character Expansions Revised</a> instead.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>Handheld Pip-Boys, such as the 2500</h3>
+                    All hand-held Pip-Boys share the <a href="https://imgur.com/a/3NBafn5" target="_blank">same common visual bugs</a> that occur if you enter/exit your Pip-Boy too fast. The methods these mods use to hide the Pip-Boy in third person are also quite janky, as they were made before NVSE extensions like JIP LN. These bugs and quirks have mostly been removed with <a href="https://www.nexusmods.com/newvegas/mods/76009" target="_blank">Handheld Fixes</a> though. I still recommend either the <a href="https://www.nexusmods.com/newvegas/mods/49732" target="_blank">2500a</a> or <a href="https://www.nexusmods.com/newvegas/mods/65980" target="_blank">2000 Mk VI</a> for wrist-mounted Pip-Boys.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>Electro City</h3>
+                    Has broken LOD that can cause crashing. Also includes <a href="https://imgur.com/a/spSSCZD" target="_blank">unnecessary bloat and leftover features from a planned quest</a>. I recommend <a href="https://www.nexusmods.com/newvegas/mods/69226" target="_blank">A Little More Lamplight</a> instead.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>Unnecessary Physics</h3>
+                    Causes save bloat since the game has to save the Havok state of every individual part of every object you move.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>Vault 22 Flora Overhaul</h3>
+                    Disables objects with the <b>Has Tree LOD</b> flag, which can cause crashing. Also has tons of unnecessary bloat such as new weapons, enemies, poison effects, skill books and more. I recommend <a href="https://www.nexusmods.com/newvegas/mods/71521" target="_blank">Vault 22 Flora Overhaul Remastered</a> instead. Be aware that the mod is still pretty performance-intensive and should be avoided on weaker systems
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>New Vegas Landscape Overhaul Remastered</h3>
+                    Has broken navmeshes, disabled objects with the <b>Has Tree LOD</b> flag (which can cause crashing), many floating/clipping objects and bad balance. I recommend <a href="https://www.nexusmods.com/newvegas/mods/74218" target="_blank">New Vegas Landscape Overhaul Re-Remastered</a> instead. Be aware that the mod is still pretty performance-intensive and should be avoided on weaker systems.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>Project Reality</h3>
+                    Will cause massive performance issues and save bloat due to bad scripting. Check out <a href="https://www.nexusmods.com/newvegas/mods/83861" target="_blank">Weathers Revised</a> if you don't like Desert Natural Weathers (what the guide uses), but this will require you to disable or uninstall <a href="https://www.nexusmods.com/newvegas/mods/77683">MoonlightNVSE</a> and <a href="https://www.nexusmods.com/newvegas/mods/77933">High Resolution Bloom NVSE</a> to achieve its intended look.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>Dragbody 10 Year Anniversary Pack and any other armor replacers</h3>
+                    They break fixes done by other mods and have problematic assets that lead to instability.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>Ragdolls</h3>
+                    Broken meshes prone to crashing.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>Interior Lighting Overhaul</h3>
+                    Use Simple <a href="https://www.nexusmods.com/newvegas/mods/71390" target="_blank">Interior Lighting Overhaul</a> instead.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>Weapon Animation Replacer WAR</h3>
+                    Might cause crashing, use the newer kNVSE animations by author such as <a href="https://next.nexusmods.com/profile/hitman47101/about-me?gameId=130" target="_blank">hitman47101</a> and <a href="https://next.nexusmods.com/profile/rockbiter68/about-me?gameId=130" target="_blank">rockbiter68</a>.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>Borderlands Inspired Numeric Damage</h3>
+                    Has a bug that can cause NPCs to teleport directly to you upon entering an interior.
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, gameplaymodsexpander)" id="gameplaymods">
+                    <p>
+                    <h3>Content & Gameplay Mods</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="gameplaymodsexpander">
+                    <p>
+                    <h3>Any mods that edit timescale</h3>
+                    Vanilla AI packages and scripts are based on the vanilla timescale, and can break and/or run when they aren't supposed to if the timescale is changed.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>Project Nevada</h3>
+                    Outdated, inefficient, bloated and broken. Most features have modern alternatives (listed below). Causes save bloat due to continuous quest stages being triggered, and some features either don't work or break the game (chargeable weapons, lethal headshots and the stealth/AI changes).
+                    <br>
+                    <br>
+                    Although it may seem counterproductive to install a bunch of small mods to replace one big mod, these alternatives are all more functional and performance friendly:
+                    <br>
+                    <h4>Core Module</h4>
+                    <ul>
+                        <li>Dynamic Crosshair, Bullet Time, Sprint and more: <a href="https://www.nexusmods.com/newvegas/mods/66666" target="_blank">Just Assorted Mods</a></li>
+                        <li>Grenade Hotkey: <a href="https://www.nexusmods.com/newvegas/mods/75927" target="_blank">BATH - Backup and Throwables Hotkeys</a></li>
+                        <li>Headwear Overlay: <a href="https://www.nexusmods.com/newvegas/mods/67870" target="_blank">Helmet Overlay</a></li>
+                        <li>Variable Zoom and Slower Backpedaling: <a href="https://www.nexusmods.com/newvegas/mods/66347" target="_blank">lStewieAl's Tweaks</a> (enable <b>bAdjustableScopeZoom</b> and <b>bMovementPenalties</b> in the INI) </li>
+                        <li>Immersive Health Visuals: <a href="https://www.nexusmods.com/newvegas/mods/67696" target="_blank">Custom Health and AP Visuals</a></li>
+                        <li>Enhanced Vision: <a href="https://eddoursul.win/mods/enhanced-vision/" target="_blank">Enhanced Vision</a></li>
+                        <li>Explosive Entry: <a href="https://www.nexusmods.com/newvegas/mods/66992" target="_blank">Simple Explosive Entry</a></li>
+                        <li>Immersive Primary Needs: <a href="https://eddoursul.win/mods/immersive-primary-needs/" target="_blank">Immersive Primary Needs</a></li>
+                        <li>Inventory Sorter: <a href="https://www.nexusmods.com/newvegas/mods/74357" target="_blank">yUI</a> with <a href="https://www.nexusmods.com/newvegas/mods/74358" target="_blank">ySI - Sorting Icons</a>, or <a href="https://www.nexusmods.com/newvegas/mods/63867" target="_blank">Universal Item Sorter</a></li>
+                    </ul>
+                    <h4>Cyberware Module</h4>
+                    <ul>
+                        <li><a href="https://mod.pub/falloutnv/15-cyberware-2281" target="_blank">Cyberware 2281</a></li>
+                    </ul>
+                    <h4>Rebalance Module</h4>
+                    <ul>
+                        <li>Better character progression/combat: <a href="https://www.nexusmods.com/newvegas/mods/61592" target="_blank">JSawyer Ultimate Edition</a> (enable <b>bSurvivalModeDamage</b> in the INI)</li>
+                        <li>Item rarity changes: <a href="https://www.nexusmods.com/newvegas/mods/74985" target="_blank">Famine</a></li>
+                        <li>Lethal headshots: <a href="https://www.nexusmods.com/newvegas/mods/58277" target="_blank">JIP LN NVSE</a> (enable <b>bLocalizedDTDR</b> in the INI)</li>
+                        <li>Alternate repairing system: <a href="https://www.nexusmods.com/newvegas/mods/74884" target="_blank">Repair Tools</a> or <a href="https://www.nexusmods.com/newvegas/mods/52510" target="_blank">Alternative Repairing</a></li>
+                        <li>Miscellaneous gameplay changes: <a href="https://www.nexusmods.com/newvegas/mods/66347" target="_blank">lStewieAl's Tweaks</a> (enable <b>bMovementPenalties</b>, <b>bNoKarmaMessages</b> and <b>bRemoveSneakLabel</b> in the INI) </li>
+                    </ul>
+                    <h4>Equipment Module</h4>
+                    <ul>
+                        <li>Fallout 3 Weapons: <a href="https://www.nexusmods.com/newvegas/mods/40007" target="_blank">Fallout 3 Weapons Restoration</a></li>
+                        <li>Classic Fallout Weapons: <a href="https://www.nexusmods.com/newvegas/mods/73805" target="_blank">Classic Fallout Weapons Remastered</a></li>
+                        <li>Original Project Nevada Weapons<a href="https://www.nexusmods.com/newvegas/mods/84213" target="_blank">ZL Armaments Remastered</a></li>
+                    </ul>
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>Unlimited Companions (or any other companion-related mods)</h3>
+                    Unlimited Companions re-compiles every script in the game and will break many mods. Use <a href="https://www.nexusmods.com/newvegas/mods/50468" target="_blank">JIP Companions Command and Control</a> if you want unlimited companions at the same time or other companion-related features like equipment managing, infinite ammo, combat-ready companions and much more.
+                    <br>
+                    <br>
+                    Before installing any mods that edit companion behavior, you should check if JIP CCC already does it.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>Populated Casinos</h3>
+                    Poorly made mod with many dirty edits, ITMs, and UDRs. It will also severely reduce performance due to the amount of new NPCs. Use <a href="https://www.nexusmods.com/newvegas/mods/71037" target="_blank">Casino Crowds</a> instead.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>Freeside & Strip Open</h3>
+                    Same performance issue as Populated Casinos. Adds many new NPCs and pieces of unpolished restored content that cause many bugs and performance drops and lacks any sort of performance optimization. Use <a href="https://www.nexusmods.com/newvegas/mods/73128" target="_blank">Simple Open Freeside</a> and <a href="https://www.nexusmods.com/newvegas/mods/73127" target="_blank">Simple Open Strip</a> instead.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>Increased Wasteland Spawns</h3>
+                    Causes save bloat due to using the <b>PlaceAtMe</b> function. Use <a href="https://www.nexusmods.com/newvegas/mods/64623" target="_blank">The Living Desert</a> and the <b>Vanilla No Chanced Spawns Version</b> version of <a href="https://www.nexusmods.com/newvegas/mods/64638" target="_blank">Mojave Wildlife</a> instead.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>True Wasteland Economy</h3>
+                    Incredibly script-heavy, will cause save bloat and deteriorate performance over time. Use <a href="https://www.nexusmods.com/newvegas/mods/62899" target="_blank">Economy Overhaul</a> or <a href="https://www.nexusmods.com/newvegas/mods/80360" target="_blank">Harder Barter Faster Stronger</a> instead.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>DUST</h3>
+                    Contains tons of errors of all kinds.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>Weapon Mods Expanded/Extended</h3>
+                    Overwrites Weapon Mesh Improvement Mod's mesh fixes and requires conflict resoluton with any mods that edit weapon records. It's also debatably unbalance since many of the mods are either silencers or damage increases.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>More Perks</h3>
+                    Made in 2010 without the use of any script extenders, so many of the perks are broken or have poor implementation. Use <a href="https://www.nexusmods.com/newvegas/mods/76584" target="_blank">More Perks Reimagined</a> instead.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>CAGE - Continue After Games Ending</h3>
+                    Broken, use <a href="https://www.nexusmods.com/newvegas/mods/66726" target="_blank">Functional Post Game Ending</a> instead.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>NV Interiors Project</h3>
+                    Causes save bloat due to the large amount of havok-enabled items that all have their individual positions stored on the save when you enter an interior. Use <a href="https://www.nexusmods.com/newvegas/mods/71228" target="_blank">NV Interiors Remastered</a> instead.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>Classic Fallout Weapons</h3>
+                    Countless broken meshes and leveled lists that will cause crashes. I recommend <a href="https://www.nexusmods.com/newvegas/mods/73805" target="_blank">Classic Fallout Weapons Remastered</a> instead.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                    <h3>Honest Hearts Reborn</h3>
+                    Re-compiles every script in the game and still has many bugs after cleaning.
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, miscellaneousexpander)" id="miscellaneous">
+                    <p>
+                    <h3>Miscellaneous</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="miscellaneousexpander">
+                    <p>
+                    <h3>Sinitar's Modlists</h3>
+                    If you have a few hours and want more information about Sinitar's lies, scamming and lack of modding knowledge, check out <a href="https://docs.google.com/document/d/1F1-6lF8dI4i2Zz8iT-bv_Ci1VO9MSU4MiSUrT5JqgHA/edit" target="_blank">this</a> <i>twenty-eight</i> page essay that goes into excruciating detail about it.
+                    </p>
+                </div>
+            </span>
+
+            <!-- Arrows -->
+            <div class="navigationArrowContainer">
+                <a href="#" id="previous" rel="prev" class="navigationArrow">
+                    <img class="mirror" src="./img/UI/Arrow.svg" alt="Back Arrow">
+                    <span class="arrowText"></span>
+                </a>
+            </div>
         </div>
     </div>
 
-    <!-- Left Sidebar -->
-    <div id="sidenavLeft">
-        <div>
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./intro.html">Introduction</a>
-                </li>
-                <li>
-                    <a href="./setup.html">Setup</a>
-                </li>
-                <li>
-                    <a href="./mo2.html">MO2</a>
-                </li>
-                <li>
-                    <a href="./utilities.html">Utilities</a>
-                </li>
-                <li>
-                    <a href="./bugfix.html">Bug Fixes</a>
-                </li>
-                <li>
-                    <a href="./basefinish.html">Base Finish</a>
-                </li>
-            </ul>
-            <hr>
-        </div>
-        <div class="extended-background">
-            <ul>
-                <h3 id="extended-separator">VNV Extended</h3>
-                <li>
-                    <a href="./hud.html">User Interface</a>
-                </li>
-                <li>
-                    <a href="./gameplay.html">Gameplay</a>
-                </li>
-                <li>
-                    <a href="./content.html">Content</a>
-                </li>
-                <li>
-                    <a href="./overhauls.html">Overhauls</a>
-                </li>
-                <li>
-                    <a href="./visuals.html">Visuals</a>
-                </li>
-                <li>
-                    <a href="./finish.html">Extended Finish</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <hr>
-            <ul>
-                <li>
-                    <a href="./changelog.html">Changelog</a>
-                </li>
-                <li>
-                    <a href="./resources.html">Resources</a>
-                </li>
-                <li>
-                    <a href="./faq.html">FAQ</a>
-                </li>
-                <li>
-                    <a href="./avoid-tools.html">Tools to Avoid</a>
-                </li>
-                <li>
-                    <a href="./avoid-mods.html" class="active">Mods to Avoid</a>
-                </li>
-                <li>
-                    <a href="./wabbajack.html">Wabbajack</a>
-                </li>
-            </ul>
-        </div>
+    <footer>ModdingLinked 2024</footer>
 
-        <!-- Guide Links -->
-        <div class="guideLinks">
-            <hr>
-            <ul>
-                <li>
-                    <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-                </li>
-                <li>
-                    <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Footer -->
-        <div id="footer">
-            <ul>
-                <li class="discord">
-                    <a href="https://discord.gg/S99Ary5eba" target="_blank">
-                        <i class="fab fa-discord"></i>
-                        Discord
-                    </a>
-                </li>
-                <li class="paypal">
-                    <a href="https://paypal.me/Ungeziefi" target="_blank">
-                        <i class="fa fa-paypal"></i>
-                        Donate
-                    </a>
-                </li>
-                <li class="github">
-                    <a href="https://github.com/ModdingLinked/Viva-New-Vegas" target="_blank">
-                        <i class="fab fa-github"></i>
-                        GitHub
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Content -->
-    <div class="content">
-        <div class="section">
-            <h1>Mods to Avoid</h1>
-            <blockquote>
-                This list is far from comprehensive. There are still tons of mods not listed here that will break your game. This is why it is very important to have some modding knowledge before adding any mods.
-                <br>
-                Always view every plugin you install with <a href="https://moddinglinked.com/xedit.html" target="_blank">FNVEdit</a> to check for conflicts.
-            </blockquote>
-            <!-- Oversized Textures -->
-            <p>
-                <strong>Oversized textures</strong>
-                <br>
-                Based on the object size and how the texture is wrapped around it, you should pick textures with a reasonable resolution and avoid the very big ones also based on your display resolution. Keep in mind that the textures will not be displayed with their full resolution at all times, in fact they will be scaled down because of <a href="https://imgsli.com/MTMwNjU2" target="" _blank>mipmaps</a> based on distance and other factors, as shown with these sliders. Just for reference, a maximum of 2K at 1080p is a pretty safe bet in terms of balance.
-            </p>
-
-            <!-- AI Upscales -->
-            <p>
-                <strong>AI-upscaled texture packs</strong>
-                <br>
-                Mods upscaled with AI or other lazy techniques generally are not worth the higher VRAM usage.
-            </p>
-
-            <!-- Timescale -->
-            <p>
-                <strong>Any mods that edit timescale</strong>
-                <br>
-                Vanilla AI packages and scripts are based on the vanilla timescale, and can break and/or run when they aren't supposed to if the timescale is changed.
-            </p>
-
-            <!-- Sinitar -->
-            <p>
-                <strong>Sinitar's Modlists</strong>
-                <br>
-                If you have a few hours and want more information about Sinitar's lies, scamming and lack of modding knowledge, check out <a href="https://docs.google.com/document/d/1F1-6lF8dI4i2Zz8iT-bv_Ci1VO9MSU4MiSUrT5JqgHA/edit" target="_blank">this</a> <i>twenty-eight</i> page essay that goes into excruciating detail about it.
-            </p>
-
-            <!-- ENBoost -->
-            <p>
-                <strong>ENBoost</strong>
-                <br>
-                ENBoost works around an issue (which NVTF already fixes properly) with a hacky memory sharing across processes. It also requires configuration based on the user's system and much like ENB, has been abandoned.
-            </p>
-
-            <!-- ENB -->
-            <p>
-                <strong>ENB</strong>
-                <br>
-                As mentioned earlier with ENBoost, ENBs were never fully developed for New Vegas and have been abandoned by the author. They have a ton of bugs and performance issues, such as broken anti-aliasing, transparent objects and glowing objects (though glowing objects can be mostly mitigated with <a href="https://www.nexusmods.com/newvegas/mods/73431" target="_blank">ENB Glowing Objects Overhaul</a>). They also use a lot of <a href="https://imgur.com/a/8UT356J" target="_blank">vision-obscuring effects</a> like depth of field, lens flares, bloom and chromatic aberration to obscure the broken anti-aliasing, which makes them very hard to play with. I recommend using a ReShade preset instead, such as <a href="https://www.nexusmods.com/newvegas/mods/76715" target="_blank">Vibrance</a> or <a href="https://www.nexusmods.com/newvegas/mods/71772" target="_blank">Vanilla Plus ReShade Preset</a>.
-            </p>
-
-            <!-- NVSR -->
-            <p>
-                <strong>New Vegas Stutter Remover</strong>
-                <br>
-                Will cause crashes roughly every 15 minutes. Every single feature from NVSR has been replaced in a modern manner by the combination of <a href="https://www.nexusmods.com/newvegas/mods/66537" target="_blank">New Vegas Tick Fix</a>, <a href="https://www.nexusmods.com/newvegas/mods/69779" target="_blank">New Vegas Heap Replacer</a> and <a href="https://www.nexusmods.com/newvegas/mods/66347" target="_blank">lStewieAl's Tweaks</a>. These mods also have many great features that NVSR never had, like the high FPS physics fix. There is no reason to use NVSR, even on Windows 7.
-            </p>
-
-            <!-- Zan & PCB -->
-            <p>
-                <strong>Zan AutoPurge Crash Protector/PCB Hotkey</strong>
-                <br>
-                The script command used by these mods is a leftover command from development that forcefully clears buffered cells from memory, which can lead to unforeseen consequences. Essentially the same function is performed safely by the INI tweaks in the guide.
-            </p>
-
-            <!-- Mission Mojave -->
-            <p>
-                <strong>Mission Mojave</strong>
-                <br>
-                Heavily outdated compared to <a href="https://www.nexusmods.com/newvegas/mods/51664" target="_blank">Yukichigai Unofficial Patch</a>, will break more than it fixes and cause crashing.
-            </p>
-
-            <!-- BL Numeric Damage -->
-            <p>
-                <strong>Borderlands Inspired Numeric Damage</strong>
-                <br>
-                Has a bug that can cause NPCs to teleport directly to you upon entering an interior.
-            </p>
-
-            <!-- FCO -->
-            <p>
-                <strong>Fallout Character Overhaul</strong>
-                <br>
-                Multiple broken file paths which cause missing mesh triangles and pink textures. The installer auto-selects patches for mods you don't have installed and installs the Glowing Ghouls file which causes massive performance drops and save bloat. It doesn't cover every NPC in the game (plus NPCs from the DLCs or mods), so any <a href="https://imgur.com/a/jMgRjBO" target="_blank">uncovered NPCs look very out of place</a>. It requires the <b>bLoadFaceGenHeadEGTFiles</b> INI setting to be enabled, which causes performance loss due to generating NPC face textures on the fly in-game. It also overwrites many YUP fixes for NPCs. I recommend <a href="https://www.nexusmods.com/newvegas/mods/71556" target="_blank">New Vegas Redesigned 2 Revised</a> or <a href="https://www.nexusmods.com/newvegas/mods/64862" target="_blank">Character Expansions Revised</a> instead.
-            </p>
-
-            <!-- Handhelds -->
-            <p>
-                <strong>Handheld Pip-Boys, such as the 2500</strong>
-                <br>
-                All hand-held Pip-Boys share the <a href="https://imgur.com/a/3NBafn5" target="_blank">same common visual bugs</a> that occur if you enter/exit your Pip-Boy too fast. The methods these mods use to hide the Pip-Boy in third person are also quite janky, as they were made before NVSE extensions like JIP LN. These bugs and quirks have mostly been removed with <a href="https://www.nexusmods.com/newvegas/mods/76009" target="_blank">Handheld Fixes</a> though. I still recommend either the <a href="https://www.nexusmods.com/newvegas/mods/49732" target="_blank">2500a</a> or <a href="https://www.nexusmods.com/newvegas/mods/65980" target="_blank">2000 Mk VI</a> for wrist-mounted Pip-Boys.
-            </p>
-
-            <!-- Electro City -->
-            <p>
-                <strong>Electro City</strong>
-                <br>
-                Has broken LOD that can cause crashing. Also includes <a href="https://imgur.com/a/spSSCZD" target="_blank">unnecessary bloat and leftover features from a planned quest</a>. I recommend <a href="https://www.nexusmods.com/newvegas/mods/69226" target="_blank">A Little More Lamplight</a> instead (already in VNV Extended).
-            </p>
-
-            <!-- Unnecessary Physics -->
-            <p>
-                <strong>Unnecessary Physics</strong>
-                <br>
-                Causes save bloat since the game has to save the Havok state of every individual part of every object you move.
-            </p>
-
-            <!-- Vault 22 Flora -->
-            <p>
-                <strong>Vault 22 Flora Overhaul</strong>
-                <br>
-                Disables objects with the <b>Has Tree LOD</b> flag, which can cause crashing. Also has tons of unnecessary bloat such as new weapons, enemies, poison effects, skill books and more. I recommend <a href="https://www.nexusmods.com/newvegas/mods/71521" target="_blank">Vault 22 Flora Overhaul Remastered</a> instead. Be aware that the mod is still pretty performance-intensive and should be avoided on weaker systems
-            </p>
-
-            <!-- NVLOR -->
-            <p>
-                <strong>New Vegas Landscape Overhaul Remastered</strong>
-                <br>
-                Has broken navmeshes, disabled objects with the <b>Has Tree LOD</b> flag (which can cause crashing), many floating/clipping objects and bad balance. I recommend <a href="https://www.nexusmods.com/newvegas/mods/74218" target="_blank">New Vegas Landscape Overhaul Re-Remastered</a> instead. Be aware that the mod is still pretty performance-intensive and should be avoided on weaker systems.
-            </p>
-
-            <!-- Project Reality -->
-            <p>
-                <strong>Project Reality</strong>
-                <br>
-                Will cause massive performance issues and save bloat due to bad scripting. Check out <a href="https://www.nexusmods.com/newvegas/mods/83861" target="_blank">Weathers Revised</a> if you don't like Desert Natural Weathers (what the guide uses), but this will require you to disable or uninstall <a href="https://www.nexusmods.com/newvegas/mods/77683">MoonlightNVSE</a> and <a href="https://www.nexusmods.com/newvegas/mods/77933">High Resolution Bloom NVSE</a> to achieve its intended look.
-            </p>
-
-            <!-- PN -->
-            <p>
-                <strong>Project Nevada</strong>
-                <br>
-                Outdated, inefficient, bloated and broken. Most features have modern alternatives (listed below). Causes save bloat due to continuous quest stages being triggered, and some features either don't work or break the game (chargeable weapons, lethal headshots and the stealth/AI changes).
-            </p>
-            <ul>
-                <p>
-                    <a href="#replacingPn">
-                        <h2 class="install" id="replacingPn">Replacing Project Nevada</h2>
-                    </a>
-                </p>
-                Although it may seem counterproductive to install a bunch of small mods to replace one big mod, these alternatives are all more efficient and performance friendly. They are 100% safe to use and actually work, unlike Project Nevada:
-                <p>
-                    <strong>Core Module</strong>:
-                <ul>
-                    <li>Dynamic Crosshair, Bullet Time, Sprint and more: <a href="https://www.nexusmods.com/newvegas/mods/66666" target="_blank">Just Assorted Mods</a></li>
-                    <li>Grenade Hotkey: <a href="https://www.nexusmods.com/newvegas/mods/75927" target="_blank">BATH - Backup and Throwables Hotkeys</a></li>
-                    <li>Headwear Overlay: <a href="https://www.nexusmods.com/newvegas/mods/67870" target="_blank">Helmet Overlay</a></li>
-                    <li>Variable Zoom and Slower Backpedaling: <a href="https://www.nexusmods.com/newvegas/mods/66347" target="_blank">lStewieAl's Tweaks</a> (enable <strong>bAdjustableScopeZoom</strong> and <strong>bMovementPenalties</strong> in the INI) </li>
-                    <li>Immersive Health Visuals: <a href="https://www.nexusmods.com/newvegas/mods/67696" target="_blank">Custom Health and AP Visuals</a></li>
-                    <li>Enhanced Vision: <a href="https://eddoursul.win/mods/enhanced-vision/" target="_blank">Enhanced Vision</a></li>
-                    <li>Explosive Entry: <a href="https://www.nexusmods.com/newvegas/mods/66992" target="_blank">Simple Explosive Entry</a></li>
-                    <li>Immersive Primary Needs: <a href="https://eddoursul.win/mods/immersive-primary-needs/" target="_blank">Immersive Primary Needs</a></li>
-                    <li>Inventory Sorter: <a href="https://www.nexusmods.com/newvegas/mods/74357" target="_blank">yUI</a> with <a href="https://www.nexusmods.com/newvegas/mods/74358" target="_blank">ySI - Sorting Icons</a>, or <a href="https://www.nexusmods.com/newvegas/mods/63867" target="_blank">Universal Item Sorter</a></li>
-                </ul>
-                </p>
-                <p>
-                    <strong>Cyberware Module</strong>:
-                <ul>
-                    <li><a href="https://eddoursul.win/mods/cyberware-2281/" target="_blank">Cyberware 2281</a></li>
-                </ul>
-                </p>
-                <p>
-                    <strong>Rebalance Module</strong>:
-                <ul>
-                    <li>Better character progression/combat: <a href="https://www.nexusmods.com/newvegas/mods/61592" target="_blank">JSawyer Ultimate Edition</a> (enable <strong>bSurvivalModeDamage</strong> in the INI)</li>
-                    <li>Item rarity changes: <a href="https://www.nexusmods.com/newvegas/mods/74985" target="_blank">Famine</a></li>
-                    <li>Lethal headshots: <a href="https://www.nexusmods.com/newvegas/mods/58277" target="_blank">JIP LN NVSE</a> (enable <strong>bLocalizedDTDR</strong> in the INI)</li>
-                    <li>Alternate repairing system: <a href="https://www.nexusmods.com/newvegas/mods/74884" target="_blank">Repair Tools</a> or <a href="https://www.nexusmods.com/newvegas/mods/52510" target="_blank">Alternative Repairing</a></li>
-                    <li>Miscellaneous gameplay changes: <a href="https://www.nexusmods.com/newvegas/mods/66347" target="_blank">lStewieAl's Tweaks</a> (enable <strong>bMovementPenalties</strong>, <strong>bNoKarmaMessages</strong> and <strong>bRemoveSneakLabel</strong> in the INI) </li>
-                </ul>
-                </p>
-                <p>
-                    <strong>Equipment Module</strong>:
-                <ul>
-                    <li>Fallout 3 Weapons: <a href="https://www.nexusmods.com/newvegas/mods/40007" target="_blank">Fallout 3 Weapons Restoration</a></li>
-                    <li>Classic Fallout Weapons: <a href="https://www.nexusmods.com/newvegas/mods/73805" target="_blank">Classic Fallout Weapons Remastered</a></li>
-                    <li>Original Project Nevada Weapons<a href="https://www.nexusmods.com/newvegas/mods/84213" target="_blank">ZL Armaments Remastered</a></li>
-                </ul>
-                </p>
-            </ul>
-            <br>
-
-            <!-- Misc -->
-            <p>
-                <strong>FOOK, New Vegas Enhanced Content and Mission Mojave Ultimate Edition</strong>
-                <br>
-                Massive compilation mods like these eventually get outdated and break other mods like Yukichigai Unofficial Patch. For example, NVEC includes the old version of the Burning Campfires that causes save bloat, an old version of EVE that is even more performance-intensive than the current one, outdated bug fixes that break Yukichigai Unofficial Patch and much more.
-            </p>
-
-            <!-- Companion Mods -->
-            <p>
-                <strong>Unlimited Companions (or any other companion-related mods)</strong>
-                <br>
-                Unlimited Companions re-compiles every script in the game and will break many mods. Use <a href="https://www.nexusmods.com/newvegas/mods/50468" target="_blank">JIP Companions Command and Control</a> if you want unlimited companions at the same time or other companion-related features like equipment managing, infinite ammo, combat-ready companions and much more. Before installing any mods that edit companion behavior, you should check if JIP CCC already does it.
-            </p>
-
-            <!-- Populated Casinos -->
-            <p>
-                <strong>Populated Casinos</strong>
-                <br>
-                Poorly made mod with many dirty edits/ITMs/UDRs. That many NPCs in the same area will also lead to massive performance loss. I recommend <a href="https://www.nexusmods.com/newvegas/mods/71037" target="_blank">Casino Crowds</a> instead.
-            </p>
-
-            <!-- FS and Strip Open -->
-            <p>
-                <strong>Freeside Open</strong>
-                <br>
-                Same performance issue as Populated Casinos. Adds many new NPCs and pieces of unpolished restored content that cause many bugs and performance drops and lacks any sort of performance optimization. I recommend <a href="https://www.nexusmods.com/newvegas/mods/73128" target="_blank">Simple Open Freeside</a> instead.
-            </p>
-            <p>
-                <strong>Strip Open</strong>
-                <br>
-                Same deal as Freeside Open, it pushes the engine to its limit with the large worldspace and added NPCs without any performance optimization. I recommend <a href="https://www.nexusmods.com/newvegas/mods/73127" target="_blank">Simple Open Strip</a> instead.
-            </p>
-
-            <!-- Increased Wasteland Spawns -->
-            <p>
-                <strong>Increased Wasteland Spawns</strong>
-                <br>
-                Causes save bloat due to using the <b>PlaceAtMe</b> function. I recommend <a href="https://www.nexusmods.com/newvegas/mods/64623" target="_blank">The Living Desert</a> and the <b>Vanilla No Chanced Spawns Version</b> version of <a href="https://www.nexusmods.com/newvegas/mods/64638" target="_blank">Mojave Wildlife</a> instead.
-            </p>
-
-            <!-- True Wasteland Economy -->
-            <p>
-                <strong>True Wasteland Economy</strong>
-                <br>
-                Incredibly script-heavy, will cause save bloat and deteriorate performance over time. I recommend <a href="https://www.nexusmods.com/newvegas/mods/62899" target="_blank">Economy Overhaul</a> or <a href="https://www.nexusmods.com/newvegas/mods/80360" target="_blank">Harder Barter Faster Stronger</a> instead (already in VNV Extended).
-            </p>
-
-            <!-- DUST -->
-            <p>
-                <strong>DUST</strong>
-                <br>
-                Contains tons of errors of all kinds.
-            </p>
-
-            <!-- WME -->
-            <p>
-                <strong>Weapon Mods Expanded/Extended</strong>
-                <br>
-                Overwrites Weapon Mesh Improvement Mod's mesh fixes and requires conflict resoluton with any mods that edit weapon records. Also very unbalanced in my opinion, since many of the mods are either silencers or damage increases.
-            </p>
-
-            <!-- More Perks -->
-            <p>
-                <strong>More Perks</strong>
-                <br>
-                Made in 2010 without the use of any script extenders, so many of the perks are broken or have poor implementation. Use <a href="https://www.nexusmods.com/newvegas/mods/76584" target="_blank">More Perks Reimagined</a> instead.
-            </p>
-
-            <!-- CAGE -->
-            <p>
-                <strong>CAGE - Continue After Games Ending</strong>
-                <br>
-                Broken, use <a href="https://www.nexusmods.com/newvegas/mods/66726" target="_blank">Functional Post Game Ending</a> instead (already in VNV Extended).
-            </p>
-
-            <!-- NV Interiors Project -->
-            <p>
-                <strong>NV Interiors Project</strong>
-                <br>
-                Causes save bloat due to the large amount of havok-enabled items that all have their individual positions stored on the save when you enter an interior. Use <a href="https://www.nexusmods.com/newvegas/mods/71228" target="_blank">NV Interiors Remastered</a> instead.
-            </p>
-
-            <!-- CFW -->
-            <p>
-                <strong>Classic Fallout Weapons</strong>
-                <br>
-                Countless broken meshes and leveled lists that will cause crashes. I recommend <a href="https://www.nexusmods.com/newvegas/mods/73805" target="_blank">Classic Fallout Weapons Remastered</a> instead.
-            </p>
-
-            <!-- Honest Hearts Reborn -->
-            <p>
-                <strong>Honest Hearts Reborn</strong>
-                <br>
-                Re-compiles every script in the game and still has many bugs after cleaning.
-            </p>
-
-            <!-- Dragbody -->
-            <p>
-                <strong>Dragbody 10 Year Anniversary Pack and any other armor replacers</strong>
-                <br>
-                They break fixes done by other mods and have problematic assets that lead to instability.
-            </p>
-
-            <!-- Ragdolls -->
-            <p>
-                <strong>Ragdolls</strong>
-                <br>
-                Broken meshes prone to crashing.
-            </p>
+    <div id="image-overlay" class="overlay" hidden>
+        <div class="image-container">
+            <img id="enlarged-image" class="enlarged-image" src="" alt="Enlarged Image">
+            <div class="resize-overlay shrink"></div>
         </div>
     </div>
 </body>

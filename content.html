@@ -5,15 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preload" href="./css/style.css" as="style" />
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="img/Coco/LogoEx.webp">
+    <link rel="icon" href="img/Coco/Logo.webp">
     <link rel="canonical" href="https://vivanewvegas.moddinglinked.com">
-    <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
-    <script src="javascript.js"></script>
+
     <title>Content | Viva New Vegas</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Tale of Two Wastelands, Wabbajack">
-    <meta name="description" content="Small content additions/restorations that keep the vanilla-style.">
+
+    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, Fallout 4, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Tale of Two Wastelands, TTW, Wabbajack, WJ, Installer">
+    <meta name="description" content="Content additions and restorations.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
     <meta property="og:site_name" content="ModdingLinked">
@@ -21,289 +19,287 @@
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://vivanewvegas.moddinglinked.com">
     <meta property="og:image" content="https://vivanewvegas.moddinglinked.com/img/Others/Card.webp">
-    <meta property="og:description" content="Small content additions/restorations that keep the vanilla-style.">
+    <meta property="og:description" content="Content additions and restorations.">
+
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#333230">
+
+    <script src="javascript.js"></script>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigationArrows.css">
+    <link rel="stylesheet" href="css/coco.css">
+    <link rel="stylesheet" href="css/progressBar.css">
+    <link rel="stylesheet" href="css/guideColors.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/images.css">
+    <link rel="stylesheet" href="css/textIcons.css">
 </head>
 
-<body>
-
-    <!-- Titlebar -->
-    <div class="titlecontainer">
-        <div id="sideButton" onclick="toggleNav()">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <img src="./img/Coco/LogoEx.webp" alt="Logo">
-        <a href="./index.html">Viva New Vegas - Extended</a>
-        <div class="guideLinks">
-            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-            <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
-        </div>
+<body class="theme">
+    <div class="progress-container">
+        <div class="progress-bar"></div>
     </div>
 
-    <!-- Left Sidebar -->
-    <div id="sidenavLeft">
-        <div>
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./intro.html">Introduction</a>
-                </li>
-                <li>
-                    <a href="./setup.html">Setup</a>
-                </li>
-                <li>
-                    <a href="./mo2.html">MO2</a>
-                </li>
-                <li>
-                    <a href="./utilities.html">Utilities</a>
-                </li>
-                <li>
-                    <a href="./bugfix.html">Bug Fixes</a>
-                </li>
-                <li>
-                    <a href="./basefinish.html">Base Finish</a>
-                </li>
-            </ul>
-            <hr>
-        </div>
-        <div class="extended-background active">
-            <ul>
-                <h3 id="extended-separator" class="active">VNV Extended</h3>
-                <li>
-                    <a href="./hud.html">User Interface</a>
-                </li>
-                <li>
-                    <a href="./gameplay.html">Gameplay</a>
-                </li>
-                <li>
-                    <a href="./content.html" class="active">Content</a>
-                </li>
-                <li>
-                    <a href="./overhauls.html">Overhauls</a>
-                </li>
-                <li>
-                    <a href="./visuals.html">Visuals</a>
-                </li>
-                <li>
-                    <a href="./finish.html">Extended Finish</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <hr>
-            <ul>
-                <li>
-                    <a href="./changelog.html">Changelog</a>
-                </li>
-                <li>
-                    <a href="./resources.html">Resources</a>
-                </li>
-                <li>
-                    <a href="./faq.html">FAQ</a>
-                </li>
-                <li>
-                    <a href="./avoid-tools.html">Tools to Avoid</a>
-                </li>
-                <li>
-                    <a href="./avoid-mods.html">Mods to Avoid</a>
-                </li>
-                <li>
-                    <a href="./wabbajack.html">Wabbajack</a>
-                </li>
-            </ul>
+    <div class="container">
+        <div class="header">
+            <div class="headerMenu" onclick="toggleNav()">
+                <img src="./img/UI/Navigation.svg" id="navButton">
+            </div>
+            <div class="headerTitle">
+                <img src="./img/Coco/Logo.webp" alt="Logo" id="logo">
+                <a href="./index.html" id="headerTitle">Viva New Vegas</a>
+            </div>
+            <div class="guideLinks" id="headerLinks">
+                <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+            </div>
         </div>
 
-        <!-- Guide Links -->
-        <div class="guideLinks">
-            <hr>
-            <ul>
-                <li>
-                    <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-                </li>
-                <li>
-                    <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
-                </li>
-            </ul>
-        </div>
+        <div class="sidebar left-sidebar">
+            <p class="pageLinks">
+                <a href="./index.html" title="Home">
+                    Home
+                </a>
 
-        <!-- Footer -->
-        <div id="footer">
-            <ul>
-                <li class="discord">
-                    <a href="https://discord.gg/S99Ary5eba" target="_blank">
-                        <i class="fab fa-discord"></i>
-                        Discord
-                    </a>
-                </li>
-                <li class="paypal">
-                    <a href="https://paypal.me/Ungeziefi" target="_blank">
-                        <i class="fa fa-paypal"></i>
-                        Donate
-                    </a>
-                </li>
-                <li class="github">
-                    <a href="https://github.com/ModdingLinked/Viva-New-Vegas" target="_blank">
-                        <i class="fab fa-github"></i>
-                        GitHub
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
+                <a href="./intro.html" title="Introduction">
+                    Introduction
+                </a>
 
-    <!-- Content -->
-    <div class="content">
-        <div class="section">
-            <h1>Content</h1>
-            <h3>In this step, we will install mods that restore removed, and add new lore-friendly content to the game</h3>
+                <a href="./setup.html" title="Setup">
+                    Setup
+                </a>
 
-            <blockquote>Mods in this section are focused on world elements and NPCs, not quests or weaponry</blockquote>
+                <a href="./mo2.html" title="MO2">
+                    Mod Organizer 2
+                </a>
 
-            <hr>
+                <a href="./utilities.html" title="Utilities">
+                    Utilities
+                </a>
 
-            <h2>Creating a Separator in MO2</h2>
-            <ol>
-                <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
-                <li>Name the separator <strong>Content</strong>.</li>
-            </ol>
+                <a href="./bugfix.html" title="Bug Fixes">
+                    Bug Fixes
+                </a>
 
-            <!-- Uncut Wasteland -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/79358" target="_blank">
-                    <h2 id="uncut">Uncut Wasteland - VNV Edit</h2>
+                <a href="./basefinish.html" title="Base Finish">
+                    Base Finish
                 </a>
             </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Uncut Wasteland - VNV Edit</b></li>
-            </ul>
-            A custom version of the original Uncut Wasteland mod, which restores many pieces of cut scenery and a few NPCs that were cut because of console limitations.
-
-            <!-- Misc Content -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/81530" target="_blank">
-                    <h2 id="miscContent">Misc Content Restoration</h2>
+            <hr>
+            <p class="pageLinks">
+                <a href="./hud.html" title="User Interface">
+                    User Interface
+                </a>
+                <a href="./gameplay.html" title="Gameplay">
+                    Gameplay
+                </a>
+                <a href="./content.html" title="Content">
+                    Content
+                </a>
+                <a href="./overhauls.html" title="Overhauls">
+                    Overhauls
+                </a>
+                <a href="./visuals.html" title="Visuals">
+                    Visuals
+                </a>
+                <a href="./finish.html" title="Extended Finish">
+                    Extended Finish
                 </a>
             </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Misc Content Restoration - NV</b></li>
-                <li>
-                    <b><a href="https://www.nexusmods.com/newvegas/mods/77945" target="_blank">Vish's Patch Hub</a></b>
+            <hr>
+            <p>
+                <a href="./changelog.html" title="Changelog">
+                    Changelog
+                </a>
+
+                <a href="./resources.html" title="Resources">
+                    Resources
+                </a>
+
+                <a href="./lod.html" title="LOD Guide" class="sublink">
+                    LOD Guide
+                </a>
+                
+                <a href="./decompress.html" title="Decompression Guide" class="sublink">
+                    Decompression Guide
+                </a>
+
+                <a href="./faq.html" title="FAQ">
+                    FAQ
+                </a>
+
+                <a href="./avoid-tools.html" title="Tools to Avoid">
+                    Tools to Avoid
+                </a>
+
+                <a href="./avoid-mods.html" title="Mods to Avoid">
+                    Mods to Avoid
+                </a>
+
+                <a href="./wabbajack.html" title="Wabbajack">
+                    Wabbajack
+                </a>
+            </p>
+            <p class="sidebar-padder"></p>
+            <hr>
+            <p class="sidebar-bottom">
+                <a href="https://discord.gg/S99Ary5eba" title="Discord">
+                    Discord
+                </a>
+                <a href="https://paypal.me/Ungeziefi" title="Donate">
+                    Donate
+                </a>
+                <a href="https://github.com/ModdingLinked/Viva-New-Vegas" title="GitHub">
+                    GitHub
+                </a>
+            </p>
+        </div>
+
+        <div class="content">
+
+            <span id="Content" class="section">
+                <h2 onclick="location.href='#Content'">Content</h2>
+
+                <div class="card">
+                    <p>
+                    <h3>Creating a Separator in MO2</h3>
+                    <ol>
+                        <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
+                        <li>Name the separator <strong>Content</strong>.</li>
+                    </ol>
+                    </p>
+                </div>
+
+                <div class="card" id="UncutWasteland" title="Uncut Wasteland">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/79358" target="_blank">Uncut Wasteland - VNV Edit</a></h3>
+                    A cleaned up version of the original Uncut Wasteland mod, which restores many pieces of cut scenery and a few NPCs that were cut because of console limitations.
+                    <h3 class="install">Installation instructions</h3>
                     <ul>
-                        <li><b>Main Files - Misc Content Restoration - YUP Patch</b></li>
+                        <li><b>Main Files</b> - Uncut Wasteland - VNV Edit</li>
                     </ul>
-                </li>
-            </ul>
-            Restores a lot of extra details and small features.
+                    </p>
+                </div>
 
-            <!-- FPGE -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/66726" target="_blank">
-                    <h2 id="fpge">FPGE - Functional Post Game Ending</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li>
-                    <b>Main Files - Functional Post Game Ending</b>
+                <div class="card" id="MiscContentRestoration" title="Misc Content Restoration">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/81530" target="_blank">Misc Content Restoration</a></h3>
+                    A cleaned up version of the original Uncut Wasteland mod, which restores many pieces of cut scenery and a few NPCs that were cut because of console limitations.
+                    <h3 class="install">Installation instructions</h3>
                     <ul>
-                        <li>You will be prompted with a FOMOD installer:
-                            <ol>
-                                <li>YUP Patch</li>
-                                <li>Uncut Wasteland Extra Collection (only if you installed <a href="./content.html#uncut" target="_blank">Uncut Wasteland - VNV Edit</a>)</li>
-                                <li>Next</li>
-                                <li>Uncut Wasteland plus NPCs (only if you installed <a href="./content.html#uncut" target="_blank">Uncut Wasteland - VNV Edit</a>)</li>
-                                <li>Next</li>
-                                <li>Install</li>
-                            </ol>
+                        <li><b>Main Files</b> - Misc Content Restoration - NV</li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/77945" target="_blank">Vish's Patch Hub</a></li>
+                        <ul>
+                            <li><b>Main Files</b> - Misc Content Restoration - YUP Patch</li>
+                        </ul>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="FPGE" title="Functional Post Game Ending">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/66726" target="_blank">FPGE - Functional Post Game Ending</a></h3>
+                    Adds a fully functional post-ending world with consequences and a vastly changed world.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li>
+                            <b>Main Files</b> - Functional Post Game Ending
+                            <ul>
+                                <li>You will be prompted with a FOMOD installer:
+                                    <ol>
+                                        <li>YUP Patch</li>
+                                        <li>Uncut Wasteland Extra Collection (only if you installed <a href="./content.html#UncutWasteland">Uncut Wasteland - VNV Edit</a>)</li>
+                                        <li>Next</li>
+                                        <li>Uncut Wasteland plus NPCs (only if you installed <a href="./content.html#UncutWasteland">Uncut Wasteland - VNV Edit</a>)</li>
+                                        <li>Next</li>
+                                        <li>Install</li>
+                                    </ol>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
-                </li>
-            </ul>
-            <blockquote>You can safely ignore the <code>Error failed to restore load order...</code> message.</blockquote>
-            Adds a fully functional post-ending world with consequences and a vastly changed world.
+                    <div class="card-yellow">
+                        <p>You can safely ignore the <span class="card-basic">Error failed to restore load order...</span> message.</p>
+                    </div>
+                    </p>
+                </div>
 
-            <!-- DLC Enhancements -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/73803" target="_blank">
-                    <h2 id="essentialDlc">Essential DLC Enhancements Merged</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Essential DLC Enhancements</b></li>
-            </ul>
-            Merge of many gameplay improvements for the DLCs, all updated and fixed.
-
-            <!-- The Living Desert -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/64623" target="_blank">
-                    <h2 id="tld">The Living Desert</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - The Living Desert Main File</b></li>
-            </ul>
-            Adds hundreds of new NPCs and scripted events that make the world feel much more alive and reactive.
-
-            <!-- Better Brotherhood -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/75031" target="_blank">
-                    <h2 id="betterBrotherhood">Better Brotherhood</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li>
-                    <b>Main Files - Better Brotherhood</b>
+                <div class="card" id="DLCEnhancements" title="DLC Enhancements">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/73803" target="_blank">Essential DLC Enhancements Merged</a></h3>
+                    A merge of many gameplay improvements for the DLCs, all updated and fixed.
+                    <h3 class="install">Installation instructions</h3>
                     <ul>
-                        <li>You will be prompted with a FOMOD installer:
-                            <ol>
-                                <li>YUP Patch</li>
-                                <li>FPGE Patch (only if you installed <a href="./content.html#fpge" target="_blank">Functional Post Game Ending</a>)</li>
-                                <li>Install</li>
-                            </ol>
+                        <li><b>Main Files</b> - Essential DLC Enhancements Merged</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="TheLivingDesert" title="The Living Desert">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/64623" target="_blank">The Living Desert</a></h3>
+                    Adds hundreds of new NPCs and scripted events that make the world feel much more alive and reactive.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - The Living Desert Main File</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="BetterBrotherhood" title="Better Brotherhood">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/75031" target="_blank">Better Brotherhood</a></h3>
+                    Tweaks to make the Mojave Brotherhood a better faction, including more sources of fame, fixed ending slide conditions, additional repair services, improved diversified leveled lists, and a new weapon.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li>
+                            <b>Main Files</b> - Better Brotherhood
+                            <ul>
+                                <li>You will be prompted with a FOMOD installer:
+                                    <ol>
+                                        <li>YUP Patch</li>
+                                        <li>FPGE Patch (only if you installed <a href="./content.html#FPGE">Functional Post Game Ending</a>)</li>
+                                        <li>Install</li>
+                                    </ol>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
-                </li>
-            </ul>
-            Tweaks to make the Mojave Brotherhood a better faction, including more sources of fame, fixed ending slide conditions, additional repair services, improved diversified leveled lists and a new weapon.
+                    </p>
+                </div>
+            </span>
+
+            <!-- Arrows -->
+            <div class="navigationArrowContainer">
+                <a href="#" id="previous" rel="prev" class="navigationArrow">
+                    <img class="mirror" src="./img/UI/Arrow.svg" alt="Back Arrow">
+                    <span class="arrowText"></span>
+                </a>
+
+                <a href="#" id="next" rel="next" class="navigationArrow">
+                    <span class="arrowText"></span>
+                    <img src="./img/UI/Arrow.svg" alt="Forward Arrow">
+                </a>
+            </div>
         </div>
 
-        <!-- Arrows -->
-        <div>
-            <hr>
-            <a href="./gameplay.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/Others/Arrow.webp" alt="Back Arrow"><span class="arrowText left">Gameplay</span></a>
-            <a href="./overhauls.html" id="next" rel="next" class="navigationArrow"><img class="right" src="./img/Others/Arrow.webp" alt="Forward Arrow"><span class="arrowText right">Overhauls</span></a>
+        <div class="sidebar right-sidebar">
+            <p id="sidebarContent">
+            </p>
         </div>
     </div>
 
-    <!-- Right Sidebar -->
-    <div id="sidenavRight">
-        <ul>
-            <li>
-                <a href="#uncut">Uncut Wasteland</a>
-            </li>
-            <li>
-                <a href="#miscContent">Misc Content</a>
-            </li>
-            <li>
-                <a href="#fpge">FPGE</a>
-            </li>
-            <li>
-                <a href="#essentialDlc">DLC Enhancements</a>
-            </li>
-            <li>
-                <a href="#tld">The Living Desert</a>
-            </li>
-            <li>
-                <a href="#betterBrotherhood">Better Brotherhood</a>
-            </li>
-        </ul>
+    <footer>ModdingLinked 2024</footer>
+
+    <div id="image-overlay" class="overlay" hidden>
+        <div class="image-container">
+            <img id="enlarged-image" class="enlarged-image" src="" alt="Enlarged Image">
+            <div class="resize-overlay shrink"></div>
+        </div>
     </div>
+
 </body>
 
 </html>

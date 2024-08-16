@@ -5,15 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preload" href="./css/style.css" as="style" />
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="img/Coco/LogoEx.webp">
+    <link rel="icon" href="img/Coco/Logo.webp">
     <link rel="canonical" href="https://vivanewvegas.moddinglinked.com">
-    <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
-    <script src="javascript.js"></script>
+
     <title>Visuals | Viva New Vegas</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Tale of Two Wastelands, Wabbajack">
-    <meta name="description" content="Various mods to improve the game's visuals without making any drastic stylistic changes or decreasing performance/stability.">
+
+    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, Fallout 4, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Tale of Two Wastelands, TTW, Wabbajack, WJ, Installer">
+    <meta name="description" content="Various visual improvements and fixes.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
     <meta property="og:site_name" content="ModdingLinked">
@@ -21,595 +19,528 @@
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://vivanewvegas.moddinglinked.com">
     <meta property="og:image" content="https://vivanewvegas.moddinglinked.com/img/Others/Card.webp">
-    <meta property="og:description" content="Various mods to improve the game's visuals without making any drastic stylistic changes or decreasing performance/stability.">
+    <meta property="og:description" content="Various visual improvements and fixes.">
+
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#333230">
+
+    <script src="javascript.js"></script>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigationArrows.css">
+    <link rel="stylesheet" href="css/coco.css">
+    <link rel="stylesheet" href="css/progressBar.css">
+    <link rel="stylesheet" href="css/guideColors.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/images.css">
+    <link rel="stylesheet" href="css/textIcons.css">
 </head>
 
-<body>
-
-    <!-- Titlebar -->
-    <div class="titlecontainer">
-        <div id="sideButton" onclick="toggleNav()">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <img src="./img/Coco/LogoEx.webp" alt="Logo">
-        <a href="./index.html">Viva New Vegas - Extended</a>
-        <div class="guideLinks">
-            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-            <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
-        </div>
+<body class="theme">
+    <div class="progress-container">
+        <div class="progress-bar"></div>
     </div>
 
-    <!-- Left Sidebar -->
-    <div id="sidenavLeft">
-        <div>
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./intro.html">Introduction</a>
-                </li>
-                <li>
-                    <a href="./setup.html">Setup</a>
-                </li>
-                <li>
-                    <a href="./mo2.html">MO2</a>
-                </li>
-                <li>
-                    <a href="./utilities.html">Utilities</a>
-                </li>
-                <li>
-                    <a href="./bugfix.html">Bug Fixes</a>
-                </li>
-                <li>
-                    <a href="./basefinish.html">Base Finish</a>
-                </li>
-            </ul>
-            <hr>
-        </div>
-        <div class="extended-background active">
-            <ul>
-                <h3 id="extended-separator" class="active">VNV Extended</h3>
-                <li>
-                    <a href="./hud.html">User Interface</a>
-                </li>
-                <li>
-                    <a href="./gameplay.html">Gameplay</a>
-                </li>
-                <li>
-                    <a href="./content.html">Content</a>
-                </li>
-                <li>
-                    <a href="./overhauls.html">Overhauls</a>
-                </li>
-                <li>
-                    <a href="./visuals.html" class="active">Visuals</a>
-                </li>
-                <li>
-                    <a href="./finish.html">Extended Finish</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <hr>
-            <ul>
-                <li>
-                    <a href="./changelog.html">Changelog</a>
-                </li>
-                <li>
-                    <a href="./resources.html">Resources</a>
-                </li>
-                <li>
-                    <a href="./faq.html">FAQ</a>
-                </li>
-                <li>
-                    <a href="./avoid-tools.html">Tools to Avoid</a>
-                </li>
-                <li>
-                    <a href="./avoid-mods.html">Mods to Avoid</a>
-                </li>
-                <li>
-                    <a href="./wabbajack.html">Wabbajack</a>
-                </li>
-            </ul>
+    <div class="container">
+        <div class="header">
+            <div class="headerMenu" onclick="toggleNav()">
+                <img src="./img/UI/Navigation.svg" id="navButton">
+            </div>
+            <div class="headerTitle">
+                <img src="./img/Coco/Logo.webp" alt="Logo" id="logo">
+                <a href="./index.html" id="headerTitle">Viva New Vegas</a>
+            </div>
+            <div class="guideLinks" id="headerLinks">
+                <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+            </div>
         </div>
 
-        <!-- Guide Links -->
-        <div class="guideLinks">
-            <hr>
-            <ul>
-                <li>
-                    <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-                </li>
-                <li>
-                    <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
-                </li>
-            </ul>
-        </div>
+        <div class="sidebar left-sidebar">
+            <p class="pageLinks">
+                <a href="./index.html" title="Home">
+                    Home
+                </a>
 
-        <!-- Footer -->
-        <div id="footer">
-            <ul>
-                <li class="discord">
-                    <a href="https://discord.gg/S99Ary5eba" target="_blank">
-                        <i class="fab fa-discord"></i>
-                        Discord
-                    </a>
-                </li>
-                <li class="paypal">
-                    <a href="https://paypal.me/Ungeziefi" target="_blank">
-                        <i class="fa fa-paypal"></i>
-                        Donate
-                    </a>
-                </li>
-                <li class="github">
-                    <a href="https://github.com/ModdingLinked/Viva-New-Vegas" target="_blank">
-                        <i class="fab fa-github"></i>
-                        GitHub
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
+                <a href="./intro.html" title="Introduction">
+                    Introduction
+                </a>
 
-    <!-- Content -->
-    <div class="content">
-        <div class="section">
-            <h1>Visuals</h1>
-            <h3>In this step, we will install mods improving the overall look and feel of the game, without any drastic or performance demanding changes</h3>
+                <a href="./setup.html" title="Setup">
+                    Setup
+                </a>
 
-            <hr>
+                <a href="./mo2.html" title="MO2">
+                    Mod Organizer 2
+                </a>
 
-            <h2>Creating a Separator in MO2</h2>
+                <a href="./utilities.html" title="Utilities">
+                    Utilities
+                </a>
 
-            <ol>
-                <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
-                <li>Name the separator <strong>Visuals</strong>.</li>
-            </ol>
+                <a href="./bugfix.html" title="Bug Fixes">
+                    Bug Fixes
+                </a>
 
-            <!-- Fixed FaceGen -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/71577" target="_blank">
-                    <h2 id="fixedFaceGen">Mostly Fixed FaceGen Tints</h2>
+                <a href="./basefinish.html" title="Base Finish">
+                    Base Finish
                 </a>
             </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - FaceGen Tint Fixes for NV</b></li>
-            </ul>
-            Fixes the odd skin color you'll see on NPCs, including the player.
-
-            <!-- Character Expansions -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/87763" target="_blank">
-                    <h2 id="sce">Simple Character Expansions</h2>
+            <hr>
+            <p class="pageLinks">
+                <a href="./hud.html" title="User Interface">
+                    User Interface
+                </a>
+                <a href="./gameplay.html" title="Gameplay">
+                    Gameplay
+                </a>
+                <a href="./content.html" title="Content">
+                    Content
+                </a>
+                <a href="./overhauls.html" title="Overhauls">
+                    Overhauls
+                </a>
+                <a href="./visuals.html" title="Visuals">
+                    Visuals
+                </a>
+                <a href="./finish.html" title="Extended Finish">
+                    Extended Finish
                 </a>
             </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li>
-                    <b>Main Files - Simple Character Expansions</b>
+            <hr>
+            <p>
+                <a href="./changelog.html" title="Changelog">
+                    Changelog
+                </a>
+
+                <a href="./resources.html" title="Resources">
+                    Resources
+                </a>
+
+                <a href="./lod.html" title="LOD Guide" class="sublink">
+                    LOD Guide
+                </a>
+
+                <a href="./decompress.html" title="Decompression Guide" class="sublink">
+                    Decompression Guide
+                </a>
+
+                <a href="./faq.html" title="FAQ">
+                    FAQ
+                </a>
+
+                <a href="./avoid-tools.html" title="Tools to Avoid">
+                    Tools to Avoid
+                </a>
+
+                <a href="./avoid-mods.html" title="Mods to Avoid">
+                    Mods to Avoid
+                </a>
+
+                <a href="./wabbajack.html" title="Wabbajack">
+                    Wabbajack
+                </a>
+            </p>
+            <p class="sidebar-padder"></p>
+            <hr>
+            <p class="sidebar-bottom">
+                <a href="https://discord.gg/S99Ary5eba" title="Discord">
+                    Discord
+                </a>
+                <a href="https://paypal.me/Ungeziefi" title="Donate">
+                    Donate
+                </a>
+                <a href="https://github.com/ModdingLinked/Viva-New-Vegas" title="GitHub">
+                    GitHub
+                </a>
+            </p>
+        </div>
+
+        <div class="content">
+
+            <span id="Visuals" class="section">
+                <h2 onclick="location.href='#Visuals'">Visuals</h2>
+
+                <div class="card">
+                    <p>
+                    <h3>Creating a Separator in MO2</h3>
+                    <ol>
+                        <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
+                        <li>Name the separator <strong>User Interface</strong>.</li>
+                    </ol>
+                    </p>
+                </div>
+
+                <div class="card" id="FixedFaceGen" title="Fixed FaceGen Tints">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/71577" target="_blank">Mostly Fixed FaceGen Tints</a></h3>
+                    Fixes the odd skin color you'll see on NPCs, including the player.
+                    <h3 class="install">Installation instructions</h3>
                     <ul>
-                        <li>You will be prompted with a FOMOD installer:
-                            <ol>
-                                <li>YUP</li>
-                                <li>UW VNV Edit (only if you installed <a href="./content.html#uncut" target="_blank">Uncut Wasteland - VNV Edit</a>)</li>
-                                <li>Install</li>
-                            </ol>
-                        </li>
+                        <li><b>Main Files</b> - FaceGen Tint Fixes for NV</li>
                     </ul>
-                </li>
-            </ul>
-            Simply overhauls the face of 170+ NPCs.
+                    </p>
+                </div>
 
-            <!-- High Res Bloom -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/77933" target="_blank">
-                    <h2 id="bloom">High Resolution Bloom NVSE</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - High Resolution Bloom</b></li>
-            </ul>
-            Allows for customizable bloom resolution, making it possible to use resolutions other than vanilla's quarter one.
-
-            <!-- Water Aliasing Fix -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/78400" target="_blank">
-                    <h2 id="waterAliasing">High Resolution Water Fog - Water Aliasing Fix</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - High Resolution Water Fog</b></li>
-            </ul>
-            Increases resolution of the water depth render target, significantly reducing aliasing.
-
-            <!-- Muzzle Flash Fix -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/81201" target="_blank">
-                    <h2 id="muzzleFlash">Muzzle Flash Light Fix - NVSE</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Muzzle Flash Light Fix</b></li>
-            </ul>
-            Fixes muzzle flash lights not being culled after shot, leading to game still using them for illumination.
-
-            <!-- Viewmodel Shading Fix -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/84781" target="_blank">
-                    <h2 id="gunShading">Viewmodel Shading Fix - NVSE</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Viewmodel Shading Fix - NVSE</b></li>
-            </ul>
-            Fixes totally wrong specular lighting, and lack of muzzle flash lights on viewmodel.
-
-            <!-- Blood Fix -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/87830" target="_blank">
-                    <h2 id="bloodFix">Blood Decal Flashing Fix</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Blood Decal Flashing Fix</b></li>
-            </ul>
-            Fixes color overflow in blood decal shaders, which caused colorful flashes on Nvidia DXVK or other GPUs.
-
-            <!-- Anniversary Anims -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/70158" target="_blank">
-                    <h2 id="animPack">Anniversary Anim Pack</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Anniversary Anim Pack</b></li>
-            </ul>
-            Overhauls most gun animations.
-
-            <!-- Clean Animations -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/70599" target="_blank">
-                    <h2 id="cleanAnims">FNV Clean Animations</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - FNV Clean Animations - Anniversary Edition</b></li>
-            </ul>
-            Another animation overhaul that goes well with the Anniversary Anim Pack.
-
-            <blockquote>
-                <p>
-                    After the installation of these two animation replacers, you'll need to reinstall <strong>Iron Sights Aligned</strong> mod in order to patch the new animations. To do so, follow these steps:
-                <ol>
-                    <li>Right-click <b>Iron Sights Aligned</b> under your list's <b>Bug Fixes</b> separator, then click <strong>Reinstall Mod</strong>.</li>
+                <div class="card" id="SCE" title="Simple Character Expansions">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/87763" target="_blank">Simple Character Expansions</a></h3>
+                    Overhauls the face of 170+ NPCs.
+                    <h3 class="install">Installation instructions</h3>
                     <ul>
                         <li>
-                            If you cleared your downloads folder, you'll have to redownload the mod.
-                        </li>
-                    </ul>
-                    <li>You will be prompted with a FOMOD installer:
-                        <ol>
-                            <li>Anniversary Anim Pack</li>
-                            <li>Yukichigai's Unofficial Patch</li>
-                            <li>Install</li>
-                        </ol>
-                    </li>
-                    <li>Click <strong>Replace</strong> when prompted.</li>
-                    <li>Move <b>Iron Sights Aligned</b> <strong>under FNV Clean Animations</strong> (in the <b>Visuals</b> separator).</li>
-                </ol>
-                </p>
-            </blockquote>
-
-            <!-- Smooth True Iron Sights Camera -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/69074" target="_blank">
-                    <h2 id="smoothAim">Smooth True Iron Sights Camera</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Smooth True Ironsights</b></li>
-            </ul>
-            Aim down sights without the camera snapping to place. Engine plugin, no esps or animation files - compatible with all animation mods.
-
-            <!-- B42 Weapon Inertia -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/64335" target="_blank">
-                    <h2 id="inertia">B42 Weapon Inertia</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - B42 Inertia V1.2</b></li>
-            </ul>
-            Gives weapons realistic inertia movement.
-
-            <!-- B42 Optics -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/81641" target="_blank">
-                    <h2 id="optics">B42 Optics - ESPless</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - B42 Optics</b></li>
-                <li>
-                    <a href="https://www.nexusmods.com/newvegas/mods/82136" target="_blank"><b>B42 Optics NV Patches</b></a>
-                    <ul>
-                        <li>
-                            <b>Main Files - B42 Optics NV Patches</b>
+                            <b>Main Files</b> - Simple Character Expansions
                             <ul>
                                 <li>You will be prompted with a FOMOD installer:
                                     <ol>
-                                        <li>Anniversary Anim Pack Fix</li>
+                                        <li>YUP</li>
+                                        <li>UW VNV Edit (only if you installed <a href="./content.html#uncut" target="_blank">Uncut Wasteland - VNV Edit</a>)</li>
                                         <li>Install</li>
                                     </ol>
                                 </li>
                             </ul>
                         </li>
                     </ul>
-                </li>
-            </ul>
-            Replaces scopes with proper picture-in-picture ones.
+                    </p>
+                </div>
 
-            <!-- Compatibility Skeleton -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/68776" target="_blank">
-                    <h2 id="skeleton">NV Compatibility Skeleton</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Optional Files - NVCS Vanilla Weights</b></li>
-            </ul>
-            Allows multiple mods that edit the skeleton mesh to work together, required for B42 Weapon Inertia.
-
-            <!-- Contrasted LOD Noise Texture -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/85898" target="_blank">
-                    <h2 id="improvedLod">Contrasted LOD Noise Texture</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Contrasted LOD Noise 1k</b></li>
-            </ul>
-            New LOD noise texture for Mid Frequency Details, helps blend far terrain with closer details.
-
-            <!-- Landscape Improvements -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/83425" target="_blank">
-                    <h2 id="improvedLandscape">Landscape Texture Improvements</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li>
-                    <b>Main Files - Landscape Texture Improvements</b>
+                <div class="card" id="HighResolutionBloom">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/77933" target="_blank">High Resolution Bloom NVSE</a></h3>
+                    Allows for customizable bloom resolution, making it possible to use resolutions other than vanilla's quarter one.
+                    <h3 class="install">Installation instructions</h3>
                     <ul>
-                        <li>You will be prompted with a FOMOD installer:
-                            <ol>
-                                <li>Next</li>
-                                <li>YUP Patch</li>
-                                <li>Install</li>
-                            </ol>
+                        <li><b>Main Files</b> - High Resolution Bloom</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="WaterAliasingFix">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/78400" target="_blank">High Resolution Water Fog - Water Aliasing Fix</a></h3>
+                    Increases resolution of the water depth render target, significantly reducing aliasing.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - High Resolution Water Fog</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="MuzzleFlashFix">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/81201" target="_blank">Muzzle Flash Light Fix - NVSE</a></h3>
+                    Fixes muzzle flash lights not being culled after shot, leading to game still using them for illumination.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Muzzle Flash Light Fix</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="ViewmodelShadingFix">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/84781" target="_blank">Viewmodel Shading Fix - NVSE</a></h3>
+                    Fixes totally wrong specular lighting, and lack of muzzle flash lights on viewmodel.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Viewmodel Shading Fix - NVSE</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="BloodDecalFlashingFix">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/87830" target="_blank">Blood Decal Flashing Fix</a></h3>
+                    Fixes color overflow in blood decal shaders, which caused colorful flashes on Nvidia DXVK or other GPUs.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Blood Decal Flashing Fix</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="AnniversaryAnimPack">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/70158" target="_blank">Anniversary Anim Pack</a></h3>
+                    Overhauls most gun animations, while keeping original feel.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Anniversary Anim Pack</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="CleanAnimations">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/70599" target="_blank">FNV Clean Animations</a></h3>
+                    Another animation overhaul that goes well with the Anniversary Anim Pack.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - FNV Clean Animations - Anniversary Edition</li>
+                    </ul>
+
+                    <div class="card-yellow">
+                        <p>
+                            After the installation of these two animation replacers, you'll need to reinstall <strong>Iron Sights Aligned</strong> mod in order to patch the new animations. To do so, follow these steps:
+                        <ol>
+                            <li>Right-click <b>Iron Sights Aligned</b> under your list's <b>Bug Fixes</b> separator, then click <strong>Reinstall Mod</strong>.</li>
+                            <ul>
+                                <li>
+                                    If you cleared your downloads folder, you'll have to redownload the mod.
+                                </li>
+                            </ul>
+                            <li>You will be prompted with a FOMOD installer:
+                                <ol>
+                                    <li>Anniversary Anim Pack</li>
+                                    <li>Yukichigai's Unofficial Patch</li>
+                                    <li>Install</li>
+                                </ol>
+                            </li>
+                            <li>Click <strong>Replace</strong> when prompted.</li>
+                            <li>Move <b>Iron Sights Aligned</b> <strong>under FNV Clean Animations</strong> (in the <b>Visuals</b> separator).</li>
+                        </ol>
+                        </p>
+                    </div>
+                    </p>
+                </div>
+
+                <div class="card" id="SmoothTrueIronSights">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/69074" target="_blank">Smooth True Iron Sights Camera</a></h3>
+                    Aim down sights without the camera snapping to place. Engine plugin, no esps or animation files - compatible with all animation mods.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Smooth True Ironsights</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="B42WeaponInertia">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/64335" target="_blank">B42 Weapon Inertia</a></h3>
+                    Gives weapons realistic inertia movement.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - B42 Inertia V1.2</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="B42Optics">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/81641" target="_blank">B42 Optics - ESPLess</a></h3>
+                    Replaces scopes with proper picture-in-picture ones.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - B42 Optics</li>
+                        <li>
+                            <b><a href="https://www.nexusmods.com/newvegas/mods/82136" target="_blank">B42 Optics NV Patches</a></b>
+                            <ul>
+                                <li>
+                                    <b>Main Files</b> - B42 Optics NV Patches
+                                    <ul>
+                                        <li>You will be prompted with a FOMOD installer:</li>
+                                        <ol>
+                                            <li>Anniversary Anim Pack Fix</li>
+                                            <li>Install</li>
+                                        </ol>
+                                    </ul>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
-                </li>
-            </ul>
-            <blockquote>You can safely ignore the <code>Error failed to restore load order...</code> message.</blockquote>
-            Improves many aspects of the landscape, most notably reducing texture seams.
+                    </p>
+                </div>
 
-            <!-- Rock Normals -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/83065" target="_blank">
-                    <h2 id="rockNormals">Wasted Rocks Normals</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - First release.</b></li>
-            </ul>
-            Fixes the flipped lighting on the vanilla rock normal maps.
-
-            <!-- Less Green Clifftops -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/83515" target="_blank">
-                    <h2 id="lessGreenClifftops">More Consistent Vanilla Rock Textures (Less Green Clifftops)</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - More Consistent Vanilla Rock Textures</b></li>
-            </ul>
-            Makes the color of the canyon rubble and rock trim throughout most of the Mojave match better with the other meshes.
-
-            <!-- A Little More Lamplight -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/69226" target="_blank">
-                    <h2 id="lamplight">A Little More Lamplight</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - A Little More Lamplight</b></li>
-            </ul>
-            Enhances the vanilla streetlights and adds new ones around Outer Vegas, Freeside and more.
-
-            <!-- Atmospheric Lighting -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/79378" target="_blank">
-                    <h2 id="alt">Atmospheric Lighting Tweaks</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Atmospheric Lighting Tweaks - FNV - YUP</b></li>
-                <li>
-                    <b><a href="https://www.nexusmods.com/newvegas/mods/77945" target="_blank">Vish's Patch Hub</a></b>
+                <div class="card" id="CompatibilitySkeleton">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/68776" target="_blank">NV Compatibility Skeleton</a></h3>
+                    Allows multiple mods that edit the skeleton mesh to work together, required for B42 Weapon Inertia.
+                    <h3 class="install">Installation instructions</h3>
                     <ul>
-                        <li><b>Main Files - Atmospheric Lighting Tweaks - EVEM Patch</b> (only if you installed <a href="./overhauls.html#evem" target="_blank">Essential Vanilla Enhancements Merged</a>)</li>
+                        <li><b>Optional Files</b> - NVCS Vanilla Weights</li>
                     </ul>
-                </li>
-            </ul>
-            Makes changes to Image Spaces and Lighting Templates to give interiors a more dynamic and atmospheric look.
+                    </p>
+                </div>
 
-            <!-- DN Weathers -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/75437" target="_blank">
-                    <h2 id="dnw">Desert Natural Weathers</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Desert Natural Weathers NV</b></li>
-            </ul>
-            Major overhaul to all of the weathers for the base game and DLCs.
+                <div class="card" id="ContrastedLODNoise" title="Contrasted LOD Noise">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/85898" target="_blank">Contrasted LOD Noise Texture</a></h3>
+                    New LOD noise texture for Mid Frequency Details, helps blend far terrain with closer details.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Contrasted LOD Noise 1k</li>
+                    </ul>
+                    </p>
+                </div>
 
-            <!-- Cloud Upgrade -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/79612" target="_blank">
-                    <h2 id="cloudUpgrade">Cloud Upgrade NVSE</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Cloud Upgrade</b></li>
-            </ul>
-            Adds pseudo-animated clouds for horizons and panoramic cloud systems.
+                <div class="card" id="ImprovedLandscape">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/83425" target="_blank">Landscape Texture Improvements</a></h3>
+                    Improves many aspects of the landscape, most notably reducing texture seams.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li>
+                            <b>Main Files</b> - Landscape Texture Improvements
+                            <ul>
+                                <li>You will be prompted with a FOMOD installer:</li>
+                                <ol>
+                                    <li>Next</li>
+                                    <li>YUP Patch</li>
+                                    <li>Install</li>
+                                </ol>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="card-green">
+                        <p>
+                            You can safely ignore the <span class="card-basic">Error failed to restore load order...</span> message.
+                        </p>
+                    </div>
+                    </p>
+                </div>
 
-            <!-- Interior Rain -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/79656" target="_blank">
-                    <h2 id="interiorRain">Interior Rain</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Interior Rain</b></li>
-            </ul>
-            Adds rain sounds to interiors.
+                <div class="card" id="WastedRockNormals">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/85898" target="_blank">Wasted Rock Normals</a></h3>
+                    Fixes the flipped lighting on the vanilla rock normal maps.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - First release.</li>
+                    </ul>
+                    </p>
+                </div>
 
-            <!-- 3D Rain -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/79652" target="_blank">
-                    <h2 id="3dRain">3D Rain</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - 3D Rain</b></li>
-            </ul>
-            Replace the ugly 2D rain with a new 3D version. Rain no longer looks weird when you look up or down.
+                <div class="card" id="LessGreenClifftops">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/83515" target="_blank">More Consistent Vanilla Rock Textures (Less Green Clifftops)</a></h3>
+                    Makes the color of the canyon rubble and rock trim throughout most of the Mojave match better with the other meshes.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - More Consistent Vanilla Rock Textures</li>
+                    </ul>
+                    </p>
+                </div>
 
-            <!-- CC Rain -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/79661" target="_blank">
-                    <h2 id="ccRain">Climate Control - Rain</h2>
+                <div class="card" id="ALittleMoreLamplight">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/69226" target="_blank">A Little More Lamplight</a></h3>
+                    Enhances the vanilla streetlights and adds new ones around Outer Vegas, Freeside and more.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - A Little More Lamplight</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="AtmosphericLightingTweaks">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/79378" target="_blank">Atmospheric Lighting Tweaks (Interior Lighting for FNV and TTW)</a></h3>
+                    Makes changes to Image Spaces and Lighting Templates to give interiors a more dynamic and atmospheric look.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Atmospheric Lighting Tweaks - FNV - YUP</li>
+                        <li>
+                            <b><a href="https://www.nexusmods.com/newvegas/mods/77945">Vish's Patch Hub</a></b>
+                            <ul>
+                                <li>
+                                    <b>Main Files</b> - Atmospheric Lighting Tweaks - EVEM Patch
+                                    <br>
+                                    (only if you installed <a href="./overhauls.html#EVEM" target="_blank">Essential Vanilla Enhancements Merged</a>)
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="DesertNaturalWeathers">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/75437" target="_blank">Desert Natural Weathers</a></h3>
+                    Major overhaul to all of the weathers for the base game and DLCs.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Desert Natural Weathers NV</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="CloudUpgrade">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/79612" target="_blank">Cloud Upgrade NVSE</a></h3>
+                    Adds pseudo-animated clouds for horizons and panoramic cloud systems.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Cloud Upgrade</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="InteriorRain">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/79656" target="_blank">Interior Rain</a></h3>
+                    Adds rain sounds to interiors.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Interior Rain</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="3DRain" title="3D Rain">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/79652" target="_blank">3D Rain</a></h3>
+                    Replace the ugly 2D rain with a new 3D version. Rain no longer looks weird when you look up or down.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - 3D Rain</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="CCRain" title="Climate Control - Rain">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/79652" target="_blank">Climate Control - Rain</a></h3>
+                    Fixes rain not activating or deactivating correctly, as well as new sounds and textures.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Climate Control - Rain</li>
+                        <li><b>Optional Files</b> - Climate Control - 3D Rain</li>
+                    </ul>
+                    </p>
+                </div>
+            </span>
+
+            <!-- Arrows -->
+            <div class="navigationArrowContainer">
+                <a href="#" id="previous" rel="prev" class="navigationArrow">
+                    <img class="mirror" src="./img/UI/Arrow.svg" alt="Back Arrow">
+                    <span class="arrowText"></span>
                 </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Climate Control - Rain</b></li>
-                <li><b>Optional Files - Climate Control - 3D Rain</b></li>
-            </ul>
-            Fixes rain not activating or deactivating correctly, as well as new sounds and textures.
+
+                <a href="#" id="next" rel="next" class="navigationArrow">
+                    <span class="arrowText"></span>
+                    <img src="./img/UI/Arrow.svg" alt="Forward Arrow">
+                </a>
+            </div>
         </div>
 
-        <!-- Arrows -->
-        <div>
-            <hr>
-            <a href="./overhauls.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/Others/Arrow.webp" alt="Back Arrow"><span class="arrowText left">Overhauls</span></a>
-            <a href="./finish.html" id="next" rel="next" class="navigationArrow"><img class="right" src="./img/Others/Arrow.webp" alt="Forward Arrow"><span class="arrowText right">Finish</span></a>
+        <div class="sidebar right-sidebar">
+            <p id="sidebarContent">
+            </p>
         </div>
     </div>
 
-    <!-- Right Sidebar -->
-    <div id="sidenavRight">
-        <ul>
-            <li>
-                <a href="#fixedFaceGen">Fixed FaceGen</a>
-            </li>
-            <li>
-                <a href="#sce">Character Expansions</a>
-            </li>
-            <li>
-                <a href="#bloom">High Res Bloom</a>
-            </li>
-            <li>
-                <a href="#waterAliasing">Water Aliasing Fix</a>
-            </li>
-            <li>
-                <a href="#muzzleFlash">Muzzle Flash Fix</a>
-            </li>
-            <li>
-                <a href="#gunShading">Viewmodel Shading Fix</a>
-            </li>
-            <li>
-                <a href="#bloodFix">Blood Fix</a>
-            </li>
-            <li>
-                <a href="#animPack">Anniversary Anims</a>
-            </li>
-            <li>
-                <a href="#cleanAnims">Clean Animations</a>
-            </li>
-            <li>
-                <a href="#smoothAim">Smooth True Iron Sights</a>
-            </li>
-            <li>
-                <a href="#inertia">B42 Weapon Inertia</a>
-            </li>
-            <li>
-                <a href="#optics">B42 Optics</a>
-            </li>
-            <li>
-                <a href="#skeleton">Compatibility Skeleton</a>
-            </li>
-            <li>
-                <a href="#improvedLod">Contrasted LOD Noise</a>
-            </li>
-            <li>
-                <a href="#improvedLandscape">Improved Landscape</a>
-            </li>
-            <li>
-                <a href="#rockNormals">Rock Normals</a>
-            </li>
-            <li>
-                <a href="#lessGreenClifftops">Less Green Clifftops</a>
-            </li>
-            <li>
-                <a href="#lamplight">A Little More Lamplight</a>
-            </li>
-            <li>
-                <a href="#alt">Atmospheric Lighting</a>
-            </li>
-            <li>
-                <a href="#dnw">DN Weathers</a>
-            </li>
-            <li>
-                <a href="#cloudUpgrade">Cloud Upgrade</a>
-            </li>
-            <li>
-                <a href="#interiorRain">Interior Rain</a>
-            </li>
-            <li>
-                <a href="#3dRain">3D Rain</a>
-            </li>
-            <li>
-                <a href="#ccRain">CC Rain</a>
-            </li>
-        </ul>
+    <footer>ModdingLinked 2024</footer>
+
+    <div id="image-overlay" class="overlay" hidden>
+        <div class="image-container">
+            <img id="enlarged-image" class="enlarged-image" src="" alt="Enlarged Image">
+            <div class="resize-overlay shrink"></div>
+        </div>
     </div>
+
 </body>
 
 </html>

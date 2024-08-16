@@ -5,15 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preload" href="./css/style.css" as="style" />
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="img/Coco/Logo.webp">
     <link rel="canonical" href="https://vivanewvegas.moddinglinked.com">
-    <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
-    <script src="javascript.js"></script>
+
     <title>Resources | Viva New Vegas</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Tale of Two Wastelands, Wabbajack">
-    <meta name="description" content="Various useful resources/guides for additional modding or mod creation.">
+
+    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, Fallout 4, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Tale of Two Wastelands, TTW, Wabbajack, WJ, Installer">
+    <meta name="description" content="Various useful resources and guides for additional modding or mod creation.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
     <meta property="og:site_name" content="ModdingLinked">
@@ -21,195 +19,207 @@
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://vivanewvegas.moddinglinked.com">
     <meta property="og:image" content="https://vivanewvegas.moddinglinked.com/img/Others/Card.webp">
-    <meta property="og:description" content="Various useful resources/guides for additional modding or mod creation.">
+    <meta property="og:description" content="Various useful resources and guides for additional modding or mod creation.">
+
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#333230">
+
+    <script src="javascript.js"></script>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigationArrows.css">
+    <link rel="stylesheet" href="css/progressBar.css">
+    <link rel="stylesheet" href="css/guideColors.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/images.css">
 </head>
 
-<body>
+<body class="theme">
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+    </div>
 
-    <!-- Titlebar -->
-    <div class="titlecontainer">
-        <div id="sideButton" onclick="toggleNav()">
-            <i class="fa-solid fa-bars"></i>
+    <div class="container">
+        <div class="header">
+            <div class="headerMenu" onclick="toggleNav()">
+                <img src="./img/UI/Navigation.svg" id="navButton">
+            </div>
+            <div class="headerTitle">
+                <img src="./img/Coco/Logo.webp" alt="Logo" id="logo">
+                <a href="./index.html" id="headerTitle">Viva New Vegas</a>
+            </div>
+            <div class="guideLinks" id="headerLinks">
+                <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+            </div>
         </div>
-        <img src="./img/Coco/Logo.webp" alt="Logo">
-        <a href="./index.html">Viva New Vegas</a>
-        <div class="guideLinks">
-            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-            <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+        <div class="sidebar left-sidebar">
+            <p class="pageLinks">
+                <a href="./index.html" title="Home">
+                    Home
+                </a>
+
+                <a href="./intro.html" title="Introduction">
+                    Introduction
+                </a>
+
+                <a href="./setup.html" title="Setup">
+                    Setup
+                </a>
+
+                <a href="./mo2.html" title="MO2">
+                    Mod Organizer 2
+                </a>
+
+                <a href="./utilities.html" title="Utilities">
+                    Utilities
+                </a>
+
+                <a href="./bugfix.html" title="Bug Fixes">
+                    Bug Fixes
+                </a>
+
+                <a href="./basefinish.html" title="Base Finish">
+                    Base Finish
+                </a>
+            </p>
+            <hr>
+            <p class="pageLinks">
+                <a href="./hud.html" title="User Interface">
+                    User Interface
+                </a>
+                <a href="./gameplay.html" title="Gameplay">
+                    Gameplay
+                </a>
+                <a href="./content.html" title="Content">
+                    Content
+                </a>
+                <a href="./overhauls.html" title="Overhauls">
+                    Overhauls
+                </a>
+                <a href="./visuals.html" title="Visuals">
+                    Visuals
+                </a>
+                <a href="./finish.html" title="Extended Finish">
+                    Extended Finish
+                </a>
+            </p>
+            <hr>
+            <p>
+                <a href="./changelog.html" title="Changelog">
+                    Changelog
+                </a>
+
+                <a href="./resources.html" title="Resources">
+                    Resources
+                </a>
+
+                <a href="./lod.html" title="LOD Guide" class="sublink">
+                    LOD Guide
+                </a>
+                
+                <a href="./decompress.html" title="Decompression Guide" class="sublink">
+                    Decompression Guide
+                </a>
+
+                <a href="./faq.html" title="FAQ">
+                    FAQ
+                </a>
+
+                <a href="./avoid-tools.html" title="Tools to Avoid">
+                    Tools to Avoid
+                </a>
+
+                <a href="./avoid-mods.html" title="Mods to Avoid">
+                    Mods to Avoid
+                </a>
+
+                <a href="./wabbajack.html" title="Wabbajack">
+                    Wabbajack
+                </a>
+            </p>
+            <p class="sidebar-padder"></p>
+            <hr>
+            <p class="sidebar-bottom">
+                <a href="https://discord.gg/S99Ary5eba" title="Discord">
+                    Discord
+                </a>
+                <a href="https://paypal.me/Ungeziefi" title="Donate">
+                    Donate
+                </a>
+                <a href="https://github.com/ModdingLinked/Viva-New-Vegas" title="GitHub">
+                    GitHub
+                </a>
+            </p>
+        </div>
+
+        <div class="content">
+
+            <span id="Resources" class="section">
+
+                <h2 onclick="location.href='#Resources'">Resources</h2>
+                <div class="card" id="GeneralResources">
+                    <p>
+                    <h3 onclick="location.href='#GeneralResources'">General Resources</h3>
+                    <h3><a href="https://moddinglinked.com/dogmas.html" target="_blank">Modding Dogmas</a></h3>
+                    <p>
+                        Some dangerous dogmas about modding that you should be aware of.
+                    </p>
+                    <h3><a href="https://moddinglinked.com/xedit.html" target="_blank">Basics of xEdit</a></h3>
+                    <p>
+                        An introduction to xEdit and its use.
+                    </p>
+                    <h3><a href="https://moddinglinked.com/themethod.html" target="_blank">The Method</a></h3>
+                    <p>
+                        A full guide to The Method conflict resolution.
+                    </p>
+                    </p>
+                </div>
+
+                <div class="card" id="FNVResources">
+                    <p>
+                    <h3 onclick="location.href='#FNVResources'">FNV Resources</h3>
+                    <h3><a href="https://geckwiki.com/index.php/Main_Page" target="_blank">GECK Wiki</a></h3>
+                    <p>
+                        Community continuation of Bethesda's GECK wiki, maintained by NVSE modders; focused on GECK, scripting and game's inner workings.
+                    </p>
+                    <h3><a href="https://fallout.wiki/wiki/Fallout_Wiki" target="_blank">Independent Fallout Wiki</a></h3>
+                    <p>
+                        Fan project focused on maintaining a high-quality, comprehensive and accessible encyclopedia about all aspects of the Fallout games, community and mods.
+                    </p>
+                    <h3><a href="./lod.html">LOD Guide</a></h3>
+                    <p>
+                        General information on LOD and how to generate it with FNVLODgen.
+                    </p>
+                    <h3><a href="./decompress.html">Decompression Guide</a></h3>
+                    <p>
+                        Guide on how to decompress all plugins in your load order for better performance and less stuttering.
+                    </p>
+                    </p>
+                </div>
+
+            </span>
+
+            <!-- Arrows -->
+            <div class="navigationArrowContainer">
+                <a href="#" id="previous" rel="prev" class="navigationArrow">
+                    <img class="mirror" src="./img/UI/Arrow.svg" alt="Back Arrow">
+                    <span class="arrowText"></span>
+                </a>
+            </div>
         </div>
     </div>
 
-    <!-- Left Sidebar -->
-    <div id="sidenavLeft">
-        <div>
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./intro.html">Introduction</a>
-                </li>
-                <li>
-                    <a href="./setup.html">Setup</a>
-                </li>
-                <li>
-                    <a href="./mo2.html">MO2</a>
-                </li>
-                <li>
-                    <a href="./utilities.html">Utilities</a>
-                </li>
-                <li>
-                    <a href="./bugfix.html">Bug Fixes</a>
-                </li>
-                <li>
-                    <a href="./basefinish.html">Base Finish</a>
-                </li>
-            </ul>
-            <hr>
-        </div>
-        <div class="extended-background">
-            <ul>
-                <h3 id="extended-separator">VNV Extended</h3>
-                <li>
-                    <a href="./hud.html">User Interface</a>
-                </li>
-                <li>
-                    <a href="./gameplay.html">Gameplay</a>
-                </li>
-                <li>
-                    <a href="./content.html">Content</a>
-                </li>
-                <li>
-                    <a href="./overhauls.html">Overhauls</a>
-                </li>
-                <li>
-                    <a href="./visuals.html">Visuals</a>
-                </li>
-                <li>
-                    <a href="./finish.html">Extended Finish</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <hr>
-            <ul>
-                <li>
-                    <a href="./changelog.html">Changelog</a>
-                </li>
-                <li>
-                    <a href="./resources.html" class="active">Resources</a>
-                </li>
-                <li>
-                    <a href="./faq.html">FAQ</a>
-                </li>
-                <li>
-                    <a href="./avoid-tools.html">Tools to Avoid</a>
-                </li>
-                <li>
-                    <a href="./avoid-mods.html">Mods to Avoid</a>
-                </li>
-                <li>
-                    <a href="./wabbajack.html">Wabbajack</a>
-                </li>
-            </ul>
-        </div>
+    <footer>ModdingLinked 2024</footer>
 
-        <!-- Guide Links -->
-        <div class="guideLinks">
-            <hr>
-            <ul>
-                <li>
-                    <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-                </li>
-                <li>
-                    <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Footer -->
-        <div id="footer">
-            <ul>
-                <li class="discord">
-                    <a href="https://discord.gg/S99Ary5eba" target="_blank">
-                        <i class="fab fa-discord"></i>
-                        Discord
-                    </a>
-                </li>
-                <li class="paypal">
-                    <a href="https://paypal.me/Ungeziefi" target="_blank">
-                        <i class="fa fa-paypal"></i>
-                        Donate
-                    </a>
-                </li>
-                <li class="github">
-                    <a href="https://github.com/ModdingLinked/Viva-New-Vegas" target="_blank">
-                        <i class="fab fa-github"></i>
-                        GitHub
-                    </a>
-                </li>
-            </ul>
+    <div id="image-overlay" class="overlay" hidden>
+        <div class="image-container">
+            <img id="enlarged-image" class="enlarged-image" src="" alt="Enlarged Image">
+            <div class="resize-overlay shrink"></div>
         </div>
     </div>
 
-    <!-- Content -->
-    <div class="content">
-        <div class="section">
-            <h1>General Resources</h1>
-            <p>
-                <a class="link" href="https://moddinglinked.com/dogmas.html">
-                    <h2>Modding Dogmas</h2>
-                </a>
-            </p>
-            Some dangerous dogmas about modding that you should be aware of.
-            <p>
-                <a class="link" href="https://moddinglinked.com/xedit.html">
-                    <h2>Basics of xEdit</h2>
-                </a>
-            </p>
-            An introduction to xEdit and its use.
-            <p>
-                <a class="link" href="https://moddinglinked.com/themethod.html">
-                    <h2>The Method</h2>
-                </a>
-            </p>
-            A full guide to The Method conflict resolution.
-            <hr>
-            <h1>FNV Resources</h1>
-            <p>
-                <a class="link" href="https://geckwiki.com/index.php/Main_Page">
-                    <h2>GECK Wiki</h2>
-                </a>
-            </p>
-            Community continuation of Bethesda's GECK wiki, maintained by NVSE modders; focused on GECK, scripting and game's inner workings.
-            <p>
-                <a class="link" href="https://fallout.wiki/wiki/Fallout_Wiki">
-                    <h2>Independent Fallout Wiki</h2>
-                </a>
-            </p>
-            Fan project focused on maintaining a high-quality, comprehensive and accessible encyclopedia about all aspects of the Fallout games, community and mods.
-            <p>
-                <a class="link" href="./lod.html">
-                    <h2>LOD Guide</h2>
-                </a>
-            </p>
-            General information on LOD and how to generate it with FNVLODgen.
-            <p>
-                <a class="link" href="./decompress.html">
-                    <h2>Decompression Guide</h2>
-                </a>
-            </p>
-            Guide on how to decompress all plugins in your load order for better performance and less stuttering.
-            <!--             
-            <p>
-                <a class="link" href="https://anfinitinetwork.com/fallout/moddinglinked">
-                    <h2>Proton Guide</h2>
-                </a>
-            </p>
-            A supplemental guide for modding Bethesda games on GNU/Linux.
-            -->
-        </div>
-    </div>
 </body>
 
 </html>

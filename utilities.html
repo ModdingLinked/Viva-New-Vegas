@@ -5,14 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preload" href="./css/style.css" as="style" />
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="img/Coco/Logo.webp">
     <link rel="canonical" href="https://vivanewvegas.moddinglinked.com">
-    <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
-    <script src="javascript.js"></script>
+
     <title>Utilities | Viva New Vegas</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Tale of Two Wastelands, Wabbajack, NVSE, xNVSE, 4GB, JIP, JIP LN, NVHR, Heap Replacer">
+
+    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, Fallout 4, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Tale of Two Wastelands, TTW, Wabbajack, WJ, Installer">
     <meta name="description" content="Essential stability and performance mods, required for any modded setup.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
@@ -22,505 +20,552 @@
     <meta property="og:url" content="https://vivanewvegas.moddinglinked.com">
     <meta property="og:image" content="https://vivanewvegas.moddinglinked.com/img/Others/Card.webp">
     <meta property="og:description" content="Essential stability and performance mods, required for any modded setup.">
+
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#333230">
+
+    <script src="javascript.js"></script>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigationArrows.css">
+    <link rel="stylesheet" href="css/coco.css">
+    <link rel="stylesheet" href="css/progressBar.css">
+    <link rel="stylesheet" href="css/guideColors.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/images.css">
+    <link rel="stylesheet" href="css/textIcons.css">
 </head>
 
-<body>
-
-    <!-- Titlebar -->
-    <div class="titlecontainer">
-        <div id="sideButton" onclick="toggleNav()">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <img src="./img/Coco/Logo.webp" alt="Logo">
-        <a href="./index.html">Viva New Vegas</a>
-        <div class="guideLinks">
-            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-            <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
-        </div>
+<body class="theme">
+    <div class="progress-container">
+        <div class="progress-bar"></div>
     </div>
 
-    <!-- Left Sidebar -->
-    <div id="sidenavLeft">
-        <div>
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./intro.html">Introduction</a>
-                </li>
-                <li>
-                    <a href="./setup.html">Setup</a>
-                </li>
-                <li>
-                    <a href="./mo2.html">MO2</a>
-                </li>
-                <li>
-                    <a href="./utilities.html" class="active">Utilities</a>
-                </li>
-                <li>
-                    <a href="./bugfix.html">Bug Fixes</a>
-                </li>
-                <li>
-                    <a href="./basefinish.html">Base Finish</a>
-                </li>
-            </ul>
-            <hr>
-        </div>
-        <div class="extended-background">
-            <ul>
-                <h3 id="extended-separator">VNV Extended</h3>
-                <li>
-                    <a href="./hud.html">User Interface</a>
-                </li>
-                <li>
-                    <a href="./gameplay.html">Gameplay</a>
-                </li>
-                <li>
-                    <a href="./content.html">Content</a>
-                </li>
-                <li>
-                    <a href="./overhauls.html">Overhauls</a>
-                </li>
-                <li>
-                    <a href="./visuals.html">Visuals</a>
-                </li>
-                <li>
-                    <a href="./finish.html">Extended Finish</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <hr>
-            <ul>
-                <li>
-                    <a href="./changelog.html">Changelog</a>
-                </li>
-                <li>
-                    <a href="./resources.html">Resources</a>
-                </li>
-                <li>
-                    <a href="./faq.html">FAQ</a>
-                </li>
-                <li>
-                    <a href="./avoid-tools.html">Tools to Avoid</a>
-                </li>
-                <li>
-                    <a href="./avoid-mods.html">Mods to Avoid</a>
-                </li>
-                <li>
-                    <a href="./wabbajack.html">Wabbajack</a>
-                </li>
-            </ul>
+    <div class="container">
+        <div class="header">
+            <div class="headerMenu" onclick="toggleNav()">
+                <img src="./img/UI/Navigation.svg" id="navButton">
+            </div>
+            <div class="headerTitle">
+                <img src="./img/Coco/Logo.webp" alt="Logo" id="logo">
+                <a href="./index.html" id="headerTitle">Viva New Vegas</a>
+            </div>
+            <div class="guideLinks" id="headerLinks">
+                <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+            </div>
         </div>
 
-        <!-- Guide Links -->
-        <div class="guideLinks">
-            <hr>
-            <ul>
-                <li>
-                    <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-                </li>
-                <li>
-                    <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
-                </li>
-            </ul>
-        </div>
+        <div class="sidebar left-sidebar">
+            <p class="pageLinks">
+                <a href="./index.html" title="Home">
+                    Home
+                </a>
 
-        <!-- Footer -->
-        <div id="footer">
-            <ul>
-                <li class="discord">
-                    <a href="https://discord.gg/S99Ary5eba" target="_blank">
-                        <i class="fab fa-discord"></i>
-                        Discord
-                    </a>
-                </li>
-                <li class="paypal">
-                    <a href="https://paypal.me/Ungeziefi" target="_blank">
-                        <i class="fa fa-paypal"></i>
-                        Donate
-                    </a>
-                </li>
-                <li class="github">
-                    <a href="https://github.com/ModdingLinked/Viva-New-Vegas" target="_blank">
-                        <i class="fab fa-github"></i>
-                        GitHub
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
+                <a href="./intro.html" title="Introduction">
+                    Introduction
+                </a>
 
-    <!-- Content -->
-    <div class="content">
-        <div class="section">
-            <h1>Utilities</h1>
-            <h3>In this step, we will install mods that are required by the game and other mods to function properly</h3>
-            <blockquote>
-                If you run into any issues at any point in the guide, please be sure to check the <a href="https://taleoftwowastelands.com/faq" target="_blank">FAQ</a>.
-                <br>
-                If your issue is not addressed there, join the <a href="https://discord.gg/S99Ary5eba" target="_blank">Discord</a> for support.
-            </blockquote>
+                <a href="./setup.html" title="Setup">
+                    Setup
+                </a>
 
-            <hr>
+                <a href="./mo2.html" title="MO2">
+                    Mod Organizer 2
+                </a>
 
-            <!-- EGS Patcher -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/81281" target="_blank">
-                    <h2 id="egsPatcher">Epic Games Patcher</h2>
+                <a href="./utilities.html" title="Utilities">
+                    Utilities
+                </a>
+
+                <a href="./bugfix.html" title="Bug Fixes">
+                    Bug Fixes
+                </a>
+
+                <a href="./basefinish.html" title="Base Finish">
+                    Base Finish
                 </a>
             </p>
-            <blockquote>You obviously need to skip this mod if you have the Steam or GOG version of the game.</blockquote>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li>
-                    <b>Main Files - Epic Games Patcher</b> (Manual download).
-                    <ol>
-                        <li>From the downloaded archive, extract <strong>everything</strong> to the game's <strong>Root</strong> folder.</li>
-                        <li>Double-click on <strong>Patcher.exe</strong> to run it.</li>
-                        <li>A command prompt window will open and after processing it should say <b>Press any key to continue...</b></li>
-                        <li>Close the command prompt and a file named <strong>FalloutNV_backup.exe</strong> should appear in the game's <strong>Root</strong> folder.</li>
-                    </ol>
-                </li>
-            </ul>
-            Downgrades the Epic Games EXE for xNVSE and mod support.
-
-            <!-- xNVSE -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/67883" target="_blank">
-                    <h2 id="xnvse">xNVSE (Script Extender)</h2>
+            <hr>
+            <p class="pageLinks">
+                <a href="./hud.html" title="User Interface">
+                    User Interface
+                </a>
+                <a href="./gameplay.html" title="Gameplay">
+                    Gameplay
+                </a>
+                <a href="./content.html" title="Content">
+                    Content
+                </a>
+                <a href="./overhauls.html" title="Overhauls">
+                    Overhauls
+                </a>
+                <a href="./visuals.html" title="Visuals">
+                    Visuals
+                </a>
+                <a href="./finish.html" title="Extended Finish">
+                    Extended Finish
                 </a>
             </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - New Vegas Script Extender (xNVSE)</b> (Manual download).</li>
-                <ol>
-                    <li>From the downloaded archive, extract <strong>everything</strong> to the game's <strong>Root</strong> folder.</li>
-                </ol>
-                <blockquote>Despite its name, <strong>nvse_steam_loader.dll</strong> <b>is still needed</b> with the GOG version of the game.</blockquote>
-                <blockquote>If you do not know what the <strong>Root</strong> folder is, read the <strong>Key Terminology</strong> section from the <a href="./setup.html#terms" target="_blank">Setup</a> page.</blockquote>
-                <ol start="2">
-                    <li>
-                        After proper install, your <strong>Root Folder</strong> should look like this:
-                        <br>
-                        <img src="./img/Others/Root Folder.webp" alt="Root folder with a correct xNVSE install" id="xnvseRoot">
-                    </li>
-                </ol>
-            </ul>
-            An updated version of the original NVSE, which extends the scripting capabilities of the game.
-
-            <!-- Decompressor -->
+            <hr>
             <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/65854" target="_blank">
-                    <h2 id="bsa">FNV BSA Decompressor</h2>
+                <a href="./changelog.html" title="Changelog">
+                    Changelog
+                </a>
+
+                <a href="./resources.html" title="Resources">
+                    Resources
+                </a>
+
+                <a href="./lod.html" title="LOD Guide" class="sublink">
+                    LOD Guide
+                </a>
+                
+                <a href="./decompress.html" title="Decompression Guide" class="sublink">
+                    Decompression Guide
+                </a>
+
+                <a href="./faq.html" title="FAQ">
+                    FAQ
+                </a>
+
+                <a href="./avoid-tools.html" title="Tools to Avoid">
+                    Tools to Avoid
+                </a>
+
+                <a href="./avoid-mods.html" title="Mods to Avoid">
+                    Mods to Avoid
+                </a>
+
+                <a href="./wabbajack.html" title="Wabbajack">
+                    Wabbajack
                 </a>
             </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li>
-                    <b>Main Files - FNV BSA Decompressor</b> (Manual download).
-                    <ol>
-                        <li>Extract the archive into the <strong>Downloads</strong> folder.</li>
-                        <li>From the extracted archive, run <strong>FNV BSA Decompressor.exe</strong>.</li>
-                        <li>The <strong>Fallout: New Vegas</strong> and <strong>Decompressed Archives</strong> paths should be filled by default (Root folder and Data folder respectively). If they aren't, close the program and re-run your game launcher to generate the required registry key.
-                            <blockquote>Epic Games version does not create any keys! You need to select the game folder manually!</blockquote>
+            <p class="sidebar-padder"></p>
+            <hr>
+            <p class="sidebar-bottom">
+                <a href="https://discord.gg/S99Ary5eba" title="Discord">
+                    Discord
+                </a>
+                <a href="https://paypal.me/Ungeziefi" title="Donate">
+                    Donate
+                </a>
+                <a href="https://github.com/ModdingLinked/Viva-New-Vegas" title="GitHub">
+                    GitHub
+                </a>
+            </p>
+        </div>
+
+        <div class="content">
+
+            <!-- Introduction -->
+            <div class="card-yellow center" style="display: flex; align-items: center; margin-top: 30px;">
+                <p>
+                    <img src="./img/Coco/Blockquote.webp" alt="Coco blockquote" class="cocoNerd">
+                <div>
+                    <b>IMPORTANT:</b>
+                    <br>
+                    If you run into any issues at any point in the guide, please be sure to check the <a href="https://taleoftwowastelands.com/faq" target="_blank">FAQ</a>.
+                    <br>
+                    If your issue is not addressed there, join the <a href="https://discord.gg/S99Ary5eba" target="_blank">Discord</a> for support.
+                </div>
+                </p>
+            </div>
+
+            <span id="ManualDownloads" class="section">
+                <h2 onclick="location.href='#ManualDownloads'">Manual Downloads</h2>
+
+                <div class="card">
+                    <p>
+                    <h3>Root Mods</h3>
+                    The following mods are special because they need to be installed directly into the game's <b>Root</b> folder, <strong>not through Mod Organizer 2</strong>.
+                    <br>
+                    Use the <strong>Manual Download</strong> and follow the instructions provided for each mod.
+                    <br>
+                    <br>
+                    Failing to install these mods correctly will result in issues.
+                    </p>
+                </div>
+
+                <div class="card" id="xNVSE" title="xNVSE">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/67883" target="_blank">xNVSE (Script Extender)</a></h3>
+                    An updated version of the original NVSE, which extends the scripting capabilities of the game.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - New Vegas Script Extender (xNVSE)</li>
+                        <ol>
+                            <li>From the downloaded archive, <strong>move everything</strong> to the game's <b>Root</b> folder.</li>
+                        </ol>
+                        <div class="card-yellow">
+                            <p>If you do not know what the <b>Root</b> folder is, read the <a href="./setup.html#terms" target="_blank">Key Terminology</a>.</p>
+                        </div>
+                        <div class="card-yellow">
+                            <p>Despite its name, <strong>nvse_steam_loader.dll is still needed</strong> with the non-Steam versions of the game.</p>
+                        </div>
+                        <ol start="2">
+                            <li>
+                                After proper install, your <b>Root</b> folder should look like this:
+                                <br>
+                                <div class="image-container width-40">
+                                    <img class="content-img" src="./img/Others/Root Folder.webp" alt="Root folder with a correct xNVSE install" id="xnvseRoot">
+                                    <div class="resize-overlay expand"></div>
+                                </div>
+                            </li>
+                        </ol>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="Decompressor">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/65854" target="_blank">FNV BSA Decompressor</a></h3>
+                    Decompresses the vanilla BSA files to reduce loading times and stuttering. Can also fix certain sound effects not playing.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li>
+                            <b>Main Files</b> - FNV BSA Decompressor
+                            <ol>
+                                <li>Extract the archive into the <strong>Downloads</strong> folder.</li>
+                                <li>From the extracted archive, run <strong>FNV BSA Decompressor.exe</strong>.</li>
+                                <li>The <strong>Fallout: New Vegas</strong> and <strong>Decompressed Archives</strong> paths should be filled by default (Root folder and Data folder respectively). If they aren't, close the program and re-run your game launcher to generate the required registry key.
+                                    <div class="card-yellow">
+                                        <p>
+                                            Epic Games version does not create any keys! You need to select the game folder manually!
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>Click <strong>Decompress</strong>, wait for the process the finish, then exit the program once finished.</li>
+                                <li>You can now delete files created in step 1.</li>
+                            </ol>
                         </li>
-                        <li>Click <strong>Decompress</strong>, wait for the process the finish, then exit the program once finished.</li>
-                        <li>You can now delete files created in step 1.</li>
-                    </ol>
-                </li>
-            </ul>
-            Decompresses the vanilla BSA files to reduce loading times and stuttering. Can also fix certain sound effects not playing.
+                    </ul>
+                    </p>
+                </div>
 
-            <!-- ESM -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/77170" target="_blank">
-                    <h2 id="fixedEsms">Ultimate Edition ESM Fixes</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions</h2>
-            <ul>
-                <li>
-                    <b>Main Files - Main Files - Ultimate Edition ESM Fixes</b> (Manual download).
-                    <ol>
-                        <li>Extract the archive into the <strong>Downloads</strong> folder.</li>
-                        <li>Click the <img width="24px" height="24px" src="./img/MO2/Folders.webp" alt="mo2 folder button"> button next to the profiles bar in MO2 and select <strong>Open Mods folder</strong>.</li>
-                        <li>Create an empty folder called <strong>Fixed ESMs</strong> inside of the Mods folder.</li>
-                        <li>From the extracted archive, run <strong>Installer.exe</strong>.</li>
-                        <li>The <strong>Fallout: New Vegas</strong> path should be filled by default (Root folder). If it isn't, close the program and re-run your game launcher to generate the required registry key.
-                            <blockquote>Epic Games version does not create any keys! You need to select the game folder manually!</blockquote>
+                <div class="card" id="ESMFixes" title="ESM Fixes">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/77170" target="_blank">Ultimate Edition ESM Fixes</a></h3>
+                    Optimizes and fixes thousands of records across the base game and DLC plugins to increase performance and stability.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li>
+                            <b>Main Files</b> - Ultimate Edition ESM Fixes
+                            <ol>
+                                <li>Extract the archive into the <strong>Downloads</strong> folder.</li>
+                                <li>Click the <img class="mo2-icon" src="./img/MO2/Folders.webp" alt="MO2 folder button"> button next to the profiles bar in MO2 and select <strong>Open Mods folder</strong>.</li>
+                                <li>Create an empty folder called <strong>Fixed ESMs</strong> inside of the Mods folder.</li>
+                                <li>From the extracted archive, run <strong>Installer.exe</strong>.</li>
+                                <li>The <strong>Fallout: New Vegas</strong> path should be filled by default (Root folder). If it isn't, close the program and re-run your game launcher to generate the required registry key.
+                                    <div class="card-yellow">
+                                        <p>
+                                            Epic Games version does not create any keys! You need to select the game folder manually!
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>Click <strong>Browse</strong> next to the <strong>ESM Fixes</strong> path field, then choose the <strong>Fixed ESMs</strong> folder you just created.</li>
+                                <li>Click <strong>Install</strong>, wait for the process the finish, then exit the program once finished.</li>
+                                <li>In Mod Organizer 2, press <kbd>F5</kbd> to refresh the left pane and enable the <strong>Fixed ESMs</strong> mod by ticking its checkbox.</li>
+                                <li>You can now delete files created in the step 1.</li>
+                            </ol>
                         </li>
-                        <li>Click <strong>Browse</strong> next to the <strong>ESM Fixes</strong> path field, then choose the <strong>Fixed ESMs</strong> folder you just created.</li>
-                        <li>Click <strong>Install</strong>, wait for the process the finish, then exit the program once finished.</li>
-                        <li>In Mod Organizer 2, press <kbd>F5</kbd> to refresh the left pane and enable the <strong>Fixed ESMs</strong> mod by ticking its checkbox.</li>
-                        <li>You can now delete files created in the step 1.</li>
-                    </ol>
-                </li>
-            </ul>
-            Optimizes and fixes thousands of records across the base game and DLC plugins to increase performance and stability.
+                    </ul>
+                    </p>
+                </div>
 
-            <!-- 4GB Patch -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/62552" target="_blank">
-                    <h2 id="4gbPatcher">FNV 4GB Patcher</h2>
-                </a>
-            </p>
-            <blockquote>This is required for both Steam & GOG users! The 4GB Patch included with the GOG release is obsolete as it lacks NVSE integration.
-                <br>
-                <br>
-                Epic Games Store users already have this patch thanks to the Epic Games Patcher.
-            </blockquote>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li>
-                    <b>Main Files - 4GB Patcher</b> (Manual download).
+                <div class="card" id="Patchers">
+                    <p>
+                    <h3>Game Patchers</h3>
+                    Each version of the game requires a different patcher to work with xNVSE.
+                    <br>
+                    These patchers allow the game to use up to 4GB of RAM, and automatically load xNVSE.
+                    <br>
+                    <br>
+                    Select one of the following patchers based on your game version.
+                    <div class="flex" style="flex-direction: row; align-content: center; justify-content: center;">
+                        <div class="flex" style="flex-direction: column; width: 50%; margin-right: 0.5em;">
+                            <div class="expander-top colors-gog clickable" onclick="expandCard(this, installGogExpander)" id="installGog">
+                                <div>
+                                    <p>
+                                    <h3>Steam and GOG</h3>
+                                    </p>
+                                </div>
+                                <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                            </div>
+                            <div class="expander-bottom colors-gog" id="installGogExpander">
+                                <p>
+                                <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/62552" target="_blank">4GB Patcher</a></h3>
+                                <b>Main Files</b> - 4GB Patcher</b>
+                                <ol>
+                                    <li>From the downloaded archive, <strong>move the executable</strong> file to the game's <b>Root</b> folder.</li>
+                                    <li>Double-click on <strong>FNVpatch.exe</strong> to run it.</li>
+                                    <li>
+                                        A command prompt window will open and should say:
+                                        <div class="card-basic">FalloutNV.exe patched!</div>
+                                    </li>
+                                    <li>Close the command prompt and a file named <strong>FalloutNV_backup.exe</strong> should appear in the game's <b>Root</b> folder.</li>
+                                </ol>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex" style="flex-direction: column; width: 50%; margin-left: 0.5em;">
+                            <div class="expander-top colors-epic clickable" onclick="expandCard(this, installEpicExpander)" id="installEpic">
+                                <p>
+                                <h3>Epic Games</h3>
+                                <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                                </p>
+                            </div>
+                            <div class="expander-bottom colors-epic" id="installEpicExpander">
+                                <p>
+                                <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/81281" target="_blank">Epic Games Patcher</a></h3>
+                                <b>Main Files</b> - Epic Games Patcher</b>
+                                <ol>
+                                    <li>From the downloaded archive, <strong>move everything</strong> to the game's <b>Root</b> folder.</li>
+                                    <li>Double-click on <strong>Patcher.exe</strong> to run it.</li>
+                                    <li>
+                                        A command prompt window will open and after processing it should say:
+                                        <div class="card-basic">Press any key to continue...</div>
+                                    </li>
+                                    <li>Close the command prompt and a file named <strong>FalloutNV_backup.exe</strong> should appear in the game's <b>Root</b> folder.</li>
+                                </ol>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    </p>
+                </div>
+
+                <div class="card" id="NVHR" title="NVHR">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/69779" target="_blank">New Vegas Heap Replacer</a></h3>
+                    Replaces the game's heap management system with a much faster version, which can lead to large performance gains.
+
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li>
+                            <b>Main Files</b> - NVHR</b>
+                            <ul>
+                                <li>From the downloaded archive, <strong>move everything</strong> to the game's <b>Root</b> folder.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+            </span>
+
+            <span id="MO2Downloads" class="section">
+                <h2 onclick="location.href='#MO2Downloads'">Mod Organizer Downloads</h2>
+
+                <div class="card">
+                    <p>
+                    <h3>Managed</h3>
+                    From now on, select <strong>Mod Manager Download</strong> to download mods - this will make the file appear in MO2's <b>Downloads</b> tab, ready to be installed.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <p>
+                    <h3>Creating a Separator in MO2</h3>
                     <ol>
-                        <li>From the downloaded archive, extract the <strong>.exe</strong> file to the game's <strong>Root</strong> folder.</li>
-                        <li>Double-click on <strong>FNVpatch.exe</strong> to run it.</li>
-                        <li>A command prompt window will open and should say <b>FalloutNV.exe patched!</b></li>
-                        <li>Close the command prompt and a file named <strong>FalloutNV_backup.exe</strong> should appear in the game's <strong>Root</strong> folder.</li>
+                        <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
+                        <li>Name the separator <strong>Utilities</strong>.</li>
                     </ol>
-                </li>
-            </ul>
-            Allows the game to use 4GB of RAM and makes the default executable auto-load NVSE, which is safer than using the NVSE executable.
+                    </p>
+                </div>
 
-            <!-- NVHR -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/69779" target="_blank">
-                    <h2 id="heap">New Vegas Heap Replacer</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li>
-                    <b>Main Files - NVHR</b> (Manual download).
+                <div class="card" id="JIP" title="JIP LN">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/58277" target="_blank">JIP LN NVSE Plugin</a></h3>
+                    NVSE extension with new functions and many engine bug fixes.
+                    <h3 class="install">Installation instructions</h3>
                     <ul>
-                        <li>From the downloaded archive, extract <strong>everything</strong> to the game's <strong>Root</strong> folder.</li>
+                        <li><b>Main Files</b> - JIP LN NVSE Plugin</li>
+                        <li><b>Main Files</b> - JIP LN Settings INI</li>
                     </ul>
-                </li>
-            </ul>
-            Replaces the game's heap management system with a much faster version, which can lead to large performance gains.
+                    </p>
+                </div>
 
-            <br>
-            <br>
-            <hr>
-
-            <h2>Creating a Separator in MO2</h2>
-            <ol>
-                <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
-                <li>Name the separator <strong>Utilities</strong>.</li>
-            </ol>
-
-            <!-- JIP -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/58277" target="_blank">
-                    <h2 id="jip">JIP LN NVSE Plugin</h2>
-                </a>
-            </p>
-            <blockquote>
-                This is the first mod in the guide that is installed with the <strong>Mod Manager Download</strong> button, you will need to click that button then head to the <strong>Downloads</strong> section of Mod Organizer 2 to install it. Once installed, make sure you check the box next to it in the left pane of MO2 to enable it.
-            </blockquote>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - JIP LN NVSE Plugin</b></li>
-                <blockquote>If you see a pop-up called <strong>No category found</strong>, select <strong>Disable</strong>.</blockquote>
-                <li><b>Main Files - JIP LN Settings INI</b></li>
-            </ul>
-            Adds new script functions, features and engine bug fixes.
-
-            <!-- JG -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/66927" target="_blank">
-                    <h2 id="johnny">JohnnyGuitar NVSE</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - JohnnyGuitar NVSE</b></li>
-                <li><b><a class="link" href="https://www.nexusmods.com/newvegas/mods/86200" target="_blank">JohnnyGuitar NVSE - INI Presets</a></b>
+                <div class="card" id="JohnnyGuitar">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/66927" target="_blank">JohnnyGuitar NVSE</a></h3>
+                    Another NVSE extension similar to JIP LN.
+                    <h3 class="install">Installation instructions</h3>
                     <ul>
-                        <li><b>Main Files - JohnnyGuitar NVSE - All Tweaks Preset</b></li>
+                        <li><b>Main Files</b> - JohnnyGuitar NVSE</b></li>
+                        <li>
+                            <h4><a class="link" href="https://www.nexusmods.com/newvegas/mods/86200" target="_blank">JohnnyGuitar NVSE - INI Presets</a></h4>
+                            <ul>
+                                <li><b>Main Files</b> - JohnnyGuitar NVSE - All Tweaks Preset</li>
+                            </ul>
+                        </li>
                     </ul>
-                </li>
-            </ul>
-            Adds new script functions, features and engine bug fixes.
+                    </p>
+                </div>
 
-            <!-- ShowOff -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/72541" target="_blank">
-                    <h2 id="showOff">ShowOff xNVSE Plugin</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - ShowOff NVSE</b></li>
-                <li><b>Optional Files - ShowOff INI</b></li>
-            </ul>
-            NVSE plugin adding new functions and engine-level tweaks & bugfixes.
-
-            <!-- NVTF -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/66537" target="_blank">
-                    <h2 id="nvtf">NVTF - New Vegas Tick Fix</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - NVTF</b></li>
-                <li><b><a class="link" href="https://www.nexusmods.com/newvegas/mods/81231" target="_blank">NVTF - INI Presets</a></b>
+                <div class="card" id="ShowOff" title="ShowOff">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/72541" target="_blank">ShowOff NVSE</a></h3>
+                    NVSE plugin adding new functions and engine-level tweaks & bugfixes.
+                    <h3 class="install">Installation instructions</h3>
                     <ul>
-                        <li><b>Main Files - NVTF - Viva Default Preset</b></li>
+                        <li><b>Main Files</b> - ShowOff NVSE</li>
+                        <li><b>Optional Files - ShowOff INI</b></li>
                     </ul>
-                    <blockquote style="display: flex; align-items: center;">
-                        <img src="./img/Coco/Blockquote.webp" alt="Coco blockquote" class="cocoNerd">
-                        <div>
-                            <b>IMPORTANT:</b>
-                            <br>
+                    </p>
+                </div>
+
+                <div class="card" id="NVTF" title="NVTF">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/66537" target="_blank">New Vegas Tick Fix</a></h3>
+                    Fixes micro-stuttering, performance and allows playing at higher framerates (up to a safe maximum of ~120).
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - NVTF</li>
+                        <li>
+                            <h4><a class="link" href="https://www.nexusmods.com/newvegas/mods/81231" target="_blank">NVTF - INI Presets</a></h4>
+                            <ul>
+                                <li><b>Main Files</b> - NVTF - Viva Default Preset</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="card-yellow">
+                        <p>
                             If you are planning to install texture mods, use <b>NVTF - Texture Modding Preset</b> instead!
                             <br>
                             <br>
                             <b>WARNING:</b>
                             <br>
                             Alt-Tab will not work when using the <b>Texture</b> preset - make sure to follow <b>Performance and Stability Guide</b> in the next section for a fix.
+                        </p>
+                    </div>
+                    </p>
+                </div>
+
+                <div class="card" id="kNVSE" title="kNVSE">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/71336" target="_blank">kNVSE Animation Plugin</a></h3>
+                    Resource for expanding and improving the game's limited animation system.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - kNVSE</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="UIO" title="UIO">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/57174" target="_blank">User Interface Organizer</a></h3>
+                    Automatically ensures that multiple HUD extensions work together, as well as fixing many bugs and improving performance.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - UIO - User Interface Organizer</li>
+                    </ul>
+                    <div class="card-yellow">
+                        <p>
+                            <b>Linux users!</b>
+                            <br>
+                            Proton 8.0-5 crashes with UIO! Please use Proton 8-25 or newer.
+                        </p>
+                    </div>
+                    </p>
+                </div>
+
+                <div class="card" id="ModLimitFix">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/68714" target="_blank">Mod Limit Fix</a></h3>
+                    Raises the game's file handles limit and improves performance/loading times, even if you are far below it.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - MLF</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="CrashLogger">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/82540" target="_blank">Crash Logger</a></h3>
+                    A DLL that logs raw crash data.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Crash Logger</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="ImprovedConsole">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/70801" target="_blank">Improved Console (NVSE)</a></h3>
+                    Enhances the console's abilities to be able to execute and print results from all available script commands. Full scripting support inside console, including creating variables and evaluating NVSE expressions (arrays, strings) for easy mod development and prototyping. Mouse wheel scrolling included too.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Improved Console</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="ConsolePaste">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/65906" target="_blank">Console Paste Support</a></h3>
+                    Adds Ctrl+V as a hotkey to paste into the in-game console, along with a few other helpful shortcuts.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Console Paste</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="ConsoleAutocomplete">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/82098" target="_blank">Basic Console Autocomplete</a></h3>
+                    Adds autocomplete and reverse searching to the game console.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Basic Console Autocomplete</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="KEYWORDS" title="KEYWORDS">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/83088" target="_blank">KEYWORDS</a></h3>
+                    Implements an ESPless framework to create, and automatically load keywords in a simple user-friendly way, via use of ini config files.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - KEYWORDS</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="ShaderLoader">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/87814" target="_blank">Shader Loader - NVSE</a></h3>
+                    Allows loading shaders from loose files.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Shader Loader - NVSE</li>
+                    </ul>
+                    </p>
+                </div>
+            </span>
+
+            <span id="GameConfiguration" class="section">
+                <h2 onclick="location.href='#GameConfiguration'">Game Configuration</h2>
+                <div class="card" id="CustomINI" title="Custom INI">
+                    <p>
+                    <h3>Custom INI</h3>
+                    In this step we will take advantage of JIP LN NVSE's FalloutCustom.ini feature to improve performance and stability without affecting the main INIs.
+                    <ol>
+                        <li>Click the <img class="mo2-icon" src="./img/MO2/INI Editor.webp" alt="MO2 INI button"> button at the top of MO2 and select <strong>INI Editor</strong>.</li>
+                        <li>Select the <strong>FalloutCustom.ini</strong> tab, which should be blank. In case it's not, clear the file.</li>
+                        <div class="card-yellow">
+                            <p>
+                                If you don't see the <b>FalloutCustom.ini</b> tab, then you have not enabled <strong>profile-specific Game INI Files</strong> in <b>Profile settings</b> during <a href="./mo2.html#configuration">MO2's configuration</a>.
+                            </p>
                         </div>
-                    </blockquote>
-                </li>
-            </ul>
-
-            Fixes micro-stuttering, performance and allows playing at higher framerates (up to a safe maximum of 120).
-
-            <!-- kNVSE -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/71336" target="_blank">
-                    <h2 id="kNvse">kNVSE Animation Plugin</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - kNVSE</b></li>
-            </ul>
-            Resource for expanding and improving the game's limited animation system.
-
-            <!-- UIO -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/57174" target="_blank">
-                    <h2 id="uio">UIO - User Interface Organizer</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - UIO - User Interface Organizer</b></li>
-            </ul>
-            Automatically ensures that multiple HUD extensions work together, as well as fixing many bugs and improving performance.
-            <blockquote>
-                <b>Linux users!</b>
-                <br>
-                Proton 8.0-5 crashes with UIO! Please use Proton 8-25 or newer.
-            </blockquote>
-
-            <!-- MLF -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/68714" target="_blank">
-                    <h2 id="limitFix">FNV Mod Limit Fix</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - MLF</b></li>
-            </ul>
-            Raises the game's file handles limit and improves performance/loading times, even if you are far below it.
-
-            <!-- Crash Logger -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/82540" target="_blank">
-                    <h2 id="crashLog">Yvile's Crash Logger</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Crash Logger</b></li>
-            </ul>
-            A DLL that logs raw crash data.
-
-            <!-- Improved Console -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/70801" target="_blank">
-                    <h2 id="improvedConsole">Improved Console (NVSE) </h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Improved Console</b></li>
-            </ul>
-            Enhances the console's abilities to be able to execute and print results from all available script commands. Full scripting support inside console, including creating variables and evaluating NVSE expressions (arrays, strings) for easy mod development and prototyping. Mouse wheel scrolling included too.
-
-            <!-- Console Paste -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/65906" target="_blank">
-                    <h2 id="consolePaste">Console Paste Support</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Console Paste</b></li>
-            </ul>
-            Adds Ctrl+V as a hotkey to paste into the in-game console, along with a few other helpful shortcuts.
-
-            <!-- Console Autocomplete -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/82098" target="_blank">
-                    <h2 id="consoleComplete">Basic Console Autocomplete</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Basic Console Autocomplete</b></li>
-            </ul>
-            Adds autocomplete and reverse searching to the game console.
-
-            <!-- KEYWORDS -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/83088" target="_blank">
-                    <h2 id="keywords">KEYWORDS</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - KEYWORDS</b></li>
-            </ul>
-            Implements an ESPless framework to create, and automatically load keywords in a simple user-friendly way, via use of ini config files.
-
-            <!-- Shader Loader -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/87814" target="_blank">
-                    <h2 id="shaderLoader">Shader Loader - NVSE</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Shader Loader - NVSE</b></li>
-            </ul>
-            Allows loading shaders from loose files.
-
-            <!-- Custom INI -->
-            <p>
-                <a href="#customIni">
-                    <h2 id="customIni">Custom INI</h2>
-                </a>
-            </p>
-            In this step we will take advantage of JIP LN NVSE's FalloutCustom.ini feature to improve performance and stability without affecting the main INIs.
-            <ol>
-                <li>Click the <img src="./img/MO2/INI Editor.webp" alt="MO2 INI button"> button at the top of MO2 and select <strong>INI Editor</strong>.</li>
-                <li>Select the <strong>FalloutCustom.ini</strong> tab, which should be blank.</li>
-                <ul>
-                    <li>Make sure you are in the <strong>FalloutCustom.ini</strong> tab and <b>NOT</b> the <strong>Custom.ini</strong> tab.</li>
-                    <blockquote>
-                        If you don't see the <strong>FalloutCustom.ini</strong> tab, then you have not enabled <strong>profile-specific Game INI Files</strong> in <b>Profile settings</b> during <a href="./mo2.html#configuration">MO2 configuration</a>.
-                    </blockquote>
-                </ul>
-                <li>Paste in the following:</li>
-                <textarea readonly="readonly" style="height: 51.5em; width: 95%;" onclick="this.focus();this.select()">
+                        <li>Paste in the following:</li>
+                        <textarea readonly="readonly" style="height: 51.5em; width: 95%;" onclick="this.focus();this.select()">
 ; Value types (prefixes):
 ; i = integer (whole number)
 ; f = float (decimal number)
@@ -595,107 +640,87 @@ b30GrassVS=1
 
 [PipBoy]
 ; Fixes flicker when opening Pip-Boy when its light is on
-fLightEffectFadeDuration=400</textarea>
-            </ol>
-            <blockquote>
-                It is highly recommended to avoid changing any other INI settings not in the guide and to avoid using tools like BethINI.
-                <br>
-                You will realistically not need any other tweaks than the ones already in the guide.
-            </blockquote>
+fLightEffectFadeDuration=400
+        </textarea>
+                    </ol>
+                    <div class="card-yellow">
+                        <p>
+                            It is highly recommended to <strong>avoid changing any other INI settings</strong> not in the guide, and to avoid using tools like BethINI.
+                            You will realistically not need any other tweaks than the ones already in the guide.
+                        </p>
+                    </div>
+                    </p>
+                </div>
 
-            <!-- Testing -->
-            <p>
-                <a href="#testing">
-                    <h2 id="testing">Testing Utilities</h2>
+                <div class="card" id="TestingUtilities">
+                    <p>
+                    <h3>Testing Utilities</h3>
+                    <ol>
+                        <li>Restart your PC (otherwise some plugins might fail to load).</li>
+                        <li>Install the <a href="https://www.nexusmods.com/newvegas/mods/79358" target="_blank">ML Utilities Checker</a> with Mod Organizer 2, just like the previous mods.</li>
+                        <li>Launch the game using the <strong>New Vegas</strong> option in MO2 (<strong>not NVSE</strong>).</li>
+                        <div class="image-container">
+                            <img class="content-img" src="./img/Others/Start Game.webp" alt="Launching the game">
+                            <div class="resize-overlay expand"></div>
+                        </div>
+                        <li>If you see a black console window appear, it means <a href="./utilities.html#heap">NVHR</a> is working.</li>
+                        <li>
+                            Once the game has reached the main menu, wait a few seconds and you will see a message box from the Utilities Checker.
+                            <br>
+                            If any check fails and the comment doesn't help you find a solution, open a support thread in the <a href="https://discord.gg/S99Ary5eba" target="_blank">ModdingLinked Discord server</a>.
+                        </li>
+                        <li>Close the game and <strong>disable the ML Utilities Checker</strong>.</li>
+                    </ol>
+                    </p>
+                </div>
+
+                <div class="card" id="PerformanceGuide">
+                    <p>
+                    <h3 class="link-page"><a href="https://performance.moddinglinked.com/falloutnv.html" target="_blank">Performance Guide</a></h3>
+                    In-depth guide on how to fix the game's lackluster performance, display issues and <strong>alt-tabbing</strong>. Covers topics such as DXVK, framerate limiting, display modes, lag and HDR.
+                    <div class="card-red" style="display: flex; align-items: center;">
+                        <p>
+                            <img src="./img/Coco/Blockquote.webp" alt="Coco blockquote" class="cocoNerd">
+                        <div>
+                            <b>IMPORTANT REMINDER TO AMD USERS:</b>
+                            <br>
+                            Make sure you have the latest drivers! Drivers between 24.1.1 and 24.5.1 will crash the game unless you use DXVK!
+                        </div>
+                        </p>
+                    </div>
+                    </p>
+                </div>
+            </span>
+
+            <!-- Arrows -->
+            <div class="navigationArrowContainer">
+                <a href="#" id="previous" rel="prev" class="navigationArrow">
+                    <img class="mirror" src="./img/UI/Arrow.svg" alt="Back Arrow">
+                    <span class="arrowText"></span>
                 </a>
+
+                <a href="#" id="next" rel="next" class="navigationArrow">
+                    <span class="arrowText"></span>
+                    <img src="./img/UI/Arrow.svg" alt="Forward Arrow">
+                </a>
+            </div>
+        </div>
+
+        <div class="sidebar right-sidebar">
+            <p id="sidebarContent">
             </p>
-            <ol>
-                <li>Restart your PC (otherwise some plugins might fail to load).</li>
-                <li>Install the <a href="https://www.nexusmods.com/newvegas/mods/79358" target="_blank">ML Utilities Checker</a> with Mod Organizer 2, just like the previous mods.</li>
-                <li>Launch the game using the <strong>New Vegas</strong> option in MO2 (not the <strong>NVSE</strong> option).</li>
-                <img src="./img/Others/Start Game.webp" alt="Run New Vegas through MO2" class="width-very-limited">
-                <li>If you see a black console window appear, it means <a href="./utilities.html#heap">NVHR</a> is working.</li>
-                <li>Once the game has reached the main menu, wait a few seconds and you will see a message box from the Utilities Checker. If any check fails and the comment doesn't help you find a solution, open a support thread in the <a href="https://discord.gg/S99Ary5eba" target="_blank">ModdingLinked Discord server</a>.</li>
-                <li>Close the game and <strong>disable the ML Utilities Checker</strong>.</li>
-            </ol>
-        </div>
-
-        <!-- Arrows -->
-        <div>
-            <hr>
-            <a href="./mo2.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/Others/Arrow.webp" alt="Back Arrow"><span class="arrowText left">Mod Organizer 2</span></a>
-            <a href="./bugfix.html" id="next" rel="next" class="navigationArrow"><img class="right" src="./img/Others/Arrow.webp" alt="Forward Arrow"><span class="arrowText right">Bug Fixes</span></a>
         </div>
     </div>
 
-    <!-- Right Sidebar -->
-    <div id="sidenavRight">
-        <ul>
-            <li>
-                <a href="#egsPatcher">EGS Patcher</a>
-            </li>
-            <li>
-                <a href="#xnvse">xNVSE</a>
-            </li>
-            <li>
-                <a href="#bsa">Decompressor</a>
-            </li>
-            <li>
-                <a href="#fixedEsms">ESM Fixes</a>
-            </li>
-            <li>
-                <a href="#4gbPatcher">4GB Patcher</a>
-            </li>
-            <li>
-                <a href="#heap">Heap Replacer</a>
-            </li>
-            <li>
-                <a href="#jip">JIP</a>
-            </li>
-            <li>
-                <a href="#johnny">JohnnyGuitar</a>
-            </li>
-            <li>
-                <a href="#showOff">ShowOff</a>
-            </li>
-            <li>
-                <a href="#nvtf">NVTF</a>
-            </li>
-            <li>
-                <a href="#kNvse">kNVSE</a>
-            </li>
-            <li>
-                <a href="#uio">UIO</a>
-            </li>
-            <li>
-                <a href="#limitFix">Mod Limit Fix</a>
-            </li>
-            <li>
-                <a href="#crashLog">Crash Logger</a>
-            </li>
-            <li>
-                <a href="#improvedConsole">Improved Console</a>
-            </li>
-            <li>
-                <a href="#consolePaste">Console Paste</a>
-            </li>
-            <li>
-                <a href="#consoleComplete">Console Autocomplete</a>
-            </li>
-            <li>
-                <a href="#keywords">KEYWORDS</a>
-            </li>
-            <li>
-                <a href="#shaderLoader">Shader Loader</a>
-            </li>
-            <li>
-                <a href="#customIni">Custom INI</a>
-            </li>
-            <li>
-                <a href="#testing">Testing</a>
-            </li>
-        </ul>
+    <footer>ModdingLinked 2024</footer>
+
+    <div id="image-overlay" class="overlay" hidden>
+        <div class="image-container">
+            <img id="enlarged-image" class="enlarged-image" src="" alt="Enlarged Image">
+            <div class="resize-overlay shrink"></div>
+        </div>
     </div>
+
 </body>
 
 </html>

@@ -5,15 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preload" href="./css/style.css" as="style" />
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="img/Coco/LogoEx.webp">
+    <link rel="icon" href="img/Coco/Logo.webp">
     <link rel="canonical" href="https://vivanewvegas.moddinglinked.com">
-    <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
-    <script src="javascript.js"></script>
+
     <title>Overhauls | Viva New Vegas</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Tale of Two Wastelands, Wabbajack">
-    <meta name="description" content="Drastic gameplay overhauls that make the game much more difficult and exciting, recommended only for veteran players.">
+
+    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, Fallout 4, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Tale of Two Wastelands, TTW, Wabbajack, WJ, Installer">
+    <meta name="description" content="Overhauled balance and game mechanics.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
     <meta property="og:site_name" content="ModdingLinked">
@@ -21,250 +19,262 @@
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://vivanewvegas.moddinglinked.com">
     <meta property="og:image" content="https://vivanewvegas.moddinglinked.com/img/Others/Card.webp">
-    <meta property="og:description" content="Drastic gameplay overhauls that make the game much more difficult and exciting, recommended only for veteran players.">
+    <meta property="og:description" content="Overhauled balance and game mechanics.">
+
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#333230">
+
+    <script src="javascript.js"></script>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigationArrows.css">
+    <link rel="stylesheet" href="css/coco.css">
+    <link rel="stylesheet" href="css/progressBar.css">
+    <link rel="stylesheet" href="css/guideColors.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/images.css">
+    <link rel="stylesheet" href="css/textIcons.css">
 </head>
 
-<body>
-
-    <!-- Titlebar -->
-    <div class="titlecontainer">
-        <div id="sideButton" onclick="toggleNav()">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <img src="./img/Coco/LogoEx.webp" alt="Logo">
-        <a href="./index.html">Viva New Vegas - Extended</a>
-        <div class="guideLinks">
-            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-            <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
-        </div>
+<body class="theme">
+    <div class="progress-container">
+        <div class="progress-bar"></div>
     </div>
 
-    <!-- Left Sidebar -->
-    <div id="sidenavLeft">
-        <div>
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./intro.html">Introduction</a>
-                </li>
-                <li>
-                    <a href="./setup.html">Setup</a>
-                </li>
-                <li>
-                    <a href="./mo2.html">MO2</a>
-                </li>
-                <li>
-                    <a href="./utilities.html">Utilities</a>
-                </li>
-                <li>
-                    <a href="./bugfix.html">Bug Fixes</a>
-                </li>
-                <li>
-                    <a href="./basefinish.html">Base Finish</a>
-                </li>
-            </ul>
-            <hr>
-        </div>
-        <div class="extended-background active">
-            <ul>
-                <h3 id="extended-separator" class="active">VNV Extended</h3>
-                <li>
-                    <a href="./hud.html">User Interface</a>
-                </li>
-                <li>
-                    <a href="./gameplay.html">Gameplay</a>
-                </li>
-                <li>
-                    <a href="./content.html">Content</a>
-                </li>
-                <li>
-                    <a href="./overhauls.html" class="active">Overhauls</a>
-                </li>
-                <li>
-                    <a href="./visuals.html">Visuals</a>
-                </li>
-                <li>
-                    <a href="./finish.html">Extended Finish</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <hr>
-            <ul>
-                <li>
-                    <a href="./changelog.html">Changelog</a>
-                </li>
-                <li>
-                    <a href="./resources.html">Resources</a>
-                </li>
-                <li>
-                    <a href="./faq.html">FAQ</a>
-                </li>
-                <li>
-                    <a href="./avoid-tools.html">Tools to Avoid</a>
-                </li>
-                <li>
-                    <a href="./avoid-mods.html">Mods to Avoid</a>
-                </li>
-                <li>
-                    <a href="./wabbajack.html">Wabbajack</a>
-                </li>
-            </ul>
+    <div class="container">
+        <div class="header">
+            <div class="headerMenu" onclick="toggleNav()">
+                <img src="./img/UI/Navigation.svg" id="navButton">
+            </div>
+            <div class="headerTitle">
+                <img src="./img/Coco/Logo.webp" alt="Logo" id="logo">
+                <a href="./index.html" id="headerTitle">Viva New Vegas</a>
+            </div>
+            <div class="guideLinks" id="headerLinks">
+                <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+            </div>
         </div>
 
-        <!-- Guide Links -->
-        <div class="guideLinks">
-            <hr>
-            <ul>
-                <li>
-                    <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-                </li>
-                <li>
-                    <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
-                </li>
-            </ul>
-        </div>
+        <div class="sidebar left-sidebar">
+            <p class="pageLinks">
+                <a href="./index.html" title="Home">
+                    Home
+                </a>
 
-        <!-- Footer -->
-        <div id="footer">
-            <ul>
-                <li class="discord">
-                    <a href="https://discord.gg/S99Ary5eba" target="_blank">
-                        <i class="fab fa-discord"></i>
-                        Discord
-                    </a>
-                </li>
-                <li class="paypal">
-                    <a href="https://paypal.me/Ungeziefi" target="_blank">
-                        <i class="fa fa-paypal"></i>
-                        Donate
-                    </a>
-                </li>
-                <li class="github">
-                    <a href="https://github.com/ModdingLinked/Viva-New-Vegas" target="_blank">
-                        <i class="fab fa-github"></i>
-                        GitHub
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
+                <a href="./intro.html" title="Introduction">
+                    Introduction
+                </a>
 
-    <!-- Content -->
-    <div class="content">
-        <div class="section">
-            <h1>Overhauls</h1>
-            <h3>In this step, we will install mods that completely rebalance game mechanics and its difficulty</h3>
-            <blockquote>As with the previous page, it is especially important to read the descriptions of these mods.</blockquote>
+                <a href="./setup.html" title="Setup">
+                    Setup
+                </a>
 
-            <hr>
+                <a href="./mo2.html" title="MO2">
+                    Mod Organizer 2
+                </a>
 
-            <h2>Creating a Separator in MO2</h2>
-            <ol>
-                <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
-                <li>Name the separator <strong>Overhauls</strong>.</li>
-            </ol>
+                <a href="./utilities.html" title="Utilities">
+                    Utilities
+                </a>
 
-            <!-- Vanilla Enhancements -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/78877" target="_blank">
-                    <h2 id="enhancementsMerged">Essential Vanilla Enhancements Merged</h2>
+                <a href="./bugfix.html" title="Bug Fixes">
+                    Bug Fixes
+                </a>
+
+                <a href="./basefinish.html" title="Base Finish">
+                    Base Finish
                 </a>
             </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Vanilla Enhancements Merged</b></li>
-                <li>
-                    <b><a href="https://www.nexusmods.com/newvegas/mods/77945" target="_blank">Vish's Patch Hub</a></b>
+            <hr>
+            <p class="pageLinks">
+                <a href="./hud.html" title="User Interface">
+                    User Interface
+                </a>
+                <a href="./gameplay.html" title="Gameplay">
+                    Gameplay
+                </a>
+                <a href="./content.html" title="Content">
+                    Content
+                </a>
+                <a href="./overhauls.html" title="Overhauls">
+                    Overhauls
+                </a>
+                <a href="./visuals.html" title="Visuals">
+                    Visuals
+                </a>
+                <a href="./finish.html" title="Extended Finish">
+                    Extended Finish
+                </a>
+            </p>
+            <hr>
+            <p>
+                <a href="./changelog.html" title="Changelog">
+                    Changelog
+                </a>
+
+                <a href="./resources.html" title="Resources">
+                    Resources
+                </a>
+
+                <a href="./lod.html" title="LOD Guide" class="sublink">
+                    LOD Guide
+                </a>
+                
+                <a href="./decompress.html" title="Decompression Guide" class="sublink">
+                    Decompression Guide
+                </a>
+
+                <a href="./faq.html" title="FAQ">
+                    FAQ
+                </a>
+
+                <a href="./avoid-tools.html" title="Tools to Avoid">
+                    Tools to Avoid
+                </a>
+
+                <a href="./avoid-mods.html" title="Mods to Avoid">
+                    Mods to Avoid
+                </a>
+
+                <a href="./wabbajack.html" title="Wabbajack">
+                    Wabbajack
+                </a>
+            </p>
+            <p class="sidebar-padder"></p>
+            <hr>
+            <p class="sidebar-bottom">
+                <a href="https://discord.gg/S99Ary5eba" title="Discord">
+                    Discord
+                </a>
+                <a href="https://paypal.me/Ungeziefi" title="Donate">
+                    Donate
+                </a>
+                <a href="https://github.com/ModdingLinked/Viva-New-Vegas" title="GitHub">
+                    GitHub
+                </a>
+            </p>
+        </div>
+
+        <div class="content">
+
+            <span id="Overhauls" class="section">
+                <h2 onclick="location.href='#Overhauls'">Overhauls</h2>
+
+                <div class="card">
+                    <p>
+                    <h3>Creating a Separator in MO2</h3>
+                    <ol>
+                        <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
+                        <li>Name the separator <strong>Overhauls</strong>.</li>
+                    </ol>
+                    </p>
+                </div>
+
+                <div class="card" id="EVEM" title="EVEM">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/78877" target="_blank">Essential Vanilla Enhancements Merged</a></h3>
+                    Compilation of many smaller gameplay-related mods, all updated, fixed and optimized to work together.
+                    <h3 class="install">Installation instructions</h3>
                     <ul>
-                        <li><b>Main Files - EVEM - YUP Patch</b></li>
-                        <li><b>Main Files - EVEM - Uncut Extra Collection Patch</b> (use this if you installed <b>ONLY</b> <a href="./content.html#uncut" target="_blank">Uncut Wasteland - VNV Edit</a>)</li>
-                        <li><b>Main Files - EVEM - FPGE Patch</b> (use this if you installed <b>ONLY</b> <a href="./content.html#fpge" target="_blank">Functional Post Game Ending</a>)</li>
-                        <li><b>Main Files - EVEM - Uncut Extra Collection - FPGE Patch</b> (use this if you installed <a href="./content.html#uncut" target="_blank">Uncut Wasteland - VNV Edit</a> <b>AND</b> <a href="./content.html#fpge" target="_blank">Functional Post Game Ending</a>)</li>
+                        <li><b>Main Files</b> - Vanilla Enhancements Merged</li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/77945" target="_blank">Vish's Patch Hub</a></li>
+                        <ul>
+                            <li><b>Main Files</b> - EVEM - YUP Patch</li>
+                            <li><b>Main Files</b> - EVEM - Uncut Extra Collection Patch (use this if you installed <b>ONLY</b> <a href="./content.html#UncutWasteland">Uncut Wasteland - VNV Edit</a>)</li>
+                            <li><b>Main Files</b> - EVEM - FPGE Patch (use this if you installed <b>ONLY</b> <a href="./content.html#FPGE">Functional Post Game Ending</a>)</li>
+                            <li><b>Main Files</b> - EVEM - Uncut Extra Collection - FPGE Patch (use this if you installed both <a href="./content.html#UncutWasteland">Uncut Wasteland - VNV Edit</a> <b>AND</b> <a href="./content.html#FPGE">Functional Post Game Ending)</a></li>
+                        </ul>
                     </ul>
-                </li>
-            </ul>
-            Compilation of many smaller gameplay-related mods, all updated, fixed and optimized to work together.
+                    </p>
+                </div>
 
-            <!-- Lone Star -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/87935" target="_blank">
-                    <h2 id="loneStar">Lone Star</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Lone Star</b></li>
-                <ul>
-                    <li>You will be prompted with a FOMOD installer:
-                        <ol>
-                            <li>Yes</li>
-                            <li>Install</li>
-                        </ol>
-                    </li>
-                </ul>
-            </ul>
-            A fixed, compatible, and slightly improved version of the JSawyer. Among the large number of (configurable) changes, here are the highlights:
-            <ul>
-                <li>Lower starting Health and Carry Weight.</li>
-                <li>Less loot.</li>
-                <li>Healing is harder.</li>
-                <li>Lackluster equipment is more viable.</li>
-                <li>Minor balance tweaks to perks in order to make them more interesting and fun to play.</li>
-            </ul>
+                <div class="card" id="LoneStar" title="Lone Star">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/87935" target="_blank">Lone Star</a></h3>
+                    A fixed, compatible, and slightly improved version of the JSawyer. Among the large number of (configurable) changes, here are the highlights:
+                    <ul>
+                        <li>Lower starting Health and Carry Weight.</li>
+                        <li>Less loot.</li>
+                        <li>Healing is harder.</li>
+                        <li>Lackluster equipment is more viable.</li>
+                        <li>Minor balance tweaks to perks in order to make them more interesting and fun to play.</li>
+                    </ul>
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li>
+                            <b>Main Files</b> - Lone Star
+                            <ul>
+                                <li>You will be prompted with a FOMOD installer:
+                                    <ol>
+                                        <li>Yes (requires <a href="./content.html#UncutWasteland" target="_blank">Uncut Wasteland - VNV Edit</a>, <a href="./content.html#DLCEnhancements" target="_blank">Essential DLC Enhancements</a>, and <a href="./overhauls.html/EVEM" target="_blank">Vanilla Enhancements Merged</a>)</li>
+                                        <div class="card-yellow">
+                                            <p>
+                                                If you skipped any of the 3 mods required by the VNV Patch, click <b>No</b> then select the patches based on what you have. If you want to use the <b>Viva New Vegas Config</b>, do not install the patch for The Living Desert.
+                                            </p>
+                                        </div>
+                                        <li>Install</li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </p>
+                </div>
 
-            <!-- Traps Tweaks -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/78916" target="_blank">
-                    <h2 id="trapTweaks">Traps Tweaks - Traps Use Other Skills</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Traps Tweaks NV</b></li>
-            </ul>
-            Makes explosive traps use explosives, survival, or science skills instead of repair, which is already super useful.
+                <div class="card" id="TrapTweaks" title="Trap Tweaks">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/78916" target="_blank">Traps Tweaks - Traps Use Other Skills</a></h3>
+                    Makes explosive traps use explosives, survival, or science skills instead of repair, which is already super useful.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Trap Tweaks NV</li>
+                    </ul>
+                    </p>
+                </div>
 
-            <!-- Harder Barter -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/80360" target="_blank">
-                    <h2 id="harderBarter">Harder Barter Faster Stronger</h2>
+                <div class="card" id="HarderBarter" title="Harder Barter">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/80360" target="_blank">Harder Barter Faster Stronger</a></h3>
+                    Makes the economy harsher for characters with low barter, makes barter affect prices more and slightly narrows the difference between max sell and min buy prices.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Harder Barter Faster Stronger</li>
+                    </ul>
+                    </p>
+                </div>
+            </span>
+
+            <!-- Arrows -->
+            <div class="navigationArrowContainer">
+                <a href="#" id="previous" rel="prev" class="navigationArrow">
+                    <img class="mirror" src="./img/UI/Arrow.svg" alt="Back Arrow">
+                    <span class="arrowText"></span>
                 </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Harder Barter Faster Stronger</b></li>
-            </ul>
-            Makes the economy harsher for characters with low barter, makes barter affect prices more and slightly narrows the difference between max sell and min buy prices.
+
+                <a href="#" id="next" rel="next" class="navigationArrow">
+                    <span class="arrowText"></span>
+                    <img src="./img/UI/Arrow.svg" alt="Forward Arrow">
+                </a>
+            </div>
         </div>
 
-        <!-- Arrows -->
-        <div>
-            <hr>
-            <a href="./content.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/Others/Arrow.webp" alt="Back Arrow"><span class="arrowText left">Content</span></a>
-            <a href="./visuals.html" id="next" rel="next" class="navigationArrow"><img class="right" src="./img/Others/Arrow.webp" alt="Forward Arrow"><span class="arrowText right">Visuals</span></a>
+        <div class="sidebar right-sidebar">
+            <p id="sidebarContent">
+            </p>
         </div>
     </div>
 
-    <!-- Right Sidebar -->
-    <div id="sidenavRight">
-        <ul>
-            <li>
-                <a href="#enhancementsMerged">Vanilla Enhancements</a>
-            </li>
-            <li>
-                <a href="#loneStar">Lone Star</a>
-            </li>
-            <li>
-                <a href="#trapTweaks">Traps Tweaks</a>
-            </li>
-            <li>
-                <a href="#harderBarter">Harder Barter</a>
-            </li>
-        </ul>
+    <footer>ModdingLinked 2024</footer>
+
+    <div id="image-overlay" class="overlay" hidden>
+        <div class="image-container">
+            <img id="enlarged-image" class="enlarged-image" src="" alt="Enlarged Image">
+            <div class="resize-overlay shrink"></div>
+        </div>
     </div>
+
 </body>
 
 </html>

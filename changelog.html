@@ -5,14 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preload" href="./css/style.css" as="style" />
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="img/Coco/Logo.webp">
     <link rel="canonical" href="https://vivanewvegas.moddinglinked.com">
-    <script src="https://kit.fontawesome.com/e15125fcf7.js" crossorigin="anonymous"></script>
-    <script src="javascript.js"></script>
+
     <title>Changelog | Viva New Vegas</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Tale of Two Wastelands, Wabbajack">
+
+    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, Fallout 4, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Tale of Two Wastelands, TTW, Wabbajack, WJ, Installer">
     <meta name="description" content="Catalog of all changes made to the guide.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
@@ -22,2202 +20,2321 @@
     <meta property="og:url" content="https://vivanewvegas.moddinglinked.com">
     <meta property="og:image" content="https://vivanewvegas.moddinglinked.com/img/Others/Card.webp">
     <meta property="og:description" content="Catalog of all changes made to the guide.">
+
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#333230">
+
+    <script src="javascript.js"></script>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigationArrows.css">
+    <link rel="stylesheet" href="css/progressBar.css">
+    <link rel="stylesheet" href="css/guideColors.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/images.css">
 </head>
 
-<body>
+<body class="theme">
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+    </div>
 
-    <!-- Titlebar -->
-    <div class="titlecontainer">
-        <div id="sideButton" onclick="toggleNav()">
-            <i class="fa-solid fa-bars"></i>
+    <div class="container">
+        <div class="header">
+            <div class="headerMenu" onclick="toggleNav()">
+                <img src="./img/UI/Navigation.svg" id="navButton">
+            </div>
+            <div class="headerTitle">
+                <img src="./img/Coco/Logo.webp" alt="Logo" id="logo">
+                <a href="./index.html" id="headerTitle">Viva New Vegas</a>
+            </div>
+            <div class="guideLinks" id="headerLinks">
+                <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+            </div>
         </div>
-        <img src="./img/Coco/Logo.webp" alt="Logo">
-        <a href="./index.html">Viva New Vegas</a>
-        <div class="guideLinks">
-            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-            <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+        <div class="sidebar left-sidebar">
+            <p class="pageLinks">
+                <a href="./index.html" title="Home">
+                    Home
+                </a>
+
+                <a href="./intro.html" title="Introduction">
+                    Introduction
+                </a>
+
+                <a href="./setup.html" title="Setup">
+                    Setup
+                </a>
+
+                <a href="./mo2.html" title="MO2">
+                    Mod Organizer 2
+                </a>
+
+                <a href="./utilities.html" title="Utilities">
+                    Utilities
+                </a>
+
+                <a href="./bugfix.html" title="Bug Fixes">
+                    Bug Fixes
+                </a>
+
+                <a href="./basefinish.html" title="Base Finish">
+                    Base Finish
+                </a>
+            </p>
+            <hr>
+            <p class="pageLinks">
+                <a href="./hud.html" title="User Interface">
+                    User Interface
+                </a>
+                <a href="./gameplay.html" title="Gameplay">
+                    Gameplay
+                </a>
+                <a href="./content.html" title="Content">
+                    Content
+                </a>
+                <a href="./overhauls.html" title="Overhauls">
+                    Overhauls
+                </a>
+                <a href="./visuals.html" title="Visuals">
+                    Visuals
+                </a>
+                <a href="./finish.html" title="Extended Finish">
+                    Extended Finish
+                </a>
+            </p>
+            <hr>
+            <p>
+                <a href="./changelog.html" title="Changelog">
+                    Changelog
+                </a>
+
+                <a href="./resources.html" title="Resources">
+                    Resources
+                </a>
+
+                <a href="./lod.html" title="LOD Guide" class="sublink">
+                    LOD Guide
+                </a>
+
+                <a href="./decompress.html" title="Decompression Guide" class="sublink">
+                    Decompression Guide
+                </a>
+
+                <a href="./faq.html" title="FAQ">
+                    FAQ
+                </a>
+
+                <a href="./avoid-tools.html" title="Tools to Avoid">
+                    Tools to Avoid
+                </a>
+
+                <a href="./avoid-mods.html" title="Mods to Avoid">
+                    Mods to Avoid
+                </a>
+
+                <a href="./wabbajack.html" title="Wabbajack">
+                    Wabbajack
+                </a>
+            </p>
+            <p class="sidebar-padder"></p>
+            <hr>
+            <p class="sidebar-bottom">
+                <a href="https://discord.gg/S99Ary5eba" title="Discord">
+                    Discord
+                </a>
+                <a href="https://paypal.me/Ungeziefi" title="Donate">
+                    Donate
+                </a>
+                <a href="https://github.com/ModdingLinked/Viva-New-Vegas" title="GitHub">
+                    GitHub
+                </a>
+            </p>
+        </div>
+
+        <div class="content">
+
+            <!-- Introduction -->
+            <span id="Changelog" class="section">
+                <h2 onclick="location.href='#Changelog'">Changelog (DD/MM/YY)</h2>
+
+                <div class="expander-top clickable" onclick="expandCard(this, year2024expander)" id="year2024">
+                    <p>
+                    <h3>2024</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="year2024expander">
+                    <p>
+                    <h2 class="install">17/8/24</h2>
+                    <h3>Safe Mid-game</h3>
+                    <h2><strong>Whole Guide</strong></h2>
+                    <ul>
+                        <li>Improved styling and rewrote a large number of instructions to be clearer.</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added Gas Trap Performance Fix.</li>
+                    </ul>
+                    <h2><strong>LOD Guide</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Muck Pool LOD Kit</li>
+                                <li>Sidewalk LOD Kit</li>
+                            </ul>
+                        </li>
+                        <li>Updated pre-generated LOD and the VNV LOD plugin to reflect the changes above.</li>
+                    </ul>
+                    <h2><strong>FAQ</strong></h2>
+                    <ul>
+                        <li>Updated with many corrections and additions.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the changes above.</li>
+                        <li>Updated to MO2 2.5.2-ML1.5.</li>
+                        <li>Added the ML Utilities Checker (off by default, included just in case the user needs to debug).</li>
+                        <li>Updated the following mods:
+                            <ul>
+                                <li>JohnnyGuitar NVSE (5.11b)</li>
+                                <li>Shader Loader - NVSE (1.2)</li>
+                                <li>Stewie Tweaks (9.25)</li>
+                                <li>skinned mesh improvement mod (22)</li>
+                                <li>MAC-10 (7.5)</li>
+                                <li>Sleep Wait Hardcore Needs (2.1)</li>
+                                <li>Enhanced Movement (1.23c)</li>
+                                <li>Leveled DLC Delay (2.1)</li>
+                                <li>Functional Post Game Ending (7.4)</li>
+                                <li>Essential DLC Enhancements (1.4.1)</li>
+                                <li>Lone Star (3.3)</li>
+                                <li>Iron Sights Aligned (4.4)</li>
+                                <li>B42 Optics NV Patches (2.3)</li>
+                                <li>More LODs Additions and fixes (1.9)</li>
+                                <li>Road LOD Kit (1.05)</li>
+                            </ul>
+                        </li>
+                        <li>Packed the pre-generated LOD into a BSA for better performance. Doing this on your own manual install of the guide will require conflicting files in YUP.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">11/7/24</h2>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>The utilities test is now handled by the ML Utilities Checker instead of using console commands, vastly simplifying instructions.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">9/7/24</h2>
+                    <h2><strong>Introduction</strong></h2>
+                    <ul>
+                        <li>Re-added VC++ Runtime Libraries installation steps as a fallback to mysteriously missing libraries from MO2's installer.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">5/7/24</h2>
+                    <h3>Safe Mid-Game</h3>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated the following mods:
+                            <ul>
+                                <li>Uncut Wasteland - VNV Edit (removed YUP masters)</li>
+                                <li>Lone Star (1.8)</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">4/7/24</h2>
+                    <h3>NOT Safe Mid-game</h3>
+                    <h2><strong>Whole Guide</strong></h2>
+                    <ul>
+                        <li>Switched the Overhauls and Content pages in order to prevent confusion from temporary missing masters.</li>
+                    </ul>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Added Shader Loader - NVSE.</li>
+                    </ul>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Removed VUIPlus - Dialog Background Add-on, its subjective and not consistent with general subtitles if they are enabled.</li>
+                    </ul>
+                    <h2><strong>Content</strong></h2>
+                    <ul>
+                        <li>Replaced Uncut Wasteland - VNV Edit with a simpler version of Uncut Wasteland almost identical to the original but with fixes and cleanup. This means that it can now be used with patches for the original mod. More information is provided on the <a href="https://www.nexusmods.com/newvegas/mods/79358" target="_blank">Viva New Vegas Resources</a> page.</li>
+                        <li>Removed Misc Content Restoration - UW (VNV) Patch as its no longer needed.</li>
+                        <li>Added the following patches:
+                            <ul>
+                                <li>EVEM - Uncut Extra Collection Patch</li>
+                                <li>EVEM - Uncut Extra Collection - FPGE Patch</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Overhauls</strong></h2>
+                    <ul>
+                        <li>Removed Vigor - VNV Edit and its patches in favor of Lone Star.</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Simple Character Expansions</li>
+                                <li>Blood Decal Flashing Fix</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>LOD Guide</strong></h2>
+                    <ul>
+                        <li>Added a load order warning if using Impostors and LOD Flicker Fix with Desert Natural Weathers.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the changes above.</li>
+                        <li>Added various GECK INI edits that are useful to authors and for general GECK use.</li>
+                        <li>Updated the following mods:
+                            <ul>
+                                <li>JohnnyGuitar NVSE (5.10)</li>
+                                <li>Yukichigai Unofficial Patch - YUP (13.1.1)</li>
+                                <li>lStewieAl's Tweaks and Engine Fixes (9.21)</li>
+                                <li>Stewie Tweaks - VNV Extended INI (removed Vigor Tester skip)</li>
+                                <li>skinned mesh improvement mod (21)</li>
+                                <li>Consistent Weapon Mod Descriptions (1.6)</li>
+                                <li>JAM - Just Assorted Mods (4.6)</li>
+                                <li>Clean Just Assorted Mods (JAM) (1.1)</li>
+                                <li>Enhanced Movement (1.22)</li>
+                                <li>Leveled DLC Delay (2.0)</li>
+                                <li>Better Caravan (1.4)</li>
+                                <li>Functional Post Game Ending (7.2)</li>
+                            </ul>
+                        </li>
+                        <li>Updated pre-generated LOD.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">16/6/24</h2>
+                    <h3>Safe Mid-Game</h3>
+                    <h2><strong>LOD Guide</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>LOD Vertex Color Fixes</li>
+                                <li>Road LOD Kit</li>
+                            </ul>
+                        </li>
+                        <li>Added instructions to hide the effects folder from Much Needed LOD because the water jet LOD it adds is broken.</li>
+                        <li>Updated pre-generated LOD and the VNV LOD plugin to reflect the changes above.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">6/6/24</h2>
+                    <h3>Safe Mid-Game</h3>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to MO2 2.5.1rc2-ML1.4.1.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">5/6/24</h2>
+                    <h3>Safe Mid-Game</h3>
+                    <h2><strong>LOD Guide</strong></h2>
+                    <ul>
+                        <li>Added back Impostors and LOD Flicker Fix, only for users increasing their LOD distances.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the change above.</li>
+                        <li>Updated to MO2 2.5.1rc2-ML1.4.</li>
+                        <li>Updated LOD distances to match the 3/6/24 changes.</li>
+                        <li>Fixed missing Consistent Weapon Mod Descriptions.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">4/6/24</h2>
+                    <h3>Safe Mid-Game</h3>
+                    <h2><strong>Setup</strong></h2>
+                    <ul>
+                        <li>Added steps to disable Base Address Randomization.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">3/6/24</h2>
+                    <h3>Safe Mid-Game</h3>
+                    <h2><strong>LOD Guide</strong></h2>
+                    <ul>
+                        <li>Increased LOD distances again now that the memory usage bug is fixed in LOD Fixes and Improvements - NVSE (1.2.9).</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">2/6/24</h2>
+                    <h3>Safe Mid-Game</h3>
+                    <h2><strong>Introduction</strong></h2>
+                    <ul>
+                        <li>Removed VC++ Runtime Libraries installation steps, as the Mod Organizer 2 installer now handles it (2.5.1rc2-ML1.3 onwards).</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to MO2 2.5.1rc2-ML1.3.1.</li>
+                        <li>Updated the following mods:
+                            <ul>
+                                <li>JohnnyGuitar NVSE (5.08).</li>
+                                <li>LOD Fixes and Improvements - NVSE (1.2.9).</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">1/6/24</h2>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Added MO2 instructions.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">31/5/24</h2>
+                    <h3>Safe Mid-Game</h3>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added Slideshow FOV Fix - ESPLess.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the change above.</li>
+                        <li>Added missing Stewie Tweaks - VNV INI (disabled by default in favour of the Extended one).</li>
+                        <li>Updated the following mods:
+                            <ul>
+                                <li>Stewie Tweaks - VNV Extended INI.</li>
+                                <li>Vigor - VNV Edit ("I Never Axed For This" challenge fix).</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">30/5/24</h2>
+                    <h3>Safe Mid-Game</h3>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Replaced the Stewie Tweaks Essentials INI with a INIs specifically made for VNV and VNVE.</li>
+                        <li>Updated the following mods:
+                            <ul>
+                                <li>Added 3rd Person Animation Fixpack.</li>
+                                <li>Added Doc Mitchell's Window Sunlight Fix.</li>
+                            </ul>
+                        </li>
+                        <li>Removed the following mods:
+                            <ul>
+                                <li>Crafting Consistency Fix, this feature is now applied by the new Stewie Tweaks configurations.</li>
+                                <li>Impostors and LOD Flicker Fix, the issue it solves is present only when using very high LOD draw distance values (read below).</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Replaced JAM's sprinting with Enhanced Movement.</li>
+                        <li>Removed Just Sprint Plus - Expansion for JAM and JVS - no longer required due to the use of Enhanced Movement.</li>
+                        <li>Replaced Delay DLC Redux with Leveled DLC Delay, this prevents confusion for new players and includes DLC Hostility Fixes.</li>
+                    </ul>
+                    <h2><strong>Overhauls</strong></h2>
+                    <ul>
+                        <li>Switched to the VNV Edit of Vigor to fix some bugs while Qolore7 is MIA. The Varmint Rifle 22LR file isn't needed anymore as a result.</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Replaced Improved LOD Noise with Contrasted LOD Noise.</li>
+                    </ul>
+                    <h2><strong>LOD Guide</strong></h2>
+                    <ul>
+                        <li>Added LOD Additions and Improvements - Billboard LOD Fix.</li>
+                        <li>
+                            <strike>Updated LOD distance to more sensible values (read the Impostors and LOD Flicker Fix entry above).</strike> This reduction in LOD distances was aimed at mitigating the higher memory usage brought by a bug in LOD Fixes and Improvements - NVSE, which is now fixed (1.2.9).
+                        </li>
+                        <li>Updated pre-generated LOD.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the changes above.</li>
+                        <li>Updated the following mods:
+                            <ul>
+                                <li>JIP LN NVSE Plugin</li>
+                                <li>Misc Audio Tweaks and Fixes</li>
+                                <li>Sleep Wait Hardcore Needs</li>
+                                <li>Essential Vanilla Enhancements Merged</li>
+                            </ul>
+                        </li>
+                        <li>Switched to the correct version of FNV Clean Animations (Anniversary Edition).</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">22/5/24</h2>
+                    <h3>Safe Mid-Game</h3>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to MO2 2.5.1rc2-ML1.2.</li>
+                        <li>Updated the following mods:
+                            <ul>
+                                <li>JohnnyGuitar NVSE (5.07)</li>
+                                <li>Yvile's Crash Logger (4.6)</li>
+                                <li>skinned mesh improvement mod (20)</li>
+                                <li>Meshes and Collision - Totally Enhanced Nifs (MAC-TEN) (6.0)</li>
+                                <li>No Exit to Main Menu (1.3)</li>
+                                <li>Vigor - SMIM Patch</li>
+                                <li>Anniversary Anim Pack (2.1)</li>
+                                <li>Iron Sights Aligned (4.2)</li>
+                                <li>Landscape Texture Improvements (4.2a)</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">14/5/24</h2>
+                    <h3>Safe Mid-Game</h3>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Added launcher instructions.</li>
+                        <li>Added a Viva New Vegas splash screen.</li>
+                        <li>Disabled the overwrite warning (it's safe to ignore).</li>
+                        <li>Updated the following mods:
+                            <ul>
+                                <li>JohnnyGuitar NVSE (5.06b)</li>
+                                <li>ShowOff xNVSE Plugin (1.80)</li>
+                                <li>lStewieAl's Tweaks and Engine Fixes (9.15)</li>
+                                <li>skinned mesh improvement mod (19)</li>
+                                <li>ExRB - Extended Roombounds (2.2)</li>
+                                <li>No Exit to Main Menu (1.2)</li>
+                                <li>FPGE - Functional Post Game Ending (6.8.2)</li>
+                                <li>Better Brotherhood (2.4h)</li>
+                                <li>Iron Sights Aligned (4.0)</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">30/4/24</h2>
+                    <h3>Safe Mid-Game</h3>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated Better Brotherhood (2.4g).</li>
+                        <li>Removed Show Water Source H2O - ESPless, this wasn't meant to be included.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">29/4/24</h2>
+                    <h3>Safe Mid-Game</h3>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Switched to the MO2 installer over the archive download in order to prevent missing AV exclusions.</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added Items Transformed - Enhanced Meshes (ITEM).</li>
+                    </ul>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Sleep Wait Hardcore Needs</li>
+                                <li>No Exit to Main Menu</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Overhauls</strong></h2>
+                    <ul>
+                        <li>Removed Better Character Creation because its changes don't fit first-time playthroughs. The mod's Wild Wasteland change can be replicated by using Stewie Tweaks.</li>
+                    </ul>
+                    <h2><strong>Content</strong></h2>
+                    <ul>
+                        <li>Removed The Living Desert - EVEM Patch, its no longer needed.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Available once again and updated to reflect the changes above.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">25/4/24</h2>
+                    <h3>Safe Mid-Game</h3>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Removed the Navmesh Overhaul YUP Patch, its no longer needed with Navmesh Overhaul 6.0.</li>
+                    </ul>
+                    <h2><strong>Extended Finish</strong></h2>
+                    <ul>
+                        <li>Removed the VNVE Navmesh Patch, its no longer needed with Navmesh Overhaul 6.0.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">24/4/24</h2>
+                    <h3>Safe Mid-Game</h3>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Added the All Tweaks Preset from the new JohnnyGuitar NVSE - INI Presets page.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">22/4/24</h2>
+                    <h3>Safe Mid-Game</h3>
+                    <h2><strong>Content</strong></h2>
+                    <ul>
+                        <li>Removed The Living Desert FaceGen Tint Fix, its no longer needed since version 2.6.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">14/4/24</h2>
+                    <h2><strong>LOD Guide</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Much Needed LOD</li>
+                                <li>Much Needed LOD fixed rocks color</li>
+                                <li>FNV LOD Supplementation</li>
+                                <li>Different LOD mods little tweaks and additions</li>
+                                <li>VNV - LOD Patches</li>
+                            </ul>
+                        </li>
+                        <li>Updated pre-generated LOD.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">3/4/24</h2>
+                    <h3>Safe Mid-Game</h3>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Added Vanilla UI Plus - Dialog Background Add-on.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">28/3/24</h2>
+                    <h3>Safe Mid-Game</h3>
+                    <h2><strong>Overhauls</strong></h2>
+                    <ul>
+                        <li>Changed Vigor - SMIM Patch to zpoke808's.</li>
+                        <li>Removed EVEM - SMIM Patch.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">29/2/24</h2>
+                    <h3>Safe Mid-Game</h3>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Moved Pip-Boy Shading Fix back to Bug Fixes since we disable shadows in falloutcustom.ini.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">29/2/24</h2>
+                    <h3>NOT Safe Mid-game (unless you skip the Varmint Rifle 22LR patch)</h3>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Expanded the page with more MO2 info.</li>
+                    </ul>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Added a mention that EGS versions don't use registry keys.</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Removed Fog-based Object Culling - it's now handled by the Perfomance Guide.</li>
+                        <li>Moved Muzzle Flash Light Fix to Visuals - not critical enough to warrant base VNV inclusion.</li>
+                        <li>Moved Pipboy Shading Fix to Visuals - not critical enough to warrant base VNV inclusion.</li>
+                        <li>Added VATS Lag Fix.</li>
+                    </ul>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Added Clean Vanilla HUD.</li>
+                        <li>Added Clean Companion Wheel.</li>
+                    </ul>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Added Just Assorted Mods.</li>
+                        <li>Added Clean Just Assorted Mods.</li>
+                        <li>Added Just Sprint Plus.</li>
+                    </ul>
+                    <h2><strong>Overhauls</strong></h2>
+                    <ul>
+                        <li>Added Simple Vigor Config.</li>
+                        <li>Added Varmint Rifle 22LR.</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Moved Muzzle Flash Light Fix from Bug Fixes.</li>
+                        <li>Moved Pipboy Shading Fix from Bug Fixes.</li>
+                        <li>Added Viewmodel Shading Fix.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">10/1/24</h2>
+                    <h3>Safe Mid-game</h3>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Added instructions to unblock the downloaded archive to fix DLLs not loading.</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added Viewmodel Shake Fix.</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Moved High Resolution Water Fog from Bug Fixes to the Visuals section.</li>
+                    </ul>
+                    <h2><strong>LOD Guide</strong></h2>
+                    <ul>
+                        <li>Added LODIFY.</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, year2023expander)" id="year2023">
+                    <p>
+                    <h3>2023</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="year2023expander">
+                    <p>
+                    <h2 class="install">29/12/23</h2>
+                    <h3>Safe Mid-game</h3>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Updated to Mod Organizer 2.5.1 RC2.</li>
+                    </ul>
+                    <h2><strong>Content</strong></h2>
+                    <ul>
+                        <li>Removed the Strip Lights Region Fix patches for Uncut Wasteland and The Living Desert because they are no longer needed with SLRF 1.3.1.</li>
+                    </ul>
+                    <h2><strong>LOD Guide</strong></h2>
+                    <ul>
+                        <li>Added terrain LOD to the VNV Pre-Generated LOD and removed vertex coloring because it's broken without mesh fixes.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the changes above.</li>
+                        <li>Updated the following mods:
+                            <ul>
+                                <li>Updated Desert Natural Weathers NV (7.2.5)</li>
+                                <li>Strip Lights Region Fix (1.3.1)</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">24/12/23</h2>
+                    <h3>Safe Mid-game</h3>
+                    <h2><strong>Content</strong></h2>
+                    <ul>
+                        <li>Replaced The Living Desert - Strip Lights Region Fix Patch with the one from Strip Lights Region Fix's page because the 2 patches are identical, so there's no point in hosting a duplicate. This also means that this update is not necessary.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the change above.</li>
+                        <li>Fixed non-working Bad Touch NVSE - Minimalist Preset.</li>
+                        <li>Updated Bad Touch NVSE (1.7).</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">23/12/23</h2>
+                    <h3>Safe Mid-game</h3>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Removed Preferred Pathing Combat Fix because of a critical bug.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the change above.</li>
+                        <li>Fixed load order and missing mods.</li>
+                        <li>Updated Uncut Wasteland.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">22/12/23</h2>
+                    <h3>Safe Mid-game</h3>
+                    <h2><strong>Whole Guide</strong></h2>
+                    <ul>
+                        <li>Added support for Epic Games copies.</li>
+                    </ul>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Updated to Mod Organizer 2.5.1 RC1.</li>
+                        <li>Removed the profile configuration section since it is now a step during instance creation.</li>
+                    </ul>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Added Epic Games Patcher.</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added Preferred Pathing Combat Fix.</li>
+                        <li>Removed Strip Street Light Corrections because it is now included in YUP 12.9.</li>
+                    </ul>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Added Bad Touch NVSE - Minimalist Preset for consistency with the DBF counterpart.</li>
+                    </ul>
+                    <h2><strong>Content</strong></h2>
+                    <ul>
+                        <li>Added Misc Content Restoration - UW (VNV) Patch.</li>
+                    </ul>
+                    <h2><strong>LOD Guide</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>LOD Fixes and Improvements - NVSE</li>
+                                <li>Trees LOD Billboards Vanilla</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the changes above.</li>
+                        <li>Added <code>d3dx9_38.tmp</code> file to the NVHR folder, this removes the command prompt window opening alongside the game.</li>
+                        <li>Updated the following mods:
+                            <ul>
+                                <li>JohnnyGuitarNVSE (4.98)</li>
+                                <li>Yvile's Crash Logger (4.5.3)</li>
+                                <li>Improved Console (NVSE) (3)</li>
+                                <li>Yukichigai Unofficial Patch - YUP (12.9)</li>
+                                <li>lStewieAl's Tweaks and Engine Fixes (8.85)</li>
+                                <li>skinned mesh improvement mod (8)</li>
+                                <li>Meshes and Collision - Totally Enhanced Nifs (MAC-TEN) (2.3)</li>
+                                <li>Fallout Alpha Rendering Tweaks (2.5.1)</li>
+                                <li>Bad Touch NVSE - Player Only Version (1.6)</li>
+                                <li>EVEM - YUP Patch</li>
+                                <li>Better Brotherhood and its YUP Patch (2.4a)</li>
+                                <li>Uncut Wasteland</li>
+                                <li>Misc Content Restoration - YUP Patch</li>
+                                <li>Functional Post Game Ending (6.6)</li>
+                                <li>Desert Natural Weathers NV (7.2)</li>
+                                <li>LOD additions and improvements - YUP Patch</li>
+                                <li>VNV Pre-Generated LOD</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">25/11/23</h2>
+                    <h3>Safe Mid-game</h3>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added Meshes and Collision - Totally Enhanced Nifs (MAC-TEN).</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Wasted Rocks Normals</li>
+                                <li>More Consistent Vanilla Rock Textures (Less Green Clifftops)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the changes above.</li>
+                        <li>Updated the following mods:
+                            <ul>
+                                <li>JohnnyGuitar NVSE (4.97)</li>
+                                <li>lStewieAl's Tweaks and Engine Fixes (8.81)</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">22/11/23</h2>
+                    <h3>Safe Mid-game</h3>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added the update file for SMIM, this fixes crashes in Dead Money.</li>
+                        <li>Removed the following mods:
+                            <ul>
+                                <li>Fire Queue Fix - ESPless, it is now included in Stewie Tweaks 8.80</li>
+                                <li>Ammo Script Fixes, it has subjective changes that don't belong in this section and the more important fixes are already covered by JIP and UPNVSE+</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Added JLM Grab Tweak.</li>
+                    </ul>
+                    <h2><strong>Overhauls</strong></h2>
+                    <ul>
+                        <li>Switched back to the original Better Character Creation now that it includes all of the navmesh fixes.</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Added FNV Clean Animations - Anniversary Edition.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the changes above.</li>
+                        <li>Updated the following mods:
+                            <ul>
+                                <li>Yvile's Crash Logger (4.5.2)</li>
+                                <li>lStewieAl's Tweaks and Engine Fixes (8.80)</li>
+                                <li>Stewie Tweaks Essentials INI (1.07)</li>
+                                <li>Bad Touch NVSE (1.4.1)</li>
+                                <li>Desert Natural Weathers (7.1)</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">19/11/23</h2>
+                    <h2><strong>Resources</strong></h2>
+                    <ul>
+                        <li>Restructured to host 3 new pages on ModdingLinked (these pages were previously on the Wasteland Survival Guide and are universal).</li>
+                        <li>Added a guide to decompress plugins.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">16/11/23</h2>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated Bad Touch NVSE (1.3.1).</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">15/11/23 Part 2</h2>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated the following mods:
+                            <ul>
+                                <li>Fire Queue Fix - ESPless (1.0.3)</li>
+                                <li>Bad Touch NVSE (1.2.1)</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">15/11/23</h2>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added Fire Queue Fix - ESPless.</li>
+                    </ul>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Added Bad Touch NVSE.</li>
+                    </ul>
+                    <h2><strong>Overhauls</strong></h2>
+                    <ul>
+                        <li>Added EVEM - SMIM Patch.</li>
+                    </ul>
+                    <h2><strong>Content</strong></h2>
+                    <ul>
+                        <li>Added Misc Content Restoration - YUP Patch.</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>3D Rain</li>
+                                <li>Climate Control - 3D Rain</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>LOD Guide</strong></h2>
+                    <ul>
+                        <li>Added LOD additions and improvements - YUP Patch.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the changes above.</li>
+                        <li>Updated the following mods:
+                            <ul>
+                                <li>Skinned Mesh Improvement Mod (6.0)</li>
+                                <li>Assorted Voice Popping Fixes (2.2)</li>
+                                <li>Vanilla Enhancements Merged (1.3.5)</li>
+                                <li>The Living Desert - Strip Lights Region Fix Patch</li>
+                                <li>Desert Natural Weathers (7.0.1)</li>
+                                <li>VNV Extended Navmesh Patch</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">12/11/23</h2>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added High Resolution Water Fog - Water Aliasing Fix.</li>
+                    </ul>
+                    <h2><strong>Content</strong></h2>
+                    <ul>
+                        <li>Added The Living Desert FaceGen Tint Fix.</li>
+                    </ul>
+                    <h2><strong>LOD Guide</strong></h2>
+                    <ul>
+                        <li>Added pre-generated LOD meant for the VNV Wabbajack, resources listed in the LOD page are still needed.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the changes above.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">9/11/23</h2>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Removed the Desert Natural Weathers - YUP Patch because it is no longer needed with DNW 7.0.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the change above.</li>
+                        <li>Updated Desert Natural Weathers (7.0).</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">7/11/23</h2>
+                    <h2><strong>Content</strong></h2>
+                    <ul>
+                        <li>Added Misc Content Restoration.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the change above.</li>
+                        <li>Updated B42 Optics NV Patches (1.5).</li>
+                        <li>Regenerated LOD for Misc Content Restoration.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">6/11/23 Part 2</h2>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Removed Cloud Shadows because a large chunk of users don't seem to like it.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the change above.</li>
+                        <li>Updated the following mods:
+                            <ul>
+                                <li>Iron Sights Aligned (3.3)</li>
+                                <li>ExRB - Extended Roombounds (2.1)</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">6/11/23</h2>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Replaced Less Flickery City of New Vegas with Impostors and LOD Flicker Fix (same fix, better implementation).</li>
+                        <li>Added back Fallout Alpha Rendering Tweaks since version 2.5 fixed its issues.</li>
+                    </ul>
+                    <h2><strong>Overhauls</strong></h2>
+                    <ul>
+                        <li>Removed Mojave Arsenal for multiple reasons:
+                            <ul>
+                                <li>Weapon mods and special ammo should act as gold sink.</li>
+                                <li>Encourage trading, also so that Harder Barter Faster Stronger makes sense to include.</li>
+                                <li>Integrating mods is better done through JIP.</li>
+                                <li>Vigor already distributes GRA items.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Content</strong></h2>
+                    <ul>
+                        <li>Removed Mojave Raiders because The Living Desert and Uncut Wasteland already add plenty of spawns, TLD will also focus on raiders in the next major update.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the changes above.</li>
+                        <li>Updated Vigor (1.2).</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">5/11/23</h2>
+                    <h2><strong>Whole Guide</strong></h2>
+                    <ul>
+                        <li>Removed the performance warnings because they need re-evaluation and they largely don't make sense once you consider that a VNV list compared to vanilla runs orders of magnitude faster.</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added Less Flickery City of New Vegas.</li>
+                    </ul>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Added Just Loot Menu.</li>
+                        <li>Removed all of the mods by ItsMeJesusHChrist because of their increasing amount and because the project is incomplete. This might be replaced in the future with a better solution.</li>
+                    </ul>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Removed the following mods:
+                            <ul>
+                                <li>Just Assorted Mods, most of it is unused in VNV</li>
+                                <li>B42 True Leaning, the game's innacurate collisions make this annoying, also might affect gunplay too much balance wise</li>
+                                <li>Laser Weapon Iron Sights, bugged animations and the ugly meshes stand out too much</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Overhauls</strong></h2>
+                    <ul>
+                        <li>Replaced JSawyer Ultimate Edition with Vigor for extra fixes and a lighter overhaul. Also replaced JSUE patches with Vigor ones, but the patch for Essential DLC Enhancements Merged can be shared.</li>
+                        <li>Removed the following mods:
+                            <ul>
+                                <li>Famine, to not make the list too hardcore</li>
+                                <li>Food Effect Tweaks, same as above</li>
+                                <li>Player Combat Priority, because of the reported bugs</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Added Mostly Fixed FaceGen Tints.</li>
+                        <li>Removed the following mods:
+                            <ul>
+                                <li>Anniversary Anims Fix, it is now merged into Anniversary Anim Pack</li>
+                                <li>Faster Pip-Boy Animation, it's too unimportant</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the changes above.</li>
+                        <li>Updated the following mods:
+                            <ul>
+                                <li>Assorted Voice Popping Fixes (2.1)</li>
+                                <li>Ammo Script Fixes (5.5)</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">28/10/23</h2>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Added Landscape Texture Improvements.</li>
+                    </ul>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Consistent Pip-Boy Icons v5 - Apparel</li>
+                                <li>Consistent Pip-Boy Icons v5 - Framework Plugin</li>
+                                <li>Weapon Hotkey Icons</li>
+                                <li>Map Marker Icons</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the changes above.</li>
+                        <li>Updated the following mods:
+                            <ul>
+                                <li>FNV BSA Decompressor (1.2)</li>
+                                <li>Yvile's Crash Logger (4.5)</li>
+                                <li>SMIM - Assets (5.0)</li>
+                                <li>Consistent Addon Icons (4.3)</li>
+                                <li>Clean Vanilla Hud (60)</li>
+                                <li>Pop-Up Message Icons (2.03)</li>
+                                <li>Consistent Pip-Boy Icons v5 - Items (5.04)</li>
+                                <li>Consistent Pip-Boy Icons v5 - Weapons (5.02)</li>
+                                <li>Desert Natural Weathers - NV (6.9.1)</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">15/10/23</h2>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Re-added PipBoyOn Node Fixes, now patched for SMIM.</li>
+                    </ul>
+                    <h2><strong>Overhauls</strong></h2>
+                    <ul>
+                        <li>Moved Navmesh Overhaul VNV Patch to the <b>Extended Finish</b> section to make sure users don't skip it, also renamed the file to VNV Extended Navmesh Patch.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the changes above.</li>
+                        <li>Updated the following mods:
+                            <ul>
+                                <li>Console Paste Support (2.2)</li>
+                                <li>Improved AI (Navmesh Overhaul Mod) (5.0)</li>
+                                <li>SMIM - Assets (4)</li>
+                                <li>VNV Extended Navmesh Patch</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">14/10/23</h2>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Removed PipBoyOn Node Fixes <del>since it is no longer needed with SMIM</del> because it is not patched for SMIM.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the change above.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">6/10/23</h2>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Added Wasted LOD - Cliffs of Mojave and regenerated LOD.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">4/10/23</h2>
+                    <h2><strong>LOD Guide</strong></h2>
+                    <ul>
+                        <li>Added Wasted LOD - Cliffs of Mojave.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">27/9/23</h2>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Added KEYWORDS.</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>lStewieAl's Engine Optimizations</li>
+                                <li>skinned mesh improvement mod</li>
+                                <li>Swimming Creatures Fix</li>
+                            </ul>
+                        </li>
+                        <li>Removed ExRB - YUP Patch because it is no longer needed with ExRB 2.0.</li>
+                    </ul>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Consistent Pip-Boy Icons v5 - Weapons</li>
+                                <li>Faster Main Menu</li>
+                                <li>Menu Search</li>
+                                <li>Improved Recipe Menu, previously in the Stewie Tweaks Essentials INI but removed from there because it is out of scope</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Cookable Grenades</li>
+                                <li>Faster Sleep-Wait</li>
+                                <li>Auto-Save Manager</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Smooth True Iron Sights Camera</li>
+                                <li>B42 Optics NV Patches</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the changes above.</li>
+                        <li>Regenerated LOD for More LODs Additions and fixes 1.11.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">27/8/23</h2>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Removed SUP NVSE, the requirement listed for Delay DLC Redux was a mistake from the author.</li>
+                        <li>Replaced Crash Logger with Yvile's Crash Logger.</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Removed Consistent Spread - Firearms Accuracy and Wobble Fix because of a bug with accuracy.</li>
+                    </ul>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Clean Vanilla Hud</li>
+                                <li>Pop-Up Message Icons</li>
+                                <li>Clean Vault Boy Paper Doll</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Added Laser Weapon Iron Sights.</li>
+                        <li>Replaced Clean Just Weapons Wheel with Clean Just Assorted Mods (JAM).</li>
+                    </ul>
+                    <h2><strong>Overhauls</strong></h2>
+                    <ul>
+                        <li>Added Better Brotherhood - YUP Patch.</li>
+                    </ul>
+                    <h2><strong>Content</strong></h2>
+                    <ul>
+                        <li>Added Uncut Wasteland (VNV) - EVEM Patch</li>
+                        <li>Added FPGE - EVEM Patch.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the changes above.</li>
+                        <li>Regenerated LOD for More LODs Additions and fixes 1.1.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">6/8/23</h2>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Added SUP <del>NVSE because Delay DLC Redux requires it</del>.</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Replaced Elijah Voice Audio Files Fix with Misc Audio Tweaks and Fixes.</li>
+                        <li>Added Ammo Script Fixes.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the changes above.</li>
+                        <li>Regenerated LOD for More LODs Additions and fixes 0.91.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">3/8/23</h2>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Delay DLC Redux 2.0 is broken, make sure you install 2.1 and start a new game if you made that character with 2.0.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the change above.</li>
+                        <li>Regenerated LOD for More LODs Additions and fixes 0.8.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">26/7/23</h2>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Fixed world FOV in the Custom INI.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the change above.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">24/7/23</h2>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added Consistent Spread - Firearms Accuracy and Wobble Fix.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the change above.</li>
+                        <li>Updated Crash Logger (4.1).</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">23/7/23</h2>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Switched back to portable instance for consistency with the TBoT video guide and the Wabbajack lists.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">22/7/23</h2>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Added Consistent Pip-Boy Icons v5 - Items.</li>
+                    </ul>
+                    <h2><strong>Overhauls</strong></h2>
+                    <ul>
+                        <li>Added Traps Tweaks - Traps Use Other Skills.</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Moved Pip-Boy Shading Fix NVSE and Strip Street Light Corrections to the <b>Bug Fixes</b> section.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the changes above.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">20/7/23</h2>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Updated JAM VNV Configuration.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the change above.</li>
+                        <li>Regenerated LOD for More LODs Additions and fixes 0.7.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">19/7/23</h2>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added PipBoyOn Node Fixes.</li>
+                        <li>Replaced Vanilla Iron Sights Realligned with Iron Sights Aligned, with additional steps in the <b>Visuals</b> section if you installed Anniversary Animation Pack.</li>
+                    </ul>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Added B42 True Leaning VNV Configuration.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the changes above.</li>
+                        <li>Fixed missing Cloud Shadows and NVTF - Viva Default Preset.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">18/7/23</h2>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Updated JAM VNV Configuration (disabled dot while aiming).</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Increased the local map resolution to 1024 and fixed conflicting key mapping between auto-walk and leaning.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">17/7/23</h2>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Replaced Real Recoil with Immersive Recoil 2.0.</li>
+                        <li>Added B42 True Leaning.</li>
+                    </ul>
+                    <h2><strong>Content</strong></h2>
+                    <ul>
+                        <li>Replaced Functional Post Game Ending Lite with Functional Post Game Ending, plus the required patches.</li>
+                        <li>Added Mojave Raiders - Uncut Wasteland (VNV) Patch.</li>
+                        <li>Updated Mojave Raiders Tweaks (removed changes that should be from the new patch).</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>B42 Optics</li>
+                                <li>Atmospheric Lighting Tweaks - EVEM Patch</li>
+                                <li>Desert Natural Weathers - YUP Patch</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the changes above.</li>
+                        <li>Decompressed plugins.</li>
+                        <li>Bundled better LOD.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">15/7/23</h2>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Improved Console</li>
+                                <li>Basic Console Autocomplete</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added ExRB - YUP Patch.</li>
+                    </ul>
+                    <h2><strong>Overhauls</strong></h2>
+                    <ul>
+                        <li>Updated the Navmesh Overhaul VNV Patch.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the changes above, also added Heap Replacer as optional mod.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">27/6/23</h2>
+                    <h2><strong>LOD Guide</strong></h2>
+                    <ul>
+                        <li>Specified that LOD resources should not be disabled, also added "More LODs Additions and fixes".</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">26/6/23</h2>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Moved UIO to the <b>Utilities</b> section because ISControl needs it.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">25/6/23</h2>
+                    <h2><strong>LOD Guide</strong></h2>
+                    <ul>
+                        <li>Reworked and generalized.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">23/6/23</h2>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added Depth of Field Fix - NVSE and Muzzle Flash Light Fix - NVSE.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">22/6/23</h2>
+                    <h2><strong>Whole Guide</strong></h2>
+                    <ul>
+                        <li>The essential part of the guide is now split from the extras, which are in the VNV Extended section.</li>
+                        <li>Rewrote a bunch of information and removed optional tags, since the optional mods are contained in VNVE (which is entirely optional).</li>
+                    </ul>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Moved the Custom INI steps to the <b>Utilities</b> section to not give the impression that it can be skipped (like if you already have MO2).</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added the Navmesh Overhaul YUP Patch and updated the Navmesh Overhaul VNV Patch.</li>
+                    </ul>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Added a custom configuration for JAM, since it does way too much by default.</li>
+                        <li>Removed NPCs Sprint In Combat because of a bug with companions.</li>
+                    </ul>
+                    <h2><strong>Content</strong></h2>
+                    <ul>
+                        <li>Removed the Functional Post Game Ending Lite - JSUE Patch because it is no longer needed with the latest FPGE Lite.</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Removed Melee Hitstop Effects since it requires configuration based on your FPS, which can vary wildly for guide users.</li>
+                        <li>Moved MoonlightNVSE steps to the <b>Bug Fixes</b> section.</li>
+                    </ul>
+                    <h2><strong>LOD Guide</strong></h2>
+                    <ul>
+                        <li>Enabled bForceFullLOD as part of the INI tweaks.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the changes above.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">19/6/23</h2>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Replaced Cobb's Crash Logger with Yvile's Crash Logger.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">5/6/23</h2>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Removed DNW - Strip Lights Region Fix Patch - Merged into the base mod.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">1/6/23</h2>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Added DNW - Strip Lights Region Fix Patch.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">27/5/23</h2>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Updated to MO2 2.4.5 Alpha 3 version to fix the alphabetic load order issues and bring some QoL features.</li>
+                    </ul>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Added the Viva Default Preset from the new NVTF - INI Presets page.</li>
+                        <li>Removed the ShowOff INI since it is no longer needed.</li>
+                    </ul>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Removed any mention of DarnUI since it's dead and lacks support for a couple specific features. If you want a new UI then the recommended mod is M.U.X.</li>
+                    </ul>
+                    <h2><strong>Overhauls</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Better Brotherhood</li>
+                                <li>The Living Desert</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the changes above, also updated instructions.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">19/5/23</h2>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>A Wabbajack modlist and section are now available.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">16/5/23</h2>
+                    <h2><strong>Overhauls</strong></h2>
+                    <ul>
+                        <li>Moved Better Character Creation to the VNV Nexus page and edited it to have no navmesh edits since that cell is fixed by the Improved AI mod. This also means that the Navmesh Overhaul VNV Patch is now listed under EVEM.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">14/5/23</h2>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Updated the Custom INI, you can now set the FOV values to your liking.</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Improved AI (Navmesh Overhaul Mod)</li>
+                                <li>Crafting Consistency Fix</li>
+                                <li>ExRB - Extended Roombounds</li>
+                                <li>Strip Lights Region Fix</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Overhauls</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Player Combat Priority Alt Chance To Attack Dog Patch</li>
+                                <li>Essential Vanilla Enhancements Merged - YUP Patch</li>
+                                <li>Essential Vanilla Enhancements Merged - Crafting Consistency Fix Patch</li>
+                                <li>Added Harder Barter Faster Stronger</li>
+                                <li>Navmesh Overhaul VNV Patch</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Content</strong></h2>
+                    <ul>
+                        <li>Removed The Living Desert (it will return after a rebalance update).</li>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Functional Post Game Ending Lite - JSUE Patch</li>
+                                <li>Essential DLC Enhancements Merged - JSUE Patch</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Melee Hitstop Effects</li>
+                                <li>Cloud Shadows</li>
+                                <li>Cloud Upgrade NVSE</li>
+                                <li>Interior Rain</li>
+                                <li>Climate Control - Rain</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">3/5/23</h2>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Added Better Caravan.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">4/4/23</h2>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added ActorCause Save Bloat Fix.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">19/3/23</h2>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>External Emittance Fix</li>
+                                <li>Fallout Alpha Rendering Tweaks</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">17/3/23</h2>
+                    <h2><strong>Overhauls</strong></h2>
+                    <ul>
+                        <li>Removed JSUE - YUP Patch.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">9/2/23</h2>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Added Strip Street Light Corrections.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">14/1/23</h2>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added Fog-based Object Culling.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">5/1/23</h2>
+                    <h2><strong>Content</strong></h2>
+                    <ul>
+                        <li>Added FPGE Lite.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">1/1/23</h2>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Replaced Simple Lighting Overhaul with Atmospheric Lighting Tweaks.</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, year2022expander)" id="year2022">
+                    <p>
+                    <h3>2022</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="year2022expander">
+                    <p>
+                    <h2 class="install">17/12/22</h2>
+                    <h2><strong>LOD Guide</strong></h2>
+                    <ul>
+                        <li>Removed LOD Supplementation.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">24/11/22</h2>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Removed the optional file from the DNW steps, it's now fixed in the main file.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">21/11/22</h2>
+                    <h2><strong>Whole Guide</strong></h2>
+                    <ul>
+                        <li>Recreated the website with the help of Wall_SoGB, it is now responsive.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">15/11/22</h2>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Made some visual changes and updated Custom INI.</li>
+                    </ul>
+                    <h2><strong>Overhauls</strong></h2>
+                    <ul>
+                        <li>Fixed INI Config - Gun Runners' Arsenal Merged file name in the Mojave Arsenal steps, do not use GRA Unique Weapon Re-Enabler.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">14/11/22</h2>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Switched to the Nexus release of xNVSE.</li>
+                    </ul>
+                    <h2><strong>Overhauls</strong></h2>
+                    <ul>
+                        <li>Added JSUE - YUP Patch.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">13/11/22</h2>
+                    <h2><strong>Setup</strong></h2>
+                    <ul>
+                        <li>Generating new INIs is now done directly from Steam to avoid the error mentioned in the FAQ.</li>
+                    </ul>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Switched to global instance (don't worry about this if you already have the guide installed).</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added Improved Lighting Shaders Custom INI to prevent flickering lights.</li>
+                    </ul>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Replaced Supplemental Ammo Crafting with Mojave Arsenal.</li>
+                    </ul>
+                    <h2><strong>Overhauls</strong></h2>
+                    <ul>
+                        <li>Replaced Misc Gameplay Merge with Essential Vanilla Enhancements Merged.</li>
+                    </ul>
+                    <h2><strong>Content</strong></h2>
+                    <ul>
+                        <li>Replaced the PTWB's JSawyer Ultimate - Mojave Raiders Patch with the one in Vish's Patch Hub.</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Added optional file to the DNW installation, improving performance.</li>
+                        <li>Switched the order of DNW and A Little More Lamplight in order to fix a conflict without patch.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">27/10/22</h2>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Removed both SMIM mods.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">17/10/22</h2>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added skinned mesh improvement mod outfits.</li>
+                    </ul>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Added Supplemental Ammo Crafting.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">12/10/22</h2>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Replaced NVAC with Crash Logger.</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added Strip Performance Fix.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">30/8/22</h2>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Removed Contextual HUD.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">28/8/22</h2>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Added <code>bUseAudioDebugInformation=0</code> to the Custom INI.</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Fix mismatched choices in the Stewie Tweaks INI.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">17/8/22</h2>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added Pip-Boy Shading Fix NVSE.</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Added High Resolution Bloom NVSE.</li>
+                    </ul>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Added High Res Local Maps</li>
+                                <li>Added High Resolution Screens</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">13/8/22</h2>
+                    <h2><strong>Whole Guide</strong></h2>
+                    <ul>
+                        <li>Moved some mods to different sections.</li>
+                        <li>Reworked the <strong>Optional</strong> tag to denote subjective mods.</li>
+                        <li>Added a <strong>Performance</strong> tag to denote potentially performance-intensive mods.</li>
+                    </ul>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Added instructions to enable <b>bModifyDirectXBehavior</b> in NVTF.</li>
+                        <li>Added instructions to check that the FalloutCustom.ini tweaks are done correctly.</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Replaced Tweaks Essentials INI with a custom INI specifically made for the guide.</li>
+                    </ul>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Added link to new FAQ entry about using VUI+ instead of Darn.</li>
+                        <li>Added Contextual HUD.</li>
+                        <li>Removed Vanilla HUD Cleaned (as the name suggests, the improvements are mainly for the vanilla HUD style and therefore do not apply much to Darn).</li>
+                    </ul>
+                    <h2><strong>Content</strong></h2>
+                    <ul>
+                        <li>Replaced Uncut Wasteland with a custom build made specifically for the guide.</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Replaced Different Pip-Boy Animations with Faster Pip-Boy Animation.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">31/7/22</h2>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Updated Custom INI.</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Replaced WMIM with Vanilla Iron Sights Realligned.</li>
+                        <li>Replaced ISController with ISControl ESPLess.</li>
+                        <li>Added skinned mesh improvement mod.</li>
+                    </ul>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Replaced VUI with DarnUI.</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Added MoonlightNVSE.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">4/7/22</h2>
+                    <h2><strong>Whole Guide</strong></h2>
+                    <ul>
+                        <li>Made every mod instruction version agnostic.</li>
+                        <li>Moved patches to the guide's repository and updated links.</li>
+                    </ul>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Added a performance guide by Wall_SoGB.</li>
+                    </ul>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Removed JIP Improved Recipe Menu since it's included in the new Stewie Tweaks Essentials INI.</li>
+                    </ul>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Removed JAM Custom INI since it's highly subjective and you can configure it easily.</li>
+                    </ul>
+                    <h2><strong>Overhauls</strong></h2>
+                    <ul>
+                        <li>Removed JIP Custom INI.</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Added Climate Control NVSE.</li>
+                    </ul>
+                    <h2><strong>Final Steps</strong></h2>
+                    <ul>
+                        <li>Updated MCM configuration info.</li>
+                    </ul>
+                    <h2><strong>LOD Guide</strong></h2>
+                    <ul>
+                        <li>Updated to the latest version FNVLODGen.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">2/7/22</h2>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Updated INI settings.</li>
+                    </ul>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Replaced Simple DLC Delay with Delay DLC Redux.</li>
+                    </ul>
+                    <h2><strong>Overhauls</strong></h2>
+                    <ul>
+                        <li>Replaced the Stewie Tweaks Custom INI with Stewie Tweaks Essentials INI.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">22/2/22</h2>
+                    <h2><strong>Whole Guide</strong></h2>
+                    <ul>
+                        <li>Updated various mod versions and instructions that were out of date.</li>
+                    </ul>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Added kNVSE.</li>
+                        <li>Removed the NVTF Custom INI, the new NVTF defaults are good.</li>
+                        <li>Removed OneTweak.</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Updated WMIM and the WMIM ESP Replacer.</li>
+                        <li>Added New Vegas Mesh Improvement Mod.</li>
+                    </ul>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Added HUD Only Explosion Shake.</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Added ISControlEnabler and updated Anniversary Anim Pack instructions accordingly.</li>
+                        <li>Replaced Altitude with Desert Natural Weathers.</li>
+                    </ul>
+                    <h2><strong>Overhauls</strong></h2>
+                    <ul>
+                        <li>Removed Laser Weapon Iron Sights (WMIM update now has its own iron sights for all energy weapons).</li>
+                        <li>Replaced Unfound Loot with Famine.</li>
+                        <li>Replaced JSUE tweaks with PTWB's personal tweaks.</li>
+                        <li>Added patch between JSUE and WMIM.</li>
+                    </ul>
+                    <h2><strong>Content</strong></h2>
+                    <ul>
+                        <li>Added instructions to install the Uncut Extra Collection file from Uncut Wasteland.</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, year2021expander)" id="year2021">
+                    <p>
+                    <h3>2021</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="year2021expander">
+                    <p>
+                    <h2 class="install">30/10/21</h2>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Split into two sections: Bug Fixes and Tweaks.</li>
+                        <li>Added Improved Lighting Shaders.</li>
+                    </ul>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Added Consistent Pip-Boy Icons.</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Removed New Vegas Redesigned 2 Revised.</li>
+                        <li>Added Anniversary Anim Pack General Bug Fix.</li>
+                    </ul>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Added NPCs Sprint.</li>
+                    </ul>
+                    <h2><strong>Overhauls</strong></h2>
+                    <ul>
+                        <li>Removed the following mods:
+                            <ul>
+                                <li>Economy Overhaul</li>
+                                <li>GRA Relocated, related to the removal above; weapons being on vendors gives the player to spend their plentiful amount of caps on</li>
+                                <li>Complex Vendors/Better Ghouls, Misc Gameplay Merge makes it redundant</li>
+                                <li>Follower Formula Redone, companions are now balanced by Player Combat Priority and charisma is now balanced with the bCapSkillsBySPECIAL setting in Tweaks</li>
+                                <li>Mobile Truck Base</li>
+                            </ul>
+                        </li>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Misc Gameplay Merge</li>
+                                <li>Player Combat Priority</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Content</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Essential DLC Enhancements Merged</li>
+                                <li>Mojave Raiders</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">18/10/21</h2>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Replaced the individual Just mods with Just Assorted Mods, along with a custom INI for it.</li>
+                        <li>Removed Marathoner (redundant with JVS).</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">13/5/21</h2>
+                    <h2><strong>MO2</strong></h2>
+                    <ul>
+                        <li>Set the default value of iNumHWThreads to 2.</li>
+                        <li>Removed the [Water] INI changes.</li>
+                    </ul>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Added a custom INI for NVTF, as the performance INI from the mod page has been removed.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">3/5/21</h2>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Moved JSawyer Ultimate to the <b>Overhauls</b> section. Since it makes the game more difficult by adjusting the default level cap, carry weight and health formulas, it seems like a better fit.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">19/4/21</h2>
+                    <h2><strong>Overhauls</strong></h2>
+                    <ul>
+                        <li>Added a custom INI for Unfound Loot that makes it more cohesive with the rest of the guide out of the box.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">6/4/21</h2>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Removed Consistent Pip-Boy Icons (VUI+ now includes a remastered version of the interfaceshared0.dds, which was the main reason that CPI was included. You should totally keep the mod if you already have it installed, but for simplification purposes, it's being removed. CPI's file size was also about 5x more than the rest of the mods included in the guide).</li>
+                    </ul>
+                    <h2><strong>Resources</strong></h2>
+                    <ul>
+                        <li>Added a guide on how to generate LOD with FNVLODGen.</li>
+                        <li>Added a guide on how to merge mods using FNVEdit.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">29/3/21</h2>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Updated WMIM ESP Replacer to include a vanila copy of the 1hpequip.kf file. This makes the WMIM Wrist Fix redundant without causing any addition bugs like the wrist fix did (the bug is now fixed on an engine level with JIP LN NVSE).</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Removed WMIM Wrist Fix.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">16/3/21</h2>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Added Console Paste Support.</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added No Muzzle Flash Lights.</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>B42 Weapon Inertia and NV Compatibility Skeleton</li>
+                                <li>Vanilla LOD (custom mod)</li>
+                                <li>A Little More Lamplight</li>
+                                <li>New Vegas Redesigned 2 Revised</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Split into two sections: Gameplay and Overhauls. Gameplay will contain the smaller mods that don't make the game much harder and just add modern QoL features. The Overhaul section contains the bulk of the difficulty mods like Unfound Loot and Economy Overhaul.</li>
+                        <li>Added Uncut Wasteland plus NPCs.</li>
+                    </ul>
+                    <h2><strong>Overhauls</strong></h2>
+                    <ul>
+                        <li>Added notes to enable bBarterCheckActorBuySellFlags and bLuckDoesntAffectGambling options in Stewie's Tweaks.</li>
+                        <li>Replaced Fallout 3 Economy with Economy Overhaul.</li>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>Complex Vendors</li>
+                                <li>Better Character Creation</li>
+                                <li>Better Ghouls</li>
+                                <li>The Living Desert</li>
+                                <li>Mobile Truck Base Remastered</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">1/3/21</h2>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Replaced Yellow Goodbye with Altitude.</li>
+                        <li>Added Simple Interior Lighting Overhaul.</li>
+                    </ul>
+                    <h2><strong>General</strong></h2>
+                    <ul>
+                        <li>Replaced the home background image with a new one taken with Altitude.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">27/2/21</h2>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Added a custom INI for JSUE which enables the new "Survival Mode" feature and the lowered XP feature, among others.</li>
+                        <li>Removed Fallout 4 Survival Mode Damage (the Survival Mode option mentioned above in JSUE does the same thing).</li>
+                        <li>Added Unfound Loot.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">15/2/21</h2>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Replaced the original JSawyer mod with JSawyer Ultimate Edition.</li>
+                    </ul>
+                    <h2><strong>Final Steps</strong></h2>
+                    <ul>
+                        <li>Because of the change above, the Conflict Resolution FOMOD isn't needed anymore.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">13/2/21</h2>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Replaced UPNVSE with UPNVSE Plus.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">30/1/21</h2>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Re-added Consistent Pip-Boy Icons.</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, year2020expander)" id="year2020">
+                    <p>
+                    <h3>2020</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/ui/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="year2020expander">
+                    <p>
+                    <h2 class="install">13/1/20</h2>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Added New Vegas Heap Replacer.</li>
+                        <li>Changed the installation method with a note about installing them manually if they don't work when installed through MO2 rather than the other way around.</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added a plugin replacement for WMIM that strips it down to everything but required the texture set/static changes rather than just hiding original plugin.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="install">14/12/20</h2>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Changed the NVTF iMaxFPSTolerance to 300, as the automatic FPS tolerance setting has some issues and will most likely be removed soon.</li>
+                    </ul>
+                    </p>
+                </div>
+            </span>
+
+            <!-- Arrows -->
+            <div class="navigationArrowContainer">
+                <a href="#" id="previous" rel="prev" class="navigationArrow">
+                    <img class="mirror" src="./img/UI/Arrow.svg" alt="Back Arrow">
+                    <span class="arrowText"></span>
+                </a>
+            </div>
         </div>
     </div>
 
-    <!-- Left Sidebar -->
-    <div id="sidenavLeft">
-        <div>
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./intro.html">Introduction</a>
-                </li>
-                <li>
-                    <a href="./setup.html">Setup</a>
-                </li>
-                <li>
-                    <a href="./mo2.html">MO2</a>
-                </li>
-                <li>
-                    <a href="./utilities.html">Utilities</a>
-                </li>
-                <li>
-                    <a href="./bugfix.html">Bug Fixes</a>
-                </li>
-                <li>
-                    <a href="./basefinish.html">Base Finish</a>
-                </li>
-            </ul>
-            <hr>
-        </div>
-        <div class="extended-background">
-            <ul>
-                <h3 id="extended-separator">VNV Extended</h3>
-                <li>
-                    <a href="./hud.html">User Interface</a>
-                </li>
-                <li>
-                    <a href="./gameplay.html">Gameplay</a>
-                </li>
-                <li>
-                    <a href="./content.html">Content</a>
-                </li>
-                <li>
-                    <a href="./overhauls.html">Overhauls</a>
-                </li>
-                <li>
-                    <a href="./visuals.html">Visuals</a>
-                </li>
-                <li>
-                    <a href="./finish.html">Extended Finish</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <hr>
-            <ul>
-                <li>
-                    <a href="./changelog.html" class="active">Changelog</a>
-                </li>
-                <li>
-                    <a href="./resources.html">Resources</a>
-                </li>
-                <li>
-                    <a href="./faq.html">FAQ</a>
-                </li>
-                <li>
-                    <a href="./avoid-tools.html">Tools to Avoid</a>
-                </li>
-                <li>
-                    <a href="./avoid-mods.html">Mods to Avoid</a>
-                </li>
-                <li>
-                    <a href="./wabbajack.html">Wabbajack</a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Guide Links -->
-        <div class="guideLinks">
-            <hr>
-            <ul>
-                <li>
-                    <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-                </li>
-                <li>
-                    <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Footer -->
-        <div id="footer">
-            <ul>
-                <li class="discord">
-                    <a href="https://discord.gg/S99Ary5eba" target="_blank">
-                        <i class="fab fa-discord"></i>
-                        Discord
-                    </a>
-                </li>
-                <li class="paypal">
-                    <a href="https://paypal.me/Ungeziefi" target="_blank">
-                        <i class="fa fa-paypal"></i>
-                        Donate
-                    </a>
-                </li>
-                <li class="github">
-                    <a href="https://github.com/ModdingLinked/Viva-New-Vegas" target="_blank">
-                        <i class="fab fa-github"></i>
-                        GitHub
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Content -->
-    <div class="content">
-        <div class="section">
-            <h1>Changelog</h1>
-            <h2>Time formatted in DD/MM/YY</h2>
-
-            <hr>
-
-            <h2 class="install">11/7/24</h2>
-            <h2><strong>Utilities</strong></h2>
-            <ul>
-                <li>The utilities test is now handled by the ML Utilities Checker instead of using console commands, vastly simplifying instructions.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">9/7/24</h2>
-            <h2><strong>Introduction</strong></h2>
-            <ul>
-                <li>Re-added VC++ Runtime Libraries installation steps as a fallback to mysteriously missing libraries from MO2's installer.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">5/7/24</h2>
-            <h3>Safe Mid-Game</h3>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated the following mods:
-                    <ul>
-                        <li>Uncut Wasteland - VNV Edit (removed YUP masters)</li>
-                        <li>Lone Star (1.8)</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">4/7/24</h2>
-            <h3>NOT Safe Mid-game</h3>
-            <h2><strong>Whole Guide</strong></h2>
-            <ul>
-                <li>Switched the Overhauls and Content pages in order to prevent confusion from temporary missing masters.</li>
-            </ul>
-            <h2><strong>Utilities</strong></h2>
-            <ul>
-                <li>Added Shader Loader - NVSE.</li>
-            </ul>
-            <h2><strong>User Interface</strong></h2>
-            <ul>
-                <li>Removed VUIPlus - Dialog Background Add-on, its subjective and not consistent with general subtitles if they are enabled.</li>
-            </ul>
-            <h2><strong>Content</strong></h2>
-            <ul>
-                <li>Replaced Uncut Wasteland - VNV Edit with a simpler version of Uncut Wasteland almost identical to the original but with fixes and cleanup. This means that it can now be used with patches for the original mod. More information is provided on the <a href="https://www.nexusmods.com/newvegas/mods/79358" target="_blank">Viva New Vegas Resources</a> page.</li>
-                <li>Removed Misc Content Restoration - UW (VNV) Patch as its no longer needed.</li>
-                <li>Added the following patches:
-                    <ul>
-                        <li>EVEM - Uncut Extra Collection Patch</li>
-                        <li>EVEM - Uncut Extra Collection - FPGE Patch</li>
-                    </ul>
-                </li>
-            </ul>
-            <h2><strong>Overhauls</strong></h2>
-            <ul>
-                <li>Removed Vigor - VNV Edit and its patches in favor of Lone Star.</li>
-            </ul>
-            <h2><strong>Visuals</strong></h2>
-            <ul>
-                <li>Added the following mods:
-                    <ul>
-                        <li>Simple Character Expansions</li>
-                        <li>Blood Decal Flashing Fix</li>
-                    </ul>
-                </li>
-            </ul>
-            <h2><strong>LOD Guide</strong></h2>
-            <ul>
-                <li>Added a load order warning if using Impostors and LOD Flicker Fix with Desert Natural Weathers.</li>
-            </ul>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated to reflect the changes above.</li>
-                <li>Added various GECK INI edits that are useful to authors and for general GECK use.</li>
-                <li>Updated the following mods:
-                    <ul>
-                        <li>JohnnyGuitar NVSE (5.10)</li>
-                        <li>Yukichigai Unofficial Patch - YUP (13.1.1)</li>
-                        <li>lStewieAl's Tweaks and Engine Fixes (9.21)</li>
-                        <li>Stewie Tweaks - VNV Extended INI (removed Vigor Tester skip)</li>
-                        <li>skinned mesh improvement mod (21)</li>
-                        <li>Consistent Weapon Mod Descriptions (1.6)</li>
-                        <li>JAM - Just Assorted Mods (4.6)</li>
-                        <li>Clean Just Assorted Mods (JAM) (1.1)</li>
-                        <li>Enhanced Movement (1.22)</li>
-                        <li>Leveled DLC Delay (2.0)</li>
-                        <li>Better Caravan (1.4)</li>
-                        <li>Functional Post Game Ending (7.2)</li>
-                    </ul>
-                </li>
-                <li>Updated pre-generated LOD.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">16/6/24</h2>
-            <h3>Safe Mid-Game</h3>
-            <h2><strong>LOD Guide</strong></h2>
-            <ul>
-                <li>Added LOD Vertex Color Fixes.</li>
-                <li>Added Road LOD Kit.</li>
-                <li>Added instructions to hide the effects folder from Much Needed LOD - the water jet LOD it adds is broken.</li>
-                <li>Updated pre-generated LOD and the VNV LOD plugin to reflect the changes above.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">6/6/24</h2>
-            <h3>Safe Mid-Game</h3>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated to MO2 2.5.1rc2-ML1.4.1.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">5/6/24</h2>
-            <h3>Safe Mid-Game</h3>
-            <h2><strong>LOD Guide</strong></h2>
-            <ul>
-                <li>Added back Impostors and LOD Flicker Fix, only for users increasing their LOD distances.</li>
-            </ul>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated to reflect the change above.</li>
-                <li>Updated LOD distances to match the 3/6/24 changes.</li>
-                <li>Updated to MO2 2.5.1rc2-ML1.4.</li>
-                <li>Fixed missing Consistent Weapon Mod Descriptions.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">4/6/24</h2>
-            <h3>Safe Mid-Game</h3>
-            <h2><strong>Setup</strong></h2>
-            <ul>
-                <li>Added steps to disable Base Address Randomization.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">3/6/24</h2>
-            <h3>Safe Mid-Game</h3>
-            <h2><strong>LOD Guide</strong></h2>
-            <ul>
-                <li>Increased LOD distances again now that the memory usage bug is fixed in LOD Fixes and Improvements - NVSE (1.2.9).</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">2/6/24</h2>
-            <h3>Safe Mid-Game</h3>
-            <h2><strong>Introduction</strong></h2>
-            <ul>
-                <li>Removed VC++ Runtime Libraries installation steps, as the Mod Organizer 2 installer now handles it (2.5.1rc2-ML1.3 onwards).</li>
-            </ul>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated to MO2 2.5.1rc2-ML1.3.1.</li>
-                <li>Updated the following mods:
-                    <ul>
-                        <li>JohnnyGuitar NVSE (5.08).</li>
-                        <li>LOD Fixes and Improvements - NVSE (1.2.9).</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">1/6/24</h2>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Added MO2 instructions.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">31/5/24</h2>
-            <h3>Safe Mid-Game</h3>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Added Slideshow FOV Fix - ESPLess.</li>
-            </ul>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated to reflect the change above.</li>
-                <li>Added missing Stewie Tweaks - VNV INI (disabled by default in favour of the Extended one).</li>
-                <li>Updated the following mods:
-                    <ul>
-                        <li>Stewie Tweaks - VNV Extended INI.</li>
-                        <li>Vigor - VNV Edit ("I Never Axed For This" challenge fix).</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">30/5/24</h2>
-            <h3>Safe Mid-Game</h3>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Replaced the Stewie Tweaks Essentials INI with a INIs specifically made for VNV and VNVE.</li>
-                <li>Updated the following mods:
-                    <ul>
-                        <li>Added 3rd Person Animation Fixpack.</li>
-                        <li>Added Doc Mitchell's Window Sunlight Fix.</li>
-                    </ul>
-                </li>
-                <li>Removed the following mods:
-                    <ul>
-                        <li>Crafting Consistency Fix, this feature is now applied by the new Stewie Tweaks configurations.</li>
-                        <li>Impostors and LOD Flicker Fix, the issue it solves is present only when using very high LOD draw distance values (read below).</li>
-                    </ul>
-                </li>
-            </ul>
-            <h2><strong>Gameplay</strong></h2>
-            <ul>
-                <li>Replaced JAM's sprinting with Enhanced Movement.</li>
-                <li>Removed Just Sprint Plus - Expansion for JAM and JVS - no longer required due to the use of Enhanced Movement.</li>
-                <li>Replaced Delay DLC Redux with Leveled DLC Delay, this prevents confusion for new players and includes DLC Hostility Fixes.</li>
-            </ul>
-            <h2><strong>Overhauls</strong></h2>
-            <ul>
-                <li>Switched to the VNV Edit of Vigor to fix some bugs while Qolore7 is MIA. The Varmint Rifle 22LR file isn't needed anymore as a result.</li>
-            </ul>
-            <h2><strong>Visuals</strong></h2>
-            <ul>
-                <li>Replaced Improved LOD Noise with Contrasted LOD Noise.</li>
-            </ul>
-            <h2><strong>LOD Guide</strong></h2>
-            <ul>
-                <li>Added LOD Additions and Improvements - Billboard LOD Fix.</li>
-                <li>
-                    <strike>Updated LOD distance to more sensible values (read the Impostors and LOD Flicker Fix entry above).</strike> This reduction in LOD distances was aimed at mitigating the higher memory usage brought by a bug in LOD Fixes and Improvements - NVSE, which is now fixed (1.2.9).
-                </li>
-                <li>Updated pre-generated LOD.</li>
-            </ul>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated to reflect the changes above.</li>
-                <li>Updated the following mods:
-                    <ul>
-                        <li>JIP LN NVSE Plugin</li>
-                        <li>Misc Audio Tweaks and Fixes</li>
-                        <li>Sleep Wait Hardcore Needs</li>
-                        <li>Essential Vanilla Enhancements Merged</li>
-                    </ul>
-                </li>
-                <li>Switched to the correct version of FNV Clean Animations (Anniversary Edition).</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">22/5/24</h2>
-            <h3>Safe Mid-Game</h3>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated to MO2 2.5.1rc2-ML1.2.</li>
-                <li>Updated the following mods:
-                    <ul>
-                        <li>JohnnyGuitar NVSE (5.07)</li>
-                        <li>Yvile's Crash Logger (4.6)</li>
-                        <li>skinned mesh improvement mod (20)</li>
-                        <li>Meshes and Collision - Totally Enhanced Nifs (MAC-TEN) (6.0)</li>
-                        <li>No Exit to Main Menu (1.3)</li>
-                        <li>Vigor - SMIM Patch</li>
-                        <li>Anniversary Anim Pack (2.1)</li>
-                        <li>Iron Sights Aligned (4.2)</li>
-                        <li>Landscape Texture Improvements (4.2a)</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">14/5/24</h2>
-            <h3>Safe Mid-Game</h3>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Added launcher instructions.</li>
-                <li>Added a Viva New Vegas splash screen.</li>
-                <li>Disabled the overwrite warning (it's safe to ignore).</li>
-                <li>Updated the following mods:
-                    <ul>
-                        <li>JohnnyGuitar NVSE (5.06b)</li>
-                        <li>ShowOff xNVSE Plugin (1.80)</li>
-                        <li>lStewieAl's Tweaks and Engine Fixes (9.15)</li>
-                        <li>skinned mesh improvement mod (19)</li>
-                        <li>ExRB - Extended Roombounds (2.2)</li>
-                        <li>No Exit to Main Menu (1.2)</li>
-                        <li>FPGE - Functional Post Game Ending (6.8.2)</li>
-                        <li>Better Brotherhood (2.4h)</li>
-                        <li>Iron Sights Aligned (4.0)</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">30/4/24</h2>
-            <h3>Safe Mid-Game</h3>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated Better Brotherhood (2.4g).</li>
-                <li>Removed Show Water Source H2O - ESPless, this wasn't meant to be included.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">29/4/24</h2>
-            <h3>Safe Mid-Game</h3>
-            <h2><strong>MO2</strong></h2>
-            <ul>
-                <li>Switched to the MO2 installer over the archive download in order to prevent missing AV exclusions.</li>
-            </ul>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Added Items Transformed - Enhanced Meshes (ITEM).</li>
-            </ul>
-            <h2><strong>User Interface</strong></h2>
-            <ul>
-                <li>Added the following mods:
-                    <ul>
-                        <li>Sleep Wait Hardcore Needs</li>
-                        <li>No Exit to Main Menu</li>
-                    </ul>
-                </li>
-            </ul>
-            <h2><strong>Overhauls</strong></h2>
-            <ul>
-                <li>Removed Better Character Creation because its changes don't fit first-time playthroughs. The mod's Wild Wasteland change can be replicated by using Stewie Tweaks.</li>
-            </ul>
-            <h2><strong>Content</strong></h2>
-            <ul>
-                <li>Removed The Living Desert - EVEM Patch, its no longer needed.</li>
-            </ul>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Available once again and updated to reflect the changes above.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">25/4/24</h2>
-            <h3>Safe Mid-Game</h3>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Removed the Navmesh Overhaul YUP Patch, its no longer needed with Navmesh Overhaul 6.0.</li>
-            </ul>
-            <h2><strong>Extended Finish</strong></h2>
-            <ul>
-                <li>Removed the VNVE Navmesh Patch, its no longer needed with Navmesh Overhaul 6.0.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">24/4/24</h2>
-            <h3>Safe Mid-Game</h3>
-            <h2><strong>Utilities</strong></h2>
-            <ul>
-                <li>Added the All Tweaks Preset from the new JohnnyGuitar NVSE - INI Presets page.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">22/4/24</h2>
-            <h3>Safe Mid-Game</h3>
-            <h2><strong>Content</strong></h2>
-            <ul>
-                <li>Removed The Living Desert FaceGen Tint Fix, its no longer needed since version 2.6.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">14/4/24</h2>
-            <h2><strong>LOD Guide</strong></h2>
-            <ul>
-                <li>Added the following mods:
-                    <ul>
-                        <li>Much Needed LOD</li>
-                        <li>Much Needed LOD fixed rocks color</li>
-                        <li>FNV LOD Supplementation</li>
-                        <li>Different LOD mods little tweaks and additions</li>
-                        <li>VNV - LOD Patches</li>
-                    </ul>
-                </li>
-                <li>Updated pre-generated LOD.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">3/4/24</h2>
-            <h3>Safe Mid-Game</h3>
-            <h2><strong>User Interface</strong></h2>
-            <ul>
-                <li>Added Vanilla UI Plus - Dialog Background Add-on.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">28/3/24</h2>
-            <h3>Safe Mid-Game</h3>
-            <h2><strong>Overhauls</strong></h2>
-            <ul>
-                <li>Changed Vigor - SMIM Patch to zpoke808's.</li>
-                <li>Removed EVEM - SMIM Patch.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">29/2/24</h2>
-            <h3>Safe Mid-Game</h3>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Moved Pip-Boy Shading Fix back to Bug Fixes since we disable shadows in falloutcustom.ini.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">29/2/24</h2>
-            <h3>NOT Safe Mid-game (unless you skip the Varmint Rifle 22LR patch)</h3>
-            <h2><strong>MO2</strong></h2>
-            <ul>
-                <li>Expanded the page with more MO2 info.</li>
-            </ul>
-            <h2><strong>Utilities</strong></h2>
-            <ul>
-                <li>Added a mention that EGS versions don't use registry keys.</li>
-            </ul>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Removed Fog-based Object Culling - it's now handled by the Perfomance Guide.</li>
-                <li>Moved Muzzle Flash Light Fix to Visuals - not critical enough to warrant base VNV inclusion.</li>
-                <li>Moved Pipboy Shading Fix to Visuals - not critical enough to warrant base VNV inclusion.</li>
-                <li>Added VATS Lag Fix.</li>
-            </ul>
-            <h2><strong>User Interface</strong></h2>
-            <ul>
-                <li>Added Clean Vanilla HUD.</li>
-                <li>Added Clean Companion Wheel.</li>
-            </ul>
-            <h2><strong>Gameplay</strong></h2>
-            <ul>
-                <li>Added Just Assorted Mods.</li>
-                <li>Added Clean Just Assorted Mods.</li>
-                <li>Added Just Sprint Plus.</li>
-            </ul>
-            <h2><strong>Overhauls</strong></h2>
-            <ul>
-                <li>Added Simple Vigor Config.</li>
-                <li>Added Varmint Rifle 22LR.</li>
-            </ul>
-            <h2><strong>Visuals</strong></h2>
-            <ul>
-                <li>Moved Muzzle Flash Light Fix from Bug Fixes.</li>
-                <li>Moved Pipboy Shading Fix from Bug Fixes.</li>
-                <li>Added Viewmodel Shading Fix.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">10/1/24</h2>
-            <h3>Safe Mid-game</h3>
-            <h2><strong>MO2</strong></h2>
-            <ul>
-                <li>Added instructions to unblock the downloaded archive to fix DLLs not loading.</li>
-            </ul>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Added Viewmodel Shake Fix.</li>
-            </ul>
-            <h2><strong>Visuals</strong></h2>
-            <ul>
-                <li>Moved High Resolution Water Fog from Bug Fixes to the Visuals section.</li>
-            </ul>
-            <h2><strong>LOD Guide</strong></h2>
-            <ul>
-                <li>Added LODIFY.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">29/12/23</h2>
-            <h3>Safe Mid-game</h3>
-            <h2><strong>MO2</strong></h2>
-            <ul>
-                <li>Updated to Mod Organizer 2.5.1 RC2.</li>
-            </ul>
-            <h2><strong>Content</strong></h2>
-            <ul>
-                <li>Removed the Strip Lights Region Fix patches for Uncut Wasteland and The Living Desert because they are no longer needed with SLRF 1.3.1.</li>
-            </ul>
-            <h2><strong>LOD Guide</strong></h2>
-            <ul>
-                <li>Added terrain LOD to the VNV Pre-Generated LOD and removed vertex coloring because it's broken without mesh fixes.</li>
-            </ul>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated to reflect the changes above.</li>
-                <li>Updated the following mods:
-                    <ul>
-                        <li>Updated Desert Natural Weathers NV (7.2.5)</li>
-                        <li>Strip Lights Region Fix (1.3.1)</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">24/12/23</h2>
-            <h3>Safe Mid-game</h3>
-            <h2><strong>Content</strong></h2>
-            <ul>
-                <li>Replaced The Living Desert - Strip Lights Region Fix Patch with the one from Strip Lights Region Fix's page because the 2 patches are identical, so there's no point in hosting a duplicate. This also means that this update is not necessary.</li>
-            </ul>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated to reflect the change above.</li>
-                <li>Fixed non-working Bad Touch NVSE - Minimalist Preset.</li>
-                <li>Updated Bad Touch NVSE (1.7).</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">23/12/23</h2>
-            <h3>Safe Mid-game</h3>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Removed Preferred Pathing Combat Fix because of a critical bug.</li>
-            </ul>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated to reflect the change above.</li>
-                <li>Fixed load order and missing mods.</li>
-                <li>Updated Uncut Wasteland.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">22/12/23</h2>
-            <h3>Safe Mid-game</h3>
-            <h2><strong>Whole Guide</strong></h2>
-            <ul>
-                <li>Added support for Epic Games copies.</li>
-            </ul>
-            <h2><strong>MO2</strong></h2>
-            <ul>
-                <li>Updated to Mod Organizer 2.5.1 RC1.</li>
-                <li>Removed the profile configuration section since it is now a step during instance creation.</li>
-            </ul>
-            <h2><strong>Utilities</strong></h2>
-            <ul>
-                <li>Added Epic Games Patcher.</li>
-            </ul>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Added Preferred Pathing Combat Fix.</li>
-                <li>Removed Strip Street Light Corrections because it is now included in YUP 12.9.</li>
-            </ul>
-            <h2><strong>Gameplay</strong></h2>
-            <ul>
-                <li>Added Bad Touch NVSE - Minimalist Preset for consistency with the DBF counterpart.</li>
-            </ul>
-            <h2><strong>Content</strong></h2>
-            <ul>
-                <li>Added Misc Content Restoration - UW (VNV) Patch.</li>
-            </ul>
-            <h2><strong>LOD Guide</strong></h2>
-            <ul>
-                <li>Added the following mods:
-                    <ul>
-                        <li>LOD Fixes and Improvements - NVSE</li>
-                        <li>Trees LOD Billboards Vanilla</li>
-                    </ul>
-                </li>
-            </ul>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated to reflect the changes above.</li>
-                <li>Added <code>d3dx9_38.tmp</code> file to the NVHR folder, this removes the command prompt window opening alongside the game.</li>
-                <li>Updated the following mods:
-                    <ul>
-                        <li>JohnnyGuitarNVSE (4.98)</li>
-                        <li>Yvile's Crash Logger (4.5.3)</li>
-                        <li>Improved Console (NVSE) (3)</li>
-                        <li>Yukichigai Unofficial Patch - YUP (12.9)</li>
-                        <li>lStewieAl's Tweaks and Engine Fixes (8.85)</li>
-                        <li>skinned mesh improvement mod (8)</li>
-                        <li>Meshes and Collision - Totally Enhanced Nifs (MAC-TEN) (2.3)</li>
-                        <li>Fallout Alpha Rendering Tweaks (2.5.1)</li>
-                        <li>Bad Touch NVSE - Player Only Version (1.6)</li>
-                        <li>EVEM - YUP Patch</li>
-                        <li>Better Brotherhood and its YUP Patch (2.4a)</li>
-                        <li>Uncut Wasteland</li>
-                        <li>Misc Content Restoration - YUP Patch</li>
-                        <li>Functional Post Game Ending (6.6)</li>
-                        <li>Desert Natural Weathers NV (7.2)</li>
-                        <li>LOD additions and improvements - YUP Patch</li>
-                        <li>VNV Pre-Generated LOD</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">25/11/23</h2>
-            <h3>Safe Mid-game</h3>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Added Meshes and Collision - Totally Enhanced Nifs (MAC-TEN).</li>
-            </ul>
-            <h2><strong>Visuals</strong></h2>
-            <ul>
-                <li>Added the following mods:
-                    <ul>
-                        <li>Wasted Rocks Normals</li>
-                        <li>More Consistent Vanilla Rock Textures (Less Green Clifftops)</li>
-                    </ul>
-                </li>
-            </ul>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated to reflect the changes above.</li>
-                <li>Updated the following mods:
-                    <ul>
-                        <li>JohnnyGuitar NVSE (4.97)</li>
-                        <li>lStewieAl's Tweaks and Engine Fixes (8.81)</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">22/11/23</h2>
-            <h3>Safe Mid-game</h3>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Added the update file for SMIM, this fixes crashes in Dead Money.</li>
-                <li>Removed the following mods:
-                    <ul>
-                        <li>Fire Queue Fix - ESPless, it is now included in Stewie Tweaks 8.80</li>
-                        <li>Ammo Script Fixes, it has subjective changes that don't belong in this section and the more important fixes are already covered by JIP and UPNVSE+</li>
-                    </ul>
-                </li>
-            </ul>
-            <h2><strong>User Interface</strong></h2>
-            <ul>
-                <li>Added JLM Grab Tweak.</li>
-            </ul>
-            <h2><strong>Overhauls</strong></h2>
-            <ul>
-                <li>Switched back to the original Better Character Creation now that it includes all of the navmesh fixes.</li>
-            </ul>
-            <h2><strong>Visuals</strong></h2>
-            <ul>
-                <li>Added FNV Clean Animations - Anniversary Edition.</li>
-            </ul>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated to reflect the changes above.</li>
-                <li>Updated the following mods:
-                    <ul>
-                        <li>Yvile's Crash Logger (4.5.2)</li>
-                        <li>lStewieAl's Tweaks and Engine Fixes (8.80)</li>
-                        <li>Stewie Tweaks Essentials INI (1.07)</li>
-                        <li>Bad Touch NVSE (1.4.1)</li>
-                        <li>Desert Natural Weathers (7.1)</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">19/11/23</h2>
-            <h2><strong>Resources</strong></h2>
-            <ul>
-                <li>Restructured to host 3 new pages on ModdingLinked (these pages were previously on the Wasteland Survival Guide and are universal).</li>
-                <li>Added a guide to decompress plugins.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">16/11/23</h2>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated Bad Touch NVSE (1.3.1).</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">15/11/23 Part 2</h2>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated the following mods:
-                    <ul>
-                        <li>Fire Queue Fix - ESPless (1.0.3)</li>
-                        <li>Bad Touch NVSE (1.2.1)</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">15/11/23</h2>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Added Fire Queue Fix - ESPless.</li>
-            </ul>
-            <h2><strong>Gameplay</strong></h2>
-            <ul>
-                <li>Added Bad Touch NVSE.</li>
-            </ul>
-            <h2><strong>Overhauls</strong></h2>
-            <ul>
-                <li>Added EVEM - SMIM Patch.</li>
-            </ul>
-            <h2><strong>Content</strong></h2>
-            <ul>
-                <li>Added Misc Content Restoration - YUP Patch.</li>
-            </ul>
-            <h2><strong>Visuals</strong></h2>
-            <ul>
-                <li>Added the following mods:
-                    <ul>
-                        <li>3D Rain</li>
-                        <li>Climate Control - 3D Rain</li>
-                    </ul>
-                </li>
-            </ul>
-            <h2><strong>LOD Guide</strong></h2>
-            <ul>
-                <li>Added LOD additions and improvements - YUP Patch.</li>
-            </ul>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated to reflect the changes above.</li>
-                <li>Updated the following mods:
-                    <ul>
-                        <li>Skinned Mesh Improvement Mod (6.0)</li>
-                        <li>Assorted Voice Popping Fixes (2.2)</li>
-                        <li>Vanilla Enhancements Merged (1.3.5)</li>
-                        <li>The Living Desert - Strip Lights Region Fix Patch</li>
-                        <li>Desert Natural Weathers (7.0.1)</li>
-                        <li>VNV Extended Navmesh Patch</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">12/11/23</h2>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Added High Resolution Water Fog - Water Aliasing Fix.</li>
-            </ul>
-            <h2><strong>Content</strong></h2>
-            <ul>
-                <li>Added The Living Desert FaceGen Tint Fix.</li>
-            </ul>
-            <h2><strong>LOD Guide</strong></h2>
-            <ul>
-                <li>Added pre-generated LOD meant for the VNV Wabbajack, resources listed in the LOD page are still needed.</li>
-            </ul>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated to reflect the changes above.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">9/11/23</h2>
-            <h2><strong>Visuals</strong></h2>
-            <ul>
-                <li>Removed the Desert Natural Weathers - YUP Patch because it is no longer needed with DNW 7.0.</li>
-            </ul>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated to reflect the change above.</li>
-                <li>Updated Desert Natural Weathers (7.0).</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">7/11/23</h2>
-            <h2><strong>Content</strong></h2>
-            <ul>
-                <li>Added Misc Content Restoration.</li>
-            </ul>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated to reflect the change above.</li>
-                <li>Updated B42 Optics NV Patches (1.5).</li>
-                <li>Regenerated LOD for Misc Content Restoration.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">6/11/23 Part 2</h2>
-            <h2><strong>Visuals</strong></h2>
-            <ul>
-                <li>Removed Cloud Shadows because a large chunk of users don't seem to like it.</li>
-            </ul>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated to reflect the change above.</li>
-                <li>Updated the following mods:
-                    <ul>
-                        <li>Iron Sights Aligned (3.3)</li>
-                        <li>ExRB - Extended Roombounds (2.1)</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">6/11/23</h2>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Replaced Less Flickery City of New Vegas with Impostors and LOD Flicker Fix (same fix, better implementation).</li>
-                <li>Added back Fallout Alpha Rendering Tweaks since version 2.5 fixed its issues.</li>
-            </ul>
-            <h2><strong>Overhauls</strong></h2>
-            <ul>
-                <li>Removed Mojave Arsenal for multiple reasons:
-                    <ul>
-                        <li>Weapon mods and special ammo should act as gold sink.</li>
-                        <li>Encourage trading, also so that Harder Barter Faster Stronger makes sense to include.</li>
-                        <li>Integrating mods is better done through JIP.</li>
-                        <li>Vigor already distributes GRA items.</li>
-                    </ul>
-                </li>
-            </ul>
-            <h2><strong>Content</strong></h2>
-            <ul>
-                <li>Removed Mojave Raiders because The Living Desert and Uncut Wasteland already add plenty of spawns, TLD will also focus on raiders in the next major update.</li>
-            </ul>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated to reflect the changes above.</li>
-                <li>Updated Vigor (1.2).</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">5/11/23</h2>
-            <h2><strong>Whole Guide</strong></h2>
-            <ul>
-                <li>Removed the performance warnings because they need re-evaluation and they largely don't make sense once you consider that a VNV list compared to vanilla runs orders of magnitude faster.</li>
-            </ul>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Added Less Flickery City of New Vegas.</li>
-            </ul>
-            <h2><strong>User Interface</strong></h2>
-            <ul>
-                <li>Added Just Loot Menu.</li>
-                <li>Removed all of the mods by ItsMeJesusHChrist because of their increasing amount and because the project is incomplete. This might be replaced in the future with a better solution.</li>
-            </ul>
-            <h2><strong>Gameplay</strong></h2>
-            <ul>
-                <li>Removed the following mods:
-                    <ul>
-                        <li>Just Assorted Mods, most of it is unused in VNV</li>
-                        <li>B42 True Leaning, the game's innacurate collisions make this annoying, also might affect gunplay too much balance wise</li>
-                        <li>Laser Weapon Iron Sights, bugged animations and the ugly meshes stand out too much</li>
-                    </ul>
-                </li>
-            </ul>
-            <h2><strong>Overhauls</strong></h2>
-            <ul>
-                <li>Replaced JSawyer Ultimate Edition with Vigor for extra fixes and a lighter overhaul. Also replaced JSUE patches with Vigor ones, but the patch for Essential DLC Enhancements Merged can be shared.</li>
-                <li>Removed the following mods:
-                    <ul>
-                        <li>Famine, to not make the list too hardcore</li>
-                        <li>Food Effect Tweaks, same as above</li>
-                        <li>Player Combat Priority, because of the reported bugs</li>
-                    </ul>
-                </li>
-            </ul>
-            <h2><strong>Visuals</strong></h2>
-            <ul>
-                <li>Added Mostly Fixed FaceGen Tints.</li>
-                <li>Removed the following mods:
-                    <ul>
-                        <li>Anniversary Anims Fix, it is now merged into Anniversary Anim Pack</li>
-                        <li>Faster Pip-Boy Animation, it's too unimportant</li>
-                    </ul>
-                </li>
-            </ul>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated to reflect the changes above.</li>
-                <li>Updated the following mods:
-                    <ul>
-                        <li>Assorted Voice Popping Fixes (2.1)</li>
-                        <li>Ammo Script Fixes (5.5)</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">28/10/23</h2>
-            <h2><strong>Visuals</strong></h2>
-            <ul>
-                <li>Added Landscape Texture Improvements.</li>
-            </ul>
-            <h2><strong>User Interface</strong></h2>
-            <ul>
-                <li>Added the following mods:
-                    <ul>
-                        <li>Consistent Pip-Boy Icons v5 - Apparel</li>
-                        <li>Consistent Pip-Boy Icons v5 - Framework Plugin</li>
-                        <li>Weapon Hotkey Icons</li>
-                        <li>Map Marker Icons</li>
-                    </ul>
-                </li>
-            </ul>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated to reflect the changes above.</li>
-                <li>Updated the following mods:
-                    <ul>
-                        <li>FNV BSA Decompressor (1.2)</li>
-                        <li>Yvile's Crash Logger (4.5)</li>
-                        <li>SMIM - Assets (5.0)</li>
-                        <li>Consistent Addon Icons (4.3)</li>
-                        <li>Clean Vanilla Hud (60)</li>
-                        <li>Pop-Up Message Icons (2.03)</li>
-                        <li>Consistent Pip-Boy Icons v5 - Items (5.04)</li>
-                        <li>Consistent Pip-Boy Icons v5 - Weapons (5.02)</li>
-                        <li>Desert Natural Weathers - NV (6.9.1)</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">15/10/23</h2>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Re-added PipBoyOn Node Fixes, now patched for SMIM.</li>
-            </ul>
-            <h2><strong>Overhauls</strong></h2>
-            <ul>
-                <li>Moved Navmesh Overhaul VNV Patch to the <b>Extended Finish</b> section to make sure users don't skip it, also renamed the file to VNV Extended Navmesh Patch.</li>
-            </ul>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated to reflect the changes above.</li>
-                <li>Updated the following mods:
-                    <ul>
-                        <li>Console Paste Support (2.2)</li>
-                        <li>Improved AI (Navmesh Overhaul Mod) (5.0)</li>
-                        <li>SMIM - Assets (4)</li>
-                        <li>VNV Extended Navmesh Patch</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">14/10/23</h2>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Removed PipBoyOn Node Fixes <del>since it is no longer needed with SMIM</del> because it is not patched for SMIM.</li>
-            </ul>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated to reflect the change above.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">6/10/23</h2>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Added Wasted LOD - Cliffs of Mojave and regenerated LOD.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">4/10/23</h2>
-            <h2><strong>LOD Guide</strong></h2>
-            <ul>
-                <li>Added Wasted LOD - Cliffs of Mojave.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">27/9/23</h2>
-            <h2><strong>Utilities</strong></h2>
-            <ul>
-                <li>Added KEYWORDS.</li>
-            </ul>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Added the following mods:
-                    <ul>
-                        <li>lStewieAl's Engine Optimizations</li>
-                        <li>skinned mesh improvement mod</li>
-                        <li>Swimming Creatures Fix</li>
-                    </ul>
-                </li>
-                <li>Removed ExRB - YUP Patch because it is no longer needed with ExRB 2.0.</li>
-            </ul>
-            <h2><strong>User Interface</strong></h2>
-            <ul>
-                <li>Added the following mods:
-                    <ul>
-                        <li>Consistent Pip-Boy Icons v5 - Weapons</li>
-                        <li>Faster Main Menu</li>
-                        <li>Menu Search</li>
-                        <li>Improved Recipe Menu, previously in the Stewie Tweaks Essentials INI but removed from there because it is out of scope</li>
-                    </ul>
-                </li>
-            </ul>
-            <h2><strong>Gameplay</strong></h2>
-            <ul>
-                <li>Added the following mods:
-                    <ul>
-                        <li>Cookable Grenades</li>
-                        <li>Faster Sleep-Wait</li>
-                        <li>Auto-Save Manager</li>
-                    </ul>
-                </li>
-            </ul>
-            <h2><strong>Visuals</strong></h2>
-            <ul>
-                <li>Added the following mods:
-                    <ul>
-                        <li>Smooth True Iron Sights Camera</li>
-                        <li>B42 Optics NV Patches</li>
-                    </ul>
-                </li>
-            </ul>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated to reflect the changes above.</li>
-                <li>Regenerated LOD for More LODs Additions and fixes 1.11.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">27/8/23</h2>
-            <h2><strong>Utilities</strong></h2>
-            <ul>
-                <li>Removed SUP NVSE, the requirement listed for Delay DLC Redux was a mistake from the author.</li>
-                <li>Replaced Crash Logger with Yvile's Crash Logger.</li>
-            </ul>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Removed Consistent Spread - Firearms Accuracy and Wobble Fix because of a bug with accuracy.</li>
-            </ul>
-            <h2><strong>User Interface</strong></h2>
-            <ul>
-                <li>Added the following mods:
-                    <ul>
-                        <li>Clean Vanilla Hud</li>
-                        <li>Pop-Up Message Icons</li>
-                        <li>Clean Vault Boy Paper Doll</li>
-                    </ul>
-                </li>
-            </ul>
-            <h2><strong>Gameplay</strong></h2>
-            <ul>
-                <li>Added Laser Weapon Iron Sights.</li>
-                <li>Replaced Clean Just Weapons Wheel with Clean Just Assorted Mods (JAM).</li>
-            </ul>
-            <h2><strong>Overhauls</strong></h2>
-            <ul>
-                <li>Added Better Brotherhood - YUP Patch.</li>
-            </ul>
-            <h2><strong>Content</strong></h2>
-            <ul>
-                <li>Added Uncut Wasteland (VNV) - EVEM Patch</li>
-                <li>Added FPGE - EVEM Patch.</li>
-            </ul>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated to reflect the changes above.</li>
-                <li>Regenerated LOD for More LODs Additions and fixes 1.1.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">6/8/23</h2>
-            <h2><strong>Utilities</strong></h2>
-            <ul>
-                <li>Added SUP <del>NVSE because Delay DLC Redux requires it</del>.</li>
-            </ul>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Replaced Elijah Voice Audio Files Fix with Misc Audio Tweaks and Fixes.</li>
-                <li>Added Ammo Script Fixes.</li>
-            </ul>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated to reflect the changes above.</li>
-                <li>Regenerated LOD for More LODs Additions and fixes 0.91.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">3/8/23</h2>
-            <h2><strong>Gameplay</strong></h2>
-            <ul>
-                <li>Delay DLC Redux 2.0 is broken, make sure you install 2.1 and start a new game if you made that character with 2.0.</li>
-            </ul>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated to reflect the change above.</li>
-                <li>Regenerated LOD for More LODs Additions and fixes 0.8.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">26/7/23</h2>
-            <h2><strong>Utilities</strong></h2>
-            <ul>
-                <li>Fixed world FOV in the Custom INI.</li>
-            </ul>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated to reflect the change above.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">24/7/23</h2>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Added Consistent Spread - Firearms Accuracy and Wobble Fix.</li>
-            </ul>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated to reflect the change above.</li>
-                <li>Updated Crash Logger (4.1).</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">23/7/23</h2>
-            <h2><strong>MO2</strong></h2>
-            <ul>
-                <li>Switched back to portable instance for consistency with the TBoT video guide and the Wabbajack lists.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">22/7/23</h2>
-            <h2><strong>User Interface</strong></h2>
-            <ul>
-                <li>Added Consistent Pip-Boy Icons v5 - Items.</li>
-            </ul>
-            <h2><strong>Overhauls</strong></h2>
-            <ul>
-                <li>Added Traps Tweaks - Traps Use Other Skills.</li>
-            </ul>
-            <h2><strong>Visuals</strong></h2>
-            <ul>
-                <li>Moved Pip-Boy Shading Fix NVSE and Strip Street Light Corrections to the <b>Bug Fixes</b> section.</li>
-            </ul>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated to reflect the changes above.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">20/7/23</h2>
-            <h2><strong>Gameplay</strong></h2>
-            <ul>
-                <li>Updated JAM VNV Configuration.</li>
-            </ul>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated to reflect the change above.</li>
-                <li>Regenerated LOD for More LODs Additions and fixes 0.7.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">19/7/23</h2>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Added PipBoyOn Node Fixes.</li>
-                <li>Replaced Vanilla Iron Sights Realligned with Iron Sights Aligned, with additional steps in the <b>Visuals</b> section if you installed Anniversary Animation Pack.</li>
-            </ul>
-            <h2><strong>Gameplay</strong></h2>
-            <ul>
-                <li>Added B42 True Leaning VNV Configuration.</li>
-            </ul>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated to reflect the changes above.</li>
-                <li>Fixed missing Cloud Shadows and NVTF - Viva Default Preset.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">18/7/23</h2>
-            <h2><strong>Gameplay</strong></h2>
-            <ul>
-                <li>Updated JAM VNV Configuration (disabled dot while aiming).</li>
-            </ul>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Increased the local map resolution to 1024 and fixed conflicting key mapping between auto-walk and leaning.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">17/7/23</h2>
-            <h2><strong>Gameplay</strong></h2>
-            <ul>
-                <li>Replaced Real Recoil with Immersive Recoil 2.0.</li>
-                <li>Added B42 True Leaning.</li>
-            </ul>
-            <h2><strong>Content</strong></h2>
-            <ul>
-                <li>Replaced Functional Post Game Ending Lite with Functional Post Game Ending, plus the required patches.</li>
-                <li>Added Mojave Raiders - Uncut Wasteland (VNV) Patch.</li>
-                <li>Updated Mojave Raiders Tweaks (removed changes that should be from the new patch).</li>
-            </ul>
-            <h2><strong>Visuals</strong></h2>
-            <ul>
-                <li>Added the following mods:
-                    <ul>
-                        <li>B42 Optics</li>
-                        <li>Atmospheric Lighting Tweaks - EVEM Patch</li>
-                        <li>Desert Natural Weathers - YUP Patch</li>
-                    </ul>
-                </li>
-            </ul>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated to reflect the changes above.</li>
-                <li>Decompressed plugins.</li>
-                <li>Bundled better LOD.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">15/7/23</h2>
-            <h2><strong>Utilities</strong></h2>
-            <ul>
-                <li>Added the following mods:
-                    <ul>
-                        <li>Improved Console</li>
-                        <li>Basic Console Autocomplete</li>
-                    </ul>
-                </li>
-            </ul>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Added ExRB - YUP Patch.</li>
-            </ul>
-            <h2><strong>Overhauls</strong></h2>
-            <ul>
-                <li>Updated the Navmesh Overhaul VNV Patch.</li>
-            </ul>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated to reflect the changes above, also added Heap Replacer as optional mod.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">27/6/23</h2>
-            <h2><strong>LOD Guide</strong></h2>
-            <ul>
-                <li>Specified that LOD resources should not be disabled, also added "More LODs Additions and fixes".</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">26/6/23</h2>
-            <h2><strong>User Interface</strong></h2>
-            <ul>
-                <li>Moved UIO to the <b>Utilities</b> section because ISControl needs it.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">25/6/23</h2>
-            <h2><strong>LOD Guide</strong></h2>
-            <ul>
-                <li>Reworked and generalized.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">23/6/23</h2>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Added Depth of Field Fix - NVSE and Muzzle Flash Light Fix - NVSE.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">22/6/23</h2>
-            <h2><strong>Whole Guide</strong></h2>
-            <ul>
-                <li>The essential part of the guide is now split from the extras, which are in the VNV Extended section.</li>
-                <li>Rewrote a bunch of information and removed optional tags, since the optional mods are contained in VNVE (which is entirely optional).</li>
-            </ul>
-            <h2><strong>MO2</strong></h2>
-            <ul>
-                <li>Moved the Custom INI steps to the <b>Utilities</b> section to not give the impression that it can be skipped (like if you already have MO2).</li>
-            </ul>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Added the Navmesh Overhaul YUP Patch and updated the Navmesh Overhaul VNV Patch.</li>
-            </ul>
-            <h2><strong>Gameplay</strong></h2>
-            <ul>
-                <li>Added a custom configuration for JAM, since it does way too much by default.</li>
-                <li>Removed NPCs Sprint In Combat because of a bug with companions.</li>
-            </ul>
-            <h2><strong>Content</strong></h2>
-            <ul>
-                <li>Removed the Functional Post Game Ending Lite - JSUE Patch because it is no longer needed with the latest FPGE Lite.</li>
-            </ul>
-            <h2><strong>Visuals</strong></h2>
-            <ul>
-                <li>Removed Melee Hitstop Effects since it requires configuration based on your FPS, which can vary wildly for guide users.</li>
-                <li>Moved MoonlightNVSE steps to the <b>Bug Fixes</b> section.</li>
-            </ul>
-            <h2><strong>LOD Guide</strong></h2>
-            <ul>
-                <li>Enabled bForceFullLOD as part of the INI tweaks.</li>
-            </ul>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated to reflect the changes above.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">19/6/23</h2>
-            <h2><strong>Utilities</strong></h2>
-            <ul>
-                <li>Replaced Cobb's Crash Logger with Yvile's Crash Logger.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">5/6/23</h2>
-            <h2><strong>Visuals</strong></h2>
-            <ul>
-                <li>Removed DNW - Strip Lights Region Fix Patch - Merged into the base mod.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">1/6/23</h2>
-            <h2><strong>Visuals</strong></h2>
-            <ul>
-                <li>Added DNW - Strip Lights Region Fix Patch.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">27/5/23</h2>
-            <h2><strong>MO2</strong></h2>
-            <ul>
-                <li>Updated to MO2 2.4.5 Alpha 3 version to fix the alphabetic load order issues and bring some QoL features.</li>
-            </ul>
-            <h2><strong>Utilities</strong></h2>
-            <ul>
-                <li>Added the Viva Default Preset from the new NVTF - INI Presets page.</li>
-                <li>Removed the ShowOff INI since it is no longer needed.</li>
-            </ul>
-            <h2><strong>User Interface</strong></h2>
-            <ul>
-                <li>Removed any mention of DarnUI since it's dead and lacks support for a couple specific features. If you want a new UI then the recommended mod is M.U.X.</li>
-            </ul>
-            <h2><strong>Overhauls</strong></h2>
-            <ul>
-                <li>Added the following mods:
-                    <ul>
-                        <li>Better Brotherhood</li>
-                        <li>The Living Desert</li>
-                    </ul>
-                </li>
-            </ul>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>Updated to reflect the changes above, also updated instructions.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">19/5/23</h2>
-            <h2><strong>Wabbajack</strong></h2>
-            <ul>
-                <li>A Wabbajack modlist and section are now available.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">16/5/23</h2>
-            <h2><strong>Overhauls</strong></h2>
-            <ul>
-                <li>Moved Better Character Creation to the VNV Nexus page and edited it to have no navmesh edits since that cell is fixed by the Improved AI mod. This also means that the Navmesh Overhaul VNV Patch is now listed under EVEM.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">14/5/23</h2>
-            <h2><strong>MO2</strong></h2>
-            <ul>
-                <li>Updated the Custom INI, you can now set the FOV values to your liking.</li>
-            </ul>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Added the following mods:
-                    <ul>
-                        <li>Improved AI (Navmesh Overhaul Mod)</li>
-                        <li>Crafting Consistency Fix</li>
-                        <li>ExRB - Extended Roombounds</li>
-                        <li>Strip Lights Region Fix</li>
-                    </ul>
-                </li>
-            </ul>
-            <h2><strong>Overhauls</strong></h2>
-            <ul>
-                <li>Added the following mods:
-                    <ul>
-                        <li>Player Combat Priority Alt Chance To Attack Dog Patch</li>
-                        <li>Essential Vanilla Enhancements Merged - YUP Patch</li>
-                        <li>Essential Vanilla Enhancements Merged - Crafting Consistency Fix Patch</li>
-                        <li>Added Harder Barter Faster Stronger</li>
-                        <li>Navmesh Overhaul VNV Patch</li>
-                    </ul>
-                </li>
-            </ul>
-            <h2><strong>Content</strong></h2>
-            <ul>
-                <li>Removed The Living Desert (it will return after a rebalance update).</li>
-                <li>Added the following mods:
-                    <ul>
-                        <li>Functional Post Game Ending Lite - JSUE Patch</li>
-                        <li>Essential DLC Enhancements Merged - JSUE Patch</li>
-                    </ul>
-                </li>
-            </ul>
-            <h2><strong>Visuals</strong></h2>
-            <ul>
-                <li>Added the following mods:
-                    <ul>
-                        <li>Melee Hitstop Effects</li>
-                        <li>Cloud Shadows</li>
-                        <li>Cloud Upgrade NVSE</li>
-                        <li>Interior Rain</li>
-                        <li>Climate Control - Rain</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">3/5/23</h2>
-            <h2><strong>Gameplay</strong></h2>
-            <ul>
-                <li>Added Better Caravan.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">4/4/23</h2>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Added ActorCause Save Bloat Fix.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">19/3/23</h2>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Added the following mods:
-                    <ul>
-                        <li>External Emittance Fix</li>
-                        <li>Fallout Alpha Rendering Tweaks</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">17/3/23</h2>
-            <h2><strong>Overhauls</strong></h2>
-            <ul>
-                <li>Removed JSUE - YUP Patch.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">9/2/23</h2>
-            <h2><strong>Visuals</strong></h2>
-            <ul>
-                <li>Added Strip Street Light Corrections.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">14/1/23</h2>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Added Fog-based Object Culling.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">5/1/23</h2>
-            <h2><strong>Content</strong></h2>
-            <ul>
-                <li>Added FPGE Lite.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">1/1/23</h2>
-            <h2><strong>Visuals</strong></h2>
-            <ul>
-                <li>Replaced Simple Lighting Overhaul with Atmospheric Lighting Tweaks.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">17/12/22</h2>
-            <h2><strong>LOD Guide</strong></h2>
-            <ul>
-                <li>Removed LOD Supplementation.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">24/11/22</h2>
-            <h2><strong>Visuals</strong></h2>
-            <ul>
-                <li>Removed the optional file from the DNW steps, it's now fixed in the main file.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">21/11/22</h2>
-            <h2><strong>Whole Guide</strong></h2>
-            <ul>
-                <li>Recreated the website with the help of Wall_SoGB, it is now responsive.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">15/11/22</h2>
-            <h2><strong>MO2</strong></h2>
-            <ul>
-                <li>Made some visual changes and updated Custom INI.</li>
-            </ul>
-            <h2><strong>Overhauls</strong></h2>
-            <ul>
-                <li>Fixed INI Config - Gun Runners' Arsenal Merged file name in the Mojave Arsenal steps, do not use GRA Unique Weapon Re-Enabler.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">14/11/22</h2>
-            <h2><strong>Utilities</strong></h2>
-            <ul>
-                <li>Switched to the Nexus release of xNVSE.</li>
-            </ul>
-            <h2><strong>Overhauls</strong></h2>
-            <ul>
-                <li>Added JSUE - YUP Patch.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">13/11/22</h2>
-            <h2><strong>Setup</strong></h2>
-            <ul>
-                <li>Generating new INIs is now done directly from Steam to avoid the error mentioned in the FAQ.</li>
-            </ul>
-            <h2><strong>MO2</strong></h2>
-            <ul>
-                <li>Switched to global instance (don't worry about this if you already have the guide installed).</li>
-            </ul>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Added Improved Lighting Shaders Custom INI to prevent flickering lights.</li>
-            </ul>
-            <h2><strong>Gameplay</strong></h2>
-            <ul>
-                <li>Replaced Supplemental Ammo Crafting with Mojave Arsenal.</li>
-            </ul>
-            <h2><strong>Overhauls</strong></h2>
-            <ul>
-                <li>Replaced Misc Gameplay Merge with Essential Vanilla Enhancements Merged.</li>
-            </ul>
-            <h2><strong>Content</strong></h2>
-            <ul>
-                <li>Replaced the PTWB's JSawyer Ultimate - Mojave Raiders Patch with the one in Vish's Patch Hub.</li>
-            </ul>
-            <h2><strong>Visuals</strong></h2>
-            <ul>
-                <li>Added optional file to the DNW installation, improving performance.</li>
-                <li>Switched the order of DNW and A Little More Lamplight in order to fix a conflict without patch.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">27/10/22</h2>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Removed both SMIM mods.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">17/10/22</h2>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Added skinned mesh improvement mod outfits.</li>
-            </ul>
-            <h2><strong>Gameplay</strong></h2>
-            <ul>
-                <li>Added Supplemental Ammo Crafting.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">12/10/22</h2>
-            <h2><strong>Utilities</strong></h2>
-            <ul>
-                <li>Replaced NVAC with Crash Logger.</li>
-            </ul>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Added Strip Performance Fix.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">30/8/22</h2>
-            <h2><strong>User Interface</strong></h2>
-            <ul>
-                <li>Removed Contextual HUD.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">28/8/22</h2>
-            <h2><strong>MO2</strong></h2>
-            <ul>
-                <li>Added <code>bUseAudioDebugInformation=0</code> to the Custom INI.</li>
-            </ul>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Fix mismatched choices in the Stewie Tweaks INI.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">17/8/22</h2>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Added Pip-Boy Shading Fix NVSE.</li>
-            </ul>
-            <h2><strong>Visuals</strong></h2>
-            <ul>
-                <li>Added High Resolution Bloom NVSE.</li>
-            </ul>
-            <h2><strong>User Interface</strong></h2>
-            <ul>
-                <li>Added the following mods:
-                    <ul>
-                        <li>Added High Res Local Maps</li>
-                        <li>Added High Resolution Screens</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">13/8/22</h2>
-            <h2><strong>Whole Guide</strong></h2>
-            <ul>
-                <li>Moved some mods to different sections.</li>
-                <li>Reworked the <strong>Optional</strong> tag to denote subjective mods.</li>
-                <li>Added a <strong>Performance</strong> tag to denote potentially performance-intensive mods.</li>
-            </ul>
-            <h2><strong>Utilities</strong></h2>
-            <ul>
-                <li>Added instructions to enable <b>bModifyDirectXBehavior</b> in NVTF.</li>
-                <li>Added instructions to check that the FalloutCustom.ini tweaks are done correctly.</li>
-            </ul>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Replaced Tweaks Essentials INI with a custom INI specifically made for the guide.</li>
-            </ul>
-            <h2><strong>User Interface</strong></h2>
-            <ul>
-                <li>Added link to new FAQ entry about using VUI+ instead of Darn.</li>
-                <li>Added Contextual HUD.</li>
-                <li>Removed Vanilla HUD Cleaned (as the name suggests, the improvements are mainly for the vanilla HUD style and therefore do not apply much to Darn).</li>
-            </ul>
-            <h2><strong>Content</strong></h2>
-            <ul>
-                <li>Replaced Uncut Wasteland with a custom build made specifically for the guide.</li>
-            </ul>
-            <h2><strong>Visuals</strong></h2>
-            <ul>
-                <li>Replaced Different Pip-Boy Animations with Faster Pip-Boy Animation.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">31/7/22</h2>
-            <h2><strong>MO2</strong></h2>
-            <ul>
-                <li>Updated Custom INI.</li>
-            </ul>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Replaced WMIM with Vanilla Iron Sights Realligned.</li>
-                <li>Replaced ISController with ISControl ESPLess.</li>
-                <li>Added skinned mesh improvement mod.</li>
-            </ul>
-            <h2><strong>User Interface</strong></h2>
-            <ul>
-                <li>Replaced VUI with DarnUI.</li>
-            </ul>
-            <h2><strong>Visuals</strong></h2>
-            <ul>
-                <li>Added MoonlightNVSE.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">4/7/22</h2>
-            <h2><strong>Whole Guide</strong></h2>
-            <ul>
-                <li>Made every mod instruction version agnostic.</li>
-                <li>Moved patches to the guide's repository and updated links.</li>
-            </ul>
-            <h2><strong>Utilities</strong></h2>
-            <ul>
-                <li>Added a performance guide by Wall_SoGB.</li>
-            </ul>
-            <h2><strong>User Interface</strong></h2>
-            <ul>
-                <li>Removed JIP Improved Recipe Menu since it's included in the new Stewie Tweaks Essentials INI.</li>
-            </ul>
-            <h2><strong>Gameplay</strong></h2>
-            <ul>
-                <li>Removed JAM Custom INI since it's highly subjective and you can configure it easily.</li>
-            </ul>
-            <h2><strong>Overhauls</strong></h2>
-            <ul>
-                <li>Removed JIP Custom INI.</li>
-            </ul>
-            <h2><strong>Visuals</strong></h2>
-            <ul>
-                <li>Added Climate Control NVSE.</li>
-            </ul>
-            <h2><strong>Final Steps</strong></h2>
-            <ul>
-                <li>Updated MCM configuration info.</li>
-            </ul>
-            <h2><strong>LOD Guide</strong></h2>
-            <ul>
-                <li>Updated to the latest version FNVLODGen.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">2/7/22</h2>
-            <h2><strong>MO2</strong></h2>
-            <ul>
-                <li>Updated INI settings.</li>
-            </ul>
-            <h2><strong>User Interface</strong></h2>
-            <ul>
-                <li>Replaced Simple DLC Delay with Delay DLC Redux.</li>
-            </ul>
-            <h2><strong>Overhauls</strong></h2>
-            <ul>
-                <li>Replaced the Stewie Tweaks Custom INI with Stewie Tweaks Essentials INI.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">22/2/22</h2>
-            <h2><strong>Whole Guide</strong></h2>
-            <ul>
-                <li>Updated various mod versions and instructions that were out of date.</li>
-            </ul>
-            <h2><strong>Utilities</strong></h2>
-            <ul>
-                <li>Added kNVSE.</li>
-                <li>Removed the NVTF Custom INI, the new NVTF defaults are good.</li>
-                <li>Removed OneTweak.</li>
-            </ul>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Updated WMIM and the WMIM ESP Replacer.</li>
-                <li>Added New Vegas Mesh Improvement Mod.</li>
-            </ul>
-            <h2><strong>User Interface</strong></h2>
-            <ul>
-                <li>Added HUD Only Explosion Shake.</li>
-            </ul>
-            <h2><strong>Visuals</strong></h2>
-            <ul>
-                <li>Added ISControlEnabler and updated Anniversary Anim Pack instructions accordingly.</li>
-                <li>Replaced Altitude with Desert Natural Weathers.</li>
-            </ul>
-            <h2><strong>Overhauls</strong></h2>
-            <ul>
-                <li>Removed Laser Weapon Iron Sights (WMIM update now has its own iron sights for all energy weapons).</li>
-                <li>Replaced Unfound Loot with Famine.</li>
-                <li>Replaced JSUE tweaks with PTWB's personal tweaks.</li>
-                <li>Added patch between JSUE and WMIM.</li>
-            </ul>
-            <h2><strong>Content</strong></h2>
-            <ul>
-                <li>Added instructions to install the Uncut Extra Collection file from Uncut Wasteland.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">30/10/21</h2>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Split into two sections: Bug Fixes and Tweaks.</li>
-                <li>Added Improved Lighting Shaders.</li>
-            </ul>
-            <h2><strong>User Interface</strong></h2>
-            <ul>
-                <li>Added Consistent Pip-Boy Icons.</li>
-            </ul>
-            <h2><strong>Visuals</strong></h2>
-            <ul>
-                <li>Removed New Vegas Redesigned 2 Revised.</li>
-                <li>Added Anniversary Anim Pack General Bug Fix.</li>
-            </ul>
-            <h2><strong>Gameplay</strong></h2>
-            <ul>
-                <li>Added NPCs Sprint.</li>
-            </ul>
-            <h2><strong>Overhauls</strong></h2>
-            <ul>
-                <li>Removed the following mods:
-                    <ul>
-                        <li>Economy Overhaul</li>
-                        <li>GRA Relocated, related to the removal above; weapons being on vendors gives the player to spend their plentiful amount of caps on</li>
-                        <li>Complex Vendors/Better Ghouls, Misc Gameplay Merge makes it redundant</li>
-                        <li>Follower Formula Redone, companions are now balanced by Player Combat Priority and charisma is now balanced with the bCapSkillsBySPECIAL setting in Tweaks</li>
-                        <li>Mobile Truck Base</li>
-                    </ul>
-                </li>
-                <li>Added the following mods:
-                    <ul>
-                        <li>Misc Gameplay Merge</li>
-                        <li>Player Combat Priority</li>
-                    </ul>
-                </li>
-            </ul>
-            <h2><strong>Content</strong></h2>
-            <ul>
-                <li>Added the following mods:
-                    <ul>
-                        <li>Essential DLC Enhancements Merged</li>
-                        <li>Mojave Raiders</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">18/10/21</h2>
-            <h2><strong>Gameplay</strong></h2>
-            <ul>
-                <li>Replaced the individual Just mods with Just Assorted Mods, along with a custom INI for it.</li>
-                <li>Removed Marathoner (redundant with JVS).</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">13/5/21</h2>
-            <h2><strong>MO2</strong></h2>
-            <ul>
-                <li>Set the default value of iNumHWThreads to 2.</li>
-                <li>Removed the [Water] INI changes.</li>
-            </ul>
-            <h2><strong>Utilities</strong></h2>
-            <ul>
-                <li>Added a custom INI for NVTF, as the performance INI from the mod page has been removed.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">3/5/21</h2>
-            <h2><strong>Gameplay</strong></h2>
-            <ul>
-                <li>Moved JSawyer Ultimate to the <b>Overhauls</b> section. Since it makes the game more difficult by adjusting the default level cap, carry weight and health formulas, it seems like a better fit.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">19/4/21</h2>
-            <h2><strong>Overhauls</strong></h2>
-            <ul>
-                <li>Added a custom INI for Unfound Loot that makes it more cohesive with the rest of the guide out of the box.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">6/4/21</h2>
-            <h2><strong>User Interface</strong></h2>
-            <ul>
-                <li>Removed Consistent Pip-Boy Icons (VUI+ now includes a remastered version of the interfaceshared0.dds, which was the main reason that CPI was included. You should totally keep the mod if you already have it installed, but for simplification purposes, it's being removed. CPI's file size was also about 5x more than the rest of the mods included in the guide).</li>
-            </ul>
-            <h2><strong>Resources</strong></h2>
-            <ul>
-                <li>Added a guide on how to generate LOD with FNVLODGen.</li>
-                <li>Added a guide on how to merge mods using FNVEdit.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">29/3/21</h2>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Updated WMIM ESP Replacer to include a vanila copy of the 1hpequip.kf file. This makes the WMIM Wrist Fix redundant without causing any addition bugs like the wrist fix did (the bug is now fixed on an engine level with JIP LN NVSE).</li>
-            </ul>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Removed WMIM Wrist Fix.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">16/3/21</h2>
-            <h2><strong>Utilities</strong></h2>
-            <ul>
-                <li>Added Console Paste Support.</li>
-            </ul>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Added No Muzzle Flash Lights.</li>
-            </ul>
-            <h2><strong>Visuals</strong></h2>
-            <ul>
-                <li>Added the following mods:
-                    <ul>
-                        <li>B42 Weapon Inertia and NV Compatibility Skeleton</li>
-                        <li>Vanilla LOD (custom mod)</li>
-                        <li>A Little More Lamplight</li>
-                        <li>New Vegas Redesigned 2 Revised</li>
-                    </ul>
-                </li>
-            </ul>
-            <h2><strong>Gameplay</strong></h2>
-            <ul>
-                <li>Split into two sections: Gameplay and Overhauls. Gameplay will contain the smaller mods that don't make the game much harder and just add modern QoL features. The Overhaul section contains the bulk of the difficulty mods like Unfound Loot and Economy Overhaul.</li>
-                <li>Added Uncut Wasteland plus NPCs.</li>
-            </ul>
-            <h2><strong>Overhauls</strong></h2>
-            <ul>
-                <li>Added notes to enable bBarterCheckActorBuySellFlags and bLuckDoesntAffectGambling options in Stewie's Tweaks.</li>
-                <li>Replaced Fallout 3 Economy with Economy Overhaul.</li>
-                <li>Added the following mods:
-                    <ul>
-                        <li>Complex Vendors</li>
-                        <li>Better Character Creation</li>
-                        <li>Better Ghouls</li>
-                        <li>The Living Desert</li>
-                        <li>Mobile Truck Base Remastered</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">1/3/21</h2>
-            <h2><strong>Visuals</strong></h2>
-            <ul>
-                <li>Replaced Yellow Goodbye with Altitude.</li>
-                <li>Added Simple Interior Lighting Overhaul.</li>
-            </ul>
-            <h2><strong>General</strong></h2>
-            <ul>
-                <li>Replaced the home background image with a new one taken with Altitude.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">27/2/21</h2>
-            <h2><strong>Gameplay</strong></h2>
-            <ul>
-                <li>Added a custom INI for JSUE which enables the new "Survival Mode" feature and the lowered XP feature, among others.</li>
-                <li>Removed Fallout 4 Survival Mode Damage (the Survival Mode option mentioned above in JSUE does the same thing).</li>
-                <li>Added Unfound Loot.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">15/2/21</h2>
-            <h2><strong>Gameplay</strong></h2>
-            <ul>
-                <li>Replaced the original JSawyer mod with JSawyer Ultimate Edition.</li>
-            </ul>
-            <h2><strong>Final Steps</strong></h2>
-            <ul>
-                <li>Because of the change above, the Conflict Resolution FOMOD isn't needed anymore.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">13/2/21</h2>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Replaced UPNVSE with UPNVSE Plus.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">30/1/21</h2>
-            <h2><strong>User Interface</strong></h2>
-            <ul>
-                <li>Re-added Consistent Pip-Boy Icons.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">13/1/20</h2>
-            <h2><strong>Utilities</strong></h2>
-            <ul>
-                <li>Added New Vegas Heap Replacer.</li>
-                <li>Changed the installation method with a note about installing them manually if they don't work when installed through MO2 rather than the other way around.</li>
-            </ul>
-            <h2><strong>Bug Fixes</strong></h2>
-            <ul>
-                <li>Added a plugin replacement for WMIM that strips it down to everything but required the texture set/static changes rather than just hiding original plugin.</li>
-            </ul>
-
-            <hr>
-
-            <h2 class="install">14/12/20</h2>
-            <h2><strong>Utilities</strong></h2>
-            <ul>
-                <li>Changed the NVTF iMaxFPSTolerance to 300, as the automatic FPS tolerance setting has some issues and will most likely be removed soon.</li>
-            </ul>
+    <footer>ModdingLinked 2024</footer>
+
+    <div id="image-overlay" class="overlay" hidden>
+        <div class="image-container">
+            <img id="enlarged-image" class="enlarged-image" src="" alt="Enlarged Image">
+            <div class="resize-overlay shrink"></div>
         </div>
     </div>
 </body>

@@ -5,14 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preload" href="./css/style.css" as="style" />
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="img/Coco/Logo.webp">
     <link rel="canonical" href="https://vivanewvegas.moddinglinked.com">
-    <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
-    <script src="javascript.js"></script>
-    <title>Final Steps | Viva New Vegas</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Tale of Two Wastelands, Wabbajack">
+
+    <title>Base Finish | Viva New Vegas</title>
+
+    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, Fallout 4, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Tale of Two Wastelands, TTW, Wabbajack, WJ, Installer">
     <meta name="description" content="Final steps necessary before playing the game.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
@@ -22,220 +20,256 @@
     <meta property="og:url" content="https://vivanewvegas.moddinglinked.com">
     <meta property="og:image" content="https://vivanewvegas.moddinglinked.com/img/Others/Card.webp">
     <meta property="og:description" content="Final steps necessary before playing the game.">
+
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#333230">
+
+    <script src="javascript.js"></script>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigationArrows.css">
+    <link rel="stylesheet" href="css/progressBar.css">
+    <link rel="stylesheet" href="css/guideColors.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/images.css">
 </head>
 
-<body>
-
-    <!-- Titlebar -->
-    <div class="titlecontainer">
-        <div id="sideButton" onclick="toggleNav()">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <img src="./img/Coco/Logo.webp" alt="Logo">
-        <a href="./index.html">Viva New Vegas</a>
-        <div class="guideLinks">
-            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-            <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
-        </div>
+<body class="theme">
+    <div class="progress-container">
+        <div class="progress-bar"></div>
     </div>
 
-    <!-- Left Sidebar -->
-    <div id="sidenavLeft">
-        <div>
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./intro.html">Introduction</a>
-                </li>
-                <li>
-                    <a href="./setup.html">Setup</a>
-                </li>
-                <li>
-                    <a href="./mo2.html">MO2</a>
-                </li>
-                <li>
-                    <a href="./utilities.html">Utilities</a>
-                </li>
-                <li>
-                    <a href="./bugfix.html">Bug Fixes</a>
-                </li>
-                <li>
-                    <a href="./basefinish.html" class="active">Base Finish</a>
-                </li>
-            </ul>
-            <hr>
+    <div class="container">
+        <div class="header">
+            <div class="headerMenu" onclick="toggleNav()">
+                <img src="./img/UI/Navigation.svg" id="navButton">
+            </div>
+            <div class="headerTitle">
+                <img src="./img/Coco/Logo.webp" alt="Logo" id="logo">
+                <a href="./index.html" id="headerTitle">Viva New Vegas</a>
+            </div>
+            <div class="guideLinks" id="headerLinks">
+                <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
+                <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
+            </div>
         </div>
-        <div class="extended-background">
-            <ul>
-                <h3 id="extended-separator">VNV Extended</h3>
-                <li>
-                    <a href="./hud.html">User Interface</a>
-                </li>
-                <li>
-                    <a href="./gameplay.html">Gameplay</a>
-                </li>
-                <li>
-                    <a href="./content.html">Content</a>
-                </li>
-                <li>
-                    <a href="./overhauls.html">Overhauls</a>
-                </li>
-                <li>
-                    <a href="./visuals.html">Visuals</a>
-                </li>
-                <li>
-                    <a href="./finish.html">Extended Finish</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <hr>
-            <ul>
-                <li>
-                    <a href="./changelog.html">Changelog</a>
-                </li>
-                <li>
-                    <a href="./resources.html">Resources</a>
-                </li>
-                <li>
-                    <a href="./faq.html">FAQ</a>
-                </li>
-                <li>
-                    <a href="./avoid-tools.html">Tools to Avoid</a>
-                </li>
-                <li>
-                    <a href="./avoid-mods.html">Mods to Avoid</a>
-                </li>
-                <li>
-                    <a href="./wabbajack.html">Wabbajack</a>
-                </li>
-            </ul>
-        </div>
+        <div class="sidebar left-sidebar">
+            <p class="pageLinks">
+                <a href="./index.html" title="Home">
+                    Home
+                </a>
 
-        <!-- Guide Links -->
-        <div class="guideLinks">
-            <hr>
-            <ul>
-                <li>
-                    <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-                </li>
-                <li>
-                    <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
-                </li>
-            </ul>
-        </div>
+                <a href="./intro.html" title="Introduction">
+                    Introduction
+                </a>
 
-        <!-- Footer -->
-        <div id="footer">
-            <ul>
-                <li class="discord">
-                    <a href="https://discord.gg/S99Ary5eba" target="_blank">
-                        <i class="fab fa-discord"></i>
-                        Discord
-                    </a>
-                </li>
-                <li class="paypal">
-                    <a href="https://paypal.me/Ungeziefi" target="_blank">
-                        <i class="fa fa-paypal"></i>
-                        Donate
-                    </a>
-                </li>
-                <li class="github">
-                    <a href="https://github.com/ModdingLinked/Viva-New-Vegas" target="_blank">
-                        <i class="fab fa-github"></i>
-                        GitHub
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
+                <a href="./setup.html" title="Setup">
+                    Setup
+                </a>
 
-    <!-- Content -->
-    <div class="content">
-        <div class="section">
-            <h1>Base Finish</h1>
-            <h3>This is the final step for the base, "patched vanilla" part of the guide</h3>
+                <a href="./mo2.html" title="MO2">
+                    Mod Organizer 2
+                </a>
 
-            <hr>
+                <a href="./utilities.html" title="Utilities">
+                    Utilities
+                </a>
 
-            <!-- Load Order -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/79358" target="_blank">
-                    <h2 id="loadOrder">Load Order</h2>
+                <a href="./bugfix.html" title="Bug Fixes">
+                    Bug Fixes
+                </a>
+
+                <a href="./basefinish.html" title="Base Finish">
+                    Base Finish
                 </a>
             </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ol>
-                <li>Download the file.</li>
-                <li>Once it has finished downloading, click the <img style="width:2%" src="./img/MO2/Folders.webp" alt="MO2 folders"> button at the top of MO2 and select <strong>Open Profile folder</strong>.</li>
-                <li>Extract the <strong>loadorder.txt</strong> from the downloaded archive to the folder you opened and overwrite when prompted.</li>
-                <li>Once the file is extracted, click <strong>F5</strong> while you are on MO2 without any menu open.</li>
-                <li>Right-click in the <b>right</b> pane of MO2 and select <strong>Enable all</strong>.</li>
-            </ol>
-            <blockquote>
-                If you have not added any mods to the guide, <strong>Strip Lights Region Fix.esp</strong> should be the bottom mod in your load order (the <strong>Plugins</strong> tab in the <b>right</b> pane of MO2) after applying the load order and refreshing MO2. If not, you made a mistake during mod installation.
-                <br>
-                You can join our <a href="https://discord.gg/S99Ary5eba" target="_blank">Discord</a> for support.
-            </blockquote>
-            Automatically ensures your load order is correct for the guide.
-
-            <h2 class="gameLaunch">Launching the Game</h2>
-            <p>
-                To run the game, use the <strong>New Vegas</strong> executable in Mod Organizer 2.
-            </p>
-            <p>
-                <img src="./img/Others/Start Game.webp" alt="Run New Vegas through MO2" class="width-very-limited">
-            <blockquote>
-                Launching through xNVSE's loader is not needed, as thanks to the 4GB Patcher or Epic Games Patcher, game will auto-load xNVSE.
-                <br>
-                This also means it's safe to launch the game through its own launcher.
-            </blockquote>
-            </p>
-            <p>
-                You can use the <b>Shortcut</b> drop-down to create Desktop and Start Menu shortcuts, this will allow you to launch the game without opening the MO2 GUI.
-            </p>
-
-            <!-- VNVE -->
-            <p>
-                <a>
-                    <h2 id="vnve">VNV Extended</h2>
+            <hr>
+            <p class="pageLinks">
+                <a href="./hud.html" title="User Interface">
+                    User Interface
+                </a>
+                <a href="./gameplay.html" title="Gameplay">
+                    Gameplay
+                </a>
+                <a href="./content.html" title="Content">
+                    Content
+                </a>
+                <a href="./overhauls.html" title="Overhauls">
+                    Overhauls
+                </a>
+                <a href="./visuals.html" title="Visuals">
+                    Visuals
+                </a>
+                <a href="./finish.html" title="Extended Finish">
+                    Extended Finish
                 </a>
             </p>
-            <div class="extended-background">
-                <img src="./img/Coco/FullExtended.webp" alt="Full VNVE Coco" id="logoex">
-                <p>
-                    You have now completed the basic section of Viva New Vegas. If you don't want to mod your game further, you can now start playing. Have fun!
+            <hr>
+            <p>
+                <a href="./changelog.html" title="Changelog">
+                    Changelog
+                </a>
+
+                <a href="./resources.html" title="Resources">
+                    Resources
+                </a>
+
+                <a href="./lod.html" title="LOD Guide" class="sublink">
+                    LOD Guide
+                </a>
+                
+                <a href="./decompress.html" title="Decompression Guide" class="sublink">
+                    Decompression Guide
+                </a>
+
+                <a href="./faq.html" title="FAQ">
+                    FAQ
+                </a>
+
+                <a href="./avoid-tools.html" title="Tools to Avoid">
+                    Tools to Avoid
+                </a>
+
+                <a href="./avoid-mods.html" title="Mods to Avoid">
+                    Mods to Avoid
+                </a>
+
+                <a href="./wabbajack.html" title="Wabbajack">
+                    Wabbajack
+                </a>
+            </p>
+            <p class="sidebar-padder"></p>
+            <hr>
+            <p class="sidebar-bottom">
+                <a href="https://discord.gg/S99Ary5eba" title="Discord">
+                    Discord
+                </a>
+                <a href="https://paypal.me/Ungeziefi" title="Donate">
+                    Donate
+                </a>
+                <a href="https://github.com/ModdingLinked/Viva-New-Vegas" title="GitHub">
+                    GitHub
+                </a>
+            </p>
+        </div>
+
+        <div class="content">
+
+            <!-- Introduction -->
+            <span id="BaseFinish" class="section">
+                <h2 onclick="location.href='#BaseFinish'">Base Finish</h2>
+
+                <div class="card" id="LoadOrder">
+                    <p>
+                    <h3>Applying the Load Order</h3>
+                    The final step is to apply the load order of installed plugins. The guide comes with a premade load order file, which ensures all mods are being loaded in correct order, with all conflicts accounted for.
+                    <ol>
+                        <li><strong>Download the Load Order</strong> from <a href="https://www.nexusmods.com/newvegas/mods/79358" target="_blank">here</a>.</li>
+                        <li>Once it has finished downloading, click the <img class="mo2-icon" src="./img/MO2/Folders.webp" alt="MO2 folders"> button at the top of MO2 and select <strong>Open Profile folder</strong>.</li>
+                        <li>Drag the <strong>loadorder.txt</strong> from the downloaded archive into the folder you just opened and overwrite when prompted.</li>
+                        <li>Once the file is extracted, click <strong>F5</strong> while you are on MO2 without any menu open.</li>
+                        <li>Right-click in the <b>right</b> pane of MO2 and select <strong>Enable all</strong>.</li>
+                    </ol>
+                    <div class="card-yellow">
+                        <p>
+                            If you have not added any mods to the guide, <strong>Strip Lights Region Fix.esp should be the last plugin</strong> in your load order (the <b>Plugins</b> tab in the <b>right</b> pane of MO2) after applying the load order and refreshing MO2.
+                            <br>
+                            <br>
+                            If it's not the last plugin after refreshing, make sure that you are <strong>sorting the load order by priority</strong> by pressing the <b>Priority</b> column on the top.
+                            <br>
+                            <br>
+                            If that still doesn't work, you can join our <a href="https://discord.gg/S99Ary5eba" target="_blank">Discord</a> server for support.
+                        </p>
+                    </div>
+                    </p>
+                </div>
+
+                <div class="card" id="RunningTheGame">
+                    <p>
+                    <h3>Running the Game</h3>
+                    Due to the way Mod Organizer 2 works, running programs through it is a requirement in order to load mods. This is done in the <strong>top-right corner</strong> of the manager, where the program to run is chosen. Here, <strong>select New Vegas</strong>.
                     <br>
                     <br>
-                    If you are hungry for more mods, head to the <a href="./hud.html">User Interface</a> page and keep reading.
-                </p>
+                    For the sake of convenience you may also <strong>create a shortcut</strong> (right below the <b>Run</b> button) so that you won't have to manually open MO2 each time before playing.
+                    <br>
+                    <div class="image-container width-60">
+                        <img class="content-img" src="./img/Others/Start Game.webp" alt="Launching the game">
+                        <div class="resize-overlay expand"></div>
+                    </div>
+                    <br>
+                    <div class="card-yellow">
+                        <p>
+                            <b>Q: Aren't you supposed to launch through NVSE?</b>
+                            <br>
+                            <br>
+                            A: The 4GB Patcher and the Epic Games Patcher both allow the game's main executable to automatically load the script extender.
+                            <br>
+                            <hr>
+                            Refer to the <a href="./faq.html" target="_blank">FAQ</a> section for more information and solutions to possible problems you might encounter at this stage of the guide.
+                        </p>
+                    </div>
+                    <br>
+                    You have now completed the basic section of Viva New Vegas. If you don't want to mod your game further, <strong>you can now start playing</strong>. Have fun!
+                    </p>
+                </div>
+            </span>
+
+            <span id="VNVExtended" class="section">
+                <h2 onclick="location.href='#VNVExtended'">VNV Extended</h2>
+                <div class="card flex logo-container" style="justify-content: space-between;" id="BeyondVanilla">
+                    <div>
+                        <h3>Going beyond Vanilla</h3>
+                        <p>
+                            The next pages are part of the Viva New Vegas Extended portion of the guide, which is <strong>not required in order to play</strong>. This section includes:
+                        <ul>
+                            <li>UI visual and QoL improvements.</li>
+                            <li>More gameplay features and improvements to get the game up to speed with more recent titles.</li>
+                            <li>Tons of new and restored content, improvements to the DLCs, and a way to play after the game's ending.</li>
+                            <li>Overhauled balance and game mechanics.</li>
+                            <li>Improvements to NPC faces, new animations, visual fixes, and overhauled lighting and weathers.</li>
+                        </ul>
+                        <br>
+                        <div class="card-yellow">
+                            <p>Note that VNV Extended is <strong>completely modular</strong>! You can skip any of its mods as long as you do the same for any other mod or patch tied to it.</p>
+                        </div>
+                        </p>
+                    </div>
+                    <div id="logoBig">
+                        <img src="./img/Coco/FullExtended.webp" alt="Full VNVE Coco">
+                    </div>
+                </div>
+            </span>
+
+            <!-- Arrows -->
+            <div class="navigationArrowContainer">
+                <a href="#" id="previous" rel="prev" class="navigationArrow">
+                    <img class="mirror" src="./img/UI/Arrow.svg" alt="Back Arrow">
+                    <span class="arrowText"></span>
+                </a>
+
+                <a href="#" id="next" rel="next" class="navigationArrow">
+                    <span class="arrowText"></span>
+                    <img src="./img/UI/Arrow.svg" alt="Forward Arrow">
+                </a>
             </div>
         </div>
 
-        <!-- Arrows -->
-        <div>
-            <hr>
-            <a href="./bugfix.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/Others/Arrow.webp" alt="Back Arrow"><span class="arrowText left">Bug Fixes</span></a>
-            <a href="./hud.html" id="next" rel="next" class="navigationArrow"><img class="right" src="./img/Others/Arrow.webp" alt="Forward Arrow"><span class="arrowText right">User Interface</span></a>
+        <div class="sidebar right-sidebar">
+            <p id="sidebarContent">
+            </p>
         </div>
     </div>
 
-    <!-- Right Sidebar -->
-    <div id="sidenavRight">
-        <ul>
-            <li>
-                <a href="#loadOrder">Load Order</a>
-            </li>
-            <li>
-                <a href="#gameLaunch">Launching the Game</a>
-            </li>
-            <li>
-                <a href="#vnve">VNV Extended</a>
-            </li>
-        </ul>
+    <footer>ModdingLinked 2024</footer>
+
+    <div id="image-overlay" class="overlay" hidden>
+        <div class="image-container">
+            <img id="enlarged-image" class="enlarged-image" src="" alt="Enlarged Image">
+            <div class="resize-overlay shrink"></div>
+        </div>
     </div>
+
 </body>
 
 </html>
