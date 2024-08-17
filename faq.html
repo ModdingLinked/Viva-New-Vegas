@@ -244,9 +244,11 @@
                     <p>
                         This could happen for <strong>various reasons</strong>:
                     <ul>
+                        <li>Base Address Randomization is enabled. This has to be disabled for a modded game to work, you can do so by following <a href="./setup.html#BaseAddressRandomization">these steps</a>.</li>
                         <li>The 4GB patch or the EGS patcher weren't run. Follow <a href="./utilities.html">the steps</a> in the guide.</li>
                         <li>xNVSE is not installed correctly or at all, make sure that you have all of the <a href="./utilities.html" target="_blank">utilities</a>.</li>
                         <li>You have incompatible mods lingering in your game's Data folder, this is why <a href="./setup.html#Uninstall" target="_blank">a clean slate</a> is required.</li>
+                        <li>If you are using an AMD GPU, make sure that your drivers are updated to the <a href="https://www.amd.com/en/support" target="_blank">latest version</a> or that you are using DXVK according to the <a href="https://performance.moddinglinked.com/falloutnv.html#RecommendedLimiters" target="_blank">Performance Guide</a>.</li>
                     </ul>
                     </p>
                 </div>
@@ -468,6 +470,23 @@
                     </p>
                 </div>
 
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootquestion21expander)" id="troubleshootquestion21">
+                    <p>
+                    <h3>Wabbajack errors during installation</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="troubleshootquestion21expander">
+                    <p>
+                    <ul>
+                        <li>You are using an Epic Games Store version of the game, which is not supported by this Wabbajack list.</li>
+                        <li>Ensure you have a clean install of the game with all DLCs, including the pre-order packs.</li>
+                        <li>Set the game to English, other languages are not supported.</li>
+                        <li>If all that doesn't work, click the settings cog in the top right of Wabbajack, log out of Nexus then log in again and restart the installation process.</li>
+                    </ul>
+                    </p>
+                </div>
+
                 <h2 onclick="location.href='#Configuration'">Configuration</h2>
                 <div class="expander-top clickable" onclick="expandCard(this, configquestion1expander)" id="configquestion1">
                     <p>
@@ -493,7 +512,7 @@
                 </div>
                 <div class="expander-bottom" id="configquestion2expander">
                     <p>
-                        <strong>No</strong>, but you can generate vastly more detailed LOD (at a performance cost) by following the <a href="./lod.html" target="_blank">LOD guide</a>.
+                        <strong>No</strong>, but you can generate vastly more detailed LOD (at a performance cost) by following the <a href="./lod.html" target="_blank">LOD guide</a>. If you are using a Viva New Vegas Extended list with no changes, you can skip a large chunk of the LOD regeneration process by using the <a href="https://www.nexusmods.com/newvegas/mods/79358" target="_blank">VNV Pre-Generated LOD</a> (the resources listed in the LOD guide are still required).
                     </p>
                 </div>
 
