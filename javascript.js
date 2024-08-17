@@ -119,7 +119,7 @@ function createRightSidebar() {
 
     sections.forEach(section => {
         const div = document.createElement('div');
-        
+
         const { id } = section;
         const { innerText } = section.querySelector('h2');
 
@@ -139,47 +139,30 @@ function createRightSidebar() {
     });
 }
 
-function markActivePage() {
-    const leftSidebar = document.querySelector(".sidebar.left-sidebar");
+const lsBar = () => document.querySelector('.left-sidebar');
+const currentPathname = window.location.pathname;
 
-    if (!leftSidebar)
-        return;
+function linkUtil() {
+    const page = {};
+    const navLinksNode = lsBar().querySelectorAll('a');
+    navLinksNode.forEach((node, index) => {
+        const { href } = node;
 
-    const sidebarLinks = leftSidebar.querySelectorAll(".sidebar a");
-
-    if (!sidebarLinks)
-        return;
-
-    const currentPage = "./" + window.location.pathname.split("/").pop();
-
-    let currentIndex = -1;
-
-    // Loop through the links to find the current page index
-    sidebarLinks.forEach((link, index) => {
-        const linkPage = link.getAttribute("href");
-
-        if (linkPage === currentPage) {
-            link.classList.add("active");
-            currentIndex = index;
-
-            if (link.classList.contains("sublink")) {
-                link.setAttribute('style', 'display:flex !important');
-            }
+        if (href.endsWith(currentPathname)) {
+            page.current = node;
+            page.before = navLinksNode[index - 1];
+            page.after = navLinksNode[index + 1];
         }
     });
+    return page;
+}
 
-    const allowedPageLinks = leftSidebar.querySelectorAll(".pageLinks");
-    if (allowedPageLinks) {
-        let linkCount = 0;
-
-        for (let i = 0; i < allowedPageLinks.length; i++) {
-            linkCount += allowedPageLinks[i].children.length;
-        }
-
-        if (currentIndex > linkCount - 1)
-            currentIndex = -1;
-
-        createPageArrows(currentIndex);
+function markActivePage() {
+    const currentNode = linkUtil().current;
+    const { href, classList } = currentNode;
+    classList.toggle('active', href.endsWith(currentPathname));
+    if (classList.contains('sublink')) {
+        currentNode.setAttribute('style', 'display:flex !important');
     }
 }
 
