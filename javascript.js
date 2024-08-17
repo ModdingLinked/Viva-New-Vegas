@@ -113,66 +113,31 @@ function updateProgressBarAndFadeIn() {
 }
 
 function createRightSidebar() {
-    const content = document.getElementsByClassName('content')[0];
-    if (!content)
-        return;
+    const sections = document.querySelectorAll('.section');
+    const sidebar = document.getElementById('sidebarContent');
+    if (!sections || !sidebar) return;
 
-    const sections = content.getElementsByClassName('section');
-    if (!sections)
-        return;
+    sections.forEach(section => {
+        const div = document.createElement('div');
+        
+        const { id } = section;
+        const { innerText } = section.querySelector('h2');
 
-    var sidebarContent = document.getElementById('sidebarContent');
-    if (!sidebarContent)
-        return;
+        const b = document.createElement('b');
+        b.innerHTML = `<a href=${id}>${innerText}</a>`;
+        div.appendChild(b);
 
-    for (var i = 0; i < sections.length; i++) {
-        var section = sections[i];
-        const headers = section.querySelectorAll('h2');
-        const cards = section.querySelectorAll('.card');
-
-        headers.forEach(header => {
-            if (!header.innerHTML || header.innerHTML.length == 0)
-                return;
-
-            // Create the section div
-            const sectionDiv = document.createElement('div');
-            sidebarContent.appendChild(sectionDiv);
-
-            // Create the header link
-            const bold = document.createElement('b');
-            sectionDiv.appendChild(bold);
-
-            const separator = document.createElement('a');
-            separator.href = `#${section.id}`;
-            separator.textContent = header.innerHTML;
-            bold.appendChild(separator);
-
-            // Create section links
-            cards.forEach(card => {
-                var text;
-                const title = card.getAttribute('title');
-                if (title && title.length > 0) {
-                    text = title;
-                }
-                else {
-                    text = card.id.replace(/([A-Z])/g, ' $1').trim();
-                }
-
-                if (!text || text.length == 0) {
-                    return;
-                }
-
-                const cardId = card.id;
-                const cardLink = document.createElement('a');
-                cardLink.href = `#${cardId}`;
-                cardLink.textContent = text;
-
-                sectionDiv.appendChild(cardLink);
-            })
+        const sectionCard = section.querySelectorAll('.card');
+        sectionCard.forEach(card => {
+            const { id, title } = card;
+            const a = document.createElement('a');
+            a.href = id;
+            a.innerText = title ? title : id.replace(/([A-Z])/g, ' $1').trim();
+            div.appendChild(a);
         });
-    };
-};
-
+        sidebar.appendChild(div);
+    });
+}
 
 function markActivePage() {
     const leftSidebar = document.querySelector(".sidebar.left-sidebar");
@@ -197,7 +162,7 @@ function markActivePage() {
             link.classList.add("active");
             currentIndex = index;
 
-            if (link.classList.contains("sublink")){
+            if (link.classList.contains("sublink")) {
                 link.setAttribute('style', 'display:flex !important');
             }
         }
