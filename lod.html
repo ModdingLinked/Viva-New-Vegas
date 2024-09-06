@@ -164,7 +164,8 @@
                 <div class="card" id="Why?">
                     <p>
                     <h3>Why?</h3>
-                    Generating/installing new LOD is <b>NOT</b> a requirement, but it will add detail in the distance by increasing the amount of objects that appear in the distance while also making all LOD match your modded textures.
+                    Generating/installing new LOD is <b>NOT</b> a requirement, but it will add detail in the distance by increasing the amount of objects that appear in the distance while also making all LOD match your modded textures. Naturally, this also means a minor performance hit.
+                    <br>
                     <br>
                     You can also generate terrain LOD, which will allow mods that edit the game's landscape to have LOD that reflects their changes. Terrain LOD creates a much larger file size and will take longer to generate.
                     <div class="card-yellow center" style="display: flex; align-items: center;">
@@ -173,7 +174,8 @@
                         <div>
                             Viva New Vegas (even with VNV Extended) does not need new terrain LOD, but this guide will explain both the object and terrain LOD generation to account for custom modlists or if you just want better looking terrain LOD.
                             <br>
-                            Extra resources for Tale of Two Wastelands users are included.
+                            <br>
+                            Extra instructions for Tale of Two Wastelands users are included.
                         </div>
                         </p>
                     </div>
@@ -217,16 +219,13 @@
                 <div class="card" id="WhyGenerateLOD" title="Why Generate LOD?">
                     <p>
                     <h3>Why generate LOD?</h3>
-                    Bethesda's LOD relies on pregenerated meshes, and thus is inherently static. This decision is due to offering better performance, since game doesn't have to combine meshes and textures of individual objects on the fly.
+                    Bethesda's LOD relies on pregenerated meshes, and thus is inherently static. This decision is due to offering better performance, since game doesn't have to combine meshes and textures of individual objects on the fly. The drawback is obvious - the game can't reflect any changes made to the landscape or objects on its own. That's where LOD generation comes in.
                     <br>
-                    The drawback is obvious - the game can't reflect any changes made to the landscape or objects on its own. That's where LOD generation comes in.
                     <br>
                     Thanks to LODGen, you are able to generate LOD meshes that reflect your modded game, and thus have a much more consistent experience.
                     <br>
                     <br>
-                    Another reason for generation is due to the fact that the original LOD is pretty low quality, and many objects lack LOD meshes entirely, which causes them to appear out of thin air on cell load.
-                    <br>
-                    This is covered by individual LOD mods, which add LOD meshes to objects that lack it and/or improve the quality of existing ones.
+                    Another reason for generation is due to the fact that the original LOD is pretty low quality, and many objects lack LOD meshes entirely, which causes them to appear out of thin air on cell load. This is covered by individual LOD mods, which add LOD meshes to objects that lack it and/or improve the quality of existing ones.
                     </p>
                 </div>
 
@@ -245,10 +244,6 @@
                     </p>
                 </div>
 
-                <!--
-                TODO:
-                Mention that increasing the draw distance can (more like, does, lol) tank performance.
-                -->
                 <div class="card" id="INITweaks" title="INI Tweaks">
                     <p>
                     <h3>INI Tweaks</h3>
@@ -263,8 +258,8 @@
                         <textarea readonly="readonly" style="height: 12.5em; width: 95%;" onclick="this.focus();this.select()">
 [TerrainManager]
 ; Increases the maximum distance of LOD
-fBlockLoadDistanceLow=100000
-fBlockLoadDistance=250000
+fBlockLoadDistanceLow=30000
+fBlockLoadDistance=130000
 
 [SpeedTree]
 ; Makes flora use the highest LOD quality, removing the pop-in (not related to Tree LOD)
@@ -280,12 +275,7 @@ bForceFullLOD=1</textarea>
                                 Increasing LOD distances means that the object LOD will now reach the impostor meshes in Vegas, making them clip into each other!
                                 <br>
                                 <br>
-                                Install <a href="https://www.nexusmods.com/newvegas/mods/83691" target="_blank">Impostors and LOD Flicker Fix</a> to fix this problem, then move its plugin <strong>above DNWeathers.esp</strong>.
-                                <br>
-                                <br>
-                                Additionally, the increased draw distance can easily decrease performance!
-                                <br>
-                                If you notice a significant drop in FPS, it's safe to remove the [TerrainManager] section from the INI.
+                                Install <a href="https://www.nexusmods.com/newvegas/mods/83691" target="_blank">Impostors and LOD Flicker Fix</a> to fix this problem.
                             </p>
                         </div>
                         </p>
@@ -310,15 +300,15 @@ bForceFullLOD=1</textarea>
                                 <li><b>Main Files - FNVLODGen Resources</b></li>
                                 <li><b>Optional Files - Trees LOD Billboards Vanilla</b></li>
                                 <li>
-                                    After installing the main file, open the mod in Mod Organizer 2, and hide <strong>FNVLODGen.esp</strong> file.
+                                    Hide <strong>FNVLODGen.esp</strong>.
                                 </li>
                                 <div class="card-yellow">
                                     <p>
-                                        To hide a file:
+                                        How to hide files and folders:
                                     <ol>
                                         <li>Open the mod in Mod Organizer 2 by double-clicking it on the left pane.</li>
                                         <li>Go to the <strong>Filetree</strong> tab.</li>
-                                        <li>Right-click the file you want to hide and select <strong>Hide</strong>.</li>
+                                        <li>Right-click the file or folder you want to hide and click <strong>Hide</strong>.</li>
                                     </ol>
                                     </p>
                                 </div>
@@ -330,10 +320,10 @@ bForceFullLOD=1</textarea>
                             <ul>
                                 <li><b>Main Files - Much Needed LOD</b></li>
                                 <li>
-                                    After installing the main file, open the mod in Mod Organizer 2, and hide the following:
+                                    Hide the following:
                                     <ul>
-                                        <li><strong>MuchNeededLOD.esp</strong> file</li>
-                                        <li><strong>effects</strong> folder inside <strong>meshes</strong></li>
+                                        <li><strong>MuchNeededLOD.esp</strong></li>
+                                        <li>The <strong>effects</strong> folder inside <strong>meshes</strong></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -351,15 +341,8 @@ bForceFullLOD=1</textarea>
                             <ul>
                                 <li><b>Main Files - LODadditions</b></li>
                                 <li>
-                                    After installing the main file, open the mod in Mod Organizer 2, and hide <strong>tmzLODadditions.esp</strong> file.
+                                    Hide <strong>tmzLODadditions.esp</strong>.
                                 </li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <b class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/84132" target="_blank">LOD Additions and Improvements - Billboard LOD Fix</a></b>
-                            <ul>
-                                <li><b>Main Files - LOD Additions and Improvements - Billboard Fix</b></li>
                             </ul>
                         </li>
 
@@ -390,7 +373,7 @@ bForceFullLOD=1</textarea>
                             <ul>
                                 <li><b>Main Files - Version 1.0</b></li>
                                 <li>
-                                    After installing the main file, open the mod in Mod Organizer 2, and hide <strong>Wasted Mojave Rock LOD.esp</strong> file.
+                                    Hide <strong>Wasted Mojave Rock LOD.esp</strong>.
                                 </li>
                             </ul>
                         </li>
@@ -408,54 +391,41 @@ bForceFullLOD=1</textarea>
                                 <li><b>Main Files - LODIFY</b></li>
                                 <li><b>Optional Files - LODIFY FNV Wall_SoGB Editon</b></li>
                                 <li>
-                                    After installing both files, open them in Mod Organizer 2, and hide
-                                    <strong>TTWLods.esp</strong> and
-                                    <strong>LODIFY_FNV.esp</strong> files.
+                                    Hide <strong>TTWLods.esp</strong> and <strong>LODIFY_FNV.esp</strong> from both files.
                                 </li>
                             </ul>
                         </li>
 
                         <li>
-                            <b><b class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/87661" target="_blank">LOD Vertex Color Fixes</a></b></b>
+                            <b class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/88979" target="_blank">Decent LOD Kit</a></b>
                             <ul>
-                                <li><b>Main Files - LOD Vertex Color Fixes</b></li>
+                                <li><b>Main Files - Decent LOD Kit</b></li>
                             </ul>
                         </li>
 
                         <li>
-                            <b><b class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/87584" target="_blank">Road LOD Kit</a></b></b>
+                            <b><b class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/79358" target="_blank">VNV LOD Guide Plugins Merge</a></b></b>
                             <ul>
-                                <li><b>Main Files - Road LOD Kit</b></li>
                                 <li>
-                                    After installing the main file, open the mod in Mod Organizer 2, and hide <strong>Road LOD Kit.esp</strong> file.
+                                    <b>Main Files - VNV LOD Guide Plugins Merge</b>
+                                    <ul>
+                                        <li>You will be prompted with a BAIN installer, install the file with the ALML patch if you previously installed <a href="./visuals.html#ALittleMoreLamplight">A Little More Lamplight</a href="./visuals.html#ALML"></li>
+                                    </ul>
                                 </li>
                             </ul>
                         </li>
 
                         <li>
-                            <b><b class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/88637" target="_blank">Muck Pool LOD Kit</a></b></b>
+                            <b class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/88902" target="_blank">Nuclear LOD</a></b>
                             <ul>
-                                <li><b>Main Files - Muck Pool LOD Kit</b></li>
-                                <li>
-                                    After installing the main file, open the mod in Mod Organizer 2, and hide <strong>Muck Pool LOD Kit.esp</strong> file.
-                                </li>
+                                <li><b>Main Files - Nuclear LOD</b></li>
                             </ul>
                         </li>
 
                         <li>
-                            <b><b class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/88694" target="_blank">Sidewalk LOD Kit</a></b></b>
+                            <b class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/88898" target="_blank">High Priority LOD</a></b>
                             <ul>
-                                <li><b>Main Files - Sidewalk LOD Kit</b></li>
-                                <li>
-                                    After installing the main file, open the mod in Mod Organizer 2, and hide <strong>Sidewalk LOD Kit.esp</strong> file.
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <b><b class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/79358" target="_blank">VNV - LOD Patches</a></b></b>
-                            <ul>
-                                <li><b>Main Files - VNV - LOD Patches</b></li>
+                                <li><b>Main Files - High Priority LOD</b></li>
                             </ul>
                         </li>
                     </ol>
@@ -464,7 +434,7 @@ bForceFullLOD=1</textarea>
 
                 <div class="card">
                     <p>
-                    <h3>Tale of Two Wastelands</h3>
+                    <h3>Tale of Two Wastelands Instructions</h3>
                     If you are using Tale of Two Wastelands, also do the following:
                     <ol>
                         <li>
@@ -485,7 +455,13 @@ bForceFullLOD=1</textarea>
                     <div>
                         <b>IMPORTANT:</b>
                         <br>
-                        Make sure to enable all resources in MO2 before continuing!
+                        Enable all resources in MO2 before continuing, then move the following plugins above <strong>above DNWeathers.esp</strong> and order them as follows:
+                        <ol>
+                            <li>Impostors and LOD Flicker Fix.esp</li>
+                            <li>VNV LOD Guide Plugins Merge.esp</li>
+                            <li>Nuclear_LOD.esp</li>
+                            <li>HighPriorityLOD.esp</li>
+                        </ol>
                     </div>
                     </p>
                 </div>
@@ -493,7 +469,8 @@ bForceFullLOD=1</textarea>
                 <div class="card" id="PreGeneratedLOD" title="Pre-Generated LOD">
                     <p>
                     <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/79358" target="_blank">Pre-Generated LOD</a></h3>
-                    If you use a <strong>VNVE modlist</strong> with no changes to textures or the game world, you can skip manual LOD generation by using this file.
+                    If you use a <strong>VNVE modlist</strong> with no changes to textures or the game world, you can skip manual LOD generation by using this file. It includes Object, Tree, and Terrain LOD.
+                    <br>
                     <br>
                     Simply install it as a normal mod in MO2 and put it under the resources listed in the previous section (which you still need).
                     </p>
@@ -512,6 +489,9 @@ bForceFullLOD=1</textarea>
                             <b>WARNING!</b>
                             <br>
                             Do not use the <b>FNVLODGen</b> from Nexus! It's heavily out of date and will cause issues with your game - most notably broken Tree LOD!
+                            <br>
+                            <br>
+                            You need <strong>atleast version 121</strong> of xLODGen to expect a functional LOD output.
                         </p>
                     </div>
                     <ol>
@@ -601,7 +581,7 @@ bForceFullLOD=1</textarea>
 
                         <div class="expander-top clickable" onclick="expandCard(this, settingsDetailsExpander)" id="settingsDetails">
                             <p>
-                            <h3> Settings Explanation</h3>
+                            <h3>Settings Explanation</h3>
                             <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                             </p>
                         </div>
@@ -648,11 +628,10 @@ bForceFullLOD=1</textarea>
                             Do not disable the LOD resources you installed previously, the game needs them for the LOD to work properly.
                             <br>
                             <br>
-                            Generated LOD must <strong>always</strong> be loaded last in your modlist! (Bottom of the left pane in MO2)
+                            Generated LOD must <strong>always</strong> be loaded last in your modlist!
                             <br>
-                            If it happens to be overwritten by any mod, the in-game result will be <strong>broken</strong>.
                             <br>
-                            This is notably common with texture mods like NMC's Texture Pack.
+                            If it happens to be overwritten by any mod (commonly texture mods such as NMC's Texture Pack), the LOD in-game will be <strong>broken</strong>.
                         </p>
                     </div>
                 </div>
