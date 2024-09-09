@@ -252,6 +252,37 @@
                     </p>
                 </div>
 
+                <!-- Base Address Randomization -->
+                <div class="card" id="BaseAddressRandomization">
+                    <p>
+                    <h3>Disabling Base Address Randomization</h3>
+                    Base Address Randomization is a security feature in Windows that allows program's starting address to be randomized, which is not the expected behavior in 32-bit programs like Fallout: New Vegas. This <strong>leads to crashes</strong> in a modded game.
+                    <br>
+                    <br>
+                    While the feature should be disabled by default, it is still recommended to sanity check if it is disabled:
+                    <ol>
+                        <li>Open <strong>Windows Security</strong> from your <b>Start Menu</b>.</li>
+                        <li>Click on <b>App & browser control</b> in the left sidebar.</li>
+                        <li>Click on <b>Exploit protection settings</b> under <b>Exploit protection</b>.</li>
+                        <li>Ensure <strong>Force randomization for images (Mandatory ASLR)</strong> is set to <strong>Use default (Off)</strong>.</li>
+                        <div class="card-yellow">
+                            <p>
+                                If you don't want to change the global setting, you can add an exception just for the game:
+                            <ol>
+                                <li>Click on <b>Program settings</b>.</li>
+                                <li>Click on <b>Add program to customize</b>.</li>
+                                <li>Select <b>Add program by name</b>.</li>
+                                <li>Enter <span class="card-basic">FalloutNV.exe</span> in the box and save.</li>
+                                <li>Find the newly created entry on the list and click <b>Edit</b>.</li>
+                                <li>Find <strong>Force randomization for images (Mandatory ASLR)</strong>.</li>
+                                <li>Check <strong>Override system settings</strong>, and set the toggle to <strong>Off</strong>.</li>
+                            </ol>
+                            </p>
+                        </div>
+                    </ol>
+                    </p>
+                </div>
+
                 <div class="card" id="RootMods">
                     <p>
                     <h3 onclick="location.href='#RootMods'">Root Mods</h3>
