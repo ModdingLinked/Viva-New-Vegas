@@ -59,6 +59,20 @@ h3 {
   line-height: 1.25em;
 }
 
+#logoBig {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#logoBig img {
+  width: 100%;
+  max-width: 220px;
+  margin: 0;
+  padding: 0;
+}
+
 .flex {
   display: flex;
 }
@@ -263,5 +277,8 @@ textarea {
   }
   .width-40 {
     max-width: 70% !important;
+  }
+  #logoBig {
+    display: none;
   }
 }/*# sourceMappingURL=styles.css.map */

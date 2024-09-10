@@ -49,6 +49,16 @@ textarea {
     margin-bottom: 0.5em;
 }
 
+textarea {
+    resize: none;
+    box-sizing: border-box;
+    width: 95%;
+}
+
+textarea.auto-resize {
+    overflow: hidden;
+}
+
 b.card-basic {
     padding: 0.3em 0.5em 0.3em 0.5em;
 }
@@ -154,5 +164,9 @@ img.chevron {
 
     .card-basic {
         width: unset;
+    }
+
+    textarea {
+        width: 100%;
     }
 }

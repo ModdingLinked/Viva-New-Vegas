@@ -59,6 +59,20 @@ h3 {
     line-height: 1.25em;
 }
 
+#logoBig {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#logoBig img {
+    width: 100%;
+    max-width: 220px;
+    margin: 0;
+    padding: 0;
+}
+
 .flex {
     display: flex;
 }
@@ -238,6 +252,7 @@ textarea {
 }
 
 @media only screen and (max-width: 1220px) {
+
     .content,
     .content-index {
         margin-right: 0px !important;
@@ -245,6 +260,7 @@ textarea {
 }
 
 @media only screen and (max-width: 900px) {
+
     .content,
     .content-index {
         margin-left: 0px;
@@ -267,16 +283,20 @@ textarea {
     .width-90 {
         max-width: 100% !important;
     }
-    
+
     .width-70 {
         max-width: 90% !important;
     }
-    
+
     .width-60 {
         max-width: 80% !important;
     }
-    
+
     .width-40 {
         max-width: 70% !important;
+    }
+
+    #logoBig {
+        display: none;
     }
 }
