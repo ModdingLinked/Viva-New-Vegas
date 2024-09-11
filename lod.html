@@ -168,14 +168,16 @@
                     <br>
                     <br>
                     You can also generate terrain LOD, which will allow mods that edit the game's landscape to have LOD that reflects their changes. Terrain LOD creates a much larger file size and will take longer to generate.
-                    <div class="card-yellow center" style="display: flex; align-items: center;">
+                    <div class="card-yellow" style="display: flex; align-items: center;">
                         <p>
                             <img src="./img/Coco/Blockquote.webp" alt="Coco blockquote" class="cocoNerd">
                         <div>
-                            Viva New Vegas (even with VNV Extended) does not need new terrain LOD, but this guide will explain both the object and terrain LOD generation to account for custom modlists or if you just want better looking terrain LOD.
-                            <br>
-                            <br>
-                            Extra instructions for Tale of Two Wastelands users are included.
+                            <p>
+                                Viva New Vegas (even with VNV Extended) does not need new terrain LOD, but this guide will explain both the object and terrain LOD generation to account for custom modlists or if you just want better looking terrain LOD.
+                                <br>
+                                <br>
+                                Extra instructions for Tale of Two Wastelands users are included.
+                            </p>
                         </div>
                         </p>
                     </div>
@@ -265,7 +267,8 @@ fBlockLoadDistance=130000
 ; Makes flora use the highest LOD quality, removing the pop-in (not related to Tree LOD)
 bForceFullLOD=1</textarea>
                     </ol>
-                    <div class="card-red center" style="display: flex; align-items: center;">
+
+                    <div class="card-red" style="display: flex; align-items: center;">
                         <p>
                             <img src="./img/Coco/Blockquote.webp" alt="Coco blockquote" class="cocoNerd">
                         <div>
@@ -280,6 +283,7 @@ bForceFullLOD=1</textarea>
                         </div>
                         </p>
                     </div>
+
                     </p>
                 </div>
 
@@ -447,19 +451,21 @@ bForceFullLOD=1</textarea>
                     </p>
                 </div>
 
-                <div class="card-red center" style="display: flex; align-items: center;">
+                <div class="card-red" style="display: flex; align-items: center;">
                     <p>
                         <img src="./img/Coco/Blockquote.webp" alt="Coco blockquote" class="cocoNerd">
                     <div>
-                        <b>IMPORTANT:</b>
-                        <br>
-                        Enable all resources in MO2 before continuing, then move the following plugins above <strong>above DNWeathers.esp</strong> and order them as follows:
+                        <p>
+                            <b>IMPORTANT:</b>
+                            <br>
+                            Enable all resources in MO2 before continuing, then move the following plugins above <strong>above DNWeathers.esp</strong> and order them as follows:
                         <ol>
                             <li>Impostors and LOD Flicker Fix.esp</li>
                             <li>VNV LOD Guide Plugins Merge.esp</li>
                             <li>Nuclear_LOD.esp</li>
                             <li>HighPriorityLOD.esp</li>
                         </ol>
+                        </p>
                     </div>
                     </p>
                 </div>
@@ -482,16 +488,23 @@ bForceFullLOD=1</textarea>
                     <p>
                     <h3>xLODGen</h3>
                     xLODGen is an xEdit-based tool that allows you to generate LOD meshes for your game. Similarly to xEdit, it has a single executable that can be be turned into a game specific version by adding arguments.
-                    <div class="card-red">
+
+                    <div class="card-red" style="display: flex; align-items: center; margin-top: 30px;">
                         <p>
-                            <b>WARNING!</b>
-                            <br>
-                            Do not use the <b>FNVLODGen</b> from Nexus! It's heavily out of date and will cause issues with your game - most notably broken Tree LOD!
-                            <br>
-                            <br>
-                            You need <strong>atleast version 121</strong> of xLODGen to expect a functional LOD output.
+                            <img src="./img/Coco/Blockquote.webp" alt="Coco blockquote" class="cocoNerd">
+                        <div>
+                            <p>
+                                <b>WARNING!</b>
+                                <br>
+                                Do not use the <b>FNVLODGen</b> from Nexus! It's heavily out of date and will cause issues with your game - most notably broken Tree LOD!
+                                <br>
+                                <br>
+                                You need <strong>atleast version 121</strong> of xLODGen to expect a functional LOD output.
+                            </p>
+                        </div>
                         </p>
                     </div>
+
                     <ol>
                         <li>Download the latest <strong>xLODGen</strong> from <a href="https://stepmodifications.org/forum/topic/13451-xlodgen-terrain-lod-beta-94-for-fnv-fo3-fo4-fo4vr-tes5-sse-tes5vr-enderal-enderalse/" target="_blank">here</a>.</li>
                         <li>Once the download has finished, extract the contents of the archive anywhere outside of the default Windows folders.</li>
@@ -500,14 +513,19 @@ bForceFullLOD=1</textarea>
                         <li>From the pop-up, navigate to where xLODGen is installed and select <strong>xLODGenx64.exe</strong>.</li>
                         <li>In the <b>Arguments</b> box in the right pane, enter <span class="card-basic">-FNV -O:"C:\Output"</span></li>
 
-                        <div class="card-red">
+                        <div class="card-red" style="display: flex; align-items: center; margin-top: 30px;">
                             <p>
-                                This argument will send the LOD output to a folder called <b class="card-basic">Output</b> on your <b>C</b> drive (the drive Windows is installed on).
-                                <br>
-                                You can change the path if you would prefer the files to be generated elsewhere (do not use a UAC protected folder or the game folder).
-                                <br>
-                                <br>
-                                Make sure that the output folder is empty before generating LOD.
+                                <img src="./img/Coco/Blockquote.webp" alt="Coco blockquote" class="cocoNerd">
+                            <div>
+                                <p>
+                                    This argument will send the LOD output to a folder called <b class="card-basic">Output</b> on your <b>C</b> drive (the drive Windows is installed on).
+                                    <br>
+                                    You can change the path if you would prefer the files to be generated elsewhere (do not use a UAC protected folder or the game folder).
+                                    <br>
+                                    <br>
+                                    Make sure that the output folder is empty before generating LOD.
+                                </p>
+                            </div>
                             </p>
                         </div>
 
@@ -537,7 +555,8 @@ bForceFullLOD=1</textarea>
                                     <p>
                                         Generating Terrain LOD is <strong>very</strong> time consuming and CPU intensive.
                                         <br>
-                                        It's needed only if you have mods that edit the landscape or landscape textures.
+                                        <br>
+                                        It's needed <u>only</u> if you have mods that edit the landscape or landscape textures. But the visual improvement is big regardless.
                                     </p>
                                 </div>
                                 <li>In the right pane, check <strong>Terrain LOD</strong>.</li>
@@ -618,20 +637,26 @@ bForceFullLOD=1</textarea>
                         <li>Cut them to the <strong>FNVLODGen Output</strong> mod you just created (right-click on the mod and select <b>Open in Explorer)</b>.</li>
                     </ol>
                     </p>
-                    <div class="card-red center" style="display: flex; align-items: center;">
-                        <img src="./img/Coco/Blockquote.webp" alt="Coco blockquote" class="cocoNerd">
+
+                    <div class="card-red" style="display: flex; align-items: center;">
                         <p>
-                            <b>IMPORTANT:</b>
-                            <br>
-                            Do not disable the LOD resources you installed previously, the game needs them for the LOD to work properly.
-                            <br>
-                            <br>
-                            Generated LOD must <strong>always</strong> be loaded last in your modlist!
-                            <br>
-                            <br>
-                            If it happens to be overwritten by any mod (commonly texture mods such as NMC's Texture Pack), the LOD in-game will be <strong>broken</strong>.
+                            <img src="./img/Coco/Blockquote.webp" alt="Coco blockquote" class="cocoNerd">
+                        <div>
+                            <p>
+                                <b>IMPORTANT:</b>
+                                <br>
+                                Do not disable the LOD resources you installed previously, the game needs them for the LOD to work properly.
+                                <br>
+                                <br>
+                                Generated LOD must <strong>always</strong> be loaded last in your modlist!
+                                <br>
+                                <br>
+                                If it happens to be overwritten by any mod (commonly texture mods such as NMC's Texture Pack), the LOD in-game will be <strong>broken</strong>.
+                            </p>
+                        </div>
                         </p>
                     </div>
+
                 </div>
             </span>
 
