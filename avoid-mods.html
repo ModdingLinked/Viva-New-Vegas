@@ -160,16 +160,11 @@
 
                 <h2 onclick="location.href='#ModsToAvoid'">Mods to Avoid</h2>
 
-                <div class="card-red" style="display: flex; align-items: center; margin-top: 30px;">
+                <div class="card-yellow">
                     <p>
-                        <img src="./img/Coco/Blockquote.webp" alt="Coco blockquote" class="cocoNerd">
-                    <div>
-                        <p>
-                            This list is far from comprehensive. There are still tons of mods not listed here that will break your game. This is why it is very important to have some modding knowledge before adding any mods.
-                            <br>
-                            Always view every plugin you install with <a href="https://moddinglinked.com/xedit.html" target="_blank">FNVEdit</a> to check for conflicts.
-                        </p>
-                    </div>
+                        This list is far from comprehensive. There are still tons of mods not listed here that will break your game. This is why it is very important to have some modding knowledge before adding any mods.
+                        <br>
+                        Always view every plugin you install with <a href="https://moddinglinked.com/xedit.html" target="_blank">FNVEdit</a> to check for conflicts.
                     </p>
                 </div>
 
@@ -181,15 +176,15 @@
                 </div>
                 <div class="expander-bottom" id="bugfixmodsexpander">
                     <p>
-                    <h3>New Vegas Stutter Remover</h3>
-                    Will cause crashes roughly every 15 minutes. Every single feature from NVSR has been replaced in a modern manner by the combination of <a href="https://www.nexusmods.com/newvegas/mods/66537" target="_blank">New Vegas Tick Fix</a>, <a href="https://www.nexusmods.com/newvegas/mods/69779" target="_blank">New Vegas Heap Replacer</a> and <a href="https://www.nexusmods.com/newvegas/mods/66347" target="_blank">lStewieAl's Tweaks</a>. These mods also have many great features that NVSR never had, like the high FPS physics fix. There is no reason to use NVSR, even on Windows 7.
+                    <h3>ENBoost</h3>
+                    ENBoost works around an issue (which NVTF already fixes properly) with a hacky memory sharing across processes. It also requires configuration based on the user's system and much like ENB, has been abandoned.
                     </p>
 
                     <hr>
 
                     <p>
-                    <h3>ENBoost</h3>
-                    ENBoost works around an issue (which NVTF already fixes properly) with a hacky memory sharing across processes. It also requires configuration based on the user's system and much like ENB, has been abandoned.
+                    <h3>New Vegas Stutter Remover</h3>
+                    Will cause crashes roughly every 15 minutes. Every single feature from NVSR has been replaced in a modern manner by the combination of <a href="https://www.nexusmods.com/newvegas/mods/66537" target="_blank">New Vegas Tick Fix</a>, <a href="https://www.nexusmods.com/newvegas/mods/69779" target="_blank">New Vegas Heap Replacer</a> and <a href="https://www.nexusmods.com/newvegas/mods/66347" target="_blank">lStewieAl's Tweaks</a>. These mods also have many great features that NVSR never had, like the high FPS physics fix. There is no reason to use NVSR, even on Windows 7.
                     </p>
 
                     <hr>
@@ -235,6 +230,13 @@
                 </div>
                 <div class="expander-bottom" id="visualmodsexpander">
                     <p>
+                    <h3>AI-upscaled texture packs</h3>
+                    Mods upscaled with AI or other lazy techniques generally are not worth the higher VRAM usage.
+                    </p>
+
+                    <hr>
+
+                    <p>
                     <h3>Oversized textures</h3>
                     Based on the object size and how the texture is wrapped around it, you should pick textures with a reasonable resolution and avoid the very big ones also based on your display resolution. Keep in mind that the textures will not be displayed with their full resolution at all times, in fact they will be scaled down because of <a href="https://imgsli.com/MTMwNjU2" target="" _blank>mipmaps</a> based on distance and other factors, as shown with these sliders. Just for reference, a maximum of 2K at 1080p is a pretty safe bet in terms of balance.
                     </p>
@@ -244,13 +246,6 @@
                     <p>
                     <h3>ENB</h3>
                     As mentioned earlier with ENBoost, ENBs were never fully developed for New Vegas and have been abandoned by the author. They have a ton of bugs and performance issues, such as broken anti-aliasing, transparent objects and glowing objects (though glowing objects can be mostly mitigated with <a href="https://www.nexusmods.com/newvegas/mods/73431" target="_blank">ENB Glowing Objects Overhaul</a>). They also use a lot of <a href="https://imgur.com/a/8UT356J" target="_blank">vision-obscuring effects</a> like depth of field, lens flares, bloom and chromatic aberration to obscure the broken anti-aliasing, which makes them very hard to play with. I recommend using a ReShade preset instead, such as <a href="https://www.nexusmods.com/newvegas/mods/76715" target="_blank">Vibrance</a> or <a href="https://www.nexusmods.com/newvegas/mods/71772" target="_blank">Vanilla Plus ReShade Preset</a>.
-                    </p>
-
-                    <hr>
-
-                    <p>
-                    <h3>AI-upscaled texture packs</h3>
-                    Mods upscaled with AI or other lazy techniques generally are not worth the higher VRAM usage.
                     </p>
 
                     <hr>
@@ -471,35 +466,49 @@
                     Re-compiles every script in the game and still has many bugs after cleaning.
                     </p>
 
+                    <hr>
+
                     <p>
                     <h3>Cz52</h3>
                     Has broken meshes and recompiles all scripts.
                     </p>
+
+                    <hr>
 
                     <p>
                     <h3>Killable children mods</h3>
                     Might break quests.
                     </p>
 
+                    <hr>
+
                     <p>
                     <h3>Weapons of the Wasteland</h3>
                     Causes crashes.
                     </p>
+
+                    <hr>
 
                     <p>
                     <h3>Leave Conversation</h3>
                     Force closes dialogues, breaking scripts and possibly locking you out of dialogue choices.
                     </p>
 
+                    <hr>
+
                     <p>
                     <h3>Monster Mod (MoMod)</h3>
                     Has broken meshes that cause crashing and broken levelled lists.
                     </p>
 
+                    <hr>
+
                     <p>
                     <h3>Enhanced NPC Awareness</h3>
                     Causes random NPCs and companions after firing to become hostile to the player, among other issues.
                     </p>
+
+                    <hr>
 
                     <p>
                     <h3>The Storyteller Companion</h3>
@@ -519,10 +528,14 @@
                     If you have a few hours and want more information about Sinitar's lies, scamming and lack of modding knowledge, check out <a href="https://docs.google.com/document/d/1F1-6lF8dI4i2Zz8iT-bv_Ci1VO9MSU4MiSUrT5JqgHA/edit" target="_blank">this</a> <i>twenty-eight</i> page essay that goes into excruciating detail about it.
                     </p>
 
+                    <hr>
+
                     <p>
                     <h3>Game Settings Tuner - GST</h3>
                     Bad scripting that causes save bloat and corruption. Use Stewie Tweak's GMST override feature instead.
                     </p>
+
+                    <hr>
 
                     <p>
                     <h3>DSOAL</h3>
