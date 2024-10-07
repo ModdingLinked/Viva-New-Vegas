@@ -243,6 +243,19 @@
                     <p>
                         This could happen for <strong>various reasons</strong>:
                     <ul>
+                        <li>Make sure the latest VC++ Redistributables are installed:
+                            <ul>
+                                <li><a href="https://aka.ms/vs/17/release/vc_redist.x64.exe" target="_blank">2015-2022 X64</a></li>
+                                <li><a href="https://aka.ms/vs/17/release/vc_redist.x86.exe" target="_blank">2015-2022 X86</a></li>
+                                <li>
+                                    <a href="https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/" target="_blank">VC++ AIO</a> (not always up to date, making the 2 files above a requirement):
+                                    <ol>
+                                        <li>Extract the archive and run the included <span class="card-basic">install_all.bat</span> as an administrator.</li>
+                                    </ol>
+                                </li>
+                                <li>Restart your PC.</li>
+                            </ul>
+                        </li>
                         <li>Base Address Randomization is enabled. This has to be disabled for a modded game to work, you can do so by following <a href="./setup.html#BaseAddressRandomization">these steps</a>.</li>
                         <li>The 4GB Patcher or the Epic Games Patcher weren't run. Follow <a href="./utilities.html">the steps</a> in the guide. If you are using Wabbajack, follow <a href="./wabbajack.html#RootMods" target="_blank">these steps</a> instead.</li>
                         <li>xNVSE is not installed correctly or at all, make sure that you have all of the <a href="./utilities.html" target="_blank">utilities</a>. If you are using Wabbajack, follow <a href="./wabbajack.html#RootMods" target="_blank">these steps</a> instead.</li>
@@ -444,12 +457,19 @@
                 </div>
                 <div class="expander-bottom" id="troubleshootingquestion15expander">
                     <p>
-                    <ol>
-                        <li>Download the <a href="https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/" target="_blank">VC++ Runtime Libraries</a>.</li>
-                        <li>Extract the archive and run the included <span class="card-basic">install_all.bat</span> as an administrator.</li>
-                        <li>Restart your PC.</li>
-                        <li>If that doesn't work, also install <a href="https://aka.ms/vs/17/release/vc_redist.x64.exe" target="_blank">this</a> and retry running MO2.</li>
-                    </ol>
+                        <li>Make sure the latest VC++ Redistributables are installed:
+                            <ul>
+                                <li><a href="https://aka.ms/vs/17/release/vc_redist.x64.exe" target="_blank">2015-2022 X64</a></li>
+                                <li><a href="https://aka.ms/vs/17/release/vc_redist.x86.exe" target="_blank">2015-2022 X86</a></li>
+                                <li>
+                                    <a href="https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/" target="_blank">VC++ AIO</a> (not always up to date, making the 2 files above a requirement):
+                                    <ol>
+                                        <li>Extract the archive and run the included <span class="card-basic">install_all.bat</span> as an administrator.</li>
+                                    </ol>
+                                </li>
+                                <li>Restart your PC.</li>
+                            </ul>
+                        </li>
                     </p>
                 </div>
 
