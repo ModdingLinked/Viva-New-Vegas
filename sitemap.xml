@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://vivanewvegas.moddinglinked.com/utilities.html</loc>
-		<priority>0.90</priority>
+		<loc>https://vivanewvegas.moddinglinked.com/intro.html</loc>
+		<priority>1.00</priority>
 		<lastmod>2024-10-03</lastmod>
 	</url>
 	<url>
-		<loc>https://vivanewvegas.moddinglinked.com/intro.html</loc>
-		<priority>1.00</priority>
+		<loc>https://vivanewvegas.moddinglinked.com/utilities.html</loc>
+		<priority>0.90</priority>
+		<lastmod>2024-10-07</lastmod>
+	</url>
+	<url>
+		<loc>https://vivanewvegas.moddinglinked.com/wabbajack.html</loc>
+		<priority>0.80</priority>
+		<lastmod>2024-10-03</lastmod>
+	</url>
+	<url>
+		<loc>https://vivanewvegas.moddinglinked.com/bugfix.html</loc>
+		<priority>0.80</priority>
 		<lastmod>2024-10-03</lastmod>
 	</url>
 	<url>
@@ -23,11 +33,6 @@
 	<url>
 		<loc>https://vivanewvegas.moddinglinked.com/avoid-mods.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2024-10-03</lastmod>
-	</url>
-	<url>
-		<loc>https://vivanewvegas.moddinglinked.com/wabbajack.html</loc>
-		<priority>0.80</priority>
 		<lastmod>2024-10-03</lastmod>
 	</url>
 	<url>
@@ -63,11 +68,6 @@
 	<url>
 		<loc>https://vivanewvegas.moddinglinked.com/basefinish.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2024-10-03</lastmod>
-	</url>
-	<url>
-		<loc>https://vivanewvegas.moddinglinked.com/bugfix.html</loc>
-		<priority>0.80</priority>
 		<lastmod>2024-10-03</lastmod>
 	</url>
 	<url>
