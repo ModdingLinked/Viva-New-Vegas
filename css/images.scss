@@ -27,6 +27,7 @@
     display: flex;
     border-radius: 6pt;
     transition: all 0.4s;
+    pointer-events: none;
 }
 
 .image-container:hover .resize-overlay,
