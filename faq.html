@@ -23,7 +23,7 @@
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#333230">
     <meta http-equiv='cache-control' content='no-cache'>
     <meta http-equiv='expires' content='0'>
-    <meta http-equiv='pragma' content='no-cache'>    
+    <meta http-equiv='pragma' content='no-cache'>
     <meta http-equiv='clear-site-data' content='cache'>
 
     <script src="javascript.js"></script>
@@ -234,6 +234,18 @@
                     </p>
                 </div>
 
+                <div class="expander-top clickable" onclick="expandCard(this, generalquestion6expander)" id="generalquestion6">
+                    <p>
+                    <h3>Where are save files stored?</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="generalquestion6expander">
+                    <p>
+                        You may have noticed that when playing the game through MO2, your save files will not appear in the Documents folder like normal. This is because the guide (and Wabbajack) makes use of <b>profile-specific saves</b>, an MO2 feature that redirects where the game looks for saves and where it creates them. This is located in the instance's profile folder, you can access all of them quickly by selecting the <strong>Saves tab of MO2</strong> on the right pane.
+                    </p>
+                </div>
+
                 <h2 onclick="location.href='#Troubleshooting'">Troubleshooting</h2>
                 <p>You can ask for support in the <a href="https://discord.gg/S99Ary5eba" target="_blank">ModdingLinked</a> Discord server in case any of the advice below does not solve your problem.</p>
                 <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion1expander)" id="troubleshootingquestion1">
@@ -248,14 +260,14 @@
                     <ul>
                         <li>Make sure the latest VC++ Redistributables are installed:
                             <ul>
-                                <li><a href="https://aka.ms/vs/17/release/vc_redist.x64.exe" target="_blank">2015-2022 X64</a></li>
-                                <li><a href="https://aka.ms/vs/17/release/vc_redist.x86.exe" target="_blank">2015-2022 X86</a></li>
                                 <li>
-                                    <a href="https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/" target="_blank">VC++ AIO</a> (not always up to date, making the 2 files above a requirement):
+                                    <a href="https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/" target="_blank">VC++ AIO</a>
                                     <ol>
                                         <li>Extract the archive and run the included <span class="card-basic">install_all.bat</span> as an administrator.</li>
                                     </ol>
                                 </li>
+                                <li><a href="https://aka.ms/vs/17/release/vc_redist.x64.exe" target="_blank">2015-2022 X64</a></li>
+                                <li><a href="https://aka.ms/vs/17/release/vc_redist.x86.exe" target="_blank">2015-2022 X86</a></li>
                                 <li>Restart your PC.</li>
                             </ul>
                         </li>
@@ -386,7 +398,7 @@
 
                 <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion10expander)" id="troubleshootingquestion10">
                     <p>
-                    <h3>Application Load Errors</h3>
+                    <h3>Application load errors</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                     </p>
                 </div>
@@ -462,14 +474,14 @@
                     <p>
                         <li>Make sure the latest VC++ Redistributables are installed:
                             <ul>
-                                <li><a href="https://aka.ms/vs/17/release/vc_redist.x64.exe" target="_blank">2015-2022 X64</a></li>
-                                <li><a href="https://aka.ms/vs/17/release/vc_redist.x86.exe" target="_blank">2015-2022 X86</a></li>
                                 <li>
-                                    <a href="https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/" target="_blank">VC++ AIO</a> (not always up to date, making the 2 files above a requirement):
+                                    <a href="https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/" target="_blank">VC++ AIO</a>
                                     <ol>
                                         <li>Extract the archive and run the included <span class="card-basic">install_all.bat</span> as an administrator.</li>
                                     </ol>
                                 </li>
+                                <li><a href="https://aka.ms/vs/17/release/vc_redist.x64.exe" target="_blank">2015-2022 X64</a></li>
+                                <li><a href="https://aka.ms/vs/17/release/vc_redist.x86.exe" target="_blank">2015-2022 X86</a></li>
                                 <li>Restart your PC.</li>
                             </ul>
                         </li>
@@ -517,6 +529,21 @@
                         <li>Set the game to English - other languages are not supported.</li>
                         <li>If all that doesn't work, click the settings cog in the top right of Wabbajack, log out of Nexus then log in again and restart the installation process.</li>
                     </ul>
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion19expander)" id="troubleshootingquestion19">
+                    <p>
+                    <h3>Vanilla UI Plus has detected an installation error</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="troubleshootingquestion19expander">
+                    <p>
+                    <ol>
+                        <li><strong>Move Vanilla UI Plus below the MCM and its hotfix (MCM BugFix 2)</strong> in the left pane of MO2.</li>
+                        <li>Make sure that you have applied the guide's load order.</li>
+                    </ol>
                     </p>
                 </div>
 
