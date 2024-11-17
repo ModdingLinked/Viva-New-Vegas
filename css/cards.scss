@@ -4,6 +4,12 @@
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 13%);
 }
 
+.card-wj {
+    outline: 1px solid rgba(0, 0, 0, 10%);
+    background-color: rgb(31, 27, 36);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 13%);
+}
+
 .card-basic,
 textarea {
     font-family: monospace;
@@ -35,6 +41,7 @@ textarea {
 }
 
 .card,
+.card-wj,
 .card-basic,
 .card-green,
 .card-red,
