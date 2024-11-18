@@ -155,10 +155,13 @@ function createRightSidebar() {
     const fragment = document.createDocumentFragment();
 
     for (const section of sections) {
-        // Get and sort elements once per section
+        // Get only direct children and sort them
         const elements = [
-            ...section.querySelectorAll('.card, .expander-top')
-        ].sort((a, b) =>
+            ...section.children
+        ].filter(el => 
+            (el.classList.contains('card') || el.classList.contains('expander-top')) &&
+            el.parentNode === section
+        ).sort((a, b) =>
             a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : 1
         );
 
