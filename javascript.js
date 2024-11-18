@@ -1,10 +1,17 @@
+
 var menuIsOpen = false;
+
+// Global variables
+const progressBars  = document.getElementsByClassName("progress-bar");
+const sections      = document.getElementsByClassName("section");
+const sidebars      = document.getElementsByClassName("sidebar");
+const leftSideBar   = document.getElementsByClassName("left-sidebar");
+const autoSizeAreas = document.querySelectorAll('.auto-resize');
 
 window.addEventListener('resize', sizeChanged);
 document.addEventListener('DOMContentLoaded', function () {
     updateProgressBarAndFadeIn();
     createRightSidebar();
-    createImageHandlers();
     markActivePage();
     resizeAllTextAreas();
 });
@@ -27,10 +34,9 @@ document.addEventListener('keydown', (e) => {
 });
 
 function sizeChanged() {
-    var sidebar = document.getElementsByClassName("left-sidebar");
-    if (sidebar && sidebar.length > 0) {
+    if (leftSideBar && leftSideBar.length > 0) {
         if (document.documentElement.clientWidth > 760) {
-            document.getElementsByClassName("left-sidebar")[0].style.width = "";
+            leftSideBar[0].style.width = "";
         }
     }
 
@@ -38,13 +44,13 @@ function sizeChanged() {
 }
 
 function toggleNav() {
-    var sidbear = document.getElementsByClassName("sidebar left-sidebar")[0];
-    if (sidbear.style.width == 0) {
-        sidbear.style.width = "75%";
+    var sideBar = leftSideBar[0];
+    if (sideBar.style.width == 0) {
+        sideBar.style.width = "75%";
         globalThis.menuIsOpen = true;
     }
     else {
-        sidbear.style.width = "";
+        sideBar.style.width = "";
         globalThis.menuIsOpen = false;
     }
 }
@@ -73,7 +79,6 @@ function expandCard(thisObj, $open, $dontReset) {
 
         const textareas = $open.querySelectorAll('.auto-resize');
         if (textareas) {
-            console.log("Found textareas: " + textareas.length);
             for (var i = 0; i < textareas.length; i++) {
                 autoResize(textareas[i]);
             }
@@ -82,10 +87,9 @@ function expandCard(thisObj, $open, $dontReset) {
 }
 
 function resizeAllTextAreas() {
-    const textareas = document.querySelectorAll('.auto-resize');
-    if (textareas) {
-        for (var i = 0; i < textareas.length; i++) {
-            autoResize(textareas[i]);
+    if (autoSizeAreas && autoSizeAreas.length > 0) {
+        for (var i = 0; i < autoSizeAreas.length; i++) {
+            autoResize(autoSizeAreas[i]);
         }
     }
 }
@@ -101,7 +105,6 @@ function emToPixels(em) {
 }
 
 function updateProgressBarAndFadeIn() {
-    var sections = document.getElementsByClassName("section");
     var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     var height = window.innerHeight;
 
@@ -116,7 +119,7 @@ function updateProgressBarAndFadeIn() {
         }
     }
 
-    var progressBar = document.getElementsByClassName("progress-bar")[0];
+    var progressBar = progressBars[0];
     if (progressBar) {
         height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         var scroll = (winScroll / height);
@@ -124,7 +127,7 @@ function updateProgressBarAndFadeIn() {
         progressBar.style.width = scroll * 100 + "%";
     }
 
-    var sidebars = document.getElementsByClassName("sidebar");
+
     if (sidebars) {
         var styleVal = "calc(100vh - 6.25em)";
 
@@ -140,65 +143,59 @@ function updateProgressBarAndFadeIn() {
 
 function createRightSidebar() {
     const content = document.getElementsByClassName('content')[0];
-    if (!content)
-        return;
+    if (!content) return;
 
     const sections = content.getElementsByClassName('section');
-    if (!sections)
-        return;
+    if (!sections) return;
 
-    var sidebarContent = document.getElementById('sidebarContent');
-    if (!sidebarContent)
-        return;
+    const sidebarContent = document.getElementById('sidebarContent');
+    if (!sidebarContent) return;
 
-    for (var i = 0; i < sections.length; i++) {
-        var section = sections[i];
-        const headers = section.querySelectorAll('h2');
-        const cards = section.querySelectorAll('.card');
+    // Create fragment for batch updates
+    const fragment = document.createDocumentFragment();
 
-        headers.forEach(header => {
-            if (!header.innerHTML || header.innerHTML.length == 0)
-                return;
+    for (const section of sections) {
+        // Get and sort elements once per section
+        const elements = [
+            ...section.querySelectorAll('.card, .expander-top')
+        ].sort((a, b) =>
+            a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : 1
+        );
 
-            // Create the section div
+        // Process headers within each section
+        section.querySelectorAll('h2').forEach(header => {
+            if (!header.innerHTML) return;
+
             const sectionDiv = document.createElement('div');
-            sidebarContent.appendChild(sectionDiv);
 
-            // Create the header link
+            // Create header elements
             const bold = document.createElement('b');
+            const separator = Object.assign(document.createElement('a'), {
+                href: `#${section.id}`,
+                textContent: header.innerHTML
+            });
+            bold.appendChild(separator);
             sectionDiv.appendChild(bold);
 
-            const separator = document.createElement('a');
-            separator.href = `#${section.id}`;
-            separator.textContent = header.innerHTML;
-            bold.appendChild(separator);
+            // Add all elements for this section
+            elements.forEach(element => {
+                const text = element.getAttribute('title') ||
+                    element.id.replace(/([A-Z])/g, ' $1').trim();
 
-            // Create section links
-            cards.forEach(card => {
-                var text;
-                const title = card.getAttribute('title');
-                if (title && title.length > 0) {
-                    text = title;
-                }
-                else {
-                    text = card.id.replace(/([A-Z])/g, ' $1').trim();
-                }
+                if (!text) return;
 
-                if (!text || text.length == 0) {
-                    return;
-                }
+                sectionDiv.appendChild(Object.assign(document.createElement('a'), {
+                    href: `#${element.id}`,
+                    textContent: text
+                }));
+            });
 
-                const cardId = card.id;
-                const cardLink = document.createElement('a');
-                cardLink.href = `#${cardId}`;
-                cardLink.textContent = text;
-
-                sectionDiv.appendChild(cardLink);
-            })
+            fragment.appendChild(sectionDiv);
         });
-    };
-};
+    }
 
+    sidebarContent.appendChild(fragment);
+}
 
 function markActivePage() {
     const leftSidebar = document.querySelector(".sidebar.left-sidebar");
@@ -293,31 +290,6 @@ function createPageArrows(currentIndex) {
     }
 }
 
-function createImageHandlers() {
-
-    const overlay = document.getElementById('image-overlay');
-    const enlargedImage = document.getElementById('enlarged-image');
-
-    if (!enlargedImage || !overlay)
-        return;
-
-    const images = document.querySelectorAll('.content-img');
-    if (!images)
-        return;
-
-    images.forEach(image => {
-        image.addEventListener('click', function () {
-            overlay.style.display = "flex";
-            enlargedImage.src = this.src;
-        });
-    });
-
-    overlay.addEventListener('click', function () {
-        overlay.style.display = "none";
-        enlargedImage.src = '';
-    });
-}
-
 function isChildOfSidebar(element) {
     while (element) {
         if (element.classList && element.classList.contains('sidebar') && element.classList.contains('left-sidebar')) {
@@ -352,14 +324,6 @@ document.addEventListener('keydown', function (event) {
         konamiCodeIndex = 0;
     }
 });
-
-function replaceText(node, textToReplace, replacementText) {
-    if (node.nodeType === Node.TEXT_NODE) {
-        node.textContent = node.textContent.replace(new RegExp(textToReplace, 'g'), replacementText);
-    } else if (node.nodeType === Node.ELEMENT_NODE) {
-        node.childNodes.forEach(childNode => replaceText(childNode, textToReplace, replacementText));
-    }
-}
 
 function loadScript(url, callback) {
     var script = document.createElement('script');
