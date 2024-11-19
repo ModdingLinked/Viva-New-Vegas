@@ -10,7 +10,6 @@ body {
     user-select: none;
     color: #ffffff;
     font-size: 2.2em;
-    line-height: 2em;
     text-decoration: none;
     display: flex;
     flex-direction: column;
@@ -67,6 +66,8 @@ body {
     color: #ffffff;
     font-size: 1rem;
     text-shadow: rgb(0, 0, 0) 0 1px 8px;
+    display: inline-block;
+    margin-top: 1.1em;
 }
 
 .welcomeContent .welcomeButton,
@@ -141,6 +142,16 @@ body {
     transition-timing-function: ease-in-out;
     transition-duration: 0.5s;
     text-shadow: 0.05em 0.075em 0.1em rgba(0, 0, 0, 0.7);
+}
+
+.disabledButton {
+    pointer-events: none;
+    cursor: not-allowed;
+    background-color: #333333 !important;
+}
+
+.disabledButton strong {
+    color: #ffffff60 !important;
 }
 
 @media screen and (min-width: 900px) {
