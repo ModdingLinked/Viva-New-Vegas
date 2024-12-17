@@ -179,35 +179,31 @@
                 <div class="expander-bottom" id="bugfixmodsexpander">
                     <p>
                     <h3>ENBoost</h3>
-                    ENBoost works around an issue (which NVTF already fixes properly) with a hacky memory sharing across processes. It also requires configuration based on the user's system and much like ENB, has been abandoned.
+                    ENBoost works around the game's managed memory pool with memory sharing across processes. NVTF changes pool type and fixes the problem at the root, allowing higher VRAM usage. ENBoost also requires configuration based on the user's system and much like ENB, has been abandoned.
                     </p>
 
                     <hr>
 
                     <p>
                     <h3>New Vegas Stutter Remover</h3>
-                    Will cause crashes roughly every 15 minutes. Every single feature from NVSR has been replaced in a modern manner by the combination of <a href="https://www.nexusmods.com/newvegas/mods/66537" target="_blank">New Vegas Tick Fix</a>, <a href="https://www.nexusmods.com/newvegas/mods/69779" target="_blank">New Vegas Heap Replacer</a> and <a href="https://www.nexusmods.com/newvegas/mods/66347" target="_blank">lStewieAl's Tweaks</a>. These mods also have many great features that NVSR never had, like the high FPS physics fix. There is no reason to use NVSR, even on Windows 7.
+                    Will cause periodic crashes. <a href="https://www.nexusmods.com/newvegas/mods/66537" target="_blank">New Vegas Tick Fix</a> and <a href="https://www.nexusmods.com/newvegas/mods/69779" target="_blank">New Vegas Heap Replacer</a> replace NVSR while also doing more. The game's performance (and stuttering) is also massively improved by <a href="https://www.nexusmods.com/newvegas/mods/80993" target="_blank">lStewieAl's Engine Optimizations</a>.
+                    <br>
+                    <br>
+                    There is no reason to use NVSR, even on Windows 7.
                     </p>
 
                     <hr>
 
                     <p>
                     <h3>Zan AutoPurge Crash Protector, PCB Hotkey, and Clear Cache Hotkey</h3>
-                    The script command used by these mods is a leftover command from development that forcefully clears buffered cells from memory, which can lead to unforeseen consequences. Essentially the same function is performed safely by the INI tweaks in the guide.
-                    </p>
-
-                    <hr>
-
-                    <p>
-                    <h3>Mission Mojave</h3>
-                    Heavily outdated compared to <a href="https://www.nexusmods.com/newvegas/mods/51664" target="_blank">Yukichigai Unofficial Patch</a>, it will cause more problems and crashes.
+                    Purging cell buffers is already done by the game during fast travel. Adding these mods will increase the usage of this command for no real benefit, possibly causing stutter.
                     </p>
 
                     <hr>
 
                     <p>
                     <h3>FOOK, New Vegas Enhanced Content and Mission Mojave Ultimate Edition</h3>
-                    Massive compilation mods like these eventually get outdated and break other mods like Yukichigai Unofficial Patch. For example, NVEC includes the old version of the Burning Campfires that causes save bloat, an old version of EVE that is even more performance-intensive than the current one, outdated bug fixes that break Yukichigai Unofficial Patch and much more.
+                    Massively outdated compared to <a href="https://www.nexusmods.com/newvegas/mods/51664" target="_blank">Yukichigai Unofficial Patch</a> and will introduce bugs of their own.
                     </p>
 
                     <hr>
@@ -247,21 +243,38 @@
 
                     <p>
                     <h3>ENB</h3>
-                    As mentioned earlier with ENBoost, ENBs were never fully developed for New Vegas and have been abandoned by the author. They have a ton of bugs and performance issues, such as broken anti-aliasing, transparent objects and glowing objects (though glowing objects can be mostly mitigated with <a href="https://www.nexusmods.com/newvegas/mods/73431" target="_blank">ENB Glowing Objects Overhaul</a>). They also use a lot of <a href="https://imgur.com/a/8UT356J" target="_blank">vision-obscuring effects</a> like depth of field, lens flares, bloom and chromatic aberration to obscure the broken anti-aliasing, which makes them very hard to play with. I recommend using a ReShade preset instead, such as <a href="https://www.nexusmods.com/newvegas/mods/76715" target="_blank">Vibrance</a> or <a href="https://www.nexusmods.com/newvegas/mods/71772" target="_blank">Vanilla Plus ReShade Preset</a>.
+                    Fallout 3 and New Vegas ENBs were never fully developed and have been abandoned by the author. This means they are left with some issues, like transparent and glowing objects (which can be somewhat mitigated with <a href="https://www.nexusmods.com/newvegas/mods/73431" target="_blank">ENB Glowing Objects Overhaul</a>).
+                    <br>
+                    <br>
+                    Due to its post-process and deferred nature, ENBs require MSAA to be disabled which introduces visual issues with alpha textures, that are not solvable with post-process anti-aliasing solutions.
+                    <br>
+                    <br>
+                    Additionally, ENB's integration with the game is pretty high level and detection based, which means that mods modifying graphical features in-engine can easily break ENB by changing something as simple as a resolution of a rendered texture, or replacing a shader.
+                    <br>
+                    <br>
+                    Many popular ENB features like LUTs, lens flares or god rays can be replicated with <a href="https://reshade.me/" target="_blank">ReShade</a>.
+                    There's also <a href="https://discord.com/invite/QgN6mR6eTK" target="_blank">New Vegas Reloaded</a>, which while still in development, offers similar feature set, while adding graphical features such as PBR or real global shadows.
                     </p>
 
                     <hr>
 
                     <p>
                     <h3>Fallout Character Overhaul</h3>
-                    Multiple broken file paths which cause missing mesh triangles and pink textures. The installer auto-selects patches for mods you don't have installed and installs the Glowing Ghouls file which causes massive performance drops and save bloat. It doesn't cover every NPC in the game (plus NPCs from the DLCs or mods), so any <a href="https://imgur.com/a/jMgRjBO" target="_blank">uncovered NPCs look very out of place</a>. It requires the <b>bLoadFaceGenHeadEGTFiles</b> INI setting to be enabled, which causes performance loss due to generating NPC face textures on the fly in-game. It also overwrites many YUP fixes for NPCs. I recommend <a href="https://www.nexusmods.com/newvegas/mods/71556" target="_blank">New Vegas Redesigned 2 Revised</a> or <a href="https://www.nexusmods.com/newvegas/mods/64862" target="_blank">Character Expansions Revised</a> instead.
+                    <ul>
+                        <li>Multiple broken file paths which cause missing mesh triangles and pink textures.</li>
+                        <li>The installer auto-selects patches for mods you don't have installed.</li>
+                        <li>It doesn't cover every NPC in the game.</li>
+                        <li>The ghoul file and the <b>bLoadFaceGenHeadEGTFiles</b> INI setting both reduce performance.</li>
+                        <li>Reverts many YUP fixes.</li>
+                    </ul>
+                    Use <a href="https://www.nexusmods.com/newvegas/mods/71556" target="_blank">New Vegas Redesigned 2 Revised</a> or <a href="https://www.nexusmods.com/newvegas/mods/64862" target="_blank">Character Expansions Revised</a> instead.
                     </p>
 
                     <hr>
 
                     <p>
                     <h3>Handheld Pip-Boys, such as the 2500</h3>
-                    All hand-held Pip-Boys share the <a href="https://imgur.com/a/3NBafn5" target="_blank">same common visual bugs</a> that occur if you enter/exit your Pip-Boy too fast. The methods these mods use to hide the Pip-Boy in third person are also quite janky, as they were made before NVSE extensions like JIP LN. These bugs and quirks have mostly been removed with <a href="https://www.nexusmods.com/newvegas/mods/76009" target="_blank">Handheld Fixes</a> though. I still recommend either the <a href="https://www.nexusmods.com/newvegas/mods/49732" target="_blank">2500a</a> or <a href="https://www.nexusmods.com/newvegas/mods/65980" target="_blank">2000 Mk VI</a> for wrist-mounted Pip-Boys.
+                    All hand-held Pip-Boys share the <a href="https://imgur.com/a/3NBafn5" target="_blank">same common visual bugs</a> that occur if you enter/exit your Pip-Boy too fast. The methods these mods use to hide the Pip-Boy in third person are also quite janky, as they were made before NVSE extensions like JIP LN. These bugs and quirks have mostly been removed with <a href="https://www.nexusmods.com/newvegas/mods/76009" target="_blank">Handheld Fixes</a> though. Either <a href="https://www.nexusmods.com/newvegas/mods/49732" target="_blank">2500a</a> or <a href="https://www.nexusmods.com/newvegas/mods/65980" target="_blank">2000 Mk VI</a> are recommended.
                     </p>
 
                     <hr>
@@ -282,7 +295,7 @@
 
                     <p>
                     <h3>New Vegas Landscape Overhaul Remastered</h3>
-                    Has broken navmeshes, disabled objects with the <b>Has Tree LOD</b> flag (which can cause crashing), many floating/clipping objects and bad balance. I recommend <a href="https://www.nexusmods.com/newvegas/mods/74218" target="_blank">New Vegas Landscape Overhaul Re-Remastered</a> instead. Be aware that the mod is still pretty performance-intensive and should be avoided on weaker systems.
+                    Has broken navmeshes, many misplaced objects and bad balance. Use <a href="https://www.nexusmods.com/newvegas/mods/74218" target="_blank">New Vegas Landscape Overhaul Re-Remastered</a> instead. Be aware that the mod is still pretty performance-intensive and should be avoided on weaker systems.
                     </p>
 
                     <hr>
@@ -295,14 +308,7 @@
                     <hr>
 
                     <p>
-                    <h3>Dragbody 10 Year Anniversary Pack and any other armor replacers</h3>
-                    They break fixes done by other mods and have problematic assets that lead to instability.
-                    </p>
-
-                    <hr>
-
-                    <p>
-                    <h3>Ragdolls</h3>
+                    <h3>Dragbody 10 Year Anniversary Pack and Ragdolls</h3>
                     Broken meshes prone to crashing.
                     </p>
 
@@ -377,7 +383,7 @@
                     <hr>
 
                     <p>
-                    <h3>Unlimited Companions (or any other companion-related mods)</h3>
+                    <h3>Unlimited Companions</h3>
                     Unlimited Companions re-compiles every script in the game and will break many mods. Use <a href="https://www.nexusmods.com/newvegas/mods/50468" target="_blank">JIP Companions Command and Control</a> if you want unlimited companions at the same time or other companion-related features like equipment managing, infinite ammo, combat-ready companions and much more.
                     <br>
                     <br>
@@ -402,7 +408,7 @@
 
                     <p>
                     <h3>Increased Wasteland Spawns</h3>
-                    Causes save bloat due to using the <b>PlaceAtMe</b> function. Use <a href="https://www.nexusmods.com/newvegas/mods/64623" target="_blank">The Living Desert</a> and the <b>Vanilla No Chanced Spawns Version</b> version of <a href="https://www.nexusmods.com/newvegas/mods/64638" target="_blank">Mojave Wildlife</a> instead.
+                    Causes save bloat due to using the <b>PlaceAtMe</b> function. Use <a href="https://www.nexusmods.com/newvegas/mods/64623" target="_blank">The Living Desert</a> and/or <a href="https://www.nexusmods.com/newvegas/mods/64638" target="_blank">Mojave Wildlife</a> instead.
                     </p>
 
                     <hr>
@@ -416,7 +422,7 @@
 
                     <p>
                     <h3>DUST</h3>
-                    Contains tons of errors of all kinds. If you do insist on playing it, <a href="https://www.nexusmods.com/newvegas/mods/67794" target="_blank">DUST Tweaks</a>, <a href="https://www.nexusmods.com/newvegas/mods/70653" target="_blank">DUSTed DUST</a>, and <a href="https://www.nexusmods.com/newvegas/mods/82072" target="_blank">DUST - Additional Fixes</a> are a must, optionally alongside DUST Expansion Project.
+                    Contains tons of errors of all kinds. If you do insist on playing it, <a href="https://www.nexusmods.com/newvegas/mods/67794" target="_blank">DUST Tweaks</a>, <a href="https://www.nexusmods.com/newvegas/mods/70653" target="_blank">DUSTed DUST</a>, and <a href="https://www.nexusmods.com/newvegas/mods/82072" target="_blank">DUST - Additional Fixes</a> are a must, optionally alongside <a href="https://www.nexusmods.com/newvegas/mods/80640" target="_blank">DUST Expansion Project</a>.
                     </p>
 
                     <hr>
@@ -451,7 +457,7 @@
 
                     <p>
                     <h3>Classic Fallout Weapons</h3>
-                    Countless broken meshes and leveled lists that will cause crashes. I recommend <a href="https://www.nexusmods.com/newvegas/mods/73805" target="_blank">Classic Fallout Weapons Remastered</a> instead.
+                    Countless broken meshes and leveled lists that will cause crashes. Use <a href="https://www.nexusmods.com/newvegas/mods/73805" target="_blank">Classic Fallout Weapons Remastered</a> instead.
                     </p>
 
                     <hr>
@@ -459,13 +465,6 @@
                     <p>
                     <h3>Honest Hearts Reborn</h3>
                     Re-compiles every script in the game and still has many bugs after cleaning.
-                    </p>
-
-                    <hr>
-
-                    <p>
-                    <h3>Cz52</h3>
-                    Has broken meshes and recompiles all scripts.
                     </p>
 
                     <hr>
@@ -539,7 +538,6 @@
                 </div>
             </span>
 
-            <!-- Arrows -->
             <div class="navigationArrowContainer">
                 <a href="#" id="previous" rel="prev" class="navigationArrow">
                     <img class="mirror" src="./img/UI/Arrow.svg" alt="Back Arrow">

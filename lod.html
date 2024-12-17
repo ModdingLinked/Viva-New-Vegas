@@ -167,7 +167,7 @@
                 <div class="card" id="Why?">
                     <p>
                     <h3>Why?</h3>
-                    Generating/installing new LOD is <b>NOT</b> a requirement, but it will add detail in the distance by increasing the amount of objects that appear in the distance while also making all LOD match your modded textures. Naturally, this also means a minor performance hit.
+                    Generating/installing new LOD is not a requirement, but it will add detail in the distance by increasing the amount of objects that appear in the distance while also making all LOD match your modded textures. Naturally, this also means a minor performance hit.
                     <br>
                     <br>
                     You can also generate terrain LOD, which will allow mods that edit the game's landscape to have LOD that reflects their changes. Terrain LOD creates a much larger file size and will take longer to generate.
@@ -192,7 +192,7 @@
                     In the context of Bethesda games, LOD mainly refers to <strong>Cell LOD</strong>, not geometry LOD. It's used to represent whole cells (the game's "chunks" of land) in the distance.
 
                     <p>
-                        Cell LOD is <b>not</b> based on distance - it's a binary state of whether cell is either loaded or not. The LOD Block distance settings control the max draw distance of LOD itself, not the point where it begins.
+                        Cell LOD is not based on distance - it's a binary state of whether cell is either loaded or not. The LOD Block distance settings control the max draw distance of LOD itself, not the point where it begins.
                         <br>
                         This means that you will see LOD pop-in at the same distance regardless of the settings.
                     </p>
@@ -252,7 +252,7 @@
                     These settings will increase the LOD draw distance and remove the jarring transitions of SpeedTree flora.
                     <ol>
                         <li>Click the <img src="./img/MO2/INI Editor.webp" alt="MO2 INI button" class="mo2-icon"> button at the top of MO2 and select <strong>INI Editor</strong>. </li>
-                        <li>Select the <span class="card-basic">FalloutCustom.ini</span> tab, which should have the settings copied from the <a href="./mo2.html">Mod Organizer 2</a> page.</li>
+                        <li>Select the <b>FalloutCustom.ini</b> tab, which should have the settings copied from the <a href="./mo2.html">Mod Organizer 2</a> page.</li>
                         <li>Paste in the following at the end of the file:</li>
                         <textarea readonly="readonly" style="height: 12.5em; width: 95%;" onclick="this.focus();this.select()">
 [TerrainManager]
@@ -301,6 +301,7 @@ bForceFullLOD=1</textarea>
                             <ul>
                                 <li><b>Main Files</b> - FNVLODGen Resources</li>
                                 <li>Hide <strong>FNVLODGen.esp</strong>.</li>
+
                                 <div class="card-yellow">
                                     <p>
                                         How to hide files and folders:
@@ -311,6 +312,7 @@ bForceFullLOD=1</textarea>
                                     </ol>
                                     </p>
                                 </div>
+
                             </ul>
                         </li>
 
@@ -638,7 +640,6 @@ bForceFullLOD=1</textarea>
                 </div>
             </span>
 
-            <!-- Arrows -->
             <div class="navigationArrowContainer">
                 <a href="#" id="previous" rel="prev" class="navigationArrow">
                     <img class="mirror" src="./img/UI/Arrow.svg" alt="Back Arrow">
