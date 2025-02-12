@@ -3,81 +3,81 @@
 	<url>
 		<loc>https://vivanewvegas.moddinglinked.com/intro.html</loc>
 		<priority>1.00</priority>
-		<lastmod>2025-01-24</lastmod>
+		<lastmod>2025-02-01</lastmod>
 	</url>
 	<url>
 		<loc>https://vivanewvegas.moddinglinked.com/utilities.html</loc>
 		<priority>0.90</priority>
-		<lastmod>2025-01-22</lastmod>
-	</url>
-	<url>
-		<loc>https://vivanewvegas.moddinglinked.com/wabbajack.html</loc>
-		<priority>0.80</priority>
-		<lastmod>2024-11-20</lastmod>
+		<lastmod>2025-02-01</lastmod>
 	</url>
 	<url>
 		<loc>https://vivanewvegas.moddinglinked.com/bugfix.html</loc>
 		<priority>0.80</priority>
-		<lastmod>2025-01-22</lastmod>
+		<lastmod>2025-02-01</lastmod>
+	</url>
+	<url>
+		<loc>https://vivanewvegas.moddinglinked.com/wabbajack.html</loc>
+		<priority>0.80</priority>
+		<lastmod>2025-02-01</lastmod>
 	</url>
 	<url>
 		<loc>https://vivanewvegas.moddinglinked.com/mo2.html</loc>
 		<priority>0.70</priority>
-		<lastmod>2024-11-18</lastmod>
-	</url>
-	<url>
-		<loc>https://vivanewvegas.moddinglinked.com/decompress.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2024-11-18</lastmod>
-	</url>
-	<url>
-		<loc>https://vivanewvegas.moddinglinked.com/avoid-mods.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2024-12-13</lastmod>
-	</url>
-	<url>
-		<loc>https://vivanewvegas.moddinglinked.com/avoid-tools.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2024-11-18</lastmod>
-	</url>
-	<url>
-		<loc>https://vivanewvegas.moddinglinked.com/visuals.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2025-01-22</lastmod>
-	</url>
-	<url>
-		<loc>https://vivanewvegas.moddinglinked.com/overhauls.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2025-01-22</lastmod>
-	</url>
-	<url>
-		<loc>https://vivanewvegas.moddinglinked.com/content.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2025-01-22</lastmod>
-	</url>
-	<url>
-		<loc>https://vivanewvegas.moddinglinked.com/gameplay.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2025-01-22</lastmod>
-	</url>
-	<url>
-		<loc>https://vivanewvegas.moddinglinked.com/hud.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2024-12-14</lastmod>
-	</url>
-	<url>
-		<loc>https://vivanewvegas.moddinglinked.com/basefinish.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2024-11-18</lastmod>
-	</url>
-	<url>
-		<loc>https://vivanewvegas.moddinglinked.com/setup.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2024-11-18</lastmod>
+		<lastmod>2025-02-01</lastmod>
 	</url>
 	<url>
 		<loc>https://vivanewvegas.moddinglinked.com/resources.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2024-12-12</lastmod>
+		<lastmod>2025-02-01</lastmod>
+	</url>
+	<url>
+		<loc>https://vivanewvegas.moddinglinked.com/setup.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2025-02-01</lastmod>
+	</url>
+	<url>
+		<loc>https://vivanewvegas.moddinglinked.com/basefinish.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2025-02-01</lastmod>
+	</url>
+	<url>
+		<loc>https://vivanewvegas.moddinglinked.com/hud.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2025-02-01</lastmod>
+	</url>
+	<url>
+		<loc>https://vivanewvegas.moddinglinked.com/gameplay.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2025-02-01</lastmod>
+	</url>
+	<url>
+		<loc>https://vivanewvegas.moddinglinked.com/content.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2025-02-01</lastmod>
+	</url>
+	<url>
+		<loc>https://vivanewvegas.moddinglinked.com/overhauls.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2025-02-01</lastmod>
+	</url>
+	<url>
+		<loc>https://vivanewvegas.moddinglinked.com/visuals.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2025-02-01</lastmod>
+	</url>
+	<url>
+		<loc>https://vivanewvegas.moddinglinked.com/avoid-tools.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2025-02-01</lastmod>
+	</url>
+	<url>
+		<loc>https://vivanewvegas.moddinglinked.com/avoid-mods.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2025-02-01</lastmod>
+	</url>
+	<url>
+		<loc>https://vivanewvegas.moddinglinked.com/decompress.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2025-02-01</lastmod>
 	</url>
 </urlset>
