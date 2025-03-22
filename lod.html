@@ -171,7 +171,7 @@
                     Generating/installing new LOD is not a requirement, but it will add detail in the distance by increasing the amount of objects that appear in the distance while also making all LOD match your modded textures. Naturally, this also means a minor performance hit.
                     <br>
                     <br>
-                    You can also generate terrain LOD, which will allow mods that edit the game's landscape to have LOD that reflects their changes. Terrain LOD creates a much larger file size and will take longer to generate.
+                    You can also generate terrain LOD, which will allow mods that edit the game's terrain to have LOD that reflects their changes. Terrain LOD creates a much larger file size and will take longer to generate.
 
                     <div class="card-yellow">
                         <p>
@@ -205,7 +205,7 @@
                             <strong>Object LOD</strong> - All flagged objects in a group of cells are represented as one geometry block. This LOD has only one constant quality level. Fast generation time.
                         </li>
                         <li>
-                            <strong>Terrain LOD</strong> - These blocks represent landscape of cell groups. This is the only LOD that has quality levels that change with the distance - higher levels cover more cells (LOD4 - 4x4, LOD8 - 8x8, etc.). Due to the sheer size and texture count, it takes the longest to generate.
+                            <strong>Terrain LOD</strong> - These blocks represent terrain of cell groups. This is the only LOD that has quality levels that change with the distance - higher levels cover more cells (LOD4 - 4x4, LOD8 - 8x8, etc.). Due to the sheer size and texture count, it takes the longest to generate.
                         </li>
                         <li>
                             <strong>Tree LOD</strong> - All flagged SpeedTree objects are merged into one block. Works similarly to Object LOD, with the difference of using simple 2D planes instead of actual geometry. Fastest to generate.
@@ -222,7 +222,7 @@
                 <div class="card" id="WhyGenerateLOD" title="Why Generate LOD?">
                     <p>
                     <h3>Why generate LOD?</h3>
-                    Bethesda's LOD relies on pregenerated meshes, and thus is inherently static. This decision is due to offering better performance, since game doesn't have to combine meshes and textures of individual objects on the fly. The drawback is obvious - the game can't reflect any changes made to the landscape or objects on its own. That's where LOD generation comes in.
+                    Bethesda's LOD relies on pregenerated meshes, and thus is inherently static. This decision is due to offering better performance, since game doesn't have to combine meshes and textures of individual objects on the fly. The drawback is obvious - the game can't reflect any changes made to the terrain or objects on its own. That's where LOD generation comes in.
                     <br>
                     <br>
                     Thanks to LODGen, you are able to generate LOD meshes that reflect your modded game, and thus have a much more consistent experience.
@@ -498,7 +498,22 @@ bForceFullLOD=1</textarea>
                                 Make sure that the output folder is empty before generating LOD.
                             </p>
                         </div>
+                    </ol>
+                    </p>
+                </div>
 
+                <div class="card" id="ObjectLOD" title="Object LOD">
+                    <p>
+                    <h3>Object LOD</h3>
+                    In this step we will generate Object and Tree LOD. This is the fastest and easiest setup, and also the most commonly used one.
+                    <div class="card-yellow">
+                        <p>
+                            You will need to re-generate Object LOD every time you install a new mod that adds or modifies objects in the game world, or if you change the texture of an object.
+                        </p>
+                    </div>
+                    <p>
+                    <b>Generation:</b>
+                    <ol>
                         <li>Select xLODGen from the executables drop-down in the top right of MO2 and click <b>Run</b>.</li>
                         <li>Right-click on the <b>worldspaces list</b> and pick <strong>Select All</strong>.</li>
                         <li>Copy all settings from the image below:</li>
@@ -514,67 +529,13 @@ bForceFullLOD=1</textarea>
                             </p>
                         </div>
 
-                        <div class="expander-top clickable" onclick="expandCard(this, landLODExpander)" id="landLOD">
-                            <p>
-                            <h3>Terrain LOD Generation instructions (Optional but Recommended)</h3>
-                            <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
-                            </p>
-                        </div>
-                        <div class="expander-bottom" id="landLODExpander">
-                            <ol>
-                                <div class="card-yellow">
-                                    <p>
-                                        Generating Terrain LOD is <strong>very</strong> time consuming and CPU intensive.
-                                        <br>
-                                        <br>
-                                        It's needed <u>only</u> if you have mods that edit the landscape or landscape textures. But the visual improvement is big regardless.
-                                    </p>
-                                </div>
-                                <li>In the right pane, check <strong>Terrain LOD</strong>.</li>
-                                <li>
-                                    Lansdcape LOD has 4 quality levels for different distances (with LOD4 being the closest to you, and LOD32 being the farthest).
-                                    <div class="card-yellow">
-                                        <p>
-                                            All LOD levels are generated at once! You don't have to do anything besides configuring every level!
-                                            <br>
-                                            This is not something that you pick and choose - those are not quality "settings", just how the game works.
-                                        </p>
-                                    </div>
-                                    Copy the settings for each LOD level from images below:
-                                    <ul>
-                                        <li><b>LOD 4</b>:</li>
-                                        <div class="image-container width-60">
-                                            <img class="content-img" src="./img/LOD/Land 4 Settings.webp" alt="Landscape LOD Settings - Level 4">
-                                            <div class="resize-overlay expand"></div>
-                                        </div>
-                                        <li><b>LOD 8</b>:</li>
-                                        <div class="image-container width-60">
-                                            <img class="content-img" src="./img/LOD/Land 8 Settings.webp" alt="Landscape LOD Settings - Level 8">
-                                            <div class="resize-overlay expand"></div>
-                                        </div>
-                                        <li><b>LOD 16</b>:</li>
-                                        <div class="image-container width-60">
-                                            <img class="content-img" src="./img/LOD/Land 16 Settings.webp" alt="Landscape LOD Settings - Level 16">
-                                            <div class="resize-overlay expand"></div>
-                                        </div>
-                                        <li><b>LOD 32</b>:</li>
-                                        <div class="image-container width-60">
-                                            <img class="content-img" src="./img/LOD/Land 32 Settings.webp" alt="Landscape LOD Settings - Level 32">
-                                            <div class="resize-overlay expand"></div>
-                                        </div>
-                                    </ul>
-                                </li>
-                            </ol>
-                        </div>
-
-                        <div class="expander-top clickable" onclick="expandCard(this, settingsDetailsExpander)" id="settingsDetails">
+                        <div class="expander-top clickable" onclick="expandCard(this, objectSettingsDetailsExpander)" id="objectSettingsDetails">
                             <p>
                             <h3>Settings Explanation</h3>
                             <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                             </p>
                         </div>
-                        <div class="expander-bottom" id="settingsDetailsExpander">
-                            <h3>Objects:</h3>
+                        <div class="expander-bottom" id="objectSettingsDetailsExpander">
                             <ul>
                                 <li><strong>Atlas size</strong>: The <a href="https://en.wikipedia.org/wiki/Texture_atlas" target="_blank">atlas</a> is what contains all textures for the <b>Object LOD</b> meshes, increasing its size means that you can have more textures on the atlas (from the new resources) and they could also be higher resolution.
                                     <br>
@@ -582,47 +543,206 @@ bForceFullLOD=1</textarea>
                                 </li>
                                 <li><strong>Max texture size</strong>: Object textures above this resolution will not be allowed on the atlas, we increase this to make sure everything makes it there.</li>
                             </ul>
-
-                            <h3>Landscape</h3>
-                            <ul>
-                                <li><strong>Protect borders</strong>: Prevents ugly terrain drops at the cell borders.</li>
-                                <li><strong>Size</strong>: As a result of using <a href="https://en.wikipedia.org/wiki/Mipmap" target="_blank">mipmaps</a>, the benefit of high terrain LOD resolutions will be miniscule, 512 on LOD4 and 256 on the next levels will suffice.</li>
-                                <li><strong>Bake normal-maps</strong>: Roughens the terrain LOD textures to match the actual terrain's normal map.</li>
-                                <li><strong>Mipmap</strong>: Mipmapping textures prevents <a href="https://en.wikipedia.org/wiki/Mipmap#/media/File:Mipmap_Aliasing_Comparison.png" target="_blank">pixel crawling artifacts</a> at a minor VRAM and storage utilization cost.</li>
-                                <li><strong>Quality</strong>: This controls the amount of detail in the LOD's geometry. Lower values have more detail and have a minor performance cost because of the amount of triangles in the mesh.</li>
-                            </ul>
                         </div>
                         <li>Click <strong>Generate</strong>.</li>
                         <li>When complete, the log will stop and at the end you will see a message saying "LOD generation done", you can now close xLODGen.</li>
                     </ol>
+                    <b>Installation:</b>
+                    <ol>
+                        <li>In MO2, right-click on the <i>Overwrite</i> folder at the bottom of the left pane and select <strong>All Mods -> Create empty mod above</strong>.</li>
+                        <li>Title the mod <strong>FNVLODGen Output - Objects</strong>.</li>
+                        <li>Navigate to where the LOD files were generated and select both the <span class="card-basic">textures</span> and <span class="card-basic">meshes</span> folders.</li>
+                        <li>Cut them to the <strong>FNVLODGen Output - Objects</strong> mod you just created (right-click on the mod and select <b>Open in Explorer)</b>.</li>
+                    </ol>
+                    </p>
                     </p>
                 </div>
 
-                <div class="card" id="InstallingLOD" title="Installing LOD">
+                <div class="card" id="LandLOD" title="Terrain LOD">
                     <p>
-                    <h3>Installing Generated LOD</h3>
-                    <ol>
-                        <li>In MO2, right-click on the <i>Overwrite</i> folder at the bottom of the left pane and select <strong>All Mods -> Create empty mod above</strong>.</li>
-                        <li>Title the mod <strong>FNVLODGen Output</strong>.</li>
-                        <li>Navigate to where the LOD files were generated and select both the <code>textures</code> and <code>meshes</code> folders.</li>
-                        <li>Cut them to the <strong>FNVLODGen Output</strong> mod you just created (right-click on the mod and select <b>Open in Explorer)</b>.</li>
-                    </ol>
-                    </p>
-
-                    <div class="card-red">
+                    <h3>Terrain LOD</h3>
+                    In this step we will generate Terrain LOD. This is the slowest and most CPU intensive step, but it can add a lot of detail to the terrain in the distance.
+                    <br>
+                    It's needed <u>only</u> if you have mods that edit the terrain or terrain textures.
+                    <div class="card-yellow">
                         <p>
-                            <b>IMPORTANT</b>:
-                            <br>
-                            Do not disable the LOD resources you installed previously, the game needs them for the LOD to work properly.
+                            You will need to re-generate Terrain LOD every time you install a new mod that adds or modifies terrain, or if you change terrain textures.
                             <br>
                             <br>
-                            Generated LOD must <strong>always</strong> be loaded last in your modlist!
-                            <br>
-                            <br>
-                            If it happens to be overwritten by any mod (commonly texture mods such as NMC's Texture Pack), the LOD in-game will be <strong>broken</strong>.
+                            If you already generated LOD once and only changed textures since then, you can uncheck the <strong>Build Meshes</strong> options.
                         </p>
                     </div>
+                    <b>Generation:</b>
+                    <ol>
+                        <li>Select xLODGen from the executables drop-down in the top right of MO2 and click <b>Run</b>.</li>
+                        <li>Right-click on the <b>worldspaces list</b> and pick <strong>Select All</strong>.</li>
+                        <li>In the right pane, <b>uncheck</b> <strong>Objects LOD</strong> and <strong>Trees LOD</strong>.</li>
+                        <li>In the right pane, check <strong>Terrain LOD</strong>.</li>
+                        <li>
+                            Lansdcape LOD has 4 quality levels for different distances (with LOD4 being the closest to you, and LOD32 being the farthest).
+                            <div class="card-yellow">
+                                <p>
+                                    All LOD levels are generated at once! You don't have to do anything besides configuring every level!
+                                    <br>
+                                    This is not something that you pick and choose - those are not quality "settings", just how the game works.
+                                </p>
+                            </div>
+                            Copy the settings for each LOD level from images below:
+                            <ul>
+                                <li><b>LOD 4</b>:</li>
+                                <div class="image-container width-60">
+                                    <img class="content-img" src="./img/LOD/Land 4 Settings.webp" alt="Terrain LOD Settings - Level 4">
+                                    <div class="resize-overlay expand"></div>
+                                </div>
+                                <li><b>LOD 8</b>:</li>
+                                <div class="image-container width-60">
+                                    <img class="content-img" src="./img/LOD/Land 8 Settings.webp" alt="Terrain LOD Settings - Level 8">
+                                    <div class="resize-overlay expand"></div>
+                                </div>
+                                <li><b>LOD 16</b>:</li>
+                                <div class="image-container width-60">
+                                    <img class="content-img" src="./img/LOD/Land 16 Settings.webp" alt="Terrain LOD Settings - Level 16">
+                                    <div class="resize-overlay expand"></div>
+                                </div>
+                                <li><b>LOD 32</b>:</li>
+                                <div class="image-container width-60">
+                                    <img class="content-img" src="./img/LOD/Land 32 Settings.webp" alt="Terrain LOD Settings - Level 32">
+                                    <div class="resize-overlay expand"></div>
+                                </div>
+                            </ul>
+                            <div class="expander-top clickable" onclick="expandCard(this, landSettingsDetailsExpander)" id="landSettingsDetails">
+                                <p>
+                                <h3>Settings Explanation</h3>
+                                <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                                </p>
+                            </div>
+                            <div class="expander-bottom" id="landSettingsDetailsExpander">
+                                <ul>
+                                    <li><strong>Protect borders</strong>: Prevents ugly terrain drops at the cell borders.</li>
+                                    <li><strong>Size</strong>: As a result of using <a href="https://en.wikipedia.org/wiki/Mipmap" target="_blank">mipmaps</a>, the benefit of high terrain LOD resolutions will be miniscule, 512 on LOD4 and 256 on the next levels will suffice.</li>
+                                    <li><strong>Bake normal-maps</strong>: Roughens the terrain LOD textures to match the actual terrain's normal map.</li>
+                                    <li><strong>Mipmap</strong>: Mipmapping textures prevents <a href="https://en.wikipedia.org/wiki/Mipmap#/media/File:Mipmap_Aliasing_Comparison.png" target="_blank">pixel crawling artifacts</a> at a minor VRAM and storage utilization cost.</li>
+                                    <li><strong>Quality</strong>: This controls the amount of detail in the LOD's geometry. Lower values have more detail and have a minor performance cost because of the amount of triangles in the mesh.</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>Click <strong>Generate</strong>.</li>
+                        <li>When complete, the log will stop and at the end you will see a message saying "LOD generation done", you can now close xLODGen.</li>
+                    </ol>
+                    <b>Installation:</b>
+                    <ol>
+                        <li>In MO2, right-click on the <i>Overwrite</i> folder at the bottom of the left pane and select <strong>All Mods -> Create empty mod above</strong>.</li>
+                        <li>Title the mod <strong>FNVLODGen Output - Terrain</strong>.</li>
+                        <li>Navigate to where the LOD files were generated and select both the <span class="card-basic">textures</span> and <span class="card-basic">meshes</span> folders.</li>
+                        <li>Cut them to the <strong>FNVLODGen Output - Terrain</strong> mod you just created (right-click on the mod and select <b>Open in Explorer)</b>.</li>
+                    </ol>
+                    </p>
+                </div>
 
+
+                <div class="card-red center">
+                    <p>
+                        <b>IMPORTANT</b>:
+                        <br>
+                        Do not disable the LOD resources you installed previously, the game needs them for the LOD to work properly.
+                        <br>
+                        <br>
+                        Generated LOD must <strong>always</strong> be loaded last in your modlist!
+                        <br>
+                        <br>
+                        If it happens to be overwritten by any mod (commonly texture mods such as NMC's Texture Pack), the LOD in-game will be <strong>broken</strong>.
+                    </p>
+                </div>
+
+                <div class="card" id="PackingLOD" title="Packing LOD">
+                    <p>
+                    <h3>Packing LOD</h3>
+                    This step is not necessary, but will reduce loading time of LOD assets by the game by packing them into optimized archive files (BSAs). This translates to less stuttering when entering new areas.
+                    <br>
+                    <ol>
+                        <li>Download <a href="https://www.nexusmods.com/fallout4/mods/63243" target="_blank">BSArch Pro</a></li>
+                        <li>Once the download has finished, extract the contents of the archive.</li>
+                        <li>Run <strong>BSArchPro.exe</strong>.</li>
+                        <li>In Mod Organizer 2, right click on your <strong>FNVLODGen Output - Objects</strong> and select <b>Open in Explorer</b>.</li>
+                        <li>From from newly opened window, drag <span class="card-basic">textures</span> and <span class="card-basic">meshes</span> folders into <b>BSArch Pro</b>.</li>
+                        <li>
+                            You should see a window like this:
+                            <br>
+                            <div class="image-container width-60">
+                                <img class="content-img" src="./img/LOD/BSArchPro-Objects.webp" alt="BSArch Pro containing Object LOD files" />
+                                <div class="resize-overlay expand"></div>
+                            </div>
+                        </li>
+                        <li>Click the <strong>Pack</strong> button.</li>
+                        <li>
+                            A new window will open, click on <strong>...</strong>, go to the <strong>FNVLODGen Output - Objects</strong> folder.
+                        </li>
+                        <li>
+                            After entering the folder in the previous step, paste <span class="card-basic">VNV LOD Guide Plugins Merge - Objects.bsa</span> into the <b>File name</b> field. Press <strong>Save</strong>.
+                            <br>
+                            If you did everything correctly, you should see a window like this:
+                            <br>
+                            <div class="image-container width-40">
+                                <img class="content-img" src="./img/LOD/BSArchPro-Objects-Save.webp" alt="BSArch Pro's Packing Options window" />
+                                <div class="resize-overlay expand"></div>
+                            </div>
+                        </li>
+                        <li>Click <strong>OK</strong>.</li>
+                        <li>
+                            Once packaging is done, you should see a window similar to this:
+                            <br>
+                            <div class="image-container width-40">
+                                <img class="content-img" src="./img/LOD/BSArchPro-Objects-Override.webp" alt="BSArch Pro's Packing Complete window" />
+                                <div class="resize-overlay expand"></div>
+                            </div>
+                            <br>
+                            Click <strong>Create .override for New Vegas</strong> and press <b>OK</b>.
+                        </li>
+                        <li>
+                            Back in BSArch Pro's main window, click <strong>Clear List</strong>.
+                        </li>
+                        <li>
+                            In the <strong>FNVLODGen Output - Objects</strong> folder, delete the <span class="card-basic">textures</span> and <span class="card-basic">meshes</span> folders.
+                        </li>
+                        <li>If you generated <b>Terrain LOD</b>, repeat the steps from 4 to 13, replacing word <b>Objects</b> with <b>Terrain</b>.</li>
+                    </ol>
+                    <div class="card-red">
+                        <p>
+                            <b>IMPORTANT:</b>
+                            <br>
+                            To properly use BSA files, you must keep the following in mind:
+                            <ul>
+                                <li>
+                                    BSA files are loaded by plugins they share their name with - hence why BSAs created here start with "<b>VNV LOD Guide Plugins Merge</b>".
+                                    <br>
+                                    This also means that BSAs are loaded in the same order as their plugins.
+                                </li>
+                                <li>
+                                    BSAs belonging to the same plugin are loaded in an alphanumeric order, same one you will get when sorting by <b>Name</b> in <b>File Explorer</b>.
+                                </li>
+                                <li>
+                                    By default, an archive can't replace files added by other BSAs before it. 
+                                    <br>
+                                    <b>JIP LN</b> adds the <b>override</b> functionality that changes this behavior - that's why "<b>.override</b>" files are needed.
+                                </li>
+                                <li>
+                                    Due to <b>Archive Invalidation</b>, loose files will always override files in BSAs.
+                                    <br>
+                                    <br>
+                                    Because of this, you must pay attention to files added by other mods. Watch out for following folders:
+                                    <ul>
+                                        <li><span class="card-basic">meshes\landscape\lod</span></li>
+                                        <li><span class="card-basic">textures\landscape\lod</span></li>
+                                    </ul>
+                                    You can hide them in MO2 to prevent them from being loaded.
+                                    <br>
+                                    <br>
+                                    You can enable <b>Enable archives parsing</b> in <b>Mod Organizer 2 -> Settings -> Workarounds</b> to see which mods are overwriting your BSAs.
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                    </p>
                 </div>
             </span>
 
