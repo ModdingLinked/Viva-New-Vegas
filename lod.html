@@ -570,6 +570,18 @@ bForceFullLOD=1</textarea>
                         <li>Title the mod <strong>FNVLODGen Output - Objects</strong>.</li>
                         <li>Navigate to where the LOD files were generated and select both the <span class="card-basic">textures</span> and <span class="card-basic">meshes</span> folders.</li>
                         <li>Cut them to the <strong>FNVLODGen Output - Objects</strong> mod you just created (right-click on the mod and select <b>Open in Explorer)</b>.</li>
+                        <div class="card-red">
+                            <p>
+                                After every LOD generation, disable following mods in the <b>left pane</b>:
+                            <ul>
+                                <li>High Priority Core</li>
+                                <li>High Priority Trees - Vanilla</li>
+                            </ul>
+                            When re-generating LOD again, you will need to re-enable them before running LODGen.
+                            <br>
+                            These plugins don't serve any purpose for the game itself, but they are required for LOD generation to work properly.
+                            </p>
+                        </div>
                     </ol>
                     </p>
                     </p>
