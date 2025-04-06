@@ -532,23 +532,23 @@ bForceFullLOD=1</textarea>
                         <p>
                             <b>Things to know:</b>
                             <br>
-                            <ul>
-                                <li>
-                                    Terrain LOD is used when generating Object LOD to remove triangles that are underground - that's why you need to generate it first.
-                                    <br>
-                                    Not following this order can result in Object LOD missing triangles due to mismatched source data.
-                                    <br>
-                                    <br>
-                                    When generating both LOD types at once, LODGen will first generate the Terrain LOD, so there's nothing to worry about.
-                                </li>
-                                <li>
-                                    You will need to re-generate Terrain LOD every time you install a new mod that adds or modifies terrain, or if you change terrain textures.
-                                </li>
-                                <li>
-                                    If you already generated LOD once and only changed textures since then, you can uncheck the <strong>Build meshes</strong> option,
-                                    and only generate textures by checking <strong>Build diffuse</strong> and <strong>Build normal</strong>.
-                                </li>
-                            </ul>
+                        <ul>
+                            <li>
+                                Terrain LOD is used when generating Object LOD to remove triangles that are underground - that's why you need to generate it first.
+                                <br>
+                                Not following this order can result in Object LOD missing triangles due to mismatched source data.
+                                <br>
+                                <br>
+                                When generating both LOD types at once, LODGen will first generate the Terrain LOD, so there's nothing to worry about.
+                            </li>
+                            <li>
+                                You will need to re-generate Terrain LOD every time you install a new mod that adds or modifies terrain, or if you change terrain textures.
+                            </li>
+                            <li>
+                                If you already generated LOD once and only changed textures since then, you can uncheck the <strong>Build meshes</strong> option,
+                                and only generate textures by checking <strong>Build diffuse</strong> and <strong>Build normal</strong>.
+                            </li>
+                        </ul>
                         </p>
                     </div>
 
@@ -629,11 +629,11 @@ bForceFullLOD=1</textarea>
                         <p>
                             <b>Things to know:</b>
                             <br>
-                            <ul>
-                                <li>
-                                    You will need to re-generate Object LOD every time you install a new mod that adds or modifies objects in the game world, or if you change the texture of an object.
-                                </li>
-                            </ul>
+                        <ul>
+                            <li>
+                                You will need to re-generate Object LOD every time you install a new mod that adds or modifies objects in the game world, or if you change the texture of an object.
+                            </li>
+                        </ul>
                         </p>
                     </div>
                     <p>
@@ -681,6 +681,8 @@ bForceFullLOD=1</textarea>
                         <li>Enable the mod by ticking its checkbox.</li>
                         <div class="card-red">
                             <p>
+                                <b>IMPORTANT:</b>
+                                <br>
                                 After every LOD generation, disable following mods in the <b>left pane</b>:
                             <ul>
                                 <li>High Priority Core</li>
