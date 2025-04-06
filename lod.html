@@ -520,88 +520,38 @@ bForceFullLOD=1</textarea>
                     </p>
                 </div>
 
-                <div class="card" id="ObjectLOD" title="Object LOD">
-                    <p>
-                    <h3>Object LOD</h3>
-                    In this step we will generate Object and Tree LOD. This is the fastest and easiest setup, and also the most commonly used one.
-                    <div class="card-yellow">
-                        <p>
-                            You will need to re-generate Object LOD every time you install a new mod that adds or modifies objects in the game world, or if you change the texture of an object.
-                        </p>
-                    </div>
-                    <p>
-                        <b>Generation:</b>
-                    <ol>
-                        <li>Select xLODGen from the executables drop-down in the top right of MO2 and click <b>Run</b>.</li>
-                        <li>Right-click on the <b>worldspaces list</b> and pick <strong>Select All</strong>.</li>
-                        <li>Copy all settings from the image below:</li>
-
-                        <div class="image-container width-60">
-                            <img class="content-img" src="./img/LOD/Main Settings.webp" alt="Main LOD Settings - Objects and Trees">
-                            <div class="resize-overlay expand"></div>
-                        </div>
-
-                        <div class="card-green">
-                            <p>
-                                Ignore locked settings like "<strong>in UV range</strong>" - they can't be edited since they are not applicable to Fallout: New Vegas.
-                            </p>
-                        </div>
-
-                        <div class="expander-top clickable" onclick="expandCard(this, objectSettingsDetailsExpander)" id="objectSettingsDetails">
-                            <p>
-                            <h3>Settings Explanation</h3>
-                            <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
-                            </p>
-                        </div>
-                        <div class="expander-bottom" id="objectSettingsDetailsExpander">
-                            <ul>
-                                <li><strong>Atlas size</strong>: The <a href="https://en.wikipedia.org/wiki/Texture_atlas" target="_blank">atlas</a> is what contains all textures for the <b>Object LOD</b> meshes, increasing its size means that you can have more textures on the atlas (from the new resources) and they could also be higher resolution.
-                                    <br>
-                                    Keep in mind that the tool will create this atlas with just the resolution it ends up needing (e.g. if you only need 1024x512 for your atlas, that will be the final resolution of it, what we set is simply the max allowed).
-                                </li>
-                                <li><strong>Max texture size</strong>: Object textures above this resolution will not be allowed on the atlas, we increase this to make sure everything makes it there.</li>
-                            </ul>
-                        </div>
-                        <li>Click <strong>Generate</strong>.</li>
-                        <li>When complete, the log will stop and at the end you will see a message saying "LOD generation done", you can now close xLODGen.</li>
-                    </ol>
-                    <b>Installation:</b>
-                    <ol>
-                        <li>In MO2, right-click on the <i>Overwrite</i> folder at the bottom of the left pane and select <strong>All Mods -> Create empty mod above</strong>.</li>
-                        <li>Title the mod <strong>FNVLODGen Output - Objects</strong>.</li>
-                        <li>Navigate to where the LOD files were generated and select both the <span class="card-basic">textures</span> and <span class="card-basic">meshes</span> folders.</li>
-                        <li>Cut them to the <strong>FNVLODGen Output - Objects</strong> mod you just created (right-click on the mod and select <b>Open in Explorer)</b>.</li>
-                        <div class="card-red">
-                            <p>
-                                After every LOD generation, disable following mods in the <b>left pane</b>:
-                            <ul>
-                                <li>High Priority Core</li>
-                                <li>High Priority Trees - Vanilla</li>
-                            </ul>
-                            When re-generating LOD again, you will need to re-enable them before running LODGen.
-                            <br>
-                            These plugins don't serve any purpose for the game itself, but they are required for LOD generation to work properly.
-                            </p>
-                        </div>
-                    </ol>
-                    </p>
-                    </p>
-                </div>
-
                 <div class="card" id="LandLOD" title="Terrain LOD">
                     <p>
                     <h3>Terrain LOD</h3>
-                    In this step we will generate Terrain LOD. This is the slowest and most CPU intensive step, but it can add a lot of detail to the terrain in the distance.
+                    In this step we will generate Terrain LOD. This can be the slowest and most CPU intensive step, but it can add a lot of detail to the terrain in the distance.
                     <br>
-                    It's needed <u>only</u> if you have mods that edit the terrain or terrain textures.
+                    <br>
+                    If you are in a rush or have a slow CPU, it's you can uncheck <strong>Build diffuse</strong> and <strong>Build normal</strong> options - this will skip texture generation, <b>massively</b> speeding up the process.
+
                     <div class="card-yellow">
                         <p>
-                            You will need to re-generate Terrain LOD every time you install a new mod that adds or modifies terrain, or if you change terrain textures.
+                            <b>Things to know:</b>
                             <br>
-                            <br>
-                            If you already generated LOD once and only changed textures since then, you can uncheck the <strong>Build Meshes</strong> options.
+                            <ul>
+                                <li>
+                                    Terrain LOD is used when generating Object LOD to remove triangles that are underground - that's why you need to generate it first.
+                                    <br>
+                                    Not following this order can result in Object LOD missing triangles due to mismatched source data.
+                                    <br>
+                                    <br>
+                                    When generating both LOD types at once, LODGen will first generate the Terrain LOD, so there's nothing to worry about.
+                                </li>
+                                <li>
+                                    You will need to re-generate Terrain LOD every time you install a new mod that adds or modifies terrain, or if you change terrain textures.
+                                </li>
+                                <li>
+                                    If you already generated LOD once and only changed textures since then, you can uncheck the <strong>Build meshes</strong> option,
+                                    and only generate textures by checking <strong>Build diffuse</strong> and <strong>Build normal</strong>.
+                                </li>
+                            </ul>
                         </p>
                     </div>
+
                     <b>Generation:</b>
                     <ol>
                         <li>Select xLODGen from the executables drop-down in the top right of MO2 and click <b>Run</b>.</li>
@@ -665,10 +615,86 @@ bForceFullLOD=1</textarea>
                         <li>Title the mod <strong>FNVLODGen Output - Terrain</strong>.</li>
                         <li>Navigate to where the LOD files were generated and select both the <span class="card-basic">textures</span> and <span class="card-basic">meshes</span> folders.</li>
                         <li>Cut them to the <strong>FNVLODGen Output - Terrain</strong> mod you just created (right-click on the mod and select <b>Open in Explorer)</b>.</li>
+                        <li>Enable the mod by ticking its checkbox.</li>
                     </ol>
                     </p>
                 </div>
 
+
+                <div class="card" id="ObjectLOD" title="Object LOD">
+                    <p>
+                    <h3>Object LOD</h3>
+                    In this step we will generate Object and Tree LOD. This is the fastest and easiest setup, and also the most commonly used one.
+                    <div class="card-yellow">
+                        <p>
+                            <b>Things to know:</b>
+                            <br>
+                            <ul>
+                                <li>
+                                    You will need to re-generate Object LOD every time you install a new mod that adds or modifies objects in the game world, or if you change the texture of an object.
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                    <p>
+                        <b>Generation:</b>
+                    <ol>
+                        <li>Select xLODGen from the executables drop-down in the top right of MO2 and click <b>Run</b>.</li>
+                        <li>Right-click on the <b>worldspaces list</b> and pick <strong>Select All</strong>.</li>
+                        <li>Copy all settings from the image below:</li>
+
+                        <div class="image-container width-60">
+                            <img class="content-img" src="./img/LOD/Main Settings.webp" alt="Main LOD Settings - Objects and Trees">
+                            <div class="resize-overlay expand"></div>
+                        </div>
+
+                        <div class="card-green">
+                            <p>
+                                Ignore locked settings like "<strong>in UV range</strong>" - they can't be edited since they are not applicable to Fallout: New Vegas.
+                            </p>
+                        </div>
+
+                        <div class="expander-top clickable" onclick="expandCard(this, objectSettingsDetailsExpander)" id="objectSettingsDetails">
+                            <p>
+                            <h3>Settings Explanation</h3>
+                            <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                            </p>
+                        </div>
+                        <div class="expander-bottom" id="objectSettingsDetailsExpander">
+                            <ul>
+                                <li><strong>Atlas size</strong>: The <a href="https://en.wikipedia.org/wiki/Texture_atlas" target="_blank">atlas</a> is what contains all textures for the <b>Object LOD</b> meshes, increasing its size means that you can have more textures on the atlas (from the new resources) and they could also be higher resolution.
+                                    <br>
+                                    Keep in mind that the tool will create this atlas with just the resolution it ends up needing (e.g. if you only need 1024x512 for your atlas, that will be the final resolution of it, what we set is simply the max allowed).
+                                </li>
+                                <li><strong>Max texture size</strong>: Object textures above this resolution will not be allowed on the atlas, we increase this to make sure everything makes it there.</li>
+                            </ul>
+                        </div>
+                        <li>Click <strong>Generate</strong>.</li>
+                        <li>When complete, the log will stop and at the end you will see a message saying "LOD generation done", you can now close xLODGen.</li>
+                    </ol>
+                    <b>Installation:</b>
+                    <ol>
+                        <li>In MO2, right-click on the <i>Overwrite</i> folder at the bottom of the left pane and select <strong>All Mods -> Create empty mod above</strong>.</li>
+                        <li>Title the mod <strong>FNVLODGen Output - Objects</strong>.</li>
+                        <li>Navigate to where the LOD files were generated and select both the <span class="card-basic">textures</span> and <span class="card-basic">meshes</span> folders.</li>
+                        <li>Cut them to the <strong>FNVLODGen Output - Objects</strong> mod you just created (right-click on the mod and select <b>Open in Explorer)</b>.</li>
+                        <li>Enable the mod by ticking its checkbox.</li>
+                        <div class="card-red">
+                            <p>
+                                After every LOD generation, disable following mods in the <b>left pane</b>:
+                            <ul>
+                                <li>High Priority Core</li>
+                                <li>High Priority Trees - Vanilla</li>
+                            </ul>
+                            When re-generating LOD again, you will need to re-enable them before running LODGen.
+                            <br>
+                            These plugins don't serve any purpose for the game itself, but they are required for LOD generation to work properly.
+                            </p>
+                        </div>
+                    </ol>
+                    </p>
+                    </p>
+                </div>
 
                 <div class="card-red center">
                     <p>
