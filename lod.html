@@ -431,6 +431,15 @@ bForceFullLOD=1</textarea>
                         </li>
 
                         <li>
+                            <b class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/79358" target="_blank">VNV LOD Guide Plugins Merge</a></b>
+                            <ul>
+                                <li>
+                                    <b>Main Files</b> - VNV LOD Guide Plugins Merge
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
                             <b class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/88898" target="_blank">High Priority LOD</a></b>
                             <ul>
                                 <li>
@@ -444,26 +453,11 @@ bForceFullLOD=1</textarea>
                                 <li><b>Main Files</b> - High Priority Trees - Vanilla</li>
                             </ul>
                         </li>
-
-                        <li>
-                            <b class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/79358" target="_blank">VNV LOD Guide Plugins Merge</a></b>
-                            <ul>
-                                <li>
-                                    <b>Main Files</b> - VNV LOD Guide Plugins Merge
-                                    <ul>
-                                        <li>You will be prompted with a BAIN installer, install the file with the ALML patch if you are using <a href="./visuals.html#ALittleMoreLamplight">A Little More Lamplight</a href="./visuals.html#ALML"></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
                     </ol>
-                    </p>
-                </div>
 
-                <div class="card">
-                    <p>
-                    <h3>Tale of Two Wastelands Instructions</h3>
-                    If you are using Tale of Two Wastelands, also do the following:
+                    <hr>
+
+                    If you are using <b>Tale of Two Wastelands</b>, also do the following:
                     <ol>
                         <li>
                             Disable or uninstall <strong>FNVLODGen Resources</strong>.
@@ -475,6 +469,21 @@ bForceFullLOD=1</textarea>
                             </ul>
                         </li>
                     </ol>
+
+                    </p>
+                </div>
+
+                <div class="card" id="LoadOrder">
+                    <p>
+                    <h3>Load Order</h3>
+                    After installing all mods, make sure <b>the end</b> of your load order looks like this:
+                    <ul>
+                        <li>LOD additions and improvements - TTW Patch.esp <b>(Tale of Two Wastelands Exclusive)</b></li>
+                        <li>Wasted LOD rocks.esp <b>(Tale of Two Wastelands Exclusive)</b></li>
+                        <li>VNV LOD Plugins.esp</li>
+                        <li>HighPriorityLOD.esp</li>
+                        <li>TreeLOD_Vanilla.esp</li>
+                    </ul>
                     </p>
                 </div>
 
@@ -485,6 +494,13 @@ bForceFullLOD=1</textarea>
                     <br>
                     <br>
                     Simply install <strong>both the Object and Terrain Pre-Generated LOD</strong> as normal mods in MO2 and put it under the resources listed in the previous section (which you still need).
+                    <br>
+                    <br>
+                    After doing so, disable following mods in the left pane:
+                    <ul>
+                        <li>High Priority Core</li>
+                        <li>High Priority Trees - Vanilla</li>
+                    </ul>
                     </p>
                 </div>
             </span>
