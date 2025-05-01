@@ -27,8 +27,9 @@
     <meta http-equiv='pragma' content='no-cache'>
     <meta http-equiv='clear-site-data' content='cache'>
 
-    <script src="imageViewer.js"></script>
-    <script src="javascript.js"></script>
+    <script src="js/imageViewer.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/javascript.js"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/cards.css">
     <link rel="stylesheet" href="css/header.css">
@@ -36,6 +37,7 @@
     <link rel="stylesheet" href="css/progressBar.css">
     <link rel="stylesheet" href="css/guideColors.css">
     <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/popup.css">
     <link rel="stylesheet" href="css/images.css">
 </head>
 
@@ -150,13 +152,24 @@
                 <a href="https://discord.gg/S99Ary5eba" title="Discord">
                     Discord
                 </a>
-                <a href="https://paypal.me/Ungeziefi" title="Donate">
+                <a title="Donate" class="popup-button" id="donation-button" onclick="openPopup(this, donation)">
                     Donate
                 </a>
                 <a href="https://github.com/ModdingLinked/Viva-New-Vegas" title="GitHub">
                     GitHub
                 </a>
             </p>
+        </div>
+
+        <div class="card popup" id="donation">
+            <ul>
+                <li>
+                    <a href="https://www.patreon.com/moddinglinked" target="_blank" rel="nofollow">Patreon</a>
+                </li>
+                <li>
+                    <a href="https://www.paypal.me/Ungeziefi" target="_blank" rel="nofollow">PayPal</a>
+                </li>
+            </ul>
         </div>
 
         <div class="content">
