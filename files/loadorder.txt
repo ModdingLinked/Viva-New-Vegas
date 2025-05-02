@@ -35,7 +35,7 @@ Lone Star - VNV.esm
 Simple Character Expansions.esm
 Goodies - Simple Character Expansions Patch.esp
 Strip Lights Region Fix.esp
-Landscape Disposition Fix - Strip Lights Region Fix Patch.esp
+Landscape Disposition Fix - SLRF Patch.esp
 FNV FaceGen Fix.esp
 The Mod Configuration Menu.esp
 Vanilla UI Plus.esp

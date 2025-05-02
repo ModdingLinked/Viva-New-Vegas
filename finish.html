@@ -30,6 +30,7 @@
     <script src="js/imageViewer.js"></script>
     <script src="js/popup.js"></script>
     <script src="js/javascript.js"></script>
+    <script src="js/download.js"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/cards.css">
     <link rel="stylesheet" href="css/header.css">
@@ -182,8 +183,13 @@
                     Preconfigured collection quality of life features, bugfixes, performance patches, and gameplay changes that fit the VNV Extended list.
                     <h3 class="install">Installation instructions</h3>
                     <ul>
-                        <li><b>Main Files</b> - Stewie Tweaks - VNV Extended INI</li>
-                        <li>Move the mod to the <b>Bug Fixes</b> separator, you can also uninstall <a href="bugfix.html#StewieTweaks">Stewie Tweaks - VNV INI</a> when using the VNVE one.</li>
+                        <li><a href="https://github.com/ModdingLinked/Stewie-Tweaks-INIs/releases/download/14802221016/Stewie.Tweaks.-.VNV.Extended.INI.7z" target="_blank">Stewie Tweaks - VNV Extended INI</a></li>
+                        <ul>
+                            <li>
+                                Download the mod, then install it manually by pressing the <img class="mo2-icon" src="./img/MO2/Install Archive.webp" alt="MO2 archive button"> button at the top of MO2 and selecting the file you just downloaded.
+                            </li>
+                        </ul>
+                        <li>Move the mod to the <b>Bug Fixes</b> separator, you can also uninstall the existing Stewie Tweaks - VNV INI when using the VNVE one.</li>
                     </ul>
                     </p>
                 </div>
@@ -193,19 +199,20 @@
                     <h3>Applying the Load Order</h3>
                     The final step is to apply the load order of installed plugins. The guide comes with a premade load order file, which ensures all mods are being loaded in correct order, with all conflicts accounted for.
                     <ol>
-                        <li><strong>Download the Load Order</strong> from <a href="https://www.nexusmods.com/newvegas/mods/79358" target="_blank">here</a>.</li>
-                        <li>Once it has finished downloading, click the <img class="mo2-icon" src="./img/MO2/Folders.webp" alt="MO2 folders"> button at the top of MO2 and click <strong>Open Profile folder</strong>.</li>
-                        <li>Open the downloaded archive and drag <strong>loadorder.txt</strong> into the folder, overwriting when prompted.</li>
+
+                        <li><strong>Open</strong> the <a onclick="downloadFile('https:\/\/raw.githubusercontent.com/ModdingLinked/Viva-New-Vegas/refs/heads/master/files/loadorder.txt')" style="cursor:pointer">VNV Load Order</a>.
+                        <li><strong>Copy everything</strong> with <b>CTRL+A</b>, then <b>CTRL+C</b>.</li>
+                        <li>In MO2, click the <img class="mo2-icon" src="./img/MO2/Folders.webp" alt="MO2 folders"> button at the top of MO2 and click <strong>Open Profile folder</strong>.</li>
+                        <li><strong>Open loadorder.txt</strong>, then press <b>CTRL+A</b> to <strong>select everything and paste</strong> what you copied earlier.</li>
                         <li>Once the file is extracted, click <strong>F5</strong> while you are on MO2 without any menu open.</li>
-                        <li>Right-click in the <b>right</b> pane of MO2 and select <strong>Enable all</strong>.</li>
                     </ol>
 
                     <div class="card-red">
                         <p>
-                            If you have not added any mods to the guide, <strong>CC - 3D Rain.esp should be the last plugin</strong> in your load order (the <b>Plugins</b> tab in the <b>right</b> pane of MO2) after applying the load order and refreshing MO2.
+                            In the <b>Plugins</b> tab on the <b>right</b> pane of MO2, the last plugin should be <strong>CC - 3D Rain.esp</strong>.
                             <br>
                             <br>
-                            If it's not the last plugin after refreshing, make sure that you are <strong>sorting the load order by priority</strong> by pressing the <b>Priority</b> column on the top.
+                            If that isn't the case, make sure that you are <strong>sorting the load order by priority</strong> by pressing the <b>Priority</b> column on the top (0 at the top and incrasing as you go down).
                             <br>
                             <br>
                             If that still doesn't work, you can join our <a href="https://discord.gg/S99Ary5eba" target="_blank">Discord</a> server for support.
