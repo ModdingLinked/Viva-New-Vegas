@@ -24,12 +24,12 @@ Leveled DLC Delay.esm
 Bad Touch.esm
 DLC Enhancements.esp
 TLD_Travelers.esm
+The Living Desert - YUP Patch.esp
 Better Brotherhood.esm
-Better Brotherhood - YUPDate Patch.esp
 Goodies.esp
 Goodies - Better Brotherhood Patch.esp
 Vanilla Enhancements.esm
-EVEM - YUP Patch.esp
+EVEM - YUPDate Patch.esp
 Lone Star.esm
 Lone Star - VNV.esm
 Simple Character Expansions.esm
@@ -42,6 +42,7 @@ Vanilla UI Plus.esp
 JustAssortedMods.esp
 Enhanced Movement.esp
 Enhanced Movement - Detection Fix.esp
+Better Brotherhood - YUPDate Patch.esp
 Trap Tweaks.esp
 Weathers Revised.esp
 DLC Enhancements - Weathers Revised Patch.esp
