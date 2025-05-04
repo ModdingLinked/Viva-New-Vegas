@@ -1,11 +1,10 @@
-
 var menuIsOpen = false;
 
 // Global variables
-const progressBars  = document.getElementsByClassName("progress-bar");
-const sections      = document.getElementsByClassName("section");
-const sidebars      = document.getElementsByClassName("sidebar");
-const leftSideBar   = document.getElementsByClassName("left-sidebar");
+const progressBars = document.getElementsByClassName("progress-bar");
+const sections = document.getElementsByClassName("section");
+const sidebars = document.getElementsByClassName("sidebar");
+const leftSideBar = document.getElementsByClassName("left-sidebar");
 const autoSizeAreas = document.querySelectorAll('.auto-resize');
 
 window.addEventListener('resize', sizeChanged);
@@ -158,7 +157,7 @@ function createRightSidebar() {
         // Get only direct children and sort them
         const elements = [
             ...section.children
-        ].filter(el => 
+        ].filter(el =>
             (el.classList.contains('card') || el.classList.contains('expander-top')) &&
             el.parentNode === section
         ).sort((a, b) =>

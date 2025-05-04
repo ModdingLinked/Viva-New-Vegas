@@ -165,12 +165,18 @@ img.chevron {
 
     span.card-basic {
         width: fit-content;
-        display: block !important;
+        display: inline-block !important;
         padding: 0em 0.5em 0em 0.5em !important;
+        max-width: 100%;
+        overflow-x: auto;
+        vertical-align: middle;
+        line-height: 1.8em !important;
     }
 
     .card-basic {
         width: unset;
+        display: inline-block;
+        max-width: 100%;
     }
 
     textarea {

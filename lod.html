@@ -30,6 +30,7 @@
     <script src="js/imageViewer.js"></script>
     <script src="js/popup.js"></script>
     <script src="js/javascript.js"></script>
+    <script src="js/imageSlider.js"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/cards.css">
     <link rel="stylesheet" href="css/header.css">
@@ -41,6 +42,7 @@
     <link rel="stylesheet" href="css/images.css">
     <link rel="stylesheet" href="css/coco.css">
     <link rel="stylesheet" href="css/textIcons.css">
+    <link rel="stylesheet" href="css/imageSlider.css">
 </head>
 
 <body class="theme">
@@ -178,71 +180,82 @@
             <span id="Overview" class="section">
                 <h2 onclick="location.href='#Overview'">Overview</h2>
 
-                <div class="card" id="Why?">
+                <div class="card" id="UnderstandingLOD" title="Understanding LOD">
                     <p>
-                    <h3>Why?</h3>
-                    Generating/installing new LOD is not a requirement, but it will add detail in the distance by increasing the amount of objects that appear in the distance while also making all LOD match your modded textures. Naturally, this also means a minor performance hit.
-                    <br>
-                    <br>
-                    You can also generate terrain LOD, which will allow mods that edit the game's terrain to have LOD that reflects their changes. Terrain LOD creates a much larger file size and will take longer to generate.
+                    <h3>Understanding LOD</h3>
+                    LOD stands for <strong>Level Of Detail</strong> - a system used to represent distant objects with simplified meshes and textures to improve performance. In Bethesda games, LOD primarily refers to <strong>Cell LOD</strong>, which represents whole "chunks" of land in the distance.
 
-                    <div class="card-yellow">
-                        <p>
-                            Viva New Vegas (even with VNV Extended) does not need new terrain LOD, but this guide will explain both the object and terrain LOD generation to account for custom modlists or if you just want better looking terrain LOD.
-                            <br>
-                            <br>
-                            Extra instructions for Tale of Two Wastelands users are included.
-                        </p>
-                    </div>
-
-                    </p>
-                </div>
-
-                <div class="card" id="WhatIsLOD" title="What is LOD?">
-                    <p>
-                    <h3>What is LOD?</h3>
-                    LOD stands for <strong>Level Of Detail</strong>.
-                    <br>
-                    In the context of Bethesda games, LOD mainly refers to <strong>Cell LOD</strong>, not geometry LOD. It's used to represent whole cells (the game's "chunks" of land) in the distance.
-
-                    <p>
-                        Cell LOD is not based on distance - it's a binary state of whether cell is either loaded or not. The LOD Block distance settings control the max draw distance of LOD itself, not the point where it begins.
-                        <br>
-                        This means that you will see LOD pop-in at the same distance regardless of the settings.
-                    </p>
-
-                    <p>
-                        Cell LOD is split into 3 categories:
+                    <p>Cell LOD is divided into three main categories:</p>
                     <ol>
                         <li>
-                            <strong>Object LOD</strong> - All flagged objects in a group of cells are represented as one geometry block. This LOD has only one constant quality level. Fast generation time.
+                            <strong>Object LOD</strong> - Simplified versions of buildings, rocks, and other static objects. Has only one quality level and generates relatively quickly.
                         </li>
                         <li>
-                            <strong>Terrain LOD</strong> - These blocks represent terrain of cell groups. This is the only LOD that has quality levels that change with the distance - higher levels cover more cells (LOD4 - 4x4, LOD8 - 8x8, etc.). Due to the sheer size and texture count, it takes the longest to generate.
+                            <strong>Terrain LOD</strong> - Represents the terrain of cell groups, with multiple quality levels that change based on distance (LOD4 4x4, LOD8 8x8, etc.). Takes the longest to generate due to its complexity.
                         </li>
                         <li>
-                            <strong>Tree LOD</strong> - All flagged SpeedTree objects are merged into one block. Works similarly to Object LOD, with the difference of using simple 2D planes instead of actual geometry. Fastest to generate.
-                            <div class="card-green">
-                                <p>
-                                    Despite the name, Tree LOD is horrible for trees. It's only good for bushes and other small flora objects, for this reason trees themselves are most often made as Object LOD.
-                                </p>
-                            </div>
+                            <strong>Tree LOD</strong> - 2D planes representing vegetation. Despite the name, works best for small flora rather than actual trees, which are often handled by Object LOD.
                         </li>
                     </ol>
                     </p>
                 </div>
 
-                <div class="card" id="WhyGenerateLOD" title="Why Generate LOD?">
+                <div class="card" id="WhyGenerate" title="Why Generate Custom LOD?">
                     <p>
-                    <h3>Why generate LOD?</h3>
-                    Bethesda's LOD relies on pregenerated meshes, and thus is inherently static. This decision is due to offering better performance, since game doesn't have to combine meshes and textures of individual objects on the fly. The drawback is obvious - the game can't reflect any changes made to the terrain or objects on its own. That's where LOD generation comes in.
-                    <br>
-                    <br>
-                    Thanks to LODGen, you are able to generate LOD meshes that reflect your modded game, and thus have a much more consistent experience.
-                    <br>
-                    <br>
-                    Another reason for generation is due to the fact that the original LOD is pretty low quality, and many objects lack LOD meshes entirely, which causes them to appear out of thin air on cell load. This is covered by individual LOD mods, which add LOD meshes to objects that lack it and/or improve the quality of existing ones.
+                    <h3>Why Generate Custom LOD?</h3>
+                    The vanilla game's LOD is pre-generated and static, which means it can't reflect changes made by mods to terrain or objects. Custom LOD generation creates meshes that match your modded game, providing:
+
+                    <ul>
+                        <li>Increased visual consistency between nearby and distant objects</li>
+                        <li>More objects visible in the distance</li>
+                        <li>LOD textures that match your installed texture mods</li>
+                        <li>Improved quality over the low-detail vanilla LOD</li>
+                        <li>Filled gaps where objects previously appeared out of nowhere during cell transitions</li>
+                    </ul>
+
+                    <div class="card-yellow">
+                        <p>
+                            Viva New Vegas (even with VNV Extended) does not strictly require terrain LOD regeneration, but this guide covers both object and terrain LOD to accommodate custom modlists.
+                            <br><br>
+                            Extra instructions for Tale of Two Wastelands users are included throughout.
+                        </p>
+                    </div>
+
+                    <div class="card-green">
+                        <p>
+                            While custom LOD significantly improves visual quality, it does come with a minor performance cost. The trade-off is generally worth it for most modern systems.
+                        </p>
+                    </div>
                     </p>
+                </div>
+
+                <div class="card" id="LODComparison" title="LOD Comparison">
+                    <p>
+                    <h3>LOD Comparison</h3>
+                    Drag the slider handle to compare how the game looks with generated LOD. Use the dropdown to select different comparison sets.
+                    </p>
+
+                    <div class="image-slider">
+                        <div class="slider-select-container">
+                            <select class="slider-select">
+                                <option value="comparison-1">Comparison 1</option>
+                                <option value="comparison-2">Comparison 2</option>
+                                <option value="comparison-3">Comparison 3</option>
+                                <option value="comparison-4">Comparison 4</option>
+                            </select>
+                        </div>
+                        <div class="slider-container">
+                            <div class="slider-before">
+                                <img class="slider-img" src="./img/LOD/Comparison/1 - Before.png" alt="Before image">
+                            </div>
+                            <img class="slider-img slider-after" src="./img/LOD/Comparison/1 - After.png" alt="After image">
+                            <div class="slider-handle"></div>
+                        </div>
+                        <div class="slider-labels">
+                            <span class="slider-label-before">Vanilla Game</span>
+                            <span class="slider-label-after">Generated LOD</span>
+                        </div>
+                    </div>
                 </div>
 
             </span>

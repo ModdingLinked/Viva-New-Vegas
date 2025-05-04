@@ -281,4 +281,37 @@ textarea {
   #logoBig {
     display: none;
   }
+}
+@media only screen and (max-width: 470px) {
+  .container {
+    min-width: 100%;
+    overflow-x: hidden;
+  }
+  .content {
+    padding: 4px;
+    width: 100%;
+    min-width: 0;
+    margin-left: 0;
+    margin-right: 0;
+    overflow-x: hidden;
+  }
+  .card,
+  .card-red,
+  .card-yellow,
+  .card-green,
+  .image-slider {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .image-container,
+  .slider-container {
+    max-width: 100% !important;
+  }
+  .slider-img {
+    max-width: 100%;
+    height: auto;
+  }
+  textarea {
+    max-width: 95%;
+  }
 }/*# sourceMappingURL=styles.css.map */

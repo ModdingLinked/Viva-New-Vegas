@@ -1,0 +1,184 @@
+document.addEventListener('DOMContentLoaded', function () {
+    initImageSliders();
+});
+
+function initImageSliders() {
+    const imagePairs = {
+        'comparison-1': {
+            before: './img/LOD/Comparison/1 - Before.webp',
+            after: './img/LOD/Comparison/1 - After.webp'
+        },
+        'comparison-2': {
+            before: './img/LOD/Comparison/2 Before.webp',
+            after: './img/LOD/Comparison/2 - After.webp'
+        },
+        'comparison-3': {
+            before: './img/LOD/Comparison/3 - Before.webp',
+            after: './img/LOD/Comparison/3 - After.webp'
+        },
+        'comparison-4': {
+            before: './img/LOD/Comparison/4 - Before.webp',
+            after: './img/LOD/Comparison/4 - After.webp'
+        }
+    };
+
+    // Find all slider containers
+    const sliders = document.querySelectorAll('.image-slider');
+
+    sliders.forEach(slider => {
+        const select = slider.querySelector('.slider-select');
+        const sliderContainer = slider.querySelector('.slider-container');
+        const beforeDiv = slider.querySelector('.slider-before');
+        const beforeImg = beforeDiv.querySelector('img');
+        const afterImg = slider.querySelector('.slider-after');
+        const handle = slider.querySelector('.slider-handle');
+
+        let lastPosition = 0.5; // Track position (50% default)
+
+        // Initial setup
+        loadImagePair(select.value);
+
+        // Dropdown
+        select.addEventListener('change', function () {
+            loadImagePair(this.value);
+        });
+
+        setupSlider();
+
+        function loadImagePair(value) {
+            const pair = imagePairs[value];
+            if (!pair) return;
+
+            // Reset slider position before loading images
+            resetSliderPosition();
+
+            // Set image sources
+            beforeImg.src = pair.before;
+            afterImg.src = pair.after;
+        }
+
+        function resetSliderPosition() {
+            const middlePosition = 0.5; // 50%
+            const containerWidth = sliderContainer.offsetWidth;
+
+            // Apply all position changes at once to avoid stutter
+            Object.assign(beforeDiv.style, {
+                width: '50%',
+                transition: 'none'
+            });
+
+            Object.assign(handle.style, {
+                left: '0',
+                transform: `translateX(${middlePosition * containerWidth}px) translateX(-50%)`,
+                transition: 'none'
+            });
+
+            lastPosition = 0.5;
+
+            // Force browser to apply changes immediately
+            void beforeDiv.offsetWidth;
+
+            // Remove the transition properties after a short delay
+            setTimeout(() => {
+                beforeDiv.style.transition = '';
+                handle.style.transition = '';
+            }, 50);
+        }
+
+        // Setup slider interaction
+        function setupSlider() {
+            let isDragging = false;
+            let animationFrame = null;
+
+            // Update slider position
+            function updateSliderPosition(clientX) {
+                if (animationFrame) {
+                    cancelAnimationFrame(animationFrame);
+                }
+
+                animationFrame = requestAnimationFrame(() => {
+                    const rect = sliderContainer.getBoundingClientRect();
+                    let position = (clientX - rect.left) / rect.width;
+                    position = Math.max(0, Math.min(1, position));
+
+                    if (Math.abs(position - lastPosition) > 0.001) {
+                        lastPosition = position;
+                        beforeDiv.style.width = (position * 100) + '%';
+                        handle.style.transform = `translateX(${position * sliderContainer.offsetWidth}px) translateX(-50%)`;
+                        handle.style.left = '0';
+                        beforeImg.style.width = sliderContainer.offsetWidth + 'px';
+                    }
+                });
+            }
+
+            // Mouse events
+            sliderContainer.addEventListener('mousedown', function (e) {
+                e.preventDefault();
+                isDragging = true;
+                updateSliderPosition(e.clientX);
+            });
+
+            handle.addEventListener('mousedown', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                isDragging = true;
+            });
+
+            document.addEventListener('pointermove', function (e) {
+                if (!isDragging) return;
+                e.preventDefault();
+                updateSliderPosition(e.clientX);
+            });
+
+            document.addEventListener('pointerup', function () {
+                isDragging = false;
+            });
+
+            // Touch events
+            sliderContainer.addEventListener('touchstart', function (e) {
+                e.preventDefault();
+                isDragging = true;
+                updateSliderPosition(e.touches[0].clientX);
+            }, { passive: false });
+
+            handle.addEventListener('touchstart', function (e) {
+                e.preventDefault();
+                isDragging = true;
+            }, { passive: false });
+
+            document.addEventListener('touchmove', function (e) {
+                if (!isDragging) return;
+                e.preventDefault();
+                updateSliderPosition(e.touches[0].clientX);
+            }, { passive: false });
+
+            document.addEventListener('touchend', function () {
+                isDragging = false;
+            });
+
+            // Prevent image dragging
+            sliderContainer.addEventListener('dragstart', e => e.preventDefault());
+            beforeImg.addEventListener('dragstart', e => e.preventDefault());
+            afterImg.addEventListener('dragstart', e => e.preventDefault());
+
+            // Handle window resize
+            let resizeTimeout;
+            window.addEventListener('resize', function () {
+                clearTimeout(resizeTimeout);
+                resizeTimeout = setTimeout(function () {
+                    if (afterImg.complete) {
+                        const aspectRatio = afterImg.naturalHeight / afterImg.naturalWidth;
+                        sliderContainer.style.height = (sliderContainer.offsetWidth * aspectRatio) + 'px';
+                        beforeImg.style.width = sliderContainer.offsetWidth + 'px';
+
+                        // Update handle position on resize
+                        handle.style.transform = `translateX(${lastPosition * sliderContainer.offsetWidth}px) translateX(-50%)`;
+                    }
+                }, 100);
+            });
+
+            // Set initial width
+            beforeImg.style.width = sliderContainer.offsetWidth + 'px';
+        }
+    });
+}
