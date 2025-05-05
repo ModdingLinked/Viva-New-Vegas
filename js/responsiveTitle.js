@@ -4,20 +4,28 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function setupResponsiveElements() {
+    const abbreviations = {
+        // Header titles
+        "Viva New Vegas": "VNV",
+        "The Best of Times": "TBoT",
+        "The Midnight Ride": "TMR",
+        "A Dragonborn's Fate": "DBF",
+
+        // Header links
+        "Fallout: New Vegas": "FNV",
+        "Tale of Two Wastelands": "TTW",
+        "Fallout 4": "FO4",
+        "Skyrim": "SSE"
+    };
+
+    const isNarrow = window.innerWidth < 900;
+
     const headerTitle = document.getElementById('headerTitle');
     if (headerTitle) {
         const fullTitle = headerTitle.getAttribute('data-full-title') || headerTitle.textContent;
-
-        const abbreviations = {
-            "Viva New Vegas": "VNV",
-            "The Best of Times": "TBoT",
-            "The Midnight Ride": "TMR",
-            "A Dragonborn's Fate": "DBF"
-        };
-
         const shortTitle = abbreviations[fullTitle] || fullTitle.split(' ').map(word => word[0]).join('');
 
-        if (window.innerWidth < 900) {
+        if (isNarrow) {
             if (headerTitle.textContent !== shortTitle) {
                 headerTitle.textContent = shortTitle;
                 if (!headerTitle.hasAttribute('data-full-title')) {
@@ -31,13 +39,6 @@ function setupResponsiveElements() {
 
     const headerLinks = document.getElementById('headerLinks');
     if (headerLinks) {
-        const abbreviations = {
-            "Viva New Vegas": "VNV",
-            "The Best of Times": "TBoT",
-            "The Midnight Ride": "TMR",
-            "A Dragonborn's Fate": "DBF"
-        };
-
         headerLinks.querySelectorAll('a').forEach(link => {
             const fullText = link.getAttribute('data-full-text') || link.textContent;
 
@@ -46,8 +47,7 @@ function setupResponsiveElements() {
             }
 
             const abbr = abbreviations[fullText] || fullText;
-
-            link.textContent = window.innerWidth < 900 ? abbr : fullText;
+            link.textContent = isNarrow ? abbr : fullText;
         });
     }
 }
