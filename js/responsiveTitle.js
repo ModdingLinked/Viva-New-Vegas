@@ -9,8 +9,8 @@ function setupResponsiveElements() {
         const fullTitle = headerTitle.getAttribute('data-full-title') || headerTitle.textContent;
 
         const abbreviations = {
-            "Fallout: New Vegas": "FNV",
-            "Tale of Two Wastelands": "TTW",
+            "Viva New Vegas": "VNV",
+            "The Best of Times": "TBoT",
             "The Midnight Ride": "TMR",
             "A Dragonborn's Fate": "DBF"
         };
@@ -32,8 +32,8 @@ function setupResponsiveElements() {
     const headerLinks = document.getElementById('headerLinks');
     if (headerLinks) {
         const abbreviations = {
-            "Fallout: New Vegas": "FNV",
-            "Tale of Two Wastelands": "TTW",
+            "Viva New Vegas": "VNV",
+            "The Best of Times": "TBoT",
             "The Midnight Ride": "TMR",
             "A Dragonborn's Fate": "DBF"
         };
