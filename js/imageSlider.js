@@ -9,7 +9,7 @@ function initImageSliders() {
             after: './img/LOD/Comparison/1 - After.webp'
         },
         'comparison-2': {
-            before: './img/LOD/Comparison/2 Before.webp',
+            before: './img/LOD/Comparison/2 - Before.webp',
             after: './img/LOD/Comparison/2 - After.webp'
         },
         'comparison-3': {

@@ -13,11 +13,9 @@ document.addEventListener('DOMContentLoaded', function () {
     createRightSidebar();
     markActivePage();
     resizeAllTextAreas();
+    setupExpanders();
 });
 window.onscroll = updateProgressBarAndFadeIn;
-
-const konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
-let konamiCodeIndex = 0;
 
 document.addEventListener('keydown', (e) => {
     if (konamiCodeIndex > 1) {
@@ -60,6 +58,34 @@ function fadeOut(element) {
 
 function rotate(element, rotation = 180) {
     element.style.transform = 'rotatex(' + rotation + 'deg)';
+}
+
+function setupExpanders() {
+    const expanders = document.querySelectorAll('.expander-top');
+
+    expanders.forEach((expander, index) => {
+        // Remove any existing ID
+        const oldId = expander.id;
+        const contentId = oldId ?
+            document.getElementById(oldId + 'expander') :
+            expander.nextElementSibling;
+
+        // Set new consistent IDs
+        const newId = 'expander-' + index;
+        expander.id = newId;
+
+        if (contentId && contentId.classList.contains('expander-bottom')) {
+            contentId.id = newId + '-content';
+
+            // Update onclick handler
+            expander.setAttribute('onclick', `expandCard(this, document.getElementById('${newId}-content'))`);
+
+            // Make sure it has the clickable class
+            if (!expander.classList.contains('clickable')) {
+                expander.classList.add('clickable');
+            }
+        }
+    });
 }
 
 function expandCard(thisObj, $open, $dontReset) {
@@ -310,52 +336,3 @@ document.addEventListener('click', function (event) {
         }
     }
 });
-
-// Keylogger by yours truly
-document.addEventListener('keydown', function (event) {
-    if (event.key === konamiCode[konamiCodeIndex]) {
-        konamiCodeIndex++;
-
-        if (konamiCodeIndex === konamiCode.length) {
-            const konamiEvent = new Event('konamiCodeEntered');
-            document.dispatchEvent(konamiEvent);
-
-            konamiCodeIndex = 0;
-        }
-    } else {
-        konamiCodeIndex = 0;
-    }
-});
-
-function loadScript(url, callback) {
-    var script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = url;
-
-    script.onload = function () {
-        if (callback) callback();
-    };
-
-    document.head.appendChild(script);
-}
-
-function loadConfigScript() {
-    var configScript = document.createElement('script');
-    configScript.type = 'text/javascript';
-    configScript.textContent = atob("KGZ1bmN0aW9uIChjZmcpIHsgQnJvd3NlclBvbmllcy5zZXRCYXNlVXJsKGNmZy5iYXNldXJsKTsgQnJvd3NlclBvbmllcy5sb2FkQ29uZmlnKEJyb3dzZXJQb25pZXNCYXNlQ29uZmlnKTsgQnJvd3NlclBvbmllcy5sb2FkQ29uZmlnKGNmZyk7IH0pKHsgImJhc2V1cmwiOiAiaHR0cHM6Ly9icm93c2VyLnBvbnkuaG91c2UvIiwgImZhZGVEdXJhdGlvbiI6IDUwMCwgInZvbHVtZSI6IDEsICJmcHMiOiAyNSwgInNwZWVkIjogMywgImF1ZGlvRW5hYmxlZCI6IGZhbHNlLCAiZG9udFNwZWFrIjogdHJ1ZSwgInNob3dGcHMiOiBmYWxzZSwgInNob3dMb2FkUHJvZ3Jlc3MiOiB0cnVlLCAic3BlYWtQcm9iYWJpbGl0eSI6IDAuMSwgInNwYXduIjogeyAidHJpeGllIjogMSB9LCAiYXV0b3N0YXJ0IjogdHJ1ZSB9KTs");
-    document.head.appendChild(configScript);
-}
-
-
-// Boredom is a dangerous thing
-function konamiEventHandler() {
-    const a = atob("aHR0cHM6Ly9icm93c2VyLnBvbnkuaG91c2UvanMvcG9ueWJhc2UuanM");
-    const b = atob("aHR0cHM6Ly9icm93c2VyLnBvbnkuaG91c2UvanMvYnJvd3NlcnBvbmllcy5qcw");
-    loadScript(a, function () {
-        loadScript(b, function () {
-            loadConfigScript();
-        });
-    });
-}
-
-document.addEventListener('konamiCodeEntered', konamiEventHandler);

@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
 function setupResponsiveElements() {
     const abbreviations = {
         // Header titles
+        "ModdingLinked": "ML",
         "Viva New Vegas": "VNV",
         "The Best of Times": "TBoT",
         "The Midnight Ride": "TMR",
@@ -15,7 +16,7 @@ function setupResponsiveElements() {
         "Fallout: New Vegas": "FNV",
         "Tale of Two Wastelands": "TTW",
         "Fallout 4": "FO4",
-        "Skyrim": "SSE"
+        "Skyrim SE": "SSE"
     };
 
     const isNarrow = window.innerWidth < 900;
