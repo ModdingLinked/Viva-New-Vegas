@@ -18,10 +18,6 @@ document.addEventListener('DOMContentLoaded', function () {
 window.onscroll = updateProgressBarAndFadeIn;
 
 document.addEventListener('keydown', (e) => {
-    if (konamiCodeIndex > 1) {
-        return;
-    }
-
     if (e.code === "ArrowRight") {
         window.open(document.getElementById("next").href, "_self")
     }
