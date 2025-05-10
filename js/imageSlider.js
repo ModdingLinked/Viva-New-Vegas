@@ -106,7 +106,16 @@ function initImageSliders() {
                         beforeDiv.style.width = (position * 100) + '%';
                         handle.style.transform = `translateX(${position * sliderContainer.offsetWidth}px) translateX(-50%)`;
                         handle.style.left = '0';
-                        beforeImg.style.width = sliderContainer.offsetWidth + 'px';
+
+                        const containerWidth = sliderContainer.offsetWidth;
+                        beforeImg.style.width = `${containerWidth}px`;
+                        beforeImg.style.maxWidth = 'none';
+
+                        const beforeImgRightPosition = containerWidth * (1 - position);
+                        if (window.innerWidth <= 470) {
+                            beforeImg.style.width = `${containerWidth}px`;
+                            beforeImg.style.left = '0';
+                        }
                     }
                 });
             }
@@ -156,12 +165,11 @@ function initImageSliders() {
                 isDragging = false;
             });
 
-            // Prevent image dragging
             sliderContainer.addEventListener('dragstart', e => e.preventDefault());
             beforeImg.addEventListener('dragstart', e => e.preventDefault());
             afterImg.addEventListener('dragstart', e => e.preventDefault());
 
-            // Handle window resize
+            // Window resize
             let resizeTimeout;
             window.addEventListener('resize', function () {
                 clearTimeout(resizeTimeout);
@@ -169,16 +177,21 @@ function initImageSliders() {
                     if (afterImg.complete) {
                         const aspectRatio = afterImg.naturalHeight / afterImg.naturalWidth;
                         sliderContainer.style.height = (sliderContainer.offsetWidth * aspectRatio) + 'px';
-                        beforeImg.style.width = sliderContainer.offsetWidth + 'px';
+
+                        // Make sure image width is always correct on resize
+                        const containerWidth = sliderContainer.offsetWidth;
+                        beforeImg.style.width = `${containerWidth}px`;
+                        beforeImg.style.maxWidth = 'none';
 
                         // Update handle position on resize
-                        handle.style.transform = `translateX(${lastPosition * sliderContainer.offsetWidth}px) translateX(-50%)`;
+                        handle.style.transform = `translateX(${lastPosition * containerWidth}px) translateX(-50%)`;
                     }
                 }, 100);
             });
 
-            // Set initial width
+            // Set initial width and make sure maxWidth doesn't interfere
             beforeImg.style.width = sliderContainer.offsetWidth + 'px';
+            beforeImg.style.maxWidth = 'none';
         }
     });
 }

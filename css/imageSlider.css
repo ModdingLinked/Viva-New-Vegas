@@ -1,5 +1,7 @@
 .image-slider {
   margin: 20px 0;
+  position: relative;
+  z-index: 0;
 }
 
 .slider-container {
@@ -34,6 +36,7 @@
   transform: translateX(0);
   left: 0;
   top: 0;
+  max-width: none;
 }
 
 .slider-img {
@@ -49,6 +52,12 @@
   -webkit-user-drag: none;
 }
 
+@media (max-width: 470px) {
+  .slider-before img {
+    width: 100vw;
+    max-width: none;
+  }
+}
 .slider-handle {
   position: absolute;
   top: 0;
