@@ -164,42 +164,34 @@ function updateProgressBarAndFadeIn() {
 
 function createRightSidebar() {
     const content = document.getElementsByClassName('content')[0];
-    if (!content) return;
+    const sidebar = document.getElementById('sidebarContent');
+    if (!content || !sidebar) return;
 
     const sections = content.getElementsByClassName('section');
-    if (!sections) return;
+    if (!sections.length) return;
 
-    const sidebarContent = document.getElementById('sidebarContent');
-    if (!sidebarContent) return;
-
-    // Create fragment for batch updates
+    // Create fragment for batch updates (better performance)
     const fragment = document.createDocumentFragment();
 
     for (const section of sections) {
-        // Get only direct children and sort them
-        const elements = [
-            ...section.children
-        ].filter(el =>
+        // Get section elements (both cards and expanders)
+        const elements = [...section.children].filter(el =>
             (el.classList.contains('card') || el.classList.contains('expander-top')) &&
             el.parentNode === section
         ).sort((a, b) =>
             a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : 1
         );
 
-        // Process headers within each section
+        // Process headers within section
         section.querySelectorAll('h2').forEach(header => {
             if (!header.innerHTML) return;
 
-            const sectionDiv = document.createElement('div');
+            const div = document.createElement('div');
 
-            // Create header elements
-            const bold = document.createElement('b');
-            const separator = Object.assign(document.createElement('a'), {
-                href: `#${section.id}`,
-                textContent: header.innerHTML
-            });
-            bold.appendChild(separator);
-            sectionDiv.appendChild(bold);
+            // Create header link
+            const b = document.createElement('b');
+            b.innerHTML = `<a href="#${section.id}">${header.innerHTML}</a>`;
+            div.appendChild(b);
 
             // Add all elements for this section
             elements.forEach(element => {
@@ -208,17 +200,17 @@ function createRightSidebar() {
 
                 if (!text) return;
 
-                sectionDiv.appendChild(Object.assign(document.createElement('a'), {
-                    href: `#${element.id}`,
-                    textContent: text
-                }));
+                const a = document.createElement('a');
+                a.href = `#${element.id}`;
+                a.textContent = text;
+                div.appendChild(a);
             });
 
-            fragment.appendChild(sectionDiv);
+            fragment.appendChild(div);
         });
     }
 
-    sidebarContent.appendChild(fragment);
+    sidebar.appendChild(fragment);
 }
 
 function markActivePage() {
