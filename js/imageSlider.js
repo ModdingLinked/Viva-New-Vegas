@@ -3,24 +3,25 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function initImageSliders() {
-    const imagePairs = {
-        'comparison-1': {
-            before: './img/LOD/Comparison/1 - Before.webp',
-            after: './img/LOD/Comparison/1 - After.webp'
-        },
-        'comparison-2': {
-            before: './img/LOD/Comparison/2 - Before.webp',
-            after: './img/LOD/Comparison/2 - After.webp'
-        },
-        'comparison-3': {
-            before: './img/LOD/Comparison/3 - Before.webp',
-            after: './img/LOD/Comparison/3 - After.webp'
-        },
-        'comparison-4': {
-            before: './img/LOD/Comparison/4 - Before.webp',
-            after: './img/LOD/Comparison/4 - After.webp'
-        }
-    };
+    const imagePairs = {};
+    const basePath = './img/LOD/Comparison/';
+
+    // Get sliders and options
+    document.querySelectorAll('.slider-select').forEach(select => {
+        const options = Array.from(select.querySelectorAll('option'))
+            .filter(option => option.value.startsWith('comparison-'));
+
+        // Create image pairs
+        options.forEach(option => {
+            const comparisonNum = option.value.split('-')[1];
+            if (!imagePairs[option.value]) {
+                imagePairs[option.value] = {
+                    before: `${basePath}${comparisonNum} - Before.webp`,
+                    after: `${basePath}${comparisonNum} - After.webp`
+                };
+            }
+        });
+    });
 
     // Find all slider containers
     const sliders = document.querySelectorAll('.image-slider');
