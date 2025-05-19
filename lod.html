@@ -199,6 +199,11 @@
                     <p>
                     <h3>Understanding LOD</h3>
                     LOD stands for <strong>Level Of Detail</strong> - a system used to represent distant objects with simplified meshes and textures to improve performance. In Bethesda games, LOD primarily refers to <strong>Cell LOD</strong>, which represents whole "chunks" of land in the distance.
+                    <br>
+                    <br>
+                    Cell LOD is not based on distance - it's a binary state of whether cell is either loaded or not. The LOD Block distance settings control the max draw distance of LOD itself, not the point where it begins.
+                    <br>
+                    This means that you will see LOD pop-in at the same distance regardless of the settings.
 
                     <p>Cell LOD is divided into three main categories:</p>
                     <ol>
@@ -623,7 +628,7 @@ bForceFullLOD=1</textarea>
                     </p>
                 </div>
 
-                                <div class="card" id="LandLOD" title="Terrain LOD">
+                <div class="card" id="LandLOD" title="Terrain LOD">
                     <p>
                     <h3>Terrain LOD</h3>
                     In this step we will generate Terrain LOD. This can be the slowest and most CPU intensive step, but it can add a lot of detail to the terrain in the distance.
