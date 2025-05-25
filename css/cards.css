@@ -182,4 +182,18 @@ img.chevron {
   textarea {
     width: 100%;
   }
+}
+@media only screen and (max-width: 470px) {
+  .card-red,
+  .card-yellow,
+  .card-green {
+    width: calc(100% - 1.3em);
+    box-sizing: border-box;
+    text-wrap: balance;
+    overflow-x: visible;
+  }
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }/*# sourceMappingURL=cards.css.map */
