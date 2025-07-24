@@ -462,6 +462,141 @@
                     </ul>
                     </p>
                 </div>
+
+                <div class="card" id="ModOrder">
+                    <p>
+                    <h3>Mod Order</h3>
+                    <strong>Left Pane</strong> of Mod Organizer 2 represents the "install order" of your mods into the <b>Data</b> folder. This is also referred to as <b>Mod List</b>.
+                    <br>
+                    Think of it as a list of steps dictating when and how mod manager should install given files into game's directory.
+                    <br>
+                    The order starts with 0, with higher numbers being loaded afterwards - this means that mod at index 5 will overwrite a mod at index 2.
+                    <br>
+                    <br>
+                    Because all of this is virtual, no actual data is modified or written, and all mods are stored in their individual folders.
+                    <br>
+                    This lets you freely reorder, add, remove or modify your mods without any consequences to game's or other mods' files.
+                    <br>
+                    <br>
+                    Install order is important when it comes to mods that have dependencies on other mods, or when you have multiple mods that modify the same files.
+                    <br>
+                    You should always pay attention to mod descriptions, as they often come with specific instructions regarding their install or load order.
+
+                    <div class="card-yellow">
+                        <p>
+                            <b>IMPORTANT</b>:
+                            <br>
+                            Guide is written in the same order as the installation process.
+                            <br>
+                            Your mods in the <b>Left Pane</b> must match their order in the guide to work properly (unless specified otherwise).
+                        </p>
+                    </div>
+                    </p>
+                </div>
+
+                <div class="card" id="LoadOrder">
+                    <p>
+                    <h3>Load Order</h3>
+                    <strong>Right Pane</strong> of Mod Organizer 2 represents the "load order" of game plugins - this is the order in which the game loads the plugins (ESM and ESP files) and their associated files (BSA archives).
+                    <br>
+                    Load order is <strong>very</strong> important for the proper functionality and stability of your game.
+                    <br>
+                    Just like the install order, the load order starts at 0, with higher numbers being loaded afterwards.
+                    <br>
+                    <br>
+                    Fallout New Vegas is limited to 255 plugins, so it's crucial to manage your load order effectively in order to not run out of plugin slots.
+
+                    <div class="card-yellow">
+                        <p>
+                            <b>IMPORTANT</b>:
+                            <br>
+                            Guide provides a premade load order for its mods at the end of each section.
+                            <br>
+                            This load order only supports the mods installed through the guide, and will not affect any mods you may have installed outside of it.
+                        </p>
+                    </div>
+                    </p>
+                </div>
+
+                <div class="card" id="Conflicts">
+                    <p>
+                    <h3>Conflicts</h3>
+                    When two or more mods modify the same data, a conflict occurs. This can lead to many issues, varying from unnoticeable changes, mismatched assets, to game-breaking bugs or even crashing.
+                    <br>
+                    Sometimes conflicts are desirable and required - for example, when you install a patch for a mod, or install an INI preset.
+                    <br>
+                    Because of this, it's important to recognize that despite the name, conflicts themselves are not inherently bad - they just represent data changes that need to be acknowledged, and handled appropriately.
+                    <br>
+                    <br>
+                    <b>Types of Conflicts:</b>
+                    <ul>
+                        <li>
+                            <b>File Conflicts</b>
+                            <br>
+                            Happens when mods modify the same file, such as textures, meshes, or sounds. The last loaded mod will take precedence and overwrite the previous one.
+                            <br>
+                            <br>
+                            This type of conflict is managed by the install order in the left pane of Mod Organizer 2.
+                            <br>
+                            Mod Organizer 2 automatically detects file conflicts and shows them in form of lighting bolt icons next to the mod name.
+                            <br>
+                            <br>
+                            You can get a detailed conflict report in the mod's <b>Conflicts</b> tab inside mod's <b>properties</b>, which will show you all the files that are in conflict and their respective mods.
+                        </li>
+                        <li>
+                            <b>Plugin Conflicts</b>
+                            <br>
+                            Happens when plugins (ESP/ESM files) modify the same form. The last loaded plugin will take precedence and <b>fully</b> overwrite the previous one.
+                            <br>
+                            <br>
+                            Because Bethesda games lack a proper mod support (plugins were made for development purposes), conflicts happen per whole form - e.g. a NPC name change will undo all previous changes done to that NPC.
+                            <br>
+                            This makes plugin conflicts much more severe than file conflicts, as they can lead to various issues, such as missing or broken content, or even game crashes.
+                            <br>
+                            <br>
+                            While Mod Organizer 2 supports plugin load order, this is not enough to resolve most plugin conflicts, as it only determines which plugin is loaded last.
+                            <br>
+                            It also lacks an ability to detect plugin conflicts, as it does not parse plugin data - meaning you won't be even aware of any plugin conflicts until you run into an issue in-game.
+                            <br>
+                            <br>
+                            Plugin conflicts are <strong>NOT</strong> manageable through Mod Organizer, and require a tool like <b>xEdit</b> or <b>GECK</b> to find and resolve.
+                        </li>
+                    </ul>
+                    <b>Conflict Examples:</b>
+                    <ul>
+                        <li>
+                            <b>You installed a patch for a mod.</b>
+                            <br>
+                            This will create a conflict, due to the patch modifying the original mod's files - this is a case of a desirable conflict, where one mod intentionally replaces the other.
+                        </li>
+                        <li>
+                            <b>You installed a mod that rebalances the game. You also have a mod that changes NPC hairstyles.</b>
+                            <br>
+                            This will create a conflict, as both mods are trying to change the same data - NPCs. Because you want to see both changes in the game, you will need to install or create a compatibility patch.
+                        </li>
+                        <li>
+                            <b>You installed a lighting mod. You also installed a mod places a new enemy in some interior.</b>
+                            <br>
+                            This will create a conflict, because both mods modify the same interior cell. Loading the enemy mod after the lighting mod will cause the lighting changes to be reverted. This case can be solved by loading the lighting mod last.
+                        </li>
+                    </ul>
+                    There's no one-size-fits-all solution for resolving conflicts - each conflict must be evaluated on a case-by-case basis, taking into account the specific mods involved and the nature of the changes they make.
+                    <br>
+                    Resolving conflicts is often a tedious process, requiring careful consideration and testing to ensure that all desired changes are preserved and functioning correctly.
+                    <br>
+                    Because of this, it's recommended to keep your modlists small and manageable - it's very easy to get overwhelmed with large modlists, even for experienced users.
+                    <br>
+                    <br>
+                    If you are a beginner, consider starting with a small selection of mods and gradually expanding your modlist as you become more comfortable with the modding process.
+
+                    <div class="card-yellow">
+                        <p>
+                            <b>IMPORTANT</b>:
+                            All conflicts in the guide are accounted for and are resolved in provided install and load orders.
+                        </p>
+                    </div>
+                    </p>
+                </div>
             </span>
 
             <div class="navigationArrowContainer">
