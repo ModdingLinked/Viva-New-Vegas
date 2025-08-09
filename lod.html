@@ -256,25 +256,23 @@
                     Drag the slider handle to compare how the game looks with generated LOD. Use the dropdown to select different comparison sets.
                     </p>
 
-                    <div class="image-slider">
+                    <div class="image-slider" data-image-path="./img/LOD/Comparison">
                         <div class="slider-select-container">
-                            <select class="slider-select">
-                                <option value="comparison-1">Comparison 1</option>
-                                <option value="comparison-2">Comparison 2</option>
-                                <option value="comparison-3">Comparison 3</option>
-                                <option value="comparison-4">Comparison 4</option>
+                            <select class="comparison-select">
+                                <option value="1">Helios One</option>
+                                <option value="2">Camp McCarran</option>
+                                <option value="3">Old World Blues</option>
+                                <option value="4">Zion Canyon</option>
                             </select>
                         </div>
-                        <div class="slider-container">
-                            <div class="slider-before">
-                                <img class="slider-img" src="./img/LOD/Comparison/1 - Before.webp" alt="Before image">
-                            </div>
-                            <img class="slider-img slider-after" src="./img/LOD/Comparison/1 - After.webp" alt="After image">
-                            <div class="slider-handle"></div>
+                        <div class="comparison-slider">
+                            <img src="./img/LOD/Comparison/1 - Before.webp" alt="Before" class="comparison-before">
+                            <img src="./img/LOD/Comparison/1 - After.webp" alt="After" class="comparison-after">
+                            <div class="comparison-handle"></div>
                         </div>
-                        <div class="slider-labels">
-                            <span class="slider-label-before">Vanilla Game</span>
-                            <span class="slider-label-after">Generated LOD</span>
+                        <div class="comparison-labels">
+                            <span class="label-before">Vanilla Game</span>
+                            <span class="label-after">Generated LOD</span>
                         </div>
                     </div>
                 </div>
@@ -503,7 +501,7 @@ bForceFullLOD=1</textarea>
                                     <b>Main Files</b> - TTW Fallout 3 LOD
                                     <div class="card-yellow">
                                         <p>
-                                            Despite the name, the mod contains LOD for objects occuring in <b>Fallout: New Vegas</b> as well.
+                                            Despite the name, the mod contains LOD for objects occurring in <b>Fallout: New Vegas</b> as well.
                                             <br>
                                             If you are <b>NOT</b> using Tale of Two Wastelands, hide <strong>TTW Fallout 3 LOD.esp</strong>.
                                         </p>
@@ -561,8 +559,8 @@ bForceFullLOD=1</textarea>
                     <h3>Load Order</h3>
                     After installing all mods, make sure <b>the end</b> of your load order looks like this:
                     <ul>
-                        <li>LOD additions and improvements - TTW Patch.esp <b>(Tale of Two Wastelands Exclusive)</b></li>
-                        <li>Wasted LOD rocks.esp <b>(Tale of Two Wastelands Exclusive)</b></li>
+                        <li>LOD additions and improvements - TTW Patch.esp <b>(Tale of Two Wastelands only)</b></li>
+                        <li>Wasted LOD rocks.esp <b>(Tale of Two Wastelands only)</b></li>
                         <li>VNV LOD Plugins.esp</li>
                         <li>HighPriorityLOD.esp</li>
                         <li>TreeLOD_Vanilla.esp</li>
@@ -573,7 +571,7 @@ bForceFullLOD=1</textarea>
                 <div class="card" id="PreGen" title="Pre-Generated LOD">
                     <p>
                     <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/79358" target="_blank">Pre-Generated LOD</a></h3>
-                    If you use a <strong>VNVE modlist</strong> with no changes to textures or the game world, you can skip manual LOD generation by using these files. The Object LOD file also includes Tree LOD, while the other only contains Terrain LOD to reduce bandwith required for upload and download.
+                    If you use a <strong>VNVE modlist</strong> with no changes to textures or the game world, you can skip manual LOD generation by using these files. The Object LOD file also includes Tree LOD, while the other only contains Terrain LOD to reduce bandwidth required for upload and download.
                     <br>
                     <br>
                     Simply install <strong>both the Object and Terrain Pre-Generated LOD</strong> as normal mods in MO2 and put them under the resources listed in the previous section (which you still need), then disable following mods in the left pane:
@@ -705,7 +703,7 @@ bForceFullLOD=1</textarea>
                             <div class="expander-bottom">
                                 <ul>
                                     <li><strong>Protect borders</strong>: Prevents ugly terrain drops at the cell borders.</li>
-                                    <li><strong>Size</strong>: As a result of using <a href="https://en.wikipedia.org/wiki/Mipmap" target="_blank">mipmaps</a>, the benefit of high terrain LOD resolutions will be miniscule, 512 on LOD4 and 256 on the next levels will suffice.</li>
+                                    <li><strong>Size</strong>: As a result of using <a href="https://en.wikipedia.org/wiki/Mipmap" target="_blank">mipmaps</a>, the benefit of high terrain LOD resolutions will be minuscule, 512 on LOD4 and 256 on the next levels will suffice.</li>
                                     <li><strong>Bake normal-maps</strong>: Roughens the terrain LOD textures to match the actual terrain's normal map.</li>
                                     <li><strong>Mipmap</strong>: Mipmapping textures prevents <a href="https://en.wikipedia.org/wiki/Mipmap#/media/File:Mipmap_Aliasing_Comparison.png" target="_blank">pixel crawling artifacts</a> at a minor VRAM and storage utilization cost.</li>
                                     <li><strong>Quality</strong>: This controls the amount of detail in the LOD's geometry. Lower values have more detail and have a minor performance cost because of the amount of triangles in the mesh.</li>

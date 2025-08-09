@@ -190,6 +190,60 @@
             <span id="Changelog" class="section">
                 <h2 onclick="location.href='#Changelog'">Changelog (Month Day)</h2>
 
+                <!-- 
+                CHANGELOG FORMATTING STANDARDS:
+                
+                1. Each year is wrapped in an expander (expander-top/expander-bottom)
+                2. Dates use format: "Month Day" (e.g., "August 9", "December 31")
+                3. Mid-game safety indicator: "Safe Mid-game" or "NOT Safe Mid-game"
+                4. Section headers use <h2><strong>Section Name</strong></h2>
+                5. Standard sections (in order):
+                   - Whole Guide (for site-wide changes)
+                   - Setup
+                   - MO2
+                   - Utilities
+                   - Bug Fixes
+                   - User Interface
+                   - Gameplay
+                   - Content
+                   - Overhauls
+                   - Visuals
+                   - Extended Finish
+                   - LOD Guide
+                   - FAQ
+                   - Resources
+                   - Wabbajack
+                6. Each change is a <li> with clear action verbs:
+                   - "Added" for new content
+                   - "Removed" for deleted content
+                   - "Replaced X with Y" for substitutions
+                   - "Updated" for version changes
+                   - "Fixed" for corrections
+                   - "Moved X to Y section" for reorganization
+                7. Nested lists for multiple items use <ul><li>Item Name (version)</li></ul>
+                8. Separate entries with <hr> between dates
+                9. Close each year's section properly
+                
+                TEMPLATE FOR NEW ENTRIES:
+                
+                <h2 class="install">Month Day</h2>
+                <h3>Safe Mid-game</h3> or <h3>NOT Safe Mid-game</h3>
+                <h2><strong>Section Name</strong></h2>
+                <ul>
+                    <li>Description of change.</li>
+                    <li>Added the following mods:
+                        <ul>
+                            <li>Mod Name (version)</li>
+                            <li>Another Mod Name</li>
+                        </ul>
+                    </li>
+                    <li>Removed Mod Name, reason for removal.</li>
+                    <li>Updated Mod Name (new version).</li>
+                </ul>
+                
+                <hr>
+                -->
+
                 <div class="expander-top">
                     <p>
                     <h3>2025</h3>
@@ -198,18 +252,97 @@
                 </div>
                 <div class="expander-bottom">
                     <p>
+                    <h2 class="install">August 9</h2>
+                    <h3>NOT Safe Mid-game</h3>
+                    <h2><strong>Whole Guide</strong></h2>
+                    <ul>
+                        <li>Switched the Gameplay and Content pages in order to prevent confusion from a temporary missing master.</li>
+                    </ul>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Replaced Ultimate Edition ESM Fixes with Ultimate Edition ESM Fixes Remastered.</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Added the following mods:
+                            <ul>
+                                <li>NVMIM - YUPDate Patch</li>
+                                <li>3rd Person Aim Fix - ESPless</li>
+                            </ul>
+                        </li>
+                        <li>Replaced Improved Lighting Shaders with Vanilla Plus Terrain.</li>
+                    </ul>
+                    <h2><strong>Gameplay</strong></h2>
+                    <ul>
+                        <li>Removed Leveled DLC Delay, Goodies with the new VNV Configuration now does the same.</li>
+                    </ul>
+                    <h2><strong>Content</strong></h2>
+                    <ul>
+                        <li>Added Goodies - VNV Configuration.</li>
+                        <li>Removed Better Brotherhood - YUPDate Patch.esp, it's no longer needed with YUPDate >=1.9.7.</li>
+                    </ul>
+                    <h2><strong>Overhauls</strong></h2>
+                    <ul>
+                        <li>Transferred contents to the <b>Gameplay</b> section for consistency with the other guides.</li>
+                    </ul>
+                    <h2><strong>Visuals</strong></h2>
+                    <ul>
+                        <li>Added comparison sliders for Weathers Revised.</li>
+                        <li>Added Vanilla Plus Tonemapper - Sky Brightness Tweak.</li>
+                        <li>Replaced Contrasted LOD Noise Texture with Special Series - LOD Noise Texture.</li>
+                        <li>Added instructions to disable the head tracking feature in DiaMoveNVSE Patched.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the changes above.</li>
+                        <li>Fixed missing VNV profile.</li>
+                        <li>Added a separator for the Performance Guide, which already includes a few of the mods you'll need. Following the guide is still a manual process but this makes it a little bit faster.</li>
+                        <li>Edited the NVAO - Throwverhaul TTWBioGasCanister script to remove a harmless error (it didn't check for TTW before trying to use one of its forms).</li>
+                        <li>Updated the following mods:
+                            <ul>
+                                <li>NVTF - New Vegas Tick Fix (10.6)</li>
+                                <li>ML Utilities Checker</li>
+                                <li>Yukichigai Unofficial Patch - YUP (13.4)</li>
+                                <li>YUPDate - YUP Tweaks and Fixes (1.9.7)</li>
+                                <li>Unofficial Patch NVSE Plus (1.6.1)</li>
+                                <li>lStewieAl's Tweaks and Engine Fixes (9.70)</li>
+                                <li>New Vegas Mesh Improvement Mod - NVMIM (1.12.8hf3)</li>
+                                <li>NVMIM - YUP Patch</li>
+                                <li>NVMIM - YUPDate Patch</li>
+                                <li>Meshes and Collision - Totally Enhanced Nifs (MAC-TEN) (12.0)</li>
+                                <li>Items Transformed - Enhanced Meshes (ITEM) (3.0)</li>
+                                <li>Landscape Disposition Fix - SLRF Patch</li>
+                                <li>Vanilla Placement Fixes (1.8)</li>
+                                <li>Sleep Wait Hardcore Needs (2.6)</li>
+                                <li>The Living Desert - YUP Patch</li>
+                                <li>Goodies (2.3.1)</li>
+                                <li>EVEM - YUPdate Patch</li>
+                                <li>Lone Star (5.2)</li>
+                                <li>Enhanced Movement (1.28a)</li>
+                                <li>New Vegas Animation Overhaul (NVAO) - Guns (1.1.3)</li>
+                                <li>TTW Fallout 3 LOD (1.7)</li>
+                                <li>VNV Pre-Generated Object LOD</li>
+                                <li>VNV Pre-Generated Terrain LOD</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
                     <h2 class="install">May 19</h2>
                     <h3>Safe Mid-game</h3>
                     <h2><strong>Gameplay</strong></h2>
                     <ul>
-                        <li>Removed Enhanced Movement - Minor Optimizations. No longer needed, got merged into the main mod.</li>
+                        <li>Removed Enhanced Movement - Minor Optimizations as it's now part of >=1.25.</li>
                     </ul>
+
                     <hr>
+
                     <h2 class="install">May 3</h2>
                     <h3>NOT Safe Mid-game</h3>
                     <h2><strong>Bug Fixes</strong></h2>
                     <ul>
-                        <li>The Stewie Tweaks INIs have been slightly tweaked and are now hosted on GitHub, which allows for easy logging in future updates.
+                        <li>The Stewie Tweaks INIs have been slightly tweaked and are now hosted on GitHub, which allows for easy logging in future updates.</li>
                         <li>Removed the following mods:
                             <ul>
                                 <li>Aqua Performa - Strip Performance Fix, YUPDate - YUP Tweaks and Fixes and Unofficial Patch NVSE Plus >=1.6.0 replace it.</li>
@@ -447,7 +580,7 @@
                         <li>Moved the following mods to the new <b>Minor Fixes</b> section of the page:
                             <ul>
                                 <li>3rd Person Animation Fixpack</li>
-                                <li>Slideshow FOV Fix</li>
+                                <li>Slideshow FOV Fix - ESPLess</li>
                             </ul>
                         </li>
                     </ul>
@@ -1202,8 +1335,8 @@
                     </ul>
                     <h2><strong>Bug Fixes</strong></h2>
                     <ul>
-                        <li>Removed Fog-based Object Culling - it's now handled by the Perfomance Guide.</li>
-                        <li>Moved Muzzle Flash Light Fix and Pipboy Shading Fix to the <b>Visuals</b> section, they're not critical enough to justify base VNV inclusion.</li>
+                        <li>Removed Fog-based Object Culling - it's now handled by the Performance Guide.</li>
+                        <li>Moved Muzzle Flash Light Fix and Pip-Boy Shading Fix to the <b>Visuals</b> section, they're not critical enough to justify base VNV inclusion.</li>
                         <li>Added VATS Lag Fix.</li>
                     </ul>
                     <h2><strong>User Interface</strong></h2>
@@ -2509,7 +2642,7 @@
                     <h2><strong>Bug Fixes</strong></h2>
                     <ul>
                         <li>Replaced WMIM with Vanilla Iron Sights Realligned.</li>
-                        <li>Replaced ISController with ISControl ESPLess.</li>
+                        <li>Replaced ISController with ISControl ESPless.</li>
                         <li>Added skinned mesh improvement mod.</li>
                     </ul>
                     <h2><strong>User Interface</strong></h2>
@@ -2726,7 +2859,7 @@
                     <h2 class="install">Mar 29</h2>
                     <h2><strong>Bug Fixes</strong></h2>
                     <ul>
-                        <li>Updated WMIM ESP Replacer to include a vanila copy of the 1hpequip.kf file. This makes the WMIM Wrist Fix redundant without causing any addition bugs like the wrist fix did (the bug is now fixed on an engine level with JIP LN NVSE).</li>
+                        <li>Updated WMIM ESP Replacer to include a vanilla copy of the 1hpequip.kf file. This makes the WMIM Wrist Fix redundant without causing any additional bugs like the wrist fix did (the bug is now fixed on an engine level with JIP LN NVSE).</li>
                     </ul>
                     <h2><strong>Bug Fixes</strong></h2>
                     <ul>

@@ -42,6 +42,7 @@
     <script src="js/popup.js"></script>
     <script src="js/javascript.js"></script>
     <script src="js/responsiveTitle.js"></script>
+    <script src="js/imageSlider.js"></script>
 
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/cards.css">
@@ -54,6 +55,7 @@
     <link rel="stylesheet" href="css/popup.css">
     <link rel="stylesheet" href="css/images.css">
     <link rel="stylesheet" href="css/textIcons.css">
+    <link rel="stylesheet" href="css/imageSlider.css">
 </head>
 
 <body class="theme">
@@ -218,6 +220,26 @@
                         </li>
                     </ul>
                     </p>
+
+                    <div class="image-slider" data-image-path="./img/Others/WR Comparison">
+                        <div class="slider-select-container">
+                            <select class="comparison-select">
+                                <option value="1">Memorial</option>
+                                <option value="2">Goodsprings</option>
+                                <option value="3">REPCONN</option>
+                                <option value="4">Zion Canyon</option>
+                            </select>
+                        </div>
+                        <div class="comparison-slider">
+                            <img src="./img/Others/WR Comparison/1 - Before.webp" alt="Before" class="comparison-before">
+                            <img src="./img/Others/WR Comparison/1 - After.webp" alt="After" class="comparison-after">
+                            <div class="comparison-handle"></div>
+                        </div>
+                        <div class="comparison-labels">
+                            <span class="label-before">Vanilla Game</span>
+                            <span class="label-after">Weathers Revised</span>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="card" id="AtmosphericLightingTweaks">
@@ -244,6 +266,7 @@
                     <h3 class="install">Installation instructions</h3>
                     <ul>
                         <li><b>Main Files</b> - Vanilla Plus Tonemapper</li>
+                        <li><b>Optional Files</b> - Vanilla Plus Tonemapper - Sky Brightness Tweak</li>
                     </ul>
                     </p>
                 </div>
@@ -287,6 +310,11 @@
                     <h3 class="install">Installation instructions</h3>
                     <ul>
                         <li><b>Main Files</b> - DiaMoveNVSE Patched</li>
+                        <ol>
+                            <li>Once the mod has been installed, double-click it in the left pane of MO2.</li>
+                            <li>In the <strong>INI Files</strong> tab, open <span class="card-basic">NVSE/Plugins/DiaMoveNVSE.ini</span></li>
+                            <li>Change <b>bEnableHeadTurn</b> to <b>false</b> (line 22).</li>
+                        </ol>
                     </ul>
                     </p>
                 </div>
@@ -378,7 +406,7 @@
 
                 <div class="card" id="B42Optics">
                     <p>
-                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/81641" target="_blank">B42 Optics - ESPLess</a></h3>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/81641" target="_blank">B42 Optics - ESPless</a></h3>
                     Replaces scopes with proper picture-in-picture ones.
                     <h3 class="install">Installation instructions</h3>
                     <ul>
@@ -398,13 +426,13 @@
                     </p>
                 </div>
 
-                <div class="card" id="ContrastedLODNoise" title="Contrasted LOD Noise">
+                <div class="card" id="LODNoise" title="LOD Noise">
                     <p>
-                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/85898" target="_blank">Contrasted LOD Noise Texture</a></h3>
-                    New LOD noise texture for Mid Frequency Details, helps blend far terrain with closer details.
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/92875" target="_blank">Special Series - LOD Noise Texture</a></h3>
+                    Custom LOD noise texture that enhances and blends LOD terrain.
                     <h3 class="install">Installation instructions</h3>
                     <ul>
-                        <li><b>Main Files</b> - Contrasted LOD Noise 1k</li>
+                        <li><b>Main Files</b> - LODN 1.0</li>
                     </ul>
                     </p>
                 </div>
@@ -450,6 +478,21 @@
                     <ul>
                         <li><b>Main Files</b> - Climate Control - Rain</li>
                         <li><b>Optional Files</b> - Climate Control - 3D Rain</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="InteriorRain">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/79656" target="_blank">Interior Rain</a></h3>
+                    Adds rain sounds to interiors.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - Interior Rain</li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/90744" target="_blank">Honest Hearts - Cave Rain Sound Fix</a></li>
+                        <ul>
+                            <li><b>Main Files</b> - Honest Hearts - Cave Rain Sound Fix</li>
+                        </ul>
                     </ul>
                     </p>
                 </div>
