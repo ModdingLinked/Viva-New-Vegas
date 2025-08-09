@@ -19,7 +19,6 @@ fixy crap ue.esp
 Landscape Texture Improvements.esm
 Landscape Texture Improvements - YUP Patch.esm
 Landscape Disposition Fix.esm
-Landscape Disposition Fix - YUPDate Patch.esp
 Placement Fixes.esm
 TLD_Travelers.esm
 The Living Desert - YUP Patch.esp
