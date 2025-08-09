@@ -3,17 +3,17 @@
 	<url>
 		<loc>https://vivanewvegas.moddinglinked.com/intro.html</loc>
 		<priority>1.00</priority>
-		<lastmod>2025-05-06</lastmod>
+		<lastmod>2025-08-09</lastmod>
 	</url>
 	<url>
 		<loc>https://vivanewvegas.moddinglinked.com/utilities.html</loc>
 		<priority>0.90</priority>
-		<lastmod>2025-08-08</lastmod>
+		<lastmod>2025-08-09</lastmod>
 	</url>
 	<url>
 		<loc>https://vivanewvegas.moddinglinked.com/wabbajack.html</loc>
 		<priority>0.80</priority>
-		<lastmod>2025-05-06</lastmod>
+		<lastmod>2025-08-09</lastmod>
 	</url>
 	<url>
 		<loc>https://vivanewvegas.moddinglinked.com/bugfix.html</loc>
@@ -23,12 +23,12 @@
 	<url>
 		<loc>https://vivanewvegas.moddinglinked.com/mo2.html</loc>
 		<priority>0.70</priority>
-		<lastmod>2025-05-06</lastmod>
+		<lastmod>2025-08-09</lastmod>
 	</url>
 	<url>
 		<loc>https://vivanewvegas.moddinglinked.com/decompress.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-08-07</lastmod>
+		<lastmod>2025-08-09</lastmod>
 	</url>
 	<url>
 		<loc>https://vivanewvegas.moddinglinked.com/avoid-mods.html</loc>
@@ -38,17 +38,12 @@
 	<url>
 		<loc>https://vivanewvegas.moddinglinked.com/avoid-tools.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-05-06</lastmod>
+		<lastmod>2025-08-09</lastmod>
 	</url>
 	<url>
 		<loc>https://vivanewvegas.moddinglinked.com/visuals.html</loc>
 		<priority>0.50</priority>
 		<lastmod>2025-08-09</lastmod>
-	</url>
-	<url>
-		<loc>https://vivanewvegas.moddinglinked.com/overhauls.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2025-05-06</lastmod>
 	</url>
 	<url>
 		<loc>https://vivanewvegas.moddinglinked.com/content.html</loc>
@@ -58,26 +53,26 @@
 	<url>
 		<loc>https://vivanewvegas.moddinglinked.com/gameplay.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-08-07</lastmod>
+		<lastmod>2025-08-09</lastmod>
 	</url>
 	<url>
 		<loc>https://vivanewvegas.moddinglinked.com/hud.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-05-06</lastmod>
+		<lastmod>2025-08-09</lastmod>
 	</url>
 	<url>
 		<loc>https://vivanewvegas.moddinglinked.com/basefinish.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-05-25</lastmod>
+		<lastmod>2025-08-09</lastmod>
 	</url>
 	<url>
 		<loc>https://vivanewvegas.moddinglinked.com/setup.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-05-08</lastmod>
+		<lastmod>2025-08-09</lastmod>
 	</url>
 	<url>
 		<loc>https://vivanewvegas.moddinglinked.com/resources.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-05-06</lastmod>
+		<lastmod>2025-08-09</lastmod>
 	</url>
 </urlset>
