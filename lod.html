@@ -253,23 +253,16 @@
                     Drag the slider handle to compare how the game looks with generated LOD. Use the dropdown to select different comparison sets.
                     </p>
 
-                    <div class="image-slider" data-image-path="./img/LOD/Comparison">
-                        <div class="slider-select-container">
-                            <select class="comparison-select">
-                                <option value="1">Helios One</option>
-                                <option value="2">Camp McCarran</option>
-                                <option value="3">Old World Blues</option>
-                                <option value="4">Zion Canyon</option>
-                            </select>
-                        </div>
+                    <div class="image-slider" data-image-path="./img/LOD/Comparisons" data-sets="Helios One|Camp McCarran|Old World Blues|Zion Canyon" data-images="Vanilla|Generated LOD">
+                        <select class="comparison-set-select"></select>
                         <div class="comparison-slider">
-                            <img src="./img/LOD/Comparison/1 - Before.webp" alt="Before" class="comparison-before">
-                            <img src="./img/LOD/Comparison/1 - After.webp" alt="After" class="comparison-after">
+                            <img class="comparison-before" />
+                            <img class="comparison-after" />
                             <div class="comparison-handle"></div>
                         </div>
                         <div class="comparison-labels">
-                            <span class="label-before">Vanilla Game</span>
-                            <span class="label-after">Generated LOD</span>
+                            <span class="label-before"></span>
+                            <span class="label-after"></span>
                         </div>
                     </div>
                 </div>
