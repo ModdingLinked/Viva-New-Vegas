@@ -1,5 +1,5 @@
 .image-slider {
-  margin: 1.2em 0;
+  margin: 1.2em auto;
   position: relative;
   width: 100%;
   max-width: 1200px;
@@ -160,7 +160,6 @@
   .image-slider,
   .comparison-slider {
     max-width: 100vw;
-    height: 220px;
   }
   .comparison-labels {
     max-width: 100vw;
