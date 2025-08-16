@@ -250,7 +250,7 @@
                 <div class="card" id="LODComparison" title="LOD Comparison">
                     <p>
                     <h3>LOD Comparison</h3>
-                    Drag the slider handle to compare how the game looks with generated LOD. Use the dropdown to select different comparison sets.
+                    Drag the slider handle to compare how the game looks with generated LOD. Use the dropdown to select different comparison sets.<!--  You can also find performance and VRAM usage comparisons <a href="https://moddinglinked.com/benchmarks.html" target="_blank">here</a>. -->
                     </p>
 
                     <div class="image-slider" data-image-path="./img/LOD/Comparisons" data-sets="Helios One|Camp McCarran|Old World Blues|Zion Canyon" data-images="Vanilla|Generated LOD">
@@ -693,10 +693,11 @@ bForceFullLOD=1</textarea>
                             <div class="expander-bottom">
                                 <ul>
                                     <li><strong>Protect borders</strong>: Prevents ugly terrain drops at the cell borders.</li>
-                                    <li><strong>Size</strong>: As a result of using <a href="https://en.wikipedia.org/wiki/Mipmap" target="_blank">mipmaps</a>, the benefit of high terrain LOD resolutions will be minuscule, 512 on LOD4 and 256 on the next levels will suffice.</li>
+                                    <li><strong>Size</strong>: 512 on LOD4 and 256 on the next levels will suffice for most cases (especially in a list such as VNV), but high resolutions and retextured terrain may benefit from higher settings. Note that this setting can increase the generation time and file size of the output considerably.</li>
                                     <li><strong>Bake normal-maps</strong>: Roughens the terrain LOD textures to match the actual terrain's normal map.</li>
                                     <li><strong>Mipmap</strong>: Mipmapping textures prevents <a href="https://en.wikipedia.org/wiki/Mipmap#/media/File:Mipmap_Aliasing_Comparison.png" target="_blank">pixel crawling artifacts</a> at a minor VRAM and storage utilization cost.</li>
                                     <li><strong>Quality</strong>: This controls the amount of detail in the LOD's geometry. Lower values have more detail and have a minor performance cost because of the amount of triangles in the mesh.</li>
+                                    <li><strong>Optimize Unseen</strong>: Reduces the amount of triangles of geometry below a configurable height, this is meant to optimize unseen areas underwater. Even though most people recommend a value of 550, it seems to break the terrain in the map of minor worldspaces such as Soul Cairn.</li>
                                 </ul>
                             </div>
                         </li>
