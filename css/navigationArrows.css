@@ -41,18 +41,22 @@
   .navigationArrow .arrowText {
     font-size: 1.5em;
   }
+
   .navigationArrow#next {
     flex-direction: column-reverse;
     align-items: end !important;
   }
+
   .navigationArrow#next .arrowText {
     margin-right: 0.33em;
   }
+
   .navigationArrow#previous {
     flex-direction: column;
     align-items: start !important;
   }
+
   .navigationArrow#previous .arrowText {
     margin-left: 0.33em;
   }
-}/*# sourceMappingURL=navigationArrows.css.map */
+}

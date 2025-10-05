@@ -144,22 +144,20 @@ hr {
   min-height: 100vh;
 }
 
+:root {
+  --sidebar-margin: 14.5em;
+  --scrollbar-width: 0.7em;
+}
+
 .content {
   flex: 1;
   display: flex;
   flex-direction: column;
   margin-top: 70px;
-  margin-left: 14.5em;
-  margin-right: 15.2em;
+  margin-left: var(--sidebar-margin);
+  margin-right: calc(var(--sidebar-margin) + var(--scrollbar-width));
   width: 80%;
-  padding: 0 2em;
-}
-
-.content-index {
-  margin-left: 14.5em;
-  margin-right: 14.5em;
-  padding: 0 2em;
-  z-index: 0;
+  padding: 2em;
 }
 
 footer {
@@ -218,75 +216,99 @@ textarea {
   cursor: pointer;
 }
 
+button.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
 @keyframes rotate {
   50% {
     transform: translateY(-6px) rotateZ(180deg);
   }
+
   100% {
     transform: translateY(0px) rotateZ(360deg);
   }
 }
+
 @keyframes slide-down {
   from {
     max-height: 0;
     margin-top: -0.12px;
   }
+
   to {
     max-height: 5000px;
   }
 }
+
 @keyframes slide-up {
   from {
     max-height: 1000px;
   }
+
   to {
     max-height: 0;
     margin-top: -0.12px;
   }
 }
+
 @media only screen and (max-width: 1220px) {
+
   .content,
   .content-index {
     margin-right: 0px !important;
   }
 }
+
 @media only screen and (max-width: 900px) {
+
   .content,
   .content-index {
     margin-left: 0px;
   }
 }
+
 @media only screen and (max-width: 700px) {
   ul {
     margin-left: -1.75em;
   }
+
   ol {
     margin-left: -1.75em;
   }
+
   .content {
     padding: 4px;
   }
+
   .width-90 {
     max-width: 100% !important;
   }
+
   .width-70 {
     max-width: 90% !important;
   }
+
   .width-60 {
     max-width: 80% !important;
   }
+
   .width-40 {
     max-width: 70% !important;
   }
+
   #logoBig {
     display: none;
   }
 }
+
 @media only screen and (max-width: 470px) {
   .container {
     min-width: 100%;
     overflow-x: hidden;
   }
+
   .content {
     padding: 4px;
     width: 100%;
@@ -295,6 +317,7 @@ textarea {
     margin-right: 0;
     overflow-x: hidden;
   }
+
   .card,
   .card-red,
   .card-yellow,
@@ -303,15 +326,18 @@ textarea {
     max-width: 100%;
     overflow-x: hidden;
   }
+
   .image-container,
   .slider-container {
     max-width: 100% !important;
   }
+
   .slider-img {
     max-width: 100%;
     height: auto;
   }
+
   textarea {
     max-width: 95%;
   }
-}/*# sourceMappingURL=styles.css.map */
+}

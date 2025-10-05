@@ -91,8 +91,8 @@
   height: 256px !important;
   padding: 1em;
   -webkit-user-select: none !important;
-     -moz-user-select: none !important;
-          user-select: none !important;
+  -moz-user-select: none !important;
+  user-select: none !important;
   pointer-events: none !important;
 }
 
@@ -100,14 +100,17 @@
   .image-container {
     max-width: 95% !important;
   }
+
   .overlay .image-container {
     max-width: 100% !important;
   }
+
   .enlarged-image {
     max-height: 100vw !important;
   }
+
   .logo-container {
     flex-direction: column;
     align-items: center;
   }
-}/*# sourceMappingURL=images.css.map */
+}

@@ -7,29 +7,38 @@ body {
 }
 
 .welcomeContent {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   color: #ffffff;
   font-size: 2.2em;
-  text-decoration: none;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100vh;
-  transition-duration: 0s;
-  transition: -webkit-backdrop-filter 0.5s linear;
-  transition: backdrop-filter 0.5s linear;
+  text-decoration: none;
   transition: backdrop-filter 0.5s linear, -webkit-backdrop-filter 0.5s linear;
+  backdrop-filter: saturate(100%) blur(8px);
   -webkit-backdrop-filter: saturate(100%) blur(8px);
-          backdrop-filter: saturate(100%) blur(8px);
 }
 
 .titleContainer {
   position: relative;
   text-align: center;
+}
+
+.titleContainer h1 {
+  margin: 2em 0 20px;
+  position: relative;
+  color: #ffffff;
+  font-size: 1.5em;
+  word-wrap: break-word;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 0.05em;
+  text-shadow: 0.05em 0.075em 0.15em rgb(0, 0, 0);
+  padding: 0.5em;
 }
 
 .backgroundImage {
@@ -40,21 +49,6 @@ body {
   max-height: 300px;
   z-index: -1;
   pointer-events: none;
-}
-
-.titleContainer h1 {
-  margin-top: 2em;
-  position: relative;
-  color: #ffffff;
-  font-size: 1.5em;
-  word-wrap: break-word;
-  text-align: center;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
-  letter-spacing: 0.05em;
-  text-shadow: 0.05em 0.075em 0.15em rgb(0, 0, 0);
-  padding: 0.5em;
 }
 
 .buttonContainer {
@@ -75,6 +69,7 @@ body {
   margin-top: 1.1em;
 }
 
+/* Base button styles */
 .welcomeContent .welcomeButton,
 .welcomeContent .welcomeButtonYT,
 .welcomeContent .welcomeButtonWJ {
@@ -84,22 +79,24 @@ body {
   align-items: center;
   width: 300px;
   height: 72px;
-  line-height: 1.2em;
   padding: 0.5em;
   font-size: 1.8rem;
   background-color: #235163;
   border-radius: 12pt;
+  text-align: center;
   text-shadow: none;
   box-shadow: 0.1em 0.1em 0.6em rgba(0, 0, 0, 0.6);
-  text-align: center;
 }
 
+.welcomeContent .welcomeButton:hover {
+  color: white;
+  background-color: rgb(50, 114, 139);
+  box-shadow: 0em 0em 0.6em rgba(50, 114, 139, 0.37);
+}
+
+/* YT */
 .welcomeContent .welcomeButtonYT {
   background-color: rgb(102, 16, 16);
-}
-
-.welcomeContent .welcomeButtonYT:hover strong {
-  color: rgba(242, 242, 242, 0.9);
 }
 
 .welcomeContent .welcomeButtonYT:hover {
@@ -108,12 +105,13 @@ body {
   box-shadow: 0em 0em 0.6em rgba(64, 8, 8, 0.37);
 }
 
-.welcomeContent .welcomeButtonWJ {
-  background-color: rgb(31, 27, 36);
+.welcomeContent .welcomeButtonYT:hover strong {
+  color: rgba(242, 242, 242, 0.9);
 }
 
-.welcomeContent .welcomeButtonWJ:hover strong {
-  color: rgba(242, 242, 242, 0.9);
+/* WJ */
+.welcomeContent .welcomeButtonWJ {
+  background-color: rgb(31, 27, 36);
 }
 
 .welcomeContent .welcomeButtonWJ:hover {
@@ -122,6 +120,11 @@ body {
   box-shadow: 0em 0em 0.6em rgba(50, 114, 139, 0.37);
 }
 
+.welcomeContent .welcomeButtonWJ:hover strong {
+  color: rgba(242, 242, 242, 0.9);
+}
+
+/* Button text inside strong */
 .welcomeContent .welcomeButton strong,
 .welcomeContent .welcomeButtonYT strong,
 .welcomeContent .welcomeButtonWJ strong {
@@ -131,22 +134,15 @@ body {
   font-size: 1.3em;
 }
 
-.welcomeContent .welcomeButton:hover {
-  color: white;
-  background-color: rgb(50, 114, 139);
-  box-shadow: 0em 0em 0.6em rgba(50, 114, 139, 0.37);
-}
-
+/* Blur */
 .blur {
-  transition-timing-function: ease-in-out;
-  transition-duration: 0.5s;
+  transition: backdrop-filter 0.5s ease-in-out, -webkit-backdrop-filter 0.5s ease-in-out;
+  backdrop-filter: saturate(100%) blur(0.5px);
   -webkit-backdrop-filter: saturate(100%) blur(0.5px);
-          backdrop-filter: saturate(100%) blur(0.5px);
 }
 
 .blur h2 {
-  transition-timing-function: ease-in-out;
-  transition-duration: 0.5s;
+  transition: text-shadow 0.5s ease-in-out;
   text-shadow: 0.05em 0.075em 0.1em rgba(0, 0, 0, 0.7);
 }
 
@@ -157,33 +153,39 @@ body {
 }
 
 .disabledButton strong {
-  color: rgba(255, 255, 255, 0.3764705882) !important;
+  color: rgba(255, 255, 255, 0.38) !important;
 }
 
 @media screen and (min-width: 900px) {
   #title br {
     display: none;
   }
+
   #title::after {
     content: " ";
     display: inline;
   }
 }
+
 @media only screen and (max-width: 900px) {
   .titleContainer h1 {
     font-size: 1em;
   }
+
   .buttonContainer {
     flex-direction: column;
-    margin-bottom: -5em;
     gap: 0;
+    margin-bottom: -5em;
   }
+
   .buttonWrapper {
     margin-bottom: 1em;
   }
+
   .buttonText {
     display: none;
   }
+
   .welcomeContent .welcomeButton,
   .welcomeContent .welcomeButtonYT,
   .welcomeContent .welcomeButtonWJ {
@@ -191,29 +193,37 @@ body {
     height: 58px;
     font-size: 1.4rem;
   }
+
   .navigationArrow .arrowText {
     display: none;
   }
+
   #sideButton {
     margin-left: 0;
     margin-right: 1em;
   }
+
   #sidenavLeft .guideLinks {
     display: block;
   }
+
   #sidenavRight {
     width: 0%;
   }
+
   h1,
   h2 {
     line-height: 1.2em;
   }
 }
+
 @media only screen and (min-width: 901px) {
   #sideButton {
     margin-left: -100px;
   }
 }
+
+/* Shadow */
 .header {
   box-shadow: 0 6px 12px 2px rgba(0, 0, 0, 0.5) !important;
-}/*# sourceMappingURL=frontPage.css.map */
+}

@@ -37,15 +37,8 @@ function sizeChanged() {
 }
 
 function toggleNav() {
-    var sideBar = leftSideBar[0];
-    if (sideBar.style.width == 0) {
-        sideBar.style.width = "75%";
-        globalThis.menuIsOpen = true;
-    }
-    else {
-        sideBar.style.width = "";
-        globalThis.menuIsOpen = false;
-    }
+    const sidebar = document.querySelector('.left-sidebar');
+    sidebar.classList.toggle('expanded');
 }
 
 function fadeOut(element) {
