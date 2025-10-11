@@ -1,0 +1,36 @@
+.donations-card-row {
+    gap: 2em;
+    width: 100%;
+}
+
+.donations-card {
+    flex: auto;
+}
+
+.donations-card-basic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 240px;
+    width: 100%;
+}
+
+.donations-card-basic.patreon {
+    background: #f96854;
+}
+
+.donations-card-basic.paypal {
+    background: #00457c;
+}
+
+.donations-card-basic img {
+    max-width: 50%;
+    max-height: 50%;
+    filter: brightness(0) invert(1);
+    display: block;
+}
+
+.donations-card-basic h3 {
+    color: #fff;
+}
