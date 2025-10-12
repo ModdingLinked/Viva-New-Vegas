@@ -117,6 +117,40 @@ span.card-basic {
   background-color: rgba(255, 255, 255, 0.03);
 }
 
+.expander-top.important {
+  position: relative;
+}
+
+.expander-top.important::before {
+  padding: 0 1em;
+  border-radius: 8px 0 0 8px;
+  border: 1px solid transparent;
+  outline: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.13);
+
+  content: "IMPORTANT";
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  bottom: -1px;
+  background: rgb(68, 39, 38);
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  min-width: 70px;
+  justify-content: center;
+}
+
+.expander-top.important h3 {
+  margin-left: 110px;
+}
+
+.expander-top.important.clickable:hover {
+  background-color: rgba(68, 39, 38, 0.4);
+}
+
 .expander-bottom {
   background-color: rgba(255, 255, 255, 0.0512);
   display: none;
