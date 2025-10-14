@@ -59,7 +59,7 @@
   height: 100%;
   transform: translateX(-50%);
   cursor: ew-resize;
-  z-index: 3;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
