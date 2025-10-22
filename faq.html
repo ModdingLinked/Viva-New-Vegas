@@ -413,9 +413,11 @@
                 </div>
                 <div class="expander-bottom">
                     <p>
+                    <ol>
                         <li>Click the <img class="mo2-icon" src="./img/MO2/Tools.webp" alt="Tools drop-down"> button at the top of MO2 and select <b>INI Editor</b>.</li>
                         <li>Clear the contents of both <b>Fallout.ini</b> and <b>FalloutPrefs.ini</b>, making sure to save both.</li>
                         <li>Run the game's launcher through MO2 and you'll have new INIs.</li>
+                    </ol>
                     </p>
 
                     <div class="card-yellow">
@@ -523,7 +525,7 @@
                 </div>
                 <div class="expander-bottom">
                     <p>
-                        <strong>Disable Improved Lighting Shaders</strong> in your Mod Organizer 2 modlist by unchecking its box. This issue seems to be hardware related but we do not know the specific cause at the moment.
+                        <strong>Improved Lighting Shaders</strong> can cause this, replace it with <a href="https://www.nexusmods.com/newvegas/mods/92519" target="_blank">Vanilla Plus Terrain</a>.
                     </p>
                 </div>
 
@@ -535,19 +537,21 @@
                 </div>
                 <div class="expander-bottom">
                     <p>
+                    <ul>
                         <li>Make sure the latest VC++ Redistributables are installed:
-                            <ul>
+                            <ol>
                                 <li>
                                     <a href="https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/" target="_blank">VC++ AIO</a>
-                                    <ol>
+                                    <ul>
                                         <li>Extract the archive and run the included <span class="card-basic">install_all.bat</span> as an administrator.</li>
-                                    </ol>
+                                    </ul>
                                 </li>
                                 <li><a href="https://aka.ms/vs/17/release/vc_redist.x64.exe" target="_blank">2015-2022 X64</a></li>
                                 <li><a href="https://aka.ms/vs/17/release/vc_redist.x86.exe" target="_blank">2015-2022 X86</a></li>
                                 <li>Restart your PC.</li>
-                            </ul>
+                            </ol>
                         </li>
+                    </ul>
                     </p>
                 </div>
 
@@ -597,7 +601,7 @@
 
                 <div class="expander-top">
                     <p>
-                    <h3>Vanilla UI Plus has detected an installation error</h3>
+                    <h3>"Vanilla UI Plus has detected an installation error"</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                     </p>
                 </div>
@@ -606,6 +610,27 @@
                     <ol>
                         <li><strong>Move Vanilla UI Plus below the MCM and its hotfix (MCM BugFix 2)</strong> in the left pane of MO2.</li>
                         <li>Make sure that you have applied the guide's load order.</li>
+                    </ol>
+                    </p>
+                </div>
+
+                <div class="expander-top">
+                    <p>
+                    <h3>"Failed to initialize render" error</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom">
+                    <p>
+                    <ol>
+                        <li>Click the <img class="mo2-icon" src="./img/MO2/Tools.webp" alt="Tools drop-down"> button at the top of MO2 and select <strong>INI Editor</strong>.</li>
+                        <li>Select the <strong>FalloutPrefs.ini</strong> tab.</li>
+                        <li>Change the following settings in the <span class="card-basic">Display</span> section:
+                            <br>
+                            <span class="card-basic">iSize W</span> = your screen width.
+                            <br>
+                            <span class="card-basic">iSize H</span> = your screen height.
+                        </li>
                     </ol>
                     </p>
                 </div>
@@ -661,7 +686,7 @@
                 </div>
                 <div class="expander-bottom">
                     <p>
-                        <strong>Ultimate Edition ESM Fixes Remastered already does this</strong> (far more than what automated xEdit cleaning would do).
+                        <a href="utilities.html#ESMFixes">Ultimate Edition ESM Fixes Remastered</a> already does this (far more than what automated xEdit cleaning would do).
                     </p>
                 </div>
 
@@ -679,9 +704,9 @@
                         <li>Select the <strong>FalloutPrefs.ini</strong> tab.</li>
                         <li>Change the following settings in the <span class="card-basic">Display</span> section:
                             <br>
-                            <span class="card-basic">iSize W</span> = your screen width
+                            <span class="card-basic">iSize W</span> = your screen width.
                             <br>
-                            <span class="card-basic">iSize H</span> = your screen height
+                            <span class="card-basic">iSize H</span> = your screen height.
                         </li>
                         <li>Start the game then open the <b>Tweaks</b> menu in the settings.</li>
                         <li>Filter for <span class="card-basic">Ultrawide</span> then <strong>enable the support tweak</strong>.</li>
@@ -697,7 +722,7 @@
                     </p>
                 </div>
                 <div class="expander-bottom">
-                    <p><a href="./gameplay.html#DLCDelay" target="_blank">Leveled DLC Delay</a> delays DLC until you meet the required level or visit the respective location. <a href="./overhauls.html#LoneStar" target="_blank">Lone Star</a> also moves the pre-order pack items to the following locations:</p>
+                    <p><a href="./gameplay.html#Goodies" target="_blank">Goodies</a> delays DLC until you meet the required level or visit the respective location (can be configured). <a href="./overhauls.html#LoneStar" target="_blank">Lone Star</a> also moves the pre-order pack items to the following locations:</p>
                     <ul>
                         <li>Tribal Pack: <span class="spoiler">Lucky Jim Mine House</span></li>
                         <li>Caravan Pack: <span class="spoiler">Hell's Motel</span></li>
