@@ -204,17 +204,17 @@
                 <div class="card">
                     <p>
                     <h3>Root Mods</h3>
-                    The following mods, unlike most others, need to be installed directly into the game's <b>Root</b> folder, <strong>not through Mod Organizer 2</strong>.
+                    The following mods, unlike most others, must to be installed <i>directly</i> into Fallout: New Vegas' <b>Root</b> folder, <strong>not through Mod Organizer 2</strong>.
                     <br>
                     <br>
-                    Use the <strong>Manual Download</strong> and follow the instructions provided for each mod.
+                    For each mod in this section, use the <strong>Manual Download</strong> and follow the instructions provided.
                     </p>
                 </div>
 
                 <div class="card" id="xNVSE" title="xNVSE">
                     <p>
                     <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/67883" target="_blank">New Vegas Script Extender (NVSE xNVSE)</a></h3>
-                    An updated version of the original NVSE, which extends the scripting capabilities of the game.
+                    An updated version of the original NVSE, a mod that extends the scripting capabilities of the game.
                     <h3 class="install">Installation instructions</h3>
                     <ul>
                         <li><b>Main Files</b> - New Vegas Script Extender (xNVSE)</li>
@@ -251,7 +251,7 @@
                 <div class="card" id="Decompressor">
                     <p>
                     <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/65854" target="_blank">FNV BSA Decompressor</a></h3>
-                    Decompresses the vanilla BSA files to reduce loading times and stuttering. Can also fix certain sound effects not playing.
+                    Decompresses the vanilla game files to reduce loading times and stuttering. Can also fix certain sound effects not playing.
                     <h3 class="install">Installation instructions</h3>
                     <ul>
                         <li>
@@ -276,7 +276,7 @@
                 <div class="card" id="ESMFixes" title="ESM Fixes">
                     <p>
                     <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/92289" target="_blank">Ultimate Edition ESM Fixes Remastered</a></h3>
-                    Optimizes and fixes thousands of records across the base game and DLC plugins to increase performance and stability.
+                    Optimizes and fixes thousands of records across the base game and DLC plugins, increasing both performance and stability.
                     <h3 class="install">Installation instructions</h3>
                     <ul>
                         <li>
@@ -306,18 +306,17 @@
                 <div class="card" id="Patchers">
                     <p>
                     <h3>Game Patchers</h3>
-                    Each version of the game requires a different patcher to work with xNVSE.
+                    <p>By default. Fallout: New Vegas can only access 2 GB of your system memory. Game patching tools allow the game to access <b>up to 4 GB of your computer's memory</b>, and additionally allow you to load xNVSE automatically.</p>
+                    Additionally, each game platform (Steam, GOG, Epic Games) ships a <i>slightly</i> different version of Fallout: New Vegas, requiring separate patchers.
                     <br>
-                    These patchers allow the game to use up to 4GB of RAM and automatically load xNVSE.
                     <br>
-                    <br>
-                    Select one of the following patchers based on your game version.
+                    Select <b>one</b> of the following patchers, depending on which platform you downloaded the game from.
                     <div class="flex" style="flex-direction: row; align-content: center; justify-content: center;">
                         <div class="flex" style="flex-direction: column; width: 50%; margin-right: 0.5em;">
                             <div class="expander-top colors-gog clickable" onclick="expandCard(this, installGogExpander)" id="installGog">
                                 <div>
                                     <p>
-                                    <h3>Steam and GOG</h3>
+                                    <h3>Steam/GOG</h3>
                                     </p>
                                 </div>
                                 <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
@@ -330,10 +329,10 @@
                                     <li>Open the downloaded archive and <strong>move the executable</strong> file to the game's <b>Root</b> folder.</li>
                                     <li>Double-click on <strong>FNVpatch.exe</strong> to run it.</li>
                                     <li>
-                                        A command prompt window will open and it should say:
+                                        A terminal window will open. After processing, it should say
                                         <div class="card-basic">FalloutNV.exe patched!</div>
                                     </li>
-                                    <li>Close the command prompt and a file named <strong>FalloutNV_backup.exe</strong> should appear in the game's <b>Root</b> folder.</li>
+                                    <li>Close the terminal. A file named <strong>FalloutNV_backup.exe</strong> should appear in the game's <b>Root</b> folder.</li>
                                 </ol>
                                 </p>
                             </div>
@@ -351,13 +350,13 @@
                                 <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/81281" target="_blank">Epic Games Patcher</a></h3>
                                 <b>Main Files</b> - Epic Games Patcher</b>
                                 <ol>
-                                    <li>Open the downloaded archive and <strong>move everything</strong> to the game's <b>Root</b> folder.</li>
+                                    <li>Open the downloaded archive and move  <strong>everything</strong> to the game's <b>Root</b> folder.</li>
                                     <li>Double-click on <strong>Patcher.exe</strong> to run it.</li>
                                     <li>
-                                        A command prompt window will open and after processing it should say:
+                                        A terminal window will open. After processing, it should say:
                                         <div class="card-basic">Press any key to continue...</div>
                                     </li>
-                                    <li>Close the command prompt and a file named <strong>FalloutNV_backup.exe</strong> should appear in the game's <b>Root</b> folder.</li>
+                                    <li>Close the terminal. A file named <strong>FalloutNV_backup.exe</strong> should appear in the game's <b>Root</b> folder.</li>
                                 </ol>
                                 </p>
                             </div>
