@@ -26,10 +26,7 @@ Better Brotherhood.esm
 DLC Enhancements.esp
 Goodies.esp
 Goodies - Better Brotherhood Patch.esp
-Vanilla Enhancements.esm
-EVEM - YUPDate Patch.esp
-Lone Star.esm
-Lone Star - VNV.esm
+AguaFria.esm
 Bad Touch.esm
 Simple Character Expansions.esm
 Goodies - Simple Character Expansions Patch.esp
@@ -43,7 +40,6 @@ Enhanced Movement.esp
 Weathers Revised.esp
 DLC Enhancements - Weathers Revised Patch.esp
 Atmospheric Lighting Tweaks.esp
-Atmospheric Lighting Tweaks - EVEM Patch.esp
 B42Inertia.esp
 CC - Rain.esp
 CC - 3D Rain.esp
