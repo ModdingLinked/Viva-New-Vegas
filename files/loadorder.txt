@@ -28,9 +28,9 @@ Goodies.esp
 Goodies - Better Brotherhood Patch.esp
 AguaFria.esm
 Bad Touch.esm
+Strip Lights Region Fix.esm
 Simple Character Expansions.esm
 Goodies - Simple Character Expansions Patch.esp
-Strip Lights Region Fix.esp
 Landscape Disposition Fix - SLRF Patch.esp
 FNV FaceGen Fix.esp
 The Mod Configuration Menu.esp
