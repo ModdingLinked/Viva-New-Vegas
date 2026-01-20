@@ -10,6 +10,7 @@ MercenaryPack.esm
 TribalPack.esm
 CaravanPack.esm
 YUP - Base Game + All DLC.esm
+Strip Lights Region Fix.esm
 YUPDate.esm
 Unofficial Patch NVSE Plus.esp
 NVMIM.esp
@@ -28,7 +29,6 @@ Goodies.esp
 Goodies - Better Brotherhood Patch.esp
 AguaFria.esm
 Bad Touch.esm
-Strip Lights Region Fix.esm
 Simple Character Expansions.esm
 Goodies - Simple Character Expansions Patch.esp
 Landscape Disposition Fix - SLRF Patch.esp
