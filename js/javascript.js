@@ -45,9 +45,9 @@ function fadeOut(element) {
     element.style.opacity = "0%";
 }
 
-function rotate(element, rotation = 180) {
-    element.style.transform = 'rotatex(' + rotation + 'deg)';
-}
+// function rotate(element, rotation = 180) {
+//     element.style.transform = 'rotatex(' + rotation + 'deg)';
+// }
 
 function setupExpanders() {
     const expanders = document.querySelectorAll('.expander-top');
@@ -77,26 +77,31 @@ function setupExpanders() {
     });
 }
 
-function expandCard(thisObj, $open, $dontReset) {
-    const chevron = thisObj.getElementsByClassName("chevron")[0]
-    if ($open.classList.contains('expander-opened') && !$dontReset) {
-        rotate(chevron, 0)
-        $open.classList.remove('expander-opened');
-        setTimeout(() => $open.style.display = "none", 400);
-        thisObj.classList.remove('active');
+function expandCard(thisObj, $open) {
+    if (thisObj.getAttribute('aria-expanded')) {
+        thisObj.removeAttribute('aria-expanded');
+        $open.style.maxHeight = 0;
     }
     else {
-        $open.classList.add('expander-opened');
-        rotate(chevron, 180);
-        $open.style.display = "block";
-        thisObj.classList.add('active');
+        thisObj.setAttribute('aria-expanded', 'true');
+        $open.style.maxHeight = $open.scrollHeight + 'px';
+        // const textareas = $open.querySelectorAll('.auto-resize');
+        // if (textareas) {
+        //     for (var i = 0; i < textareas.length; i++) {
+        //         autoResize(textareas[i]);
+        //     }
+        // }
+    }
 
-        const textareas = $open.querySelectorAll('.auto-resize');
-        if (textareas) {
-            for (var i = 0; i < textareas.length; i++) {
-                autoResize(textareas[i]);
+    // Benchmarks
+    const benchmarkElements = $open.querySelectorAll('[data-chart-container]');
+    if (benchmarkElements.length > 0 && window.benchmarkCharts) {
+        benchmarkElements.forEach(element => {
+            const container = document.getElementById(element.getAttribute('data-chart-container'));
+            if (container && container.innerHTML.includes('Loading')) {
+                window.benchmarkCharts.loadBenchmarkFromElement(element);
             }
-        }
+        });
     }
 }
 
