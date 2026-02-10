@@ -194,14 +194,14 @@
                 <h2 onclick="location.href='#Overview'">Overview</h2>
 
                 <div class="card" id="UnderstandingLOD" title="Understanding LOD">
-                    <p>
                     <h3>Understanding LOD</h3>
-                    LOD stands for <strong>Level Of Detail</strong> - a system used to represent distant objects with simplified meshes and textures to improve performance. In Bethesda games, LOD primarily refers to <strong>Cell LOD</strong>, which represents whole "chunks" of land in the distance.
-                    <br>
-                    <br>
-                    Cell LOD is not based on distance - it's a binary state of whether cell is either loaded or not. The LOD Block distance settings control the max draw distance of LOD itself, not the point where it begins.
-                    <br>
-                    This means that you will see LOD pop-in at the same distance regardless of the settings.
+                    <p>
+                        LOD stands for <strong>Level Of Detail</strong> - a system used to represent distant objects with simplified meshes and textures to improve performance. In Bethesda games, LOD primarily refers to <strong>Cell LOD</strong>, which represents whole "chunks" of land in the distance.
+                        <br>
+                        <br>
+                        Cell LOD is not based on distance - it's a binary state of whether cell is either loaded or not. The LOD Block distance settings control the max draw distance of LOD itself, not the point where it begins.
+                        <br>
+                        This means that you will see LOD pop-in at the same distance regardless of the settings.
 
                     <p>Cell LOD is divided into three main categories:</p>
                     <ol>
@@ -219,9 +219,9 @@
                 </div>
 
                 <div class="card" id="WhyGenerate" title="Why Generate Custom LOD?">
-                    <p>
                     <h3>Why Generate Custom LOD?</h3>
-                    The vanilla game's LOD is pre-generated and static, which means it can't reflect changes made by mods to terrain or objects. Custom LOD generation creates meshes that match your modded game, providing:
+                    <p>
+                        The vanilla game's LOD is pre-generated and static, which means it can't reflect changes made by mods to terrain or objects. Custom LOD generation creates meshes that match your modded game, providing:
 
                     <ul>
                         <li>Increased visual consistency between nearby and distant objects.</li>
@@ -248,9 +248,9 @@
                 </div>
 
                 <div class="card" id="LODComparison" title="LOD Comparison">
-                    <p>
                     <h3>LOD Comparison</h3>
-                    Drag the slider handle to compare how the game looks with generated LOD. Use the dropdown to select different comparison sets.<!--  You can also find performance and VRAM usage comparisons <a href="https://moddinglinked.com/benchmarks.html" target="_blank">here</a>. -->
+                    <p>
+                        Drag the slider handle to compare how the game looks with generated LOD. Use the dropdown to select different comparison sets.<!--  You can also find performance and VRAM usage comparisons <a href="https://moddinglinked.com/benchmarks.html" target="_blank">here</a>. -->
                     </p>
 
                     <div class="image-slider" data-image-path="./img/LOD/Comparisons" data-sets="Helios One|Goodsprings Cemetery|Big Empty|Zion Canyon" data-images="Vanilla|Generated LOD">
@@ -273,8 +273,8 @@
                 <h2 onclick="location.href='#Preparation'">Preparation</h2>
 
                 <div class="card">
-                    <p>
                     <h3>Creating a Separator in MO2</h3>
+                    <p>
                     <ol>
                         <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
                         <li>Name the separator <strong>LOD</strong>.</li>
@@ -283,9 +283,9 @@
                 </div>
 
                 <div class="card" id="INITweaks" title="INI Tweaks">
-                    <p>
                     <h3>INI Tweaks</h3>
-                    These settings will increase the LOD draw distance and remove the jarring transitions of SpeedTree flora.
+                    <p>
+                        These settings will increase the LOD draw distance and remove the jarring transitions of SpeedTree flora.
                     <ol>
                         <li>Click the <img class="mo2-icon" src="./img/MO2/Tools.webp" alt="Tools drop-down"> button at the top of MO2 and select <b>INI Editor</b>.</li>
                         <li>Select the <b>FalloutCustom.ini</b> tab, which should have the settings copied from the <a href="./mo2.html">Mod Organizer 2</a> page.</li>
@@ -319,8 +319,8 @@ bForceFullLOD=1</textarea>
                 </div>
 
                 <div class="card" id="ResolvingConflicts">
-                    <p>
                     <h3>Resolving Conflicts</h3>
+                    <p>
 
                     <div class="card-yellow">
                         <p>
@@ -354,9 +354,9 @@ bForceFullLOD=1</textarea>
                 </div>
 
                 <div class="card" id="InstallingResources" title="Installing LOD Resources">
-                    <p>
                     <h3>Installing LOD Resources</h3>
-                    Install in the following order:
+                    <p>
+                        Install in the following order:
                     <ol>
                         <li>
                             <b class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/84171" target="_blank">LOD Fixes and Improvements - NVSE</a></b>
@@ -549,9 +549,9 @@ bForceFullLOD=1</textarea>
                 </div>
 
                 <div class="card" id="LoadOrder">
-                    <p>
                     <h3>Load Order</h3>
-                    After installing all mods, make sure <b>the end</b> of your load order looks like this:
+                    <p>
+                        After installing all mods, make sure <b>the end</b> of your load order looks like this:
                     <ul>
                         <li>Wasted LOD rocks.esp <b>(Tale of Two Wastelands only)</b></li>
                         <li>TTW Fallout 3 LOD.esp <b>(Tale of Two Wastelands only)</b></li>
@@ -582,9 +582,9 @@ bForceFullLOD=1</textarea>
                 <h2 onclick="location.href='#GeneratingLOD'">Generating LOD</h2>
 
                 <div class="card" id="xLODGen" title="xLODGen">
-                    <p>
                     <h3>xLODGen</h3>
-                    xLODGen is an xEdit-based tool that allows you to generate LOD meshes for your game. Similarly to xEdit, it has a single executable that can be be turned into a game specific version by adding arguments.
+                    <p>
+                        xLODGen is an xEdit-based tool that allows you to generate LOD meshes for your game. Similarly to xEdit, it has a single executable that can be be turned into a game specific version by adding arguments.
 
                     <div class="card-red">
                         <p>
@@ -620,12 +620,12 @@ bForceFullLOD=1</textarea>
                 </div>
 
                 <div class="card" id="LandLOD" title="Terrain LOD">
-                    <p>
                     <h3>Terrain LOD</h3>
-                    In this step we will generate Terrain LOD. This can be the slowest and most CPU intensive step, but it can add a lot of detail to the terrain in the distance.
-                    <br>
-                    <br>
-                    If you are in a rush or have a slow CPU, it's you can uncheck <strong>Build diffuse</strong> and <strong>Build normal</strong> options - this will skip texture generation, <b>massively</b> speeding up the process.
+                    <p>
+                        In this step we will generate Terrain LOD. This can be the slowest and most CPU intensive step, but it can add a lot of detail to the terrain in the distance.
+                        <br>
+                        <br>
+                        If you are in a rush or have a slow CPU, it's you can uncheck <strong>Build diffuse</strong> and <strong>Build normal</strong> options - this will skip texture generation, <b>massively</b> speeding up the process.
 
                     <div class="card-yellow">
                         <p>
@@ -690,9 +690,9 @@ bForceFullLOD=1</textarea>
                                 </div>
                             </ul>
                             <div class="expander-top">
-                                <p>
                                 <h3>Settings Explanation</h3>
-                                <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                                <p>
+                                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                                 </p>
                             </div>
                             <div class="expander-bottom">
@@ -721,9 +721,9 @@ bForceFullLOD=1</textarea>
                 </div>
 
                 <div class="card" id="ObjectLOD" title="Object LOD">
-                    <p>
                     <h3>Object LOD</h3>
-                    In this step we will generate Object and Tree LOD. This is the fastest and easiest setup, and also the most commonly used one.
+                    <p>
+                        In this step we will generate Object and Tree LOD. This is the fastest and easiest setup, and also the most commonly used one.
                     <div class="card-yellow">
                         <p>
                             You will need to re-generate Object LOD every time you install a new mod that adds or modifies objects in the game world, or if you change the texture of an object.
@@ -748,9 +748,9 @@ bForceFullLOD=1</textarea>
                         </div>
 
                         <div class="expander-top">
-                            <p>
                             <h3>Settings Explanation</h3>
-                            <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                            <p>
+                                <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                             </p>
                         </div>
                         <div class="expander-bottom">
@@ -799,10 +799,10 @@ bForceFullLOD=1</textarea>
                 </div>
 
                 <div class="card" id="PackingLOD" title="Packing LOD">
-                    <p>
                     <h3>Packing LOD</h3>
-                    This step is not necessary, but will reduce loading time of LOD assets by the game by packing them into optimized archive files (BSAs). This translates to less stuttering when entering new areas.
-                    <br>
+                    <p>
+                        This step is not necessary, but will reduce loading time of LOD assets by the game by packing them into optimized archive files (BSAs). This translates to less stuttering when entering new areas.
+                        <br>
                     <ol>
                         <li>Download <a href="https://www.nexusmods.com/fallout4/mods/63243" target="_blank">BSArch Pro</a></li>
                         <li>Once the download has finished, extract the contents of the archive.</li>
@@ -848,7 +848,7 @@ bForceFullLOD=1</textarea>
                             <p>
                                 Only object textures should be compressed. Object textures are very large (often exceeding 2GB, especially with Tale of Two Wastelands) and are loaded once per worldspace entry, so compression only affects the initial load time.
                                 <br><br>
-                                In contrast, object meshes and landscape data are streamed in and out as you move around the world—compressing these could negatively impact in-game loading performance.
+                                In contrast, object meshes and landscape data are streamed in and out as you move around the world - compressing these could negatively impact in-game loading performance.
                             </p>
                             </p>
                         </div>
@@ -859,9 +859,9 @@ bForceFullLOD=1</textarea>
                     </ol>
 
                     <div class="expander-top important clickable">
-                        <p>
                         <h3>BSA Usage Information</h3>
-                        <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                        <p>
+                            <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                         </p>
                     </div>
                     <div class="expander-bottom">
