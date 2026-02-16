@@ -150,12 +150,8 @@
                     FAQ
                 </a>
 
-                <a href="./avoid-tools.html" title="Tools to Avoid">
-                    Tools to Avoid
-                </a>
-
-                <a href="./avoid-mods.html" title="Mods to Avoid">
-                    Mods to Avoid
+                <a href="./safe-modding.html" title="Safe Modding">
+                    Safe Modding
                 </a>
 
                 <a href="./wabbajack.html" title="Wabbajack">
@@ -553,13 +549,14 @@ bForceFullLOD=1</textarea>
                     <p>
                         After installing all mods, make sure <b>the end</b> of your load order looks like this:
                     <ul>
-                        <li>Wasted LOD rocks.esp <b>(Tale of Two Wastelands only)</b></li>
-                        <li>TTW Fallout 3 LOD.esp <b>(Tale of Two Wastelands only)</b></li>
+                        <li>Wasted LOD rocks.esp*</li>
+                        <li>TTW Fallout 3 LOD.esp*</li>
                         <li>VNV LOD Plugins.esp</li>
                         <li>HighPriorityLOD.esp</li>
-                        <li>HighPriorityLOD_TTW.esp <b>(Tale of Two Wastelands only)</b></li>
-                        <li>TreeLOD_Vanilla.esp</li>
+                        <li>HighPriorityLOD_TTW.esp*</li>
+                        <li>TreeLOD_Vanilla.esp (from High Priority Trees - Vanilla)</li>
                     </ul>
+                    *Tale of Two Wastelands only
                     </p>
                 </div>
 
@@ -567,8 +564,7 @@ bForceFullLOD=1</textarea>
                     <p>
                     <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/79358" target="_blank">Pre-Generated LOD</a></h3>
                     If you use a <strong>VNVE modlist</strong> with no changes to textures or the game world, you can skip manual LOD generation by using these files. The Object LOD file also includes Tree LOD, while the other only contains Terrain LOD to reduce bandwidth required for upload and download.
-                    <br>
-                    <br>
+                    <br><br>
                     Simply install <strong>both the Object and Terrain Pre-Generated LOD</strong> as normal mods in MO2 and put them under the resources listed in the previous section (which you still need), then disable following mods in the left pane:
                     <ul>
                         <li>High Priority Core</li>
@@ -776,7 +772,7 @@ bForceFullLOD=1</textarea>
                     </p>
                 </div>
 
-                <div class="card-red">
+                <div class="card-red center">
                     <p>
                         <b>IMPORTANT:</b>
                         <br>
@@ -792,9 +788,9 @@ bForceFullLOD=1</textarea>
                     <hr><br>
                     Do not disable the other LOD resources! The game needs them for the LOD to work properly.
                     <br><br>
-                    Generated LOD must <strong>always</strong> be loaded last in your modlist!
+                    Generated LOD must <u>always</u> be loaded last in your modlist!
                     <br><br>
-                    If it happens to be overwritten by any mod (commonly texture mods such as NMC's Texture Pack), the LOD in-game will be <strong>broken</strong>.
+                    If it happens to be overwritten by any mod (commonly texture mods such as NMC's Texture Pack), the LOD in-game will be broken.
                     </p>
                 </div>
 
@@ -806,8 +802,8 @@ bForceFullLOD=1</textarea>
                     <ol>
                         <li>Download <a href="https://www.nexusmods.com/fallout4/mods/63243" target="_blank">BSArch Pro</a></li>
                         <li>Once the download has finished, extract the contents of the archive.</li>
-                        <li>Run <strong>BSArchPro.exe</strong>.</li>
-                        <li>In Mod Organizer 2, right click on your <strong>FNVLODGen Output - Objects</strong> and select <b>Open in Explorer</b>.</li>
+                        <li>Run <b>BSArchPro.exe</b>.</li>
+                        <li>In Mod Organizer 2, right click on your <b>FNVLODGen Output - Objects</b> and select <b>Open in Explorer</b>.</li>
                         <li>From from newly opened window, drag <span class="card-basic">meshes</span> folder into <b>BSArch Pro</b>.</li>
                         <li>
                             You should see a window like this:
@@ -817,19 +813,19 @@ bForceFullLOD=1</textarea>
                                 <div class="resize-overlay expand"></div>
                             </div>
                         </li>
-                        <li>Click the <strong>Pack</strong> button.</li>
+                        <li>Click the <b>Pack</b> button.</li>
                         <li>
-                            A new window will open, click on <b>...</b>, go to the <strong>FNVLODGen Output - Objects</strong> folder.
+                            A new window will open, click on <b>...</b>, go to the <b>FNVLODGen Output - Objects</b> folder.
                         </li>
                         <li>
-                            After entering the folder in the previous step, paste <span class="card-basic">VNV LOD Plugins - Objects - Meshes.bsa</span> into the <b>File name</b> field. Press <strong>Save</strong>. If you did everything correctly, you should see a window like this:
+                            After entering the folder in the previous step, paste <span class="card-basic">VNV LOD Plugins - Objects - Meshes.bsa</span> into the <b>File name</b> field. Press <b>Save</b>. If you did everything correctly, you should see a window like this:
                             <br>
                             <div class="image-container width-40">
                                 <img class="content-img" src="./img/LOD/BSArchPro-Objects-Save.webp" alt="BSArch Pro's Packing Options window" />
                                 <div class="resize-overlay expand"></div>
                             </div>
                         </li>
-                        <li>Click <strong>OK</strong>.</li>
+                        <li>Click <b>OK</b>.</li>
                         <li>
                             Once packaging is done, you should see a window similar to this:
                             <br>
@@ -838,24 +834,24 @@ bForceFullLOD=1</textarea>
                                 <div class="resize-overlay expand"></div>
                             </div>
                             <br>
-                            Click <strong>Create .override for New Vegas</strong> and press <b>OK</b>.
+                            Click <b>Create .override for New Vegas</b> and press <b>OK</b>.
                         </li>
-                        <li>Back in BSArch Pro's main window, click <strong>Clear List</strong>.</li>
-                        <li>Repeat steps 5 and 6 for the <span class="card-basic">textures</span> folder. Then, press <kbd>Ctrl</kbd> + <kbd>A</kbd> to select all files, right-click, and click <strong>Compressed</strong>.</li>
+                        <li>Back in BSArch Pro's main window, click <b>Clear List</b>.</li>
+                        <li>Repeat steps 5 and 6 for the <span class="card-basic">textures</span> folder. Then, press <kbd>Ctrl</kbd> + <kbd>A</kbd> to select all files, right-click, and click <b>Compressed</b>.</li>
 
                         <div class="card-green">
                             <p>
                             <p>
-                                Only object textures should be compressed. Object textures are very large (often exceeding 2GB, especially with Tale of Two Wastelands) and are loaded once per worldspace entry, so compression only affects the initial load time.
+                                <strong>Only object textures should be compressed</strong>. Object textures are very large (often exceeding 2GB, especially with Tale of Two Wastelands) and are loaded once per worldspace entry, so compression only affects the initial load time.
                                 <br><br>
                                 In contrast, object meshes and landscape data are streamed in and out as you move around the world - compressing these could negatively impact in-game loading performance.
                             </p>
                             </p>
                         </div>
 
-                        <li>Repeat steps 7 to 12.</li>
-                        <li>In the <strong>FNVLODGen Output - Objects</strong> folder, delete the <span class="card-basic">textures</span> and <span class="card-basic">meshes</span> folders.</li>
-                        <li>If you generated Terrain LOD, repeat the steps from 4 to 15, but with <strong>FNVLODGen Output - Terrain</strong> and <u>without compressing</u>. Change the archive names accordingly as well.</li>
+                        <li>Repeat steps 7 to 12, but type <span class="card-basic">Textures</span> instead of <b>Meshes</b> in the archive name.</li>
+                        <li>In the <b>FNVLODGen Output - Objects</b> folder, delete the <span class="card-basic">textures</span> and <span class="card-basic">meshes</span> folders.</li>
+                        <li>If you generated Terrain LOD, repeat the steps from 4 to 15, but with <b>FNVLODGen Output - Terrain</b> and <u>without compressing</u>. Change the archive names accordingly as well.</li>
                     </ol>
 
                     <div class="expander-top important clickable">
@@ -914,7 +910,7 @@ bForceFullLOD=1</textarea>
         </div>
     </div>
 
-    <footer>ModdingLinked 2025</footer>
+    <footer>ModdingLinked 2026</footer>
 
     <div id="image-overlay" class="overlay" hidden>
         <div class="image-container">
