@@ -39,22 +39,25 @@
     <meta http-equiv='pragma' content='no-cache'>
     <meta http-equiv='clear-site-data' content='cache'>
 
-    <script src="js/imageViewer.js"></script>
-    <script src="js/popup.js"></script>
-    <script src="js/javascript.js"></script>
-    <script src="js/responsiveTitle.js"></script>
+    <script src="submodule/shared/js/vramDiff.js"></script>
+    <script src="submodule/shared/js/benchmarkCharts.js"></script>
+    <script src="submodule/shared/js/download.js"></script>
+    <script src="submodule/shared/js/expanders.js"></script>
+    <script src="submodule/shared/js/fpsCalculator.js"></script>
+    <script src="submodule/shared/js/highlight.js"></script>
+    <script src="submodule/shared/js/imageGallery.js"></script>
+    <script src="submodule/shared/js/imageSlider.js"></script>
+    <script src="submodule/shared/js/imageViewer.js"></script>
+    <script src="submodule/shared/js/javascript.js"></script>
+    <script src="submodule/shared/js/perfguide.js"></script>
+    <script src="submodule/shared/js/popup.js"></script>
+    <script src="submodule/shared/js/recommendPreset.js"></script>
+    <script src="submodule/shared/js/responsiveTitle.js"></script>
+    <script src="submodule/shared/js/sidebar.js"></script>
 
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/cards.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/navigationArrows.css">
-    <link rel="stylesheet" href="css/coco.css">
-    <link rel="stylesheet" href="css/progressBar.css">
-    <link rel="stylesheet" href="css/guideColors.css">
-    <link rel="stylesheet" href="css/sidebar.css">
-    <link rel="stylesheet" href="css/popup.css">
-    <link rel="stylesheet" href="css/images.css">
-    <link rel="stylesheet" href="css/textIcons.css">
+    <link rel="stylesheet" href="main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body class="theme">
@@ -244,28 +247,72 @@
                     </p>
                 </div>
 
-                <div class="card" id="Decompressor">
+                <div class="card" id="BSASPatcher" title="BSAs Patcher">
                     <p>
-                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/65854" target="_blank">FNV BSA Decompressor</a></h3>
-                    Decompresses the vanilla BSA files to reduce loading times and stuttering. Can also fix certain sound effects not playing.
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/98738" target="_blank">Vanilla BSAs Patcher</a></h3>
+                    Decompresses archives for better loading time and fixes vanilla audio not playing.
                     <h3 class="install">Installation instructions</h3>
                     <ul>
                         <li>
-                            <b>Main Files</b> - FNV BSA Decompressor
-                            <ol>
-                                <li>Extract the archive and run <span class="card-basic">FNV BSA Decompressor.exe</span>.</li>
-                                <li>The <strong>Fallout: New Vegas</strong> and <strong>Decompressed Archives</strong> paths should be filled by default (Root folder and Data folder respectively). If they aren't, close the program and re-run your game launcher to generate the required registry key.</li>
-
-                                <div class="card-yellow">
-                                    <p>
-                                        The EGS release of the game does not create any keys! You need to select the game folder manually!
-                                    </p>
-                                </div>
-
-                                <li>Click <strong>Decompress</strong>, wait for the process the finish, then exit the program once finished.</li>
-                            </ol>
+                            <b>Main Files</b> - Vanilla BSAs Patcher
                         </li>
                     </ul>
+
+                    <h3 class="install">Usage instructions</h3>
+                    <p>You can patch BSA files directly in the game's Data folder, or load patched copies as a mod in Mod Organizer 2. If backups are disabled, the former takes less storage space (4GB). The latter makes your setup more portable and removes the need to verify your game's files (or restore a backup) when installing Tale of Two Wastelands.</p>
+
+                    <div class="flex" style="flex-direction: row; align-content: center; justify-content: center;">
+                        <div class="flex" style="flex-direction: column; width: 50%; margin-right: 0.5em;">
+                            <div class="expander-top clickable" onclick="expandCard(this, inDataExpander)" id="inData">
+                                <h3>Directly in the Data folder</h3>
+                                <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                            </div>
+                            <div class="expander-bottom" id="inDataExpander">
+                                <ol>
+                                    <li>Extract the archive and run <span class="card-basic">Vanilla BSAs Patcher.exe</span>.</li>
+                                    <li>The <strong>Fallout: New Vegas</strong> path should be filled by default. If it isn't, close the program and re-run your game launcher to generate the required registry key.</li>
+
+                                    <div class="card-yellow">
+                                        <p>
+                                            The EGS release of the game does not create any keys! You need to select the game folder manually!
+                                        </p>
+                                    </div>
+
+                                    <li>Default settings are recommended, but HDD users should disable decompression.</li>
+                                    <li>Click the <strong>Patch</strong> button.</li>
+                                    <li>Click <i class="fa fa-play" aria-hidden="true"></i> and wait for the program to finish, then exit.</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div class="flex" style="flex-direction: column; width: 50%; margin-left: 0.5em;">
+                            <div class="expander-top clickable" onclick="expandCard(this, inMo2Expander)" id="inMo2">
+                                <h3>As a mod in MO2</h3>
+                                <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                            </div>
+                            <div class="expander-bottom" id="inMo2Expander">
+                                <ol>
+                                    <li>In MO2, click the tiny wrench icon at the top, next to the mod counter, then click <strong>Create empty mod</strong>.</li>
+                                    <li>Title the mod <span class="card-basic">Patched BSAs</span></li>
+                                    <li>Right-click on your Patched BSAs mod and select <b>Open in Explorer</b>.</li>
+                                    <li>From from newly opened window, <strong>copy the file path</strong>.</li>
+                                    <li>Extract the archive and run <span class="card-basic">Vanilla BSAs Patcher.exe</span>.</li>
+                                    <li>The <strong>Fallout: New Vegas</strong> path should be filled by default. If it isn't, close the program and re-run your game launcher to generate the required registry key.</li>
+
+                                    <div class="card-yellow">
+                                        <p>
+                                            The EGS release of the game does not create any keys! You need to select the game folder manually!
+                                        </p>
+                                    </div>
+
+                                    <li>Default settings are recommended, but HDD users should disable decompression.</li>
+                                    <li><strong>Set the Custom output path</strong> to the one you copied earlier.</li>
+                                    <li>Click the <strong>Patch</strong> button.</li>
+                                    <li>Click <i class="fa fa-play" aria-hidden="true"></i> and wait for the program to finish, then exit.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
                     </p>
                 </div>
 
@@ -291,7 +338,7 @@
                                 </div>
 
                                 <li>Set the <b>Mod folder</b> path field to the one you copied earlier.</li>
-                                <li>Click <b>Install</b>, wait for the process the finish, then exit the program once finished.</li>
+                                <li>Click <b>Install</b> and wait for the program to finish, then exit.</li>
                                 <li>In Mod Organizer 2, press <kbd>F5</kbd> to refresh the left pane and <strong>enable Fixed ESMs</strong> by ticking its checkbox.</li>
                             </ol>
                         </li>
@@ -453,15 +500,6 @@
                     <ul>
                         <li><b>Main Files</b> - UIO - User Interface Organizer</li>
                     </ul>
-
-                    <div class="card-red">
-                        <p>
-                            <b>Linux users!</b>
-                            <br>
-                            Proton 8.0-5 crashes with UIO! Please use Proton 8-25 or newer.
-                        </p>
-                    </div>
-
                     </p>
                 </div>
 
@@ -472,6 +510,18 @@
                     <h3 class="install">Installation instructions</h3>
                     <ul>
                         <li><b>Main Files</b> - hNVSE</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card" id="ITRNVSE" title="ITR NVSE">
+                    <p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/96922" target="_blank">ITR NVSE</a></h3>
+                    Another script extender plugin featuring new commands and event handlers, bug fixes, and tweaks.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li><b>Main Files</b> - itr nvse</li>
+                        <li><b>Main Files</b> - itr nvse config</li>
                     </ul>
                     </p>
                 </div>

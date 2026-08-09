@@ -39,20 +39,23 @@
     <meta http-equiv='pragma' content='no-cache'>
     <meta http-equiv='clear-site-data' content='cache'>
 
-    <script src="js/popup.js"></script>
-    <script src="js/javascript.js"></script>
-    <script src="js/responsiveTitle.js"></script>
+    <script src="submodule/shared/js/vramDiff.js"></script>
+    <script src="submodule/shared/js/benchmarkCharts.js"></script>
+    <script src="submodule/shared/js/download.js"></script>
+    <script src="submodule/shared/js/expanders.js"></script>
+    <script src="submodule/shared/js/fpsCalculator.js"></script>
+    <script src="submodule/shared/js/highlight.js"></script>
+    <script src="submodule/shared/js/imageGallery.js"></script>
+    <script src="submodule/shared/js/imageSlider.js"></script>
+    <script src="submodule/shared/js/imageViewer.js"></script>
+    <script src="submodule/shared/js/javascript.js"></script>
+    <script src="submodule/shared/js/perfguide.js"></script>
+    <script src="submodule/shared/js/popup.js"></script>
+    <script src="submodule/shared/js/recommendPreset.js"></script>
+    <script src="submodule/shared/js/responsiveTitle.js"></script>
+    <script src="submodule/shared/js/sidebar.js"></script>
 
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/cards.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/navigationArrows.css">
-    <link rel="stylesheet" href="css/progressBar.css">
-    <link rel="stylesheet" href="css/guideColors.css">
-    <link rel="stylesheet" href="css/sidebar.css">
-    <link rel="stylesheet" href="css/popup.css">
-    <link rel="stylesheet" href="css/images.css">
-    <link rel="stylesheet" href="css/spoiler.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body class="theme">
@@ -183,7 +186,7 @@
 
             <span id="FAQ" class="section">
                 <h2 onclick="location.href='#General'">General</h2>
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>What are the requirements and supported game versions?</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
@@ -193,7 +196,7 @@
                     </p>
                 </div>
 
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>Can I use an existing save?</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
@@ -206,29 +209,21 @@
                     </p>
                 </div>
 
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>Is Linux supported?</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
                 <div class="expander-bottom">
                     <p>
-                        Short answer: <strong>No</strong>
-                        <br>
-                        <br>
-                        We do not provide support for Linux as we don't use it, therefore we cannot troubleshoot issues specific to it. There is a <a href="https://ashtonqlb.github.io/mirelurked-vnv/intro.html" target="_blank">community-supported guide</a> for installing Viva New Vegas on SteamOS 3 handhelds but it is <strong>unofficial and unaffiliated</strong> with the guide authors. You have been warned.
-                        <br>
-                        <br>
-                        Assuming you already know your way around Linux, here's <strong>some information that might help you</strong>:
-                    <ul>
-                        <li>There is an <a href="https://github.com/Furglitch/modorganizer2-linux-installer" target="_blank">easy MO2 installer</a> available. Use a portable instance when prompted.</li>
-                        <li>Use Proton or Wine-GE to run the game, since stock Wine has issues with the bundled FOMOD installer.</li>
-                        <li>You need to install the Gstreamer codec suite for in-game music to play.</li>
-                        <li>You need to install Visual C++ Redistributables 2015-2022 in your game prefix to prevent an instant CTD. You can do this with Protontricks</li>
-                    </ul>
+                        <strong>Linux support is planned</strong> but not near. For now, support is limited to the <a href="https://discord.com/channels/1135527122849497149/1230468498011062353" target="_blank">dedicated channel</a> in our <a href="https://discord.gg/S99Ary5eba" target="_blank">Discord server</a>.
+
+                        <br><br>
+
+                        Things are already in a fairly good state thanks to projects such as <a href="https://github.com/SulfurNitride/Fluorine-Manager" target="_blank">Fluorine</a> and <a href="https://github.com/ChrisDKN/Amethyst-Mod-Manager" target="_blank">Amethyst</a>. The experience with these should be streamlined enough to not need any particular instructions, assuming you're familiar with basic Linux operation.
                     </p>
                 </div>
 
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>Will pirated copies work?</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
@@ -238,7 +233,7 @@
                     </p>
                 </div>
 
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>Can I use New Vegas Multiplayer (NV:MP)?</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
@@ -248,7 +243,7 @@
                     </p>
                 </div>
 
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>Where are save files stored?</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
@@ -267,7 +262,7 @@
 
                 <h2 onclick="location.href='#Troubleshooting'">Troubleshooting</h2>
                 <p>You can ask for support in the <a href="https://discord.gg/S99Ary5eba" target="_blank">ModdingLinked</a> Discord server in case any of the advice below does not solve your problem.</p>
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>The game crashes or nothing happens when starting it</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
@@ -275,19 +270,7 @@
                     <p>
                         This could happen for <strong>various reasons</strong>:
                     <ul>
-                        <li>Make sure the latest VC++ Redistributables are installed:
-                            <ul>
-                                <li>
-                                    <a href="https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/" target="_blank">VC++ AIO</a>
-                                    <ol>
-                                        <li>Extract the archive and run the included <span class="card-basic">install_all.bat</span> as an administrator.</li>
-                                    </ol>
-                                </li>
-                                <li><a href="https://aka.ms/vs/17/release/vc_redist.x64.exe" target="_blank">2015-2022 X64</a></li>
-                                <li><a href="https://aka.ms/vs/17/release/vc_redist.x86.exe" target="_blank">2015-2022 X86</a></li>
-                                <li>Restart your PC.</li>
-                            </ul>
-                        </li>
+                        <li>Make sure the latest VC++ Redistributables are installed by following the steps <a href="./setup.html#CPPRedists" target="_blank">here</a>.</li>
                         <li>
                             Make sure that DirectX Redistributables are installed and functional:
                             <ol>
@@ -319,7 +302,7 @@
                     </p>
                 </div>
 
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>Pink main menu</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
@@ -329,20 +312,19 @@
                     </p>
                 </div>
 
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>Missing meshes (red diamonds)</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
                 <div class="expander-bottom">
-                    <p>
-                        <strong>Verify your game files</strong>.
-                    </p>
-                    <p>
-                        You will need to <a href="https://www.nexusmods.com/newvegas/mods/65854" target="_blank">re-run the BSA Decompressor</a> and <a href="https://www.nexusmods.com/newvegas/mods/62552" target="_blank">4GB Patcher</a> after doing this.
-                    </p>
+                    <ol>
+                        <li><strong>Verify files</strong> on Steam or GOG Galaxy.</li>
+                        <li><a href="./utilities.html#Patchers">Re-run the correct patcher</a> based on your game version.</li>
+                        <li><a href="./utilities.html#BSASPatcher">Re-run the Vanilla BSAs Patcher</a>.</li>
+                    </ol>
                 </div>
 
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>How do I export my modlist and/or load order?</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
@@ -357,7 +339,7 @@
                     </p>
                 </div>
 
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>GECK isn't detecting any mods</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
@@ -367,7 +349,7 @@
                     </p>
                 </div>
 
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>There is no New Vegas option when creating an MO2 instance</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
@@ -377,7 +359,7 @@
                     </p>
                 </div>
 
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>How to reset your INIs</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
@@ -398,17 +380,17 @@
 
                 </div>
 
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>Is it safe to validate game files?</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
                 <div class="expander-bottom">
                     <p>
-                        Verifying game files <strong>will revert the BSA decompression and the executable patch</strong>. You can solve this by <a href="./utilities.html#Patchers">re-running the correct patcher</a> based on your game version, then re-running the <a href="./utilities.html#Decompressor">BSA Decompressor</a>.
+                        Verifying game files <strong>will revert the BSA patching and the executable patch</strong>. You can solve this by <a href="./utilities.html#Patchers">re-running the correct patcher</a> based on your game version, then re-running the <a href="./utilities.html#BSASPatcher">Vanilla BSAs Patcher</a>.
                     </p>
                 </div>
 
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>Plugin reported as incompatible during query</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
@@ -418,7 +400,7 @@
                     </p>
                 </div>
 
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>Application load errors (Steam Error 65434 and 65432)</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
@@ -431,7 +413,7 @@
                     </p>
                 </div>
 
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>Mod Organizer 2 is reporting that mods in the left pane have overwritten loose files</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
@@ -441,7 +423,7 @@
                     </p>
                 </div>
 
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>Why is the Utilities Checker reporting NVTF as missing even when it's installed correctly?</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
@@ -465,7 +447,7 @@
                     </p>
                 </div>
 
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>Bouncing NPCs or sped-up game</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
@@ -475,7 +457,7 @@
                     </p>
                 </div>
 
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>Black patches of terrain</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
@@ -485,31 +467,17 @@
                     </p>
                 </div>
 
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>Mod Organizer 2 refuses to open and creates a dump file at each try</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
                 <div class="expander-bottom">
                     <p>
-                    <ul>
-                        <li>Make sure the latest VC++ Redistributables are installed:
-                            <ol>
-                                <li>
-                                    <a href="https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/" target="_blank">VC++ AIO</a>
-                                    <ul>
-                                        <li>Extract the archive and run the included <span class="card-basic">install_all.bat</span> as an administrator.</li>
-                                    </ul>
-                                </li>
-                                <li><a href="https://aka.ms/vs/17/release/vc_redist.x64.exe" target="_blank">2015-2022 X64</a></li>
-                                <li><a href="https://aka.ms/vs/17/release/vc_redist.x86.exe" target="_blank">2015-2022 X86</a></li>
-                                <li>Restart your PC.</li>
-                            </ol>
-                        </li>
-                    </ul>
+                        Make sure the latest VC++ Redistributables are installed by following the steps <a href="./setup.html#CPPRedists" target="_blank">here</a>.
                     </p>
                 </div>
 
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>Alt-tabbing crashes the game or prevents it from opening again</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
@@ -523,7 +491,7 @@
                     </p>
                 </div>
 
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>Mods are not downloading through MO2 or are downloading using Vortex </h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
@@ -543,7 +511,7 @@
                     </p>
                 </div>
 
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>Wabbajack errors during installation</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
@@ -558,7 +526,7 @@
                     </p>
                 </div>
 
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>"Vanilla UI Plus has detected an installation error"</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
@@ -571,7 +539,7 @@
                     </p>
                 </div>
 
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>"Failed to initialize render" error</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
@@ -591,7 +559,7 @@
                 </div>
 
                 <h2 onclick="location.href='#Configuration'">Configuration</h2>
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>How can I change FOV?</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
@@ -605,7 +573,7 @@
                     </p>
                 </div>
 
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>Do I need to regenerate LOD?</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
@@ -617,7 +585,7 @@
                     </p>
                 </div>
 
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>What INI changes are required?</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
@@ -629,7 +597,7 @@
                     </p>
                 </div>
 
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>Why does the guide not clean the DLC plugins?</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
@@ -639,7 +607,7 @@
                     </p>
                 </div>
 
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>Is Ultrawide supported?</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
@@ -662,7 +630,7 @@
                 </div>
 
                 <h2 onclick="location.href='#Gameplay'">Gameplay</h2>
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>Why didn't I get any DLC pop-ups/items after starting a new game?</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>

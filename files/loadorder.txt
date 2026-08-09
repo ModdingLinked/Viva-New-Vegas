@@ -10,29 +10,27 @@ MercenaryPack.esm
 TribalPack.esm
 CaravanPack.esm
 YUP - Base Game + All DLC.esm
-YUPDate.esm
 Unofficial Patch NVSE Plus.esp
+d20Fixes.esm
 NVMIM.esp
 NVMIM - YUP Patch.esp
-NVMIM - YUPDate Patch.esp
 fixy crap ue.esp
 Strip Lights Region Fix.esm
-Landscape Texture Improvements.esm
-Landscape Texture Improvements - YUP Patch.esm
 Landscape Disposition Fix.esm
 Placement Fixes.esm
 FNV FaceGen Fix.esp
+d20Consistency.esm
 TLD_Travelers.esm
 Better Brotherhood.esm
 Goodies.esp
 Goodies - Better Brotherhood Patch.esp
-ExtraGoodies.esp
 AguaFria.esm
 DLC Enhancements.esp
 Bad Touch.esm
 Sunshine On My Shoulders.esm
 Simple Character Expansions.esm
-Goodies - Simple Character Expansions Patch.esp
+Simple Character Expansions - YUP Patch.esp
+Simple Character Expansions - Goodies Patch.esp
 The Mod Configuration Menu.esp
 Vanilla UI Plus.esp
 JustAssortedMods.esp

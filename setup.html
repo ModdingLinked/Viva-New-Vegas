@@ -39,20 +39,23 @@
     <meta http-equiv='pragma' content='no-cache'>
     <meta http-equiv='clear-site-data' content='cache'>
 
-    <script src="js/imageViewer.js"></script>
-    <script src="js/popup.js"></script>
-    <script src="js/javascript.js"></script>
-    <script src="js/responsiveTitle.js"></script>
+    <script src="submodule/shared/js/vramDiff.js"></script>
+    <script src="submodule/shared/js/benchmarkCharts.js"></script>
+    <script src="submodule/shared/js/download.js"></script>
+    <script src="submodule/shared/js/expanders.js"></script>
+    <script src="submodule/shared/js/fpsCalculator.js"></script>
+    <script src="submodule/shared/js/highlight.js"></script>
+    <script src="submodule/shared/js/imageGallery.js"></script>
+    <script src="submodule/shared/js/imageSlider.js"></script>
+    <script src="submodule/shared/js/imageViewer.js"></script>
+    <script src="submodule/shared/js/javascript.js"></script>
+    <script src="submodule/shared/js/perfguide.js"></script>
+    <script src="submodule/shared/js/popup.js"></script>
+    <script src="submodule/shared/js/recommendPreset.js"></script>
+    <script src="submodule/shared/js/responsiveTitle.js"></script>
+    <script src="submodule/shared/js/sidebar.js"></script>
 
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/cards.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/navigationArrows.css">
-    <link rel="stylesheet" href="css/progressBar.css">
-    <link rel="stylesheet" href="css/guideColors.css">
-    <link rel="stylesheet" href="css/sidebar.css">
-    <link rel="stylesheet" href="css/popup.css">
-    <link rel="stylesheet" href="css/images.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body class="theme">
@@ -187,8 +190,8 @@
 
                 <div class="card" id="CPPRedists" title="Installing Redistributables">
                     <h3>Installing VC++ Redistributables</h3>
-                    <p>
-                        Most engine mods and tools require latest Visual C++ Redistributables to be installed. We will use an all-in-one package that will install all possible versions.
+                    <p>Most engine mods and tools require latest Visual C++ Redistributables to be installed. Windows' official package manager, <strong>Winget</strong>, provides a quick and safe way to update all of them. We use the Microsoft Store to update it to the latest version and to make sure that the script works.</p>
+
                     <div class="card-red">
                         <p>
                             Failure to have latest versions installed will result in an immediate crash when launching the game or modding tools.
@@ -197,12 +200,16 @@
                             Please install the redistributables even if you have them installed already, as they are often outdated.
                         </p>
                     </div>
+
                     <ol>
-                        <li>Download <a href="https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/" target="_blank">VC++ AIO</a> from TechPowerUp.</li>
-                        <li>Extract the archive and run the included <span class="card-basic">install_all.bat</span> as <b>an administrator</b>.</li>
+                        <li>Open the <a href="ms-windows-store://home" target="_blank">Microsoft Store</a>.</li>
+                        <li>Head to the <b>Updates & downloads</b> section.</li>
+                        <li><b>Check for updates</b>, then let everything update.</li>
+                        <li>Once finished, open the Command Prompt as administrator and enter the following:</li>
+                        <textarea readonly="readonly" style="height: 14em; width: 95%;" onclick="this.focus();this.select()">
+winget install --id=Microsoft.VCRedist.2005.x86 -e --force -h --accept-package-agreements  && winget install --id=Microsoft.VCRedist.2005.x64 -e --force -h --accept-package-agreements  && winget install --id=Microsoft.VCRedist.2008.x86 -e --force -h --accept-package-agreements  && winget install --id=Microsoft.VCRedist.2008.x64 -e --force -h --accept-package-agreements  && winget install --id=Microsoft.VCRedist.2010.x86 -e --force -h --accept-package-agreements  && winget install --id=Microsoft.VCRedist.2010.x64 -e --force -h --accept-package-agreements  && winget install --id=Microsoft.VCRedist.2012.x86 -e --force -h --accept-package-agreements  && winget install --id=Microsoft.VCRedist.2012.x64 -e --force -h --accept-package-agreements  && winget install --id=Microsoft.VCRedist.2013.x86 -e --force -h --accept-package-agreements  && winget install --id=Microsoft.VCRedist.2013.x64 -e --force -h --accept-package-agreements  && winget install --id=Microsoft.VCRedist.2015+.x86 -e --force -h --accept-package-agreements  && winget install --id=Microsoft.VCRedist.2015+.x64 -e --force -h --accept-package-agreements</textarea>
                         <li>Restart your PC.</li>
                     </ol>
-                    </p>
                 </div>
 
                 <div class="card" id="FileExtensions" title="Enabling File Extensions">

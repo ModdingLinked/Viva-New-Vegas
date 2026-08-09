@@ -39,19 +39,23 @@
     <meta http-equiv='pragma' content='no-cache'>
     <meta http-equiv='clear-site-data' content='cache'>
 
-    <script src="js/popup.js"></script>
-    <script src="js/javascript.js"></script>
-    <script src="js/responsiveTitle.js"></script>
+    <script src="submodule/shared/js/vramDiff.js"></script>
+    <script src="submodule/shared/js/benchmarkCharts.js"></script>
+    <script src="submodule/shared/js/download.js"></script>
+    <script src="submodule/shared/js/expanders.js"></script>
+    <script src="submodule/shared/js/fpsCalculator.js"></script>
+    <script src="submodule/shared/js/highlight.js"></script>
+    <script src="submodule/shared/js/imageGallery.js"></script>
+    <script src="submodule/shared/js/imageSlider.js"></script>
+    <script src="submodule/shared/js/imageViewer.js"></script>
+    <script src="submodule/shared/js/javascript.js"></script>
+    <script src="submodule/shared/js/perfguide.js"></script>
+    <script src="submodule/shared/js/popup.js"></script>
+    <script src="submodule/shared/js/recommendPreset.js"></script>
+    <script src="submodule/shared/js/responsiveTitle.js"></script>
+    <script src="submodule/shared/js/sidebar.js"></script>
 
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/cards.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/navigationArrows.css">
-    <link rel="stylesheet" href="css/progressBar.css">
-    <link rel="stylesheet" href="css/guideColors.css">
-    <link rel="stylesheet" href="css/sidebar.css">
-    <link rel="stylesheet" href="css/popup.css">
-    <link rel="stylesheet" href="css/images.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body class="theme">
@@ -183,12 +187,76 @@
             <span id="Changelog" class="section">
                 <h2 onclick="location.href='#Changelog'">Changelog</h2>
 
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>2026</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
                 <div class="expander-bottom">
                     <p>
+                    <h2 class="install">Aug 9</h2>
+                    <h3>NOT Safe Mid-game</h3>
+                    <h2><strong>Utilities</strong></h2>
+                    <ul>
+                        <li>Added ITR NVSE.</li>
+                    </ul>
+                    <h2><strong>Bug Fixes</strong></h2>
+                    <ul>
+                        <li>Replaced YUPDate with Supplementary Fixes and Tweaks.</li>
+                        <li>Removed Landscape Texture Improvements, as it massively increases the conflict profile of the guide.</li>
+                        <li>Added Narrative Consistent Gameplay Tweaks.</li>
+                    </ul>
+                    <h2><strong>User Interface</strong></h2>
+                    <ul>
+                        <li>Added steps to disable 2 settings in UI Improvements responsible for stuttering.</li>
+                    </ul>
+                    <h2><strong>Content</strong></h2>
+                    <ul>
+                        <li>Added Goodies - Jacobstown Water Fix.</li>
+                    </ul>
+                    <h2><strong>LOD Guide</strong></h2>
+                    <ul>
+                        <li>Updated the pre-generated LOD with a test version of xLODGen, as the current Beta 132 breaks multibounds.</li>
+                    </ul>
+                    <h2><strong>Wabbajack</strong></h2>
+                    <ul>
+                        <li>Updated to reflect the changes above.</li>
+                        <li>Fixed the Goodies and Enhanced Movement configuration files not having the recommended VNV edits.</li>
+                        <li>Updated the following mods:
+                            <ul>
+                                <li>Fixed ESMs (Ultimate Edition ESM Fixes Remastered 1.3)</li>
+                                <li>New Vegas Script Extender (xNVSE) (6.4.8)</li>
+                                <li>JohnnyGuitar NVSE (5.28)</li>
+                                <li>JohnnyGuitar NVSE - All Tweaks Preset (5.28)</li>
+                                <li>ShowOff xNVSE Plugin (1.84)</li>
+                                <li>FNV Mod Limit Fix (6)</li>
+                                <li>Yvile's Crash Logger (5.17a)</li>
+                                <li>Cell Offset Generator - NVSE (1.08)</li>
+                                <li>Yukichigai Unofficial Patch - YUP (13.9.1)</li>
+                                <li>Unofficial Patch NVSE Plus (1.7.3)</li>
+                                <li>lStewieAl's Tweaks and Engine Fixes (9.95)</li>
+                                <li>NVMIM - YUP Patch</li>
+                                <li>MAC-10 (15)</li>
+                                <li>Third Person Aim Fix NVSE (1.2.1)</li>
+                                <li>Landscape Disposition Fix (0.5.8)</li>
+                                <li>MCM Extender (1.6.3)</li>
+                                <li>PipBoy UI Tweaks - ESPless (5.2.4)</li>
+                                <li>Better Brotherhood (2.5.2)</li>
+                                <li>Goodies (2.4.1.3)</li>
+                                <li>Agua Fria - JSawyer Redone (1.0.5.3)</li>
+                                <li>Better Caravan (1.9)</li>
+                                <li>Essential DLC Enhancements Merged (1.5.4)</li>
+                                <li>Sunshine On My Shoulders (1.0.4)</li>
+                                <li>Simple Character Expansions (1.8)</li>
+                                <li>B42 Weapon Inertia (1.5)</li>
+                                <li>Decent LOD Kit (1.12)</li>
+                                <li>TTW Fallout 3 LOD (1.7.3)</li>
+                                <li>VNV Pre-Generated Objects LOD</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
                     <h2 class="install">Mar 14</h2>
                     <h3>Safe Mid-game</h3>
                     <h2><strong>LOD Guide</strong></h2>
@@ -330,7 +398,7 @@
                     </p>
                 </div>
 
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>2025</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
@@ -526,7 +594,7 @@
                                 <li>Sleep Wait Hardcore Needs (2.6)</li>
                                 <li>The Living Desert - YUP Patch</li>
                                 <li>Goodies (2.3.1)</li>
-                                <li>EVEM - YUPdate Patch</li>
+                                <li>EVEM - YUPDate Patch</li>
                                 <li>Lone Star (5.2)</li>
                                 <li>Enhanced Movement (1.28a)</li>
                                 <li>New Vegas Animation Overhaul (NVAO) - Guns (1.1.3)</li>
@@ -763,7 +831,7 @@
                     </p>
                 </div>
 
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>2024</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
@@ -1594,7 +1662,7 @@
                     </p>
                 </div>
 
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>2023</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
@@ -2651,7 +2719,7 @@
                     </p>
                 </div>
 
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>2022</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
@@ -2958,7 +3026,7 @@
                     </p>
                 </div>
 
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>2021</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>
@@ -3169,7 +3237,7 @@
                     </p>
                 </div>
 
-                <div class="expander-top">
+                <div class="expander-top clickable" onclick="expandCard(this)">
                     <h3>2020</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                 </div>

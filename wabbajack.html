@@ -29,7 +29,7 @@
     <meta property="og:title" content="Viva New Vegas">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://vivanewvegas.moddinglinked.com">
-    <meta property="og:image" content="https://vivanewvegas.moddinglinked.com/img/Others/Card.webp">
+    <meta property="og:image" content="https://vivanewvegas.moddinglinked.com/img/Others/Modlist Card.webp">
     <meta property="og:description" content="All the information and instructions regarding the Viva New Vegas Wabbajack modlist.">
 
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#333230">
@@ -39,22 +39,23 @@
     <meta http-equiv='pragma' content='no-cache'>
     <meta http-equiv='clear-site-data' content='cache'>
 
-    <script src="js/imageViewer.js"></script>
-    <script src="js/popup.js"></script>
-    <script src="js/javascript.js"></script>
-    <script src="js/responsiveTitle.js"></script>
+    <script src="submodule/shared/js/vramDiff.js"></script>
+    <script src="submodule/shared/js/benchmarkCharts.js"></script>
+    <script src="submodule/shared/js/download.js"></script>
+    <script src="submodule/shared/js/expanders.js"></script>
+    <script src="submodule/shared/js/fpsCalculator.js"></script>
+    <script src="submodule/shared/js/highlight.js"></script>
+    <script src="submodule/shared/js/imageGallery.js"></script>
+    <script src="submodule/shared/js/imageSlider.js"></script>
+    <script src="submodule/shared/js/imageViewer.js"></script>
+    <script src="submodule/shared/js/javascript.js"></script>
+    <script src="submodule/shared/js/perfguide.js"></script>
+    <script src="submodule/shared/js/popup.js"></script>
+    <script src="submodule/shared/js/recommendPreset.js"></script>
+    <script src="submodule/shared/js/responsiveTitle.js"></script>
+    <script src="submodule/shared/js/sidebar.js"></script>
 
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/cards.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/navigationArrows.css">
-    <link rel="stylesheet" href="css/coco.css">
-    <link rel="stylesheet" href="css/progressBar.css">
-    <link rel="stylesheet" href="css/guideColors.css">
-    <link rel="stylesheet" href="css/sidebar.css">
-    <link rel="stylesheet" href="css/popup.css">
-    <link rel="stylesheet" href="css/images.css">
-    <link rel="stylesheet" href="css/textIcons.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body class="theme">
@@ -268,10 +269,10 @@
                     This operation is required because Windows can block MO2 and mod files from loading due to how MO2's virtualized filesystem works. It's not part of the manual guide because exclusions are handled by the MO2 installer, which Wabbajack doesn't use.
                     <ol>
                         <li>Open <a href="ms-settings:windowsdefender">Windows Security</a>.</li>
-                        <li>Open <strong>Virus & threat protection</strong>.</li>
-                        <li>Click <strong>Manage settings</strong> under <b>Virus & threat protection settings</b>.</li>
+                        <li>Open <b>Virus & threat protection</b>.</li>
+                        <li>Click <b>Manage settings</b> under <b>Virus & threat protection settings</b>.</li>
                         <li>Scroll down and click <strong>Add or remove exclusions</strong> under <b>Exclusions</b>.</li>
-                        <li>Add a <b>Folder</b> exclusion and point it to the <strong>Installation Location</strong> folder.</li>
+                        <li>Add a <b>Folder</b> exclusion and point it to the <b>Installation Location</b> folder.</li>
                     </ol>
 
                     <div class="card-red">
@@ -287,30 +288,15 @@
                     <p>
                     <h3 onclick="location.href='#RootMods'">Root Mods</h3>
                     <ol>
-                        <li>In your <b>Installation Location</b>, open the <strong>Files Requiring Manual Install</strong> folder.</li>
-                        <li>Copy <strong>everything</strong> to the game's <b>Root</b> folder.</li>
+                        <li>In the Wabbajack UI, click <b>Open in File Explorer</b>.</li>
+                        <li>Open the <strong>Files Requiring Manual Install</strong> folder.</li>
+                        <li>Copy <b>everything</b> to the game's <b>Root</b> folder.</li>
                         <li>Still in the game's Root folder, double-click on <strong>FNVpatch.exe</strong> to run it.</li>
                         <li>
                             A command prompt window will open and it should say:
                             <div class="card-basic">FalloutNV.exe patched!</div>
                         </li>
-                        <li>Close the command prompt and a file named <strong>FalloutNV_backup.exe</strong> should appear in the game's <b>Root</b> folder.</li>
-                    </ol>
-                    </p>
-                </div>
-
-                <div class="card" id="BSADecompressor" title="BSA Decompressor">
-                    <p>
-                    <h3 onclick="location.href='#BSADecompressor'">BSA Decompressor</h3>
-                    Decompresses the vanilla BSA files to reduce loading times and stuttering. Can also fix certain sound effects not playing.
-                    <ol>
-                        <li>In your <b>Installation Location</b>, open the <strong>BSA Decompressor</strong> folder.</li>
-                        <li>Run <strong>FNV BSA Decompressor.exe</strong>.</li>
-                        <li>The <b>Fallout: New Vegas</b> and <b>Decompressed Archives</b> <strong>paths</strong> should be filled by default (Root folder and Data folder respectively).
-                            <br>
-                            If they aren't, close the program and re-run your game launcher to generate the required registry key,
-                        </li>
-                        <li>Click <strong>Decompress</strong>, wait for the process the finish, then exit the program once finished.</li>
+                        <li>Close the command prompt - a file named <b>FalloutNV_backup.exe</b> should appear, indicating that the patching worked.</li>
                     </ol>
                     </p>
                 </div>
@@ -323,6 +309,17 @@
                         <li>If you see a pop-up called <strong>FalloutNV_lang.esp was found</strong>, select <b>Yes</b>.</li>
                         <li>If you see a pop-up called <strong>Register?</strong>, select <b>Yes</b>.</li>
                     </ol>
+                    </p>
+                </div>
+
+                <div class="card" id="BSASPatcher" title="BSAs Patcher">
+                    <p>
+                    <h3 onclick="location.href='#BSASPatcher'">Vanilla BSAs Patcher</h3>
+                    Decompresses archives for better loading time and fixes vanilla audio not playing.
+
+                    <br><br>
+
+                    Follow the instructions <a href="./utilities.html#BSASPatcher" target="_blank">here</a>
                     </p>
                 </div>
 
