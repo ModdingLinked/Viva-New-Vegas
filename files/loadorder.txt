@@ -23,7 +23,9 @@ d20Consistency.esm
 TLD_Travelers.esm
 Better Brotherhood.esm
 Goodies.esp
+ExtraGoodies.esp
 Goodies - Better Brotherhood Patch.esp
+Goodies - Jacobstown Water Fix.esp
 AguaFria.esm
 DLC Enhancements.esp
 Bad Touch.esm
